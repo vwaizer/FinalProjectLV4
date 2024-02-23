@@ -1,8 +1,8 @@
-import express from "express"
-import morgan from "morgan"
+import express from "express";
+import morgan from "morgan";
 import { config } from "dotenv";
 import cors from "cors";
-import databaseProject from "./mongodb/GetDataBase";
+import databaseProject from "./mongodb/GetDataBase.js";
 
 
 const app = express()
