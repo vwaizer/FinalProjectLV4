@@ -49,5 +49,16 @@ export class Receipt{
         this.date=receipt.date,
         this.cart=receipt.cart,
         this.status=receipt.status
+    
+    }
+}
+
+export class HiredBook{
+    constructor(book){
+        this.userCode=book.userCode,
+        this.bookCode=book.bookCode,
+        this.dateIn=book.dateIn,
+        this.dateOut=book.dateOut,
+        this.state=book.state
     }
 }

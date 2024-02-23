@@ -38,6 +38,9 @@ class DatabaseService {
     get receipt(){
       return this.db.collection("receipt")
     }
+    get hiredBook(){
+      return this.db.collection("hiredBook")
+    }
 
 }
 const databaseProject = new DatabaseService()
