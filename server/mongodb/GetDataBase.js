@@ -22,12 +22,26 @@ class DatabaseService {
     get users() {
       return this.db.collection("users");
     }
-    get inventory() {
-      return this.db.collection("inventory");
+    get book() {
+      return this.db.collection("books");
     }
-    get cart(){
-      return this.db.collection("cart");
+    
+    get comment(){
+        return this.db.collection("comment");
     }
+    get importedBook(){
+        return this.db.collection("importedBook");
+    }
+    get admin(){
+      return this.db.collection("admin")
+    }
+    get receipt(){
+      return this.db.collection("receipt")
+    }
+    get hiredBook(){
+      return this.db.collection("hiredBook")
+    }
+
 }
 const databaseProject = new DatabaseService()
 export default databaseProject;
