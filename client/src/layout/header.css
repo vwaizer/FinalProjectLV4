@@ -1,0 +1,23 @@
+.bookstore_header{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.auth{
+    display: flex;
+    flex: 0.6;
+    justify-content: flex-end;
+    margin-right: 20px;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    color: red;
+    cursor: pointer;
+}
