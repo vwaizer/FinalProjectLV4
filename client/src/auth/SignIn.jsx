@@ -1,10 +1,13 @@
-import React from "react";
-import { useRef, useState, useEffect } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
+import { FaLock, FaUser, } from "react-icons/fa";
+import AuthContext from "../context/AuthProvide";
 import Layout from "../layout/Layout";
-import { FaUser, FaLock } from "react-icons/fa";
 import "./auth.css";
 
+const LOGIN_URL = '/auth';
+
 const SignIn = () => {
+  const {setAuth} = useContext(AuthContext)
   const userRef = useRef();
   const errRef = useRef();
 
@@ -19,10 +22,14 @@ const SignIn = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(user, pwd);
-    setUser('')
+    try {
+      
+      setUser('')
     setPwd('')
     setSuccess(true)
+    } catch (error) {
+      
+    }
   }
   return (
     <Layout>
