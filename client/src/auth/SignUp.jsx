@@ -21,6 +21,12 @@ function SignUp() {
             <input type="password" placeholder="Confirm Password" required />
             <FaLock className="icon" />
           </div>
+          <div className="remember-forgot">
+              <label>
+                <input type="checkbox" />
+                I agree to the term of use
+              </label>
+            </div>
           <button type="submit">Submit</button>
         </div>
       </div>

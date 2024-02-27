@@ -31,22 +31,22 @@ let navbar = [
 
 let authors = [
   {
-    title: "Sign-In",
-    href: "/sign-in",
+    title: "Register",
+    href: "/sign-up",
   },
   {
-    title: "Sign-Up",
-    href: "/sign-up",
+    title: "Login",
+    href: "/sign-in",
   },
 ];
 function Header() {
   const [login, setLogin] = useState(false);
   return (
     <div className="bookstore_header">
-      <div>
+      <div className="logo">
         <img
           src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg"
-          width={50}
+          width={80}
         />
       </div>
       {navbar.map((item, index) => {

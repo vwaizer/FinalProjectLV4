@@ -11,10 +11,11 @@ import {
 } from "./page/index.js";
 import SignUp from "./auth/SignUp.jsx";
 import SignIn from "./auth/SignIn.jsx";
+import { AuthProvider } from "./context/AuthProvide.js";
 
 function App() {
   return (
-    <div>
+    <AuthProvider>
       <Routes>
         <Route path="/sign-up" element={<SignUp />}></Route>
         <Route path="/sign-in" element={<SignIn />}></Route>
@@ -26,7 +27,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
       </Routes>
-    </div>
+    </AuthProvider>
   );
 }
 
