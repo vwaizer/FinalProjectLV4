@@ -1,0 +1,25 @@
+.cart-container {
+    display:flex;
+    justify-content:space-around; 
+    border:1px solid black;
+    margin:0px 10%;
+    gap: 20px;
+    border: 2px solid blue;
+      
+}
+.header-cart-item{
+    flex: 2;
+    border: 1px solid red;
+}
+.header-cart-item h2{
+    font-weight: 500;
+    color: #333333;
+}
+.checked-all-products{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.checked-all-products label{
+    flex: 2;
+}
