@@ -1,0 +1,131 @@
+.bookstore_header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.bookstore_header a {
+    position: relative;
+    font-size: 16px;
+    color: brown;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.bookstore_header a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: brown;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.bookstore_header a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.bookstore_header .logo{
+    background: transparent;
+    margin: 10px;
+}
+.bookstore_header .auth{
+    display: flex;
+    flex: 0.6;
+    justify-content: flex-end;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.bookstore_footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    border-bottom: 1px solid black ;
+}
+
+.bookstore_footer .logo{
+    border-right: 1px solid grey;
+    margin-top: 30px
+}
+
+.bookstore_footer a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bookstore_footer a:hover{
+    color: brown;
+}
+
+.bookstore_footer .information{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;    
+    min-height: 300px;
+    color: black;
+    margin-top: 30px;
+}
+
+.information h3 {
+    font-size: 35px;
+    font-weight: 500;
+    color: brown;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.information .collection{
+    margin-top: 50px;
+}
+
+.contact-info{
+    margin-bottom: 27px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contact .icon{
+    margin-right: 10px;
+}
+
+.contact .another-contact{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.link{
+    margin-bottom: 20px;
+}
+
+.under-footer{
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+
+
