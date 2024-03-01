@@ -1,8 +1,10 @@
 import express from "express";
+import { addUser, deleteUser, getUser, updateUser } from "../mongodb/service/userService.js";
 
-const userRoute=express.Router();
 
-userRoute.get("/user/:ID",getUser);
-userRoute.post("/user",addUser)
-userRoute.delete("/user/:ID",deleteUser);
-userRoute.put("/user/:ID",updateUser)
+export const userRoute=express.Router();
+
+userRoute.get("/:ID",getUser);
+userRoute.post("/",addUser)
+userRoute.delete("/:ID",deleteUser);
+userRoute.put("/:ID",updateUser)

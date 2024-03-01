@@ -1,8 +1,8 @@
-import databaseProject from "../GetDataBase"
+import databaseProject from "../GetDataBase.js"
 
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { User } from "../../schema/Schema";
+import { User } from "../../schema/Schema.js";
 export const getUser=async (req,res)=>{
     const userID=req.params.ID;
 
@@ -25,28 +25,8 @@ export const updateUser=async (req,res)=>{
   const result=await databaseProject.users.updateOne({_id:userID},req.body)
   return res.json(result)
 }
-
-const privateKey="abcdef";
-export const   createTokenLogin =  (data,privateKey) =>  {
-  console.log(data);
-  return  new  Promise((resolve, reject) => {
-     jwt.sign(
-      { username: data.username, password: data.password },
-      privateKey,
-      { expiresIn: "1h" },
-      (err, token) => {
-        if (err) {
-          reject(err.message);
-        }
-        resolve(token);
-      }
-    );
-  });
-};
-export const createLoginAccess= async(req,res)=>{
-  
-  const encrypt = {username:req.body.username,password: req.body.password };
-  
-  const token=  await createTokenLogin(encrypt,privateKey);
-  return res.json({token});
+export const getAllUser=async (req,res)=>{
+  const result=await databaseProject.users.find().toArray()
+  return res.json(result)
 }
+
