@@ -6,9 +6,10 @@ const contractMail = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "lightwing2208@gmail.com",
-    pass: "wmnomqnuvabexepw",
+    pass: process.env.PASS_EMAIL,
   },
 });
+
 contractMail.verify((error)=>{
     if(error){
         console.log(error);
@@ -22,7 +23,7 @@ contractMail.verify((error)=>{
 export const sendMail=async(req,res,next)=>{
   try{
     const caseID=(req.params.ID);
-    
+    console.log(process.env.PASS_EMAIL);
     const caseData=await databaseProject.hiredBook.aggregate([
      {
        '$match': {
