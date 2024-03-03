@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    background: url('../../assets/livraria-lello.jpg') no-repeat;
+    background: url('../assets/livraria-lello.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
