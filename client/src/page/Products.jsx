@@ -1,8 +1,7 @@
 import Layout from "../layout/Layout";
-import { Menu } from "antd";
 import "./page.css";
 
-import React, { useState } from "react";
+import React from "react";
 function Products() {
   return (
     <Layout>
