@@ -2,7 +2,7 @@
 import Layout from "../layout/Layout";
 import "./page.css";
 
-import React, { useState } from "react";
+import React from "react";
 function Products() {
   return (
     <Layout>

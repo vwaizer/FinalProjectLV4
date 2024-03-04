@@ -72,3 +72,37 @@
     margin: 1rem, 1rem;
     border-bottom: 1px solid black;
 }
+
+.advertisement {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    border: 1px solid whitesmoke;
+    outline: 20px;
+}
+
+.booktype{
+    width: 120px;
+    height: 150px;
+}
+
+.booktype img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px){
+    .advertisement{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        overflow: scroll;
+        width: 100%;
+        height: 100%;
+    }
+}
