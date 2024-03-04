@@ -1,4 +1,6 @@
+import jwt from "jsonwebtoken"
 const privateKey=process.env.PRIVATE_KEY;
+
 export const   createTokenLogin =  (data,privateKey) =>  {
   console.log(data);
   return  new  Promise((resolve, reject) => {

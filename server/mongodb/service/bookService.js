@@ -3,13 +3,13 @@ import databaseProject from "../GetDataBase.js";
 export const getBook=async (req,res)=>{
     const userID=req.params.ID;
 
-    const user=await databaseProject.book.findOne({_id:userID} )
+    const user=await databaseProject.book.findOne({_id:new ObjectId(`${userID}`)} )
     return res.json(user);
 }
 export const deleteBook=async(req,res)=>{
   const userID=req.params.ID;
 
-    const result=await databaseProject.book.deleteOne({_id:userID} )
+    const result=await databaseProject.book.deleteOne({_id:new ObjectId(`${userID}`)} )
     return res.json(result);
 }
 export const addBook=async(req,res)=>{
