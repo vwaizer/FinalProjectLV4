@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { User } from "../../schema/Schema.js";
 export const getDetailUser=async (req,res,next)=>{
-  console.log("vao getUser");
+  console.log("vao getDetailUser");
     const userID=req.userID;
     console.log(userID);
     try {

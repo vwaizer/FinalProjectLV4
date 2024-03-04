@@ -98,10 +98,10 @@ export const getAllPublisher = async (req, res) => {
   const data = await databaseProject.book.find().toArray();
 
   let brandList = [];
-  for (let index = 0; index < data.length; index++) {
+  for (let index = 1; index < data.length; index++) {
     let element = data[index].publisher;
     let isAdded = true;
-    for (let index1 = 0; index1 < brandList.length; index1++) {
+    for (let index1 = 1; index1 < brandList.length; index1++) {
       let element1 = brandList[index1].publisher;
 
       if (element == element1) {
@@ -123,7 +123,7 @@ export const getAllAuthor = async (req, res) => {
   const data = await databaseProject.book.find().toArray();
 
   let authorList = [];
-  for (let index = 0; index < data.length; index++) {
+  for (let index = 1; index < data.length; index++) {
     let element = data[index].author;
     let isAdded = true;
     for (let index1 = 0; index1 < authorList.length; index1++) {
