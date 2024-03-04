@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../layout/Layout";
 import SliderImage from "../Slider/SliderImage";
 import slide from "../assets/image";
-import "./page.css";
 import TypeBook from "../custom/homecpn/TypeBook";
+import Layout from "../layout/Layout";
+import "./page.css";
 
 function Home() {
   const [products, setProducts] = useState([]);

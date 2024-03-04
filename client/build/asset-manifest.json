@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.780ee253.css",
-    "main.js": "/static/js/main.65c5e670.js",
+    "main.css": "/static/css/main.2ece6ae8.css",
+    "main.js": "/static/js/main.fedd7f23.js",
     "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
     "static/media/livraria-lello.jpg": "/static/media/livraria-lello.f3fe0ee6aa1fdae4d7ea.jpg",
+    "static/media/slide1.jpg": "/static/media/slide1.da69808e8a65c750cb05.jpg",
+    "static/media/slide2.jpg": "/static/media/slide2.1d5cb31d50ba68a12591.jpg",
+    "static/media/slide3.jpg": "/static/media/slide3.5233240e1d07e0d81f2c.jpg",
     "index.html": "/index.html",
-    "main.780ee253.css.map": "/static/css/main.780ee253.css.map",
-    "main.65c5e670.js.map": "/static/js/main.65c5e670.js.map",
+    "main.2ece6ae8.css.map": "/static/css/main.2ece6ae8.css.map",
+    "main.fedd7f23.js.map": "/static/js/main.fedd7f23.js.map",
     "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.780ee253.css",
-    "static/js/main.65c5e670.js"
+    "static/css/main.2ece6ae8.css",
+    "static/js/main.fedd7f23.js"
   ]
 }
