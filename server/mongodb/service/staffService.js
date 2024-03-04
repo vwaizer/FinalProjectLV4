@@ -1,9 +1,6 @@
 import databaseProject from "../GetDataBase.js"
 
-export const getAllReceipt=async(req,res)=>{
-    const result=await databaseProject.receipt.find().toArray()
-    return res.json(result)
-}
+
 export const getHiredBook=async(req,res)=>{
     const result =await databaseProject.hiredBook.find().toArray()
     return res.json(result)

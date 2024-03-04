@@ -1,5 +1,5 @@
 import databaseProject from "../GetDataBase.js"
-import ObjectID from "mongodb";
+import {ObjectId} from "mongodb";
 export const getAllReceipt=async(req,res,next)=>{
     try {
         const result=await databaseProject.receipt.find().toArray()
@@ -11,7 +11,7 @@ export const getAllReceipt=async(req,res,next)=>{
 export const getFilterReceipt=async(req,res,next)=>{
     try {
         if(req.params.userID){
-            const result=await databaseProject.receipt.findOne({userID:new ObjectID(`${req.params.receiptID}`)})
+            const result=await databaseProject.receipt.findOne({userID:new ObjectId(`${req.params.receiptID}`)})
             return res.json(result)
         }
         else{

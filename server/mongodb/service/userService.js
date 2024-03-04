@@ -3,7 +3,7 @@ import {ObjectId} from "mongodb"
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { User } from "../../schema/Schema.js";
-export const getUser=async (req,res,next)=>{
+export const getDetailUser=async (req,res,next)=>{
   console.log("vao getUser");
     const userID=req.userID;
     console.log(userID);
