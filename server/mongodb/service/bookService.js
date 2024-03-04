@@ -1,6 +1,6 @@
 import databaseProject from "../GetDataBase.js";
 
-export const getBook=async (req,res)=>{
+export const getDetailBook=async (req,res)=>{
     const userID=req.params.ID;
 
     const user=await databaseProject.book.findOne({_id:new ObjectId(`${userID}`)} )
@@ -31,7 +31,10 @@ export const updateBook=async (req,res)=>{
   return res.json(result)
 }
 export const getAllBook=async(req,res)=>{
-    const result=await databaseProject.book.find().toArray()
+  console.log(res);
+
+    const result=await databaseProject.book.find({}).toArray()
+    // console.log(result);
   return res.json(result)
 }
 export const getFilterBook=async(req,res)=>{
@@ -55,6 +58,6 @@ export const getFilterBook=async(req,res)=>{
 
   }
   else{
-     return getAllBook()
+      getAllBook(req,res)
   }
 }

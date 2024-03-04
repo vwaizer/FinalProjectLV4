@@ -9,19 +9,22 @@ import { bookRoute } from "./routes/bookRoute.js";
 import { staffRoute } from "./routes/staffRoute.js";
 import { userRoute } from "./routes/userRoute.js";
 import { loginRoute } from "./routes/loginRoute.js";
+import { receiptRoute } from "./routes/receiptRoute.js";
 
 const app = express()
 const port = 3000
 config();
 app.use(helmet())
-app.use(morgan('combined'))
 app.use(express.json())
+app.use(morgan('combined'))
+
 app.use(cors())
 
 app.use("/user",userRoute)
 app.use("/book",bookRoute)
 app.use("/admin",staffRoute)
 app.use("/",loginRoute)
+app.use("/receipt",receiptRoute)
 app.use(errorHandle)
 databaseProject.run();
 app.listen(port, () => {

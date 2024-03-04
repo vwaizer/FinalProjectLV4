@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 import { User } from "../../schema/Schema.js";
 export const getUser=async (req,res,next)=>{
   console.log("vao getUser");
-    const userID=req.params.ID;
+    const userID=req.userID;
     console.log(userID);
     try {
       const user=await databaseProject.users.findOne({_id:new ObjectId(`${userID}`)} )
@@ -18,7 +18,7 @@ export const getUser=async (req,res,next)=>{
 }
 export const deleteUser=async(req,res,next)=>{
    try {
-    const userID=req.params.ID;
+    const userID=req.userID;
 
     const result=await databaseProject.users.deleteOne({_id:new ObjectId(`${userID}`)} )
     return res.json(result);
@@ -38,7 +38,7 @@ export const addUser=async(req,res,next)=>{
 }
 export const updateUser=async (req,res,next)=>{
   try {
-    const userID=req.params.ID;
+    const userID=req.userID;
   const result=await databaseProject.users.updateOne({_id:new ObjectId(`${userID}`)},req.body)
   return res.json(result)
   } catch (error) {

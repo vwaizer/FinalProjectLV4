@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
-import databaseProject from "../mongodb.js";
+import databaseProject from "../../mongodb/GetDataBase.js";
+;
 const privateKey=process.env.PRIVATE_KEY;
 export const checkToken=(privateKey,token)=>{
     return new Promise((resolve,reject)=>{
@@ -34,6 +35,7 @@ export const userValidator = async (req, res, next) => {
     // req.decode=result
     if(result){
       if(result.role=="user"){
+        console.log(result._id.valueOf());
         req.userID=result._id.valueOf()
         return next();
       }
@@ -67,6 +69,7 @@ export const staffValidator = async (req, res, next) => {
   // req.decode=result
   if(result){
     if(result.role=="staff"){
+      req.staffID=result._id.valueOf()
       return next();
     }
     else{

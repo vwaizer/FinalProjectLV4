@@ -21,7 +21,7 @@ export const validateRegister = validator(
     {
       username: {
         errorMessage: "Invalid username",
-        isEmail: false,
+        
         custom: {
           options: async (value, { req }) => {
             const isExist = await databaseProject.users.findOne({
@@ -29,7 +29,7 @@ export const validateRegister = validator(
             });
             
             if (isExist) {
-              throw new Error("Email is already existed");
+              throw new Error("Username is already existed");
             }
             return true;
           },
