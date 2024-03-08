@@ -22,5 +22,5 @@ export const createLoginAccess= async(req,res)=>{
   const encrypt = {username:req.body.username,password: req.body.password };
   
   const token=  await createTokenLogin(encrypt,privateKey);
-  return res.json({token});
+  return res.json({message:"Success",accessToken:token});
 }

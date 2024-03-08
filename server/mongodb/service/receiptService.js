@@ -15,7 +15,7 @@ export const getFilterReceipt=async(req,res,next)=>{
             return res.json(result)
         }
         else{
-            getAllReceipt()
+            getAllReceipt(req,res,next)
         }
     } catch (error) {
         next(error)

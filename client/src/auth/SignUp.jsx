@@ -10,7 +10,7 @@ function SignUp() {
         <div className="wrap">
           <h1>Register</h1>
           <div className="input-box">
-            <input type="text" placeholder="Username" required />
+            <input type="text" placeholder="Email" required />
             <FaUser className="icon" />
           </div>
           <div className="input-box">

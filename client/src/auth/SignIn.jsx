@@ -3,7 +3,7 @@ import { FaLock, FaUser, } from "react-icons/fa";
 import AuthContext from "../context/AuthProvide";
 import Layout from "../layout/Layout";
 import "./auth.css";
-
+import axios from "axios";
 const LOGIN_URL = '/auth';
 
 const SignIn = () => {
@@ -24,11 +24,13 @@ const SignIn = () => {
     e.preventDefault();
     try {
       
-      setUser('')
-    setPwd('')
+      const result=await axios.post("/login",{email:user,password:pwd});
+      if(result.accessToken){
+        console.log("success");
+      }
     setSuccess(true)
     } catch (error) {
-      
+      alert(error)
     }
   }
   return (
@@ -47,8 +49,8 @@ const SignIn = () => {
             <div className="input-box">
               <input
                 type="text"
-                id="username"
-                placeholder="Username"
+                id="Email"
+                placeholder="Email"
                 ref={userRef}
                 autoComplete="off"
                 onChange={(e) => setUser(e.target.value)}

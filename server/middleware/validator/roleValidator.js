@@ -29,7 +29,7 @@ export const userValidator = async (req, res, next) => {
     //   return res.json("fail")
     // }
     console.log("userUnit",userUnit);
-    const result= await databaseProject.users.findOne({username:userUnit.username});
+    const result= await databaseProject.users.findOne({email:userUnit.email});
     console.log(result);
     // req.userEmail=userUnit.email;
     // req.decode=result
@@ -63,7 +63,7 @@ export const staffValidator = async (req, res, next) => {
   //   return res.json("fail")
   // }
   console.log("userUnit",userUnit);
-  const result= await databaseProject.users.findOne({username:userUnit.username});
+  const result= await databaseProject.users.findOne({email:userUnit.email});
   console.log(result);
   // req.userEmail=userUnit.email;
   // req.decode=result
@@ -95,7 +95,7 @@ export const adminValidator = async (req, res, next) => {
   //   return res.json("fail")
   // }
   console.log("userUnit",userUnit);
-  const result= await databaseProject.users.findOne({username:userUnit.username});
+  const result= await databaseProject.users.findOne({email:userUnit.email});
   console.log(result);
   // req.userEmail=userUnit.email;
   // req.decode=result

@@ -6,7 +6,6 @@ export class User {
       (this.password = user.password|| ""),
       (this.birthday = user.birthday?new Date(user.birthday):"" ),
       (this.phone = user.phone|| ""),
-      (this.username = user.username),
       (this.role=user.role || "user")
   }
 }
