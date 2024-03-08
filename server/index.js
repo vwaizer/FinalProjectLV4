@@ -12,7 +12,7 @@ import { loginRoute } from "./routes/loginRoute.js";
 import { receiptRoute } from "./routes/receiptRoute.js";
 
 const app = express()
-const port = 3000
+const port = 4000
 config();
 app.use(helmet())
 app.use(express.json())
