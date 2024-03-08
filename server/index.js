@@ -22,7 +22,7 @@ app.use(cors())
 
 app.use("/user",userRoute)
 app.use("/book",bookRoute)
-app.use("/admin",staffRoute)
+app.use("/staff",staffRoute)
 app.use("/",loginRoute)
 app.use("/receipt",receiptRoute)
 app.use(errorHandle)
