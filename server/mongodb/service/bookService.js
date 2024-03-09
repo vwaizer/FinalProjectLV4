@@ -44,7 +44,7 @@ export const getAllBook = async (req, res) => {
   // console.log(result);
   return res.json(result);
 };
-export const getFilterBook = async (req, res) => {
+export const getFilterBook = async (req, res,next) => {
   const query = req.query;
   if (Object.keys(query).length > 0) {
     if (query.publisher) {
@@ -67,7 +67,7 @@ export const getFilterBook = async (req, res) => {
       return res.json(filterData);
     }
   } else {
-    getAllBook(req, res);
+    getAllBook(req, res,next);
   }
 };
 export const getAllTypes = async (req, res) => {

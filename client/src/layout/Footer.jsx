@@ -27,7 +27,7 @@ const siteMap = [
 const bookTypes = [
   {
     title: "Literature",
-    href: "#literature",
+    href: "/product/#literature",
   },
   {
     title: "Children",
@@ -54,7 +54,7 @@ function Footer() {
         <div className="logo_footer">
           <img
             src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg"
-            width={300}
+            width={320}
             alt="logo"
           />
         </div>

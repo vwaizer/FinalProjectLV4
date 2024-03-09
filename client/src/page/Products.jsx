@@ -1,44 +1,124 @@
-
+import { Link } from "react-router-dom";
+import SetProduct from "../custom/productcpn/SetProduct";
 import Layout from "../layout/Layout";
 import "./page.css";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import Category from "../custom/productcpn/Category";
+import GetProduct from "../custom/productcpn/GetProduct";
+import Pagination from "../pagination/Pagination";
+import { Skeleton } from "antd";
 
-import React from "react";
 function Products() {
+  const [getBook, setGetBook] = useState([]);
+  const [getTypeBook, setGetTypeBook] = useState([]);
+  const [getAuthor, setGetAuthor] = useState([]);
+  const [getPublisher, setGetPublisher] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPostPerPage] = useState(8);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get("http://localhost:4000/book")
+      .then((getBook) => setGetBook(getBook.data), setLoading(false))
+      .catch((err) => console.log(err));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/book/types")
+      .then((getTypeBook) => setGetTypeBook(getTypeBook.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/book/author")
+      .then((getAuthor) => setGetAuthor(getAuthor.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/book/publisher")
+      .then((getPublisher) => setGetPublisher(getPublisher.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  const lastPostIndex = currentPage * postPerPage;
+  const firstPostIndex = lastPostIndex - postPerPage;
+  const currentPost = getBook.slice(firstPostIndex, lastPostIndex);
+
+  const Loading = () => {
+    return(
+      <>
+      <div>
+        <Skeleton height={350} />
+      </div>
+      <div>
+        <Skeleton height={350} />
+      </div>
+      </>
+    )
+  };
+
+  const ShowProduct = () => {
+    return (
+      <div className="show_product">
+        <div>
+          <GetProduct getBook={currentPost} />
+        </div>
+      </div>
+    );
+  };
+
   return (
     <Layout>
       <div className="bookstore_wrap">
         <div className="leftbox">
           <div className="leftbox_collection">
-            <div className="product">
+            <div>
               <h2>Product Category</h2>
-              {/* 'map tu database' */}
+              {getTypeBook.map((value, index) => {
+                return (
+                  <div className="category" key={value.type}>
+                    <Category href="#literature" type={value.type} />
+                  </div>
+                );
+              })}
             </div>
-            <div className="author">
+            <div>
               <h2>Author</h2>
-              {/* 'map tu database' */}
+              {getAuthor.map((item, index) => {
+                return (
+                  <div className="author" key={index}>
+                    <p>{item.author}</p>
+                  </div>
+                );
+              })}
             </div>
             <div>
               <h2>Publisher</h2>
-              {/* 'map tu database' */}
+              {getPublisher.map((item, index) => {
+                return (
+                  <div className="publisher" key={index}>
+                    <p>{item.publisher}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
-        <div className="rigtbox">
-          <div className="rightbox_collection">
-            <div className="sort">
-              <p className="sort-name">
-                Sort by:
-                <select className="selection">
-                  <option>Name</option>
-                  <option>date</option>
-                </select>
-              </p>
-            </div>
-            <div className="product_info">
-              <h1>hello, this space uses for product information</h1>
-            {/* 'map tu database hình ảnh, tên spham, gia tien' */}
-            </div>
-          </div>
+        <div className="rightbox">
+          <div>{loading ? <Loading /> : <ShowProduct />}</div>
+          <Pagination
+            totalPost={getBook.length}
+            postPerPage={postPerPage}
+            setCurrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
         </div>
       </div>
     </Layout>

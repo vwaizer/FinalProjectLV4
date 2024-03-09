@@ -1,21 +1,12 @@
 import React, { useEffect, useState } from "react";
-import SliderImage from "../Slider/SliderImage";
 import slide from "../assets/image";
 import TypeBook from "../custom/homecpn/TypeBook";
 import Layout from "../layout/Layout";
 import "./page.css";
+import SliderImage from "../Slider/SliderImage";
+
 
 function Home() {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3000/home")
-      .then((response) => response.json())
-      .then((data) => {
-        setProducts(data);
-      })
-      .catch((error) => console.log("Error:", error));
-  }, []);
-
   return (
     <Layout>
       <SliderImage>
@@ -26,7 +17,7 @@ function Home() {
       <div className="advertisement">
         <div className="booktype">
           <TypeBook
-            href="#literature"
+            href="/product/#literature"
             image="https://cdn0.fahasa.com/media/flashmagazine/images/page_images/the_literature_book/2022_11_01_17_00_05_4-390x510.jpg"
             alt="literatue"
             title='Literratue'

@@ -20,11 +20,19 @@ app.use(morgan('combined'))
 
 app.use(cors())
 
+<<<<<<< HEAD
 app.use("/user", userRoute)
 app.use("/book", bookRoute)
 app.use("/admin", staffRoute)
 app.use("/", loginRoute)
 app.use("/receipt", receiptRoute)
+=======
+app.use("/user",userRoute)
+app.use("/book",bookRoute)
+app.use("/staff",staffRoute)
+app.use("/",loginRoute)
+app.use("/receipt",receiptRoute)
+>>>>>>> a7f81c33f7a1edbe550395b024b34ca8a98b2ec8
 app.use(errorHandle)
 databaseProject.run();
 app.listen(port, () => {

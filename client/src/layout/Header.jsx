@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./layout.css";
-import { VscAccount } from "react-icons/vsc";
+import { FaShoppingCart, FaUser } from "react-icons/fa";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import UserInfo from "../user-infomation/UserInfo";
+import ModalCart from "../cart/ModalCart";
 let navbar = [
   {
     title: "Home",
@@ -41,35 +43,92 @@ let authors = [
   },
 ];
 function Header() {
-  const [login, setLogin] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [signin, setSignin] = useState(false);
+  const [signout, setSignout] = useState(false);
+
+  setInterval(() => {
+    const token = localStorage.getItem("remember");
+    if (token == "undefined" || token == "null" || !token) {
+      setSignin(false);
+    } else {
+      setSignin(true);
+    }
+  }, 1000);
+  useEffect(() => {
+    const token = localStorage.getItem("remember");
+    if (token == "undefined" || token == "null" || !token) {
+      setSignin(false);
+    } else {
+      setSignin(true);
+    }
+  }, [signout]);
+
+  const handleSignOut = () => {
+    localStorage.removeItem("remember");
+    setSignout(true);
+  };
   return (
-    <div className="bookstore_header">
-      <div className="navbar-links" >
-        <div className="logo_header">
-          <img
-            src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg"
-          />
+    <>
+      {signin ? (
+        <div className="bookstore_header">
+          <div className="navbar-links">
+            <div className="logo_header">
+              <img src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg" />
+            </div>
+            <div className="navbar_container">
+              {navbar.map((item, index) => {
+                return (
+                  <Link
+                    className="navbar_container-link"
+                    to={item.href}
+                    key={index}
+                  >
+                    {item.title}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+          <div className="auth_container">
+            <UserInfo />
+            <ModalCart />
+            <button className="sign-out" type="button" onClick={handleSignOut}>
+              Sign-Out
+            </button>
+          </div>
         </div>
-        <div className="navbar_container">
-          {navbar.map((item, index) => {
-            return (
-              <Link className="navbar_container-link" to={item.href} key={index}>
-                {item.title}
-              </Link>
-            );
-          })}
+      ) : (
+        <div className="bookstore_header">
+          <div className="navbar-links">
+            <div className="logo_header">
+              <img src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg" />
+            </div>
+            <div className="navbar_container">
+              {navbar.map((item, index) => {
+                return (
+                  <Link
+                    className="navbar_container-link"
+                    to={item.href}
+                    key={index}
+                  >
+                    {item.title}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+          <div className="auth_container">
+            {authors.map((item, index) => {
+              return (
+                <Link to={item.href} key={index}>
+                  {item.title}
+                </Link>
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <div className="auth_container">
-        {authors.map((item, index) => {
-          return (
-            <Link to={item.href} key={index}>
-              {item.title}
-            </Link>
-          );
-        })}
-      </div>
+      )}
       <div className="navbar_menu">
         {toggleMenu ? (
           <RiCloseLine
@@ -93,19 +152,29 @@ function Header() {
                 </Link>
               );
             })}
-            <div className="auth_menu">
-              {authors.map((item, index) => {
-                return (
-                  <Link to={item.href} key={index}>
-                    {item.title}
-                  </Link>
-                );
-              })}
-            </div>
+            {signin ? (
+              <div className="user-login">
+                <button type="button" onClick={handleSignOut}>
+                  Sign-Out
+                </button>
+                <FaUser />
+                <FaShoppingCart />
+              </div>
+            ) : (
+              <div className="auth_menu">
+                {authors.map((item, index) => {
+                  return (
+                    <Link to={item.href} key={index}>
+                      {item.title}
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 }
 

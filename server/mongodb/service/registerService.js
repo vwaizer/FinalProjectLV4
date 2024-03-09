@@ -5,20 +5,21 @@ import {ObjectId} from "mongodb"
 class UserService {
     async register(payload) {
       const existingAccount = await databaseProject.users.findOne({ email: payload.email });
+      console.log(existingAccount);
       if (!existingAccount) {
       
         await databaseProject
           .users
           .insertOne(
             new User({
-              username:payload.username,
+              username:payload.email,
               password:payload.password,
               fullName:"",
-              email:payload.username,
+              email:payload.email,
               gender:"other",
               birthday:"--",
               sex:"",
-              
+              role:payload.role||""
             })
           );
         const access_token = await createAccessToken({ email:payload.email,password:payload.password });
