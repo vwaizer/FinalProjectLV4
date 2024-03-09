@@ -12,7 +12,7 @@ import { loginRoute } from "./routes/loginRoute.js";
 import { receiptRoute } from "./routes/receiptRoute.js";
 
 const app = express()
-const port = 3000
+const port = 4000
 config();
 app.use(helmet())
 app.use(express.json())
@@ -20,13 +20,13 @@ app.use(morgan('combined'))
 
 app.use(cors())
 
-app.use("/user",userRoute)
-app.use("/book",bookRoute)
-app.use("/admin",staffRoute)
-app.use("/",loginRoute)
-app.use("/receipt",receiptRoute)
+app.use("/user", userRoute)
+app.use("/book", bookRoute)
+app.use("/admin", staffRoute)
+app.use("/", loginRoute)
+app.use("/receipt", receiptRoute)
 app.use(errorHandle)
 databaseProject.run();
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-  })
+  console.log(`Example app listening on port ${port}`)
+})
