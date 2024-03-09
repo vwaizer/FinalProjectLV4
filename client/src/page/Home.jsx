@@ -7,16 +7,6 @@ import SliderImage from "../Slider/SliderImage";
 
 
 function Home() {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3000/home")
-      .then((response) => response.json())
-      .then((data) => {
-        setProducts(data);
-      })
-      .catch((error) => console.log("Error:", error));
-  }, []);
-
   return (
     <Layout>
       <SliderImage>

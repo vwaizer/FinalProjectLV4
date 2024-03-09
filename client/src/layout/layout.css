@@ -89,7 +89,50 @@
 
 .auth_container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     margin-right: 20px;
+}
+
+.auth_container .sign-out{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    transition-duration: 0.5;
+    color: brown;
+    cursor: pointer;
+}
+
+.auth_container .sign-out:hover{
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+
+.user-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.user-login button{
+    width: 80px;
+   height: 30px;
+   background: transparent;
+   outline: none;
+   border-radius: 10px;
+   transition-duration: 0.5;
+   color: white;
+   cursor: pointer;
+}
+
+.user-login button:hover{
+    color: brown;
+    font-weight: 700;
 }
 
 .auth_menu{

@@ -93,7 +93,7 @@ function Products() {
               <h2>Author</h2>
               {getAuthor.map((item, index) => {
                 return (
-                  <div className="author" key={item.author}>
+                  <div className="author" key={index}>
                     <p>{item.author}</p>
                   </div>
                 );
@@ -103,7 +103,7 @@ function Products() {
               <h2>Publisher</h2>
               {getPublisher.map((item, index) => {
                 return (
-                  <div className="publisher" key={item.publisher}>
+                  <div className="publisher" key={index}>
                     <p>{item.publisher}</p>
                   </div>
                 );

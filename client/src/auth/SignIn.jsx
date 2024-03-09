@@ -1,38 +1,79 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { FaLock, FaUser, } from "react-icons/fa";
+import { FaLock, FaUser } from "react-icons/fa";
 import AuthContext from "../context/AuthProvide";
 import Layout from "../layout/Layout";
 import "./auth.css";
 import axios from "axios";
-const LOGIN_URL = '/auth';
+import { Navigate, useNavigate, useSearchParams } from "react-router-dom";
+const LOGIN_URL = "/auth";
 
 const SignIn = () => {
-  const {setAuth} = useContext(AuthContext)
+  const { setAuth, signIn } = useContext(AuthContext);
   const userRef = useRef();
   const errRef = useRef();
+  const navigate = useNavigate();
 
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
   const [errMessage, setErrMessage] = useState("");
   const [success, setSuccess] = useState(false);
+  const [remember, setRemember] = useState(false);
+
+  const [access_token] = useSearchParams();
+  const data = access_token.get("accessToken");
 
   useEffect(() => {
-    setErrMessage("");
-  }, [user, pwd]);
+    if (data) {
+      console.log("vao");
+      localStorage.setItem("token", data);
+
+      navigate("/");
+    }
+  });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      
-      const result=await axios.post("/login",{email:user,password:pwd});
-      if(result.accessToken){
-        console.log("success");
+      const result = await axios.post(
+        "http://localhost:4000/login",
+        { username: user, password: pwd },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            withCredentials: true,
+          },
+        }
+      );
+      console.log(JSON.stringify(result?.data));
+      setAuth({ user, pwd});
+      setUser("");
+      setPwd("");
+      setSuccess(true);
+      if (result) {
+        signIn(user);
+          localStorage.setItem("remember", user);
+        alert("Login successful");
+        navigate("/");
+      } else {
+        if (result.data.access_token) {
+          signIn(user);
+          localStorage.setItem("token", result.data.access_token);
+          navigate("/");
+        }
       }
-    setSuccess(true)
-    } catch (error) {
-      alert(error)
+    } catch (err) {
+      if (!err?.result) {
+        setErrMessage("No Server Response");
+      } else if (err.result?.status === 400) {
+        setErrMessage("Missing Username or Password");
+      } else if (err.result?.status === 401) {
+        setErrMessage("Unauthorized");
+      } else {
+        setErrMessage("Login Failed");
+      }
+      errRef.current.focus();
     }
-  }
+  };
   return (
     <Layout>
       <div className="body">

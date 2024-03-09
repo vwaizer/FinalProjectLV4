@@ -1,8 +1,5 @@
 import React from "react";
-import { Card } from "antd";
 import "./style.product.css";
-
-const { Meta } = Card;
 const SetProduct = ({
   _id,
   name,
