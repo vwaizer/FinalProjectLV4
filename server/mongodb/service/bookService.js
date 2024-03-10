@@ -1,8 +1,9 @@
 import databaseProject from "../GetDataBase.js";
 import { ObjectId } from "mongodb";
 export const getDetailBook = async (req, res) => {
+  console.log("vao");
   const userID = req.params.ID;
-  console.log(userID);
+  console.log("userID",userID);
   const user = await databaseProject.book.findOne({
     _id: new ObjectId(`${userID}`),
   });
