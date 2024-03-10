@@ -1,18 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { FaUser } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const UserInfo = () => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const navigative = useNavigate()
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchorEl(null)
+  }
+  const handleUser = () => {
+    navigative('/user')
+  };
+  
+  const handleSignOut = () => {
+    localStorage.removeItem("remember");
   };
 
   return (
@@ -35,8 +44,8 @@ const UserInfo = () => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
+        <MenuItem onClick={handleUser}>User account</MenuItem>
+        <MenuItem onClick={handleSignOut}>Sign-Out</MenuItem>
       </Menu>
     </div>
   );

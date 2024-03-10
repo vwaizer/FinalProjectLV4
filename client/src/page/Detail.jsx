@@ -5,19 +5,21 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 function Detail(props) {
-  const {_id} = useParams()
-  const [product, setProduct] = useState()
-  
+  const {id} = useParams("ID")
+  const [product, setProduct] = useState([])
+  console.log(id)
+
   useEffect(() => {
     axios
-      .get("http://localhost:4000/detailBook/:ID")
+      .get(`http://localhost:4000/book/detailBook/${id} `)
       .then((product) => setProduct(product.data))
       .catch((err) => console.log(err));
-  }, []);
-
+    }, []);
+    console.log(product)
   return (
     <Layout>
      <div>
+      {}
      </div>
     </Layout>
   )
