@@ -14,7 +14,7 @@ import { receiptRoute } from "./routes/receiptRoute.js";
 const app = express()
 const port = 4000
 config();
-app.use(helmet())
+// app.use(helmet())
 app.use(express.json())
 app.use(morgan('combined'))
 
@@ -28,5 +28,5 @@ app.use("/receipt",receiptRoute)
 app.use(errorHandle)
 databaseProject.run();
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-  })
+  console.log(`Example app listening on port ${port}`)
+})
