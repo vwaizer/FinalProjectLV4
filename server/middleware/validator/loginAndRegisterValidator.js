@@ -36,16 +36,20 @@ export const validateRegister = validator(
         },
       },
       password: {
+        trim: true,
         isLength: {
           options: { min: 8 },
           errorMessage: "Password should be at least 8 chars",
         },
+        
       },
       confirmPassword: {
+        trim: true,
         isLength: {
           options: { min: 8 },
           errorMessage: "Password should be at least 8 chars",
         },
+        
         custom: {
           options: (value, { req }) => {
             if (value !== req.body.password) {
@@ -106,6 +110,7 @@ export const loginValidator = validator(
         },
       },
       password: {
+        trim: true,
         isLength: {
           options: { min: 8 },
           errorMessage: "Password should be at least 8 chars",

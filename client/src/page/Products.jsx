@@ -8,6 +8,7 @@ import Category from "../custom/productcpn/Category";
 import GetProduct from "../custom/productcpn/GetProduct";
 import Pagination from "../pagination/Pagination";
 import { Skeleton } from "antd";
+import { http } from "../util/http.js";
 
 function Products() {
   const [getBook, setGetBook] = useState([]);
@@ -20,10 +21,11 @@ function Products() {
 
   useEffect(() => {
     setLoading(true);
-    axios
-      .get("http://localhost:4000/book")
-      .then((getBook) => setGetBook(getBook.data), setLoading(false))
-      .catch((err) => console.log(err));
+    // axios
+    //   .get("http://localhost:4000/book")
+    //   .then((getBook) => setGetBook(getBook.data), setLoading(false))
+    //   .catch((err) => console.log(err));
+    http.get("/book").then((getBook) => setGetBook(getBook.data), setLoading(false)).catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
