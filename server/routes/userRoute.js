@@ -1,10 +1,12 @@
 import express from "express";
-import { addUser, deleteUser, getUser, updateUser } from "../mongodb/service/userService.js";
+import { addUser, deleteUser, getAllUser, getDetailUser, updateUser } from "../mongodb/service/userService.js";
+import { staffValidator, userValidator } from "../middleware/validator/roleValidator.js";
 
 
 export const userRoute=express.Router();
 
-userRoute.get("/:ID",getUser);
-userRoute.post("/",addUser)
-userRoute.delete("/:ID",deleteUser);
-userRoute.put("/:ID",updateUser)
+userRoute.get("/detailUser",userValidator,getDetailUser);
+
+userRoute.post("/",userValidator,addUser)
+userRoute.delete("/delete",userValidator,deleteUser);
+userRoute.put("/",userValidator,updateUser)

@@ -1,7 +1,8 @@
 
 import { checkSchema, validationResult } from "express-validator";
+import databaseProject from "../../mongodb/GetDataBase.js";
 
-import databaseProject from "../mongodb.js";
+
 export const validator = (schema) => {
   return async (req, res, next) => {
     console.log(req);
@@ -18,17 +19,17 @@ export const validator = (schema) => {
 export const validateRegister = validator(
   checkSchema(
     {
-      username: {
-        errorMessage: "Invalid email",
-        isEmail: false,
+      email: {
+        errorMessage: "Invalid username",
+        isEmail:true,
         custom: {
           options: async (value, { req }) => {
             const isExist = await databaseProject.users.findOne({
-              username: value,
+              email: value,
             });
             
             if (isExist) {
-              throw new Error("Email is already existed");
+              throw new Error("Username is already existed");
             }
             return true;
           },
@@ -87,13 +88,13 @@ export const validateRegister = validator(
 export const loginValidator = validator(
   checkSchema(
     {
-      username: {
-        errorMessage: "Invalid email",
-        isEmail: false,
+      email: {
+        errorMessage: "Invalid username",
+        isEmail: true,
         custom: {
           options: async (value) => {
             const isUserExist = await databaseProject.users.findOne({
-              username: value,
+              email: value,
             });
 
             if (isUserExist) {

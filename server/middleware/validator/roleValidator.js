@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
-import databaseProject from "../mongodb.js";
+import databaseProject from "../../mongodb/GetDataBase.js";
+;
 const privateKey=process.env.PRIVATE_KEY;
 export const checkToken=(privateKey,token)=>{
     return new Promise((resolve,reject)=>{
@@ -28,12 +29,14 @@ export const userValidator = async (req, res, next) => {
     //   return res.json("fail")
     // }
     console.log("userUnit",userUnit);
-    const result= await databaseProject.users.findOne({_id:userUnit._id});
+    const result= await databaseProject.users.findOne({email:userUnit.email});
     console.log(result);
     // req.userEmail=userUnit.email;
     // req.decode=result
     if(result){
       if(result.role=="user"){
+        console.log(result._id.valueOf());
+        req.userID=result._id.valueOf()
         return next();
       }
       else{
@@ -60,12 +63,13 @@ export const staffValidator = async (req, res, next) => {
   //   return res.json("fail")
   // }
   console.log("userUnit",userUnit);
-  const result= await databaseProject.users.findOne({_id:userUnit._id});
+  const result= await databaseProject.users.findOne({email:userUnit.email});
   console.log(result);
   // req.userEmail=userUnit.email;
   // req.decode=result
   if(result){
     if(result.role=="staff"){
+      req.staffID=result._id.valueOf()
       return next();
     }
     else{
@@ -91,7 +95,7 @@ export const adminValidator = async (req, res, next) => {
   //   return res.json("fail")
   // }
   console.log("userUnit",userUnit);
-  const result= await databaseProject.users.findOne({_id:userUnit._id});
+  const result= await databaseProject.users.findOne({email:userUnit.email});
   console.log(result);
   // req.userEmail=userUnit.email;
   // req.decode=result

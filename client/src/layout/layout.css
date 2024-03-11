@@ -1,13 +1,25 @@
 .bookstore_header{
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px, 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
 }
+
+.navbar-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bookstore_header .navbar_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+
+    margin-left: 20px;
+}
+
 .bookstore_header a {
     position: relative;
     font-size: 16px;
@@ -36,9 +48,13 @@
     transform: scaleX(1);
 }
 
-.bookstore_header .logo{
+.bookstore_header .logo_header{
     background: transparent;
-    margin: 10px;
+    margin-right: 20px;
+}
+.navbar-links .logo_header img{
+    width: 200px;
+    height: 100px;
 }
 .bookstore_header .auth{
     display: flex;
@@ -48,18 +64,80 @@
     gap: 20px;
 }
 
+.navbar_menu-link{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.navbar_menu{
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 210px;
+    border-radius: 5px;
+}
+
+.auth_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.auth_container .sign-out{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    transition-duration: 0.5;
+    color: brown;
+    cursor: pointer;
+}
+
+.auth_container .sign-out:hover{
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+
+.user-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+
+.auth_menu{
+    display: flex;
+    flex-direction: column;
+}
+
 .bookstore_footer {
     display: flex;
     width: 100%;
+    margin-top: 20px;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    border-top: 1px solid black;
     border-bottom: 1px solid black ;
 }
 
-.bookstore_footer .logo{
+.bookstore_footer .logo_footer{
     border-right: 1px solid grey;
-    margin-top: 30px
+    
 }
 
 .bookstore_footer a{
@@ -75,17 +153,16 @@
     color: brown;
 }
 
-.bookstore_footer .information{
+.bookstore_footer .information_footer{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     width: 100%;    
     min-height: 300px;
     color: black;
-    margin-top: 30px;
+    margin: 10px;
 }
 
-.information h3 {
+.information_footer h3 {
     font-size: 35px;
     font-weight: 500;
     color: brown;
@@ -93,9 +170,16 @@
     text-decoration: underline;
 }
 
-.information .collection{
-    margin-top: 50px;
+.information_footer .collection .site .contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+
 
 .contact-info{
     margin-bottom: 27px;
@@ -123,9 +207,110 @@
 .under-footer{
     text-align: center;
     font-size: 26px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-decoration: underline;
 }
+
+
+
+@media screen and (max-width: 1050px) {
+    .bookstore_header .navbar_container{
+        display: none;
+    }
+    .auth_container {
+        display: none;
+    }
+    .navbar_menu{
+        display: flex;
+        z-index: 1;
+    }
+    .navbar-links .logo_header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .navbar_menu-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #82c97f;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .navbar_menu-link a{
+        display: flex;
+        text-align: center;
+        color: #fff;
+        gap: 10px;
+    }
+    .auth_menu{
+        gap: 10px;
+    }
+    .bookstore_footer{
+        flex-direction: column;
+    }
+    .bookstore_footer .logo_footer{
+        border-right: none ;
+    }
+    .bookstore_footer .logo img{
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .bookstore_header .navbar_container{
+        display: none;
+    }
+    .auth_container {
+        display: none;
+    }
+    .navbar_menu{
+        display: flex;
+        z-index: 1;
+    }
+    .bookstore_footer .logo_footer{
+        border-right: none ;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .bookstore_footer{
+        flex-direction: column;
+    }
+    .information_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .collection{
+        text-align: start;
+    }
+    .bookstore_footer .logo_footer{
+        border-right: none ;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .bookstore_footer{
+        flex-direction: column;
+    }
+    .information_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .collection{
+        text-align: start;
+    }
+    .bookstore_footer .logo_footer{
+        border-right: none ;
+    }
+}
+
+
 
 
 

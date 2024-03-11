@@ -1,0 +1,31 @@
+.layout{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    margin: 10px;
+   background-color: greenyellow;
+
+}
+
+.title a{
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title .link {
+    margin-bottom: 100px;
+}
+
+
+.overviewpage_wrap{
+    display: flex;
+}

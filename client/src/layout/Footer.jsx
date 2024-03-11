@@ -27,7 +27,7 @@ const siteMap = [
 const bookTypes = [
   {
     title: "Literature",
-    href: "#literature",
+    href: "/product/#literature",
   },
   {
     title: "Children",
@@ -51,20 +51,20 @@ function Footer() {
   return (
     <>
       <div className="bookstore_footer">
-        <div className="logo">
+        <div className="logo_footer">
           <img
             src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg"
-            width={250}
+            width={320}
             alt="logo"
           />
         </div>
-        <div className="information">
+        <div className="information_footer">
           <div className="collection">
             <h3>Category</h3>
             {bookTypes.map((item, index) => {
               return (
-                <div className="link">
-                  <Link to={item.href} key={index}>
+                <div className="link" key={index}>
+                  <Link to={item.href} >
                     {item.title}
                   </Link>
                 </div>
@@ -75,8 +75,8 @@ function Footer() {
             <h3>Site</h3>
             {siteMap.map((item, index) => {
               return (
-                <div className="link">
-                  <Link to={item.href} key={index}>
+                <div className="link" key={index}>
+                  <Link to={item.href} >
                     {item.title}
                   </Link>
                 </div>
