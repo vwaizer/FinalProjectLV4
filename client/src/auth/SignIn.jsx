@@ -1,10 +1,12 @@
+import axios from "axios";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { FaLock, FaUser } from "react-icons/fa";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 import AuthContext from "../context/AuthProvide";
 import Layout from "../layout/Layout";
 import "./auth.css";
-import axios from "axios";
-import { Navigate, useNavigate, useSearchParams } from "react-router-dom";
 const LOGIN_URL = "/auth";
 
 const SignIn = () => {
@@ -36,30 +38,24 @@ const SignIn = () => {
     try {
       const result = await axios.post(
         "http://localhost:4000/login",
-        { username: user, password: pwd },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            withCredentials: true,
-          },
-        }
+        { email: user, password: pwd }
       );
-      console.log(JSON.stringify(result?.data));
-      setAuth({ user, pwd});
+      setAuth({ user, pwd });
       setUser("");
       setPwd("");
       setSuccess(true);
       if (result) {
         signIn(user);
-          localStorage.setItem("remember", user);
-        alert("Login successful");
-        navigate("/");
-      } else {
-        if (result.data.access_token) {
-          signIn(user);
-          localStorage.setItem("token", result.data.access_token);
+        localStorage.setItem("remember", user);
+        console.log(result.data)
+        localStorage.setItem("accessToken", result.data);
+        toast.success("Login successfull", {
+          position: "top-right",
+      });
+        setTimeout(() => {
           navigate("/");
-        }
+
+        },2000)
       }
     } catch (err) {
       if (!err?.result) {
@@ -76,6 +72,16 @@ const SignIn = () => {
   };
   return (
     <Layout>
+      <ToastContainer
+        position="top-right" autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick rtl={false}
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="light"
+        />
       <div className="body">
         <div className="wrap">
           <form onSubmit={handleSubmit}>

@@ -22,6 +22,7 @@ const UserInfo = () => {
   
   const handleSignOut = () => {
     localStorage.removeItem("remember");
+    
   };
 
   return (

@@ -42,6 +42,7 @@
     margin-bottom: 10px;
 }
 .leftbox_collection p{
+    text-align: center;
     font-size: 18px;
     font-weight: 500;
 
@@ -63,13 +64,6 @@
     align-items: center;
 }
 
-.sort{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    border-bottom: 1px solid black;
-}
 
 .product_info{
     display: flex;
@@ -107,6 +101,90 @@
 .booktype img{
     width: 100%;
     height: 100%;
+}
+
+/* this is detail */
+
+
+.detail{
+    display: grid;
+    grid-template-columns: minmax(300px, 40%) 1fr;
+}
+
+.detail h1{
+    color: #be1a16;
+}
+
+.detail_image{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 60%;
+    height: fit-content;
+
+    margin-left: 20px;
+}
+
+.detail_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.detail_info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+.detail_title h2 {
+    color: #e7430e;
+}
+.detail_title h3{
+    text-align: end;
+}
+
+.detail_button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px 20px;
+}
+
+.detail_button button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.5 ease;
+    cursor: pointer;
+}
+
+.detail_button button:hover{
+    background-color: #be1a16;
+}
+
+.back-to-store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.back-to-store a{
+    text-decoration: none;
+}
+
+.back-to-store a:hover{
+    color: brown
+}
+
+.back-to-store .icon{
+    text-align: center;
 }
 
 @media screen and (max-width: 1050px){
