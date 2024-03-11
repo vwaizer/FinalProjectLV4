@@ -27,7 +27,7 @@ const SignIn = () => {
   useEffect(() => {
     if (data) {
       console.log("vao");
-      localStorage.setItem("token", data);
+      localStorage.setItem("accessToken", data);
 
       navigate("/");
     }
