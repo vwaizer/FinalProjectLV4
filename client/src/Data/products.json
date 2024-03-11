@@ -1372,67 +1372,67 @@
     "field": "Tác Phẩm Kinh Điển"
   },
   {
-    "name": "",
+    "name": "Khó Dỗ Dành 2",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Trúc Dĩ",
+    "price": 205.000,
+    "amount": 7430,
+    "publisher": "Nhà Xuất Bản Văn Học",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://salt.tikicdn.com/cache/750x750/ts/product/dd/28/b6/3d9ecc613a7e96558f6d3fc34601b073.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/c2/21/41/eca34e5f45ad13aee8dab45707bfdff1.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/40/28/6a/9056e7ebae9d9b2e49c184aca036aa5a.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/8c/e8/5c/1416db10d8eeddb02115080f64f5d387.jpg.webp",
+      "https://cdn0.fahasa.com/media/catalog/product/1/8/180523-5.jpg?_gl=1*1pkeuba*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcxMDE0NTE4Mi4xNi4xLjE3MTAxNDU1MzYuNTUuMC4w*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "01-01-2023",
+    "discount": "27%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Khó Dỗ Dành 1",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Trúc Dĩ",
+    "price": 205.000,
+    "amount": 6740,
+    "publisher": "Nhà Xuất Bản Văn Học",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://salt.tikicdn.com/cache/750x750/ts/product/69/50/dc/0e5fb8e2bcc8f74fa8534258dd4f2afc.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/4a/5a/8d/eb9a01e6ca11eec672932283613e9573.png.webp",
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia_kho_do_danh_tap_1_1_-1.png?_gl=1*1ljpyju*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcxMDE0NTE4Mi4xNi4xLjE3MTAxNDU1ODAuMTEuMC4w*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
+      "https://cdn0.fahasa.com/media/catalog/product/b/o/bookmark_kho_do_danh_tap_1.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/d6/79/ba/dc5e844a200847ac9c4054dbe1394009.png.webp"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "05-05-2023",
+    "discount": "27%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Thất Tịch Không Mưa (Tái Bản 2017)",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Lâu Vũ Tình",
+    "price": 86.000,
+    "amount": 9200,
+    "publisher": "Phụ Nữ",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/69/97/d0/cf72c2b3f01fe2deed53546ce66315e0.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/fe/56/5b/4c5435f1164e5ab53418c1f6161f4d7e.jpg.webp",
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/that_tich_khong_mua_tai_ban_2019/2021_11_09_09_03_06_1-390x510.jpg?_gl=1*182uku9*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcxMDE0NTE4Mi4xNi4xLjE3MTAxNDU3NDMuNTQuMC4w*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/that_tich_khong_mua_tai_ban_2019/2021_11_09_09_03_06_2-390x510.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "10-01-2019",
+    "discount": "33%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Rung Động Chỉ Vì Em",
     "type": "Văn học",
     "author": "",
     "price": ,
@@ -3934,3 +3934,4 @@
   },
   
 ]
+
