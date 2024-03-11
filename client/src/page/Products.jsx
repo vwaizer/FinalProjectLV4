@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 
 import Layout from "../layout/Layout";
 import { Menu } from "antd";
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 
 import React, { useState } from 'react';
-=======
-import Layout from "../layout/Layout";
-import { Menu } from "antd";
-import "./page.css";
-
-import React, { useState } from "react";
->>>>>>> 483d4e0e24942b3ceb7084994b67297922ca4dde
 function Products() {
   
 function getItem(label, key, icon, children, type) {
@@ -57,7 +49,6 @@ const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
       <div className="bookstore_wrap">
         <div className="leftbox">
           <div className="leftbox_collection">
-<<<<<<< HEAD
           <Menu
       mode="inline"
       openKeys={openKeys}
@@ -67,37 +58,6 @@ const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
       }}
       items={items}
     />
-=======
-            <div className="product">
-              <h2>Product Category</h2>
-              {/* 'map tu database' */}
-            </div>
-            <div className="author">
-              <h2>Author</h2>
-              {/* 'map tu database' */}
-            </div>
-            <div>
-              <h2>Publisher</h2>
-              {/* 'map tu database' */}
-            </div>
-          </div>
-        </div>
-        <div className="rigtbox">
-          <div className="rightbox_collection">
-            <div className="sort">
-              <p className="sort-name">
-                Sort by:
-                <select className="selection">
-                  <option>Name</option>
-                  <option>date</option>
-                </select>
-              </p>
-            </div>
-            <div className="product_info">
-              <h1>hello, this space uses for product information</h1>
-            {/* 'map tu database hình ảnh, tên spham, gia tien' */}
-            </div>
->>>>>>> 483d4e0e24942b3ceb7084994b67297922ca4dde
           </div>
         </div>
       </div>
