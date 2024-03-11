@@ -4,12 +4,13 @@ import { getFilterBook } from "../mongodb/service/bookService.js";
 import { getAllUser } from "../mongodb/service/userService.js";
 import { accounting, createStaff, getHiredBook, putHiredBook } from "../mongodb/service/staffService.js";
 import { getAllReceipt } from "../mongodb/service/receiptService.js";
+import { staffValidator } from "../middleware/validator/roleValidator.js";
 
 
 export const staffRoute=express.Router();
 
 staffRoute.get("/book",getFilterBook);
-staffRoute.get("/user",getAllUser)
+staffRoute.get("/user",staffValidator,getAllUser)
 staffRoute.get("/receipt",getAllReceipt);
 staffRoute.get("/hireBook",getHiredBook);
 staffRoute.put("/hiredBook/:ID",putHiredBook)

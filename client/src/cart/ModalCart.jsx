@@ -9,13 +9,12 @@ const ModalCart = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [productModal, setProductModal] = useState([])
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:4000/book")
-      .then((productModal) => setProductModal(productModal.data))
-      .catch((err) => console.log(err));
-  }, []);
-
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:4000/book")
+  //     .then((productModal) => setProductModal(productModal.data))
+  //     .catch((err) => console.log(err));
+  // }, []);
   let counting = 0;
   productModal.forEach((item,index) => {
     counting += item.amount
@@ -33,7 +32,7 @@ const ModalCart = () => {
 
   return (
     <div>
-      <Badge count={counting}>
+      <Badge count={0}>
         <Button className="button-header" type="primary" onClick={showModal}>
           <FaShoppingCart />
         </Button>
@@ -43,19 +42,6 @@ const ModalCart = () => {
           onOk={handleOk}
           onCancel={handleCancel}
         >
-         {productModal.map((item) => {
-            return (
-                <div className="modal" key={item._id}>
-                    <div>
-                        <img src={item.images} alt="modal-image" />
-                    </div>
-                    <div>
-                        <h4>{item.name}</h4>
-                        <p>{item.author}</p>
-                    </div>
-                </div>
-            )
-         })}   
         </Modal>
       </Badge>
     </div>

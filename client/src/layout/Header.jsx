@@ -64,10 +64,6 @@ function Header() {
     }
   }, [signout]);
 
-  const handleSignOut = () => {
-    localStorage.removeItem("remember");
-    setSignout(true);
-  };
   return (
     <>
       {signin ? (
@@ -93,9 +89,6 @@ function Header() {
           <div className="auth_container">
             <UserInfo />
             <ModalCart />
-            <button className="sign-out" type="button" onClick={handleSignOut}>
-              Sign-Out
-            </button>
           </div>
         </div>
       ) : (
@@ -154,10 +147,7 @@ function Header() {
             })}
             {signin ? (
               <div className="user-login">
-                <button type="button" onClick={handleSignOut}>
-                  Sign-Out
-                </button>
-                <FaUser />
+                <UserInfo/>
                 <FaShoppingCart />
               </div>
             ) : (

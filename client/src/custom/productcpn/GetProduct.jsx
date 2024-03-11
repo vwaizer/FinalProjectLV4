@@ -9,7 +9,7 @@ const GetProduct = ({ getBook }) => {
         if(index <= 10) {
           return(
             <div key={index} id="literature">
-            <Link to={`/product-detail/:id${item._id}`}>
+            <Link to={`/product-detail/${item._id}`}>
               <SetProduct
                 image={item.images}
                 name={item.name}

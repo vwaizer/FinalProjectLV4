@@ -22,6 +22,7 @@ import {
   StaffAndUser,
   Statistics,
 } from "./admin/index.js";
+import UserPage from "./user-infomation/UserPage.jsx";
 function App() {
   return (
     <AuthProvider>
@@ -31,10 +32,11 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/product" element={<Products />}></Route>
         <Route path="/cart/:ID" element={<Cart />}></Route>
-        <Route path="/product-detail/:id" element={<Detail />}></Route>
+        <Route path="/product-detail/:ID" element={<Detail />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
         <Route path="/contact" element={<ContactUs />}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
+        <Route path="/user" element={<UserPage />}></Route>
         <Route path="/admin" element={<AdminPage />}></Route>
         <Route path="/admin/overview" element={<Overview />}></Route>
         <Route path="/admin/bill" element={<Bill />}></Route>
