@@ -1,68 +1,126 @@
-
+import { Link } from "react-router-dom";
+import SetProduct from "../custom/productcpn/SetProduct";
 import Layout from "../layout/Layout";
-import { Menu } from "antd";
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import "./page.css";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import Category from "../custom/productcpn/Category";
+import GetProduct from "../custom/productcpn/GetProduct";
+import Pagination from "../pagination/Pagination";
+import { Skeleton } from "antd";
 
-import React, { useState } from 'react';
 function Products() {
-  
-function getItem(label, key, icon, children, type) {
-  return {
-    key,
-    icon,
-    children,
-    label,
-    type,
+  const [getBook, setGetBook] = useState([]);
+  const [getTypeBook, setGetTypeBook] = useState([]);
+  const [getAuthor, setGetAuthor] = useState([]);
+  const [getPublisher, setGetPublisher] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPostPerPage] = useState(8);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get("http://localhost:4000/book")
+      .then((getBook) => setGetBook(getBook.data), setLoading(false))
+      .catch((err) => console.log(err));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/book/types")
+      .then((getTypeBook) => setGetTypeBook(getTypeBook.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/book/author")
+      .then((getAuthor) => setGetAuthor(getAuthor.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/book/publisher")
+      .then((getPublisher) => setGetPublisher(getPublisher.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  const lastPostIndex = currentPage * postPerPage;
+  const firstPostIndex = lastPostIndex - postPerPage;
+  const currentPost = getBook.slice(firstPostIndex, lastPostIndex);
+
+  const Loading = () => {
+    return(
+      <>
+      <div>
+        <Skeleton height={350} />
+      </div>
+      <div>
+        <Skeleton height={350} />
+      </div>
+      </>
+    )
   };
-}
-const items = [
-  getItem('Navigation One', 'sub1', <MailOutlined />, [
-    getItem('Option 1', '1'),
-    getItem('Option 2', '2'),
-    getItem('Option 3', '3'),
-    getItem('Option 4', '4'),
-  ]),
-  getItem('Navigation Two', 'sub2', <AppstoreOutlined />, [
-    getItem('Option 5', '5'),
-    getItem('Option 6', '6'),
-    getItem('Submenu', 'sub3', null, [getItem('Option 7', '7'), getItem('Option 8', '8')]),
-  ]),
-  getItem('Navigation Three', 'sub4', <SettingOutlined />, [
-    getItem('Option 9', '9'),
-    getItem('Option 10', '10'),
-    getItem('Option 11', '11'),
-    getItem('Option 12', '12'),
-  ]),
-];
-const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
-  const [openKeys, setOpenKeys] = useState(['sub1']);
-  const onOpenChange = (keys) => {
-    const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
-    if (latestOpenKey && rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
-      setOpenKeys(keys);
-    } else {
-      setOpenKeys(latestOpenKey ? [latestOpenKey] : []);
-    }
+
+  const ShowProduct = () => {
+    return (
+      <div className="show_product">
+        <div>
+          <GetProduct getBook={currentPost} />
+        </div>
+      </div>
+    );
   };
+
   return (
     <Layout>
       <div className="bookstore_wrap">
         <div className="leftbox">
           <div className="leftbox_collection">
-          <Menu
-      mode="inline"
-      openKeys={openKeys}
-      onOpenChange={onOpenChange}
-      style={{
-        width: 256,
-      }}
-      items={items}
-    />
+            <div>
+              <h2>Product Category</h2>
+              {getTypeBook.map((value, index) => {
+                return (
+                  <div className="category" key={value.type}>
+                    <Category href="#literature" type={value.type} />
+                  </div>
+                );
+              })}
+            </div>
+            <div>
+              <h2>Author</h2>
+              {getAuthor.map((item, index) => {
+                return (
+                  <div className="author" key={index}>
+                    <p>{item.author}</p>
+                  </div>
+                );
+              })}
+            </div>
+            <div>
+              <h2>Publisher</h2>
+              {getPublisher.map((item, index) => {
+                return (
+                  <div className="publisher" key={index}>
+                    <p>{item.publisher}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
+        <div className="rightbox">
+          <div>{loading ? <Loading /> : <ShowProduct />}</div>
+          <Pagination
+            totalPost={getBook.length}
+            postPerPage={postPerPage}
+            setCurrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
+        </div>
       </div>
-
-
     </Layout>
   );
 }
