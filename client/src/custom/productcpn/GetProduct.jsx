@@ -4,7 +4,7 @@ import "./style.product.css";
 import { Link } from "react-router-dom";
 const GetProduct = ({ getBook }) => {
   return (
-    <div className="product_info">
+    <div className="container">
       {getBook.map((item, index) => {
         if(index <= 10) {
           return(

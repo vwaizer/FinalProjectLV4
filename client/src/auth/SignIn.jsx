@@ -47,8 +47,7 @@ const SignIn = () => {
       if (result) {
         signIn(user);
         localStorage.setItem("remember", user);
-        console.log(result.data)
-        localStorage.setItem("accessToken", result.data);
+        localStorage.setItem("accessToken", result.data.accessToken);
         toast.success("Login successfull", {
           position: "top-right",
       });

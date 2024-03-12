@@ -21,30 +21,29 @@ function Products() {
 
   useEffect(() => {
     setLoading(true);
-    // axios
-    //   .get("http://localhost:4000/book")
-    //   .then((getBook) => setGetBook(getBook.data), setLoading(false))
-    //   .catch((err) => console.log(err));
-    http.get("/book").then((getBook) => setGetBook(getBook.data), setLoading(false)).catch((err) => console.log(err));
+    http
+      .get("/book")
+      .then((getBook) => setGetBook(getBook.data), setLoading(false))
+      .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:4000/book/types")
+    http
+      .get("/book/types")
       .then((getTypeBook) => setGetTypeBook(getTypeBook.data))
       .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:4000/book/author")
+    http
+      .get("/book/author")
       .then((getAuthor) => setGetAuthor(getAuthor.data))
       .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:4000/book/publisher")
+    http
+      .get("/book/publisher")
       .then((getPublisher) => setGetPublisher(getPublisher.data))
       .catch((err) => console.log(err));
   }, []);
@@ -54,16 +53,16 @@ function Products() {
   const currentPost = getBook.slice(firstPostIndex, lastPostIndex);
 
   const Loading = () => {
-    return(
+    return (
       <>
-      <div>
-        <Skeleton height={350} />
-      </div>
-      <div>
-        <Skeleton height={350} />
-      </div>
+        <div>
+          <Skeleton height={350} />
+        </div>
+        <div>
+          <Skeleton height={350} />
+        </div>
       </>
-    )
+    );
   };
 
   const ShowProduct = () => {

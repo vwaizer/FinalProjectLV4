@@ -14,12 +14,15 @@ const SetProduct = ({
   return (
     <div className="setproduct">
       <div className="setproduct_custom">
-        <img src={image} alt="imgbook" />
-        <h3>{name}</h3>
-        <p>Type: {type}</p>
-        <p>Author: {author}</p>
-        <p>Filed: {field}</p>
-        <p>Amount: {amount} pcs</p>
+        <div className="product_image">
+          <img src={image} alt="imgbook" />
+        </div>
+        <div className="product_title">
+          <h3>{name}</h3>
+          <p>Type: {type}</p>
+          <p>Author: {author}</p>
+          <p>Filed: {field}</p>
+        </div>
       </div>
     </div>
   );
