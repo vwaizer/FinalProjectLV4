@@ -10,3 +10,4 @@ userRoute.get("/detailUser",userValidator,getDetailUser);
 userRoute.post("/",userValidator,addUser)
 userRoute.delete("/delete",userValidator,deleteUser);
 userRoute.put("/",userValidator,updateUser)
+userRoute.post
