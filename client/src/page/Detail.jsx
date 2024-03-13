@@ -4,6 +4,7 @@ import "./page.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { http } from "../util/http";
 function Detail () {
   const { ID } = useParams("ID");
   const navigate = useNavigate()
@@ -17,52 +18,52 @@ function Detail () {
       .catch((err) => console.log(err));
   }, []);
 
-  // const handleAddToCartClick = async (ID) => {
-  //   console.log("onclick");
-  //   if (!ID) {
-  //     console.error("Product ID is undefined");
-  //     toast.error("Product ID is undefined", {
-  //       position: toast.POSITION.TOP_RIGHT,
-  //     });
-  //     return;
-  //   }
+  const handleAddToCartClick = async (ID) => {
+    console.log("onclick");
+    if (!ID) {
+      console.error("Product ID is undefined");
+      toast.error("Product ID is undefined", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      return;
+    }
 
-  //   try {
-  //     const authToken = localStorage.getItem("remember");
+    try {
+      const authToken = localStorage.getItem("remember");
 
-  //     if (authToken) {
-  //       const response = await axios.post(
-  //         "http://localhost:4000/addToCart/:ID",
-  //         { ID, accessToken: authToken }
-  //       );
+      if (authToken) {
+        const response = await http.post(
+          "http://localhost:4000/receipt/addToCart/:ID",
+          { ID, accessToken: authToken }
+        );
 
-  //       if (response.data == "complete") {
-  //         toast.success(`Product added to cart successfully`, {
-  //           position: "top-right"
-  //         });
-  //         setTimeout(() => {
-  //           navigate(`/cart/:ID`)
-  //         })
-  //       } else {
-  //         console.error(`Failed to add product to cart:`);
-  //         toast.error(`Failed to add product to cart`, {
-  //           position: "top-right"
-  //         });
-  //       }
-  //     } else {
-  //       console.error("User not logged in. Redirecting to signin page.");
-  //       toast.error("Please log in to add products to cart", {
-  //         position: "top-right"
-  //       });
-  //       navigate('/sign-in')
-  //     }
-  //   } catch (error) {
-  //     console.error("Error adding product to cart:", error);
-  //     toast.error(`Error adding product to cart`, {
-  //       position: "top-right"
-  //     });
-  //   }
-  // };
+        if (response.data == "complete") {
+          toast.success(`Product added to cart successfully`, {
+            position: "top-right"
+          });
+          setTimeout(() => {
+            navigate(`/cart/:ID`)
+          })
+        } else {
+          console.error(`Failed to add product to cart:`);
+          toast.error(`Failed to add product to cart`, {
+            position: "top-right"
+          });
+        }
+      } else {
+        console.error("User not logged in. Redirecting to signin page.");
+        toast.error("Please log in to add products to cart", {
+          position: "top-right"
+        });
+        navigate('/sign-in')
+      }
+    } catch (error) {
+      console.error("Error adding product to cart:", error);
+      toast.error(`Error adding product to cart`, {
+        position: "top-right"
+      });
+    }
+  };
   
   return (
     <Layout>
