@@ -16,8 +16,9 @@ export const checkToken=(privateKey,token)=>{
   }
 
 export const userValidator = async (req, res, next) => {
-    console.log("accessToken",req.body);
-    const token = req.body.accessToken;
+    console.log("vao userValidator");
+    console.log(req.headers);
+    const token = req.headers.authorization.split(" ")[1];
     
     console.log(token);
     const userUnit= await checkToken(privateKey,token);
@@ -34,15 +35,17 @@ export const userValidator = async (req, res, next) => {
     // req.userEmail=userUnit.email;
     // req.decode=result
     if(result){
-      if(result.role=="user"){
-        console.log(result._id.valueOf());
-        req.userID=result._id.valueOf()
-        return next();
-      }
-      else{
-        throw new Error("You do not have permission")
-      }
-      
+      // if(result.role=="user"){
+      //   console.log(result._id.valueOf());
+      //   req.userID=result._id.valueOf()
+      //   return next();
+      // }
+      // else{
+      //   throw new Error("You do not have permission")
+      // }
+      console.log(result._id.valueOf());
+       req.userID=result._id.valueOf()
+      return next();
     }
     else{
       throw new Error("Access token is wrong")
@@ -51,7 +54,7 @@ export const userValidator = async (req, res, next) => {
 
 export const staffValidator = async (req, res, next) => {
   console.log("accessToken",req.body);
-  const token = req.body.accessToken;
+  const token = req.headers.authorization.split(" ")[1];
   
   console.log(token);
   const userUnit= await checkToken(privateKey,token);
@@ -83,7 +86,7 @@ export const staffValidator = async (req, res, next) => {
 }
 export const adminValidator = async (req, res, next) => {
   console.log("accessToken",req.body);
-  const token = req.body.accessToken;
+  const token = req.headers.authorization.split(" ")[1];
   
   console.log(token);
   const userUnit= await checkToken(privateKey,token);

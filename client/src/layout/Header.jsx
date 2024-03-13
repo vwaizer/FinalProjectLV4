@@ -148,7 +148,7 @@ function Header() {
             {signin ? (
               <div className="user-login">
                 <UserInfo/>
-                <FaShoppingCart />
+                <ModalCart />
               </div>
             ) : (
               <div className="auth_menu">

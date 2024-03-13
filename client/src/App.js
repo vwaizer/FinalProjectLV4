@@ -23,6 +23,7 @@ import {
   Statistics,
 } from "./admin/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
+import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <AuthProvider>

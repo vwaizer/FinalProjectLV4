@@ -46,6 +46,7 @@ export const getAllBook = async (req, res) => {
   return res.json(result);
 };
 export const getFilterBook = async (req, res,next) => {
+  console.log("vao");
   const query = req.query;
   if (Object.keys(query).length > 0) {
     if (query.publisher) {

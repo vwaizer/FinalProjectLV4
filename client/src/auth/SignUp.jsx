@@ -5,6 +5,8 @@ import "./auth.css";
 import axios from "axios";
 import AuthContext from "../context/AuthProvide";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function SignUp() {
   const { setAuth } = useContext(AuthContext);
@@ -28,12 +30,16 @@ function SignUp() {
         confirmPassword: checkConfirmPassword,
       });
       console.log(JSON.stringify(resultSignUp?.data));
-      if (resultSignUp) {
-        localStorage.setItem("token", resultSignUp.data.access_token);
-      }else{
-        window.alert("")
+      if (resultSignUp.access_token) {
+        setTimeout(() => {
+          navigate('/sign-in')
+        },2000)
+      }else if(resultSignUp.data.error){
+        console.log("helo")
+        toast.error("Email is already exist", {
+          position: "top-right"
+        })
       }
-      navigate("/sign-in");
       setAuth({ user, pwd, checkConfirmPassword });
       setUser("");
       setPwd("");
@@ -54,6 +60,16 @@ function SignUp() {
   };
   return (
     <Layout>
+      <ToastContainer
+        position="top-right" autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick rtl={false}
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="light"
+        />
       <div className="body">
         <div className="wrap">
           <form onSubmit={handleSubmit}>

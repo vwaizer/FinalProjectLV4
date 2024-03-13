@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Category = ({href,type}) => {
   return (
     <div>
-      <a href={href}>{type}</a>
+      <Link to={href}>{type}</Link>
     </div>
   )
 }

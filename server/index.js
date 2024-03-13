@@ -20,8 +20,8 @@ app.use(morgan('combined'))
 
 app.use(cors())
 
-app.use("/user",userRoute)
 app.use("/book",bookRoute)
+app.use("/user",userRoute)
 app.use("/staff",staffRoute)
 app.use("/",loginRoute)
 app.use("/receipt",receiptRoute)

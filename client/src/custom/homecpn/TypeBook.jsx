@@ -5,7 +5,7 @@ const TypeBook = ({href, image, alt,title}) => {
   return (
     <>
       <a href={href}><img src={image} alt={alt} /></a>
-      <p>{title}</p>
+      <p className='type-book'>{title}</p>
     </>
   )
 }
