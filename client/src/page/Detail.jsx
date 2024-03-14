@@ -93,7 +93,7 @@ function Detail () {
   })}
         </div>
         <div className="detail_button">
-          <button  type="submit">ADD TO CART</button>
+          <button onClick={handleAddToCartClick} type="submit">ADD TO CART</button>
           <button type="submit">BUY NOW</button>
           <button type="submit">FOR RENT</button>
         </div>
