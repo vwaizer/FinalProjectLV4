@@ -30,7 +30,7 @@ function SignUp() {
         confirmPassword: checkConfirmPassword,
       });
       console.log(JSON.stringify(resultSignUp?.data));
-      if (resultSignUp.access_token) {
+      if (resultSignUp.data.access_token) {
         setTimeout(() => {
           navigate('/sign-in')
         },2000)

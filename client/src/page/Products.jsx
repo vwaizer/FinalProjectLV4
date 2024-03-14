@@ -9,6 +9,7 @@ import GetProduct from "../custom/productcpn/GetProduct";
 import Pagination from "../pagination/Pagination";
 import { Skeleton } from "antd";
 import { http } from "../util/http.js";
+import ReactPaginate from 'react-paginate'
 
 function Products() {
   const [getBook, setGetBook] = useState([]);
@@ -16,8 +17,12 @@ function Products() {
   const [getAuthor, setGetAuthor] = useState([]);
   const [getPublisher, setGetPublisher] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(8);
+  const [postPerPage, setPostPerPage] = useState(32);
   const [loading, setLoading] = useState(false);
+  const lastPostIndex = currentPage * postPerPage;
+  const firstPostIndex = lastPostIndex - postPerPage;
+  const currentPost = getBook.slice(firstPostIndex, lastPostIndex);
+  const totalPage = Math.ceil(getBook.length / postPerPage);
 
   useEffect(() => {
     setLoading(true);
@@ -48,10 +53,6 @@ function Products() {
       .catch((err) => console.log(err));
   }, []);
 
-  const lastPostIndex = currentPage * postPerPage;
-  const firstPostIndex = lastPostIndex - postPerPage;
-  const currentPost = getBook.slice(firstPostIndex, lastPostIndex);
-
   const Loading = () => {
     return (
       <>
@@ -74,6 +75,15 @@ function Products() {
       </div>
     );
   };
+
+  const handlePageClick = () => {
+    if(currentPage !== firstPostIndex) {
+      setCurrentPage(currentPage - 1)
+    }
+    if(currentPage !== lastPostIndex){
+      setCurrentPage(currentPage + 1)
+    }
+  }
 
   return (
     <Layout>
@@ -114,12 +124,26 @@ function Products() {
         </div>
         <div className="rightbox">
           <div>{loading ? <Loading /> : <ShowProduct />}</div>
-          <Pagination
-            totalPost={getBook.length}
-            postPerPage={postPerPage}
-            setCurrentPage={setCurrentPage}
-            currentPage={currentPage}
-          />
+          <div>
+            <ReactPaginate 
+            previousLabel={'<<'}
+            nextLabel={'>>'}
+            breakLabel={'...'}
+            pageCount={getBook.length}
+            marginPagesDisplayed={3}
+            pageRangeDisplayed={3}
+            onPageChange={handlePageClick}
+            containerClassName={'pagination'}
+            pageClassName={'page-item'}
+            pageLinkClassName={'page-link'}
+            previousClassName={'page-item'}
+            previousLinkClassName={'page-link'}
+            nextClassName={'page-item'}
+            nextLinkClassName={'page-link'}
+            breakClassName={'page-item'}
+            breakLinkClassName={'page-link'}
+            activeClassName={'active'}/>
+          </div>
         </div>
       </div>
     </Layout>

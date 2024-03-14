@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../layout/Layout";
-import "./page.css";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
+import Layout from "../layout/Layout";
 import { http } from "../util/http";
+import "./page.css";
 function Detail () {
   const { ID } = useParams("ID");
   const navigate = useNavigate()
@@ -12,7 +11,7 @@ function Detail () {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    axios
+    http
       .get(`http://localhost:4000/book/detailBook/${ID}`)
       .then((product) => setProduct(Array(product.data)))
       .catch((err) => console.log(err));
@@ -20,30 +19,32 @@ function Detail () {
 
   const handleAddToCartClick = async (ID) => {
     console.log("onclick");
+    console.log(product);
     if (!ID) {
       console.error("Product ID is undefined");
       toast.error("Product ID is undefined", {
-        position: toast.POSITION.TOP_RIGHT,
+        position: "top-right",
       });
       return;
     }
 
     try {
+      console.log(ID);
       const authToken = localStorage.getItem("remember");
 
       if (authToken) {
         const response = await http.post(
-          "http://localhost:4000/receipt/addToCart/:ID",
+          `http://localhost:4000/receipt/addToCart/${ID}`,
           
         );
-
-        if (response.data == "complete") {
+         console.log(response);
+        if (response.status == 200) {
           toast.success(`Product added to cart successfully`, {
             position: "top-right"
           });
           setTimeout(() => {
             navigate(`/cart/:ID`)
-          })
+          },2000)
         } else {
           console.error(`Failed to add product to cart:`);
           toast.error(`Failed to add product to cart`, {
@@ -55,7 +56,8 @@ function Detail () {
         toast.error("Please log in to add products to cart", {
           position: "top-right"
         });
-        navigate('/sign-in')
+        setTimeout( navigate('/sign-in'),2000)
+       
       }
     } catch (error) {
       console.error("Error adding product to cart:", error);
@@ -67,6 +69,7 @@ function Detail () {
   
   return (
     <Layout>
+      
       <>
         <div className="detail_wrap">
           { product.map((item) => {
@@ -86,14 +89,14 @@ function Detail () {
               <IoIosArrowRoundBack className="icon" /> Back to Bookstore
             </Link>
           </div> */}
-          <h1>Price: {item.price}.000VND</h1>
+          <h1>Price: {item.price} VND</h1>
         </div>
       </div>
     );
   })}
         </div>
         <div className="detail_button">
-          <button onClick={handleAddToCartClick} type="submit">ADD TO CART</button>
+          <button  type="submit" onClick={()=>handleAddToCartClick(product[0]._id)}>ADD TO CART</button>
           <button type="submit">BUY NOW</button>
           <button type="submit">FOR RENT</button>
         </div>

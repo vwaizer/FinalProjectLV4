@@ -4,7 +4,8 @@
     "type": "Văn học",
     "author": "José Mauro de Vasconcelos",
     "price": 84.24,
-    "amount": 3000,
+    "sale": "",
+    "amout": 3000,
     "publisher": "NXB Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_217480.jpg?_gl=1*12ucoy2*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTMwMjEyOC4yLjEuMTcwOTMwMjI4MS4zNS4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -24,7 +25,8 @@
     "type": "Văn học",
     "author": "Tớ Là Mây",
     "price": 79.0,
-    "amount": 2500,
+    "sale": "",
+    "amout": 2500,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_217480.jpg?_gl=1*12ucoy2*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTMwMjEyOC4yLjEuMTcwOTMwMjI4MS4zNS4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -44,7 +46,8 @@
     "type": "Văn học",
     "author": "Amy Trương",
     "price": 79.0,
-    "amount": 1320,
+    "sale": "",
+    "amout": 1320,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/chua_kip_lon_da_phai_truong_thanh___quyen_2___phien_ban_mua_he/2023_06_22_16_50_07_1-390x510.png?_gl=1*jfz6nz*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4NjQ0MS42MC4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -64,7 +67,8 @@
     "type": "Văn học",
     "author": "Nguyễn Nhật Ánh",
     "price": 130.0,
-    "amount": 2320,
+    "sale": "",
+    "amout": 2320,
     "publisher": "NXB Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/m/u/mua-he-khong-ten---bia-mem---3d.jpg?_gl=1*wxsg70*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4NjY1Mi4zNC4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -84,7 +88,8 @@
     "type": "Văn học",
     "author": "Giá Oản Chúc",
     "price": 248.0,
-    "amount": 2890,
+    "sale": "",
+    "amout": 2890,
     "publisher": "Thanh Niên",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/4/e/4e8795e9bd076159381610.jpg",
@@ -104,7 +109,8 @@
     "type": "Văn học",
     "author": "Trà Hoa Đậu Biếc",
     "price": 185.0,
-    "amount": 3000,
+    "sale": "",
+    "amout": 3000,
     "publisher": "Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/i/bia_chanh_mat_ong-1.png",
@@ -124,7 +130,8 @@
     "type": "Văn học",
     "author": "Nguyễn Nhật Ánh",
     "price": 110.0,
-    "amount": 3200,
+    "sale": "",
+    "amout": 3200,
     "publisher": "NXB Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/l/a/lam-ban-voi-bau-troi_bia-mem_3d.gif?_gl=1*1l8sp6r*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4NzU5OC40MS4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -144,7 +151,8 @@
     "type": "Văn học",
     "author": "Paulo Coelho",
     "price": 79.0,
-    "amount": 4500,
+    "sale": "",
+    "amout": 4500,
     "publisher": "NXB Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235226272_1.jpg?_gl=1*aybq9c*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4Nzc5OS4zNy4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -164,7 +172,8 @@
     "type": "Văn học",
     "author": "Mộc Trầm",
     "price": 85.0,
-    "amount": 1000,
+    "sale": "",
+    "amout": 1000,
     "publisher": "Thế Giới",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/len_nhat_chuyen_doi/2023_02_01_09_29_58_1-390x510.jpg?_gl=1*1070qwx*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4ODA5NC40MS4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -184,7 +193,8 @@
     "type": "Văn học",
     "author": "Rafael Sabatini",
     "price": 159.0,
-    "amount": 1200,
+    "sale": "",
+    "amout": 1200,
     "publisher": "NXB Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thuyen_truong_blood/2020_11_04_17_31_31_1-390x510.jpg?_gl=1*1bc2egw*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4ODQwOS41My4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -204,7 +214,8 @@
     "type": "Văn học",
     "author": "Nguyễn Nhật Ánh",
     "price": 125.0,
-    "amount": 4210,
+    "sale": "",
+    "amout": 4210,
     "publisher": "NXB Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ngay_xua_co_mot_chuyen_tinh_tai_ban_2019/2021_06_11_15_33_10_1-390x510.jpg?_gl=1*1hq6ed*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4ODY3NC4xLjAuMA..*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -224,7 +235,8 @@
     "type": "Văn học",
     "author": "Kito Aya",
     "price": 80.0,
-    "amount": 5200,
+    "sale": "",
+    "amout": 5200,
     "publisher": "NXB Hội Nhà Văn",
     "images": [
       "https://tusachtiasang.org/wp-content/uploads/2022/05/68-sach-mot-lit-nuoc-mat-min.jpg",
@@ -244,7 +256,8 @@
     "type": "Văn học",
     "author": "Ocean Vuong",
     "price": 135.0,
-    "amount": 3670,
+    "sale": "",
+    "amout": 3670,
     "publisher": "NXB Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_5473.jpg",
@@ -264,7 +277,8 @@
     "type": "Văn học",
     "author": "Hàm Yên",
     "price": 248.0,
-    "amount": 2600,
+    "sale": "",
+    "amout": 2600,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ca_voi_co_don___tap_1/2024_02_28_16_36_27_1-390x510.jpg",
@@ -284,7 +298,8 @@
     "type": "Văn học",
     "author": "Nina George",
     "price": 149.0,
-    "amount": 3540,
+    "sale": "",
+    "amout": 3540,
     "publisher": "NXB Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_41026.jpg?_gl=1*13c8pm7*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTYyMDQ4MC42LjEuMTcwOTYyMDUxNi4yNC4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
@@ -304,7 +319,8 @@
     "type": "Văn học",
     "author": "James Albert Michener",
     "price": 115.0,
-    "amount": 2890,
+    "sale": "",
+    "amout": 2890,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235151.jpg",
@@ -324,7 +340,8 @@
     "type": "Văn học",
     "author": "Thạch Lam",
     "price": 50.0,
-    "amount": 2340,
+    "sale": "",
+    "amout": 2340,
     "publisher": "NXB Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_1-390x510.jpg",
@@ -343,8 +360,9 @@
     "name": "Trốn Lên Mái Nhà Để Khóc - Tặng Kèm Bookmark",
     "type": "Văn học",
     "author": "Lam",
-    "price": 95.000,
-    "amount": 4000,
+    "price": 95.0,
+    "sale": "",
+    "amout": 4000,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1-tr_n-l_n-m_i-nh_-_-kh_c-2.jpg",
@@ -363,8 +381,9 @@
     "name": "Con Gái Phải Mạnh Mẽ (Tái Bản 2023) (Bìa Sách Giao Ngẫu Nhiên)",
     "type": "Văn học",
     "author": "Ploy",
-    "price": 88.000,
-    "amount": 2400,
+    "price": 88.0,
+    "sale": "",
+    "amout": 2400,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/c/g/cgpmm-dd.jpg",
@@ -383,8 +402,9 @@
     "name": "Tạm Biệt Tôi Của Nhiều Năm Về Trước",
     "type": "Văn học",
     "author": "An",
-    "price": 95.000,
-    "amount": 3450,
+    "price": 95.0,
+    "sale": "",
+    "amout": 3450,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_tam-biet-toi-cua-nhieu-nam-ve-truoc.jpg",
@@ -403,8 +423,9 @@
     "name": "Chúng Ta Sinh Ra Là Để Hạnh Phúc",
     "type": "Văn học",
     "author": "nhungdieubinhyen",
-    "price": 92.000,
-    "amount": 3200,
+    "price": 92.0,
+    "sale": "",
+    "amout": 3200,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/i/bia1chungta.jpg",
@@ -418,12 +439,14 @@
     "dateIn": "08-11-2023",
     "discount": "24%",
     "field": "Truyện ngắn - tản văn"
-  },{
+  },
+  {
     "name": "Tìm Tri Kỷ, Thấy Tình Yêu",
     "type": "Văn học",
     "author": "Trang Ps",
-    "price": 109.000,
-    "amount": 4500,
+    "price": 109.0,
+    "sale": "",
+    "amout": 4500,
     "publisher": "NXB Thế Giới",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/t/_/t_m-tri-k_-th_y-t_nh-y_u.jpg",
@@ -437,12 +460,14 @@
     "dateIn": "03-28-2022",
     "discount": "27%",
     "field": "Truyện ngắn - tản văn"
-  },{
+  },
+  {
     "name": "",
     "type": "",
     "author": "",
-    "price": 75.000,
-    "amount": 4780,
+    "price": 75.0,
+    "sale": "",
+    "amout": 4780,
     "publisher": "",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/i/bia-1-chi-can-long.jpg",
@@ -456,12 +481,14 @@
     "dateIn": "09-25-2024",
     "discount": "20%",
     "field": "Truyện ngắn - tản văn"
-  },{
+  },
+  {
     "name": "Let’s Grow Up Together - Cùng Bạn Trưởng Thành",
     "type": "Văn học",
     "author": "Ying Shu, Dương Thanh Trà",
-    "price": 99.000,
-    "amount": 5200,
+    "price": 99.0,
+    "sale": "",
+    "amout": 5200,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935325012167.jpg",
@@ -475,12 +502,14 @@
     "dateIn": "10-03-2023",
     "discount": "22%",
     "field": "Truyện ngắn - tản văn"
-  },{
+  },
+  {
     "name": "Gửi Cậu, Cậu Không Cô Đơn Trên Hành Trình Này Đâu",
     "type": "Văn học",
     "author": "",
-    "price": 89.000,
-    "amount": 4050,
+    "price": 89.0,
+    "sale": "",
+    "amout": 4050,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/1/b1-g_i---c_u.jpg",
@@ -494,12 +523,14 @@
     "dateIn": "06-04-2023",
     "discount": "27%",
     "field": "Truyện ngắn - tản văn"
-  },{
+  },
+  {
     "name": "Người Tính Không Bằng Drama Tính - Tặng Kèm 1 Bookmark + 3 Postcard Ngẫu Nhiên",
     "type": "Văn học",
     "author": "Pương Pương",
-    "price": 96.000,
-    "amount": 4360,
+    "price": 96.0,
+    "sale": "",
+    "amout": 4360,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/3/7/378857764_629093732706656_8523099323792837708_n-2.jpg",
@@ -513,12 +544,14 @@
     "dateIn": "03-07-2023",
     "discount": "10%",
     "field": "Truyện ngắn - tản văn"
-  },{
+  },
+  {
     "name": "Vô Thường (Tái Bản)",
     "type": "Văn học",
     "author": "Nguyễn Bảo Trung",
-    "price": 140.000,
-    "amount": 5420,
+    "price": 140.0,
+    "sale": "",
+    "amout": 5420,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/z/3/z3925582813343_4bf5fd3ce48c2f8b6727ee8491967c92.jpg",
@@ -532,12 +565,14 @@
     "dateIn": "05-20-2022",
     "discount": "7%",
     "field": "Truyện ngắn - tản văn"
-  },{
+  },
+  {
     "name": "Tổ Chim Sẻ Nâu",
     "type": "Văn học",
     "author": "Nguyễn Bảo Trung",
-    "price": 140.000,
-    "amount": 3890,
+    "price": 140.0,
+    "sale": "",
+    "amout": 3890,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/z/3/z3925582688247_b30d25fa5eb09fe0728fd1e49e06c456.jpg",
@@ -551,12 +586,14 @@
     "dateIn": "01-04-2022",
     "discount": "29%",
     "field": "Truyện ngắn - tản văn"
-  },{
+  },
+  {
     "name": "Ghi Chép Pháp Y - Những Thi Thể Không Hoàn Chỉnh",
     "type": "Văn học",
     "author": "Lưu Bát Bách",
-    "price": 130.000,
-    "amount": 7300,
+    "price": 130.0,
+    "sale": "",
+    "amout": 7300,
     "publisher": "Thanh Niên",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-tr_c-ph_p-y-3.jpg",
@@ -575,8 +612,9 @@
     "name": "Mất Tích",
     "type": "Văn học",
     "author": "Robert Dugoni",
-    "price": 199.000,
-    "amount": 3420,
+    "price": 199.0,
+    "sale": "",
+    "amout": 3420,
     "publisher": "Thanh Niên",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -595,8 +633,9 @@
     "name": "Ma Quỷ Dân Gian Ký - Quyển 2",
     "type": "Văn học",
     "author": "Duy Văn",
-    "price": 298.000,
-    "amount": 5200,
+    "price": 298.0,
+    "sale": "",
+    "amout": 5200,
     "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/f/u/full-bia-ao.jpg",
@@ -615,8 +654,9 @@
     "name": "Hỏa Ngục - Bìa Cứng (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Dan Brown",
-    "price": 239.000,
-    "amount": 6130,
+    "price": 239.0,
+    "sale": "",
+    "amout": 6130,
     "publisher": "Lao Động",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -635,8 +675,9 @@
     "name": "Bí Ẩn Sau Cánh Cửa Nhà Xác - Ghi Chép Của Người Giải Phẫu Tử Thi",
     "type": "Văn học",
     "author": "Carla Valentine",
-    "price": 120.000,
-    "amount": 4670,
+    "price": 120.0,
+    "sale": "",
+    "amout": 4670,
     "publisher": "Thanh Niên",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-tr_c-nh_-x_c.jpg",
@@ -655,8 +696,9 @@
     "name": "Phía Sau Nghi Can X (Tái Bản 2024)",
     "type": "Văn học",
     "author": "Higashino Keigo",
-    "price": 129.000,
-    "amount": 4500,
+    "price": 129.0,
+    "sale": "",
+    "amout": 4500,
     "publisher": "NXB Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_187738_1.jpg",
@@ -675,8 +717,9 @@
     "name": "Nhập Vai Thám Tử",
     "type": "Văn học",
     "author": "G.T. Karber",
-    "price": 119.000,
-    "amount": 6800,
+    "price": 119.0,
+    "sale": "",
+    "amout": 6800,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/n/h/nh_p-vai-th_m-t_.jpg",
@@ -695,8 +738,9 @@
     "name": "Thú Tội (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Minato Kanae",
-    "price": 99.000,
-    "amount": 5700,
+    "price": 99.0,
+    "sale": "",
+    "amout": 5700,
     "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235237247.jpg",
@@ -715,8 +759,9 @@
     "name": "Hồ Sơ Tâm Lí Tội Phạm - Tập 2",
     "type": "Văn học",
     "author": "Cương Tuyết Ấn",
-    "price": 110.000,
-    "amount": 3200,
+    "price": 110.0,
+    "sale": "",
+    "amout": 3200,
     "publisher": "Kim Đồng",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -735,8 +780,9 @@
     "name": "Đứa Trẻ Hư (Tái Bản 2022)",
     "type": "Văn học",
     "author": "Tử Kim Trần",
-    "price": 159.000,
-    "amount": 7900,
+    "price": 159.0,
+    "sale": "",
+    "amout": 7900,
     "publisher": "Hồng Đức",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/3/3/3300000021157.jpg",
@@ -755,8 +801,9 @@
     "name": "Án Mạng Kép Ở Vườn Địa Đàng",
     "type": "Văn học",
     "author": "Eva García Sáenz De Urturi",
-    "price": 248.000,
-    "amount": 6490,
+    "price": 248.0,
+    "sale": "",
+    "amout": 6490,
     "publisher": "Phụ Nữ Việt Nam",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8936213491064.jpg",
@@ -775,8 +822,9 @@
     "name": "Hình Cảnh Mất Trí",
     "type": "Văn học",
     "author": "Chan Ho Kei",
-    "price": 100.000,
-    "amount": 5700,
+    "price": 100.0,
+    "sale": "",
+    "amout": 5700,
     "publisher": "NXB Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/h/i/hinh-canh-mat-tri---bia1.jpg",
@@ -795,8 +843,9 @@
     "name": "Mindhunter - Kẻ Săn Suy Nghĩ (Tái Bản 2023)",
     "type": "Văn học",
     "author": "John E Douglas, Mark Olshaker",
-    "price": 145.000,
-    "amount": 4900,
+    "price": 145.0,
+    "sale": "",
+    "amout": 4900,
     "publisher": "Thanh Hoa",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_mindhunter-k_-s_n-suy-ngh_.jpg",
@@ -815,8 +864,9 @@
     "name": "Tết Ở Làng Địa Ngục",
     "type": "Văn học",
     "author": "Thảo Trang",
-    "price": 169.000,
-    "amount": 8900,
+    "price": 169.0,
+    "sale": "",
+    "amout": 8900,
     "publisher": "NXB Thanh Niên",
     "images": [
       "https://dnamedical.vn/wp-content/uploads/2023/10/tet-o-lang-dia-nguc-pdf-1.jpg",
@@ -835,8 +885,9 @@
     "name": "Tam Thể 03 - Tử Thần Sống Mãi",
     "type": "Văn học",
     "author": "Lưu Từ Hân",
-    "price": 290.000,
-    "amount": 4820,
+    "price": 290.0,
+    "sale": "",
+    "amout": 4820,
     "publisher": "NXB Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_230358.jpg",
@@ -855,8 +906,9 @@
     "name": "Sĩ Số Lớp Vắng 0",
     "type": "Văn học",
     "author": "Emma Hạ My",
-    "price": 102.000,
-    "amount": 7600,
+    "price": 102.0,
+    "sale": "",
+    "amout": 7600,
     "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/2/4/24d0a082-972d-44c5-bcc3-5b41f575cbd5.jpg",
@@ -875,8 +927,9 @@
     "name": "Điều Kỳ Diệu Của Tiệm Tạp Hóa Namiya (Tái Bản 2018)",
     "type": "Văn học",
     "author": "Higashino Keigo",
-    "price": 105.000,
-    "amount": 5900,
+    "price": 105.0,
+    "sale": "",
+    "amout": 5900,
     "publisher": "NXB Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235217508_11.jpg",
@@ -895,8 +948,9 @@
     "name": "Dê Mắt Quỷ",
     "type": "Văn học",
     "author": "Chan-Ho-Kei",
-    "price": 229.000,
-    "amount": 8600,
+    "price": 229.0,
+    "sale": "",
+    "amout": 8600,
     "publisher": "Thanh Niên",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -915,8 +969,9 @@
     "name": "Ngủ Cùng Người Chết",
     "type": "Văn học",
     "author": "Thảo Trang",
-    "price": 185.000,
-    "amount": 7400,
+    "price": 185.0,
+    "sale": "",
+    "amout": 7400,
     "publisher": "Phụ Nữ Việt Nam",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043751871.jpg",
@@ -935,8 +990,9 @@
     "name": "Rừng Than Khóc",
     "type": "Văn học",
     "author": "Thục Linh",
-    "price": 189.000,
-    "amount": 5400,
+    "price": 189.0,
+    "sale": "",
+    "amout": 5400,
     "publisher": "Thanh Niên",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -955,8 +1011,9 @@
     "name": "17 Âm 1",
     "type": "Văn học",
     "author": "Doo Vandenis",
-    "price": 169.000,
-    "amount": 7450,
+    "price": 169.0,
+    "sale": "",
+    "amout": 7450,
     "publisher": "Thanh Niên",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8936213491057.jpg",
@@ -975,8 +1032,9 @@
     "name": "Vùng Đất Quỷ Tha Ma Bắt",
     "type": "Văn học",
     "author": "Kevin Chen",
-    "price": 168.000,
-    "amount": 4700,
+    "price": 168.0,
+    "sale": "",
+    "amout": 4700,
     "publisher": "Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235236912.jpg",
@@ -995,8 +1053,9 @@
     "name": "Lâu Đài Bay Của Pháp Sư Howl (Tái Bản 2019)",
     "type": "Văn học",
     "author": "Diana Wynne Jones",
-    "price": 106.000,
-    "amount": 10200,
+    "price": 106.0,
+    "sale": "",
+    "amout": 10200,
     "publisher": "NXB Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_33740.jpg",
@@ -1015,8 +1074,9 @@
     "name": "Harry Potter Và Hòn Đá Phù Thuỷ - Tập 1 (Tái Bản)",
     "type": "Văn học",
     "author": "J.K.Rowling, Lý Lan",
-    "price": 150.000,
-    "amount": 8400,
+    "price": 150.0,
+    "sale": "",
+    "amout": 8400,
     "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974179672.jpg",
@@ -1036,7 +1096,8 @@
     "type": "Văn học",
     "author": "Tiên Sắc Xám",
     "price": 109.009,
-    "amount": 6450,
+    "sale": "",
+    "amout": 6450,
     "publisher": "NXB Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/6/0/600b_-m_t-th_ng-_ng-b_a-tr_c.jpg",
@@ -1055,8 +1116,9 @@
     "name": "Nữ Phù Thủy - Bí Mật Của Nicholas Flamel Bất Tử (Tái Bản 2018)",
     "type": "Văn học",
     "author": "Michael Scott",
-    "price": 155.000,
-    "amount": 5300,
+    "price": 155.0,
+    "sale": "",
+    "amout": 5300,
     "publisher": "NXB Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_180164_1_43_1_57_1_4_1_2_1_210_1_29_1_98_1_25_1_21_1_5_1_3_1_18_1_18_1_45_1_26_1_32_1_14_1_413.jpg",
@@ -1075,8 +1137,9 @@
     "name": "Shaman - Những Vị Pháp Sư Cuối Cùng",
     "type": "Văn học",
     "author": "Don Jose Ruiz",
-    "price": 109.000,
-    "amount": 6800,
+    "price": 109.0,
+    "sale": "",
+    "amout": 6800,
     "publisher": "Phụ Nữ Việt Nam",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -1095,8 +1158,9 @@
     "name": "Bách Hóa Giấc Mơ Của Ngài Dollargut",
     "type": "Văn học",
     "author": "Lee Miye",
-    "price": 130.000,
-    "amount": 5470,
+    "price": 130.0,
+    "sale": "",
+    "amout": 5470,
     "publisher": "Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235342.jpg",
@@ -1115,8 +1179,9 @@
     "name": "Thần Thoại Hy Lạp - Bìa Cứng (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Nhiều Tác Giả",
-    "price": 195.000,
-    "amount": 6400,
+    "price": 195.0,
+    "sale": "",
+    "amout": 6400,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -1135,8 +1200,9 @@
     "name": "Hai Số Phận (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Jeffrey Archer",
-    "price": 195.000,
-    "amount": 7300,
+    "price": 195.0,
+    "sale": "",
+    "amout": 7300,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -1155,8 +1221,9 @@
     "name": "Hai Vạn Dặm Dưới Biển (Tái Bản 2022)",
     "type": "Văn học",
     "author": "Jules Verne",
-    "price": 102.000,
-    "amount": 5680,
+    "price": 102.0,
+    "sale": "",
+    "amout": 5680,
     "publisher": "NXB Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -1175,8 +1242,9 @@
     "name": "Ông Già Và Biển Cả (Tái Bản 2018)",
     "type": "Văn học",
     "author": "Ernest Hemingway",
-    "price": 45.000,
-    "amount": 8400,
+    "price": 45.0,
+    "sale": "",
+    "amout": 8400,
     "publisher": "NXB Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -1195,8 +1263,9 @@
     "name": "Trăm Năm Cô Đơn (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Gabriel Garcia Márquez",
-    "price": 199.000,
-    "amount": 4900,
+    "price": 199.0,
+    "sale": "",
+    "amout": 4900,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235240292.jpg",
@@ -1215,8 +1284,9 @@
     "name": "Thép Đã Tôi Thế Đấy (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Nikolai A Ostrovsky",
-    "price": 125.000,
-    "amount": 7000,
+    "price": 125.0,
+    "sale": "",
+    "amout": 7000,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236432832.jpg",
@@ -1235,8 +1305,9 @@
     "name": "Những Tấm Lòng Cao Cả - Bìa Cứng (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Edmondo De Amicis",
-    "price": 135.000,
-    "amount": 7340,
+    "price": 135.0,
+    "sale": "",
+    "amout": 7340,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -1255,8 +1326,9 @@
     "name": "Chuyến Du Hành Vào Lòng Đất",
     "type": "Văn học",
     "author": "Jules Verne",
-    "price": 139.000,
-    "amount": 5680,
+    "price": 139.0,
+    "sale": "",
+    "amout": 5680,
     "publisher": "Thanh Niên",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -1275,8 +1347,9 @@
     "name": "Đồi Gió Hú (Tái Bản 2022)",
     "type": "Văn học",
     "author": "Emily Bronte",
-    "price": 105.000,
-    "amount": 6390,
+    "price": 105.0,
+    "sale": "",
+    "amout": 6390,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236428521.jpg",
@@ -1295,8 +1368,9 @@
     "name": "Từ Trái Đất Đến Mặt Trăng - Bìa Cứng (Tái Bản 2022)",
     "type": "Văn học",
     "author": "Jules Verne",
-    "price": 88.000,
-    "amount": 5380,
+    "price": 88.0,
+    "sale": "",
+    "amout": 5380,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236428866.jpg",
@@ -1315,8 +1389,9 @@
     "name": "Anne Tóc Đỏ Ở Đảo Hoàng Tử Edward (Tái Bản 2018)",
     "type": "Văn học",
     "author": "L M Montgomery",
-    "price": 95.000,
-    "amount": 5830,
+    "price": 95.0,
+    "sale": "",
+    "amout": 5830,
     "publisher": "NXB Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235217591.jpg",
@@ -1335,8 +1410,9 @@
     "name": "Văn Học Cổ Điển - Truyện Loài Vật (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Ernest Seton Thompson",
-    "price": 135.000,
-    "amount": 4890,
+    "price": 135.0,
+    "sale": "",
+    "amout": 4890,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/t/r/truyen-loai-vat-01.jpg",
@@ -1355,8 +1431,9 @@
     "name": "Sử Ký Tư Mã Thiên (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Tư Mã Thiên",
-    "price": 220.000,
-    "amount": 7420,
+    "price": 220.0,
+    "sale": "",
+    "amout": 7420,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236431521.jpg",
@@ -1375,8 +1452,9 @@
     "name": "Khó Dỗ Dành 2",
     "type": "Văn học",
     "author": "Trúc Dĩ",
-    "price": 205.000,
-    "amount": 7430,
+    "price": 205.0,
+    "sale": "",
+    "amout": 7430,
     "publisher": "Nhà Xuất Bản Văn Học",
     "images": [
       "https://salt.tikicdn.com/cache/750x750/ts/product/dd/28/b6/3d9ecc613a7e96558f6d3fc34601b073.jpg.webp",
@@ -1395,8 +1473,9 @@
     "name": "Khó Dỗ Dành 1",
     "type": "Văn học",
     "author": "Trúc Dĩ",
-    "price": 205.000,
-    "amount": 6740,
+    "price": 205.0,
+    "sale": "",
+    "amout": 6740,
     "publisher": "Nhà Xuất Bản Văn Học",
     "images": [
       "https://salt.tikicdn.com/cache/750x750/ts/product/69/50/dc/0e5fb8e2bcc8f74fa8534258dd4f2afc.jpg.webp",
@@ -1415,8 +1494,9 @@
     "name": "Thất Tịch Không Mưa (Tái Bản 2017)",
     "type": "Văn học",
     "author": "Lâu Vũ Tình",
-    "price": 86.000,
-    "amount": 9200,
+    "price": 86.0,
+    "sale": "",
+    "amout": 9200,
     "publisher": "Phụ Nữ",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
@@ -1434,296 +1514,307 @@
   {
     "name": "Rung Động Chỉ Vì Em",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Nghê Đa Hỉ",
+    "price": 189.0,
+    "sale": "",
+    "amout": 5760,
+    "publisher": "Hà Nội",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/4c/e4/c4/e261200d061d285e0597d63f0e167590.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/d6/4a/be/4883e39791d46a2a6c2c77e2f3cd157e.png.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/43/87/1d/b1c3ec929b3f1ce83c7bc853ab4529e0.png.webp",
+      "https://salt.tikicdn.com/ts/review/f7/a8/9f/4b8e28f7e8dd60a15e2855b8ea3da0ea.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "11-11-2023",
+    "discount": "33%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Mãi Mãi Là Bao Xa (Tái Bản 2019)",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Diệp Lạc Vô Tâm",
+    "price": 135.0,
+    "sale": "",
+    "amout": 8390,
+    "publisher": "Thanh Niên",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/90/7b/0e/68401d4ae03050405e670e100e8617fb.png.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/d7/58/3b/a11ac7377d1a203eb3bc0c7617722006.jpg.webp",
+      "https://bloganchoi.com/wp-content/uploads/2019/09/mai-mai-la-bao-xa-1.jpg",
+      "https://bloganchoi.com/wp-content/uploads/2019/09/mai-mai-la-bao-xa-21.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "07-01-2019",
+    "discount": "33%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "All In Love - Ngập Tràn Yêu Thương (Tái Bản 2020)",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Cố Tây Tước",
+    "price": 119.0,
+    "sale": "",
+    "amout": 8405,
+    "publisher": "NXB Phụ Nữ",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://down-vn.img.susercontent.com/file/7b7ca6c8f5e6215f01893b460792f7e7_tn",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/e1/e8/87/9f145040fc3ddb9d294566e47a1c1dd5.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/31/89/ae/76687f086f9b93134b5795bdb25bc11e.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/17/0a/f6/ed3e7178da0125354c28236e66c13da0.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/31/89/ae/76687f086f9b93134b5795bdb25bc11e.jpg.webp"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "05-01-2020",
+    "discount": "33%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Chỉ Muốn Thương Anh, Chiều Anh, Nuôi Anh",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Túy Hậu Ngư Ca",
+    "price": 259.0,
+    "sale": "",
+    "amout": 5930,
+    "publisher": "Văn Học",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://salt.tikicdn.com/cache/750x750/ts/product/e9/05/c8/3313492991841978802a1a41a1e979f5.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/c9/b0/d0/8b49c37e9c4fb234949461d1dff6078f.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/cb/67/98/1e09bda094f09a7a2153f5dfd63afc19.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/e1/8b/04/0f1033aa0c2094f85f375b7a8828cac3.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/09/4a/38/33e9c5210eb55814c74ca3e62c4e216f.jpg.webp"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "10-10-2023",
+    "discount": "33%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Yêu Em Từ Cái Nhìn Đầu Tiên (Tái Bản 2023)",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Cố Mạn",
+    "price": 179.0,
+    "sale": "",
+    "amout": 10370,
+    "publisher": "Văn Học",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/yeu_em_tu_cai_nhin_dau_tien_tai_ban_2023/2024_01_20_12_46_56_1-390x510.jpg",
+      "https://cdn0.fahasa.com/media/catalog/product/s/a/sach-yeu-em-tu-cai-nhin-dau-tien.jpg",
+      "https://salt.tikicdn.com/cache/540x540/ts/product/7d/20/e5/94620f070f9ffd44097c7bbe33cf254e.jpg",
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/yeu_em_tu_cai_nhin_dau_tien_tai_ban_2023/2024_01_20_12_46_56_6-390x510.jpg",
+      "https://salt.tikicdn.com/cache/550x550/ts/product/e4/e1/4a/b5742cc6a53443d404e585e08dcc84fa.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "02-23-2016",
+    "discount": "38%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Hậu Cung Như Ý Truyện - Tập 1 - Tặng Kèm Bookmark Bồi Cứng + Card Nhân Vật",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Lưu Liễm Tử",
+    "price": 229.0,
+    "sale": "",
+    "amout": 9360,
+    "publisher": "Văn Học",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1---h_u-cung-nh_-_-truy_n-t_p-1.jpg",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/76/c9/cb/b849b77c1af645cd44588246e777ea3f.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/6b/2a/fe/26e2b67b93b0735b1ee3ff6514fe0c45.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/60/88/51/d9449243214ee2084d5d9bd572793c93.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/11/36/c8/49d613bd3edfd8b438b234de1cf50290.jpg.webp"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "01-01-2023",
+    "discount": "27%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Trêu Nhầm - Tập 1 - Tặng Kèm Bookmark Bồi Cứng",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Kiều Diêu",
+    "price": 179.0,
+    "sale": "",
+    "amout": 5860,
+    "publisher": "Văn Học",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/z/4/z4665419922614_2a1c3214c59132107e9fd4be7f29e4ca.jpg",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/4c/18/69/f5496c00a05928639c0b0e6901788fdb.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/4f/8a/49/cfcba04dff3633007baf56dd872dd38f.jpg.webp",
+      "https://salt.tikicdn.com/cache/w400/ts/product/9f/24/87/6e3a12b0151f34e5660446d490222eb7.jpg",
+      "https://salt.tikicdn.com/cache/w1200/ts/product/d5/5b/6c/e3bd0644bf20702597280e4e522abe2d.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "09-09-2023",
+    "discount": "27%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Bộ Sách Quả Ngọt Năm Tháng - Tập 1 + Tập 2 (Bộ 2 Tập) - Tặng Kèm Bookmark + Postcard",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Mạch Ngôn Xuyên",
+    "price": 295.0,
+    "sale": "",
+    "amout": 8490,
+    "publisher": "Thanh Niên",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/a/n/anhmh_12.jpg",
+      "https://cdn0.fahasa.com/media/catalog/product/a/n/anhmh_1_2.jpg",
+      "https://cdn0.fahasa.com/media/catalog/product/a/n/anhmh1_8.jpg",
+      "https://cdn0.fahasa.com/media/catalog/product/a/n/anhmh2_3.jpg",
+      "https://cdn0.fahasa.com/media/catalog/product/a/n/anhmh3.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "12-20-2023",
+    "discount": "27%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Đã Nhiều Năm Như Thế - Tập 1 - Bản Đặc Biệt - Tặng Kèm Bookmark + Postcard Giấy Nhũ Ngọc Trai",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Bát Nguyệt Trường An",
+    "price": 160.0,
+    "sale": "",
+    "amout": 6930,
+    "publisher": "Phụ Nữ Việt Nam",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://salt.tikicdn.com/cache/750x750/ts/product/36/4e/6a/0081559a2556d6c9ab6df0e79d548ef8.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/b1/c7/64/4f973bae33c8f552527ec119b5b5bbfe.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/45/fb/60/7f6347f6f0d821744002584aef6c69e1.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/7c/b1/ba/db473a602ec2e431ec0ffa7bd4b51a25.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/e4/5a/dd/8edea61c4a1894d348755b07aaf479e3.jpg.webp"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "08-22-2023",
+    "discount": "24%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Đã Nhiều Năm Như Thế - Tập 2 - Bản Đặc Biệt - Tặng Kèm Bookmark + Postcard",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Bát Nguyệt Trường An",
+    "price": 165.0,
+    "sale": "",
+    "amout": 6630,
+    "publisher": "Phụ Nữ Việt Nam",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/z/4/z4709987853676_c1b2ad2f2201c1ce4cd8adb5ea445f68.jpg",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/85/41/3d/047e564c7487c71279f428a33739d388.jpg.webp",
+      "https://bookbuy.vn/Res/Images/Product/da-nhieu-nam-nhu-the-tap-2-_125968_1.jpg",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/0d/7b/4d/3262802dad9588099e24bcd48c58faa3.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/90/9f/a5/e6023b91f5de0090371f6912e221495b.jpg.webp"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "09-20-2023",
+    "discount": "24%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Đã Nhiều Năm Như Thế - Tập 3 - Bản Đặc Biệt - Tặng Kèm Bookmark + Postcard",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Bát Nguyệt Trường An",
+    "price": 155.0,
+    "sale": "",
+    "amout": 6480,
+    "publisher": "Phụ Nữ Việt Nam",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/z/4/z4818840647209_026be80a1677a0142b00636eb33a0726.jpg",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/80/ce/b1/e4dd24bb47ec5cd2df5b8e50483dde8b.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/c4/1f/87/a1afefbcb4d9564dfa3541fdd6f2f62c.JPG.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/e5/ba/c6/aaf0bc479346c4341324b18af7b99717.JPG.webp",
+      "https://bizweb.dktcdn.net/100/490/462/products/b-a-1-nhi-u-n-m-nh-th.jpg?v=1698424340730"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "09-28-2023",
+    "discount": "24%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Một Nửa Ngọt Ngào, Một Nửa Đau Thương",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Kỳ Tử",
+    "price": 179.0,
+    "sale": "",
+    "amout": 8305,
+    "publisher": "NXB Văn Học",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935212354899.jpg?_gl=1*18ge8xi*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcxMDE2MDkzOC4xNy4xLjE3MTAxNjMyODUuMzAuMC4w*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935212354899_2.jpg",
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935212354899_1.jpg",
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/mot_nua_ngot_ngao__mot_nua_dau_thuong/2023_02_13_18_30_41_1-390x510.jpg",
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/mot_nua_ngot_ngao__mot_nua_dau_thuong/2023_02_13_18_30_41_5-390x510.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "07-01-2021",
+    "discount": "10%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Một Đời Một Kiếp, Giang Nam Lão",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Mặc Bảo Phi Bảo",
+    "price": 120.0,
+    "sale": "",
+    "amout": 4850,
+    "publisher": "Dân Trí",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://salt.tikicdn.com/cache/750x750/ts/product/1b/06/b8/31417f727f140dc0cc7b0fc899cca9d7.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/1b/06/b8/31417f727f140dc0cc7b0fc899cca9d7.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/c4/5e/24/73f50a318b2ac29c606905b9cab0c775.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/98/88/e0/2030f0f788650623d69362ec70bed13b.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/81/24/54/5307c321ddaecbbe8e3634fd4152f510.jpg.webp"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "04-01-2022",
+    "discount": "29%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Lại Đây, Ôm Cái Nào!",
     "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
+    "author": "Tả Đồng",
+    "price": 125.0,
+    "sale": "",
+    "amout": 7580,
+    "publisher": "Văn Học",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://salt.tikicdn.com/cache/750x750/ts/product/0a/3e/7d/24e7f009dc846d313e9b88236152973f.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/9f/3f/0a/714315208855eeb366c89bc9e90bb5b4.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/2e/60/b2/0a95729edf68b256fbbc630e5392b315.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/26/06/36/f80d44b1a4599ee2c48c3aad4c5638e2.jpg.webp",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/f4/f5/f7/d65a48daa28b4a1729d3ff578c4d9930.jpg.webp"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "04-01-2021",
+    "discount": "26%",
     "field": "Ngôn tình"
   },
   {
-    "name": "",
+    "name": "Ê Có Khi Nào? (Tái Bản)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "165.000",
+    "sale": "120.450",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_200743_1.jpg"
     ],
     "description": [],
     "status": "",
@@ -1732,18 +1823,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Tôi Là Một Con Lừa (Tái Bản 2023)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "80.000",
+    "sale": "62.400",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235239326.jpg"
     ],
     "description": [],
     "status": "",
@@ -1752,18 +1840,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Chuyện Thầy Trò",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "122.000",
+    "sale": "95.160",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235239678.jpg"
     ],
     "description": [],
     "status": "",
@@ -1772,18 +1857,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Đờn Ca Tài Tử Nam Bộ - Khảo & Luận",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "140.000",
+    "sale": "99.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_12505.jpg"
     ],
     "description": [],
     "status": "",
@@ -1792,18 +1874,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "150 Thuật Ngữ Văn Học",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "165.000",
+    "sale": "115.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/1/5/150-thuat-ngu-van-hoc_bia.jpg"
     ],
     "description": [],
     "status": "",
@@ -1812,18 +1891,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Tìm Hiểu Văn Học Hiện Đại Hàn Quốc",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "190.000",
+    "sale": "148.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235472.jpg"
     ],
     "description": [],
     "status": "",
@@ -1832,18 +1908,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Tiếng Việt Giàu Đẹp - Cuộc Sống Ở Trong Ngôn Ngữ (Tái Bản 2022)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "80.000",
+    "sale": "72.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974182344.jpg"
     ],
     "description": [],
     "status": "",
@@ -1852,18 +1925,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Tiếng Việt Giàu Đẹp - Nỗi Oan Thì, Là, Mà (Tái Bản 2022)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "105.000",
+    "sale": "94.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974182351.jpg"
     ],
     "description": [],
     "status": "",
@@ -1872,18 +1942,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Đài Hoa Tím - Chuyện 10 Cô Gái Ngã Ba Đồng Lộc",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "150.000",
+    "sale": "103.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/d/a/dai-hoa-tim-b1-_1_.jpg"
     ],
     "description": [],
     "status": "",
@@ -1892,18 +1959,15 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Khoái Khẩu Và Khát Vọng",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "180.000",
+    "sale": "162.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786045892770.jpg"
     ],
     "description": [],
     "status": "",
@@ -1912,2026 +1976,4453 @@
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
-    "name": "",
+    "name": "Thương",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "75.000",
+    "sale": "57.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia1_thuong_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Như Sao Trời Ôm Lấy Đại Dương",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "86.000",
+    "sale": "65.360",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia1-nh_-sao.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Nhật Ký Trong Tù (Tái Bản)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "48.000",
+    "sale": "32.160",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_5088.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Thơ Tố Hữu (Tái Bản 2016)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "35.000",
+    "sale": "23.450",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935095620364_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Sách Tết Giáp Thìn 2024 - Hợp Tuyển Văn Thơ Nhạc Hoạ Chủ Đề Mùa Xuân Và Ngày Tết",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "399.000",
+    "sale": "319.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1---s_ch-t_t-2024.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Nếu Như Tôi Nói Nhớ, Em Có Trở Về Không? - Tặng Kèm Bookmark + Postcard",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "88.000",
+    "sale": "66.880",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia1-neunhutoinoinho-emcotrovekhong.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Chữ Yêu Là Trữ Tình",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "88.000",
+    "sale": "66.880",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-chu-yeu-la-tru-tinh--_glowbooks_.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Văn Học Trong Nhà Trường: Thơ Hồ Xuân Hương",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "28.000",
+    "sale": "25.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_4817.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Tục Ngữ Ca Dao Việt Nam (Tái Bản 2022)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "58.000",
+    "sale": "38.860",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935095632374.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
-    "name": "",
+    "name": "Vạn Dặm Đường Từ Một Bước Chân - Tặng Kèm Bookmark",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "159.000",
+    "sale": "127.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/v/_/v_n-d_m-_ng-t_-m_t-b_c-ch_n-b_a-1-1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Du ký"
   },
   {
-    "name": "",
+    "name": "Con Đường Hồi Giáo (Tái Bản 2020)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "100.000",
+    "sale": "78.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36363.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Du ký"
   },
   {
-    "name": "",
+    "name": "Giấc Mơ Mỹ - Đường Đến Stanford",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "86.000",
+    "sale": "77.400",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936117740381_1_1_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Du ký"
   },
   {
-    "name": "",
+    "name": "Đi Như Tờ Giấy Trắng",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "119.000",
+    "sale": "86.870",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_186779.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Du ký"
   },
   {
-    "name": "",
+    "name": "Tôi Đã Ăn Cả Cánh Đồng Hoa",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "120.000",
+    "sale": "52.800",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_8527.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
-  },
-
-  {
-    "name": "",
-    "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
-    "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Du ký"
   },
   {
-    "name": "",
+    "name": "Cô Đơn Trên Everest",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "150.000",
+    "sale": "135.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936049957802.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
-  }, {
-    "name": "",
-    "type": "Văn học",
-    "author": "",
-    "price": ,
-    "amount": ,
-    "publisher": "",
-    "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Du ký"
   },
   {
-    "name": "",
+    "name": "Từ Rừng Thẳm Amazon Đến Quê Hương Bolero",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "124.000",
+    "sale": "86.800",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086843024.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Du ký"
   },
-
   {
-    "name": "",
+    "name": "Nomadland - Cõi người dưng - Đời Du Dân Mỹ Thế Kỷ 21",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "180.000",
+    "sale": "162.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/c/_/c_i-ng_i-d_ng---b_a-m_m---b_a-1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Du ký"
   },
   {
-    "name": "",
+    "name": "Nguyễn Trãi Toàn Tập",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "420.000",
+    "sale": "281.400",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_3937.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Tuyển Tập Thạch Lam (2023)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "145.000",
+    "sale": "94.250",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067607956.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Tuyển Tập Nguyên Hồng",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "132.000",
+    "sale": "85.800",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067595307_11.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Hồ Xuân Hương - Tác Phẩm Và Lời Bình (2020)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "55.000",
+    "sale": "49.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_4768.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Tuyển Tập Vũ Trọng Phụng (2023)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "175.000",
+    "sale": "113.750",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067607963.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Thơ Ca, Tục Ngữ, Ca Dao, Thành Ngữ"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Vợ Nhặt (Tái Bản 2023)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "47.000",
+    "sale": "42.300",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786044771922.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "12 Cung Hoàng Đạo"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Việc Làng (Tái Bản 2022)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "45.000",
+    "sale": "29.250",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067606201.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "12 Cung Hoàng Đạo"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Văn Học Trong Nhà Trường: Truyện Kiều  (Tái Bản 2019)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "40.000",
+    "sale": "36.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_184532.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "12 Cung Hoàng Đạo"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Haruki Murakami Và Âm Nhạc Của Ngôn Từ",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "448.000",
+    "sale": "403.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936144201572.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "12 Cung Hoàng Đạo"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
+    "name": "Văn Học Trong Nhà Trường: Hà Nội Băm Sáu Phố Phường (Tái Bản 2019)",
     "type": "Văn học",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "25.000",
+    "sale": "22.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_184534.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "12 Cung Hoàng Đạo"
+    "field": "Tác Giả - Tác Phẩm"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "MBA Bằng Hình - The Usual MBA",
+    "type": "Kinh Tế",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "189.000",
+    "sale": "147.420",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235238978.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "12 Cung Hoàng Đạo"
+    "field": "Quản Trị - Lãnh Đạo"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Bí Mật Tư Duy Triệu Phú (Tái Bản 2021)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "108.000",
+    "sale": "75.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_188995_1_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Vị Tu Sĩ Bán Chiếc Ferrari (Tái Bản Từ Cuốn Tìm Về Sức Mạnh Vô Biên) - Tái Bản 2020",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "98.000",
+    "sale": "68.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_55840.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Combo Sách Economix - Các Nền Kinh Tế Vận Hành (Và Không Vận Hành) Thế Nào Và Tại Sao? + MBA Bằng Hình - The Usual MBA (Bộ 2 Cuốn)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "341.000",
+    "sale": "252.681",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/a/b/abbb4053-0b10-4479-adff-a3944789d913.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Kiểm Soát Chi Phí Mua Hàng Và Quản Lí Nhà Cung Cấp (2022)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "220.000",
+    "sale": "132.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067607277.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Quản Trị Bằng Văn Hóa - Cách Thức Kiến Tạo Và Tái Tạo Văn Hóa Tổ Chức",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "250.000",
+    "sale": "225.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935280401068.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Kỹ Năng Quản Lý Nhân Sự Chuyên Nghiệp",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "119.000",
+    "sale": "86.870",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia_1_2_13.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Vị Giám Đốc Một Phút",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "58.000",
+    "sale": "40.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/z/3/z3171678206749_70bec29051b87bfc03da1e8d0d064542.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Nhà Lãnh Đạo Tương Lai (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "200.000",
+    "sale": "130.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935278608226.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Lãnh Đạo Bằng Sức Mạnh Trí Tuệ Cảm Xúc",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "148.000",
+    "sale": "103.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_187003.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "7 Câu Hỏi \"Thần Kỳ\" Của Mọi Sếp Giỏi",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "150.000",
+    "sale": "97.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_47747.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Một Đời Quản Trị (Tái Bản 2019)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "200.000",
+    "sale": "160.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974164623.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "Quản Lý Chuỗi Cung Ứng Thực Phẩm Và Logistics",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "179.000",
+    "sale": "128.880",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/q/u/quan-ly-chuoi-cung-ung-thuc-pham-va-logistics--bia-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Quản Trị - Lãnh Đạo"
+  },
+  {
+    "name": "48 Nguyên Tắc Chủ Chốt Của Quyền Lực (Tái Bản 2020)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "200.000",
+    "sale": "160.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_32101.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Tư Duy Chiến Lược - Lý Thuyết Trò Chơi Thực Hành",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "186.000",
+    "sale": "111.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-tr_c-t_-duy-chi_n-l_c.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Dặm Đường Tôi Đi - Hành Trình Từ BMW, Bosch Đến Vinfast",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "195.000",
+    "sale": "156.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/d/a/dam-duong-toi-di-bia-mem.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Lời Thú Tội Của Một Sát Thủ Kinh Tế - Bìa Cứng (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "245.000",
+    "sale": "122.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935210307910.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Nghĩ Giàu & Làm Giàu (Tái Bản 2020)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "110.000",
+    "sale": "77.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/n/g/nghigiaulamgiau_110k-01_bia-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Nghệ Thuật Tư Duy Chiến Lược",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "239.000",
+    "sale": "174.470",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_183396.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Từ Tốt Đến Vĩ Đại - Jim Collins (Tái Bản 2021)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "130.000",
+    "sale": "78.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_09462021_024609.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Không Bao Giờ Là Thất Bại! Tất Cả Là Thử Thách (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "208.000",
+    "sale": "145.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/k/h/khongbaogiothatbai_bia01_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Những Kẻ Xuất Chúng (Tái Bản 2021)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "159.000",
+    "sale": "116.070",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_230370.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Bán Hàng Shopee Thực Chiến Từ A-Z - 36 Chiến Lược Đỉnh Cao Bùng Nổ Doanh Số (Tái Bản)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "249.000",
+    "sale": "216.630",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043588644_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Tư Duy Ngược Dịch Chuyển Thế Giới - Originals: How Non-Conformists Move The World",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "178.000",
+    "sale": "124.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086852118.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Vượt Lên, Những Con Đường Kinh Doanh",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "125.000",
+    "sale": "87.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043334661.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Luật Của Warren Buffett: 33 Lá Thư + 14 Nguyên Tắc = 1 Nhà Đầu Tư Vĩ Đại",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "115.000",
+    "sale": "82.800",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia---luat-cua-warren-buffett---bia-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Giàu Có Hơn, Khôn Ngoan Hơn, Hạnh Phúc Hơn",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "219.000",
+    "sale": "197.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a---giau-co-hon-khon-ngoan-hon-hanh-phuc-hon.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Netflix: Phá Bỏ Nguyên Tắc Để Bứt Phá - No Rules Rules: Netflix And The Culture Of Reinvention",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "198.000",
+    "sale": "172.260",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_27202022_112029.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Tinh Thần Chutzpah - Tại Sao Israel Được Xem Là Trung Tâm Của Sự Đổi Mới Và Hoạt Động Khởi Nghiệp?",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "139.000",
+    "sale": "83.400",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia_tinh-than-chutzpah-01.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Trên Đỉnh Phố Wall (Tái Bản 2021)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "219.000",
+    "sale": "159.870",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_230105.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Chết Vì Chứng Khoán",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "199.000",
+    "sale": "145.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_230368.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Tạo Lập Mô Hình Kinh Doanh (Tái Bản)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "299.000",
+    "sale": "218.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/t/_/t_o-l_p-m_-h_nh-kd-26.04.2021.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Berkshire Hathaway: Những Bài Học Tuyệt Vời Từ Warren Buffett Và Charlie Munger Tại Đại Hội Cổ Đông Thường Niên Của Tập Đoàn Trong Suốt 30 Năm (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "219.000",
+    "sale": "120.450",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_6588_1_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Bí Quyết Đầu Tư Và Kinh Doanh Chứng Khoán Của Các Tỷ Phú Warren Buffet & George Soros (Tái Bản 2020)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "158.000",
+    "sale": "110.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_215963.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Spotify Và Những Chuyện Chưa Kể - Hành Trình Đánh Bại Apple, Google Và Amazon Trong Cuộc Đua Âm Thanh Số Của Nhà Sáng Lập Daniel Ek",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "175.000",
+    "sale": "87.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935210289285.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Tính Trước 5 Bước",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "220.000",
+    "sale": "143.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935278606123_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Thấu Hiểu Tiếp Thị Từ A Đến Z - 80 Khái Niệm Nhà Quản Lý Cần Biết (Tái Bản 2020)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "115.000",
+    "sale": "103.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_31432020_024333_2_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Nhân vật - Bài Học Kinh doanh"
+  },
+  {
+    "name": "Người Bán Hàng Vĩ Đại Nhất Thế Giới",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "148.000",
+    "sale": "103.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_47973.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Giải Mã Copywriting - Write Your Brand Lit",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "189.000",
+    "sale": "137.970",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/_/g/_gi_i-m_-copywriting_-b_a-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Nghệ Thuật Bán Hàng Của Người Do Thái (Tái Bản 2020)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "88.000",
+    "sale": "61.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_47025.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "90 - 20 - 30 - 90 Bài Học Vỡ Lòng Về Ý Tưởng Và Câu Chữ (Tái Bản 2021) (Bản Đen Trắng)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "195.000",
+    "sale": "175.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_188907_2.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Marketing Sáng Tạo Dành Cho Doanh Nghiệp Nhỏ (Tái Bản 2018)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "79.000",
+    "sale": "19.750",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_180164_1_43_1_57_1_4_1_2_1_205.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Video Ngắn: Từ Chiến Lược Đến Thực Thi",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "239.000",
+    "sale": "191.200",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-4_40_3.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Nghệ Thuật Bán Hàng Bậc Cao - Bí Quyết Chốt Deal Mọi Thời Đại (Khổ Lớn) (Tái Bản 2021)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "198.000",
+    "sale": "138.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855317.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Kỹ Năng Bán Hàng Thực Chiến",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "189.000",
+    "sale": "137.970",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a_ky-nang-ban-hang-thuc-chien.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Google Ads 69 Giờ - Kiến Thức Chọn Lọc Từ Vận Hành Thực Tế",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "249.000",
+    "sale": "176.790",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786044807416.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Combo Sách Nghệ Thuật Bán Hàng Bậc Cao + Nghệ Thuật Bán Hàng Của Người Do Thái + Người Bán Hàng Vĩ Đại Nhất Thế Giới (Bộ 3 Cuốn)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "434.000",
+    "sale": "288.610",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/c/o/combo-120520223.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Nói Sao Cho Khách Hàng Thích - Bán Sao Cho Khách Hàng Mua",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "149.000",
+    "sale": "92.380",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936066696319.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Content Bạc Tỷ (Tái Bản)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "179.000",
+    "sale": "119.930",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936066695114.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Cưa Đổ CRM - Nhắm Trúng Đích, Tương Tác Ngay, Bán Hàng Hay, Chăm Sóc Giỏi",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "199.000",
+    "sale": "179.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043873337.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Kỹ Năng Bán Hàng Tuyệt Đỉnh (Tái Bản 2022)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "120.000",
+    "sale": "78.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935278607342.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "101 Điều Content Creator Không Kể Bạn Nghe",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "99.000",
+    "sale": "72.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/1/0/101-_i_u-content-creator-kh_ng-k_-b_n-nghe---b_a-1-dd.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Nghệ Thuật Bán Hàng Bằng Câu Chuyện (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "188.000",
+    "sale": "146.640",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935246937778.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Marketing - Bán Hàng"
+  },
+  {
+    "name": "Chính Sách Tiền Tệ Thế Kỷ 21",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "325.000",
+    "sale": "237.250",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a---chinh-sach-tien-te-the-ky-21---outline-cs5-01.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Chiến Tranh Tiền Tệ - Phần 1 - Ai Thực Sự Là Người Giàu Nhất Thế Giới? (Tái bản 2022)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "165.000",
+    "sale": "99.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia-truoc-chien-tranh-tien-te-phan-1-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Chiến Tranh Tiền Tệ - Phần 2 - Sự Thống Trị Của Quyền Lực Tài Chính (Tái Bản 2022)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "170.000",
+    "sale": "102.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia-truoc-chientrangtiente-2-tb-jpg.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Chiến Tranh Tiền Tệ - Phần V (Phần Cuối)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "195.000",
+    "sale": "117.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043606492.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Chiến Tranh Tiền Tệ Phần IV: Siêu Cường Về Tài Chính - Tham Vọng Về Đồng Tiền Chung Châu Á",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "185.000",
+    "sale": "111.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043603590.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Chiến Tranh Tiền Tệ - Biên Giới Tiền Tệ - Nhân Tố Bí Ẩn Trong Các Cuộc Chiến Kinh Tế (Phần III)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "175.000",
+    "sale": "105.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_200687.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Economix - Các Nền Kinh Tế Vận Hành (Và Không Vận Hành) Thế Nào Và Tại Sao?",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "152.000",
+    "sale": "118.560",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/e/c/economix-01.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Làm Chủ Business Analytics - Phân Tích Dữ Liệu Để Đi Đến Quyết Định Thông Minh",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "269.000",
+    "sale": "196.370",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_5_14.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Combo Sách Chiến Tranh Tiền Tệ (Bộ 5 Phần)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "890.000",
+    "sale": "534.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/c/o/combo-05122022003.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Doanh Nghiệp Của Thế Kỷ 21 (Tái Bản 2019)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "85.000",
+    "sale": "76.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_603.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "TikTok - Giải Mã Ma Trận Vạn Đơn\t",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "289.000",
+    "sale": "260.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/z/4/z4631457362322_fc6dc3433e72c7d1df481543f9010f86.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Tiền Bẩn Và Ngụy Khoa Học",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "209.000",
+    "sale": "163.020",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235240285.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Thiên Nga Đen (Tái Bản 2020)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "299.000",
+    "sale": "218.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_27686.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Vũ Khí Hoàn Hảo - Chiến Tranh, Sự Phá Hoại Và Nỗi Sợ Trong Kỷ Nguyên Mạng",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "165.000",
+    "sale": "69.300",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/v/u/vu-khi-hoan-hao-out-01.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Quốc Gia Khởi Nghiệp - Câu Chuyện Về Nền Kinh Tế Thần Kỳ Của Israel (Tái Bản)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "209.000",
+    "sale": "152.570",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935251412215_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "The Four - Tứ Đại Quyền Lực",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "186.000",
+    "sale": "130.200",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-2_61.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Profit First - Dòng Tiền Gắn Liền Lợi Nhuận (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "169.000",
+    "sale": "123.370",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/c/_/c_t-d_ng-ti_n-g_n-li_n-l_i-nhu_n.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Châu Á Chuyển Minh - Xu Hướng Và Sự Phát Triển Của Các Động Lực Tăng Trưởng Kinh Tế",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "169.000",
+    "sale": "70.980",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_180734.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "The Bitcoin Standard - Quá Khứ Biến Động, Hiện Tại Bùng Nổ, Tương Lai Đột Phá",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "229.000",
+    "sale": "167.170",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_236563.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Nền Kinh Tế Tăng Trưởng Và Sụp Đổ Như Thế Nào? (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "179.000",
+    "sale": "161.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_40495_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Kinh Tế Học Hài Hước (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "169.000",
+    "sale": "123.370",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/k/i/kinh-te-hoc-hai-huoc-outline-5-3-2016-01_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Chiếc Lexus Và Cây Ô Liu (Tái Bản 2020)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "255.000",
+    "sale": "193.800",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/c/h/chiec-lexus-va-cay-o-liu-tb-2020.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Cường Quốc Trong Tương Lai - Vẽ Lại Bản Đồ Thế Giới Năm 2030 (Tái Bản)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "119.000",
+    "sale": "86.870",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935270703523.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Phân Tích Kinh Tế"
+  },
+  {
+    "name": "Nhà Đầu Tư Thông Minh (Tái Bản 2020)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "199.000",
+    "sale": "155.220",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_44030.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Làm Giàu Qua Chứng Khoán",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "165.000",
+    "sale": "115.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_189655.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Đầu Tư Chứng Khoán: Chơi Trò May Rủi Hay Tích Lũy Tài Chính - Tặng Kèm Code Giảm 50% Khóa Học Online",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "300.000",
+    "sale": "270.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043900583.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Phân Tích Chứng Khoán (Security Analysis)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "499.000",
+    "sale": "364.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936066708227_11.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Nguyên Tắc Cơ Bản Trong Đầu Tư",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "199.000",
+    "sale": "151.240",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/c/_/c_t_nguy_n-t_c-trong-_u-t_.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "24 Bài Học Sống Còn Để Đầu Tư Thành Công Trên Thị Trường Chứng Khoán (Tái Bản)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "119.000",
+    "sale": "86.870",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_240065.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Blockchain - Bản Chất Của Blockchain, Bitcoin, Tiền Điện Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền Tệ",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "149.000",
+    "sale": "108.770",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694575.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Tâm Lý Thị Trường Chứng Khoán (Tái Bản 2017)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "99.000",
+    "sale": "72.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935251406276.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Tâm Lý Học Trong Đầu Tư Chứng Khoán",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "189.000",
+    "sale": "137.970",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_224047.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Cổ Phiếu Thường Lợi Nhuận Phi Thường (Tái Bản)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "199.000",
+    "sale": "145.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_239806.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chứng Khoán - Bất Động Sản - Đầu Tư"
+  },
+  {
+    "name": "Tài Chính Cá Nhân Dành Cho Người Việt Nam (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "200.000",
+    "sale": "140.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043905113.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Tài Chính Cho Mọi Người - Cẩm Nang Quản Lý Tài Chính Cá Nhân",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "218.000",
+    "sale": "152.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/t/a/taichinhchomoinguoi_bia1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "How Money Works - Hiểu Hết Về Tiền",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "300.000",
+    "sale": "234.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_554.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Lập Kế Hoạch Dòng Tiền Thông Minh",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "159.000",
+    "sale": "116.070",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936066696142.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Thống Kê Trong Kinh Tế Và Kinh Doanh - Statistics For Business And Economics",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "470.000",
+    "sale": "399.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043461848.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Hệ Thống Ngân Hàng Hoa Kỳ",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "390.000",
+    "sale": "351.000",
+    "amout": "",
+    "publisher": "",
+    "images": ["https://cdn0.fahasa.com/media/catalog/product/b/2/b2_3.jpg"],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "The Finance Book - Tài Chính Doanh Nghiệp",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "300.000",
+    "sale": "270.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/t/_/t_i-ch_nh-doanh-nghi_p---b_a-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Kỹ Năng Quản Lý Tài Chính Cá Nhân Trong 30 Ngày",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "119.000",
+    "sale": "86.870",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_18449.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Nghệ Thuật Quản Lý Tài Chính Cá Nhân (Tái Bản 2022)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "159.000",
+    "sale": "106.530",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694056.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Tài Chính Dành Cho Người Sợ Số - Thực Sự Hiểu Về Tài Chính Doanh Nghiệp Trong Giai Đoạn Sinh Tồn",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "330.000",
+    "sale": "297.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_227893.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Kế Toán Ngân Hàng (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "299.000",
+    "sale": "269.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047936922.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name": "Hiểu Đúng Về Tiền",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "60.000",
+    "sale": "54.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_14072023_030754.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tài Chính - Ngân Hàng"
+  },
+  {
+    "name6": "Kế Toán Vỉa Hè - Thực Hành Báo Cáo Tài Chính Căn Bản Từ Quầy Bán Nước Chanh",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "199.000",
+    "sale6": "169.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047787616.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Hướng Dẫn Thực Hành Sổ Kế Toán Và Lập Báo Cáo Tài Chính",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "189.000",
+    "sale6": "170.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-10_49.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Tổ Chức Kế Toán Trong Các Đơn Vị Kinh Tế",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "168.000",
+    "sale6": "151.200",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_196727.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Kiểm Toán Độc Lập & Những Kỹ Năng Chuyên Nghiệp Để Thành Công",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "199.000",
+    "sale6": "133.330",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936107812807_1_.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Hướng Dẫn Thực Hành Kế Toán Doanh Nghiệp Xây Lắp 2022",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "249.000",
+    "sale6": "224.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/2/9/2990436010224.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Thuế Và Kế Toán Thuế Trong Doanh Nghiệp - Lý Thuyết Và Thực Hành (Tái Bản 2023)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "289.000",
+    "sale6": "260.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047936915.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Chế Độ Kế Toán Doanh Nghiệp (Quyển 1): Hệ Thống Tài Khoản Kế Toán",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "148.000",
+    "sale6": "133.200",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_73493.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Kế Toán Tài Chính - Doanh Nghiệp Thương Mại Dịch Vụ",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "268.000",
+    "sale6": "241.200",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047923441.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Kế Toán Tài Chính - Công Cụ Để Ra Quyết Định Kinh Doanh",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "268.000",
+    "sale6": "241.200",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_233296.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Toán Tài Chính Ứng Dụng",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "380.000",
+    "sale6": "330.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047931606.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Hướng Dẫn Thực Hiện Các Quy Định Về Kê Khai, Hoàn, Bù Trừ Tiền Thuế Các Doanh Nghiệp Cần Biết",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "109.000",
+    "sale6": "98.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047933648.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Lý Thuyết - Thực Hành - Giải Pháp Kế Toán & Thuế Trong Doanh Nghiệp Nhỏ Và Vừa",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "286.000",
+    "sale6": "257.400",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047938834.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Kế Toán Trong Doanh Nghiệp Kinh Doanh Dịch Vụ",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "158.000",
+    "sale6": "142.200",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/k/e/ketoandv-600x905.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Thuế TAX 2021 - Biểu Thuế Xuất Khẩu - Nhập Khẩu Và Thuế GTGT Hàng Nhập Khẩu (Song Ngữ Anh - Việt)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "860.000",
+    "sale6": "774.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_221878.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Chế Độ Kế Toán Hành Chính, Sự Nghiệp",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "229.000",
+    "sale6": "206.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_231221.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Thuế Và Kế Toán Thuế 2022 (Áp Dụng Cho Các Doanh Nghiệp Vn)",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "389.000",
+    "sale6": "350.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/2/9/2990436010200.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name6": "Báo Cáo Tài Chính - Lập, Phân Tích Và Quản Trị Rủi Ro Về Thuế",
+    "type": "Kinh Tế",
+    "author": "",
+    "price": "269.000",
+    "sale6": "242.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047933518.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kế Toán - Kiểm Toán - Thuế"
+  },
+  {
+    "name": "Hiểu Về Trái Tim (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "158.000",
+    "sale": "135.880",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/z/4/z4118763446785_cf4bc22d353b065bbb37e686de1f9207.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Atomic Habits - Thay Đổi Tí Hon Hiệu Quả Bất Ngờ (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "189.000",
+    "sale": "147.420",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/z/5/z5076620072937_da8216298d99e526fef85c804c0c2389_2.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Khéo Ăn Nói Sẽ Có Được Thiên Hạ (Tái Bản 2022)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "130.000",
+    "sale": "65.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067605693.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Nói Chuyện Là Bản Năng, Giữ Miệng Là Tu Dưỡng, Im Lặng Là Trí Tuệ (Tái Bản)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "189.000",
+    "sale": "113.400",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694469.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Giận (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "135.000",
+    "sale": "105.300",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8932000133735_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "89.000",
+    "sale": "67.640",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/n/o/nong-gian-la-ban-nang-1_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Người Giàu Có Nhất Thành Babylon",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "98.000",
+    "sale": "68.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_41914.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Yêu Những Điều Không Hoàn Hảo",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "139.000",
+    "sale": "108.420",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/4/c/4ceb6ba3bd81614df8ff4c1411b11f59.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Hành Tinh Của Một Kẻ Nghĩ Nhiều",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "86.000",
+    "sale": "62.780",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/h/_/h_nh-tinh-c_a-m_t-k_-ngh_-nhi_u-tr_c-1-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Càng Bình Tĩnh Càng Hạnh Phúc",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "139.000",
+    "sale": "101.470",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_c_ng-b_nh-t_nh-c_ng-h_nh-ph_c600.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "The Secret - The Magic - Phép Màu - Bìa Cứng (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "238.000",
+    "sale": "190.400",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043452785_1_1_2.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Thay Đổi Cuộc Sống Với Nhân Số Học",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "248.000",
+    "sale": "181.040",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/t/d/tdcsvnsh.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Manifest - 7 Bước Để Thay Đổi Cuộc Đời Bạn Mãi Mãi",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "89.000",
+    "sale": "64.970",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-tr_c-manifest.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kỹ năng sống"
+  },
+  {
+    "name": "Lý Thuyết Trò Chơi",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "179.000",
+    "sale": "110.980",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936066697088.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Thuật Thao Túng - Góc Tối Ẩn Sau Mỗi Câu Nói",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "139.000",
+    "sale": "101.470",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/u/n/untitledthaotungtamly.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Tâm Lý Học Tội Phạm - Phác Họa Chân Dung Kẻ Phạm Tội",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "145.000",
+    "sale": "105.850",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/p/h/ph_c-h_a-ch_n-dung-k_-ph_m-t_i.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Thiên Tài Bên Trái, Kẻ Điên Bên Phải (Tái Bản 2021)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "179.000",
+    "sale": "130.670",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-thi_n-t_i-b_n-tr_i-k_-_i_n-b_n-ph_i_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Đứa Trẻ Hiểu Chuyện Thường Không Có Kẹo Ăn",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "148.000",
+    "sale": "108.040",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935325011818.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Định Luật Murphy - Mọi Bí Mật Tâm Lý Thao Túng Cuộc Đời Bạn",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "119.000",
+    "sale": "86.870",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/p/h/ph_t-h_nh-_nh-lu_t-murphybia-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Tâm Lý Học Về Tiền",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "189.000",
+    "sale": "126.630",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_220008.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Kiếp Nào Ta Cũng Tìm Thấy Nhau (Tái Bản 2022)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "99.000",
+    "sale": "71.280",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/6/7/67db9bf2590d75f978e68f9dcfe0db9a.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Vẻ Đẹp Của Sự Cô Đơn - Tặng Kèm Bookmark",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "120.000",
+    "sale": "99.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/z/4/z4294123576173_0d4952430d9f48afa52b2fe7d4a36340.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "2030: Những Xu Hướng Lớn Sẽ Định Hình Thế Giới Tương Lai (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "209.000",
+    "sale": "163.020",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/2/0/2030-nhung-xu-huong-lon-se-dinh-hinh-the-gioi-tuong-lai-tb-2023.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "How Psychology Works - Hiểu Hết Về Tâm Lý Học",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "300.000",
+    "sale": "234.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_208345.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "Bên Trong Chúng Ta Đã Vụn Vỡ Như Thế Nào?",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "125.000",
+    "sale": "91.250",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia_ben-trong-chung-ta-da-vun-vo-nhu-the-nao.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Tâm lý"
+  },
+  {
+    "name": "39 Câu Hỏi Cho Người Trẻ (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "100.000",
+    "sale": "70.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/3/9/39-cau-hoi-cho-nguoi-tre---tb-2023.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Sách cho tuổi mới lớn"
+  },
+  {
+    "name": "Cẩm Nang Tuổi Dậy Thì Dành Cho Bạn Gái (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "100.000",
+    "sale": "60.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067608663.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Sách cho tuổi mới lớn"
+  },
+  {
+    "name": "Cẩm Nang Con Trai (Tái Bản 2021)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "68.000",
+    "sale": "47.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/6/8/68523e07c69d2c2e989db9dd44eb6633.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Sách cho tuổi mới lớn"
+  },
+  {
+    "name": "Học Cho Ai? Học Để Làm Gì? Tập 1 (Tái Bản 2019)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "40.000",
+    "sale": "28.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_183175.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Sách cho tuổi mới lớn"
+  },
+  {
+    "name": "Học Cho Ai? Học Để Làm Gì? Tập 2 (Tái Bản 2019)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "40.000",
+    "sale": "28.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_183176.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Sách cho tuổi mới lớn"
+  },
+  {
+    "name": "Cẩm Nang Bé Gái Tuổi Dậy Thì - Quyển 1: 160 Câu Hỏi-Đáp Về Sinh Lí Bạn Gái Tuổi Dậy Thì (Tái Bản 2019)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "136.000",
+    "sale": "95.200",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_188830.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Sách cho tuổi mới lớn"
+  },
+  {
+    "name": "Giới Hạn Của Bạn Chỉ Là Xuất Phát Điểm Của Tôi (Tái Bản)",
+    "type": "Tâm lý - Kỹ năng sống",
+    "author": "",
+    "price": "89.000",
+    "sale": "64.970",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935325005220_11.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Sách cho tuổi mới lớn"
+  },
+  {
+    "name": "Sống Có Giá Trị - Vì Con Cần Có Mẹ (Tái Bản 2021)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
     "price": "",
-    "amount": "",
+    "sale": "65.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_221875.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "12 Cung Hoàng Đạo"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Tôi Tin Tôi Có Thể Làm Được: Học Cách Học Tập (Tái Bản 2020)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "45.000",
+    "sale": "31.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_196891.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "12 Cung Hoàng Đạo"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Những Câu Chuyện Để Trưởng Thành - Mình Tự Chịu Trách Nhiệm",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "65.000",
+    "sale": "50.700",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235237995.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tuổi Teen"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Cẩm Nang Tuổi Dậy Thì: Lớn Lên Thật Tuyệt - Dành Cho Bạn Trai",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "115.000",
+    "sale": "80.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244876161.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tuổi Teen"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Chỉ Thay Đổi Một Điều - Hướng Dẫn Học Sinh Cách Đặt Những Câu Hỏi Của Chính Mình",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "130.000",
+    "sale": "99.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974186519.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tuổi Teen"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Giáo Dục Giới Tính Dành Cho Học Sinh Trung Học Phổ Thông - Bạn Đã Sẵn Sàng Để Yêu?",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "35.000",
+    "sale": "31.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/a/bandasansangdeyeu.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tuổi Teen"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Phá Đảo Thế Giới Ảo - Bí Kíp Sống Tuổi Teen Trong Một Thế Giới Không An Toàn - The Teen",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "109.000",
+    "sale": "76.300",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_214449.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tuổi Teen"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Những Câu Chuyện Để Trưởng Thành - Tự Tin Khiến Mình Càng Xuất Sắc",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "65.000",
+    "sale": "50.700",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235238008.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Hài Hước - Truyện Cười"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Kĩ Năng Xã Hội Cho Học Sinh Tiểu Học - Tư Duy Tích Cực",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "86.000",
+    "sale": "60.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244863413.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Hài Hước - Truyện Cười"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Combo Học Cho Ai? Học Để Làm Gì?: Tập 1 + Tập 2 (Bộ 2 Tập)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "80.000",
+    "sale": "53.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_37267.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Hài Hước - Truyện Cười"
+    "field": "Sách cho tuổi mới lớn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Tâm Hồn Cao Thượng",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "150.000",
+    "sale": "117.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/t/a/tam-hon-cao-thuong-_01.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Hài Hước - Truyện Cười"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Chicken Soup For The Golden Soul - Sức Mạnh Của Sự Tử Tế (Tái Bản)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "78.000",
+    "sale": "54.600",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855881.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Hài Hước - Truyện Cười"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Hạt Giống Tâm Hồn - Xin Đừng Làm Mẹ Khóc (Tái Bản)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "118.000",
+    "sale": "82.600",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855331.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Hài Hước - Truyện Cười"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "A Cup Of Chicken Soup For The Soul - Điều Diệu Kỳ Từ Cách Nhìn Cuộc Sống",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "76.000",
+    "sale": "53.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855454.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Hài Hước - Truyện Cười"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Hạt Giống Tâm Hồn 1 - Cho Lòng Dũng Cảm Và Tình Yêu Cuộc Sống (Tái Bản 2022)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "76.000",
+    "sale": "53.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086856147.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Light Novel"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Chicken Soup For The Soul - Tình Yêu Thương Gia Đình (Tái Bản)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "58.000",
+    "sale": "40.600",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_225164.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Light Novel"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Dành Cho Mẹ - Món Quà Của Tình Yêu (Tái Bản 2021)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "68.000",
+    "sale": "47.600",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_237791.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Light Novel"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Hạt Giống Tâm Hồn - Tập 14: Góc Nhìn Diệu Kỳ Của Cuộc Sống (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "76.000",
+    "sale": "53.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_225160_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Light Novel"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Chicken Soup For The Recovering Soul 21 - Cảm Hứng Cuộc Sống (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "76.000",
+    "sale": "53.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086856178.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Light Novel"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Chicken Soup For The College Soul - Tuổi Hoa Niên Đáng Nhớ",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "72.000",
+    "sale": "50.400",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/t/u/tuoihoaniendangnho_bia01.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Light Novel"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Tuyển Chọn Những Câu Chuyện Hay Nhất - Hạt Giống Tâm Hồn - Món Quà Tinh Thần Ý Nghĩa Nhất",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "118.000",
+    "sale": "82.600",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855904.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Light Novel"
+    "field": "Chicken Soup - Hạt Giống Tâm Hồn"
   },
   {
-    "name": "",
-    "type": "Văn học",
+    "name": "Đắc Nhân Tâm (Tái Bản 2021)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "86.000",
+    "sale": "62.780",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/d/n/dntttttuntitled.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Light Novel"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Đắc Nhân Tâm",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "86.000",
+    "sale": "60.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043949247.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Gương Kiên Nhẫn",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "128.000",
+    "sale": "93.440",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935246919248_11.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Đắc Nhân Tâm (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "86.000",
+    "sale": "58.480",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236432337.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Đắc Nhân Tâm - Bìa Cứng (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "115.000",
+    "sale": "103.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236432412.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Đắc Nhân Tâm - Bìa Cứng (Tái Bản 2021)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "108.000",
+    "sale": "97.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/d/n/dntttttuntitled_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Tự Tin - Nghệ Thuật Giúp Bạn Đạt Được Mọi Mong Muốn",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "198.000",
+    "sale": "144.540",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786045850794_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Thói Quen Tốt Của Những Đứa Trẻ Chăm Ngoan - Mình Không Nói Dối",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "68.000",
+    "sale": "61.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_4790.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Phụ Nữ Tuổi 20 Thay Đổi Để Thành Công",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "70.000",
+    "sale": "45.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067593815.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Kĩ Năng Vàng Cho Học Sinh Trung Học - Học Cách Trưởng Thành (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "46.000",
+    "sale": "32.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/k/i/ki-nang-vang-cho-hoc-sinh-trung-hoc_hoc-cach-truong-thanh_tb-2023.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Quản Trị - Lãnh Đạo"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Kĩ Năng Vàng Cho Học Sinh Trung Học - Học Kĩ Năng Để Thành Công (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "40.000",
+    "sale": "28.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/k/i/ki-nang-vang-cho-hoc-sinh-trung-hoc_hoc-ki-nang-thanh-cong_tb-2023.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Nhân Vật - Bài Học Kinh Doanh"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Kĩ Năng Vàng Cho Học Sinh Trung Học - Học Cách Quản Lí Cuộc Sống (Tái Bản 2023)",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "40.000",
+    "sale": "28.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/k/i/ki-nang-vang-cho-hoc-sinh-trung-hoc_hoc-cach-quan-ly-cuoc-song_tb-2023.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Nhân Vật - Bài Học Kinh Doanh"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Blog Cho Tâm Hồn 2 - DailyOM Learning To Live",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "72.000",
+    "sale": "50.400",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_65867.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Nhân Vật - Bài Học Kinh Doanh"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Phút Dành Cho Cha - Tái Bản 2020",
+    "type": "Tâm lý - Kỹ năng sống",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "58.000",
+    "sale": "40.600",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_226329.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Nhân Vật - Bài Học Kinh Doanh"
+    "field": "Rèn luyện nhân cách"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Nuôi Con Không Phải Là Cuộc Chiến 1 - Chào Con - Em Bé Sơ Sinh (Tái Bản 2021)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "119.000",
+    "sale": "85.680",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_241036.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Nhân Vật - Bài Học Kinh Doanh"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Nuôi Dạy Bé Trai Từ 0 - 6 Tuổi (Tái Bản 2021)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "69.000",
+    "sale": "49.680",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_225213.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Nhân Vật - Bài Học Kinh Doanh"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Nuôi Con Không Phải Là Cuộc Chiến 2 - E.A.S.Y - Nếp Sinh Hoạt Cho Bé Yêu (Tái Bản 2021)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "129.000",
+    "sale": "92.880",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_240806.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Nhân Vật - Bài Học Kinh Doanh"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Nuôi Con Không Phải Là Cuộc Chiến 2 - Bé Thơ Tự Ngủ, Cha Mẹ Thư Thái - Quyển 3 (Tái Bản 2021)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "129.000",
+    "sale": "92.880",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935280909052_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Nhân Vật - Bài Học Kinh Doanh"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Lần Đầu Làm Bố",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "99.000",
+    "sale": "71.280",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_27283.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Marketing - Bán Hàng"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Combo Sách Lần Đầu Làm Bố + Lần Đầu Làm Mẹ (Bộ 2 Cuốn)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "359.000",
+    "sale": "245.556",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/c/o/combo-8935280905382-8935280908031.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Marketing - Bán Hàng"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Tủ Sách Làm Cha Mẹ - Giáo Dục Nhi Đồng (Tái Bản 2023)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "65.000",
+    "sale": "45.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/g/i/giao-duc-nhi-dong_tb-2023.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Marketing - Bán Hàng"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Cách Khen Cách Mắng Cách Phạt Con (Tái Bản 2021)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "69.000",
+    "sale": "49.680",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_234135.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Marketing - Bán Hàng"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Nói Sao Cho Trẻ Chịu Nghe Và Nghe Sao Cho Trẻ Chịu Nói (Tái Bản 2023)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "225.000",
+    "sale": "175.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8932000134329.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Marketing - Bán Hàng"
+    "field": "Cẩm Nang Làm Cha Mẹ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Những Trò Chơi Giúp Trẻ 0-2 Tuổi Phát Triển Toàn Diện Thể Chất Và Tâm Hồn",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "98.000",
+    "sale": "88.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936218410008.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Marketing - Bán Hàng"
+    "field": "Phát Triển Kỹ Năng - Trí Tuệ Cho Trẻ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Kinh Nghiệm Từ Nước Nhật - Kĩ Năng Xã Hội Của Trẻ Em - 42 Bí Quyết Giúp Trẻ Tự Tin Và Dũng Cảm Trong Quan Hệ Bạn Bè",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "62.000",
+    "sale": "43.400",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_188266.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Marketing - Bán Hàng"
+    "field": "Phát Triển Kỹ Năng - Trí Tuệ Cho Trẻ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Cất Cánh Cùng Lớp 1",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "109.000",
+    "sale": "41.420",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/c/_/c_t-c_nh-c_ng-l_p-1-03.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Khởi Nghiệp - Làm Giàu"
+    "field": "Phát Triển Kỹ Năng - Trí Tuệ Cho Trẻ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Thiền Tập Cho Con - Liệu Pháp Nuôi Dưỡng Tâm Hồn",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "79.000",
+    "sale": "37.130",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_189406.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Khởi Nghiệp - Làm Giàu"
+    "field": "Phát Triển Kỹ Năng - Trí Tuệ Cho Trẻ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Trò Chuyện Cùng Con Về Nền Kinh Tế",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "117.000",
+    "sale": "105.300",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/-/8-935207-001586_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Khởi Nghiệp - Làm Giàu"
+    "field": "Phát Triển Kỹ Năng - Trí Tuệ Cho Trẻ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Nuôi Dạy Con Thi Đâu Đỗ Đấy",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "86.000",
+    "sale": "67.080",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935069923248.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Khởi Nghiệp - Làm Giàu"
+    "field": "Phát Triển Kỹ Năng - Trí Tuệ Cho Trẻ"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Kinh Nghiệm Từ Nước Nhật - 43 Kĩ Năng Kiểm Soát Tức Giận (Dành Cho Trẻ Em)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "62.000",
+    "sale": "43.400",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_189688.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Khởi Nghiệp - Làm Giàu"
+    "field": "Phương Pháp Giáo Dục Trẻ Các Nước"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Phương Pháp Giáo Dục Con Của Người Do Thái - Giúp Trẻ Tự Tin Bước Vào Cuộc Sống",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "85.000",
+    "sale": "51.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936067605211.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Khởi Nghiệp - Làm Giàu"
+    "field": "Phương Pháp Giáo Dục Trẻ Các Nước"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Nuôi Dạy Bé Gái Từ 0 Đến 6 Tuổi (Tái Bản 2020)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "75.000",
+    "sale": "54.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_196722.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Khởi Nghiệp - Làm Giàu"
+    "field": "Phương Pháp Giáo Dục Trẻ Các Nước"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "24 Gương Hiếu Thảo - Nhị Thập Tứ Hiếu Toàn Tập (Tái Bản 2023)",
+    "type": "Nuôi Dạy Con",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "88.000",
+    "sale": "66.880",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/2/4/24-guong-hieu-thao_bia-1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Khởi Nghiệp - Làm Giàu"
+    "field": "Phương Pháp Giáo Dục Trẻ Các Nước"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Điệp Viên Hoàn Hảo X6 - Phạm Xuân Ẩn",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "178.000",
+    "sale": "124.600",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855737.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phân Tích Kinh Tế"
+    "field": "Câu Chuyện Cuộc Đời"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Khi Hơi Thở Hóa Thinh Không (Tái Bản 2020)",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "109.000",
+    "sale": "79.570",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_220964.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phân Tích Kinh Tế"
+    "field": "Câu Chuyện Cuộc Đời"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Gánh Gánh Gồng Gồng (Tái Bản 2023)",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "160.000",
+    "sale": "144.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043779851_1.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phân Tích Kinh Tế"
+    "field": "Câu Chuyện Cuộc Đời"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Điệp Viên Hoàn Hảo X6 - Phạm Xuân Ẩn - Bìa Cứng (Tái Bản 2022)",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "198.000",
+    "sale": "138.600",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855720.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phân Tích Kinh Tế"
+    "field": "Câu Chuyện Cuộc Đời"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Sống Mạo Hiểm Một Cách Cẩn Thận",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "159.000",
+    "sale": "114.480",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1-s_ng-m_o-hi_m.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Phân Tích Kinh Tế"
+    "field": "Câu Chuyện Cuộc Đời"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Bác Hồ Viết Di Chúc Và Di Chúc Của Bác Hồ (Tái Bản 2023)",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "55.000",
+    "sale": "38.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/a/bac-ho-viet-di-chuc-va-di-chuc-cua-bac-ho---tb-2023.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Lịch Sử Việt Nam Bằng Tranh - Lý Thường Kiệt (Bản Màu) (Tái Bản 2023)",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "70.000",
+    "sale": "63.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974184959.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Lịch Sử Việt Nam Bằng Tranh - Ngô Quyền Đại Phá Quân Nam Hán (Bản Màu) (Tái Bản 2023)",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "65.000",
+    "sale": "58.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974184928.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Tôi Chết Bắt Đầu Một Thế Giới Sống",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "58.000",
+    "sale": "52.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786045866979.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "100 Nhà Khoa Học Vĩ Đại Thay Đổi Thế Giới",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "205.000",
+    "sale": "133.250",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_100-nha-khoa-hoc-vi-dai.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Hồi Ký Phóng Viên Hồi Ký Chiến Trường - Trên Những Nẻo Đường Chiến Tranh Và Hòa Bình",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "269.000",
+    "sale": "196.370",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/z/4/z4933209550294_20dd49046f06cc2f416df99349ab20ab.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Tư Trị Thông Giám - Tập 5",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "298.000",
+    "sale": "268.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_19541.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Lịch Sử Việt Nam Bằng Tranh - Lý Thánh Tông Và Nước Đại Việt (Bản Màu) (Tái Bản 2023)",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "65.000",
+    "sale": "58.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974184942.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Một Chiến Dịch Ở Bắc Kỳ",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "380.000",
+    "sale": "296.400",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_200689.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Lịch Sử Việt Nam Bằng Tranh - Bản Màu (Hộp 16 Cuốn)",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "1.050.000",
+    "sale": "945.000",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974185642.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Ngồi Tù Khám Lớn",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "98.000",
+    "sale": "88.200",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_228438.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
   {
-    "name": "",
-    "type": "Kinh Tế",
+    "name": "Điệp Viên Ares Tự Thuật",
+    "type": "Tiểu Sử Hồi Ký",
     "author": "",
-    "price": ,
-    "amount": ,
+    "price": "145.000",
+    "sale": "130.500",
+    "amout": "",
     "publisher": "",
     "images": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786047264858.jpg"
     ],
     "description": [],
     "status": "",
     "dateIn": "",
     "discount": "",
-    "field": "Tài Chính - Ngân Hàng"
+    "field": "Lịch Sử"
   },
-  
+  {
+    "name": "Người Lính Phi Công Kể Chuyện",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "35.000",
+    "sale": "24.500",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244881615.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Lịch Sử"
+  },
+  {
+    "name": "Thomas Jefferson: Nhân Sư Mỹ",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "259.000",
+    "sale": "189.070",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/t/h/thomas_jefferson_outline_24.7.2018-01.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Lịch Sử"
+  },
+  {
+    "name": "Sài Gòn Năm Xưa (Tái Bản 2018)",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "120.000",
+    "sale": "108.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/f/6/f661b4de6371fd71d7be691438ea7441_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Lịch Sử"
+  },
+  {
+    "name": "Tự Truyện Benjamin Franklin (Tái Bản 2018)",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "109.000",
+    "sale": "79.570",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_176921.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chính Trị"
+  },
+  {
+    "name": "Putin - Logic Của Quyền Lực - Putin: Innenansichten Der Macht",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "168.000",
+    "sale": "117.600",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_216008.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chính Trị"
+  },
+  {
+    "name": "Gia Tộc Morgan",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "499.000",
+    "sale": "364.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_216020.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chính Trị"
+  },
+  {
+    "name": "Hồi Ký Lý Quang Diệu - Tập 1: Câu Chuyện Singapore (Tái Bản 2023)",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "399.000",
+    "sale": "291.270",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_35051_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chính Trị"
+  },
+  {
+    "name": "Cuộc Đời Của Các Triết Gia Nổi Tiếng",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "630.000",
+    "sale": "567.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786048474225.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chính Trị"
+  },
+  {
+    "name": "Chính Trị Đảng Phái Tại Hoa Kỳ - Parties Politics In America",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "269.000",
+    "sale": "196.370",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_200697.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chính Trị"
+  },
+  {
+    "name": "Con Tàu Ma Của Thế Chiến II",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "229.000",
+    "sale": "167.170",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_226958.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chính Trị"
+  },
+  {
+    "name": "Hồi Ký Lý Quang Diệu - Tập 2: Từ Thế Giới Thứ Ba Vươn Lên Thứ Nhất (Tái Bản 2023)",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "459.000",
+    "sale": "335.070",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_35053_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Chính Trị"
+  },
+  {
+    "name": "Kinh Tế Nhật Bản: Giai Đoạn Phát Triển Thần Kỳ 1955-1973",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "228.000",
+    "sale": "198.360",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8936144201510.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kinh Tế"
+  },
+  {
+    "name": "Sói Già Phố Wall - Phần 2 (Tái Bản 2022)",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "199.000",
+    "sale": "179.100",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786043937183.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kinh Tế"
+  },
+  {
+    "name": "Sói Già Phố Wall - Phần 3",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "165.000",
+    "sale": "99.000",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-tr_c-s_i-gi_-ph_-wall-3-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kinh Tế"
+  },
+  {
+    "name": "Bill Gates: Tham Vọng Lớn Lao Và Quá Trình Hình Thành Đế Chế Microsoft (Tái Bản 2017)",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "229.000",
+    "sale": "178.620",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935251406115_1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kinh Tế"
+  },
+  {
+    "name": "The Big Four - 4 Đại Gia Kiểm Toán: Deloitte - PwC - EY - KPMG",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "168.000",
+    "sale": "92.400",
+    "amout": "",
+    "publisher": "",
+    "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/4/-/4-dai-gia-kiem-toan---bia-1.jpg"
+    ],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kinh Tế"
+  },
+  {
+    "name": "Ký Ức Theo Dòng Đời",
+    "type": "Tiểu Sử Hồi Ký",
+    "author": "",
+    "price": "218.000",
+    "sale": "189.660",
+    "amout": "",
+    "publisher": "",
+    "images": ["https://cdn0.fahasa.com/media/catalog/product/k/u/kutdđ.jpg"],
+    "description": [],
+    "status": "",
+    "dateIn": "",
+    "discount": "",
+    "field": "Kinh Tế"
+  }
 ]
-

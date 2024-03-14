@@ -22,6 +22,7 @@ const SignIn = () => {
   const [remember, setRemember] = useState(false);
 
   const [access_token] = useSearchParams();
+
   const data = access_token.get("accessToken");
 
   useEffect(() => {
@@ -44,7 +45,9 @@ const SignIn = () => {
       setUser("");
       setPwd("");
       setSuccess(true);
-      if (result) {
+      console.log(result);
+      if (result.data.message) {
+        console.log(result.data);
         signIn(user);
         localStorage.setItem("remember", user);
         localStorage.setItem("accessToken", result.data.accessToken);
@@ -56,8 +59,21 @@ const SignIn = () => {
 
         },2000)
       }
+      else{
+        if(result.data.error.email){
+          toast.error(`${result.data.error.email.msg}`,{
+            position:"top-right"
+          })
+        }
+        else{
+          toast.error(`${result.data.error.password.msg}`,{
+            position:"top-right"
+          })
+        }
+      }
     } catch (err) {
-      if (!err?.result) {
+      console.log(err);
+      if (err?.result) {
         setErrMessage("No Server Response");
       } else if (err.result?.status === 400) {
         setErrMessage("Missing Username or Password");

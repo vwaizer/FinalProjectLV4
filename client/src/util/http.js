@@ -3,7 +3,7 @@ import  axios  from "axios";
 class Http{
     constructor(){
         this.accessToken=localStorage.getItem("accessToken")
-        
+        console.log(this.accessToken);
         this.instance=axios.create({
             baseURL:"http://localhost:4000",
             timeout:10000,
@@ -17,6 +17,7 @@ class Http{
               // Làm gì đó trước khi request dược gửi đi
               if (this.accessToken) {
                 config.headers.authorization = "Bearer "+this.accessToken
+                console.log(config.headers.authorization);
                 return config
               }
               return config
