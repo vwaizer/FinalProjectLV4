@@ -44,7 +44,7 @@ export class ImportedBook {
 }
 export class Receipt {
   constructor(receipt) {
-    (this.userID = receipt.userCode),
+    (this.userID = receipt.userID),
       (this.date = new Date(receipt.date)),
       (this.cart = receipt.cart),
       (this.status = receipt.status);

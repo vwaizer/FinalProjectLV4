@@ -22,9 +22,9 @@ const UserInfo = () => {
   
   const handleSignOut = () => {
     localStorage.removeItem("remember");
-    
+    localStorage.removeItem("accessToken")
+    navigative('/sign-in')
   };
-
   return (
     <div>
       <Button
