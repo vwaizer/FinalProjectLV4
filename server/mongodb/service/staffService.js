@@ -16,7 +16,7 @@ export const accounting=async(req,res)=>{
 
 }
 export const createStaff=async(req,res)=>{
-    ;
+    
     const result = await registerService.register(req.body);
    if(result.accessToken){
      return res.json("Success")

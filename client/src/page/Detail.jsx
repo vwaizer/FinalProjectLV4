@@ -34,7 +34,7 @@ function Detail () {
 
       if (authToken) {
         const response = await http.post(
-          `http://localhost:4000/receipt/addToCart/${ID}`,
+          `/receipt/addToCart/${ID}`,
           
         );
          console.log(response);
