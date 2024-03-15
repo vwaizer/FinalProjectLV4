@@ -27,7 +27,7 @@ function Products() {
   useEffect(() => {
     setLoading(true);
     http
-      .get("/book")
+      .get("/book/?page=1")
       .then((getBook) => setGetBook(getBook.data), setLoading(false))
       .catch((err) => console.log(err));
   }, []);
