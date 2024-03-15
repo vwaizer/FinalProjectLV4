@@ -10,6 +10,8 @@ import Pagination from "../pagination/Pagination";
 import { Skeleton } from "antd";
 import { http } from "../util/http.js";
 import ReactPaginate from 'react-paginate'
+import Group from "../custom/productcpn/Group.jsx";
+
 
 function Products() {
   const [getBook, setGetBook] = useState([]);
@@ -102,13 +104,6 @@ function Products() {
             </div>
             <div>
               <h2>Author</h2>
-              {getAuthor.map((item, index) => {
-                return (
-                  <div className="author" key={index}>
-                    <p>{item.author}</p>
-                  </div>
-                );
-              })}
             </div>
             <div>
               <h2>Publisher</h2>
