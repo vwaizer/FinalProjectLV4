@@ -34,7 +34,7 @@ class Http{
               if (url === "login" || url === "register") {
                 const data = response.data 
                 this.accessToken = data.data?.access_token
-             
+                localStorage.setItem("accessToken",this.accessToken)
               } 
               return response
             },

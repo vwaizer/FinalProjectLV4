@@ -1,3 +1,4 @@
+import { HiredBook } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js";
 import { ObjectId } from "mongodb";
 export const getDetailBook = async (req, res) => {
@@ -39,11 +40,28 @@ export const updateBook = async (req, res) => {
   return res.json(result);
 };
 export const getAllBook = async (req, res) => {
-  console.log(res);
-
-  const result = await databaseProject.book.find({}).toArray();
+ 
+  const page=req.query.page;
+  console.log(page);
+  const data = await databaseProject.book.find({}).toArray();
+  if(page){
+    const result=data.filter((item,index)=>{
+      if(index >=(Number(page)-1)*32 ){
+        if( index < (Number(page))*32){
+          return item
+        }
+        
+      }     
+    })
+    console.log(result);
+    return res.json(result)
+    
+  }
+  const result=data.length();
+  
+  
   // console.log(result);
-  return res.json(result);
+  return res.json({page:result});
 };
 export const getFilterBook = async (req, res,next) => {
   console.log("vao");
@@ -68,6 +86,7 @@ export const getFilterBook = async (req, res,next) => {
         .toArray();
       return res.json(filterData);
     }
+    else{getAllBook(req, res,next);}
   } else {
     getAllBook(req, res,next);
   }
@@ -146,4 +165,8 @@ export const getAllAuthor = async (req, res) => {
 
   return res.json(authorList);
 };
-
+export const postHiredBook= async(req,res)=>{
+  const hiredBook=new HiredBook(req.body)
+  const result=await databaseProject.hiredBook.insertOne(hiredBook)
+  return res.json(result)
+}
