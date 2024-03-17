@@ -17,6 +17,7 @@
     align-items: center;
     max-width: 300px;
     height: fit-content;
+    border: 1px solid #fff;
     border-radius: 5px;
     z-index: -1;
     overflow: hidden;   
@@ -26,7 +27,7 @@
 .setproduct_custom:hover{
     transform: scale(1.1);
     cursor: pointer;
-    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px grey;
 }
 
 .product_image { 
