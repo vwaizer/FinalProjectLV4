@@ -30,7 +30,10 @@ function SignUp() {
         confirmPassword: checkConfirmPassword,
       });
       console.log(JSON.stringify(resultSignUp?.data));
-      if (resultSignUp.data.access_token) {
+      if (resultSignUp.data) {
+        toast.success("Register successfully",{
+          position:"top-right"
+        })
         setTimeout(() => {
           navigate('/sign-in')
         },2000)
