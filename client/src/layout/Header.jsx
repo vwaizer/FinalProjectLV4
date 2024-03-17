@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import "./layout.css";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import UserInfo from "../user-infomation/UserInfo";
 import ModalCart from "../cart/ModalCart";
+import UserInfo from "../user-infomation/UserInfo";
+import "./layout.css";
 let navbar = [
   {
     title: "Home",
@@ -48,7 +47,7 @@ function Header() {
   const [signout, setSignout] = useState(false);
 
   setInterval(() => {
-    const token = localStorage.getItem("remember");
+    const token = localStorage.getItem("accessToken");
     if (token == "undefined" || token == "null" || !token) {
       setSignin(false);
     } else {
@@ -56,7 +55,7 @@ function Header() {
     }
   }, 1000);
   useEffect(() => {
-    const token = localStorage.getItem("remember");
+    const token = localStorage.getItem("accessToken");
     if (token == "undefined" || token == "null" || !token) {
       setSignin(false);
     } else {

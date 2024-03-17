@@ -6,7 +6,7 @@ import { http } from "../util/http";
 import "./page.css";
 function Detail () {
   const { ID } = useParams("ID");
-  const navigate = useNavigate()
+  const navigator = useNavigate()
 
   const [product, setProduct] = useState([]);
 
@@ -30,7 +30,7 @@ function Detail () {
 
     try {
       console.log(ID);
-      const authToken = localStorage.getItem("remember");
+      const authToken = localStorage.getItem("accessToken");
 
       if (authToken) {
         const response = await http.post(
@@ -38,12 +38,12 @@ function Detail () {
           
         );
          console.log(response);
-        if (response.status == 200) {
+        if (response.status === 200) {
           toast.success(`Product added to cart successfully`, {
             position: "top-right"
           });
           setTimeout(() => {
-            navigate(`/cart/:ID`)
+            navigator(`/cart/:ID`)
           },2000)
         } else {
           console.error(`Failed to add product to cart:`);
@@ -56,7 +56,7 @@ function Detail () {
         toast.error("Please log in to add products to cart", {
           position: "top-right"
         });
-        setTimeout( navigate('/sign-in'),2000)
+        setTimeout( navigator('/sign-in'),2000)
        
       }
     } catch (error) {
@@ -98,7 +98,7 @@ function Detail () {
         <div className="detail_button">
           <button  type="submit" onClick={()=>handleAddToCartClick(product[0]._id)}>ADD TO CART</button>
           <button type="submit">BUY NOW</button>
-          <button type="submit">FOR RENT</button>
+          <button type="submit" onClick={()=>navigator(`/rent/${ID}`)}>FOR RENT</button>
         </div>
       </>
     </Layout>

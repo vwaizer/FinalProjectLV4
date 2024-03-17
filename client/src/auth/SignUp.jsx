@@ -35,10 +35,16 @@ function SignUp() {
           navigate('/sign-in')
         },2000)
       }else if(resultSignUp.data.error){
-        console.log("helo")
-        toast.error("Email is already exist", {
-          position: "top-right"
-        })
+        if(resultSignUp.data.error.email){
+          toast.error(`${resultSignUp.data.error.email.msg}`,{
+            position:"top-right"
+          })
+        }
+        else{
+          toast.error(`${resultSignUp.data.error.password.msg}`,{
+            position:"top-right"
+          })
+        }
       }
       setAuth({ user, pwd, checkConfirmPassword });
       setUser("");

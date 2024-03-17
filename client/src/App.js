@@ -24,6 +24,7 @@ import {
 } from "./admin/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
 import { ToastContainer } from "react-toastify";
+import RentForm from "./page/RentForm.jsx";
 function App() {
   return (
     <AuthProvider>
@@ -45,6 +46,7 @@ function App() {
         <Route path="/admin/IaB" element={<ImportAndBrowse />}></Route>
         <Route path="/admin/SaU" element={<StaffAndUser />}></Route>
         <Route path="/admin/statistic" element={<Statistics />}></Route>
+        <Route path="/rent/:id" element={<RentForm/>}></Route>
       </Routes>
     </AuthProvider>
   );

@@ -49,7 +49,7 @@ const SignIn = () => {
       if (result.data.message) {
         console.log(result.data);
         signIn(user);
-        localStorage.setItem("remember", user);
+       
         localStorage.setItem("accessToken", result.data.accessToken);
         toast.success("Login successfull", {
           position: "top-right",
