@@ -51,6 +51,7 @@
 .bookstore_header .logo_header{
     background: transparent;
     margin-right: 20px;
+    cursor: pointer;
 }
 .navbar-links .logo_header img{
     width: 200px;

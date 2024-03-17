@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ModalCart from "../cart/ModalCart";
 import UserInfo from "../user-infomation/UserInfo";
 import "./layout.css";
@@ -12,14 +12,6 @@ let navbar = [
   {
     title: "Products",
     href: "/product",
-  },
-  {
-    title: "About Us",
-    href: "/about",
-  },
-  {
-    title: "Contact Us",
-    href: "/contact",
   },
   {
     title: "Cart",
@@ -45,6 +37,7 @@ function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [signin, setSignin] = useState(false);
   const [signout, setSignout] = useState(false);
+  const navigate = useNavigate()
 
   setInterval(() => {
     const token = localStorage.getItem("accessToken");
@@ -63,13 +56,16 @@ function Header() {
     }
   }, [signout]);
 
+  const backToHome = () => {
+    window.location.href = "/"
+  }
   return (
     <>
       {signin ? (
         <div className="bookstore_header">
           <div className="navbar-links">
             <div className="logo_header">
-              <img src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg" />
+              <img onClick={backToHome} src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg" />
             </div>
             <div className="navbar_container">
               {navbar.map((item, index) => {
@@ -94,7 +90,7 @@ function Header() {
         <div className="bookstore_header">
           <div className="navbar-links">
             <div className="logo_header">
-              <img src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg" />
+              <img onClick={backToHome} src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg" />
             </div>
             <div className="navbar_container">
               {navbar.map((item, index) => {

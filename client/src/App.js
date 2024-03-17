@@ -25,6 +25,7 @@ import {
 import UserPage from "./user-infomation/UserPage.jsx";
 import { ToastContainer } from "react-toastify";
 import RentForm from "./page/RentForm.jsx";
+import Admin from "./auth/Admin.jsx";
 function App() {
   return (
     <AuthProvider>
@@ -39,6 +40,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
         <Route path="/user" element={<UserPage />}></Route>
+        <Route path="/staff" element={<Admin />}></Route>
         <Route path="/admin" element={<AdminPage />}></Route>
         <Route path="/admin/overview" element={<Overview />}></Route>
         <Route path="/admin/bill" element={<Bill />}></Route>
