@@ -148,13 +148,13 @@ function Products() {
         </div>
         <div className="rightbox">
           <div>{loading ? <Loading /> : <ShowProduct getBook={getBook} />}</div>
-          <div className="pagination">
+          <div  >
             <ReactPaginate
               previousLabel={"<<"}
               nextLabel={">>"}
               breakLabel={"..."}
               pageCount={getBook.length}
-              marginPagesDisplayed={3}
+              marginPagesDisplayed={2}
               pageRangeDisplayed={3}
               onPageChange={handlePageClick}
               containerClassName={"pagination"}
