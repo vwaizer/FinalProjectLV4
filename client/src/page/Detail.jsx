@@ -37,7 +37,7 @@ function Detail() {
       const authToken = localStorage.getItem("accessToken");
 
       if (authToken) {
-        const response = await http.post(`/receipt/addToCart/${ID}`);
+        const response = await http.post(`/receipt/addToCart/${ID}`,{amount:quantity});
         console.log(response);
         if (response.status == 200) {
           toast.success(`Product added to cart successfully`, {

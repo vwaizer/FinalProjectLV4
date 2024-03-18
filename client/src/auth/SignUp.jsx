@@ -30,7 +30,7 @@ function SignUp() {
         confirmPassword: checkConfirmPassword,
       });
       console.log(JSON.stringify(resultSignUp?.data));
-      if (resultSignUp.data) {
+      if (!resultSignUp.data.error) {
         toast.success("Register successfully", {
           position: "top-right",
         });
