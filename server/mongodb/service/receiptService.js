@@ -11,13 +11,11 @@ export const getAllReceipt=async(req,res,next)=>{
 }
 export const getFilterReceipt=async(req,res,next)=>{
     try {
-        if(req.params.userID){
-            const result=await databaseProject.receipt.find({userID:new ObjectId(`${req.params.userID}`)}).toArray()
+        if(req.userID.valueOf()){
+            const result=await databaseProject.receipt.find({userID:new ObjectId(`${req.userID.valueOf()}`)}).toArray()
             return res.json(result)
         }
-        else{
-            getAllReceipt(req,res,next)
-        }
+       
     } catch (error) {
         next(error)
     }
