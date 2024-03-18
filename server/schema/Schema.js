@@ -53,11 +53,11 @@ export class Receipt {
 
 export class HiredBook {
   constructor(book) {
-    (this.userCode = book.userCode),
-      (this.bookCode = book.bookCode),
+    (this.userID = book.userID),
+      (this.bookID = book.bookID),
       (this.dateIn = new Date(book.dateIn)),
       (this.dateOut = new Date(book.dateOut)),
-      (this.state = book.state);
+      (this.status = book.status);
   }
 }
 export class Cart {

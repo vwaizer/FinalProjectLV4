@@ -103,11 +103,10 @@ function Detail() {
         <div className="detail_button">
           <button
             type="submit"
-            onClick={() => handleAddToCartClick(product[0]._id)}
           >
             ADD TO CART
           </button>
-          <button type="submit">BUY NOW</button>
+          <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">BUY NOW</button>
           <button type="submit" onClick={()=>navigator(`/rent/${ID}`)}>FOR RENT</button>
         </div>
         <div>

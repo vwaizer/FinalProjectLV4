@@ -30,7 +30,7 @@ function Products() {
       .catch((err) => console.log(err));
   }, [currentPage]);
 
-  console.table(getBook)
+  console.log(getBook)
 
   useEffect(() => {
     http

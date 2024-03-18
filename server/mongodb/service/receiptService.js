@@ -1,6 +1,6 @@
 import { Receipt } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js"
-import {ObjectId} from "mongodb";
+import {ObjectId, UUID} from "mongodb";
 export const getAllReceipt=async(req,res,next)=>{
     try {
         const result=await databaseProject.receipt.find().toArray()
@@ -71,3 +71,35 @@ export const addToCart=async(req,res,next)=>{
    }
 
 }
+export const getHistory=async(req,res,next)=>{
+    const userID=req.userID.valueOf()
+    try {
+        const result=await databaseProject.receipt.find({userID:new ObjectId(`${userID}`),status:"History"}).toArray()
+        return res.json(result)
+    } catch (error) {
+        next(error)
+    }
+
+   
+}
+export const setHistory=async(req,res,next)=>{
+    const userID=req.userID.valueOf()
+    const cart=req.body.cart
+    try {
+        const result=await databaseProject.receipt.insertOne({date:new Date(),cart:cart,userID:userID,status:"History"})
+        const cartUser=await databaseProject.receipt.findOne({userID:userID,status:"In Cart"})
+        if(
+            cart.length()< cartUser.cart.length()
+        ){
+            const newCart=cartUser.cart.filter((item,index)=>!cart.includes(item))
+            const updateResult=await databaseProject.receipt.updateOne({userID:userID,status:"In Cart"},{cart:newCart,status:"History"})
+            return res.json(updateResult)
+        }
+        else{
+           await databaseProject.receipt.deleteOne({userID:userID,status:"In Cart"})
+        }
+        return res.json(result)
+    } catch (error) {
+        next(error)
+    }
+}  
