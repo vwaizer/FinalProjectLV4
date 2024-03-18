@@ -11,14 +11,14 @@ function Payment() {
     "Số điện thoại",
     "Quốc gia",
     "Tỉnh/Thành phố",
-    "Quận/Huyện", 
+    "Quận/Huyện",
     "Phường/Xã",
     "Địa chỉ nhận hàng",
   ];
-  const [showNoteInput,setShowNoteInput] = useState(false)
-  const [checkFillNote,setCheckFillNote] = useState(false)
-  const listCheck =JSON.parse(localStorage.getItem('BoughtList'))
-  console.log(listCheck)
+  const [showNoteInput, setShowNoteInput] = useState(false);
+  const [checkFillNote, setCheckFillNote] = useState(false);
+  const listCheck = JSON.parse(localStorage.getItem("BoughtList"));
+  console.log(listCheck);
   const onChange = (e) => {
     setShowNoteInput(e.target.checked);
   };
@@ -77,28 +77,46 @@ function Payment() {
             <Checkbox onChange={onChange}>
               <span style={{ fontSize: "16px" }}>Ghi chú</span>
             </Checkbox>
-            
-          {showNoteInput &&<div style={{width:'550px',margin:'10px 0px'}}><Input placeholder="Nhập ghi chú" /></div>}
-        
+
+            {showNoteInput && (
+              <div style={{ width: "550px", margin: "10px 0px" }}>
+                <Input placeholder="Nhập ghi chú" />
+              </div>
+            )}
           </div>
         </div>
 
-        <div >
-        <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>
         <div>
-          {listCheck.map((item)=>{
-            const {bookImage,name,price} = item
-            return(
-              
-              <div style={{margin:'10px'}}>
-                <img style={{width:'120px',height:'120px'}} src={bookImage} alt=""></img>
-                <div>{price}</div>
-                <div>1</div>
-                <div>{price}</div>
-              </div>
-            )
-          })}
-        </div>
+          <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>
+          <div>
+            {listCheck.map((item) => {
+              const { bookImage, name, price } = item;
+              return (
+                <div
+                  style={{
+                    margin: "10px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <div style={{ display: "flex" }}>
+                    <img
+                      style={{ width: "120px", height: "130px" }}
+                      src={bookImage}
+                      alt=""
+                    ></img>
+                    <div style={{ padding: "0px 15px" }}>{name}</div>
+                  </div>
+
+                  <div style={{display:'flex', flexBasis:'30%', border:'1px solid black', justifyContent:'space-between'}}>
+                    <div>{price} đ</div>
+                    <div>1</div>
+                    <div style={{color:'#F39801',fontWeight:'600'}}>{price} đ</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </Layout>

@@ -3,7 +3,6 @@ import Layout from "../layout/Layout";
 import "./cart.css";
 import { FaRegTrashCan } from "react-icons/fa6";
 import { useState } from "react";
-import axios from "axios";
 import { http } from "../util/http";
 function Cart() {
   const books = [
@@ -12,29 +11,29 @@ function Cart() {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShc1Hd9nzZbrP_1N07MrjGbekp8Pz6J4HRHtw-FGB33Q&s",
       name: "book",
       price: 100000,
-      amount: 1
+      amount: 1,
     },
     {
       bookImage:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShc1Hd9nzZbrP_1N07MrjGbekp8Pz6J4HRHtw-FGB33Q&s",
       name: "books",
       price: 100000,
-      amount: 1
+      amount: 1,
     },
   ];
-  const [getAddToCart,setGetAddToCart] = useState([])
-  
+  const [getAddToCart, setGetAddToCart] = useState([]);
+
   useEffect(() => {
     http
       .get("/receipt/")
       .then((getAddToCart) => setGetAddToCart(getAddToCart.data))
       .catch((err) => console.log(err));
   }, []);
-  console.log(getAddToCart)
+  console.log(getAddToCart);
   const [inputValue, setInputValue] = useState({});
   const [selectAllChecked, setSelectAllChecked] = useState(false);
   const [checkboxStates, setCheckboxStates] = useState(books.map(() => false));
-  const [updateBooks,setUpdateBooks] = useState(books)
+  const [updateBooks, setUpdateBooks] = useState(books);
   const handleKeyPress = (event, name) => {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -43,7 +42,6 @@ function Cart() {
         const newInputValue = { ...inputValue };
         newInputValue[name] = value;
         setInputValue(newInputValue);
-        
       }
     }
   };
@@ -53,13 +51,13 @@ function Cart() {
       const newInputValue = { ...inputValue };
       newInputValue[name] = value;
       setInputValue(newInputValue);
-  
+
       const newAmount = updateBooks.map((book) => {
         if (book.name === name) {
           return {
             ...book,
-            amount: value
-          }
+            amount: value,
+          };
         }
         return book;
       });
@@ -105,20 +103,17 @@ function Cart() {
     }
   };
   const handlePayment = () => {
-    const BoughtList = books.filter((item,index) => checkboxStates[index])
-    if(BoughtList.length > 0){
-      localStorage.setItem('BoughtList',JSON.stringify(BoughtList))
-      window.location.href = '/payment';
+    const BoughtList = books.filter((item, index) => checkboxStates[index]);
+    if (BoughtList.length > 0) {
+      localStorage.setItem("BoughtList", JSON.stringify(BoughtList));
+      window.location.href = "/payment";
     }
-  }
+  };
   return (
     <Layout>
       <div className="cart-container">
         <div className="header-cart-item">
-          <h1
-          >
-            GIỎ HÀNG ({books.length} sản phẩm)
-          </h1>
+          <h1>GIỎ HÀNG ({books.length} sản phẩm)</h1>
           <div className="checked-all-products">
             <div style={{ flex: "2", display: "flex" }}>
               <label>
@@ -127,10 +122,7 @@ function Cart() {
                   checked={selectAllChecked}
                   onChange={handleSelectAllChange}
                 />
-                <span
-                >
-                  Chọn tất cả ({books.length} sản phẩm)
-                </span>
+                <span>Chọn tất cả ({books.length} sản phẩm)</span>
               </label>
             </div>
             <div style={{ flex: ".5" }}>Số lượng</div>
@@ -162,20 +154,14 @@ function Cart() {
                       <div className="amount-button">
                         <div>
                           <button
-                              onClick={() => {
-                                if (inputValue[name] > 1) {
-                                  const newBooks = books.map(book => {
-                                    if (book.name === name) {
-                                      return {
-                                        ...book,
-                                        amount: book.amount - 1
-                                      };
-                                    }
-                                    return book;
-                                  });
-                                  setUpdateBooks(newBooks);
-                                }
-                              }}
+                            onClick={() => {
+                              if (inputValue[name] > 1) {
+                                const newInputValue = { ...inputValue };
+                                newInputValue[name] =
+                                  (newInputValue[name] || 0) - 1;
+                                setInputValue(newInputValue);
+                              }
+                            }}
                           >
                             <img
                               src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/ico_minus2x.png"
@@ -251,7 +237,8 @@ function Cart() {
                 <div class="number-cart-page-right">{finalTotal()} đ</div>
               </div>
             </div>
-            <button onClick={()=>handlePayment()}
+            <button
+              onClick={() => handlePayment()}
               className={` ${
                 !checkboxStates.includes(true) ? "disabled" : "cart-button-pay"
               }`}
