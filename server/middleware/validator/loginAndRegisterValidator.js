@@ -1,8 +1,6 @@
-
 import { checkSchema, validationResult } from "express-validator";
 import databaseProject from "../../mongodb/GetDataBase.js";
-
-
+import bcrypt from "bcrypt";
 export const validator = (schema) => {
   return async (req, res, next) => {
     console.log(req);
@@ -21,13 +19,13 @@ export const validateRegister = validator(
     {
       email: {
         errorMessage: "Invalid username",
-        isEmail:true,
+        isEmail: true,
         custom: {
           options: async (value, { req }) => {
             const isExist = await databaseProject.users.findOne({
               email: value,
             });
-            
+
             if (isExist) {
               throw new Error("Username is already existed");
             }
@@ -41,7 +39,6 @@ export const validateRegister = validator(
           options: { min: 8 },
           errorMessage: "Password should be at least 8 chars",
         },
-        
       },
       confirmPassword: {
         trim: true,
@@ -49,7 +46,7 @@ export const validateRegister = validator(
           options: { min: 8 },
           errorMessage: "Password should be at least 8 chars",
         },
-        
+
         custom: {
           options: (value, { req }) => {
             if (value !== req.body.password) {
@@ -93,7 +90,7 @@ export const loginValidator = validator(
   checkSchema(
     {
       email: {
-        errorMessage: "Invalid username",
+        errorMessage: "Invalid email",
         isEmail: true,
         custom: {
           options: async (value) => {
@@ -120,11 +117,21 @@ export const loginValidator = validator(
             const userLogin = await databaseProject.users.findOne({
               email: req.body.email,
             });
-            if (userLogin.password === value) {
-              return true;
-            } else {
-              throw new Error(" PASSWORD DOES NOT MATCH");
-            }
+            
+            bcrypt.compare(value, userLogin.password, function (err, result) {
+              if (err) {
+                throw err;
+              } 
+              console.log(result);
+              if(result){
+                return true;
+              } else {
+                throw new Error(" PASSWORD DOES NOT MATCH");
+              }
+              
+            })
+           
+           
           },
         },
       },
@@ -132,4 +139,3 @@ export const loginValidator = validator(
     ["body"]
   )
 );
-  

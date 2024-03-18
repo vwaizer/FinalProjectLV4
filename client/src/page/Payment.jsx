@@ -1,10 +1,108 @@
-import React from 'react'
-import Layout from '../layout/Layout'
+import React from "react";
+import Layout from "../layout/Layout";
+import "./payment.css";
+import { Input, Radio, ConfigProvider, Checkbox } from "antd";
+import { useState } from "react";
 
 function Payment() {
+  const boxFillInfo = [
+    "Họ và tên người nhận",
+    "Email",
+    "Số điện thoại",
+    "Quốc gia",
+    "Tỉnh/Thành phố",
+    "Quận/Huyện", 
+    "Phường/Xã",
+    "Địa chỉ nhận hàng",
+  ];
+  const [showNoteInput,setShowNoteInput] = useState(false)
+  const [checkFillNote,setCheckFillNote] = useState(false)
+  const listCheck =JSON.parse(localStorage.getItem('BoughtList'))
+  console.log(listCheck)
+  const onChange = (e) => {
+    setShowNoteInput(e.target.checked);
+  };
   return (
-    <Layout>Payment</Layout>
-  )
+    <Layout>
+      <div style={{ width: "80%", margin: "auto" }}>
+        <div style={{ marginBottom: "40px" }}>
+          <div className="check-out-title"> ĐỊA CHỈ GIAO HÀNG </div>
+          {boxFillInfo.map((item) => {
+            return (
+              <div
+                style={{
+                  width: "65%",
+                  display: "flex",
+                  padding: "10px 0px",
+                }}
+                key={item}
+              >
+                <div style={{ flexBasis: "35%" }}>{item} </div>
+                <Input placeholder={`Nhập ${item} `} />
+              </div>
+            );
+          })}
+        </div>
+
+        <div style={{ marginBottom: "40px" }}>
+          <div className="check-out-title"> PHƯƠNG THỨC THANH TOÁN </div>
+          <div style={{ marginTop: "10px" }}>
+            <ConfigProvider
+              theme={{
+                components: {
+                  Radio: {
+                    radioSize: 18,
+                    dotSize: 7.5,
+                  },
+                },
+              }}
+            >
+              <Radio>
+                <img
+                  style={{ padding: "0px 10px" }}
+                  src="https://cdn0.fahasa.com/skin/frontend/base/default/images/payment_icon/ico_cashondelivery.svg?q=105522"
+                  alt=""
+                ></img>
+                <span style={{ fontSize: "16px" }}>
+                  Thanh toán bằng tiền mặt khi nhận hàng
+                </span>
+              </Radio>
+            </ConfigProvider>
+          </div>
+        </div>
+
+        <div style={{ marginBottom: "40px" }}>
+          <div className="check-out-title"> THÔNG TIN KHÁC </div>
+          <div style={{ marginTop: "10px" }}>
+            <Checkbox onChange={onChange}>
+              <span style={{ fontSize: "16px" }}>Ghi chú</span>
+            </Checkbox>
+            
+          {showNoteInput &&<div style={{width:'550px',margin:'10px 0px'}}><Input placeholder="Nhập ghi chú" /></div>}
+        
+          </div>
+        </div>
+
+        <div >
+        <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>
+        <div>
+          {listCheck.map((item)=>{
+            const {bookImage,name,price} = item
+            return(
+              
+              <div style={{margin:'10px'}}>
+                <img style={{width:'120px',height:'120px'}} src={bookImage} alt=""></img>
+                <div>{price}</div>
+                <div>1</div>
+                <div>{price}</div>
+              </div>
+            )
+          })}
+        </div>
+        </div>
+      </div>
+    </Layout>
+  );
 }
 
-export default Payment
+export default Payment;

@@ -1,8 +1,6 @@
-import databaseProject from "../GetDataBase.js"
-import {ObjectId} from "mongodb"
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
+import { ObjectId } from "mongodb";
 import { User } from "../../schema/Schema.js";
+import databaseProject from "../GetDataBase.js";
 export const getDetailUser=async (req,res,next)=>{
   console.log("vao getDetailUser");
     const userID=req.userID;

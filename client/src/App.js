@@ -1,18 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import SignIn from "./auth/SignIn.jsx";
-import SignUp from "./auth/SignUp.jsx";
-import { AuthProvider } from "./context/AuthProvide.js";
-import { Suspense, lazy } from "react";
-import {
-  AboutUs,
-  Cart,
-  ContactUs,
-  Detail,
-  Home,
-  Payment,
-  Products,
-} from "./page/index.js";
 import {
   AdminPage,
   Bill,
@@ -22,8 +9,21 @@ import {
   StaffAndUser,
   Statistics,
 } from "./admin/index.js";
+import Admin from "./auth/Admin.jsx";
+import SignIn from "./auth/SignIn.jsx";
+import SignUp from "./auth/SignUp.jsx";
+import { AuthProvider } from "./context/AuthProvide.js";
+import RentForm from "./page/RentForm.jsx";
+import {
+  AboutUs,
+  Cart,
+  ContactUs,
+  Detail,
+  Home,
+  Payment,
+  Products,
+} from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
-import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <AuthProvider>
@@ -38,6 +38,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
         <Route path="/user" element={<UserPage />}></Route>
+        <Route path="/staff" element={<Admin />}></Route>
         <Route path="/admin" element={<AdminPage />}></Route>
         <Route path="/admin/overview" element={<Overview />}></Route>
         <Route path="/admin/bill" element={<Bill />}></Route>
@@ -45,9 +46,11 @@ function App() {
         <Route path="/admin/IaB" element={<ImportAndBrowse />}></Route>
         <Route path="/admin/SaU" element={<StaffAndUser />}></Route>
         <Route path="/admin/statistic" element={<Statistics />}></Route>
+        <Route path="/rent/:id" element={<RentForm/>}></Route>
       </Routes>
     </AuthProvider>
   );
+  
 }
 
 export default App;

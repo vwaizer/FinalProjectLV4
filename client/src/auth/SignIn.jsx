@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import AuthContext from "../context/AuthProvide";
 import Layout from "../layout/Layout";
 import "./auth.css";
+import { IoMdArrowForward } from "react-icons/io";
 const LOGIN_URL = "/auth";
 
 const SignIn = () => {
@@ -49,7 +50,7 @@ const SignIn = () => {
       if (result.data.message) {
         console.log(result.data);
         signIn(user);
-        localStorage.setItem("remember", user);
+       
         localStorage.setItem("accessToken", result.data.accessToken);
         toast.success("Login successfull", {
           position: "top-right",
@@ -144,6 +145,9 @@ const SignIn = () => {
             <div className="register-link">
               <p>
                 Don't have an account? <a href="/sign-up">Register</a>
+              </p>
+              <p>
+                Go to Administration <IoMdArrowForward /> <a href="/staff">Just for staff</a>
               </p>
             </div>
           </form>

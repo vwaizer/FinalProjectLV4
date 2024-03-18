@@ -2,18 +2,20 @@ import { User } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js";
 import { createAccessToken } from "../jwt/jwtController.js";
 import {ObjectId} from "mongodb"
+import bcrypt from "bcrypt"
 class UserService {
     async register(payload) {
       const existingAccount = await databaseProject.users.findOne({ email: payload.email });
       console.log(existingAccount);
       if (!existingAccount) {
-      
+       const encryptPass= bcrypt.hashSync(payload.password, 10);
+      console.log("encrypt",encryptPass);
         await databaseProject
           .users
           .insertOne(
             new User({
               username:payload.email,
-              password:payload.password,
+              password:encryptPass,
               fullName:"",
               email:payload.email,
               gender:"other",
@@ -22,9 +24,7 @@ class UserService {
               role:payload.role||""
             })
           );
-        const access_token = await createAccessToken({ email:payload.email,password:payload.password });
-        return access_token;
-        
+       
       }
       return false
     }
@@ -36,6 +36,6 @@ class UserService {
    
     return res.json({
         message: 'Register successfully',
-        access_token: accessToken
+        
     })
 }
