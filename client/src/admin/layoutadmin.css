@@ -1,15 +1,13 @@
 .layout{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: minmax(300px, 38%) 1fr;
 }
 
 .title{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 10px;
    background-color: greenyellow;
 
