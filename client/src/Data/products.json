@@ -6,7 +6,7 @@
     "price": "108.000",
     "sale": "84.240",
     "amout": 3000,
-    "publisher": "NXB Hội Nhà Văn",
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_217480.jpg?_gl=1*12ucoy2*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTMwMjEyOC4yLjEuMTcwOTMwMjI4MS4zNS4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/cay_cam_ngot_cua_toi/2020_12_17_16_50_30_1-390x510.jpg",
@@ -56,7 +56,7 @@
     "type": "Văn học",
     "author": "Amy Trương",
     "price": "79.000",
-    "sale": "",
+    "sale": "57.670",
     "amout": 7389,
     "publisher": "Dân Trí",
     "images": [
@@ -89,7 +89,7 @@
     "price": "130.000",
     "sale": "101.400",
     "amout": 3420,
-    "publisher": "NXB Trẻ",
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/m/u/mua-he-khong-ten---bia-mem---3d.jpg?_gl=1*wxsg70*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4NjY1Mi4zNC4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
       "https://cdn0.fahasa.com/media/catalog/product/b/o/bookmak_1_1.jpg",
@@ -173,7 +173,7 @@
     "price": "110.000",
     "sale": "85.800",
     "amout": 3200,
-    "publisher": "NXB Trẻ",
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/l/a/lam-ban-voi-bau-troi_bia-mem_3d.gif?_gl=1*1l8sp6r*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4NzU5OC40MS4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/lam_ban_voi_bau_troi/2020_04_13_11_18_55_11-390x510.JPG",
@@ -196,7 +196,7 @@
     "price": "79.000",
     "sale": "61.620",
     "amout": 4500,
-    "publisher": "NXB Hội Nhà Văn",
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235226272_1.jpg?_gl=1*aybq9c*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4Nzc5OS4zNy4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235226272_2.jpg",
@@ -240,18 +240,20 @@
     "name": "Thuyền Trưởng Blood",
     "type": "Văn học",
     "author": "Rafael Sabatini",
-    "price": 159.0,
-    "sale": "",
-    "amout": 1200,
-    "publisher": "NXB Văn Học",
+    "price": "159.000",
+    "sale": "143.100",
+    "amout": 7390,
+    "publisher": "Văn Học",
     "images": [
+      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_206322.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thuyen_truong_blood/2020_11_04_17_31_31_1-390x510.jpg?_gl=1*1bc2egw*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4ODQwOS41My4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thuyen_truong_blood/2020_11_04_17_31_31_2-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thuyen_truong_blood/2020_11_04_17_31_31_3-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thuyen_truong_blood/2020_11_04_17_31_31_4-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thuyen_truong_blood/2020_11_04_17_31_31_5-390x510.jpg"
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thuyen_truong_blood/2020_11_04_17_31_31_2-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Peter Blood đang có cuộc sống an nhàn với nghề bác sĩ ở một vùng quê nước Anh thì bị vướng vào rắc rối trong một lần ra tay chữa bệnh cứu người, rồi anh bị kết án oan và bị đày đến một hòn đảo ở vùng biển Carribe làm nô lệ",
+      "Số phận đưa đẩy anh trốn thoát cùng một nhóm người đồng cảnh ngộ, tới lánh nạn tại Tortuga – tụ điểm của đám cướp biển vùng Carribe. Và thế là chỉ với một con tàu, một nhóm người ít ỏi nhưng thuyền trưởng Blood đã khởi đầu nghề cướp biển của mình bằng một trí lực hơn người.",
+      "Với nghệ thuật kể chuyện tài tình, lỗi dẫn dắt khéo léo, cách miêu tả nhân vật tinh tế, các hội thoại thông minh và dí dỏm, ngòi bút tài ba của Rafael Sabatini dẫn dắt độc giả thực sự sống trong không khí phiêu lưu ly kỳ, sống động của chàng thủ lĩnh tài ba với những chiến tích oanh liệt dọc khắp bờ biển Đại Tây Dương, đồng thời chứng kiến mối tình không kém phần lãng mạn giữa anh và tiểu thư Arabella Bishop – cháu gái của kẻ đối địch không đội trời chung với Blood."
+    ],
     "status": "",
     "dateIn": "10-25-2020",
     "discount": "10%",
@@ -261,18 +263,20 @@
     "name": "Ngày Xưa Có Một Chuyện Tình (Tái Bản 2019)",
     "type": "Văn học",
     "author": "Nguyễn Nhật Ánh",
-    "price": 125.0,
-    "sale": "",
+    "price": "125.000",
+    "sale": "100.000",
     "amout": 4210,
-    "publisher": "NXB Trẻ",
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ngay_xua_co_mot_chuyen_tinh_tai_ban_2019/2021_06_11_15_33_10_1-390x510.jpg?_gl=1*1hq6ed*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTQ4NTUzMC40LjEuMTcwOTQ4ODY3NC4xLjAuMA..*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ngay_xua_co_mot_chuyen_tinh_tai_ban_2019/2021_06_11_15_33_10_2-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ngay_xua_co_mot_chuyen_tinh_tai_ban_2019/2021_06_11_15_33_10_3-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ngay_xua_co_mot_chuyen_tinh_tai_ban_2019/2021_06_11_15_33_10_4-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ngay_xua_co_mot_chuyen_tinh_tai_ban_2019/2021_06_11_15_33_10_5-390x510.jpg"
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ngay_xua_co_mot_chuyen_tinh_tai_ban_2019/2021_06_11_15_33_10_3-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "NGÀY XƯA CÓ MỘT CHUYỆN TÌNH là tác phẩm mới tinh thứ 2 trong năm 2016 của nhà văn Nguyễn Nhật Ánh dài hơn 300 trang, được coi là tập tiếp theo của tập truyện Mắt biếc. Có một tình yêu dữ dội, với em,  của một người yêu em hơn chính bản thân mình - là anh.",
+      "Ngày xưa có một chuyện tình có phải là một câu chuyện cảm động  khi người ta yêu nhau, nỗi khát khao một hạnh phúc êm đềm ấm áp đến thế; hay đơn giản chỉ là chuyện ba người - anh, em, và người ấy…?",
+      "Bạn hãy mở sách ra, để chứng kiến làn gió tình yêu chảy qua như rải nắng trên khuôn mặt mùa đông của cô gái; nụ hôn đầu tiên ngọt mật, cái ôm đầu tiên, những giọt nước mắt và cái ôm xiết cuối cùng… rồi sẽ tìm thấy câu trả lời, cho riêng mình."
+    ],
     "status": "",
     "dateIn": "11-24-2019",
     "discount": "20%",
@@ -282,18 +286,26 @@
     "name": "Một Lít Nước Mắt (Tái Bản 2019)",
     "type": "Văn học",
     "author": "Kito Aya",
-    "price": 80.0,
-    "sale": "",
+    "price": "80.000",
+    "sale": "62.400",
     "amout": 5200,
-    "publisher": "NXB Hội Nhà Văn",
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://tusachtiasang.org/wp-content/uploads/2022/05/68-sach-mot-lit-nuoc-mat-min.jpg",
       "https://tailieuvui.com/wp-content/uploads/2021/03/sach-mot-lit-nuoc-mat.jpg",
-      "https://chiasehay.net/wp-content/uploads/2020/06/sach-mot-lit-nuoc-mat.jpg",
-      "https://sachnhanam.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/20231117164823/hinh-anh-sach-35.-Nguyen-Thu-Trang.jpg",
-      "https://enews.agu.edu.vn/images/assets/2024/Thang1/Review_sach/8.jpg"
+      "https://chiasehay.net/wp-content/uploads/2020/06/sach-mot-lit-nuoc-mat.jpg"
     ],
-    "description": [],
+    "description": [
+      "Một Lít Nước Mắt (Tái Bản 2019)",
+      "“Hãy sống! Mình muốn hít thở thật sâu dưới trời xanh.”",
+      "Một tâm hồn nhạy cảm.",
+      "Một gia đình ấm áp.",
+      "Một căn bệnh hiểm nghèo.",
+      "Một cơ thể tật nguyền.",
+      "Đó là những gì Kito Aya có trong hơn 20 năm cuộc đời. Với Aya, tương lai của cô là một con đường hẹp, và càng ngày nó càng trở nên hẹp hơn. Căn bệnh ngăn trở Aya khỏi tất cả những ước mơ và dự định, thậm chí việc tự mình bước ra ngoài phố để đi tới hiệu sách cũng trở thành một khao khát cháy bỏng. Hơn 6 năm kiên trì viết nhật ký, cô kể về những cảm nhận và suy tư của bản thân trong suốt quãng thời gian chứng kiến cơ thể mình từng bước từng bước gánh lấy một số phận đau đớn . Nhưng từ trong nước mắt và tật nguyền, cuộc tìm kiếm giá trị bản thân của cô đã làm rúng động cả Nhật Bản.",
+      "“Có những người mà sự tồn tại của họ giống như không khí, êm dịu, nhẹ nhàng, chỉ khi họ mất đi người ta mới nhận ra họ quan trọng nhường nào. Mình muốn trở thành một sự tồn tại như thế.”",
+      "- Trích Một lít nước mắt"
+    ],
     "status": "",
     "dateIn": "10-23-2019",
     "discount": "22%",
@@ -303,18 +315,22 @@
     "name": "Một Thoáng Ta Rực Rỡ Ở Nhân Gian",
     "type": "Văn học",
     "author": "Ocean Vuong",
-    "price": 135.0,
-    "sale": "",
+    "price": "135.000",
+    "sale": "105.300",
     "amout": 3670,
-    "publisher": "NXB Hội Nhà Văn",
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_5473.jpg",
       "https://tiki.vn/blog/wp-content/uploads/2023/08/review-chi-tiet-sach-mot-thoang-ta-ruc-ro-o-nhan-gian-1024x1024.jpg",
-      "https://product.hstatic.net/200000504927/product/mot_thoang__1__ef746bee86044652a72545030cd1db1e.png",
-      "https://saysach.com/wp-content/uploads/2022/05/motthoangtarucroonhangian3_saysach.jpg",
-      "https://saysach.com/wp-content/uploads/2022/05/mot-thoang-ta-ruc-ro-o-nhan-gian-3-768x1024.jpeg"
+      "https://product.hstatic.net/200000504927/product/mot_thoang__1__ef746bee86044652a72545030cd1db1e.png"
     ],
-    "description": [],
+    "description": [
+      "“Vuong thực sự có thiên tài quan sát.” The New York Times",
+      "“Với một xuất thân bên rìa hết sức xa lạ, Vuong đã viết nên một tác phẩm trữ tình về quá trình tự khám phá chính mình, vừa thành thật đến choáng váng, vừa phổ quát trong từng câu chữ.” The Washington Post",
+      "“Bằng sự chính xác của một nhà thơ, Ocean Vuong xem xét liệu biến kinh nghiệm của chúng ta thành từ ngữ có thể chữa lành những vết thương trải hàng thế hệ hay không, và liệu tiếng nói của ta có thể nào thực sự được nghe bởi những người ta yêu thương nhất.” Celeste Ng",
+      "Một thoáng ta rực rỡ ở nhân gian viết dưới dạng một lá thư của nhân vật chính, Chó Con, gửi cho người mẹ không biết chữ của mình. Dưới dạng những mẩu chuyện nhỏ, xen kẽ với những đoạn trữ tình ngoại đề, triết lý, và những bài thơ, cuốn sách kể câu chuyện đời không chỉ của Chó Con (tên gọi yêu do bà ngoại đặt cho, nhưng cũng là cách tất cả mọi người trong sách gọi cậu) từ thuở nhỏ đến lúc chớm trưởng thành, mà cả ba thế hệ từ bà, đến mẹ, đến cậu, một cuộc di cư dài từ làng quê Việt Nam sang đất Mỹ, cũng như câu chuyện của những thanh niên Mỹ thế hệ cậu mà đặc trưng là người bạn trai Trevor.",
+      "Cuốn sách thường được đọc như một Bildungsroman (tiểu thuyết trưởng thành), nhưng cũng có nhiều người coi đây là một Künstlerroman (tiểu thuyết kể về quá trình một người nghệ sĩ trở thành nghệ sĩ)."
+    ],
     "status": "",
     "dateIn": "03-22-2021",
     "discount": "22%",
@@ -324,18 +340,19 @@
     "name": "Cá Voi Cô Đơn - Tập 1",
     "type": "Văn học",
     "author": "Hàm Yên",
-    "price": 248.0,
-    "sale": "",
+    "price": "248.000",
+    "sale": "223.200",
     "amout": 2600,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ca_voi_co_don___tap_1/2024_02_28_16_36_27_1-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ca_voi_co_don___tap_1/2024_02_28_16_36_27_2-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ca_voi_co_don___tap_1/2024_02_28_16_36_27_3-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ca_voi_co_don___tap_1/2024_02_28_16_36_27_4-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ca_voi_co_don___tap_1/2024_02_28_16_36_27_5-390x510.jpg"
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ca_voi_co_don___tap_1/2024_02_28_16_36_27_3-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Cá Voi Cô Đơn - Tập 1",
+      "Cô luôn nghĩ mình đích thực là Eleven Girl. Eleven Girl muốn tìm được Mr Funny của đời mình. Thế rồi vào buổi tối hôm ấy, cô trằn trọc mãi vẫn không sao ngủ nổi. Cô biết là sự tình đã mất kiểm soát. Trái tim cô trải nghiệm một sự rung động mà trước đây chưa từng có. Có một người đã lẳng lặng đi vào trong trái tim cô. Anh yên tĩnh, chu đáo, dịu dàng, bao dung..., lại còn rất thẹn thùng, rất đáng yêu nữa. Không phải kiểu người hài hước thú vị, khéo ăn khéo nói như cô từng ao ước, nhưng lại thường xuyên có thể chọc cho cô cười. Anh rất cao, khí chất lại thanh tao trong sáng, dung mạo thì không chê được ở điểm nào! Lại còn là một nghệ nhân nữa! Một nghệ nhân cực đỉnh! Nhưng, như vậy vẫn không được! Chiêm Hỷ kéo chăn trùm đầu, hai chân đều run lên lẩy bẩy, trong lòng thầm nghĩ, phải làm sao, phải làm sao, phải làm sao, phải làm sao đây? Lạc Tĩnh Ngữ là một người câm điếc. Nếu để mẹ cô biết được việc này, có khi anh sẽ bị làm thành một chú cá khô tê cay mất!"
+    ],
     "status": "",
     "dateIn": "01-25-2024",
     "discount": "10%",
@@ -345,10 +362,10 @@
     "name": "Hiệu Sách Nhỏ Ở Paris",
     "type": "Văn học",
     "author": "Nina George",
-    "price": 149.0,
+    "price": "149.000",
     "sale": "",
     "amout": 3540,
-    "publisher": "NXB Hà Nội",
+    "publisher": "Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_41026.jpg?_gl=1*13c8pm7*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcwOTYyMDQ4MC42LjEuMTcwOTYyMDUxNi4yNC4wLjA.*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
       "https://mucmocmeo.files.wordpress.com/2022/05/ffcde1b0-5dc4-4ce8-bae9-d5583dfb31f6.jpg?w=768",
@@ -356,7 +373,13 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/hieu_sach_nho_o_paris/2023_10_07_11_19_36_4-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/hieu_sach_nho_o_paris/2023_10_07_11_19_36_5-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "New York Times Bestseller",
+      "A Barnes and Noble Best of 2015 Selection",
+      "A LibraryReads Favorite of the Favorites Selection",
+      "Cuốn sách là câu chuyện về Monsieur Perdu, chủ tiệm sách bên bờ sông Seine, người tự gọi mình là dược sĩ văn chương. Nhờ giác quan đặc biệt của mình, ông có thể kê đơn cho độc giả chính xác những cuốn sách giúp họ vượt qua khó khăn trong cuộc sống. Chữa lành vết thương, hàn gắn trái tim người khác, song Monsieur Perdu lại không thể chữa cho chính mình, và trái tim ông vẫn luôn rỉ máu từ khi người yêu ông bỏ ra đi để lại một bức thư mà ông chưa từng mở ra. Rồi đến một ngày, ông đọc lá thư và quyết định khám phá kết cục của câu chuyện đời mình. Cùng với một tác giả sách bán chạy nhưng bị cấm xuất bản, và một đầu bếp người Ý thất tình, Perdu du hành dọc theo những dòng sông nước Pháp, cho chúng ta thấy rằng thế giới văn chương có thể đưa tâm hồn con người lên một cuộc du hành hàn gắn và chữa lành như thế nào.",
+      "Hiệu sách nhỏ ở Paris là một lá thư tình gửi đến sách, đến tất cả những người tin rằng sức mạnh của những câu chuyện có thể định hình cuộc sống của chúng ta."
+    ],
     "status": "",
     "dateIn": "05-21-2020",
     "discount": "22%",
@@ -366,16 +389,14 @@
     "name": "Sáu Người Đi Khắp Thế Gian - Tập 1 (Tái Bản 2022)",
     "type": "Văn học",
     "author": "James Albert Michener",
-    "price": 115.0,
-    "sale": "",
+    "price": "115.000",
+    "sale": "99.000",
     "amout": 2890,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235151.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/sau_nguoi_di_khap_the_gian___tap_1_tai_ban_2022/2022_11_28_14_39_37_1-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/sau_nguoi_di_khap_the_gian___tap_1_tai_ban_2022/2022_11_28_14_39_37_2-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/sau_nguoi_di_khap_the_gian___tap_1_tai_ban_2022/2022_11_28_14_39_37_3-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/sau_nguoi_di_khap_the_gian___tap_1_tai_ban_2022/2022_11_28_14_39_37_4-390x510.jpg"
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/sau_nguoi_di_khap_the_gian___tap_1_tai_ban_2022/2022_11_28_14_39_37_2-390x510.jpg"
     ],
     "description": [],
     "status": "",
@@ -390,7 +411,7 @@
     "price": 50.0,
     "sale": "",
     "amout": 2340,
-    "publisher": "NXB Văn Học",
+    "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_1-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_2-390x510.jpg",
@@ -495,7 +516,7 @@
     "price": 109.0,
     "sale": "",
     "amout": 4500,
-    "publisher": "NXB Thế Giới",
+    "publisher": "Thế Giới",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/t/_/t_m-tri-k_-th_y-t_nh-y_u.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1-t_m-tri-k_-th_y-t_nh-y_u.jpg",
@@ -747,7 +768,7 @@
     "price": 129.0,
     "sale": "",
     "amout": 4500,
-    "publisher": "NXB Hội Nhà Văn",
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_187738_1.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/p/h/phia_sau_nghi_can_x-new-01_1.jpg",
@@ -873,7 +894,7 @@
     "price": 100.0,
     "sale": "",
     "amout": 5700,
-    "publisher": "NXB Hà Nội",
+    "publisher": "Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/h/i/hinh-canh-mat-tri---bia1.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/h/i/hinh-canh-mat-tri---bia1-0.jpg",
@@ -915,7 +936,7 @@
     "price": 169.0,
     "sale": "",
     "amout": 8900,
-    "publisher": "NXB Thanh Niên",
+    "publisher": "Thanh Niên",
     "images": [
       "https://dnamedical.vn/wp-content/uploads/2023/10/tet-o-lang-dia-nguc-pdf-1.jpg",
       "https://cdn.tuoitre.vn/thumb_w/480/471584752817336320/2023/11/18/anh-1-1700275339364726699977.jpg",
@@ -936,7 +957,7 @@
     "price": 290.0,
     "sale": "",
     "amout": 4820,
-    "publisher": "NXB Hà Nội",
+    "publisher": "Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_230358.jpg",
       "https://product.hstatic.net/1000376556/product/tam-the-3-tu-than-song-mai_bia__1__74ad33842bde4f2fbfa77e9a2ff5db2a_1024x1024.jpg",
@@ -978,7 +999,7 @@
     "price": 105.0,
     "sale": "",
     "amout": 5900,
-    "publisher": "NXB Hội Nhà Văn",
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235217508_11.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/i/e/ieu_ky_dieu_cua_tiem_tap_hoa.u547.d20160729.t172831.jpg",
@@ -1104,7 +1125,7 @@
     "price": 106.0,
     "sale": "",
     "amout": 10200,
-    "publisher": "NXB Hội Nhà Văn",
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_33740.jpg",
       "https://cungdocsach.vn/wp-content/uploads/2022/02/Lau-dai-bay-cua-phap-su-Howl.jpg",
@@ -1146,7 +1167,7 @@
     "price": 109.009,
     "sale": "",
     "amout": 6450,
-    "publisher": "NXB Văn Học",
+    "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/6/0/600b_-m_t-th_ng-_ng-b_a-tr_c.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_-m_t-th_ng-_ng-b_a-tr_c.jpg",
@@ -1167,7 +1188,7 @@
     "price": 155.0,
     "sale": "",
     "amout": 5300,
-    "publisher": "NXB Trẻ",
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_180164_1_43_1_57_1_4_1_2_1_210_1_29_1_98_1_25_1_21_1_5_1_3_1_18_1_18_1_45_1_26_1_32_1_14_1_413.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/nu_phu_thuy___bi_mat_cua_nicholas_flamel_bat_tu_tai_ban_2018/2020_06_10_13_56_09_1-390x510.JPG",
@@ -1272,7 +1293,7 @@
     "price": 102.0,
     "sale": "",
     "amout": 5680,
-    "publisher": "NXB Văn Học",
+    "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://cdn0.fahasa.com/media/catalog/product/h/a/hai_van_dam_duoi_bien_tai_ban_2022_1_2022_08_01_11_42_29.jpg",
@@ -1293,7 +1314,7 @@
     "price": 45.0,
     "sale": "",
     "amout": 8400,
-    "publisher": "NXB Văn Học",
+    "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://cdn0.fahasa.com/media/catalog/product/o/n/ong_gia_va_bien_ca_tai_ban_2018_1_2018_07_25_10_17_50.JPG",
@@ -1440,7 +1461,7 @@
     "price": 95.0,
     "sale": "",
     "amout": 5830,
-    "publisher": "NXB Hội Nhà Văn",
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235217591.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/anne_toc_do_o_dao_hoang_tu_edward_tai_ban_2018/2021_12_09_15_57_41_1-390x510.jpg",
@@ -1608,7 +1629,7 @@
     "price": 119.0,
     "sale": "",
     "amout": 8405,
-    "publisher": "NXB Phụ Nữ",
+    "publisher": "Phụ Nữ",
     "images": [
       "https://down-vn.img.susercontent.com/file/7b7ca6c8f5e6215f01893b460792f7e7_tn",
       "https://salt.tikicdn.com/cache/750x750/ts/product/e1/e8/87/9f145040fc3ddb9d294566e47a1c1dd5.jpg.webp",
@@ -1797,7 +1818,7 @@
     "price": 179.0,
     "sale": "",
     "amout": 8305,
-    "publisher": "NXB Văn Học",
+    "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935212354899.jpg?_gl=1*18ge8xi*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcxMDE2MDkzOC4xNy4xLjE3MTAxNjMyODUuMzAuMC4w*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935212354899_2.jpg",
@@ -7400,7 +7421,7 @@
     "price": "55.000",
     "sale": "40.150",
     "amout": "3590",
-    "publisher": "NXB Đại Học Sư Phạm",
+    "publisher": "Đại Học Sư Phạm",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_53326.jpg",
       "https://salt.tikicdn.com/ts/product/2c/90/31/9526871860d565cd147e502a0adc1850.jpg"
@@ -7515,7 +7536,7 @@
     "price": "115.000",
     "sale": "83.950",
     "amout": "2540",
-    "publisher": "NXB Hồng Đức",
+    "publisher": "Hồng Đức",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935072956547.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/tu_hoc_tieng_duc_cho_nguoi_moi_bat_dau/2023_09_06_16_06_21_1-390x510.jpg",
@@ -7542,7 +7563,7 @@
     "price": "318.000",
     "sale": "241.680",
     "amout": "3240",
-    "publisher": "NXB Tổng Hợp TPHCM",
+    "publisher": "Tổng Hợp TPHCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/t/u/tuhoctiengducquahinh.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/p/o/pons_tu_hoc_tieng_duc_qua_hinh_1_2019_10_09_13_42_31.jpg",
@@ -7586,7 +7607,7 @@
     "price": "90.000",
     "sale": "81.000",
     "amout": "3180",
-    "publisher": "NXB Đồng Nai",
+    "publisher": "Đồng Nai",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_43853.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/tieng_duc_cho_nguoi_moi_bat_dau___cac_tinh_huong_giao_tiep_hang_ngay/2020_07_28_10_43_40_1-390x510.jpg",
