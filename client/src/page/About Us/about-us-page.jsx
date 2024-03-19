@@ -2,8 +2,8 @@ import React from "react";
 import ImageSlider from "../../about-us/image-slider/image-slider";
 import "./about-us-page.css";
 import {
-  MakeupImage,
-  SkincareImage,
+  AudioBookImage,
+  BookImage,
   UsImage,
   Value1,
   Value2,
@@ -14,7 +14,7 @@ import {
 } from "./imports";
 import Content from "./Content";
 import AboutStory from "./AboutStory";
-const sliderImages = [UsImage, SkincareImage, MakeupImage];
+const sliderImages = [UsImage, BookImage, AudioBookImage];
 
 const valueImages = [Value1, Value2, Value3, Value4, Value5, Value6];
 
@@ -36,7 +36,7 @@ const AboutUsPage = () => {
             />
             <div className="flex-row">
               <div className="flex-col">
-                <img className="img-size" src={SkincareImage} alt="" />
+                <img className="img-size" src={BookImage} alt="" />
                 <div>
                   <Content
                     content="Skincare"
@@ -47,7 +47,7 @@ const AboutUsPage = () => {
                 </div>
               </div>
               <div className="flex-col">
-                <img className="img-size" src={MakeupImage} alt="" />
+                <img className="img-size" src={AudioBookImage} alt="" />
                 <div>
                   <Content
                     content="Makeup"

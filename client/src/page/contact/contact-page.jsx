@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact-page.css";
-import Logo from "../../assets/logo-black.png";
+import Logo from "../../assets/Logo.jpg";
 import Button from "../../common/button/button";
 import ContactProps from "./ContactProps";
 import RightContact from "./RightContact";
