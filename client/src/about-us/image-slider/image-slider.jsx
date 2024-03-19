@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './image-slider.css';
+import React, { useState, useEffect } from "react";
+import "./image-slider.css";
 
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,17 +20,20 @@ const ImageSlider = ({ images }) => {
     return <div>No images to display.</div>;
   }
 
-  const transformValue = -100 * currentIndex + '%';
+  const transformValue = -100 * currentIndex + "%";
 
   return (
     <div className="image-slider">
-      <div className="image-container" style={{ transform: `translateX(${transformValue})` }}>
+      <div
+        className="image-container"
+        style={{ transform: `translateX(${transformValue})` }}
+      >
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className={index === currentIndex ? 'active' : ''}
+            className={index === currentIndex ? "active" : ""}
           />
         ))}
       </div>
@@ -38,7 +41,7 @@ const ImageSlider = ({ images }) => {
         {images.map((_, index) => (
           <div
             key={index}
-            className={`indicator ${index === currentIndex ? 'active' : ''}`}
+            className={`indicator ${index === currentIndex ? "active" : ""}`}
             onClick={() => handleIndicatorClick(index)}
           />
         ))}

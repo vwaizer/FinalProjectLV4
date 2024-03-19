@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact-page.scss";
+import "./contact-page.css";
 const ContactProps = ({ title, Type, Placeholder }) => {
   return (
     <div class="C-sub_title_2">

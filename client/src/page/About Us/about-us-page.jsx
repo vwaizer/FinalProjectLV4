@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSlider from "../../components/about-us/image-slider/image-slider";
+import ImageSlider from "../../about-us/image-slider/image-slider";
 import "./about-us-page.css";
 import {
   MakeupImage,

@@ -21,6 +21,14 @@ let navbar = [
     title: "Payment",
     href: "/payment",
   },
+  {
+    title: "About Us",
+    href: "/about-us",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+  },
 ];
 
 let authors = [
@@ -37,7 +45,7 @@ function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [signin, setSignin] = useState(false);
   const [signout, setSignout] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   setInterval(() => {
     const token = localStorage.getItem("accessToken");
@@ -57,15 +65,18 @@ function Header() {
   }, [signout]);
 
   const backToHome = () => {
-    window.location.href = "/"
-  }
+    window.location.href = "/";
+  };
   return (
     <>
       {signin ? (
         <div className="bookstore_header">
           <div className="navbar-links">
             <div className="logo_header">
-              <img onClick={backToHome} src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg" />
+              <img
+                onClick={backToHome}
+                src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg"
+              />
             </div>
             <div className="navbar_container">
               {navbar.map((item, index) => {
@@ -90,7 +101,10 @@ function Header() {
         <div className="bookstore_header">
           <div className="navbar-links">
             <div className="logo_header">
-              <img onClick={backToHome} src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg" />
+              <img
+                onClick={backToHome}
+                src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg"
+              />
             </div>
             <div className="navbar_container">
               {navbar.map((item, index) => {
@@ -142,7 +156,7 @@ function Header() {
             })}
             {signin ? (
               <div className="user-login">
-                <UserInfo/>
+                <UserInfo />
                 <ModalCart />
               </div>
             ) : (
