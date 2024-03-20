@@ -37,7 +37,7 @@ function Detail() {
       const authToken = localStorage.getItem("accessToken");
 
       if (authToken) {
-        const response = await http.post(`/receipt/addToCart/${ID}`);
+        const response = await http.post(`/receipt/addToCart/${ID}`,{amount:quantity});
         console.log(response);
         if (response.status == 200) {
           toast.success(`Product added to cart successfully`, {
@@ -103,11 +103,10 @@ function Detail() {
         <div className="detail_button">
           <button
             type="submit"
-            onClick={() => handleAddToCartClick(product[0]._id)}
           >
             ADD TO CART
           </button>
-          <button type="submit">BUY NOW</button>
+          <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">BUY NOW</button>
           <button type="submit" onClick={()=>navigator(`/rent/${ID}`)}>FOR RENT</button>
         </div>
         <div>

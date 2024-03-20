@@ -1,18 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import SignIn from "./auth/SignIn.jsx";
-import SignUp from "./auth/SignUp.jsx";
-import { AuthProvider } from "./context/AuthProvide.js";
-import { Suspense, lazy } from "react";
-import {
-  AboutUs,
-  Cart,
-  ContactUs,
-  Detail,
-  Home,
-  Payment,
-  Products,
-} from "./page/index.js";
 import {
   AdminPage,
   Bill,
@@ -22,10 +9,15 @@ import {
   StaffAndUser,
   Statistics,
 } from "./admin/index.js";
-import UserPage from "./user-infomation/UserPage.jsx";
-import { ToastContainer } from "react-toastify";
-import RentForm from "./page/RentForm.jsx";
 import Admin from "./auth/Admin.jsx";
+import SignIn from "./auth/SignIn.jsx";
+import SignUp from "./auth/SignUp.jsx";
+import { AuthProvider } from "./context/AuthProvide.js";
+import RentForm from "./page/RentForm.jsx";
+import Contact from "./page/contact/contact-page.jsx";
+import AboutUsPage from "./page/About Us/about-us-page.jsx";
+import { Cart, Detail, Home, Payment, Products } from "./page/index.js";
+import UserPage from "./user-infomation/UserPage.jsx";
 function App() {
   return (
     <AuthProvider>
@@ -37,8 +29,8 @@ function App() {
         <Route path="/cart/:ID" element={<Cart />}></Route>
         <Route path="/product-detail/:ID" element={<Detail />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
-        <Route path="/contact" element={<ContactUs />}></Route>
-        <Route path="/about" element={<AboutUs />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/about-us" element={<AboutUsPage />}></Route>
         <Route path="/user" element={<UserPage />}></Route>
         <Route path="/staff" element={<Admin />}></Route>
         <Route path="/admin" element={<AdminPage />}></Route>
@@ -48,7 +40,7 @@ function App() {
         <Route path="/admin/IaB" element={<ImportAndBrowse />}></Route>
         <Route path="/admin/SaU" element={<StaffAndUser />}></Route>
         <Route path="/admin/statistic" element={<Statistics />}></Route>
-        <Route path="/rent/:id" element={<RentForm/>}></Route>
+        <Route path="/rent/:id" element={<RentForm />}></Route>
       </Routes>
     </AuthProvider>
   );
