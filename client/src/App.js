@@ -24,6 +24,8 @@ import {
   Products,
 } from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
+import AboutUsPage from "./page/About Us/AboutUs.jsx";
+import Contactpage from "./page/contact/contact-page.jsx";
 function App() {
   return (
     <AuthProvider>
@@ -35,8 +37,8 @@ function App() {
         <Route path="/cart/:ID" element={<Cart />}></Route>
         <Route path="/product-detail/:ID" element={<Detail />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
-        <Route path="/contact" element={<ContactUs />}></Route>
-        <Route path="/about" element={<AboutUs />}></Route>
+        <Route path="/ContactUs" element={<Contactpage />}></Route>
+        <Route path="/AboutUs" element={<AboutUsPage />}></Route>
         <Route path="/user" element={<UserPage />}></Route>
         <Route path="/staff" element={<Admin />}></Route>
         <Route path="/admin" element={<AdminPage />}></Route>
@@ -47,6 +49,7 @@ function App() {
         <Route path="/admin/SaU" element={<StaffAndUser />}></Route>
         <Route path="/admin/statistic" element={<Statistics />}></Route>
         <Route path="/rent/:id" element={<RentForm/>}></Route>
+      
       </Routes>
     </AuthProvider>
   );

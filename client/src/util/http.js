@@ -31,10 +31,13 @@ class Http{
             (response) => {
               const { url } = response.config
               console.log(url)
-              if (url === "login" || url === "register") {
+              if (url === "/login" || url === "/register") {
+                console.log(url);
                 const data = response.data 
                 this.accessToken = data.data?.access_token
                 localStorage.setItem("accessToken",this.accessToken)
+                // response.config.headers.Authorization = "Bearer "+this.accessToken
+                console.log(response.config.headers.authorization);
               } 
               return response
             },
