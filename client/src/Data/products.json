@@ -142,8 +142,8 @@
     "name": "Chanh Mật Ong - Tặng Kèm Bookmark Bồi Cứng",
     "type": "Văn học",
     "author": "Trà Hoa Đậu Biếc",
-    "price": 185.0,
-    "sale": 135.05,
+    "price": "185.000",
+    "sale": "135.050",
     "amout": 3000,
     "publisher": "Hà Nội",
     "images": [
@@ -363,7 +363,7 @@
     "type": "Văn học",
     "author": "Nina George",
     "price": "149.000",
-    "sale": "",
+    "sale": "99.000",
     "amout": 3540,
     "publisher": "Hà Nội",
     "images": [
@@ -390,7 +390,7 @@
     "type": "Văn học",
     "author": "James Albert Michener",
     "price": "115.000",
-    "sale": "99.000",
+    "sale": "89.700",
     "amout": 2890,
     "publisher": "Văn Học",
     "images": [
@@ -398,7 +398,10 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/sau_nguoi_di_khap_the_gian___tap_1_tai_ban_2022/2022_11_28_14_39_37_1-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/sau_nguoi_di_khap_the_gian___tap_1_tai_ban_2022/2022_11_28_14_39_37_2-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Họ là bốn người Mỹ, một cô gái Na Uy, một cô gái Anh. Chiến tranh Việt Nam, chiến tranh Trung Đông, nạn phân biệt chủng tộc, đạo Hồi và những bóng ma của quá khứ đã xô đẩy họ trôi dạt tới thành phố mặt trời, để rồi, từ nơi đây, họ lại bắt đầu hành trình phiêu lưu mới đến với những đêm phương Nam Tây Ban Nha vò xé tâm can, những trận đấu bò rừng ngàn cân treo sợi tóc, những thành lũy Bồ Đào Nha thách thức thời gian, những rừng rậm châu Phi đầy ám ảnh, những bão táp cuộc đời và những tan vỡ trong lòng người… Không tìm bất cứ góc cạnh nào để ẩn náu, họ đã cùng nhau đối diện với cuộc đời trong cuộc Thập Tự Chinh kiếm tìm những giá trị mới… ",
+      "Như một bách khoa thư kết hợp nhuần nhuyễn súng ống và hoa hồng, tình yêu và tình dục, tôn giáo và nghệ thuật, du hành và ma túy, những bản ballad say lòng và tiếng kêu thầm xé ruột, có thể nói Sáu người đi khắp thế gian là một cuốn tiểu thuyết độc nhất vô nhị không bao giờ cũ về cuộc sống…"
+    ],
     "status": "",
     "dateIn": "04-29-2022",
     "discount": "22%",
@@ -408,18 +411,21 @@
     "name": "Gió Lạnh Đầu Mùa (Tái Bản)",
     "type": "Văn học",
     "author": "Thạch Lam",
-    "price": 50.0,
-    "sale": "",
+    "price": "50.000",
+    "sale": "45.560",
     "amout": 2340,
     "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_1-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_2-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_3-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_4-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_5-390x510.jpg"
+      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/gio_lanh_dau_mua_tai_ban/2021_06_23_09_03_48_3-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Gió Lạnh Đầu Mùa",
+      "Vẫn là câu chuyện về những đứa trẻ trong không gian quen thuộc nơi phố huyện nghèo, buồn tẻ. Những tưởng cơn gió đầu mùa chỉ mang theo cái lạnh tê tái, buốt da buốt thịt những đứa trẻ bỗng biến thành những hành động ấm áp, giản đơn và thấm đượm tình người như chi tiết chị em Sơn đem tặng chiếc áo bông hay mẹ Sơn cho mẹ Hiên vay 5 đồng mua áo ấm cho con…",
+      "Chỉ chừng đó thôi cũng đủ để ta thấy văn Thạch Lam tuy hiện thực nhưng không quá đau khổ, tuy hiện thực mà không bi lụy, tuy hiện thực mà không giằng xé… GIÓ LẠNH ĐẦU MÙA chính là hiện thực mà đẹp đẽ, ấm áp, trong trẻo và phảng phất chút nỗi buồn.",
+      "Đây là phải là tập truyện ngắn xuất sắc nhất của Thạch Lam nhưng là truyện ngắn đáng để chúng ta đọc và suy ngẫm!"
+    ],
     "status": "",
     "dateIn": "06-27-2018",
     "discount": "33%",
@@ -429,8 +435,8 @@
     "name": "Trốn Lên Mái Nhà Để Khóc - Tặng Kèm Bookmark",
     "type": "Văn học",
     "author": "Lam",
-    "price": 95.0,
-    "sale": "",
+    "price": "95.000",
+    "sale": "72.200",
     "amout": 4000,
     "publisher": "Dân Trí",
     "images": [
@@ -440,7 +446,10 @@
       "https://cdn0.fahasa.com/media/catalog/product/_/n/_nh_2_tr_n-l_n-m_i-nh_-_-kh_c.jpg",
       "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lmffpcarq5lra3"
     ],
-    "description": [],
+    "description": [
+      "Trốn Lên Mái Nhà Để Khóc",
+      "Những cơn gió heo may len lỏi vào từng góc phố nhỏ, mùa thu về gợi nhớ bao yêu thương đong đầy, bao xúc cảm dịu dàng của ký ức. Đó là nỗi nhớ đau đáu những hương vị quen thuộc của đồng nội, là hoài niệm bất chợt khi đi trên con đường cũ in dấu bao kỷ niệm... để rồi ta ước có một chuyến tàu kỳ diệu trở về những năm tháng ấy, trở về nơi nương náu bình yên sau những tháng ngày loay hoay để học cách trở thành một người lớn. Bạn sẽ được đắm mình trong những cảm xúc đẹp đẽ xen lẫn những tiếc nuối đầy lắng đọng trong “Trốn lên mái nhà đẻ khóc” của Lam."
+    ],
     "status": "",
     "dateIn": "09-10-2023",
     "discount": "24%",
@@ -450,8 +459,8 @@
     "name": "Con Gái Phải Mạnh Mẽ (Tái Bản 2023) (Bìa Sách Giao Ngẫu Nhiên)",
     "type": "Văn học",
     "author": "Ploy",
-    "price": 88.0,
-    "sale": "",
+    "price": "88.000",
+    "sale": "66.880",
     "amout": 2400,
     "publisher": "Dân Trí",
     "images": [
@@ -461,7 +470,19 @@
       "https://cdn0.fahasa.com/media/catalog/product/s/_/s_ch_xanh.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/i/m/img_3939.jpg"
     ],
-    "description": [],
+    "description": [
+      "Con Gái Phải Mạnh Mẽ",
+      "Có những lúc khóc đến cạn nước mắt mà tổn thương vẫn không ai bù đắp nổi",
+      "Có những lúc yếu lòng, muốn buông bỏ mà chẳng có bên mình một điểm tựa an nhiên",
+      "Có những lần đưa tay ra đầy hi vọng rồi hụt hẫng thu về... bàn tay kia đang nắm một bàn tay khác.",
+      "Cuộc đời đôi khi là vậy, khi ta tin tưởng mãnh liệt vào thứ hạnh phúc mình vun đắp và đánh đổi tất cả những gì mình có để hy vọng được đền đáp, thì sau cùng chỉ nhận về nỗi thất vọng và khổ đau. Nhưng đừng bao giờ để những vụn vỡ trong đời dìm bạn xuống vực thẳm, đừng để những người không xứng đáng cướp mất nụ cười rạng ngời của người con gái.",
+      "Chúng ta hoàn toàn xứng đáng được trân trọng và có được hạnh phúc của riêng mình, cô gái ạ. Thứ hạnh phúc ấy nằm chính trong tay ta, ở cách chúng ta nghĩ và sống, cách ta cho đi tình yêu và nhận lại những yêu thương.",
+      "Nếu được lựa chọn, sao không chọn sống một đời lạc quan, mạnh mẽ, ngẩng cao đầu và bản lĩnh bước tiếp với niềm tin yêu của mình?",
+      "“Con gái phải mạnh mẽ” thêm một lần tái bản với 3 màu rực rỡ hy vọng sẽ mang đến những sắc thái tươi vui, lạc quan cho cuộc đời đang rơi xuống những nốt trầm.",
+      "“Con gái phải mạnh mẽ” là những châm ngôn sống nhẹ nhàng nhưng thẳng thắn từ Ploy, một cô gái đầy bản lĩnh sau những năm tháng của tuổi trẻ yêu và say, hy vọng và thất vọng, vấp ngã và kiên cường.",
+      "Những trải nghiệm phong phú của tuổi trẻ được gom nhặt trong cuốn sách xinh xắn với nhiều màu sắc, để khi cầm nó trên tay bạn sẽ thấy cuộc đời tươi tắn trở lại và để rồi vững vàng đứng dậy, nhìn về phía trước.",
+      "Hãy để thứ đọng lại cuối cùng là hạnh phúc, dù rất giản đơn! Vì mọi cô gái đều xứng đáng với điều đó."
+    ],
     "status": "",
     "dateIn": "08-22-2023",
     "discount": "24%",
@@ -471,8 +492,8 @@
     "name": "Tạm Biệt Tôi Của Nhiều Năm Về Trước",
     "type": "Văn học",
     "author": "An",
-    "price": 95.0,
-    "sale": "",
+    "price": "95.000",
+    "sale": "72.200",
     "amout": 3450,
     "publisher": "Dân Trí",
     "images": [
@@ -482,7 +503,14 @@
       "https://cdn0.fahasa.com/media/catalog/product/f/u/full-tam-biet-toi-cua-nhieu-nam-ve-trc.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/tam_biet_toi_cua_nhieu_nam_ve_truoc/2023_02_07_16_26_14_6-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Dành tặng bạn, những người muốn buông bỏ những “điều đã cũ” nhưng chưa đủ can đảm.",
+      "Dành tặng những ai đang khao khát được “chạm vào”, được vỗ về và thấu hiểu.",
+      "Dành tặng cho tất cả chúng ta, trong những năm tháng tươi đẹp nhất của thanh xuân, đang có một chốn để mơ về, có một ước mơ để theo đuổi và có một ai đó để da diết nhớ thương.",
+      "“Tạm biệt tôi của nhiều năm về trước” là ấn phẩm mới nhất của An, chàng tác giả từng được biết tới với “cơn sốt” sách “Hẹn nhau phía sau tan vỡ” - liên tục cháy hàng và chinh phục trái tim của hàng vạn độc giả trẻ.",
+      "Trong “Tạm biệt tôi của nhiều năm về trước”, với 248 trang viết kèm minh họa được thực hiện bởi chính tác giả, An dẫn bạn đọc bóc tách từng tổn thương chưa được chữa lành bên trong mình. Dù đó là vết thương do ai gây ra, vì lý do gì, vào thời điểm nào, còn sâu hay đã vơi… thì đều được vỗ về và ủi an.",
+      "“Để trưởng thành chúng ta phải nói lời tạm biệt với nhiều người, và có thể là tạm biệt chính bản thân mình trong quá khứ.”"
+    ],
     "status": "",
     "dateIn": "04-28-2022",
     "discount": "24%",
@@ -492,8 +520,8 @@
     "name": "Chúng Ta Sinh Ra Là Để Hạnh Phúc",
     "type": "Văn học",
     "author": "nhungdieubinhyen",
-    "price": 92.0,
-    "sale": "",
+    "price": "92.000",
+    "sale": "69.920",
     "amout": 3200,
     "publisher": "Dân Trí",
     "images": [
@@ -503,7 +531,17 @@
       "https://cdn0.fahasa.com/media/catalog/product/c/h/chungta3.png",
       "https://cdn0.fahasa.com/media/catalog/product/c/h/chungta2.png"
     ],
-    "description": [],
+    "description": [
+      "Chúng Ta Sinh Ra Là Để Hạnh Phúc",
+      "Hạnh phúc là gì nhỉ?",
+      "Phải chăng là…",
+      "Là được ăn những món mình thích, đến những nơi mình muốn.",
+      "Là được ở bên cạnh gia đình, bên cạnh người mình yêu.",
+      "Là mang lại niềm vui và hạnh phúc cho người khác…",
+      "Thực ra, mỗi chúng ta đều có một cách hiểu khác nhau về hạnh phúc và ở từng thời điểm, khái niệm hạnh phúc cũng sẽ thay đổi theo. Duy chỉ có một điều không thay đổi: Hạnh phúc của bạn do bạn định nghĩa chứ không phải người khác. Hạnh phúc của bạn nằm trong trái tim của bạn, không phải nằm trong đôi mắt của người khác.",
+      "“Chúng ta sinh ra là để hạnh phúc” bao gồm 205 bức thư chứa đựng nhiều cảm xúc vui buồn đan xen; là những điều bình dị mà tác giả “nhungdieubinhyen” nhận ra sau khi trải qua thăng trầm của cuộc sống; là những mong ước về một cuộc sống hạnh phúc và bình yên. Từng bức thư cũng chính là những lời an ủi, động viên mà tác giả muốn nhắn gửi đến bạn - một người trẻ đang trên hành trình chữa lành bản thân và hoàn thiện chính mình.",
+      "Đừng chỉ luôn nhìn thấy những khiếm khuyết nhỏ nhặt của bản thân để rồi thất vọng, sau đó liền tự ti thế nhưng đừng quên rằng bạn cũng tỏa sáng, ấm áp và đáng yêu, bạn cũng đang cố gắng để bản thân ngày một tốt hơn hãy mở lòng, hãy tin rằng bạn đang từng bước một lại gần đến dáng vẻ mà bản thân yêu thích."
+    ],
     "status": "",
     "dateIn": "08-11-2023",
     "discount": "24%",
@@ -513,8 +551,8 @@
     "name": "Tìm Tri Kỷ, Thấy Tình Yêu",
     "type": "Văn học",
     "author": "Trang Ps",
-    "price": 109.0,
-    "sale": "",
+    "price": "109.000",
+    "sale": "79.570",
     "amout": 4500,
     "publisher": "Thế Giới",
     "images": [
@@ -524,39 +562,23 @@
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-3d-t_m-tri-k_-th_y-t_nh-y_u.jpg",
       "https://image.giacngo.vn/w770/Uploaded/2024/xpcwvolc/2022_03_17/anh-1-1211.jpg"
     ],
-    "description": [],
+    "description": [
+      "Tìm Tri Kỷ, Thấy Tình Yêu",
+      "Bên trong mỗi người đều có tiếng gọi sâu thẳm nào đó cần được lắng nghe và thấu hiểu. Khi mải mê truy cầu hạnh phúc, đeo đuổi tham vọng ở bên ngoài, ta đánh mất sự nhạy bén với chính mình, để rồi lạc hướng giữa bao ngã rẽ ngược xuôi. Hãy quay về, lắng lòng mình nghe thanh âm có khi rón rén, có khi sôi sục bên trong, ta sẽ biết mình cần làm gì.",
+      "Và rồi khi ta tìm thấy vị tri kỷ bên trong mình, tình yêu trong ta bỗng nở hoa. Cũng chính từ đây, ta nhận ra tình yêu ấy đã sẵn có trong lòng mình. Nếu ta biết nuôi dưỡng tình yêu ấy cho đủ đầy và bao dung, nó sẽ trải rộng ra bên ngoài theo cái cách mà ta vun trồng tưới tắm. Bởi tình yêu ấy là tự do, nó không dính mắc hay bị giới hạn vào một đối tượng nào, nên sẽ chẳng còn đau khổ, phiền não... ",
+      "Với những dòng tản văn sâu lắng trong cuốn sách đầu tay đầy tâm huyết “Tìm tri kỷ, thấy tình yêu”, tác giả Trang Ps dẫn dắt độc giả đến với những câu chuyện gần gũi mà giàu ý nghĩa trong đời sống, để ta thấy ra sự cần thiết của việc mở lòng trải nghiệm và chiêm nghiệm, của chánh niệm – tỉnh giác đối với mỗi việc mình làm, để ta tìm được sự tự do tự tại đúng nghĩa. Và cũng từ đó, ta biết đâu là tri kỷ và tình yêu đích thực của cuộc đời mình."
+    ],
     "status": "",
     "dateIn": "03-28-2022",
     "discount": "27%",
     "field": "Truyện ngắn - tản văn"
   },
   {
-    "name": "",
-    "type": "",
-    "author": "",
-    "price": 75.0,
-    "sale": "",
-    "amout": 4780,
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia-1-chi-can-long.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/b/i/bia_1_chi_can_long.png",
-      "https://cdn0.fahasa.com/media/catalog/product/b/o/bookmark_chi_can.png",
-      "https://cdn0.fahasa.com/media/catalog/product/n/a/nannn_1_.png",
-      "https://cdn0.fahasa.com/media/catalog/product/n/a/naggs.png"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "09-25-2024",
-    "discount": "20%",
-    "field": "Truyện ngắn - tản văn"
-  },
-  {
     "name": "Let’s Grow Up Together - Cùng Bạn Trưởng Thành",
     "type": "Văn học",
     "author": "Ying Shu, Dương Thanh Trà",
-    "price": 99.0,
-    "sale": "",
+    "price": "99.000",
+    "sale": "77.220",
     "amout": 5200,
     "publisher": "Dân Trí",
     "images": [
@@ -566,7 +588,11 @@
       "https://cdn0.fahasa.com/media/catalog/product/c/b/cbtt-01.png",
       "https://cdn0.fahasa.com/media/catalog/product/c/b/cbtt-02.png"
     ],
-    "description": [],
+    "description": [
+      "Let’s Grow Up Together - Cùng Bạn Trưởng Thành",
+      "Trưởng thành là một hành trình vốn khó khăn và đầy những chênh vênh vấp ngã nhưng bất cứ ai cũng đều phải bước vào hành trình ấy để trở thành một bản thân tốt đẹp hơn trong tương lai. Và trên con đường trưởng thành đầy gian nan và trông gai ấy, Vanvietbooks muốn gửi đến bạn một “người” có thể sánh bước bên bạn mang tên Let’s Grow Up Together – Cùng bạn trưởng thành. Không chỉ là một cuốn sách chứa đựng những “liều thuốc” tinh thần để cổ vũ những lúc bạn gặp khó khăn, đây còn là một sự đồng hành không thể thiếu khi bạn vượt qua những thử thách trên con đường trưởng thành và hoàn thiện chính mình.",
+      "Let’s Grow Up Together – Cùng bạn trưởng thành vẫn mang những điểm cộng giống như “người anh em” song ngữ Trung – Việt trước đó ở khía cạnh hình thức, nội dung và ý nghĩa giá trị nó mang lại, nhưng điểm nổi bật hơn hẳn chính là phần song ngữ được thực hiện theo hình thức Việt - Anh tăng thêm phần mới mẻ và sáng tạo hơn cho “hot Tiktok-er” đã và đang làm mưa làm gió trên mọi nền tảng mạng xã hội này. Nên nếu bạn đã từng “phải lòng” phiên bản Trung – Việt tươi sáng thì phiên bản Anh – Việt lần này cũng sẽ khiến bạn thích mê đó."
+    ],
     "status": "",
     "dateIn": "10-03-2023",
     "discount": "22%",
@@ -575,9 +601,9 @@
   {
     "name": "Gửi Cậu, Cậu Không Cô Đơn Trên Hành Trình Này Đâu",
     "type": "Văn học",
-    "author": "",
-    "price": 89.0,
-    "sale": "",
+    "author": "Tớ Là Mây",
+    "price": "89.000",
+    "sale": "64.970",
     "amout": 4050,
     "publisher": "Dân Trí",
     "images": [
@@ -587,7 +613,14 @@
       "https://cdn0.fahasa.com/media/catalog/product/0/1/01.png",
       "https://cdn0.fahasa.com/media/catalog/product/0/2/02.png"
     ],
-    "description": [],
+    "description": [
+      "Gửi Cậu, Cậu Không Cô Đơn Trên Hành Trình Này Đâu",
+      "Bạn thân mến!",
+      "Mỗi chúng ta là một cá thể đặc biệt, chẳng ai giống ai, thế nên hành trình của mỗi người cũng là một màu sắc riêng, để rồi ghép lại trở thành một bức tranh nhân gian vô cùng sống động, muôn màu muôn vẻ.",
+      "Nhưng bạn biết không? Dù có là màu sắc gì chăng nữa thì hành trình đó của chúng ta cũng không hề đơn điệu một chút nào. Nếu là xanh, thì cũng sẽ có những sắc độ tươi trầm khác nhau, đại diện cho những người xuất hiện trong cuộc hành trình ấy; nếu là vàng, thì cũng sẽ có những màu vàng riêng biệt, đại diện cho những kỷ niệm, hay như một tia nắng trên cao, lặng lẽ âm thầm bước theo từng bước đi của bạn…",
+      "Và có lẽ đó cũng chính là lý do mà Tớ Là Mây đã chắp bút đề tên cho cuốn sách đong đầy những yêu thương và sắc màu xúc cảm này là “Gửi Cậu, Cậu Không Cô Đơn Trên Hành Trình Này Đâu” – cùng với những chia sẻ về những trải nghiệm đắt giá mà bất cứ ai cũng đều phải trải qua trên bước đường trưởng thành, để nhắn nhủ đến từng người rằng: Cho dù bạn đang ở chặng nào của cuộc hành trình thì cũng sẽ luôn có nắng vàng rạng rỡ, những bông hoa ngọt ngào, thảm cỏ cây xanh mướt và một áng “Mây” xinh luôn đồng hành bên bạn, để bạn không cô đơn, để bạn không hoang mang mơ hồ trên bước đường trưởng thành đầy gai góc này.",
+      "“Có người sẽ quên lãng, có người nguyện khắc ghi, có người luôn căm ghét và cũng có người chẳng muốn đối diện. Nhưng dù là ai đi chăng nữa, tớ luôn hy vọng rằng cậu sẽ sống thật tốt, có thể không vui vẻ, nhưng nhất định phải bình an. Và hãy nhớ rằng: Cậu không hề cô đơn trên hành trình này chút nào!”"
+    ],
     "status": "",
     "dateIn": "06-04-2023",
     "discount": "27%",
@@ -597,8 +630,8 @@
     "name": "Người Tính Không Bằng Drama Tính - Tặng Kèm 1 Bookmark + 3 Postcard Ngẫu Nhiên",
     "type": "Văn học",
     "author": "Pương Pương",
-    "price": 96.0,
-    "sale": "",
+    "price": "96.000",
+    "sale": "86.400",
     "amout": 4360,
     "publisher": "Dân Trí",
     "images": [
@@ -608,7 +641,12 @@
       "https://cdn0.fahasa.com/media/catalog/product/b/o/bookmark_nguoi_tinh_khong_bang_drama_tinh_2.png",
       "https://cdn0.fahasa.com/media/catalog/product/p/o/postcard-_nguoi-tinh-khong-bang-drama-tinh_1.jpg"
     ],
-    "description": [],
+    "description": [
+      "Người Tính Không Bằng Drama Tính",
+      "Pương Pương - “Trmúa hmề” ngập drama trong từng trang sách quay trở lại rồi đây!",
+      "Chỉ có hề hơn không có hề nhất là những từ đúng nhất để miêu tả về cuốn sách thứ 2 của Pương Pương trong lần quay trở lại này.",
+      "Vẫn là ti tỉ thứ chuyện từ trong nhà ra ngoài ngõ, từ bà hàng xóm cho đến họ hàng, chuyện chị gội đầu sang đến bà thầy bói, hay chuyện con chó đến con ma… Vẫn là giọng văn dí dỏm, bắt trend, phong cách văn chương có một không hai… nhưng độ mặn mà được tính bằng cấp số nhân."
+    ],
     "status": "",
     "dateIn": "03-07-2023",
     "discount": "10%",
@@ -618,8 +656,8 @@
     "name": "Vô Thường (Tái Bản)",
     "type": "Văn học",
     "author": "Nguyễn Bảo Trung",
-    "price": 140.0,
-    "sale": "",
+    "price": "140.000",
+    "sale": "130.200",
     "amout": 5420,
     "publisher": "Dân Trí",
     "images": [
@@ -629,39 +667,26 @@
       "https://cdn0.fahasa.com/media/catalog/product/v/_/v_th_ng_post_demo.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_s_ch_hi_u_r_i_th_ng_2_3.jpg"
     ],
-    "description": [],
+    "description": [
+      "“VÔ THƯỜNG”",
+      "Sống chậm lại, yêu thương nhiều hơn",
+      "Tôi thấy lòng mình bỗng chật. Những gì trước đây tôi cho là đúng, bây giờ tôi đâm nghi ngờ. Những gì trước đây tôi luôn theo đuổi, giành giật để có, bây giờ thấy chẳng còn quan trọng nữa.",
+      "Có bàn tay vụng về chỉ làm đổ vỡ mọi thứ khi chạm vào. Có bàn tay cho đi. Có bàn tay giữ lại. Nhưng khi về với đất, bàn tay nào cũng rỗng. Vậy sao không ướp hương cho đôi tay mình, tôi tự hỏi lòng như thế. Có hàng ngàn cách ướp hương, ướp hương thánh thiện, âm thầm, khiêm cung, bé nhỏ, mà hương thơm lại bay vượt mọi không gian.",
+      "Là một người làm việc tại phòng cấp cứu, bác sĩ Nguyễn Bảo Trung đã chứng kiến ranh giới sinh tử của nhiều bệnh nhân và lắng nghe tâm tư, nguyện vọng của họ để nhận ra cuộc đời này đa phần chúng ta đã sống quá hời hợt. Sao ta không sống chậm lại, đón sóng gió với tâm thế hứng khởi, an nhiên hơn?",
+      "Cuốn sách Vô Thường là tuyển tập những câu chuyện khác nhau của những bệnh nhân sắp bước chân vào cánh cửa của thần chết. Mỗi người lại có những tiếc nuối riêng, cách đối diện với bệnh tật của họ và những người thân yêu trong gia đình. Mỗi câu chuyện được tác giả kể nhẹ nhàng, dung dị, rất đời thường nhưng lại ẩn chứa ý nghĩa sâu sắc và những nhắn gửi đầy tâm tư của tác giả tới người đọc.",
+      "Những câu chuyện trong sách đã chạm đến trái tim của người đọc, khiến họ nhận ra rằng hạnh phúc là những điều thật bình dị, cuộc đời rất ngắn ngủi nên hãy bao dung, sống chan hòa và vui vẻ. Còn được sống, có người thân yêu khỏe mạnh bên cạnh là còn có cơ hội hạnh phúc và là một điều may mắn.Khi hiểu được tất cả mọi thứ trên đời này đều là vô thường, con người sẽ tự động tránh xa những thú vui tạm bợ, tránh được “Tham - Sân- Si, Mạn, Nghi” để tìm thấy giá trị chân thật, hạnh phúc đơn giản từ những điều bé nhỏ xung quanh mình."
+    ],
     "status": "",
     "dateIn": "05-20-2022",
     "discount": "7%",
     "field": "Truyện ngắn - tản văn"
   },
   {
-    "name": "Tổ Chim Sẻ Nâu",
-    "type": "Văn học",
-    "author": "Nguyễn Bảo Trung",
-    "price": 140.0,
-    "sale": "",
-    "amout": 3890,
-    "publisher": "Dân Trí",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/z/3/z3925582688247_b30d25fa5eb09fe0728fd1e49e06c456.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/t/_/t_chim_s_n_u_b_a_1.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/t/_/t_chim_s_n_u_b_a_4.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/t/_/t_chim_s_n_u_b_a_3d.png",
-      "https://cdn0.fahasa.com/media/catalog/product/t/_/t_chim_s_n_u_post_demo.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "01-04-2022",
-    "discount": "29%",
-    "field": "Truyện ngắn - tản văn"
-  },
-  {
     "name": "Ghi Chép Pháp Y - Những Thi Thể Không Hoàn Chỉnh",
     "type": "Văn học",
     "author": "Lưu Bát Bách",
-    "price": 130.0,
-    "sale": "",
+    "price": "130.000",
+    "sale": "94.900",
     "amout": 7300,
     "publisher": "Thanh Niên",
     "images": [
@@ -671,7 +696,11 @@
       "https://cdn0.fahasa.com/media/catalog/product/m/o/mockups_s_ch_ng.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/b/m/bm_m_t_ngo_i_ph_p_y_3.jpg"
     ],
-    "description": [],
+    "description": [
+      "Ghi Chép Pháp Y - Những Thi Thể Không Hoàn Chỉnh",
+      "“Ghi chép pháp y - Những thi thể không hoàn chỉnh” là phần thứ 3, tiếp nối series đình đám “Ghi chép pháp y” được tác giả Pháp y Tần Minh và Phó giám đốc Hiệp hội pháp y Trung Quốc - Châu Diệc Vũ đặc biệt giới thiệu. Cuốn sách bao gồm 7 vụ án có thật, được viết bởi bác sĩ pháp y Lưu Bát Bách với 18 năm kinh nghiệm giải phẫu cho hơn 800 thi thể.",
+      "Nếu phần 1 đi sâu vào việc phá án bằng nghiệp vụ chuyên môn, phần 2 là sự đồng cảm với những xác chết không thể lên tiếng thì ở phần 3, tác giả sẽ tập trung miêu tả những hiện trường tội ác man rợ, phân tích động cơ gây án cũng như tâm lý biến thái ẩn sau bộ mặt bình thản của hung thủ."
+    ],
     "status": "",
     "dateIn": "04-11-2023",
     "discount": "27%",
@@ -681,8 +710,8 @@
     "name": "Mất Tích",
     "type": "Văn học",
     "author": "Robert Dugoni",
-    "price": 199.0,
-    "sale": "",
+    "price": "199.000",
+    "sale": "133.330",
     "amout": 3420,
     "publisher": "Thanh Niên",
     "images": [
@@ -692,7 +721,11 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/mat_tich/2022_10_19_09_12_16_3-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/mat_tich/2022_10_19_09_12_16_4-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Mất Tích",
+      "Trở về sau kỳ nghỉ phép kéo dài tại quê nhà Cedar Grove, điều tra viên Tracy Crosswhite được cấp trên điều chuyển sang đơn vị điều tra án tồn ở Sở Cảnh sát Seattle. Bản năng của người làm mẹ đã khiến Tracy ngay lập tức bị thu hút bởi hồ sơ vụ án đầu tiên cô đảm nhận: vụ bắt cóc bé gái năm tuổi có cha mẹ vướng vào cuộc ly hôn ầm ĩ, và chính họ cũng là nghi phạm số một.",
+      "Trong thời gian tái hiện những ngày tháng dẫn đến vụ mất tích của bé gái, Tracy lại bị kéo vào một vụ án đặc biệt khác: một phụ nữ trẻ mất tích khi đang chạy bộ trên con đường mòn vắng vẻ ở Bắc Seattle. Cả hai vụ đều khiến Tracy trăn trở, những đầu mối để điều tra cũng không hoàn toàn đáng tin. Điều gì đang ẩn chứa sau những lời khai man trá của đôi vợ chồng với cuộc hôn nhân tan vỡ? Những bí mật nào đang lẩn khuất sau cánh cửa đóng kín ở khu phố trung lưu yên tĩnh nhưng đầy rẫy hiểm nguy? Để tìm thấy hai người mất tích, Tracy sẽ không chỉ phải dựa vào những manh mối đã nguội lạnh hay vẫn còn nóng hổi, mà cô còn cần bản năng dẫn dắt, bất kể chúng có đưa cô đến nơi tăm tối và đáng sợ biết chừng nào."
+    ],
     "status": "",
     "dateIn": "11-02-2022",
     "discount": "33%",
@@ -702,8 +735,8 @@
     "name": "Ma Quỷ Dân Gian Ký - Quyển 2",
     "type": "Văn học",
     "author": "Duy Văn",
-    "price": 298.0,
-    "sale": "",
+    "price": "298.000",
+    "sale": "226.480",
     "amout": 5200,
     "publisher": "Hội Nhà Văn",
     "images": [
@@ -713,7 +746,11 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ma_quy_dan_gian_ky___quyen_2/2023_12_27_16_42_21_2-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ma_quy_dan_gian_ky___quyen_2/2023_12_27_16_42_21_5-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Ma Quỷ Dân Gian Ký - Quyển 2",
+      "Ma quỷ dân gian ký là một công trình sưu tầm, biên soạn của tác giả - họa sĩ Duy Văn về các loài ma quỷ và niềm tin vào các hiện tượng tâm linh siêu nhiên trong truyền thuyết dân gian ở Việt Nam.",
+      "Sau thành công của tập sách thứ nhất, tập sách thứ hai “Ma quỷ dân gian ký: Tinh linh đất Việt” tiếp tục giới thiệu các chương mới như Ma sàn, Thiên Linh Cái, Ma cây, Âm binh..., các tục thờ Chó Đá, Thần Hổ, những niềm tin dân gian về Duyên âm, Bùa yêu, Truyền thuyết đô thị Việt Nam cùng một số các loài “yêu quái” nổi tiếng trong sự đồn đại của dân gian như Chuột tinh ngũ sắc, Ông Sấu Năm Chèo... Tất cả hiện lên thông qua lời kể rành mạch, tường minh cùng tranh vẽ độc đáo, đậm nét dân gian đương đại, hứa hẹn sẽ là một nguồn tư liệu tham khảo “có một không hai” cho những độc giả yêu thích tìm hiểu, nghiên cứu văn hóa tín ngưỡng Việt Nam."
+    ],
     "status": "",
     "dateIn": "06-12-2023",
     "discount": "24%",
@@ -723,8 +760,8 @@
     "name": "Hỏa Ngục - Bìa Cứng (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Dan Brown",
-    "price": 239.0,
-    "sale": "",
+    "price": "239.000",
+    "sale": "143.400",
     "amout": 6130,
     "publisher": "Lao Động",
     "images": [
@@ -734,7 +771,9 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/hoa_nguc___bia_cung_tai_ban_2023/2023_09_19_16_21_53_1-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/hoa_nguc___bia_cung_tai_ban_2023/2023_09_19_16_21_53_2-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Với việc xuất bản các tiểu thuyết gây chấn động Thiên thần và ác quỷ, Mật mã Da Vinci và Biểu tượng thất truyền, Dan Brown đã trở thành một trong những tác giả ăn khách mang tầm quốc tế với khả năng kết hợp rất liền lạc những mật mã, biểu tượng đan xen nghệ thuật và lịch sử vào các câu chuyện kịch tính đầy cuốn hút, chinh phục hàng trăm triệu độc giả trên khắp thế giới. Giờ đây, qua cuốn tiểu thuyết mới vô cùng ấn tượng mang nhan đề Hỏa ngục, Dan Brown sẽ đưa độc giả đến nước Ý, dẫn dắt họ qua một khung cảnh lấy cảm hứng từ một trong những tác phẩm văn học kinh điển nhất trong lịch sử."
+    ],
     "status": "",
     "dateIn": "07-23-2023",
     "discount": "40%",
@@ -744,8 +783,8 @@
     "name": "Bí Ẩn Sau Cánh Cửa Nhà Xác - Ghi Chép Của Người Giải Phẫu Tử Thi",
     "type": "Văn học",
     "author": "Carla Valentine",
-    "price": 120.0,
-    "sale": "",
+    "price": "120.000",
+    "sale": "87.600",
     "amout": 4670,
     "publisher": "Thanh Niên",
     "images": [
@@ -755,7 +794,12 @@
       "https://cdn0.fahasa.com/media/catalog/product/b/m/bm_1_nh_x_c.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/b/m/bm_2_nh_x_c.jpg"
     ],
-    "description": [],
+    "description": [
+      "Bí Ẩn Sau Cánh Cửa Nhà Xác - Ghi Chép Của Người Giải Phẫu Tử Thi",
+      "“BÍ ẨN SAU CÁNH CỬA NHÀ XÁC - GHI CHÉP CỦA NGƯỜI GIẢI PHẪU TỬ THI” - Cuốn sách tiết lộ sự thật đằng sau công việc của những người sống cùng xác chết.",
+      "“Tôi đã quen “đọc” máu thịt của người chết bằng cách nhìn và sờ, để tạo ra phần cuối câu chuyện cuộc đời của họ.",
+      "“Bí ẩn sau cánh cửa nhà xác - Ghi chép của người giải phẫu tử thi” là cuốn sổ tay thuật lại những câu chuyện, những kiến thức chuyên môn của Carla Valentine - nhà công nghệ bệnh lý giải độc, đồng thời là người phụ trách Bảo tàng Bệnh học Barts vô cùng nổi tiếng tại Anh."
+    ],
     "status": "",
     "dateIn": "08-30-2023",
     "discount": "27%",
@@ -765,8 +809,8 @@
     "name": "Phía Sau Nghi Can X (Tái Bản 2024)",
     "type": "Văn học",
     "author": "Higashino Keigo",
-    "price": 129.0,
-    "sale": "",
+    "price": "129.000",
+    "sale": "103.200 ",
     "amout": 4500,
     "publisher": "Hội Nhà Văn",
     "images": [
@@ -776,7 +820,11 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/phia_sau_nghi_can_x_tai_ban_2024/2024_02_26_16_23_32_2-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/phia_sau_nghi_can_x_tai_ban_2024/2024_02_26_16_23_32_3-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "“Việc nghĩ ra một bài toán vô cùng khó và việc giải bài toán đó, việc nào khó hơn?”",
+      "Khi nhấn chuông cửa nhà nghi can chính của một vụ án mới, điều tra viên Kusanagi không biết rằng anh sắp phải đương đầu với một thiên tài ẩn dật. Kusanagi càng không thể ngờ rằng, chỉ một câu nói vô thưởng vô phạt của anh đã kéo người bạn thân, Manabu Yukawa, một phó giáo sư vật lý tài năng, vào vụ án. Và điều làm sững sờ nhất, đó là vụ án kia chẳng qua cũng chỉ như một bài toán cấp ba đơn giản, tuy nhiên ấn số X khi được phơi bày ra lại không đem đến hạnh phúc cho bất cứ ai…",
+      "Với một giọng văn tỉnh táo và dung dị, Higashino Keigo đã đem đến cho độc giả hơn cả một cuốn tiểu thuyết trinh thám. Mô tả tội ác không phải điều hấp dẫn nhất ở đây, mà còn là những giằng xé nội tâm thầm kín, những nhân vật bình dị, và sự quan tâm sâu sa tới con người. Tác phẩm đã đem lại cho Higashino Keigo Giải Naoki lần thứ 134, một  giải thưởng văn học lâu đời sánh ngang giải Akutagawa tại Nhật."
+    ],
     "status": "",
     "dateIn": "02-27-2024",
     "discount": "20%",
@@ -786,8 +834,8 @@
     "name": "Nhập Vai Thám Tử",
     "type": "Văn học",
     "author": "G.T. Karber",
-    "price": 119.0,
-    "sale": "",
+    "price": "119.000",
+    "sale": "86.870",
     "amout": 6800,
     "publisher": "Dân Trí",
     "images": [
@@ -797,7 +845,18 @@
       "https://cdn0.fahasa.com/media/catalog/product/m/o/mockup-m_u_1.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/t/r/tr_ng-2-01.jpg"
     ],
-    "description": [],
+    "description": [
+      "Nhập Vai Thám Tử",
+      "Cuốn sách được chia ra thành 50 vụ án từ đơn giản đến phức tạp – Áp dụng khả năng suy luận logic x Kỹ năng loại trừ, với 4 cấp độ:",
+      "1. Sơ cấp: Gồm 13 vụ án",
+      "2. Cầu viện thánh thần: Gồm 12 vụ án",
+      "3. Căng não: Gồm 13 vụ án",
+      "4. Bất khả giải: Gồm 12 vụ án",
+      "+ Kẻ nào đã gây ra những tội ác rùng rợn ấy?",
+      "+ Hắn đã sử dụng hung khí gì để kểt liễu nạn nhân?",
+      "+ Cái bẫy đã được giăng sẵn ở đâu?",
+      "Hãy nghiên cứu kỹ lưỡng các đầu mối, phỏng vấn nhân chứng và vận dụng khả năng suy luận để “phá lưới”, bắt đúng thủ phạm!"
+    ],
     "status": "",
     "dateIn": "07-04-2023",
     "discount": "27%",
@@ -807,8 +866,8 @@
     "name": "Thú Tội (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Minato Kanae",
-    "price": 99.0,
-    "sale": "",
+    "price": "99.000",
+    "sale": "77.220",
     "amout": 5700,
     "publisher": "Hội Nhà Văn",
     "images": [
@@ -818,7 +877,11 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thu_toi_tai_ban_2023/2023_03_29_11_15_48_3-390x510.gif",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thu_toi_tai_ban_2023/2023_03_29_11_15_48_4-390x510.gif"
     ],
-    "description": [],
+    "description": [
+      "Thú Tội",
+      "Moriguchi là giáo viên cấp hai đồng thời là bà mẹ đơn thân của một cô gái 4 tuổi. Một hôm, xác cô bé được phát hiện trong bể bơi trường học. Cảnh sát nhận định đây là vụ tai nạn nhưng Moriguchi biết ai đã sát hại con gái mình - kẻ ở ngay trong lớp học do mình chủ nhiệm. Moriguchi bắt đầu kế hoạch báo thù của riêng cô...",
+      "Một câu chuyện tâm lý kinh dị, ớn lạnh, thuyết phục, gây bất ngờ không chỉ một lần...Day dứt, tàn nhẫn và choáng váng."
+    ],
     "status": "",
     "dateIn": "09-30-2023",
     "discount": "22%",
@@ -828,8 +891,8 @@
     "name": "Hồ Sơ Tâm Lí Tội Phạm - Tập 2",
     "type": "Văn học",
     "author": "Cương Tuyết Ấn",
-    "price": 110.0,
-    "sale": "",
+    "price": "110.000",
+    "sale": "99.000",
     "amout": 3200,
     "publisher": "Kim Đồng",
     "images": [
@@ -839,7 +902,13 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ho_so_tam_li_toi_pham___tap_2/2023_02_01_09_27_03_3-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ho_so_tam_li_toi_pham___tap_2/2023_02_01_09_27_03_4-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "BỘ SÁCH CHẤN ĐỘNG NHẤT VỀ TÂM LÍ TỘI PHẠM. PHƠI BÀY TRỌN VẸN NHỮNG GÓC KHUẤT NỘI TÂM CỦA KẺ THỦ ÁC.",
+      "Kể từ khi nghiên cứu tâm lí học tội phạm đến nay, tôi đã chứng kiến rất nhiều tội ác muôn hình vạn trạng, nhưng hầu hết tất cả những hành vi biến thái đó đều ẩn chứa đằng sau một động cơ chung: Khát vọng được quan tâm và yêu thương.",
+      "Đây là tập 2 của series HỒ SƠ TÂM LÍ TỘI PHẠM, tác phẩm trinh thám điều tra hình sự có liên quan đến tâm lí tội phạm.",
+      "Trước đây, trên thế giới từng có những vụ trọng án đi vào ngõ cụt, bởi tất cả các bằng chứng và dấu vết đã bị kẻ thủ ác khôn ngoan xóa sạch. Trong lịch sử, không hề hiếm những vụ án mà cảnh sát phải bó tay, không thể bắt hung thủ hiện nguyên hình.",
+      "Ngày nay, ngoài các kĩ thuật hình sự hỗ trợ điều tra tội phạm, thì tâm lí học tội phạm chính là một trong những “kĩ thuật bóc tách” hung thủ từ các nghi can. Những kẻ giết người hàng loạt thực hiện hành vi tàn nhẫn hết lần này đến lần khác mà không để lại chút sơ hở nào, vậy giữa biển người mênh mông làm sao có thể khoanh vùng và tìm được kẻ thủ ác? Những nhà tâm lí học tội phạm dựa vào các hành vi gây án hay còn gọi là chứng cứ hành vi để phân tích tâm lí của kẻ thủ ác và bước đầu phác họa hồ sơ tội phạm, giúp thu hẹp phạm vi điều tra."
+    ],
     "status": "",
     "dateIn": "12-04-2022",
     "discount": "10%",
@@ -849,8 +918,8 @@
     "name": "Đứa Trẻ Hư (Tái Bản 2022)",
     "type": "Văn học",
     "author": "Tử Kim Trần",
-    "price": 159.0,
-    "sale": "",
+    "price": "159.000",
+    "sale": "143.100",
     "amout": 7900,
     "publisher": "Hồng Đức",
     "images": [
@@ -860,7 +929,14 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/dua_tre_hu_tai_ban_2022/2023_04_07_08_53_17_3-390x510.jpeg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/dua_tre_hu_tai_ban_2022/2023_04_07_08_53_17_4-390x510.jpeg"
     ],
-    "description": [],
+    "description": [
+      "Đứa Trẻ Hư (Tái Bản)",
+      "Chu Triều Dương, cậu học sinh có thành tích học tập xuất sắc nhất toàn trường cấp 2. Phổ Phổ và Đinh Hạo bỏ trốn khỏi cô nhi viện và đến tìm cậu để ở nhờ.",
+      "Ba đửa trẻ tình cờ quay được đoan video Trương Đống Thăng giết bố mẹ vợ anh ta và tiến hành tống tién. Chu Triều Dương vô tình ngộ sát đứa em gái cùng cha khác mẹ, lúc đó chí éo Phổ Phổ và Đinh Hạo chứng kiến.",
+      "Bà mẹ kế nghi ngờ cậu chính là hung thủ nên dã tìm mọi cách trả thù cậu. Cảnh sát hoàn toàn không nghi ngờ gì Chu Triều Dương nhưng vẫn luôn tìm kiếm tung tích của kẻ giết chết Chu Tinh Tinh và đã dần điêu tra được một số manh mối.",
+      "Liệu Chu Triều Dương sẽ xử trí ra sao? Mối quan hệ giữa ba đứa trẻ và Trương Đống Thăng sẽ diễn biến như thế nào? Liệu Trương Đống Thăng có thể thực hiện được kế hoạch của anh ta một cách thuận lợi?",
+      "Số phận của ba đứa trẻ sẽ ra sao? Và sau cùng, mọi hành vi của Chu Triều Dương có bị phát giác hay không? Cậu sẽ có một cuộc sống hoàn toàn mới hay phải chịu sụ trừng phạt của pháp luật?"
+    ],
     "status": "",
     "dateIn": "10-05-2022",
     "discount": "10%",
@@ -870,8 +946,8 @@
     "name": "Án Mạng Kép Ở Vườn Địa Đàng",
     "type": "Văn học",
     "author": "Eva García Sáenz De Urturi",
-    "price": 248.0,
-    "sale": "",
+    "price": "248.000",
+    "sale": "181.040",
     "amout": 6490,
     "publisher": "Phụ Nữ Việt Nam",
     "images": [
@@ -881,7 +957,16 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/an_mang_kep_o_vuon_dia_dang/2024_02_03_13_00_10_3-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/an_mang_kep_o_vuon_dia_dang/2024_02_03_13_00_10_4-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Án Mạng Kép Ở Vườn Địa Đàng",
+      "Tiểu thuyết trinh thám hay nhất năm 2020 theo Crime By The Book",
+      "Lời nguyền phủ xuống Vitoria khi nữ thần bảo hộ của thành phố sa ngã.",
+      "Nhà khảo cổ học Tasio Ortiz de Zárate đã ngồi tù gần 20 năm để trả giá cho chuỗi án mạng kinh hoàng ở Vitoria vào khoảng hai thập kỷ trước. Nhưng ngay khi anh ta chuẩn bị mãn hạn tù thì cuộc giết chóc bất ngờ tái diễn. Liệu Tasio, hay người anh song sinh của anh ta, có dính líu gì đến những án mạng mới không? Hay Tasio đã bị kết án oan 20 năm trước?",
+      "Vô số cặp xác được đặt ở nơi cư ngụ của thánh thần, vào chính thời đại hưng thịnh nhất của đàn hiến tế, không có bất cứ nguyên do nào cả, chỉ bởi tên sát nhân khát khao những cuộc thanh trừng.",
+      "Một cơn ác mộng mới phủ xuống Vitoria. Cả thành phố đang phải đối mặt với một kẻ cuồng sát mới hay hung thủ thực thụ chưa từng lộ diện?",
+      "Hắn chỉ lối, anh đi theo. Luôn luôn chậm chân, luôn luôn chậm chân, #Kraken",
+      "Án mạng kép ở vườn Địa Đàng (tên gốc: El silencio de la ciudad blanca) là một trong những tiểu thuyết bán chạy nhất về đề tài cảnh sát phá án. Đây thực sự là một tác phẩm với phạm vi và chiều sâu nội dung ấn tượng, được nhào nặn một cách đầy sức thuyết phục."
+    ],
     "status": "",
     "dateIn": "08-05-2033",
     "discount": "27%",
@@ -891,8 +976,8 @@
     "name": "Hình Cảnh Mất Trí",
     "type": "Văn học",
     "author": "Chan Ho Kei",
-    "price": 100.0,
-    "sale": "",
+    "price": "100.000",
+    "sale": "90.00",
     "amout": 5700,
     "publisher": "Hà Nội",
     "images": [
@@ -902,39 +987,24 @@
       "https://cdn0.fahasa.com/media/catalog/product/h/i/hinh_canh_mat_tri_2_2022_07_28_17_00_59.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/h/i/hinh_canh_mat_tri_3_2022_07_28_17_00_59.jpg"
     ],
-    "description": [],
+    "description": [
+      "Sáng Chủ nhật nọ, một cảnh sát hình sự choàng tỉnh trong ô tô riêng, và đinh ninh đang là năm 2003.",
+      "Rời khỏi xe, anh ta choáng váng khi nhận ra thời gian và không gian đã nhảy đến năm 2009, con người và sự vật xung quanh đều đã đổi thay, đặc biệt là vụ án ba mạng hai thây anh tưởng mình đang điều tra hóa ra lại đã thành dĩ vãng.",
+      "Để tìm lại trí nhớ và làm sáng tỏ mọi việc, trong 24 giờ tiếp theo anh bôn ba khắp nơi để lật lại vụ án.",
+      "Khác với triển khai đồ sộ của 13.67 và Người trong lưới, Hình cảnh mất trí đi theo hướng nhẹ nhàng, nhanh nhẹn và đơn tuyến hơn. Tuy nhiên, cuốn sách cho thấy tác giả vẫn luôn nhất quán về phong cách đan xen trinh thám và thực tại Hồng Kông, cùng thái độ “bi quan nhưng không tuyệt vọng” về tiết tấu xã hội xung quanh.",
+      "Hình cảnh mất trí là tác phẩm đoạt giải Nhất Trinh thám Soji Shimada năm 2011, và là cú hích đểChan Ho Kei toàn tâm toàn ý đi theo con đường sáng tác chuyên nghiệp,từ đó mới có 13.67 và Người trong lưới về sau."
+    ],
     "status": "",
     "dateIn": "05-27-2022",
     "discount": "10%",
     "field": "Truyện Trinh Thám - Kiếm Hiệp"
   },
   {
-    "name": "Mindhunter - Kẻ Săn Suy Nghĩ (Tái Bản 2023)",
-    "type": "Văn học",
-    "author": "John E Douglas, Mark Olshaker",
-    "price": 145.0,
-    "sale": "",
-    "amout": 4900,
-    "publisher": "Thanh Hoa",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_mindhunter-k_-s_n-suy-ngh_.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a_1_mindhunter-k_s_n_suy_ngh_.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a_4_mindhunter-k_s_n_suy_ngh_.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/m/o/mock-up_mindhunter_k_s_n_suy_ngh_.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/b/o/bookmark_mindhunter_-_k_s_n_suy_ngh_.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "04-28-2023",
-    "discount": "31%",
-    "field": "Truyện Trinh Thám - Kiếm Hiệp"
-  },
-  {
     "name": "Tết Ở Làng Địa Ngục",
     "type": "Văn học",
     "author": "Thảo Trang",
-    "price": 169.0,
-    "sale": "",
+    "price": "169.000",
+    "sale": "126.750",
     "amout": 8900,
     "publisher": "Thanh Niên",
     "images": [
@@ -944,7 +1014,13 @@
       "https://vanhoavaphattrien.vn/uploads/images/2022/02/11/truyen-kinh-di-tet-o-lang-dia-nguc-1644557772.jpg",
       "https://bookish.vn/wp-content/uploads/2023/11/mockup-1-02-min.jpg"
     ],
-    "description": [],
+    "description": [
+      "Tết Ở Làng Địa Ngục",
+      "Năm đó, tại một ngôi làng xa xôi trên một ngọn núi hoang vu, người ta đón Tết trong sự kinh hãi tột độ, hoài nghi đau đáu và giận dữ khôn cùng trước sự ập tới của những bi kich tàn khốc.",
+      "Ngôi làng ấy vốn dĩ không có tên, nhưng những người nơi đây mặc định chốn này là địa ngục. Dân trong làng không ai dám tự ý băng rừng thoát khỏi làng, càng không biết thế giới bên ngoài rộng lớn như thế nào, bởi lẽ họ sợ người khác sẽ biết rằng bản thân mình vốn là hậu duệ của băng cướp khét tiếng ở truông nhà Hồ dưới thời chúa Nguyễn ở Đàng Trong.",
+      "Vào một đêm cuối năm rét buốt, ông Thập – người duy nhất có thể ra khỏi làng – được báo mộng bởi một âm hồn mặc quan phục màu đỏ rực. Làng Địa Ngục sắp gặp họa lớn!",
+      "Thành danh bằng những tác phẩm văn học kinh dị đậm chất Việt Nam được phát hành qua mạng, lần này tác giả Thảo Trang tiếp tục mang đến một câu chuyện hấp dẫn, mở ra một thế giới huyền bí với những sinh vật, thế lực siêu linh mà người đọc không bao giờ hết hứng thú, để lại những dư âm không phai khi gấp sách lại."
+    ],
     "status": "",
     "dateIn": "06-20-2022",
     "discount": "25%",
@@ -954,8 +1030,8 @@
     "name": "Tam Thể 03 - Tử Thần Sống Mãi",
     "type": "Văn học",
     "author": "Lưu Từ Hân",
-    "price": 290.0,
-    "sale": "",
+    "price": "290.000",
+    "sale": "226.200",
     "amout": 4820,
     "publisher": "Hà Nội",
     "images": [
@@ -965,7 +1041,11 @@
       "https://salt.tikicdn.com/cache/w400/ts/product/e9/ed/96/339c6969cce3da2cbb682e62edb49ed6.jpg",
       "https://www.netabooks.vn/Data/Sites/1/media/sach-2021/tam-the-tap-3-tu-than-song-mai/tam-the-tap-3-tu-than-song-mai.jpg"
     ],
-    "description": [],
+    "description": [
+      "GIỚI THIỆU SÁCH:",
+      "Đe dọa khu rừng đen tối giúp nhân loại duy trì thế cân bằng chiến lược với thế giới Tam Thể suốt sáu mươi năm. Song rốt cuộc, một đòn tấn công bất ngờ đã làm thay đổi cục diện. Loài người cận kề bờ vực diệt vong, buộc phải phát đi thông tin tọa độ của hệ sao Tam Thể. Nhưng rồi, họ đối mặt với một vấn đề sinh tồn mới: vị trí của Hệ Mặt trời sớm muộn gì cũng bị lộ trước những tay “thợ săn” vũ trụ. Mọi hy vọng đều gửi gắm vào việc giải mã ba câu chuyện cổ tích được truyền về từ một cá thể nhân loại giấu mình trong nội bộ hạm đội người ngoài hành tinh…",
+      "Tử Thần sống mãi là kết thúc hoành tráng và hoàn hảo cho tam bộ khúc của Lưu Từ Hân, như một thiên sử thi về hành trình của mỗi nền văn minh, từ khi thức tỉnh, “chập chững bước ra ngoài, bay lên, bay càng lúc càng nhanh, bay càng lúc càng xa, cuối cùng thì hòa làm một với vận mệnh của vũ trụ.”"
+    ],
     "status": "",
     "dateIn": "03-14-2021",
     "discount": "22%",
@@ -975,8 +1055,8 @@
     "name": "Sĩ Số Lớp Vắng 0",
     "type": "Văn học",
     "author": "Emma Hạ My",
-    "price": 102.0,
-    "sale": "",
+    "price": "102.000",
+    "sale": "74.460",
     "amout": 7600,
     "publisher": "Dân Trí",
     "images": [
@@ -986,7 +1066,16 @@
       "https://cdn0.fahasa.com/media/catalog/product/5/0/506dc6ca-b48d-4caa-a522-c31f4e7705e7.jpeg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/si_so_lop_vang_0/2023_10_17_16_46_31_2-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Sĩ Số Lớp Vắng 0",
+      "“Tiếng gọi bí ẩn trong căn phòng đó dường như chỉ có mình tôi nghe thấy.”",
+      "“Lớp học này từng có người c.h.ế.t.”",
+      "“Người ta đồn rằng, vào buổi tối, trường này có ma.”",
+      "Sau khi bóng đêm nuốt trọn ngôi trường, những điều quỷ dị đã xảy ra…Nơi chiếc bàn học cuối lớp thỉnh thoảng lại vang lên tiếng gọi, chẳng nghe rõ tiếng nhưng như một loại thuốc mê khiến con người ta không thể điều khiển nổi tâm trí mà đi theo… một thứ quỷ dị đanglen lỏi trong từng ngóc ngách của lớp học này.",
+      "“SĨ SỐ LỚP VẮNG 0” là cuốn sách được chắp bút bởi EMMA HẠ MY - chủ sở hữu kênh Youtube “Truyện của Emma” đăng tải những câu chuyện kinh dị tự sáng tác bằng hình ảnh hoạt họa do chính tác giả thực hiện. Cuốn sách bao gồm “Vệt Phấn Trên Bảng Đen” và 9 truyện ngắn khác CHƯA TỪNG xuất hiện trên kênh của Emma Hạ My.",
+      "Trải qua 10 câu chuyện, cuốn sách sẽ đưa bạn bước vào một thế giới đầy ám ảnh rùng mình khi nhắc đến như: hồn ma của nữ sinh bị g….iết và hã…m hi…ếp rồi ngụy tạo thành tr.eo c.ổ t..ự t..ử; nam sinh đang tr.eo c.ổ lắc lư trên thanh xà ngang học thể dục dựng ở giữa sân trường; là hồn ma của một nữ sinh, thường lang thang khắp nơi trong trường để dọa dẫm học sinh…",
+      "Tưởng chừng những sự việc hãi hùng kia dường như chỉ là cơn á.c m.ộng mà họ trải qua trong một đêm say giấc nồng. Nhưng rồi hiện thực phải đối diện tát cho họ một cú đau điếng. Những gì xảy ra đêm qua đều có thật."
+    ],
     "status": "",
     "dateIn": "09-20-2023",
     "discount": "27%",
@@ -996,8 +1085,8 @@
     "name": "Điều Kỳ Diệu Của Tiệm Tạp Hóa Namiya (Tái Bản 2018)",
     "type": "Văn học",
     "author": "Higashino Keigo",
-    "price": 105.0,
-    "sale": "",
+    "price": "105.000",
+    "sale": "81.900",
     "amout": 5900,
     "publisher": "Hội Nhà Văn",
     "images": [
@@ -1007,7 +1096,11 @@
       "https://bookish.vn/wp-content/uploads/2019/05/Dieu-ky-dieu-cua-tiem-tap-hoa-Namiya-min.jpg",
       "https://reviewsach.net/wp-content/uploads/2018/03/%C4%90i%E1%BB%81u-k%E1%BB%B3-di%E1%BB%87u-c%E1%BB%A7a-ti%E1%BB%87m-t%E1%BA%A1p-ho%C3%A1-Namiya-Review-s%C3%A1ch.jpg"
     ],
-    "description": [],
+    "description": [
+      "Điều Kỳ Diệu Của Tiệm Tạp Hóa (Tái Bản 2018)",
+      "Một đêm vội vã lẩn trốn sau phi vụ khoắng đồ nhà người, Atsuya, Shota và Kouhei đã rẽ vào lánh tạm trong một căn nhà hoang bên con dốc vắng người qua lại. Căn nhà có vẻ khi xưa là một tiệm tạp hóa với biển hiệu cũ kỹ bám đầy bồ hóng, khiến người ta khó lòng đọc được trên đó viết gì. Định bụng nghỉ tạm một đêm rồi sáng hôm sau chuồn sớm, cả ba không ngờ chờ đợi cả bọn sẽ là một đêm không ngủ, với bao điều kỳ bí bắt đầu từ một phong thư bất ngờ gửi đến…",
+      "Tài kể chuyện hơn người đã giúp Keigo khéo léo thay đổi các mốc dấu thời gian và không gian, chắp nối những câu chuyện tưởng chừng hoàn toàn riêng rẽ thành một kết cấu chặt chẽ, gây bất ngờ từ đầu tới cuối."
+    ],
     "status": "",
     "dateIn": "11-09-2023",
     "discount": "22%",
@@ -1017,8 +1110,8 @@
     "name": "Dê Mắt Quỷ",
     "type": "Văn học",
     "author": "Chan-Ho-Kei",
-    "price": 229.0,
-    "sale": "",
+    "price": "229.000",
+    "sale": "153.430",
     "amout": 8600,
     "publisher": "Thanh Niên",
     "images": [
@@ -1028,7 +1121,11 @@
       "https://www.netabooks.vn/Data/Sites/1/Product/70935/de-mat-quy-2.jpg",
       "https://salt.tikicdn.com/cache/200x280/ts/product/7a/f3/8b/eb6703e6c79fecd255cdf92ac22061f7.jpg"
     ],
-    "description": [],
+    "description": [
+      "Dê Mắt Quỷ",
+      "Diệp – nhân vật chính của tác phẩm – là một cậu sinh viên mới chân ướt chân ráo buổi đầu đến ký túc xá một trường đại học để nhận phòng tại Norfolk. Nhưng ngay đêm đầu tiên chuyển vào ký túc xá, cậu và nhóm bạn đã bị “nhắm tới”. Có lẽ họ không nên bàn tán về những truyền thuyết kinh hoàng trong ký túc xá vào lúc nửa đêm, không nên khám phá căn hầm, nơi người ta đồn đại có một quý tộc người Anh đã thực hiện các nghi lễ ma quỷ từ trăm năm trước, càng không nên liều lĩnh chơi trò chơi gọi hồn ở nơi ấy.",
+      "Nhưng đã quá muộn để quay lại, một bạn nữ trong nhóm bỗng biến mất sau trò chơi, và người bạn nam giúp đỡ tìm kiếm cũng mất tích không để lại dấu vết. Không ai biết được chuyện gì đã xảy ra. Nỗi sợ hãi không tên bao trùm, Diệp mơ hồ cảm thấy một công tắc cấm kỵ nào đó đã được bật lên, cậu chỉ muốn cứu những người bạn đang trong lằn ranh sinh tử và ngăn chặn “Bảy câu chuyện ma” của Norfolk xảy ra thêm lần nữa!"
+    ],
     "status": "",
     "dateIn": "01-09-2024",
     "discount": "33%",
@@ -1038,8 +1135,8 @@
     "name": "Ngủ Cùng Người Chết",
     "type": "Văn học",
     "author": "Thảo Trang",
-    "price": 185.0,
-    "sale": "",
+    "price": "185.000",
+    "sale": "135.050",
     "amout": 7400,
     "publisher": "Phụ Nữ Việt Nam",
     "images": [
@@ -1049,7 +1146,12 @@
       "https://salt.tikicdn.com/cache/280x280/ts/product/97/b5/e0/a9d945af56a332e1abc0a4dc43ebe4e0.jpg",
       "https://motreview.com.vn/wp-content/uploads/2022/12/review-sach-ngu-cung-nguoi-chet-2.jpeg"
     ],
-    "description": [],
+    "description": [
+      "Sau một đêm mưa gió, cô bé sáu tuổi Phương Linh bỗng mất hết tất cả, bất đắc chí trở thành một đứa trẻ mồ côi.",
+      "Sau mười năm tận mắt chứng kiến cái chết bi thảm của cha mẹ, Phương Linh giờ đã trở thành một thiếu nữ kiên cường, và luôn đau đáu trong lòng vụ án mạng năm nào chưa có lời giải đáp. Trong một dịp tình cờ quay về căn nhà cũ, Phương Linh phát hiện bấy lâu nay vẫn luôn có một hồn ma dõi theo mình. Hồn ma đó gợi nhắc cho cô nhớ tới một người từng xuất hiện trong đêm mưa gió năm ấ Mụn nốt ruồi giữa sống mũi, đôi mắt thường trực nét u sầu, trong giấc mơ đưa cô rong ruổi khắp chốn rừng sâu, kéo theo sau là hàng loạt những biến cố liên tục ập đến, có lúc tưởng chừng đã đập tan cả ranh giới cuối cùng của sự can trường nơi cô.",
+      "Rốt cuộc hồn ma đó là ai, có liên quan gì tới cái chết của bố mẹ cô? Tại sao hết lần này tới lần khác đều xuất hiện trước lưỡi hái tử thần, dang đôi tay đổi cho cô một mạng?",
+      "Rốt cuộc đằng sau cái chết của cha mẹ cô còn ẩn giấu bí mật động trời nào mà chính cô cũng không thể mường tượng nổi?"
+    ],
     "status": "",
     "dateIn": "01-17-2022",
     "discount": "27%",
@@ -1059,8 +1161,8 @@
     "name": "Rừng Than Khóc",
     "type": "Văn học",
     "author": "Thục Linh",
-    "price": 189.0,
-    "sale": "",
+    "price": "189.000",
+    "sale": "151.200",
     "amout": 5400,
     "publisher": "Thanh Niên",
     "images": [
@@ -1070,7 +1172,14 @@
       "https://product.hstatic.net/1000290493/product/rung_than_khoc_ban_dac_biet_19d58f5fe22045c3a14699233721c9af.jpg",
       "https://file.hstatic.net/1000290493/article/rung_than_khoc_1_x_55695ae23e2445deb942da97b647e1f4_large.jpg"
     ],
-    "description": [],
+    "description": [
+      "Rừng Than Khóc",
+      "“Trường Sinh chót vót non cao",
+      "Kẻ đi săn kiếm cớ sao chẳng về?”",
+      "Ngải Trường Sinh là loài cây có công dụng cải tử hoàn sinh và kéo dài tuổi thọ cho con người, nhưng những kẻ tìm kiếm nó sẽ phải vất vả, hi sinh cả thời gian, xương máu, nước mắt và thậm chí là chính sinh mạng của mình để đánh đổi.",
+      "Sáu con người xa lạ từ những miền quê khác nhau đã hội ngộ tại vùng núi Ngoạn vì sức hấp dẫn, lời mời gọi của loại thần dược có khả năng thay đổi số phận con người ấy. Một đoàn người săn tìm ngải đã được lập nên, theo sự dẫn dắt của trưởng đoàn là Hùng, tiến sâu vào vùng rừng xa lạ. Tự tin với việc đã tận tay chạm vào ngải Trường Sinh, dẫn nhiều đoàn khách trở về an toàn, Hùng phổ biến các quy tắc ngầm khi tiến vào nơi “rừng thiêng nước độc”, yên tâm rằng mọi người sẽ lưu ý và làm theo.",
+      "Nhưng chưa khởi hành được bao lâu, những sự việc quái dị đột ngột xảy ra, liệu nó bắt đầu từ sự coi thường phép tắc tại chốn rừng thiêng của những kẻ mang suy nghĩ thiển cận, hay chính tại nơi đây còn ẩn náu một sinh vật bí ẩn nào đó, gieo rắc cái chết và nỗi kinh hoàng khiến đoàn người lâm vào thảm cảnh đầy hung hiểm?"
+    ],
     "status": "",
     "dateIn": "02-20-2024",
     "discount": "20%",
@@ -1080,8 +1189,8 @@
     "name": "17 Âm 1",
     "type": "Văn học",
     "author": "Doo Vandenis",
-    "price": 169.0,
-    "sale": "",
+    "price": "169.000",
+    "sale": "128.440",
     "amout": 7450,
     "publisher": "Thanh Niên",
     "images": [
@@ -1091,7 +1200,13 @@
       "https://vanhoavaphattrien.vn/uploads/images/blog/photongbientap/2023/11/17/b01-tac-gia-gen-z-1700239387.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/17_am_1/2023_12_11_09_40_27_7-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Vụ án bắt đầu ở hồ An Yên, và cũng kết thúc tại nơi nạn nhân bỏ mạng.",
+      "Không phải ngẫu nhiên mà lớp 12D4 trường THPT NTX luôn có một học sinh vắng nhưng toàn bộ thành viên đều từ chối đề cập đến chuyện đó. Bởi vì mọi người đều biết người bạn ấy đã chết, chết không toàn thây.",
+      "Không phải tình cờ mà Duy Lâm trở thành thành viên trong lớp nhận nhiệm vụ phải đi tìm lại cái xác và trả về hồ An Yên. Nhiệm vụ ấy không đáng sợ vì phải đụng chạm xác người chết, mà nó đáng sợ vì cậu ta phải đối mặt với những người xử lý cũng như các thực thể không thật được tạo ra bởi tâm lý méo mó của họ.",
+      "Mỗi lần mảnh xác được trả về hồ An Yên, bản chất của vụ án lại được tiết lộ.",
+      "Chặng đường này không thể trông chờ vào may mắn để đến được điểm cuối. Bởi vì muốn lừa được kẻ phạm tội tiết lộ chỗ giấu xác, cậu buộc phải đẩy bản thân mình vào thế hiểm nguy."
+    ],
     "status": "",
     "dateIn": "01-20-2023",
     "discount": "24%",
@@ -1101,8 +1216,8 @@
     "name": "Vùng Đất Quỷ Tha Ma Bắt",
     "type": "Văn học",
     "author": "Kevin Chen",
-    "price": 168.0,
-    "sale": "",
+    "price": "168.000",
+    "sale": "131.040",
     "amout": 4700,
     "publisher": "Hà Nội",
     "images": [
@@ -1112,7 +1227,17 @@
       "https://pibook.vn/upload/products/931e0e4e1b0c198811cb65c387b42b4d.jpg",
       "https://cdnphoto.dantri.com.vn/u24S5M0PFGRUxx-9oq69KEeBPFY=/thumb_w/1020/2023/07/25/vung-dat-quy-tha-ma-bat-5-1690219582072.jpg"
     ],
-    "description": [],
+    "description": [
+      "Vùng Đất Quỷ Tha Ma Bắt",
+      "Quê hương là một vùng đất nhỏ...",
+      "Vùng đất nhỏ, chính là vùng đất quỷ tha ma bắt của gã.",
+      "Câu chuyện bắt đầu vào một ngày rằm tháng Bảy, tại một cùng quê nghèo miền Trung đảo Đài Loan. Sau khi mãn hạn tù vì tội giết người bạn đời đồng tính ở Đức, Trần Thiên Hoành trở về quê cũ. Cha mẹ chị cả chị hai chị ba chị tư chị năm anh trai và chính gã - thanh niên nhà họ Trần lần lượt sắm vai người kể chuyện xuyên không - thời gian, dệt nên một mạng lưới đầy mê hoặc về những bí mật gia đình và những tư tưởng mê tín ở nông thôn, phơi bày nỗi bất hạnh vụn vỡ muôn màu muôn vẻ.",
+      "Kevin Chen đã dung hòa rất nhiều phong cách viết: hiện thực huyền ảo, hài kịch đen và cả bí ẩn giật gân... phác họa ra những phận đời vừa đáng buồn vừa đáng yêu trong hành trình tìm kiếm danh tính của bản thân.",
+      "KEVIN CHEN (Trần Tư Hoành) sinh năm 1976 tại ngõ Bát Đức xã Vĩnh Tĩnh huyện Chương Hóa, Đài Loan. Là con thứ chín trong gia đình thuần nông.",
+      "Tốt nghiệp khoa tiếng Anh Đại học Công giáo Phụ Nhân, Viện Hý kịch Đại học Quốc gia Đài Loan, từng đoạt hạng nhất truyện ngắn giải văn học Lâm Vinh Tam, giải tiểu thuyết của năm Cửu Ca, giải Kim Đỉnh lần thứ 44.",
+      "Là nhà văn, có lúc cũng là diễn viên, dịch giả, hiện đang là cư trú tại Berlin, Đức.",
+      "Vùng đất quỷ tha ma bắt là cuốn tiểu thuyết mở đầu bộ ba tác phẩm Mùa hè của Kevin Chen, năm 2020 từng vinh dự đoạt hai giải thưởng văn học danh giá của Đài Loan gồm giải Kim Điền (thuộc Viện Văn học quốc gia) và giải Kim Đỉnh (thuộc Bộ Văn hóa)"
+    ],
     "status": "",
     "dateIn": "05-29-2023",
     "discount": "22%",
@@ -1122,8 +1247,8 @@
     "name": "Lâu Đài Bay Của Pháp Sư Howl (Tái Bản 2019)",
     "type": "Văn học",
     "author": "Diana Wynne Jones",
-    "price": 106.0,
-    "sale": "",
+    "price": "106.000",
+    "sale": "82.680",
     "amout": 10200,
     "publisher": "Hội Nhà Văn",
     "images": [
@@ -1133,7 +1258,11 @@
       "https://salt.tikicdn.com/ts/review/37/91/35/bc536d1ff16c64a72b589ad067d859db.jpg",
       "https://www.ereviewsach.com/wp-content/uploads/2023/12/Lau-Dai-Bay-Cua-Phap-Su-Howl-1024x682.jpg"
     ],
-    "description": [],
+    "description": [
+      "Cô gái Sophie Hatter đang sống và làm việc yên ổn trong cửa hiệu bán mũ của bố mẹ ở Ingary, xứ sở của những đôi ủng bảy lý và áo tàng hình thì bỗng một ngày, mụ phù thuỷ xứ Waste xuất hiện biến cô thành bà già xấu xí. Quyết tâm giải cứu bản thân mình, Sophie đi tới lâu đài bay tìm kiếm sự giúp đỡ của Pháp sư Howl - kẻ vốn bị đồn là khoái “ăn tươi nuốt sống” trái tim của những cô gái trẻ.",
+      "“…Sophie ngậm ngón tay bị bỏng nhẹ và lấy tay kia nhặt những lát thịt ba chỉ xông khói rơi trên váy, mắt chằm chằm nhìn Calcifer. Lão đang quật từ bên này sang bên kia lò sưởi. Những bộ mặt xanh lơ của lão gần như trắng bệch. Trong khoảnh khắc, lão có vô số những con mắt da cam, rồi khoảnh khắc sau đó đã có hàng dãy những con mắt bạc sáng như sao. Cô chưa bao giờ hình dung ra cái gì giống như thế.",
+      "Có cái gì đó quét qua trên đầu với một phát nổ và tiếng đùng làm rung chuyển mọi thứ trong phòng. Một cái gì đó thứ hai theo sau, với tiếng rống dài chói tai. Calcifer rung lên gần như xanh đen, và da Sophie xèo xèo vì tàn lửa từ phép thần thông đó…”"
+    ],
     "status": "",
     "dateIn": "04-25-2019",
     "discount": "22%",
@@ -1143,8 +1272,8 @@
     "name": "Harry Potter Và Hòn Đá Phù Thuỷ - Tập 1 (Tái Bản)",
     "type": "Văn học",
     "author": "J.K.Rowling, Lý Lan",
-    "price": 150.0,
-    "sale": "",
+    "price": "150.000",
+    "sale": "120.000",
     "amout": 8400,
     "publisher": "Trẻ",
     "images": [
@@ -1154,7 +1283,9 @@
       "https://www.sachkhaitri.com/Data/Sites/2/Product/60884/harry-potter-va-hon-da-phu-thuy-tap-1-4.jpg",
       "https://vietnambooks.vn/wp-content/uploads/2021/04/Slide2-35.png"
     ],
-    "description": [],
+    "description": [
+      "Khi một lá thư được gởi đến cho cậu bé Harry Potter bình thường và bất hạnh, cậu khám phá ra một bí mật đã được che giấu suốt cả một thập kỉ. Cha mẹ cậu chính là phù thủy và cả hai đã bị lời nguyền của Chúa tể Hắc ám giết hại khi Harry mới chỉ là một đứa trẻ, và bằng cách nào đó, cậu đã giữ được mạng sống của mình. Thoát khỏi những người giám hộ Muggle không thể chịu đựng nổi để nhập học vào trường Hogwarts, một trường đào tạo phù thủy với những bóng ma và phép thuật, Harry tình cờ dấn thân vào một cuộc phiêu lưu đầy gai góc khi cậu phát hiện ra một con chó ba đầu đang canh giữ một căn phòng trên tầng ba. Rồi Harry nghe nói đến một viên đá bị mất tích sở hữu những sức mạnh lạ kì, rất quí giá, vô cùng nguy hiểm, mà cũng có thể là mang cả hai đặc điểm trên."
+    ],
     "status": "",
     "dateIn": "09-20-2022",
     "discount": "20%",
@@ -1164,8 +1295,8 @@
     "name": "Bí Mật Thượng Đẳng - Tập 2",
     "type": "Văn học",
     "author": "Tiên Sắc Xám",
-    "price": 109.009,
-    "sale": "",
+    "price": "109.009",
+    "sale": "54.500",
     "amout": 6450,
     "publisher": "Văn Học",
     "images": [
@@ -1175,91 +1306,40 @@
       "https://cdn0.fahasa.com/media/catalog/product/g/a/gac_mau_bi_mat_thuong_dang_tap_2_asbooks-1.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/g/a/gac_mau_bi_mat_thuong_dang_tap_2_asbooks-3.jpg"
     ],
-    "description": [],
+    "description": [
+      "Câu chuyện bắt đầu từ khi Công chúa Leona bỏ trốn khỏi cung điện cùng chiếc chìa khoá rương bí mật của ngài Công tước Taurian Archmand. Bất đắc dĩ, ngài Công tước phải đi tìm để đưa công chúa trở về. Cho đến khi cả hai đặt chân đến hạt Horoc, các bí mật mới dần được hé lộ đằng sau những sự việc xảy ra, những người họ gặp được …",
+      "Ở tập 1, chúng ta đã chứng kiến nhiều sự việc bất ngờ:",
+      "Bá tước Taurian đã tới Horoc, tình cờ va phải Gemia, trúng tiếng sét ái tình và cầu hôn cô ngay giữa chợ.",
+      "Virg bị thương và phải tá túc ở nhà ba chị em Llyin.",
+      "Gã thợ rèn Aquacel từ chối lời tỏ tình của tiểu thư Scopine.",
+      "Thân phận của những con rồng và kẻ diệt rồng dần được hé lộ.",
+      "Và cuối cùng thì rồng chúa Piscis đã tỉnh lại sau giấc ngủ ngàn năm."
+    ],
     "status": "",
     "dateIn": "11-24-2022",
     "discount": "50%",
     "field": "Huyền Bí - Giả Tưởng - Kinh Dị"
   },
   {
-    "name": "Nữ Phù Thủy - Bí Mật Của Nicholas Flamel Bất Tử (Tái Bản 2018)",
-    "type": "Văn học",
-    "author": "Michael Scott",
-    "price": 155.0,
-    "sale": "",
-    "amout": 5300,
-    "publisher": "Trẻ",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_180164_1_43_1_57_1_4_1_2_1_210_1_29_1_98_1_25_1_21_1_5_1_3_1_18_1_18_1_45_1_26_1_32_1_14_1_413.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/nu_phu_thuy___bi_mat_cua_nicholas_flamel_bat_tu_tai_ban_2018/2020_06_10_13_56_09_1-390x510.JPG",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/nu_phu_thuy___bi_mat_cua_nicholas_flamel_bat_tu_tai_ban_2018/2020_06_10_13_56_09_10-390x510.JPG",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/nu_phu_thuy___bi_mat_cua_nicholas_flamel_bat_tu_tai_ban_2018/2020_06_10_13_56_09_2-390x510.JPG",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/nu_phu_thuy___bi_mat_cua_nicholas_flamel_bat_tu_tai_ban_2018/2020_06_10_13_56_09_3-390x510.JPG"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "07-10-2028",
-    "discount": "10%",
-    "field": "Huyền Bí - Giả Tưởng - Kinh Dị"
-  },
-  {
-    "name": "Shaman - Những Vị Pháp Sư Cuối Cùng",
-    "type": "Văn học",
-    "author": "Don Jose Ruiz",
-    "price": 109.0,
-    "sale": "",
-    "amout": 6800,
-    "publisher": "Phụ Nữ Việt Nam",
-    "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
-      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a_tr_c_shaman_file_in-1.png",
-      "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a_sau_shaman_file_in-1.png",
-      "https://www.netabooks.vn/Data/Sites/1/Product/69336/shaman-nhung-vi-phap-su-cuoi-cung-5.jpg",
-      "https://bizweb.dktcdn.net/thumb/grande/100/469/746/products/image-1697538512851.png?v=1697599521000"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "01-25-2023",
-    "discount": "10%",
-    "field": "Huyền Bí - Giả Tưởng - Kinh Dị"
-  },
-  {
-    "name": "Bách Hóa Giấc Mơ Của Ngài Dollargut",
-    "type": "Văn học",
-    "author": "Lee Miye",
-    "price": 130.0,
-    "sale": "",
-    "amout": 5470,
-    "publisher": "Hà Nội",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235342.jpg",
-      "https://sachnhanam.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/20220922070729/FB_IMG_1663805168644.jpg",
-      "https://saysach.com/wp-content/uploads/2023/05/bach-hoa-giac-mo-cua-ngai-dollargut-768x1024.jpeg",
-      "https://blogradio.vn/uploads/image/2023/01/09/ab348b8a1893e9fc6da325433ff7583f_bachhoagiacmo1-9017.jpg",
-      "https://saysach.com/wp-content/uploads/2023/05/bach-hoa-giac-mo-cua-ngai-dollargut-5.jpeg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "12-10-2022",
-    "discount": "23%",
-    "field": "Huyền Bí - Giả Tưởng - Kinh Dị"
-  },
-  {
     "name": "Thần Thoại Hy Lạp - Bìa Cứng (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Nhiều Tác Giả",
-    "price": 195.0,
-    "sale": "",
+    "price": "295.000",
+    "sale": "197.650",
     "amout": 6400,
     "publisher": "Văn Học",
     "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://salt.tikicdn.com/cache/w300/ts/product/7b/75/2e/d1be874a1fb6f959057bf7c211c9a4ed.jpeg",
       "https://salt.tikicdn.com/cache/w300/ts/product/91/ce/92/35aabf8a953651ffb673ce5e995ef8e5.jpg",
       "https://product.hstatic.net/200000017360/product/bia_than_thoai_hy_lap-b4_7ac75cd73fdf4897a8851842323fe912.jpg",
       "https://dnamedical.vn/wp-content/uploads/2023/09/tu-dien-than-thoai-hy-lap-la-ma-pdf-2.jpg"
     ],
-    "description": [],
+    "description": [
+      "Thần Thoại Hy Lạp",
+      "Thần thoại Hy Lạp, một di sản văn hóa nhân loại, từ lâu đã trở thành nền tảng văn hóa không chỉ của một quốc gia mà còn là của cả một châu lục - Âu châu.",
+      "Thần thoại Hy Lạp là những câu chuyện lý giải sự hình thành thế giới nhưng lấp lánh bên trong đó là khát khao, là ước mơ khẳng định tầm vóc của con người trước thiên nhiên. Những ước mơ ấy của loài người càng lấp lánh bao nhiêu thì bầu trời đêm thần thoại lại càng huyền bí, càng rộng mở bấy nhiêu.",
+      "Đó chính là sức hấp dẫn ngàn đời của Thần thoại Hy Lạp."
+    ],
     "status": "",
     "dateIn": "10-01-2023",
     "discount": "33%",
@@ -1269,18 +1349,23 @@
     "name": "Hai Số Phận (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Jeffrey Archer",
-    "price": 195.0,
-    "sale": "",
+    "price": "195.000",
+    "sale": "130.650",
     "amout": 7300,
     "publisher": "Văn Học",
     "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://cdn0.fahasa.com/media/catalog/product/h/s/hsp---bia-mem---b1_1.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/h/s/hsp---bia-mem---b4.jpg",
       "https://www.netabooks.vn/Data/Sites/1/Product/60726/hai-so-phan-tai-ban-2023-4.jpg",
       "https://sachtiengviet.com/cdn/shop/products/067d903d4d735c6e1f2eb1741252d6f8.jpg?v=1682303552"
     ],
-    "description": [],
+    "description": [
+      "Hai Số Phận",
+      "Jeffrey Archer là nhà văn người Anh và cũng là một chính trị gia. Ông từng là một thành viên của Quốc hội và Phó Chủ tịch Đảng Bảo thủ.",
+      "HAI SỐ PHẬN (tên gốc tiếng Anh là Kane and Abel) là cuốn tiểu thuyết được ông viết dựa theo câu chuyện của anh em Cain và Abel trong Kinh Thánh Cựu Ước. Truyện kể về hai người đàn ông với xuất thân địa vị xã hội và hoàn cảnh sống hoàn toàn khác nhau nhưng có chung một đức tính là luôn chiến đấu hết mình để chinh phục những điều mà mình đã đặt ra. Họ là những người có hoài bão, lý tưởng sống và trên hết họ có một tâm hồn cao quý.",
+      "William Lowell Kane là một người mạnh mẽ và giàu có trong khi đó Abel Rosnovski là một người gốc Ba Lan phải đấu tranh từ lúc sinh ra và lớn lên cùng với những người nghèo khổ, cuối cùng di cư đến Hoa Kỳ…. William tiếp nối sự nghiệp của cha mình là Richard Kane, để trở thành một chủ ngân hàng thành công. Trong khi William vẫn còn là một đứa trẻ, cha của anh đã chết trong thảm họa tàu Titanic. Người cha mất đi đã biến anh trở thành người thừa kế của ngân hàng Kane & Cabot. William đã thể hiện là một con người có tính kỷ luật và thông minh như những học sinh khác của trường St. Paul's School và sau đó là ở Harvard…",
+      "HAI SỐ PHẬN là câu chuyện cuộc đời của hai con người đã bằng những tài năng của mình làm giàu cho quê hương. Con mắt tinh đời với những phán đoán sắc sảo về lĩnh vực kinh tế trên hết họ đặt nguyên tắc kinh doanh lên hàng đầu để vượt lên bằng chính khả năng của bản thân."
+    ],
     "status": "",
     "dateIn": "02-10-2023",
     "discount": "33%",
@@ -1290,18 +1375,23 @@
     "name": "Hai Vạn Dặm Dưới Biển (Tái Bản 2022)",
     "type": "Văn học",
     "author": "Jules Verne",
-    "price": 102.0,
-    "sale": "",
+    "price": "102.000",
+    "sale": "89.100",
     "amout": 5680,
     "publisher": "Văn Học",
     "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://cdn0.fahasa.com/media/catalog/product/h/a/hai_van_dam_duoi_bien_tai_ban_2022_1_2022_08_01_11_42_29.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/h/a/hai_van_dam_duoi_bien_tai_ban_2022_2_2022_08_01_11_42_29.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/h/a/hai_van_dam_duoi_bien_tai_ban_2022_3_2022_08_01_11_42_29.jpg",
       "https://salt.tikicdn.com/cache/w300/ts/product/f0/58/f7/88c6a4336f52fa5940832e23efe806c1.jpg"
     ],
-    "description": [],
+    "description": [
+      "Một con thủy quái khổng lồ bỗng nhiên xuất hiện làm điêu đứng cả ngành hàng hải.",
+      "Một đoàn thám hiểm nhổ chiếc neo tàu ra khơi với nhiệm vụ tiêu diệt con quái vật ấy, dù có phải đánh đổi bằng cả mạng sống.",
+      "Một chiếc tàu ngầm thoắt ẩn, thoắt hiện, cùng một vị thuyền trưởng mang trong mình lời thề sẽ không bao giờ can dự vào cuộc sống trên đất liền thêm một lần nào nữa…",
+      "Tất cả những bí mật sâu kín nhất của đại dương sâu thẳm, những phát minh chưa từng được biết đến, những mối nguy hiểm rình rập trong lòng biển cả… Tất cả đã quyện cùng với nhau để tạo nên một chuyến phiêu lưu li kì, hấp dẫn mà các bạn không thể bỏ qua, khi đã cầm trên tay cuốn sách “Hai vạn dặm dưới biển” của Jules Verne.",
+      "JULES GABRIEL VERNE (1828 - 1905) nhà văn người Pháp, được xem là người đi tiên phong trong thể loại văn học khoa học viễn tưởng. Các tác phẩm của Jules Verne đã đưa ra những tiên đoán thần kì về cuộc sống hiện đại cũng như các thành tựu về khoa học kĩ thuật mà không phải nhà văn nào cũng có thể làm được…"
+    ],
     "status": "",
     "dateIn": "07-04-2022",
     "discount": "40%",
@@ -1311,8 +1401,8 @@
     "name": "Ông Già Và Biển Cả (Tái Bản 2018)",
     "type": "Văn học",
     "author": "Ernest Hemingway",
-    "price": 45.0,
-    "sale": "",
+    "price": "45.000",
+    "sale": "29.250",
     "amout": 8400,
     "publisher": "Văn Học",
     "images": [
@@ -1322,7 +1412,10 @@
       "https://toplist.vn/images/800px/ong-gia-va-bien-ca-tai-ban-2018-1118537.jpg",
       "https://edu.viettel.vn/upload/29387/fck/files/image(132).png"
     ],
-    "description": [],
+    "description": [
+      "Ông già và Biển cả (tên tiếng Anh: The Old Man and the Sea) là một tiểu thuyết ngắn được Ernest Hemingway viết ở Cuba năm 1951 và xuất bản năm 1952. Nó là truyện ngắn dạng viễn tưởng cuối cùng được viết bởi Hemingway. Đây cũng là tác phẩm nổi tiếng và là một trong những đỉnh cao trong sự nghiệp sáng tác của nhà văn. Tác phẩm này đoạt giải Pulitzer cho tác phẩm hư cấu năm 1953. Nó cũng góp phần quan trọng để nhà văn được nhận Giải Nobel văn học năm 1954.",
+      "Trong tác phẩm này, ông đã triệt để dùng nguyên lý mà ông gọi là “tảng băng trôi”, chỉ mô tả một phần nổi còn lại bảy phần chìm, khi mô tả sức mạnh của con cá, sự chênh lệch về lực lượng, về cuộc chiến đấu không cân sức giữa con cá hung dữ với ông già. Tác phẩm ca ngợi niềm tin, sức lao động và khát vọng của con người."
+    ],
     "status": "",
     "dateIn": "03-20-2018",
     "discount": "35%",
@@ -1332,8 +1425,8 @@
     "name": "Trăm Năm Cô Đơn (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Gabriel Garcia Márquez",
-    "price": 199.0,
-    "sale": "",
+    "price": "199.000",
+    "sale": "155.220",
     "amout": 4900,
     "publisher": "Văn Học",
     "images": [
@@ -1343,7 +1436,15 @@
       "https://static.oreka.vn/500-500_bdb01c10-3675-4b98-8479-7d1f4c5f8bd5",
       "https://static.oreka.vn/800-800_f652f7d8-59c7-4cfd-a022-629bca4d84a6.jpg"
     ],
-    "description": [],
+    "description": [
+      "Trăm Năm Cô Đơn",
+      "“Chỉ với một bước nhảy, Gabriel García Márquez đã vụt lên ngang hàng với Günter Grass và Vladimir Nabokov.”",
+      "- The New York Times",
+      "“Xuất sắc, hỗn độn, với tầm ảnh hưởng lớn ảnh… Một thiên tiểu thuyết vĩ đại và đầy tính nhạc.”",
+      "- The Times",
+      "Ở Mỹ Latin, ai ai cũng đọc tác phẩm này, từ các giáo sư cho đến dân lao động và cả gái điếm.”",
+      "- The Sydney Morning Herald"
+    ],
     "status": "",
     "dateIn": "11-03-2023",
     "discount": "22%",
@@ -1353,8 +1454,8 @@
     "name": "Thép Đã Tôi Thế Đấy (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Nikolai A Ostrovsky",
-    "price": 125.0,
-    "sale": "",
+    "price": "125.000",
+    "sale": "112.560",
     "amout": 7000,
     "publisher": "Văn Học",
     "images": [
@@ -1364,7 +1465,13 @@
       "https://salt.tikicdn.com/cache/200x280/ts/product/38/a6/48/3b13011668b84e36a2bfe45d265d7e68.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/thep_da_toi_the_day_tai_ban_2023/2023_11_06_16_29_29_3-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Thép Đã Tôi Thế Đấy!",
+      "Thép Đã Tôi Thế Đấy không phải là một tác phẩm văn học chỉ nhìn đời mà viết. Tác giả sống nó rồi mới viết nó. Nhân vật trung tâm Pa-ven chính là tác giả: Nhi-ca-lai A-xtơ-rốp- xki. Là một chiến sĩ cách mạng tháng Mười, ông đã sống một cách nồng cháy nhất, như nhân vật Pa-ven của ông. Cũng không phải một cuốn tiểu thuyết tự thuật thường vì hứng thú hay lợi ích cá nhân mà viết. A-xtơ-rốp-xki viết Thép Đã Tôi Thế Đấy trên giường bệnh, trong khi bại liệt và mù, bệnh tật tàn phá chín phần mười cơ thể.",
+      "Chưa bao giờ có một nhà văn sáng tác trong những điều kiện gian khổ như vậy. Trong lòng người viết phải có một nhiệt độ cảm hứng nồng nàn không biết bao nhiêu mà kể. Nguồn cảm hứng ấy là sức mạnh tinh thần của người chiến sĩ cách mạng bị tàn phế, đau đớn đến cùng cực, không chịu nằm đợi chết, không thể chịu được xa rời chiến đấu, do đó phấn đấu trở thành một nhà văn và viết nên cuốn sách này. Càng yêu cuốn sách, càng kính trọng nhà văn, càng tôn quí phẩm chất của con người cách mạng.",
+      "Hãy đọc Thép đã tôi thế đấy để biết từng có một thời người ta sống:",
+      "“Cái quý nhất của con người ta là sự sống. Đời người chỉ sống có một lần. Phải sống sao cho khỏi xót xa, ân hận vì những năm tháng đã sống hoài, sống phí, cho khỏi hổ thẹn vì dĩ vãng ti tiện và hèn đớn của mình, để khi nhắm mắt xuôi tay có thể nói rằng: tất cả đời ta, tất cả sức ta, ta đã hiến dâng cho sự nghiệp cao đẹp nhất trên đời, sự nghiệp đấu tranh giải phóng loài người…”"
+    ],
     "status": "",
     "dateIn": "09-02-2023",
     "discount": "10%",
@@ -1374,18 +1481,24 @@
     "name": "Những Tấm Lòng Cao Cả - Bìa Cứng (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Edmondo De Amicis",
-    "price": 135.0,
-    "sale": "",
+    "price": "135.000",
+    "sale": "90.450",
     "amout": 7340,
     "publisher": "Văn Học",
     "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://cdn0.fahasa.com/media/catalog/product/b/i/bia_nhung_tam_long_cao_ca_-b1.jpg",
       "https://salt.tikicdn.com/cache/w300/ts/product/a8/f9/1d/7599ecf33468d923860e777e8d46642e.jpeg",
       "https://salt.tikicdn.com/cache/280x280/ts/product/a8/e6/5d/d14f75729ecc466e1728929be7ec64cd.jpg",
       "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpkdyvnp8l1o5b"
     ],
-    "description": [],
+    "description": [
+      "Những Tấm Lòng Cao Cả - Bìa Cứng",
+      "Chúng ta biết gì về con em mình trong một ngày, một tuần, thậm chí một năm khi chúng ở trường học, giữa thầy cô và bè bạn?",
+      "Đọc Những tấm lòng cao cả, chúng ta sẽ hiểu thêm về tâm sức của “những người chở đò”, hiểu thêm sự cần thiết và quan trọng của mối liên hệ giữa gia đình, nhà trường, xã hội để giáo dục con em mình trở thành một công dân tốt.",
+      "Giáo dục phải tiến hành có nghệ thuật, mà nghệ thuật văn chương là công cụ giáo dục tốt. Và, sự thành công của E. D. Amicis là ở đó...",
+      "Tác giả: Nhà văn Admondo De Amicis (1846 - 1908) là nhà văn, nhà hoạt động chính trị - xã hội nổi tiếng của nước Ý. Ông cầm bút hơn 40 năm, để lại khá nhiều tác phẩm. Những tấm lòng cao cả (Cuore) ra đời từ những năm 80 của thế kỉ 19 đã làm E. D. Amicis nổi tiếng khắp thế giới.",
+      "Dịch giả: Nhà giáo nhân dân HOÀNG THIẾU SƠN (1920 - 2005), là tác giả của nhiều tác phẩm khoa học, giáo trình địa lí, nhiều tác phẩm dịch nổi tiếng. Đặc biệt, Những tấm lòng cao cả do ông dịch và viết lời giới thiệu đã trở thành cuốn sách gối đầu giường của nhiều thế hệ độc giả Việt Nam."
+    ],
     "status": "",
     "dateIn": "04-02-2023",
     "discount": "33%",
@@ -1395,18 +1508,19 @@
     "name": "Chuyến Du Hành Vào Lòng Đất",
     "type": "Văn học",
     "author": "Jules Verne",
-    "price": 139.0,
-    "sale": "",
+    "price": "139.000",
+    "sale": "90.350",
     "amout": 5680,
     "publisher": "Thanh Niên",
     "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/chuyen_du_hanh_vao_long_dat/2023_11_13_16_49_43_1-390x510.jpg",
       "https://cdn-images.kiotviet.vn/nhungvisao/03cbbe38e9a446398a65969e5fe3bcf7.jpg",
       "https://dinhtibooks.com.vn/upload_images/images/2023/11/30/DTI03022.JPG",
       "https://dinhtibooks.com.vn/upload_images/images/2023/11/30/DTI03057.JPG"
     ],
-    "description": [],
+    "description": [
+      "Chuyến du hành vào lòng đất kể lại hành trình kịch tính và đầy rẫy những hiểm nguy của Giáo sư Lidenbrock, cậu cháu trai Axel và anh bạn dẫn đường Hans gan dạ. Tại đó, họ đã đi xuống nhiều dặm để tiến vào thế giới dưới lòng đất, băng qua những mỏ quặng than đá và kim cương, phát hiện ra đại dương và trần hang rộng lớn với những đám mây cùng thứ ánh sáng vĩnh cửu. Khi đưa bè ra khơi, họ chạm trán với các loài cá thời tiền sử và các loài bò sát biển khổng lồ. Một cơn bão sét đe dọa phá hủy chiếc bè với những hành khách bên trên, nhưng thay vào đó lại ném họ lên một nghĩa địa xương... Xuyên suốt tác phẩm, người đọc sẽ phải thán phục trước trí tưởng tượng siêu phàm và liên tục sửng sốt trước những khung cảnh tráng lệ được Jules Verne miêu tả cực kỳ sinh động. Đặc biệt, ở bản chuyển ngữ kèm tranh minh họa này, câu chuyện chắc chắn sẽ càng trở nên thú vị hơn bao giờ hết"
+    ],
     "status": "",
     "dateIn": "07-06-2023",
     "discount": "35%",
@@ -1416,8 +1530,8 @@
     "name": "Đồi Gió Hú (Tái Bản 2022)",
     "type": "Văn học",
     "author": "Emily Bronte",
-    "price": 105.0,
-    "sale": "",
+    "price": "119.000",
+    "sale": "107.100",
     "amout": 6390,
     "publisher": "Văn Học",
     "images": [
@@ -1427,72 +1541,12 @@
       "https://salt.tikicdn.com/ts/review/62/3c/4e/8c978703bf29c06762854185d51277d5.jpg",
       "https://product.hstatic.net/1000328521/product/42919114_1054853208008878_190921161847078912_n.jpg"
     ],
-    "description": [],
+    "description": [
+      "Đồi gió hú, câu chuyện cổ điển về tình yêu ngang trái và tham vọng chiếm hữu, cuốn tiểu thuyết dữ dội và bí ẩn về Catherine Earnshaw, cô con gái nổi loạn của gia đình Earnshaw, với gã đàn ông thô ráp và điên rồ mà cha cô mang về nhà rồi đặt tên là Heathcliff, được trình diễn trên cái nền những đồng truông, quả đồi nước Anh cô quạnh và ban sơ không kém gì chính tình yêu của họ. Từ nhỏ đến lớn, sự gắn bó của họ ngày càng trở nên ám ảnh.",
+      "Gia đình, địa vị xã hội, và cả số phận rắp tâm chống lại họ, bản tính dữ dội và ghen tuông tột độ cũng hủy diệt họ, vậy nên toàn bộ thời gian hai con người yêu nhau đó đã sống trong thù hận và tuyệt vọng, mà cái chết chỉ có ý nghĩa khởi đầu. Một khởi đầu mới để hai linh hồn mãnh liệt đó được tự do tái ngộ, khi những cơn gió hoang vắng và điên cuồng tràn về quanh các lâu đài trong Đồi gió hú...Cuốn tiểu thuyết duy nhất của Emily Brontë, là cuốn sách đã tới tay công chúng với nhiều lời bình trái ngược vào năm 1847, một năm trước khi nữ tác giả qua đời ở tuổi ba mươi. Thông qua mối tình giũa Cathy và Heathcliff, với bối cảnh là đồng quê Yorkshire hoang vu trống trải, Đồi gió hú đã tạo nên cả một thế giới riêng với xu hướng bỏ qua lề thói, vươn tới thi ca cũng như tới những chiều sâu tăm tối của lòng người, giúp tác phẩm trở thành một trong những tiểu thuyết vĩ đại nhất, bi thương nhất mà con người từng viết ra về nỗi đam mê cháy bỏng."
+    ],
     "status": "",
     "dateIn": "03-25-2022",
-    "discount": "10%",
-    "field": "Tác Phẩm Kinh Điển"
-  },
-  {
-    "name": "Từ Trái Đất Đến Mặt Trăng - Bìa Cứng (Tái Bản 2022)",
-    "type": "Văn học",
-    "author": "Jules Verne",
-    "price": 88.0,
-    "sale": "",
-    "amout": 5380,
-    "publisher": "Văn Học",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236428866.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236425421.jpg",
-      "https://dnamedical.vn/wp-content/uploads/2023/09/tu-trai-dat-den-mat-trang-2022-pdf-2.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935236408431.jpg",
-      "https://cf.shopee.vn/file/ce6380f1a44b77e2378d5e3156e359ed_tn"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "05-09-2022",
-    "discount": "10%",
-    "field": "Tác Phẩm Kinh Điển"
-  },
-  {
-    "name": "Anne Tóc Đỏ Ở Đảo Hoàng Tử Edward (Tái Bản 2018)",
-    "type": "Văn học",
-    "author": "L M Montgomery",
-    "price": 95.0,
-    "sale": "",
-    "amout": 5830,
-    "publisher": "Hội Nhà Văn",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235217591.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/anne_toc_do_o_dao_hoang_tu_edward_tai_ban_2018/2021_12_09_15_57_41_1-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/anne_toc_do_o_dao_hoang_tu_edward_tai_ban_2018/2021_12_09_15_57_41_6-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/anne_toc_do_o_dao_hoang_tu_edward_tai_ban_2018/2021_12_09_15_57_41_5-390x510.jpg",
-      "https://cf.shopee.vn/file/85f61b4172057a3968ecf2349fe4117e"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "06-03-2021",
-    "discount": "22%",
-    "field": "Tác Phẩm Kinh Điển"
-  },
-  {
-    "name": "Văn Học Cổ Điển - Truyện Loài Vật (Tái Bản 2023)",
-    "type": "Văn học",
-    "author": "Ernest Seton Thompson",
-    "price": 135.0,
-    "sale": "",
-    "amout": 4890,
-    "publisher": "Văn Học",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/t/r/truyen-loai-vat-01.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/t/r/truyen_loai_vat-01.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/van_hoc_co_dien___truyen_loai_vat_tai_ban_2023/2024_01_29_15_26_19_2-390x510.jpg",
-      "https://product.hstatic.net/1000328521/product/truyen_loai_vat_3_7dec4c39b79f48d295e9f49977fe20c8.jpg",
-      "https://vcdn.tikicdn.com/ts/review/d0/ca/30/fee0316191ee07ec0bccc943bc964c88.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "09-07-2023",
     "discount": "10%",
     "field": "Tác Phẩm Kinh Điển"
   },
@@ -1500,8 +1554,8 @@
     "name": "Sử Ký Tư Mã Thiên (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Tư Mã Thiên",
-    "price": 220.0,
-    "sale": "",
+    "price": "220.000",
+    "sale": "198.000",
     "amout": 7420,
     "publisher": "Văn Học",
     "images": [
@@ -1511,7 +1565,11 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/su_ky_tu_ma_thien_tai_ban_2023/2023_07_10_17_25_08_3-390x510.jpg",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/su_ky_tu_ma_thien_tai_ban_2023/2023_07_10_17_25_08_4-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Sử Ký Tư Mã Thiên",
+      "Sử ký là bộ thông sử đầu tiên của Trung Quốc cổ đại. Bộ sử ký lưu giữ, chỉnh lí lại các tư liệu lịch sử vô cùng phong phú trong hơn ba ngàn năm từ thời Ngũ đế vốn có trước sử cho tới giữa thời Tây Hán.",
+      "- Ấn bản này với hình thức mới mẻ, toàn diện, góc nhìn mới, đa tầng, giúp bạn đọc hiểu rõ hơn nguyên tác. Cuốn sách còn có phần phụ như giải thích, dịch nghĩa bằng câu từ tinh tế giúp bạn đọc thưởng thức trọn vẹn nội dung tác phẩm."
+    ],
     "status": "",
     "dateIn": "01-16-2023",
     "discount": "10%",
@@ -1521,8 +1579,8 @@
     "name": "Khó Dỗ Dành 2",
     "type": "Văn học",
     "author": "Trúc Dĩ",
-    "price": 205.0,
-    "sale": "",
+    "price": "205.000",
+    "sale": "149.650",
     "amout": 7430,
     "publisher": "Nhà Xuất Bản Văn Học",
     "images": [
@@ -1532,7 +1590,14 @@
       "https://salt.tikicdn.com/cache/750x750/ts/product/8c/e8/5c/1416db10d8eeddb02115080f64f5d387.jpg.webp",
       "https://cdn0.fahasa.com/media/catalog/product/1/8/180523-5.jpg?_gl=1*1pkeuba*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcxMDE0NTE4Mi4xNi4xLjE3MTAxNDU1MzYuNTUuMC4w*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy"
     ],
-    "description": [],
+    "description": [
+      "Khó Dỗ Dành - Tập 2",
+      "Ôn Dĩ Phàm và Tang Diên từng là bạn học, hai người tình cờ gặp lại nhau trong một quán bar, sau đó lại tình cờ trở thành bạn thuê trọ chung.",
+      "Chuyện cũng chẳng có gì nếu như hồi còn đi học Ôn Dĩ Phàm chưa từng... từ chối tình cảm của Tang Diên.",
+      "Thật ra Tang Diên là một người rất cộc cằn, anh có thể gây sát thương bằng lời nói với bất kỳ ai, nhưng anh lại vô cùng dịu dàng với Ôn Dĩ Phàm. Yêu thầm cô suốt sáu năm, tìm đủ mọi cách để lưu giữ hình ảnh của cô trong những năm tháng xa cách... Kể cả khi bị cô từ chối, anh vẫn âm thầm dõi theo cô từ xa.",
+      "Còn về Ôn Dĩ Phàm, vì những tổn thương trong quá khứ mà cô luôn cảm thấy mình không xứng với Tang Diên - một chàng trai quá đỗi đẹp đẽ. Gặp lại sau sáu năm, cô quyết định sẽ không bỏ lỡ Tang Diên lần nữa, thật lòng muốn bù đắp cho những tổn thương mình đã gây ra cho anh năm ấy...",
+      "Ôn Dĩ Phàm: Tang Diên à, em mong sau này mình sẽ sống lâu hơn anh sáu năm, để được yêu anh nhiều hơn sáu năm. Vậy là chúng ta huề nhau rồi."
+    ],
     "status": "",
     "dateIn": "01-01-2023",
     "discount": "27%",
@@ -1542,8 +1607,8 @@
     "name": "Khó Dỗ Dành 1",
     "type": "Văn học",
     "author": "Trúc Dĩ",
-    "price": 205.0,
-    "sale": "",
+    "price": "205.000",
+    "sale": "149.650",
     "amout": 6740,
     "publisher": "Nhà Xuất Bản Văn Học",
     "images": [
@@ -1553,7 +1618,14 @@
       "https://cdn0.fahasa.com/media/catalog/product/b/o/bookmark_kho_do_danh_tap_1.png",
       "https://salt.tikicdn.com/cache/750x750/ts/product/d6/79/ba/dc5e844a200847ac9c4054dbe1394009.png.webp"
     ],
-    "description": [],
+    "description": [
+      "Khó Dỗ Dành - Tập 1",
+      "Ôn Dĩ Phàm và Tang Diên từng là bạn học, hai người tình cờ gặp lại nhau trong một quán bar, sau đó lại tình cờ trở thành bạn thuê trọ chung.",
+      "Chuyện cũng chẳng có gì nếu như hồi còn đi học Ôn Dĩ Phàm chưa từng... từ chối tình cảm của Tang Diên.",
+      "Thật ra Tang Diên là một người rất cộc cằn, anh có thể gây sát thương bằng lời nói với bất kỳ ai, nhưng anh lại vô cùng dịu dàng với Ôn Dĩ Phàm. Yêu thầm cô suốt sáu năm, tìm đủ mọi cách để lưu giữ hình ảnh của cô trong những năm tháng xa cách... Kể cả khi bị cô từ chối, anh vẫn âm thầm dõi theo cô từ xa.",
+      "Còn về Ôn Dĩ Phàm, vì những tổn thương trong quá khứ mà cô luôn cảm thấy mình không xứng với Tang Diên - một chàng trai quá đỗi đẹp đẽ. Gặp lại sau sáu năm, cô quyết định sẽ không bỏ lỡ Tang Diên lần nữa, thật lòng muốn bù đắp cho những tổn thương mình đã gây ra cho anh năm ấy...",
+      "Ôn Dĩ Phàm: Tang Diên à, em mong sau này mình sẽ sống lâu hơn anh sáu năm, để được yêu anh nhiều hơn sáu năm. Vậy là chúng ta huề nhau rồi."
+    ],
     "status": "",
     "dateIn": "05-05-2023",
     "discount": "27%",
@@ -1563,18 +1635,22 @@
     "name": "Thất Tịch Không Mưa (Tái Bản 2017)",
     "type": "Văn học",
     "author": "Lâu Vũ Tình",
-    "price": 86.0,
-    "sale": "",
+    "price": "86.000",
+    "sale": "57.620",
     "amout": 9200,
     "publisher": "Phụ Nữ",
     "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://salt.tikicdn.com/cache/750x750/ts/product/69/97/d0/cf72c2b3f01fe2deed53546ce66315e0.jpg.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/fe/56/5b/4c5435f1164e5ab53418c1f6161f4d7e.jpg.webp",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/that_tich_khong_mua_tai_ban_2019/2021_11_09_09_03_06_1-390x510.jpg?_gl=1*182uku9*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcxMDE0NTE4Mi4xNi4xLjE3MTAxNDU3NDMuNTQuMC4w*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/that_tich_khong_mua_tai_ban_2019/2021_11_09_09_03_06_2-390x510.jpg"
     ],
-    "description": [],
+    "description": [
+      "Từ nhỏ cô đã thầm yêu anh, như số kiếp không thể thay đổi Tình yêu trong sáng ấy, như lần đầu được nếm mùi vị của quả khế mới chín. Sau đó cô và anh xa nhau, gặp lại đều cách nhau ba năm.",
+      "Tình yêu, giống như lần đầu được nếm thử quả khế mới chín.",
+      "Chua chua, chát chát, nhưng không kìm được, vẫn muốn nếm thêm lần nữa.",
+      "Trong quả khế chát xanh xanh, nụ cười ngốc nghếch, ngọt ngào của anh, tình đầu thơ ngây, trong sáng của em lặng lẽ nảy mầm."
+    ],
     "status": "",
     "dateIn": "10-01-2019",
     "discount": "33%",
@@ -1584,18 +1660,19 @@
     "name": "Rung Động Chỉ Vì Em",
     "type": "Văn học",
     "author": "Nghê Đa Hỉ",
-    "price": 189.0,
-    "sale": "",
+    "price": "189.000",
+    "sale": "126.630",
     "amout": 5760,
     "publisher": "Hà Nội",
     "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://salt.tikicdn.com/cache/750x750/ts/product/4c/e4/c4/e261200d061d285e0597d63f0e167590.jpg.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/d6/4a/be/4883e39791d46a2a6c2c77e2f3cd157e.png.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/43/87/1d/b1c3ec929b3f1ce83c7bc853ab4529e0.png.webp",
       "https://salt.tikicdn.com/ts/review/f7/a8/9f/4b8e28f7e8dd60a15e2855b8ea3da0ea.jpg"
     ],
-    "description": [],
+    "description": [
+      "Năm mười chín tuổi, bất chấp sự chênh lệch về gia cảnh, học vấn và địa vị xã hội, Tần Hiển và Tô Kiều vẫn say sưa chìm đắm trong mối tình đầu thuần khiết. Đáng tiếc thay, những tự ti, mặc cảm của tuổi trẻ đã khiến hai người bỏ lỡ nhau. Mải miết kiếm tìm, tám năm đau đáu một niềm hy vọng, cuối cùng ông trời cũng run rủi cho anh gặp lại cô. Vẫn là đôi mắt cong cong và nụ cười đẹp đến mê hồn. Tựa như năm xưa, lúc anh thấy cô đứng đợi ngoài cổng trường, lưng tựa vào tường, tươi cười nói với anh “Tôi mời cậu ăn khuya”, anh đã trúng tiếng sét ái tình với cô chính từ khoảnh khắc ấy."
+    ],
     "status": "",
     "dateIn": "11-11-2023",
     "discount": "33%",
@@ -1605,18 +1682,24 @@
     "name": "Mãi Mãi Là Bao Xa (Tái Bản 2019)",
     "type": "Văn học",
     "author": "Diệp Lạc Vô Tâm",
-    "price": 135.0,
-    "sale": "",
+    "price": "135.000",
+    "sale": "90.450",
     "amout": 8390,
     "publisher": "Thanh Niên",
     "images": [
-      "https://cdn0.fahasa.com/media/wysiwyg/hieu_kd/2023-08-frame/FrameAds_03_1080X1080.png",
       "https://salt.tikicdn.com/cache/750x750/ts/product/90/7b/0e/68401d4ae03050405e670e100e8617fb.png.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/d7/58/3b/a11ac7377d1a203eb3bc0c7617722006.jpg.webp",
       "https://bloganchoi.com/wp-content/uploads/2019/09/mai-mai-la-bao-xa-1.jpg",
       "https://bloganchoi.com/wp-content/uploads/2019/09/mai-mai-la-bao-xa-21.jpg"
     ],
-    "description": [],
+    "description": [
+      "Bạch Lăng Lăng, nữ sinh khoa Điện khí, trẻ trung, xinh đẹp và rất tự hào khi quen được một người bạn lý tưởng qua mạng, chàng du học sinh của một trường nổi tiếng của Mỹ, người mang biệt danh “nhà khoa học”: Mãi Mãi Là Bao Xa. Qua những cuộc chuyện trò trên QQ, Lăng Lăng đã gắn bó với chàng trai đó lúc nào cô cũng không hay, cảm xúc lớn dần, sự chia sẻ lớn dần và đến một ngày cô phát hiện ra mình đã yêu người con trai “tài giỏi” và không một chút khuyết điểm ấy.",
+      "Nhưng sự tỉnh táo giúp cô ý thức được rằng, thế giới mạng chỉ là ảo, họ ở cách nhau cả một đại dương mênh mông, anh lại quá xuất sắc và ưu tú, mối quan hệ của họ sẽ không có kết quả gì. Nhất là khi anh thông báo, nếu anh tiếp tục sự nghiệp nghiên cứu lần này, rất có thể anh phải định cư bên Mỹ, mãi mãi không trở về. Khi nghe tin đó, cô đã gục xuống trước màn hình máy tính và khóc. Tất cả như sụp đổ, tia hy vọng cuối cùng dập tắt, anh sẽ không về nước nữa, khoảng cách giữa họ là mãi mãi… Cô cay đắng nói với anh lời từ biệt và đưa nick của anh vào danh sách đen, không bao giờ xuất hiện khi cô đăng nhập QQ nữa…",
+      "Một năm trôi qua, Lăng Lăng tưởng đã quên đi “nhà khoa học” ở bên kia thế giới của mình, bên cô đã có Uông Đào, bạn trai, người mang lại cho cô cảm giác an toàn, người cô muốn lấy làm chồng dù cảm xúc dành cho anh chưa hẳn là tình yêu. Cô bảo vệ đề án tốt nghiệp, Uông Đào luôn quấn quýt bên cô… Và điều bất ngờ trong buổi bảo vệ đề án, Dương Lam Hàng, một giảng viên trẻ vừa trở về từ MIT, trường đại học danh tiếng của Mỹ, xuất thân từ một gia đình danh giá, đã tới tham dự buổi bảo vệ của cô và đưa ra những câu hỏi phản biện thật “khó chịu”.",
+      "Với cô, Tất cả các nữ sinh trong trường đều ngưỡng mỗ và ao ước được trở thành bóng hồng trong trái tim của Dương Lam Hàng, nhưng với cô, đó đúng là ông thầy “biến thái”. Sự trớ trêu của số phận đun đẩy khiến cô ngày càng tiếp xúc với anh nhiều hơn, và chính anh là người gợi ý và nâng đỡ cho cô học tiếp thạc sĩ để có cơ hội ở lại trường.",
+      "Trở thành học viên của khoa Vật liệu, bao thách thức và khó khăn chờ đón cô, dưới sự dìu dắt và yêu cầu quá cao của thầy hướng dẫn, cô dần dần làm quen với công việc… Những buổi thảo luận, những lần thí nghiệm, những sự giúp đỡ, những lời quan tâm chân thành, và cộng thêm vẻ ngoài lạnh lùng, điễm tĩnh, rất đẹp của Dương Lam Hàng, trái tim Lăng Lăng cũng xao động.",
+      "Một bên là người gần gũi với cô hằng ngày, chăm lo cho cô, nâng đỡ cô từng chút một, một bên là chàng trai ở mãi tận nơi xa, chưa một lần gặp mặt. Lăng Lăng giằng xé và không biết trái tim mình nghiêng về bên nào nhiều hơn. Đến khi cảm xúc vỡ òa, cô quyết định dừng học bởi không muốn gặp người thầy đã chiếm giữ vị trí trong trái tim cô, cô muốn chung thủy với tình cảm cho chàng trai Mãi Mãi Là Bao Xa, người chia sẻ và dành cho cô tình cảm chân thành, thì cũng là lúc cô phát hiện ra hình như Dương Lam Hàng và người cô yêu có thật nhiều điểm tương đồng. Mãi Mãi Là Bao Xa nói anh đã về nước và sẽ đến gặp cô… Vậy người thầy bên cô bấy lâu nay là ai?"
+    ],
     "status": "",
     "dateIn": "07-01-2019",
     "discount": "33%",
@@ -1626,8 +1709,8 @@
     "name": "All In Love - Ngập Tràn Yêu Thương (Tái Bản 2020)",
     "type": "Văn học",
     "author": "Cố Tây Tước",
-    "price": 119.0,
-    "sale": "",
+    "price": "119.000",
+    "sale": "79.730",
     "amout": 8405,
     "publisher": "Phụ Nữ",
     "images": [
@@ -1637,7 +1720,9 @@
       "https://salt.tikicdn.com/cache/750x750/ts/product/17/0a/f6/ed3e7178da0125354c28236e66c13da0.jpg.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/31/89/ae/76687f086f9b93134b5795bdb25bc11e.jpg.webp"
     ],
-    "description": [],
+    "description": [
+      "Từ Vi Vũ hơi mắc bệnh sạch sẽ, có chút bỉ ổi, có chút mặt dày, tuy nhiên trước mặt người ngoài anh luôn hào hoa phong nhã, sống tách biệt, độc lập, lạnh lùng mà kiêu ngạo, lạnh lùng mà xa cách, trong sự xa cách ấy lại toát lên sự cao quý. Nhưng cứ về đến nhà, anh liền biến thành quý ông “thích cởi”, luôn miệng kêu: “Tắm, tắm, tắm! Cố Thanh Khê, em có muốn đến chà đạp anh không?”"
+    ],
     "status": "",
     "dateIn": "05-01-2020",
     "discount": "33%",
@@ -1647,8 +1732,8 @@
     "name": "Chỉ Muốn Thương Anh, Chiều Anh, Nuôi Anh",
     "type": "Văn học",
     "author": "Túy Hậu Ngư Ca",
-    "price": 259.0,
-    "sale": "",
+    "price": "259.000",
+    "sale": "173.530",
     "amout": 5930,
     "publisher": "Văn Học",
     "images": [
@@ -1658,7 +1743,9 @@
       "https://salt.tikicdn.com/cache/750x750/ts/product/e1/8b/04/0f1033aa0c2094f85f375b7a8828cac3.jpg.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/09/4a/38/33e9c5210eb55814c74ca3e62c4e216f.jpg.webp"
     ],
-    "description": [],
+    "description": [
+      "Kể từ lần đầu tiên gặp Trác Lương, anh đã trở thành một ngọn hải đăng sáng, soi tỏ quãng đường gai góc, tối tăm mịt mờ trong cuộc đời cô. Cô tưởng rằng, ngọn hải đăng ấy sẽ mãi mãi tỏa sáng rực rỡ, vững vàng đứng đó, thế nhưng một ngày, ngọn hải đăng này đã tối đi, yếu đi, lộ ra dáng vẻ bất lực trước sự nghiệt ngã của vận mệnh, khiến cho con đường mà cô đi cũng bị che phủ một lớp sương lạnh. Hơn ai hết, cô hy vọng ngọn hải đăng ấy có thể một lần nữa lại tỏa sáng. Cô muốn ở bên cạnh chăm sóc anh, tìm bác sĩ chữa trị đôi chân cho anh, là chỗ dựa của anh, cho anh dũng khí để đứng dậy đối mặt với cuộc đời như anh đã từng vươn tay ra, cứu lấy cô từ tay tử thần..."
+    ],
     "status": "",
     "dateIn": "10-10-2023",
     "discount": "33%",
@@ -1668,8 +1755,8 @@
     "name": "Yêu Em Từ Cái Nhìn Đầu Tiên (Tái Bản 2023)",
     "type": "Văn học",
     "author": "Cố Mạn",
-    "price": 179.0,
-    "sale": "",
+    "price": "179.000",
+    "sale": "110.980",
     "amout": 10370,
     "publisher": "Văn Học",
     "images": [
@@ -1679,7 +1766,23 @@
       "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/yeu_em_tu_cai_nhin_dau_tien_tai_ban_2023/2024_01_20_12_46_56_6-390x510.jpg",
       "https://salt.tikicdn.com/cache/550x550/ts/product/e4/e1/4a/b5742cc6a53443d404e585e08dcc84fa.jpg"
     ],
-    "description": [],
+    "description": [
+      "Yêu Em Từ Cái Nhìn Đầu Tiên",
+      "Đi cùng?",
+      "Hai chữ này kéo Vy Vy trở về hiện tại, lập tức hoàn hồn.Nhìn chiếc xe, lại nhìn Đại Thần, người đẹp Vy Vy lắp bắp:",
+      "“Em… em…”",
+      "Tiêu Nại hơi cau mày. Vy Vy trấn tĩnh nói:",
+      "“… Anh đèo em?”.",
+      "“Ừ, đường xa thế chẳng lẽ đi bộ?”.",
+      "Đường đến nhà thi đấu bóng rổ xa thế, đi bộ đương nhiên rất đáng sợ, nhưng… nhưng  đáng sợ hơn chính là anh đèo em! Vy Vy băn khoăn. Với danh tiếng nổi như cồn của Tiêu Nại, cộng thêm chút nổi tiếng nho nhỏ của Vy Vy, đèo nhau trên con đường này, chắc chắn sẽ có ngay những lời đồn hay ho cho coi! Tuy rằng họ hình như, hình như, có vẻ như đúng là đang tiến tới những nghi ngờ hay ho đó, nhưng hiện nay, bây giờ, lúc này họ tuyệt đối trắng tinh hơn cả lông cừu.",
+      "“Như thế này... như thế này... không ổn lắm. Người khác nhìn thấy sẽ hiểu nhầm”.",
+      "Vy Vy cố từ chối khéo, hai tai bắt đầu đỏ dần.",
+      "“Hiểu nhầm?”.",
+      "Chẳng lẽ anh không hiểu? Vy Vy đành nói thẳng:",
+      "“Hiểu nhầm chúng ta… ôi, là kiểu quan hệ đó…”.",
+      "Tiêu Nại lặng lẽ nhìn cô, hồi lâu không nói, Vy Vy cảm thấy một nỗi căng thẳng khó hiểu… mình không nói gì sai chứ? Đúng khi Vy Vy cảm thấy mỗi lúc càng căng thẳng hơn, cuối cùng Nại Hà phá vỡ bầu không khí yên lặng:",
+      "“Thế chúng ta không phải là kiểu quan hệ đó từ khi nào vậy?”."
+    ],
     "status": "",
     "dateIn": "02-23-2016",
     "discount": "38%",
@@ -1689,8 +1792,8 @@
     "name": "Hậu Cung Như Ý Truyện - Tập 1 - Tặng Kèm Bookmark Bồi Cứng + Card Nhân Vật",
     "type": "Văn học",
     "author": "Lưu Liễm Tử",
-    "price": 229.0,
-    "sale": "",
+    "price": "229.000",
+    "sale": "167.170",
     "amout": 9360,
     "publisher": "Văn Học",
     "images": [
@@ -1700,7 +1803,14 @@
       "https://salt.tikicdn.com/cache/750x750/ts/product/60/88/51/d9449243214ee2084d5d9bd572793c93.jpg.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/11/36/c8/49d613bd3edfd8b438b234de1cf50290.jpg.webp"
     ],
-    "description": [],
+    "description": [
+      "Hậu Cung Như Ý Truyện - Tập 1",
+      "Thanh Anh là cháu gái của Cảnh Nhân cung Hoàng Hậu. Nàng quen biết Tứ a ca Hoằng Lịch từ thuở nhỏ và sau này trở thành Trắc Phúc tấn của chàng.",
+      "Sau khi vua Ung Chính băng hà, Tứ a ca Hoằng Lịch kế vị, lấy hiệu là Càn Long. Thanh Anh ý thức được vị thế của mình nên quyết định làm theo lời cô mẫu dặn trước khi qua đời để đứng vững trong hậu cung, thành ý của Thanh Anh được Thái hậu chấp thuận và nàng được bà ban tên mới là Như Ý.",
+      "Thế nhưng gia tộc Ô Lạp Na Lạp thị vốn có hiềm khích với Thái Hậu, Như Ý vẫn phải nếm trải không ít tủi nhục. Chưa kể Phú Sát Hoàng Hậu còn luôn ghen tị với nàng, vì năm xưa người ở danh vị chính thất được Càn Long lựa chọn vốn là Như Ý.",
+      "Sau cái chết của Hiếu Hiền Hoàng Hậu, Như Ý được đích thân Càn Long đưa lên ngôi vị Hoàng Hậu. Nhưng khi đã được ở bên cạnh người mình yêu một cách danh chính ngôn thuận nhất, thì nàng lại dần nhận ra chàng thiếu niên lang của mình đã chẳng còn là người của năm xưa nữa rồi.",
+      "Hoa tàn hoa nở ắt có thì, đến cuối cùng thì Như Ý chẳng thua ai, chẳng qua nàng đã quyết định buông bỏ mà thôi..."
+    ],
     "status": "",
     "dateIn": "01-01-2023",
     "discount": "27%",
@@ -1710,8 +1820,8 @@
     "name": "Trêu Nhầm - Tập 1 - Tặng Kèm Bookmark Bồi Cứng",
     "type": "Văn học",
     "author": "Kiều Diêu",
-    "price": 179.0,
-    "sale": "",
+    "price": "179.000",
+    "sale": "130.670",
     "amout": 5860,
     "publisher": "Văn Học",
     "images": [
@@ -1721,7 +1831,16 @@
       "https://salt.tikicdn.com/cache/w400/ts/product/9f/24/87/6e3a12b0151f34e5660446d490222eb7.jpg",
       "https://salt.tikicdn.com/cache/w1200/ts/product/d5/5b/6c/e3bd0644bf20702597280e4e522abe2d.jpg"
     ],
-    "description": [],
+    "description": [
+      "Trêu Nhầm - Tập 1",
+      "Trịnh Thư Ý lên kế hoạch tán tỉnh Thời Yến - người mà cô tưởng là cậu trẻ của con giáp thứ mười ba xen vào cuộc tình của mình và bạn trai cũ, nhằm trở thành 'mợ trẻ' của anh ta để trả thù.",
+      "Vài tháng sau, cô khoác tay Thời Yến, ngồi sau chiếc xe Rolls Royce nhìn con giáp thứ mười ba và gã đàn ông tồi tệ với vẻ mặt đắc ý, ngoắc tay về phía họ.",
+      "Nhìn thấy bề trên mà không chào hỏi à?",
+      "Mặt con giáp thứ mười ba biến sắc, sợ sệt nhìn về phía tài xế: 'Cậu ạ...'",
+      "Trịnh Thư Ý: ???",
+      "Không ngờ tài xế mới là cậu của con giáp thứ mười ba kia.",
+      "Tốn biết bao tâm tư thả thính suốt mấy tháng trời, kết quả lại trêu nhầm người!"
+    ],
     "status": "",
     "dateIn": "09-09-2023",
     "discount": "27%",
@@ -1731,8 +1850,8 @@
     "name": "Bộ Sách Quả Ngọt Năm Tháng - Tập 1 + Tập 2 (Bộ 2 Tập) - Tặng Kèm Bookmark + Postcard",
     "type": "Văn học",
     "author": "Mạch Ngôn Xuyên",
-    "price": 295.0,
-    "sale": "",
+    "price": "295.000",
+    "sale": "215.350",
     "amout": 8490,
     "publisher": "Thanh Niên",
     "images": [
@@ -1742,7 +1861,12 @@
       "https://cdn0.fahasa.com/media/catalog/product/a/n/anhmh2_3.jpg",
       "https://cdn0.fahasa.com/media/catalog/product/a/n/anhmh3.jpg"
     ],
-    "description": [],
+    "description": [
+      "Bộ Sách Quả Ngọt Năm Tháng - Tập 1 + Tập 2 (Bộ 2 Tập)",
+      "Thời thanh xuân ngây ngô, ai cũng từng mang trong mình một bóng hình.",
+      "Với Đinh Mật của tuổi mười bảy, đó chính là Lục Thời Miễn, cậu bạn lúc nào cũng có thành tích môn Toán đứng đầu lớp. Cô cố gắng từng chút một để xích lại gần cậu hơn, mà không hề biết tự bao giờ bản thân đã có một chỗ đứng trong trái tim cậu bạn cao ngạo lạnh lùng này rồi. Và thế là từ đó, những tương lai tươi đẹp được hai người cùng nhau vun vén.",
+      "Nhưng rồi biến cố gần như không tưởng lại xảy đến, tất cả những dự định đều tan thành mây khói. Đau đớn, dằn vặt, chia ly, dày vò suốt 6 năm - một quãng thời gian không dài cũng chẳng ngắn nhưng đủ để con tim không thôi thổn thức. Liệu rằng giờ đây, cây tình yêu của họ còn có thể đơm hoa thơm kết trái ngọt hay không?"
+    ],
     "status": "",
     "dateIn": "12-20-2023",
     "discount": "27%",
@@ -1752,8 +1876,8 @@
     "name": "Đã Nhiều Năm Như Thế - Tập 1 - Bản Đặc Biệt - Tặng Kèm Bookmark + Postcard Giấy Nhũ Ngọc Trai",
     "type": "Văn học",
     "author": "Bát Nguyệt Trường An",
-    "price": 160.0,
-    "sale": "",
+    "price": "160.000",
+    "sale": "121.600 ",
     "amout": 6930,
     "publisher": "Phụ Nữ Việt Nam",
     "images": [
@@ -1763,7 +1887,14 @@
       "https://salt.tikicdn.com/cache/750x750/ts/product/7c/b1/ba/db473a602ec2e431ec0ffa7bd4b51a25.jpg.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/e4/5a/dd/8edea61c4a1894d348755b07aaf479e3.jpg.webp"
     ],
-    "description": [],
+    "description": [
+      "Đã Nhiều Năm Như Thế - Tập 1",
+      "Kiến Hạ là một cô gái ngoại thành, lớn lên trong một gia đình mà cả bố và mẹ đều thiên vị em trai, cô chẳng có gì để níu lấy sự quan tâm của họ ngoài thành tích học tập. Nhiều đêm, khi mọi người trong nhà đều đã say giấc, Kiến Hạ vẫn cặm cụi bên chiếc bàn nhỏ luyện đề, bởi cô biết chỉ khi học thật giỏi thì cô mới có thể rời khỏi vùng quê này. Cuối cùng, những nỗ lực của Kiến Hạ đã được đền đáp khi cô đỗ thủ khoa trong kỳ thi chuyển cấp ở huyện và được Trung học Chấn Hoa đặc cách tuyển.",
+      "Ngày khai giảng, do nhịn ăn sáng mà Kiến Hạ bị ngất trong lúc học quân sự, rồi được lớp trưởng đưa tới phòng y tế. Cũng tại đây, cô đã gặp Lý Nhiên - cậu bạn có mái tóc hung đỏ và khuôn mặt bê bết máu.",
+      "Ấn tượng ban đầu về đối phương, chính là họ hoàn toàn thuộc về hai thế giới khác nhau. Trong mắt Kiến Hạ lúc ấy, Lý Nhiên là học sinh cá biệt, bề ngoài trông giống côn đồ, chẳng biết trên dưới, luôn cả gan làm loạn. Còn trong mắt Lý Nhiên, ban đầu Kiến Hạ giống với những học sinh giỏi khác, hay khóc, lúc nào cũng giả vờ yếu kém, giả vờ khiêm tốn, song sau khi trò chuyện thì cậu cũng thấy cô bạn này khá thú vị.",
+      "Kiến Hạ vốn tự tin với thành tích học tập hồi cấp 2 của mình, nhưng khi tới Chấn Hoa, được nghe kể về các học sinh xuất sắc khác, việc không hòa nhập được cộng thêm lo lắng về thành tích khiến cô thu mình lại, trở nên nhút nhát và tự ti. Song cũng nhờ gặp gỡ Lý Nhiên - cậu bạn tuy có thành tích học tập không nổi bật nhưng lại biết cách nói chuyện và an ủi người khác, mà những ngày tháng ở Chấn Hoa của Kiến Hạ trở nên vui vẻ hơn. Lý Nhiên cũng là người ở bên Kiến Hạ khi cô bất lực nhất, nhìn thấy cô lúc cô yếu đuối nhất.",
+      "Cả hai đã cùng nhau bước qua những năm tháng thanh xuân ở Chấn Hoa, với những rung động dần lớn lên trong lòng mỗi người."
+    ],
     "status": "",
     "dateIn": "08-22-2023",
     "discount": "24%",
@@ -1773,8 +1904,8 @@
     "name": "Đã Nhiều Năm Như Thế - Tập 2 - Bản Đặc Biệt - Tặng Kèm Bookmark + Postcard",
     "type": "Văn học",
     "author": "Bát Nguyệt Trường An",
-    "price": 165.0,
-    "sale": "",
+    "price": "165.000",
+    "sale": "125.400",
     "amout": 6630,
     "publisher": "Phụ Nữ Việt Nam",
     "images": [
@@ -1784,7 +1915,16 @@
       "https://salt.tikicdn.com/cache/750x750/ts/product/0d/7b/4d/3262802dad9588099e24bcd48c58faa3.jpg.webp",
       "https://salt.tikicdn.com/cache/750x750/ts/product/90/9f/a5/e6023b91f5de0090371f6912e221495b.jpg.webp"
     ],
-    "description": [],
+    "description": [
+      "Đã Nhiều Năm Như Thế - Tập 2",
+      "Những ngày tháng tại trường Trung học Chấn Hoa cứ thế vội vã qua đi, cùng với đó là tình cảm của Kiến Hạ và Lý Nhiên ngày một lớn. Nhờ có Lý Nhiên, Kiến Hạ từ một cô bé nhút nhát đến từ ngoại thành dần trở nên tự tin, mạnh dạn. Nhờ có Lý Nhiên, Kiến Hạ đã mở lòng hơn, được đắm chìm trong cuộc sống nhiều trải nghiệm và ngập tràn màu sắc hơn.",
+      "Thế nhưng, những tháng ngày hạnh phúc trong trẻo ấy chẳng kéo dài lâu, khi chỉ còn nửa năm nữa là bước vào kì thi đại học, Lý Nhiên và Kiến Hạ bị cô chủ nhiệm và gia đình phát hiện yêu sớm.",
+      "Kiến Hạ bị mẹ bắt quay lại Trường Trung học Số 1 ở huyện, cương quyết không cho cô trở lại Chấn Hoa, dù kỳ thi đại học đang đến gần. Quay về nơi mình một lòng muốn rời đi, tâm trạng Kiến Hạ rối bời và vô cùng đau khổ. Cô bỏ bê bản thân, ăn uống cho có lệ, tóc tai cũng không buồn chăm chút, chỉ biết tựa đầu vào cửa khóc đến mệt lả.",
+      "Thế nhưng nhớ tới những ngày tháng hạnh phúc bên cạnh Lý Nhiên, nhớ không khí tại Chấn Hoa và cả tương lai phía trước, Kiến Hạ đã cố gắng xốc lại tinh thần, hạ quyết tâm thương lượng với bố, rằng nếu cô đứng nhất toàn trường trong kỳ thi tháng tới, thì phải cho cô quay lại học ở Chấn Hoa. Vì chỉ ở Chấn Hoa, cô mới nhìn thấy một Kiến Hạ quyết tâm theo đuổi ước mơ, một Kiến Hạ mạnh mẽ và dám bộc lộ cảm xúc thật của mình. Cũng ở Chấn Hoa, nơi đã chứng kiến lời hứa cùng nhau đến Nam Kinh học đại học của cô và Lý Nhiên.",
+      "Thế nhưng, tương lai là điều không thể nói trước. Dù chỉ vài tháng ngắn ngủi là kỳ thi đại học sẽ diễn ra, nhưng vài tháng ấy đã có rất nhiều điều thay đổi.",
+      "Liệu Kiến Hạ và Lý Nhiên có thực hiện được lời hứa của mình hay không? Tình cảm của cô và Lý Nhiên sẽ đi về đâu?",
+      "Hãy cùng đón đọc Tập 2 của “Đã nhiều năm như thế”, dõi theo câu chuyện của Kiến Hạ và Lý Nhiên qua giọng văn nhẹ nhàng, tình tiết truyện lôi cuốn từ tác giả Bát Nguyệt Trường An nhé."
+    ],
     "status": "",
     "dateIn": "09-20-2023",
     "discount": "24%",
@@ -1794,8 +1934,8 @@
     "name": "Đã Nhiều Năm Như Thế - Tập 3 - Bản Đặc Biệt - Tặng Kèm Bookmark + Postcard",
     "type": "Văn học",
     "author": "Bát Nguyệt Trường An",
-    "price": 155.0,
-    "sale": "",
+    "price": "155.000",
+    "sale": "117.800",
     "amout": 6480,
     "publisher": "Phụ Nữ Việt Nam",
     "images": [
@@ -1805,396 +1945,332 @@
       "https://salt.tikicdn.com/cache/750x750/ts/product/e5/ba/c6/aaf0bc479346c4341324b18af7b99717.JPG.webp",
       "https://bizweb.dktcdn.net/100/490/462/products/b-a-1-nhi-u-n-m-nh-th.jpg?v=1698424340730"
     ],
-    "description": [],
+    "description": [
+      "Đã Nhiều Năm Như Thế - Tập 3",
+      "Thời gian trôi qua vội vã, mới đó mà đã 10 năm kể từ ngày Kiến Hạ đặt chân đến Singapore học tập và làm việc. Cô đã nhìn thấy thế giới rộng lớn bên ngoài, nhưng lại không cảm thấy thích thú như cô từng mong đợi, cộng thêm việc bố bị bệnh nặng, cuối cùng Kiến Hạ quyết định trở về quê nhà.  Trên chuyến bay về gặp bố mẹ, cô thấy một hình bóng quen thuộc ở hàng ghế hạng thương gia, vẫn là bóng dáng mà cô đã đem lòng yêu thương suốt thời thanh xuân ở Chấn Hoa, nhưng bên cạnh người ấy giờ đã có một cô gái vô cùng xinh đẹp.",
+      "Người ta thường nói “tình cũ không rủ cũng tới”, hoặc bởi giữa Kiến Hạ và Lý Nhiên vẫn còn quá nhiều duyên nợ nên họ liên tục đụng mặt nhau. Tình cảm sâu đậm khi xưa tưởng đã phai nhạt, hóa ra chỉ bởi những người trong cuộc khéo léo giấu chặt nó trong lòng. Khi gặp lại, tình cảm ấy lại mạnh mẽ đến mức khó lòng giấu kín thêm nữa.",
+      "Thế nhưng, họ không còn là những đứa trẻ với nhiệm vụ duy nhất là học hành nữa. Trách nhiệm trên vai Kiến Hạ lúc này còn nặng nề hơn, khi cô phải lo cho cả sự nghiệp vẫn chưa vững chắc và gia đình với người bố đang lâm bệnh nặng. Lý Nhiên cũng có những áp lực và lo lắng của riêng cậu.  Cô gái bên cạnh Lý Nhiên mà Kiến Hạ nhìn thấy là ai? Liệu tình cảm sâu đậm năm xưa của họ có được nối lại? Lý Nhiên và Kiến Hạ có hạnh phúc bên nhau hay lại thêm một lần nữa bỏ lỡ người kia?  Tất cả những khúc mắc đó sẽ được giải đáp trong “Đã nhiều năm như thế | Tập 3”, cũng là tập cuối của bộ truyện này. Hãy cùng đắm chìm trong văn phong nhẹ nhàng, cốt truyện lôi cuốn của tác giả Bát Nguyệt Trường An và chờ đón xem chuyện tình của Lý Nhiên và Kiến Hạ sẽ đi về đâu sau 10 năm xa cách nhé!"
+    ],
     "status": "",
     "dateIn": "09-28-2023",
     "discount": "24%",
     "field": "Ngôn tình"
   },
   {
-    "name": "Một Nửa Ngọt Ngào, Một Nửa Đau Thương",
-    "type": "Văn học",
-    "author": "Kỳ Tử",
-    "price": 179.0,
-    "sale": "",
-    "amout": 8305,
-    "publisher": "Văn Học",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935212354899.jpg?_gl=1*18ge8xi*_ga*MTUwOTI3MjY0My4xNzA5Mjk2MzEy*_ga_460L9JMC2G*MTcxMDE2MDkzOC4xNy4xLjE3MTAxNjMyODUuMzAuMC4w*_gcl_au*MTc3NjA0NjM2NS4xNzA5Mjk2MzEy",
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935212354899_2.jpg",
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935212354899_1.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/mot_nua_ngot_ngao__mot_nua_dau_thuong/2023_02_13_18_30_41_1-390x510.jpg",
-      "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/mot_nua_ngot_ngao__mot_nua_dau_thuong/2023_02_13_18_30_41_5-390x510.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "07-01-2021",
-    "discount": "10%",
-    "field": "Ngôn tình"
-  },
-  {
-    "name": "Một Đời Một Kiếp, Giang Nam Lão",
-    "type": "Văn học",
-    "author": "Mặc Bảo Phi Bảo",
-    "price": 120.0,
-    "sale": "",
-    "amout": 4850,
-    "publisher": "Dân Trí",
-    "images": [
-      "https://salt.tikicdn.com/cache/750x750/ts/product/1b/06/b8/31417f727f140dc0cc7b0fc899cca9d7.jpg.webp",
-      "https://salt.tikicdn.com/cache/750x750/ts/product/1b/06/b8/31417f727f140dc0cc7b0fc899cca9d7.jpg.webp",
-      "https://salt.tikicdn.com/cache/750x750/ts/product/c4/5e/24/73f50a318b2ac29c606905b9cab0c775.jpg.webp",
-      "https://salt.tikicdn.com/cache/750x750/ts/product/98/88/e0/2030f0f788650623d69362ec70bed13b.jpg.webp",
-      "https://salt.tikicdn.com/cache/750x750/ts/product/81/24/54/5307c321ddaecbbe8e3634fd4152f510.jpg.webp"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "04-01-2022",
-    "discount": "29%",
-    "field": "Ngôn tình"
-  },
-  {
-    "name": "Lại Đây, Ôm Cái Nào!",
-    "type": "Văn học",
-    "author": "Tả Đồng",
-    "price": 125.0,
-    "sale": "",
-    "amout": 7580,
-    "publisher": "Văn Học",
-    "images": [
-      "https://salt.tikicdn.com/cache/750x750/ts/product/0a/3e/7d/24e7f009dc846d313e9b88236152973f.jpg.webp",
-      "https://salt.tikicdn.com/cache/750x750/ts/product/9f/3f/0a/714315208855eeb366c89bc9e90bb5b4.jpg.webp",
-      "https://salt.tikicdn.com/cache/750x750/ts/product/2e/60/b2/0a95729edf68b256fbbc630e5392b315.jpg.webp",
-      "https://salt.tikicdn.com/cache/750x750/ts/product/26/06/36/f80d44b1a4599ee2c48c3aad4c5638e2.jpg.webp",
-      "https://salt.tikicdn.com/cache/750x750/ts/product/f4/f5/f7/d65a48daa28b4a1729d3ff578c4d9930.jpg.webp"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "04-01-2021",
-    "discount": "26%",
-    "field": "Ngôn tình"
-  },
-  {
     "name": "Ê Có Khi Nào? (Tái Bản)",
     "type": "Văn học",
-    "author": "",
+    "author": "Sói Ăn Chay",
     "price": "165.000",
     "sale": "120.450",
-    "amout": "",
-    "publisher": "",
+    "amout": 7742,
+    "publisher": "Văn hóa Văn nghệ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_200743_1.jpg"
     ],
-    "description": [],
+    "description": [
+      "Ê CÓ KHI NÀO Ý TƯỞNG NÀY LÀ CỦA CHÚNG MÌNH?",
+      "Sách dày 204 trang, khổ nhỏ gọn cầm vừa tay, in màu toàn bộ với các thiết kế, minh hoạ chỉn chu và đầy màu sắc. Đây là sản phẩm ra đời từ sự hợp tác giữa Lan Anh Ng - một graphic designer tài năng thích chơi với nghệ thuật chữ, Vũ Tuấn Anh - chàng hoạ sĩ minh hoạ tài năng, JoiKid - những 'phù thuỷ công nghệ' thổi sức sống vào sách với công nghệ AR và Du Bút - những người thích làm sách vì vui.",
+      "Ê CÓ KHI NÀO? SÁCH KHÔNG CHỈ ĐỂ ĐỌC?",
+      "Lần đầu tiên, có một quyển sách được sử dụng công nghệ AR để mang đến một tầng ý nghĩa, nội dung mới cho quyển sách. Đúng với tinh thần 'thay đổi góc nhìn' của 'Ê có khi nà' - chỉ cần 1 chiếc điện thoại thông minh đời mới (từ 2018 trở lên, có hỗ trợ AR) là bạn có thể khám phá những 'bí mật' sinh động, ẩn sau những tranh minh hoạ của 'Ê có khi nào'",
+      "Ê CÓ KHI NÀO SÁCH HAY LÀ SÁCH KHÔNG CỐ DẠY TA MỘT ĐIỀU GÌ?",
+      "Nếu bạn đang tìm kiếm một câu chuyện nhân văn, một chuyện tình đẫm lệ, một bài học làm giàu hay một lời khuyên sáng tạo, có lẽ cuốn sách này không dành cho bạn 'Ê có khi nào' không cố dạy bạn một bài học gì. Quyển sách này chỉ trao cho bạn một ý tưởng, một góc nhìn, một cách suy nghĩ mới về cuộc sống. Chính bạn là sẽ người viết nên câu chuyện của quyển sách này. Và tuyệt vời làm sao, khi câu chuyện của bạn là duy nhất."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "05-04-2022",
+    "discount": "27%",
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
     "name": "Tôi Là Một Con Lừa (Tái Bản 2023)",
     "type": "Văn học",
-    "author": "",
+    "author": "Nguyễn Phương Mai",
     "price": "80.000",
     "sale": "62.400",
-    "amout": "",
-    "publisher": "",
+    "amout": 6885,
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235239326.jpg"
     ],
-    "description": [],
+    "description": [
+      "Tôi Là Một Con Lừa",
+      "Sơ lược về tác phẩm",
+      "Cuốn sách đầu tiên trong xê ri Lên đường với trái tim trần trụi",
+      "“Trước mỗi lần lên đường, tôi cố gắng trút bỏ mọi định kiến, mọi hình dung. Tôi dốc cạn để đầu óc trỗng rỗng, không mong chờ, không phán đoán.",
+      "Tôi liều mạng để trái tim mình rộng mở, trần trụi.",
+      "Và tôi lên đường như một tờ giấy trắng, với niềm khát khao được phủ kín, được lấp đầy, được đổi thay.”"
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "04-20-2023",
+    "discount": "22%",
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
     "name": "Chuyện Thầy Trò",
     "type": "Văn học",
-    "author": "",
+    "author": "Chu Hồng Vân , Hoàng Hương",
     "price": "122.000",
     "sale": "95.160",
-    "amout": "",
-    "publisher": "",
+    "amout": 4845,
+    "publisher": "Phụ Nữ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235239678.jpg"
     ],
-    "description": [],
+    "description": [
+      "Chuyện Thầy Trò",
+      "Có rất nhiều câu chuyện cảm động về người thầy, nghề thầy được kể trong cuốn sách ấm áp này. Một tình huống ứng xử tinh tế của người thầy, một bàn tay nâng đỡ khi tuột dốc, một lời nói và hành động truyền cảm hứng, một cơ hội làm lại được trao đi, một sự giúp đỡ thầm lặng, hay tình yêu thương chẳng mưu cầu gì hết ngoài sự vươn lên của đứa trẻ... Có những yêu thương và tâm huyết nghề nghiệp vượt rất xa giới hạn trách nhiệm của người thầy như thế.",
+      "Mỗi người thầy có thể chỉ đi với học trò một chặng đường không dài, nhưng với nhiều cô bé, cậu bé, những gì được kiến tạo trong quãng thời gian đó đã thay đổi cuộc đời họ và tạo nên điều kỳ diệu. Người thầy đã không chỉ cung cấp kiến thức sách vở, mà lớn lao hơn, còn dạy cho học sinh rất nhiều phẩm chất khác: lòng tự tin vào bản thân, tình yêu lao động, sự nhẫn nại tuyệt vời, ý chí vươn lên, nhưng trên hết có lẽ là niềm tin vào điều tử tế, vào tình người, để đến lượt mình, học trò lại lớn lên và lan tỏa những giá trị ấy.",
+      "Tác giả Chu Hồng Vân và Hoàng Hương là hai nhà báo theo đuổi lĩnh vực giáo dục suốt hai thập kỷ. Họ đã gặp rất nhiều những người thầy như thế, và đã nghe những câu chuyện khiến tim mình rung động. Những câu chuyện ấy, những con người ấy xứng đáng được kể lại, để chúng ta biết rằng giữa cuộc sống hỗn tạp này, giữa nỗi hoang mang mất niềm tin vào giáo dục bây giờ, ta sẽ thấy những điều tốt đẹp vẫn ở đây."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "07-30-2023",
+    "discount": "22%",
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
     "name": "Đờn Ca Tài Tử Nam Bộ - Khảo & Luận",
     "type": "Văn học",
-    "author": "",
+    "author": "Nguyễn Phúc An",
     "price": "140.000",
     "sale": "99.000",
-    "amout": "",
-    "publisher": "",
+    "amout": 7455,
+    "publisher": "Tổng Hợp TPHCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_12505.jpg"
     ],
-    "description": [],
+    "description": [
+      "Quyển ĐỜN CA TÀI TỬ NAM BỘ KHẢO VÀ LUẬN của Nguyễn Phúc An ra đời đúng với sự mong đợi của các tầng lớp nhạc sĩ và nhạc sinh âm nhạc dân tộc Việt Nam, đặc biệt là giới mộ điệu nhạc tài tử Nam bộ!",
+      "Thật thế! Nhạc tài tử Việt Nam là một loại hình nghệ thuật rất cao, trong đó có kết hợp đầy đủ tính khoa học, triết học phương Đông, nó đòi hỏi người chơi phải có một trình độ khá tốt về văn hóa, lịch sử, v.v… Nhạc tài tử Nam bộ được cấu kết và hình thành thuận theo âm luật tự nhiên của con người cũng giống như âm nhạc của phương Tây và các dân tộc khác trên thế giới. Điều đáng buồn là ở Việt Nam ta tài liệu và sách vở âm nhạc thì không đầy đủ để có thể tìm hiểu và khảo cứu. Thật ra thì mọi lý luận và ý tưởng trong những tác phẩm âm nhạc dân tộc có thể nói là hầu hết ta đều có thể dẫn chứng, hoặc giải thích được. Vấn đề phát sinh ở chỗ là chúng ta không có điều kiện, không đủ quyết tâm và kiến thức để tìm tòi, tra cứu trong sách vở và tài liệu cổ. Vì những tài liệu có giá trị còn sót lại ngày xưa thường được viết bằng chữ Hán hoặc bằng tiếng Pháp nên chúng ta gặp nhiều khó khăn trong việc tra cứu.",
+      "Tác giả Nguyễn Phúc An có được cái lợi thế là rất rành về Hán văn và một số ngoại ngữ khác, cho nên ông có thể đọc được và nghiên cứu rất nhiều tài liệu âm nhạc ở các thư viện nước ngoài và những tài liệu chữ Hán ở Việt Nam. Ngoài ra do sở học cá nhân, tác giả có một trình độ lý luận rất là vững chắc, có tính logic dựa vào lý luận dịch học phương Đông mà cũng không thiếu tính khoa học phương Tây, cho nên ở hầu hết mọi vấn đề sau khi nêu được những chứng minh, truy nguyên được nguồn gốc bằng sách vở, tài liệu, báo chí, tác giả đã đưa ra được những kết luận của riêng mình với lối lý luận sắc sảo, nhạy bén không lập lờ, hợp lý mà ta hầu như có thể chấp nhận được!",
+      "Về mặt nội dung, tuy chưa thể khai thác hết nền nhạc cổ miền Nam, nhưng sách đã gói ghém gần như là đầy đủ hết những hiểu biết, những tinh hoa trong mảnh đất màu mỡ của âm nhạc tài tử miền Nam, nhưng tác giả đã cho ta thấy được những kiến thức rất có giá trị và hữu ích về loại hình âm nhạc này mà mỗi nhạc sĩ, người nghiên cứu hay giới mộ điệu chúng ta không thể thiếu được.",
+      "Nói thêm là ở xứ ta, một số sách vở về âm nhạc thường là nơi bày tỏ những lời phát biểu đúng cũng có mà chưa đúng cũng có của một số nhân vật nào đó… mà ở đó người viết ít khi dám cho biết ý nghĩ và quan điểm của riêng mình, vì sợ đụng chạm hoặc ngại làm mếch lòng người khác, hoặc khẳng định cái gì đúng, cái gì sai và cái nào cần chỉnh lại cho hợp lý để cho các lớp thế hệ sau có thể noi theo mà mạnh dạn bước đi. Những người viết đó có lẽ còn chưa tin tưởng được mình thì làm sao mà mọi người tin theo được. Vì lý do đó mà hiện tại hầu hết những buổi diễn âm nhạc dân tộc xứ ta chỉ như đang khơi lại đóng tro tàn văn hóa cũ của bốn ngàn năm văn hiến để cho mọi người thấy và biết thôi chứ chưa đặt chân được vào con đường phát triển, làm tốt, làm đẹp hơn cho văn hóa âm nhạc Việt Nam. Cuối cùng ta phải khẳng định một điều là một nền văn hóa tốt đẹp đầy màu sắc như âm nhạc dân tộc Việt Nam mà chỉ để trưng bày trong viện bảo tàng để cho mọi người ngắm nhìn để biết được thế nào là thời vàng son của dân tộc Việt thì quá uổng phí cho công sức của tiền nhân đã dầy công vun đắp. Chứ ở hiện tại thì nói đúng ra như con số không vì cổ thì nằm ở viện bảo tàng và cái mới, phát triển thì lệch lạc và cũng không có được bao nhiêu, đồng thời lại đang đi ngược với trào lưu tiến hóa của xã hội!",
+      "Có thể nói là nhờ những bước đầu mạnh dạn như tiêu chí của quyển sách này, thì các lớp sau có thể có được một sự hiểu biết dù sơ lược nhưng đúng hoặc ít ra là những khía cạnh đúng về nhạc tài tử miền Nam; để từ đó có thể mạnh dạn phát triển nền tri thức và hiểu biết âm nhạc Việt Nam vốn giàu đậm màu sắc dân tộc theo con đường nghệ thuật chân chánh mà những bậc tiền nhân đã vạch đường đưa lối."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "10-31-2019",
+    "discount": "29%",
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
     "name": "150 Thuật Ngữ Văn Học",
     "type": "Văn học",
-    "author": "",
+    "author": "Lại Nguyên Ân",
     "price": "165.000",
     "sale": "115.500",
-    "amout": "",
-    "publisher": "",
+    "amout": 5780,
+    "publisher": "Kim Đồng",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/1/5/150-thuat-ngu-van-hoc_bia.jpg"
     ],
-    "description": [],
+    "description": [
+      "150 Thuật Ngữ Văn Học",
+      "Với khoảng 150 mục từ Thuật ngữ văn học, cuốn sách nhỏ này đưa ra những dẫn giải về các hàm nghĩa chứa đựng trong đó, chỉ ra được khá nhiều dấu hiệu về đặc tính và phẩm chất bề sâu của các hiện tượng văn học. Như một cuốn sổ tay chuyên dụng, cuốn sách hữu ích cho bạn đọc là học sinh, sinh viên, giáo viên, giảng viên và nhà phê bình nghiên cứu văn học mới vào nghề…"
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "11-22-2023",
+    "discount": "30%",
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
     "name": "Tìm Hiểu Văn Học Hiện Đại Hàn Quốc",
     "type": "Văn học",
-    "author": "",
+    "author": "Kwon Young Min",
     "price": "190.000",
     "sale": "148.200",
-    "amout": "",
-    "publisher": "",
+    "amout": 8560,
+    "publisher": "Hội Nhà Văn",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235472.jpg"
     ],
-    "description": [],
+    "description": [
+      "Văn học hiện đại Hàn Quốc tồn tại như một thực thể lịch sử kế thừa tinh hoa nền văn học cổ. Tiếp cận từ góc độ văn học sử, chú trọng đến phương thức tồn tại của văn bản văn học và ý nghĩa thời đại của nó. TÌM HIỂU VĂN HỌC HIỆN ĐẠI HÀN QUỐC là phiên bản tổng hợp một cách trọn vẹn dòng chảy của văn học hiện đại Hàn Quốc. Trên cả những kiến thức văn học thuần túy, cuốn sách đưa đến một bức tranh toàn cảnh về đất nước Hàn Quốc qua thời gian, bởi văn học chính là kết quả của ý thức và các hoạt động tinh thần con người.",
+      "KWON YOUNG-MIN sinh tại Boryeong, Chungcheongnam-do, Hàn Quốc. Ông nhận bằng tiến sĩ khoa Văn học Hàn Quốc, Đại học Quốc gia Seoul. Ông từng là giáo sư khoa Văn học Hàn Quốc tại Đại học Quốc gia Scoul, giáo sư thỉnh giảng tại Đại học Harvard, giáo sư thỉnh giảng về văn học Hàn Quốc tại Đại học California - Berkeley, và giáo sư thỉnh giảng về văn học Hàn Quốc tại Đại học Tokyo. Ông hiện đang là giáo sư danh dự tại Đại học Quốc gia Seoul và giáo sư kiếm nhiệm tại Đại học California. Ông đã nhận được giải thưởng Văn học Đương đại, giải thưởng Nhà phê bình Kim Hwan-tae, giải thưởng Manhae về Học thuật xuất sắc và giải thưởng Văn hóa Sejong. Ông có một sự nghiệp đồ sộ với nhiều tác phẩm nghiên cứu chuyên sâu về văn học Hàn Quốc."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "04-10-2022",
+    "discount": "22%",
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
     "name": "Tiếng Việt Giàu Đẹp - Cuộc Sống Ở Trong Ngôn Ngữ (Tái Bản 2022)",
     "type": "Văn học",
-    "author": "",
+    "author": "Hoàng Tuệ",
     "price": "80.000",
     "sale": "72.000",
-    "amout": "",
-    "publisher": "",
+    "amout": 6050,
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974182344.jpg"
     ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
-  },
-  {
-    "name": "Tiếng Việt Giàu Đẹp - Nỗi Oan Thì, Là, Mà (Tái Bản 2022)",
-    "type": "Văn học",
-    "author": "",
-    "price": "105.000",
-    "sale": "94.500",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974182351.jpg"
+    "description": [
+      "Sách tập hợp những bài viết bàn về tiếng Việt của cố giáo sư Hoàng Tuệ. Tác giả đã nêu lên những cái hay, cái đẹp của ngôn ngữ nói chung và tiếng Việt nói riêng. Ngoài ra, sách còn có một loạt bài viết nêu lên những đóng góp của các nhà văn, nhà thơ lớn như: Nguyễn Trãi, Nguyễn Du, Nguyễn Đình Chiểu… đối với nền ngôn ngữ học nước nhà. Gần hơn, có phong cách ngôn ngữ Hồ Chủ tịch, cố Thủ tướng Phạm Văn Đồng cùng những quan tâm trăn trở, làm sao để giữ gìn, phát triển tiếng nói dân tộc… Với ngòi bút tài hoa, kiến thức uyên thâm, tác giả diễn giải những vấn đề phức tạp một cách đơn giản, đễ đọc, dễ hiểu, khiến cho những kiến thức đó không hề khô khan như bản chất của Ngôn ngữ học. Những bài viết trong sách vô cùng thú vị và bổ ích cho những ai đang tìm hiểu, học tập và nghiên cứu tiếng Việt."
     ],
-    "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
-  },
-  {
-    "name": "Đài Hoa Tím - Chuyện 10 Cô Gái Ngã Ba Đồng Lộc",
-    "type": "Văn học",
-    "author": "",
-    "price": "150.000",
-    "sale": "103.500",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/d/a/dai-hoa-tim-b1-_1_.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
-  },
-  {
-    "name": "Khoái Khẩu Và Khát Vọng",
-    "type": "Văn học",
-    "author": "",
-    "price": "180.000",
-    "sale": "162.000",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/9/7/9786045892770.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "12-20-2022",
+    "discount": "10%",
     "field": "Phóng Sự - Ký Sự - Phê Bình Văn Học"
   },
   {
     "name": "Thương",
     "type": "Văn học",
-    "author": "",
+    "author": "Nhiều Tác Giả",
     "price": "75.000",
     "sale": "57.000",
-    "amout": "",
-    "publisher": "",
+    "amout": 8685,
+    "publisher": "Phụ Nữ Việt Nam",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/i/bia1_thuong_1.jpg"
     ],
-    "description": [],
+    "description": [
+      "Được viết bởi các tác giả đến từ Group Thìa Đầy Thơ - nơi hội tụ thế hệ trẻ yêu thơ và làm thơ, 'Thương' là một tập thơ rất tình, ngẫu hứng, và đầy sáng tạo. Ở “Thương ” không có bóng dáng của một nhân vật nhất định, nhưng mang lại cho người đọc đầy đủ tất cả cảm xúc về tình yêu, tuổi trẻ và cuộc đời.",
+      "Thực sự không khó để tìm được sự đồng điệu tâm hồn với những dòng thơ ấy. Sự đồng cảm trong giai điệu mà “Thương” phủ lên đôi môi của độc giả có chút nhẹ nhàng, bâng quơ, gần gũi, dễ đọc, dễ  đánh thức sự lãng mạn cùng những tâm tư chưa từng tỏ bày cùng ai. Đó là thứ thơ phóng khoáng, trẻ trung đầy sức sống, đôi khi da diết, đôi khi lửng lơ, phảng phất đủ loại thăng trầm được biểu đạt theo một cách hết sức dễ chịu. Bạn hẳn sẽ thấy chính mình trong đó. Đó là những ấm áp len lỏi của tình cảm gia đình, là ngọt ngào hạnh phúc của tình yêu, là những phút giây chậm lại để sống. Là nhớ thương chờ đợi, là giận hờn vu vơ, là lo sợ được mất và cả những tổn thương, những lần tự chữa lành."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "06-30-2021",
+    "discount": "24%",
     "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
     "name": "Như Sao Trời Ôm Lấy Đại Dương",
     "type": "Văn học",
-    "author": "",
+    "author": "hngoc",
     "price": "86.000",
     "sale": "65.360",
-    "amout": "",
-    "publisher": "",
+    "amout": 8690,
+    "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/i/bia1-nh_-sao.jpg"
     ],
-    "description": [],
+    "description": [
+      "Thân gửi đến người bạn nhỏ một chiếc ôm đầy ấm áp qua tập thơ “Như sao trời ôm lấy đại dương”.",
+      "Chắc hẳn thế giới ngoài kia đã không ít lần làm xây xát trái tim vốn yếu mềm của bạn.",
+      "Hai chữ “trưởng thành” thật sự không dễ dàng, cuộc sống dù cho đã cố hết sức cũng không được như ý nguyện. Thế nhưng hy vọng bạn, cho dù có nhìn thấy những điều không hay vẫn tiếp tục tin tưởng vào những điều tốt đẹp sẽ xảy ra, giữ cho mình một trái tim lương thiện, sáng ngời.",
+      "Đôi mắt bạn xứng đáng được nhìn thấy những khung cảnh xinh đẹp, đôi tai bạn xứng đáng được lắng nghe những thanh âm dịu dàng và trái tim bạn xứng đáng được yêu thương.",
+      "“Như sao trời ôm lấy đại dương” là tác phẩm đầu tay của nhà thơ trẻ Hngoc. Tập thơ được chia làm hai phần: Yêu mình - Yêu người. Dù là phần nào thì bằng câu từ đẹp đẽ và lấp lánh, Hngoc sẽ khơi gợi khát khao yêu và được yêu trong mỗi chúng ta.",
+      "Có lẽ trên chặng đường học làm “người lớn”, chúng ta sẽ không tránh khỏi những va vấp trong tình yêu. Nhưng giống như biển cả phải có những con sóng thì biển mới trở nên sống động, cũng như trái tim, đôi lúc cần những vết thương để trở nên dạn dĩ, trưởng thành. Từ giây phút bạn học được cách chấp nhận những nỗi đau cũng là lúc bạn học được cách chữa lành cho chính mình. Bởi suy cho cùng chỉ khi ta tự yêu lấy bản thân mình thì mới có khả năng để yêu thương một ai đó khác.",
+      "Sau cuối, vẫn mong rằng bạn sẽ tìm được ánh sao trời của riêng mình. Người đó sẽ nguyện ở lại yêu thương, che chở và đưa bạn qua những tháng năm thăng trầm tựa sao trời ôm lấy đại dương."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "05-29-2023",
+    "discount": "24%",
     "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
     "name": "Nhật Ký Trong Tù (Tái Bản)",
     "type": "Văn học",
-    "author": "",
+    "author": "Hồ Chí Minh",
     "price": "48.000",
     "sale": "32.160",
-    "amout": "",
-    "publisher": "",
+    "amout": 8590,
+    "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_5088.jpg"
     ],
-    "description": [],
+    "description": [
+      "Giáo sư Phương Lựu, nhà lý luận phê bình NXB Văn Học đã đưa ra bằng chứng, tuy được viết bằng chữ Hán nhưng 'Nhật ký trong tù' của Bác rất khác với thơ Đường. Trước hết, nét riêng ấy có được là do từ ngữ được sử dụng theo chiều hướng phổ thông hóa, đại chúng hóa. Bên cạnh vốn từ vựng cổ được vận dụng, Bác còn đưa vào nhiều từ ngữ bạch thoại - khẩu ngữ.",
+      "“Ngôn từ của Bác không phải là ngôn từ cổ điển. Thể loại thơ của Bác cũng 4 câu nhưng nó là tứ tuyệt tự sự - ghi nhật kí, kể chuyện. Đó là điều rất khác thơ Đường. Thơ Đường hay so sánh, đối thanh, đối ý nhưng thơ của Bác không chủ về đối. Những việc làm của Bác rất nhỏ nhưng có nhiều việc nhỏ của Bác cũng có ý nghĩa lớn. Điều đó khẳng định Bác của chúng ta rất trân trọng, yêu quý văn hóa Trung Quốc và ra sức học tập nó nhưng không bao giờ rập khuôn.” - Giáo sư Phương Lựu phân tích.",
+      "Giáo sư Phương Lựu khẳng định, cống hiến lớn nhất của Chủ tịch Hồ Chí Minh về mặt thể loại NXB Văn Học trong “Nhật kí trong tù” là sáng tạo ra thể thơ tứ tuyệt tự sự. Hiển nhiên thơ Đường có nhiều bài mang tính chất tự sự như: “Tam tại”, “Tam biệt” của Đỗ Phủ; “Trường hận ca”, “Tỳ bà hành” của Bạch Cư Dị… nhưng không phải là thơ tứ tuyệt.",
+      "Thơ Đường luật, nhất là tứ tuyệt, thì tuyệt đại bộ phận là thơ trữ tình, tả cảnh hoặc kết hợp cả hai. Ngược lại, thơ tứ tuyệt trong “Nhật kí trong tù” tuy có những bài trữ tình nhưng lại có tính chất “nhật kí” với nhiều chi tiết đời thường, ví dụ như bài: “Chia nước”, “ Viết hộ báo cáo cho các bạn tù”, “Lên xe lửa đi Lai Tân”, “Cuộc sống trong tù”…",
+      "“Nhật kí trong tù” vốn là một tập thơ chứa đựng nhiều bất ngờ, thú vị. Tính chất nôm na trong thơ chữ Hán của Hồ Chí Minh lại biểu hiện một con người gần gũi, đời thường. Đằng sau cái đời thường, tâm hồn đồng cảm ấy là một nhân cách lớn, một ý chí và khát vọng tự do. Mặc dù, cách làm thơ trong tù của Người là để giải khuây, không giống với các thi sĩ làm thơ.",
+      "Ở đây, người tù làm thơ để mong thời gian trôi nhanh hơn, vừa ngâm vừa đợi đến ngày tự do. Bác làm thơ không giống như những nhà thơ khác, ba năm."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "05-30-2022",
+    "discount": "40%",
     "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
     "name": "Thơ Tố Hữu (Tái Bản 2016)",
     "type": "Văn học",
-    "author": "",
+    "author": "Tố Hữu",
     "price": "35.000",
     "sale": "23.450",
-    "amout": "",
-    "publisher": "",
+    "amout": 9303,
+    "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935095620364_1.jpg"
     ],
-    "description": [],
+    "description": [
+      "'Tố Hữu là một nhà thơ lớn. nói đúng hơn, ông là nhà thơ lãng mạn cách mạng. Cả cuộc đời ông gắn bó với cách mạng. Thơ với đời là một. Trước sau đều nhất quán. Tố Hữu nhìn cách mạng bằng con mắt lãng mạn của một thi sĩ. Thơ ông dường như chỉ có một giọng. Đó là gióng hát từng bừng ca ngợi cách mạng. Đọc thơ ông trong bất cứ hoàn cảnh và tâm trạng nào. Ta cũng thấy phấn chấn, náo nức như đi trẩy hội. Đến đâu cũng nghe vang tiếng trống, tiếng kèn. Mà thơ ông đâu chỉ có trống phách linh đình như một đám rước, ông còn bắn cả 21 phát đại bác vang trời. Cho đến nay, chỉ có ông là nhà thơ Việt Nam duy nhất đã bắn đại bác trang trọng như thế.'"
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "07-31-2016",
+    "discount": "33%",
     "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
     "name": "Sách Tết Giáp Thìn 2024 - Hợp Tuyển Văn Thơ Nhạc Hoạ Chủ Đề Mùa Xuân Và Ngày Tết",
     "type": "Văn học",
-    "author": "",
+    "author": "Hồ Anh Thái Tuyển",
     "price": "399.000",
     "sale": "319.200",
-    "amout": "",
-    "publisher": "",
+    "amout": 4659,
+    "publisher": "Văn Học",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1---s_ch-t_t-2024.jpg"
     ],
-    "description": [],
+    "description": [
+      "Sách Tết Giáp Thìn 2024 - Hợp Tuyển Văn Thơ Nhạc Hoạ Chủ Đề Mùa Xuân Và Ngày Tết",
+      "Qua năm năm ra mắt, các ấn phẩm Sách Tết từ 2019 đến 2023 đã trở thành cuốn sách quen thuộc đối với bạn đọc cả nước mỗi dịp tết đến xuân về. Nối tiếp hành trình đó, năm nay, Đông A gửi đến bạn đọc ấn phẩm Sách Tết Giáp Thìn 2024 - Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày tết, với sự tham gia của nhiều tác giả, họa sĩ nổi tiếng.",
+      "Sách gồm 5 phần: Khúc dạo đầu của mùa xuân, Văn, Thơ, Nhạc, và Họa. Qua 5 phần nội dung, bạn đọc sẽ lần lượt đi qua những cung bậc cảm xúc khác nhau, đầy thú vị.",
+      "Ở phần Khúc dạo đầu của mùa xuân, bạn đọc được quay về những ngày xưa cũ, hồi tưởng không khí đón tết ở làng quê Bắc Bộ với mùi hoa xoan thơm ngát dìu dịu, một miền ký ức xa xăm mà giờ đây chỉ còn trong hoài niệm. Đó cũng có thể là những kỷ niệm về chợ tết phố Hàng trong tâm tưởng của Nguyễn Ngọc Tiến mà giờ đây đã dần mai một bởi Những người muôn năm cũ/ Hồn ở đâu bây giờ?. Người đọc cũng được thể nghiệm mùa xuân mà Cao Huy Thuần gọi là “sự trở về bất tận”, trong tư tưởng triết lý của Nietzsche luôn dũng cảm đối mặt với hiện thực phũ phàng.",
+      "Những sáng tác đầy xúc cảm trong phần Văn và Thơ sẽ đem cho bạn đọc cái thú nghiền ngẫm chữ nghĩa đầu năm, để cảm nhận mùa xuân, cảm nhận cuộc đời thêm phần ý vị, bay bổng. Câu chuyện về hai ông già, một Bắc một Trung, bán hoa đào và hoa mai ở chợ tết trong Tiền rơi ở chợ hoa hẳn sẽ mang lại cảm xúc dịu dàng và nhẹ nhõm cho người đọc. Hương mùi già gợi nhớ thói quen tắm lá mùi vào chiều 30 Tết - nét đẹp văn hóa phổ biến của người dân Việt Nam. Phong tục bắt vợ trong lễ hội mùa xuân của đồng bào miền núi phía bắc cũng được tái hiện trong Lấy nhau mà như đùa. Những vần thơ của Văn Hiền gợi nhớ Tết quê, Vân Khánh tái hiện ký ức của Phiên chợ vùng cao, Song Hảo khao khát đón Mùa mới, Vân Long mang đến Chợ hoa của thủ đô nghìn năm văn hiến, còn Mẹ đi chợ tết của Trần Đức Cường là cảm xúc háo hức của một em bé chờ mẹ mang những món lạ về để chuẩn bị đón tết.",
+      "Ở phần Nhạc là những bài hát về mùa xuân nổi tiếng như Cánh én tuổi thơ (Phạm Tuyên), Ru em từng ngón xuân nồng (Trịnh Công Sơn), với lời bình của Nguyễn Thị Minh Châu. Phần Họa năm nay giới thiệu họa sĩ tuổi Thìn - Nguyễn Trung cùng những bức tranh sơn dầu mà ông vẽ thiếu nữ Việt Nam. Lịch sử ghi lại chân dung, từ tranh vẽ đến ảnh chụp và giờ đây là những bức ảnh selfie thời kỹ thuật số được Nguyên Đăng ghi lại trong Chân dung tự họa và tự chụp. Codex Leicester của thiên tài Leonardo da Vinci được Đăng Bảy giới thiệu trong Một kiệt tác bí ẩn sẽ khép lại Sách Tết.",
+      "Cũng như các cuốn Sách Tết đã ra mắt trước đây, Sách Tết Giáp Thìn 2024 thành hình từ sự góp sức của đội ngũ đông đảo tác giả, họa sĩ. Người đọc sẽ gặp lại những cái tên đã trở nên quen thuộc: Nguyễn Thị Thu Huệ, Ma Văn Kháng, Hồ Anh Thái, Phan Thị Vàng Anh... cả những cái tên mới hơn nhưng cũng đã ít nhiều ghi dấu trong lòng bạn đọc: Huỳnh Trọng Khang, Hiền Trang... Ấn phẩm còn có phần minh họa của Hoàng Phượng Vỹ, Quyên Thái, Đào Hải Phong, Ngô Xuân Khôi, Đặng Xuân Hòa, Kim Duẩn... cùng nhiều họa sĩ khác.",
+      "Sách Tết Giáp Thìn 2024 được in màu bằng công nghệ mực vi sinh, trên giấy Ford 120 gsm, có thiết kế đồng bộ với các cuốn Sách Tết đã xuất bản. Mỗi cuốn đều được đánh số thứ tự riêng và tặng kèm postcard thiết kế đồng bộ."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "03-21-2023",
+    "discount": "20%",
     "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
     "name": "Nếu Như Tôi Nói Nhớ, Em Có Trở Về Không? - Tặng Kèm Bookmark + Postcard",
     "type": "Văn học",
-    "author": "",
+    "author": "Nhiều Tác Giả",
     "price": "88.000",
     "sale": "66.880",
-    "amout": "",
-    "publisher": "",
+    "amout": 5805,
+    "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/i/bia1-neunhutoinoinho-emcotrovekhong.jpg"
     ],
-    "description": [],
+    "description": [
+      "120 bài thơ trong tuyển tập “Nếu như tôi nói nhớ, em có trở về không?” sẽ là một cuốn sách chữa lành mọi vết thương của những trái tim đã từng tan vỡ, khi mà chúng ta khao khát có ai đó đồng cảm, ủi an.",
+      "Vì từng áng thơ nhỏ là những lời dịu dàng, ấm áp mà nhóm tác giả đến từ group “Chuyện kể rằng có nàng và em” thay chúng ta nói lên nhung nhớ cất giấu tận sâu đáy lòng.",
+      "Hy vọng dẫu tình yêu tuổi trẻ đôi lúc không trọn vẹn, lắm lúc không được hồi đáp, nhưng chúng ta vẫn tận hưởng dư vị của những nỗi mất mát đã từng rất đỗi ngọt ngào này.",
+      " Một ngày nào đó chúng ta sẽ lại yêu, yêu hết mình, có thể với người mới hoặc là một người đã cũ. Nhưng dẫu với ai, mong những tháng ngày đó, có giận hờn, có chia ly vẫn đủ dũng cảm mở lời: “Nếu như tôi nói nhớ, em có trở về không?”."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "08-09-2023",
+    "discount": "24%",
     "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
     "name": "Chữ Yêu Là Trữ Tình",
     "type": "Văn học",
-    "author": "",
+    "author": "bonglee",
     "price": "88.000",
     "sale": "66.880",
-    "amout": "",
-    "publisher": "",
+    "amout": 8549,
+    "publisher": "Dân Trí",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-chu-yeu-la-tru-tinh--_glowbooks_.jpg"
     ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
-  },
-  {
-    "name": "Văn Học Trong Nhà Trường: Thơ Hồ Xuân Hương",
-    "type": "Văn học",
-    "author": "",
-    "price": "28.000",
-    "sale": "25.200",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_4817.jpg"
+    "description": [
+      "Chữ Yêu Là Trữ Tình",
+      "Một cuốn sách giúp bạn mượn chữ tỏ tình!",
+      "Một tập thơ chứa đựng vô vàn câu từ thả thính giúp bạn lay động trái tim người thầm thương!",
+      "Một ấn phẩm ngọt ngào nhưng lại không kém phần hóm hỉnh, đáng yêu!",
+      "Nếu bạn đang tìm kiếm bí kíp trở thành cao thủ thả thính để chinh phục trái tim crush, tập thơ “Chữ yêu là trữ tình” của tác giả bonglee là món quà dành riêng cho bạn!",
+      "Với giọng điệu dí dỏm, vui tươi xen kẽ trong mỗi lời yêu, cuốn sách chắc chắn sẽ làm bạn phải “ngơ ngác, ngỡ ngàng, bật ngửa” vì cách gieo vần chơi chữ quen thuộc nhưng lại cực kỳ lôi cuốn.",
+      "Mỗi trích dẫn của cuốn sách như thay bạn cất lên lời yêu mãi chẳng dám tỏ tường, lời thơ có gì đó một chút vụng về dễ thương, một chút tan chảy tấm chân tình.",
+      "“Trước giờ, anh luôn tự hào mình giỏi toán",
+      "Thế mà chẳng đếm nổi số ngày nhớ em.”",
+      "Nào hãy cùng chúng mình khám phá xem “Chữ yêu là trữ tình” chứa đựng những gì mà lại hấp dẫn vạn người mê như vậy nhé!"
     ],
-    "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
-  },
-  {
-    "name": "Tục Ngữ Ca Dao Việt Nam (Tái Bản 2022)",
-    "type": "Văn học",
-    "author": "",
-    "price": "58.000",
-    "sale": "38.860",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935095632374.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "01-16-2023",
+    "discount": "24%",
     "field": "Thơ ca, tục ngữ, ca dao, thành ngữ"
   },
   {
@@ -7022,396 +7098,415 @@
     "field": "Tiếng Hoa"
   },
   {
-    "name": "Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Tổng Hợp Các Bài Tập Chủ Điểm",
-    "type": "Sách học ngoại ngữ",
-    "author": "",
-    "price": "65.000",
-    "sale": "58.500",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974186458.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Tiếng Nhật"
-  },
-  {
-    "name": "Tiếng Nhật Công Nghệ Thông Tin Trong Ngành Phần Mềm - Hội Thoại Trong Dự Án Phần Mềm",
-    "type": "Sách học ngoại ngữ",
-    "author": "",
-    "price": "290.000",
-    "sale": "208.800",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935280914506.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Tiếng Nhật"
-  },
-  {
     "name": "Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới) (Tái Bản 2023)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Minna no Nihongo",
     "price": "100.000",
     "sale": "90.000",
-    "amout": "",
-    "publisher": "",
+    "amout": 9750,
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_09532023_035310.jpg"
     ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Tiếng Nhật"
-  },
-  {
-    "name": "28 Ngày Tự Học Tiếng Nhật - Ghi Chú Luyện Viết - Sách Bài Tập",
-    "type": "Sách học ngoại ngữ",
-    "author": "",
-    "price": "94.000",
-    "sale": "73.320",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_30678.jpg"
+    "description": [
+      "Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới)",
+      "Giáo trình dạy tiếng Nhật Minna no Nihongo bộ mới",
+      "“Minna no Nihongo” là bộ giáo trình sơ cấp dành cho những ai muốn tìm hiểu về tiếng Nhật rất thông dụng tại Châu Á và Việt Nam.Sách gồm 2 tập với 50 bài học, mỗi bài bao gồm phần Mẫu câu, Ví dụ, Hội thoại, Luyện tập và các câu hỏi đặt ra để trả lời.",
+      "Bộ giáo trình này phù hợp với nhiều đối tượng: từ học sinh, sinh viên, và cả những ai muốn nắm chắc kiến thức cơ bản về tiếng Nhật để học tập và làm việc trong môi trường sử dụng tiếng Nhật. NXB Trẻ được chính thức độc quyền xuất bản bộ giáo trình “Minna no Nihongo” tại Việt Nam.",
+      "Sách được xuất bản với Bản tiếng Nhật và Bản dịch và giải thích ngữ pháp, nhằm đáp ứng tốt nhất nhu cầu học và dạy tiếng Nhật tại Việt Nam."
     ],
-    "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
-    "field": "Tiếng Nhật"
-  },
-  {
-    "name": "Mô Phỏng Đề Thi HSK - Phiên Bản Mới - Cấp Độ 2",
-    "type": "Sách học ngoại ngữ",
-    "author": "",
-    "price": "258.000",
-    "sale": "196.080",
-    "amout": "",
-    "publisher": "",
-    "images": [
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_219415.jpg"
-    ],
-    "description": [],
-    "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "09-01-2023",
+    "discount": "10%",
     "field": "Tiếng Nhật"
   },
   {
     "name": "Mô Phỏng Đề Thi HSK - Phiên Bản Mới - Cấp Độ 6",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Vương Tố Mai",
     "price": "348.000",
     "sale": "264.480",
-    "amout": "",
-    "publisher": "",
+    "amout": 5908,
+    "publisher": "Tổng hợp TP.HCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_32313.jpg"
     ],
-    "description": [],
+    "description": [
+      "Đây là phiên bản mới của bộ đề mô phỏng đề thi HSK, được biên soạn trên cơ sở chỉnh sửa bộ đề phiên bản cũ.",
+      "Sách gắn liền với đề cương mới:",
+      "Phiên bản cũ được chỉnh sửa dựa trên đề cương từ vựng, chủ đề, nhiệm vụ và các điểm ngữ pháp mới nhất.",
+      "Dự đoán đề thi mới:",
+      "Các đề mô phỏng được sửa lại một cách công phu từ nội dung, hình thức đến độ khó dựa vào sự thay đổi trong xu hướng ra đề. Điều này đảm bảo mức độ tương đồng cao nhất giữa đề mô phỏng và đề thi chính thức mới nhất.",
+      "Thay đổi ngữ liệu mới:",
+      "Sách được bổ sung các ngữ liệu mới nhất, phù hợp với sự thay đổi của xã hội hiện nay. Bộ đề này cũng là tài liệu rất thiết thực vì giúp người học vừa phát triển kỹ năng ngôn ngữ vừa mở rộng kiến thức xã hội."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "08-30-2020",
+    "discount": "24%",
     "field": "Tiếng Nhật"
   },
   {
     "name": "Marugoto - Ngôn Ngữ Và Văn Hóa Nhật Bản - Nhập Môn - A1 - Hoạt Động Giao Tiếp (Tái Bản 2023)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Japan Foundation",
     "price": "160.000",
     "sale": "112.000",
-    "amout": "",
-    "publisher": "",
+    "amout": 8594,
+    "publisher": "Đại Học Quốc Gia Thành Phố Hồ Chí Minh",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086858103.jpg"
     ],
-    "description": [],
+    "description": [
+      "Marugoto - Ngôn Ngữ Và Văn Hóa Nhật Bản - Nhập Môn - A1 - Hoạt Động Giao Tiếp",
+      "MARUGOTO - Ngôn ngữ và văn hóa Nhật Bản - Hoạt Động Giao Tiếp - Nhập Môn A1",
+      "Marugoto có nghĩa là Trọn vẹn, chứa đựng thông điệp về sự hài hòa giữ ngôn ngữ và văn hóa.",
+      "Giáo trình giới thiệu những tình huống giao tiếp thực tế, giúp người học trải nghiệm nhiều khía cạnh đa dạng của văn hóa Nhật Bản và đặc trưng trong đời sống của người Nhật một cách trọn vẹn.",
+      "Được chia làm 2 quyển: Katsudoo ( Hoạt động giao tiếp) và Rikai ( Hiểu biết ngôn ngữ).",
+      "Katsudoo - Hoạt động giao tiếp - giáo trình cấp độ nhập môn A1 - Lấy việc thực hành từ những tình huống thực tế làm trọng tâm. Dựa trên cơ sở này, có thể lựa chọn phương pháp sử dụng giáo trình tùy theo nhu cầu và cách học của mình."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "04-28-2023",
+    "discount": "30%",
     "field": "Tiếng Nhật"
   },
   {
     "name": "Bài Tập Ngữ Pháp Tiếng Nhật Hiện Đại - Sơ Cấp (Tái Bản)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Megumi",
     "price": "95.000",
     "sale": "85.500",
-    "amout": "",
-    "publisher": "",
+    "amout": 5580,
+    "publisher": "Đại Học Quốc Gia Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_184795.jpg"
     ],
-    "description": [],
+    "description": [
+      "Sau khi đã học cuốn giáo trình “Ngữ pháp tiếng Nhật hiện đại – Trình độ sơ cấp” chắc hẳn các bạn đang rất cần một người bạn đồng hành với mình để ứng dụng được những kiến thức đã học vào thực tế cũng như ấn tượng sâu hơn về nó. Hiểu được rằng “học phải đi đôi với hành” và chính vì vậy, để giúp các bạn có thể củng cố và luyện tập tốt hơn các phần ngữ pháp đã học ở cuốn giáo trình “Ngữ pháp tiếng Nhật hiện đại – Trình độ sơ cấp” ban biên tập chúng tôi đã dày công biên soạn cuốn sách “Bài tập ngữ pháp tiếng Nhật hiện đại – Trình độ sơ cấp”.",
+      "Cuốn sách được thiết kế bao gồm 27 bài học lớn tương ứng với các bài học ở giáo trình “Ngữ pháp tiếng Nhật hiện đại- Trình độ sơ cấp”. Ở mỗi bài chúng tôi cố gắng đưa ra nhiều dạng bài tập khác nhau để các bạn dần ghi nhớ các cấu trúc, cách nói trong tiếng Nhật để từ đó dần ứng dụng được tiếng Nhật một cách bài bản vào cuộc sống.",
+      "Với thiết kế bố cục đẹp mắt, các câu sử dụng trong bài đều đã được chắt lọc, đều là những câu văn mang tính phổ thông thường dùng trong cuộc sống hàng ngày, cuối cuốn sách có phần phụ lục đáp án để bạn đọc có thể tham khảo, chúng tôi hy vọng cuốn sách sẽ là một người bạn đồng hành tin cậy với bạn đọc trên bước đường chinh phục tiếng Nhật."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "04-22-2019",
+    "discount": "10%",
     "field": "Tiếng Nhật"
   },
   {
-    "Position": "18",
     "name": "Tiếng Nhật Cho Mọi Người Sơ Cấp 1 - 25 Bài Luyện Nghe",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Makino Akiko, Tanaka Yone, Kitagawa Itsuko",
     "price": "75.000",
     "sale": "67.500",
-    "amout": "",
-    "publisher": "",
+    "amout": 7493,
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_236763.jpg"
     ],
-    "description": [],
+    "description": [
+      "Sách nằm trong bộ Minna no Nihongo - Tiếng Nhật dành cho mọi người - Bản mới. Là sách bổ trợ giúp người học nâng cao kỹ năng nghe thông qua các bài tập nghe, bao gồm các đoạn hội thoại, phỏng vấn hay bản tin..."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "01-20-2020",
+    "discount": "10%",
     "field": "Tiếng Nhật"
   },
   {
     "name": "Bộ Thẻ Học Tiếng Nhật Hiệu Quả Kanji",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Emiko Konomi, Alexander DC Kask",
     "price": "128.000",
     "sale": "89.600",
-    "amout": "",
-    "publisher": "",
+    "amout": 7385,
+    "publisher": "Đại Học Quốc Gia TP.HCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935086836378_1_1.jpg"
     ],
-    "description": [],
+    "description": [
+      "Bộ Thẻ Học Tiếng Nhật Hiệu Quả Kanji Mọi điểm bạn cần học về những chữ căn bản trong tiếng Nhật đều có trong chiếc hộp này: - 200 thẻ học từ có bấm sẵn lỗ, mỗi thẻ giới thiệu một Kanji phổ thông - Đĩa CD ghi lại giọng phát âm của người Nhật bản xứ, với 1200 từ và cụm từ tiếng Nhật - Một sách hướng dẫn có một số mẹo luyện tiếng Nhật - Các hình ảnh gợi nhắc các nét trong Kanji, giúp người học nhớ cả mặt chữ và phần nghĩa - Công cụ ôn bài lý tưởng cho người học thi JPLT, cấp độ căn bản hay các kì thi tiếng Nhật cấp độ tương đương"
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "09-30-2015",
+    "discount": "30%",
     "field": "Tiếng Nhật"
   },
   {
-    "Position": "22",
     "name": "N5 - 1000 Từ Vựng Cần Thiết Cho Kỳ Thi Năng Lực Nhật Ngữ",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Arc Academy",
     "price": "72.000",
     "sale": "64.800",
-    "amout": "",
-    "publisher": "",
+    "amout": 4950,
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_26611.jpg"
     ],
-    "description": [],
+    "description": [
+      "Bộ sách học từ vựng cấp độ N5 ~ N1 dành cho Kỳ thi Năng lực Nhật ngữ. Bộ sách gồm 5 cuốn: N1, N2, N3, N4, N5, tập hợp các từ vựng xuất hiện thường xuyên trong các kỳ thi Năng lực Nhật ngữ. Các từ vựng này được chia theo từng chủ đề, đi kèm các câu ví dụ. Đặc biệt bộ sách có kèm theo bản dịch Anh - Trung - Việt, rất tiện cho các bạn tự học ở nhà."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "12-03-2020",
+    "discount": "10%",
     "field": "Tiếng Nhật"
   },
   {
     "name": "Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Tiếng Nhật (Bản Mới) (Tái Bản 2023)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Minna no Nihongo",
     "price": "175.000",
     "sale": "157.500",
-    "amout": "",
-    "publisher": "",
+    "amout": 4850,
+    "publisher": "Trẻ",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_31532023_025343.jpg"
     ],
-    "description": [],
+    "description": [
+      "Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Tiếng Nhật (Bản Mới)",
+      "Giáo trình chính Tiếng Nhật cho mọi người bao gồm Giáo trình Sơ cấp I và Sơ cấp II Bản tiếng Nhật - 2 quyển và Bản dịch và Giải thích ngữ pháp Sơ cấp I và Sơ cấp II tương ứng. Sách có 50 bài học, mỗi bài bao gồm các phần Mẫu câu, Ví dụ, Hội thoại, Luyện tập, bao quát hầu như kiến thức cơ bản về tiếng Nhật để học tập và làm việc trong môi trường sử dụng tiếng Nhật. Tiếng Nhật cho mọi người được đánh giá là một trong những bộ giáo trình tiếng Nhật cơ bản tốt nhất hiện nay và được nhiều trường đại học, trường Nhật ngữ sử dụng."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "10-01-2023",
+    "discount": "10%",
     "field": "Tiếng Nhật"
   },
   {
     "name": "Cẩm Nang Giao Tiếp Khám Phá Nhật Bản - Coming To Japan",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Kim Kiều",
     "price": "98.000",
     "sale": "68.600",
-    "amout": "",
-    "publisher": "",
+    "amout": 5930,
+    "publisher": "Đại Học Quốc Gia TP.HCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_7602.jpg"
     ],
-    "description": [],
+    "description": [
+      "Nhật Bản luôn được biết đến là một đất nước có nền văn hóa lâu đời, kết hợp hài hòa nét hiện đại và truyền thống tạo nên nét đặc trưng riêng biệt, độc đáo. Những nét văn hóa mang đậm bản sắc thể hiện trong chính cuộc sống thường ngày như văn hóa trà đạo, ẩm thực, Kimono, ngay cả chữ viết của người Nhật cũng biểu đạt phần nào nét văn hóa đó. Vì thế học tiếng Nhật là con đường giúp bạn khám phá và đến gần hơn với văn hóa, con người của đất nước này. Những câu nói thông dụng bằng tiếng Nhật trong cuốn Cẩm nang giao tiếp khám phá Nhật Bản sẽ giúp ích cho bạn rất nhiều trong chuyến du lịch đến xứ sở hoa anh đào. Ngoài ra đây cũng là một cuốn cẩm nang rất hữu ích cho những bạn muốn học giao tiếp tiếng Nhật một cách nhanh chóng và hiệu quả."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "08-12-2019",
+    "discount": "30%",
     "field": "Tiếng Nhật"
   },
   {
     "name": "Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam - Sơ Cấp 1 - Sách Bài Tập (Tái Bản 2023)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Nhiều Tác Giả",
     "price": "89.000",
     "sale": "69.420",
-    "amout": "",
-    "publisher": "",
+    "amout": 8580,
+    "publisher": "Đại học Quốc Gia Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/s/a/sach-tieng-han-tong-hop-danh-cho-nguoi-viet-nam-sach-bai-tap-so-cap-1.jpg"
     ],
-    "description": [],
+    "description": [
+      "Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam - Sơ Cấp 1 - Sách Bài Tập",
+      "Nếu bạn đã có trong tay cuốn Giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam – sơ cấp 1 thì ngay lập tức phải sở hữu thêm cuốn sách bài tập này.",
+      "Sách bài tập tiếng Hàn tổng hợp sơ cấp 1 được biên tập với mục đích nhằm hỗ trợ cho việc ôn tập và luyện tập nâng cao của những người học quyển Giáo trình tiếng Hàn tổng hợp sơ cấp 1."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "07-20-2023",
+    "discount": "22%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam - Sơ Cấp 1 (Tái Bản 2023)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Nhiều Tác Giả",
     "price": "165.000",
     "sale": "128.700",
-    "amout": "",
-    "publisher": "",
+    "amout": 8590,
+    "publisher": "Đại học Quốc Gia Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_16477_1.jpg"
     ],
-    "description": [],
+    "description": [
+      "Giới thiệu cuốn Giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam – Sơ cấp 1",
+      "Giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam – Sơ cấp 1 được biên soạn dành cho người  Việt Nam muốn học tiếng Hàn ở trình độ sơ cấp. Sách được biên soạn nhằm hướng tới việc sử dụng được trong các tiết học tiếng Hàn tại giảng đường đại học nên mỗi bài học được chia thành nhiều phần như: Lý thuyết cơ bản gồm từ vựng và cấu trúc ngữ pháp; phần luyện tập theo 4 kỹ năng giao tiếp như: Nghe – Nói – Đọc – Viết, phần luyện phát âm, phần tìm hiểu văn hóa…",
+      "Các chủ đề trong sách được sắp xếp một cách có hệ thống và liên quan chặt chẽ với nhau. Giáo trình tiếng Hàn tổng hợp được biên soạn kèm theo một cuốn sách bài tập hỗ trợ giúp người học ôn tập kỹ hơn và có thể luyện tập nâng cao trong những trường hợp cần thiết."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "05-27-2023",
+    "discount": "22%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam - Trung Cấp 4 (Sách Bài Tập)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Nhiều Tác Giả",
     "price": "95.000",
     "sale": "74.100",
-    "amout": "",
-    "publisher": "",
+    "amout": 6850,
+    "publisher": "Đại Học Quốc Gia HN",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_48204.jpg"
     ],
-    "description": [],
+    "description": [
+      "Sách bài tập Tiếng Hàn tổng hợp trung cấp 4 – Luyện càng nhiều nhớ càng lâu",
+      "Hiện nay đa số người học đều gặp phải khó khăn trong việc hiểu và ghi nhớ kiến thức. Đặc biệt là khi kiến thức được nâng cao hơn thì khó khăn này cũng tăng lên. Nhiều người thường lúng túng khi gặp phải các tình huống ứng dụng thực tế hay gặp khó khăn khi làm các bài kiểm tra năng lực tiếng Hàn. Từ đó dẫn đến sự chán nản, thành tích tiếng Hàn tụt giảm và sinh ra tâm lý chán nản, muốn từ bỏ việc học tiếng Hàn",
+      "Chính vì vậy cần có một cuốn sách bài tập bổ trợ cho sách giáo trình giúp người học được ôn tập, luyện tập, giải quyết vấn đề về ghi nhớ và ứng dụng kiến thức. Và người học cần sử dụng sách bài tập tiếng Hàn tổng hợp trung cấp 4 để ôn tập luyện tập kiến thức đã học từ giáo trình.",
+      "Sau khi sử dụng sách bài tập người học có thể ghi nhớ sâu hơn từ mới, ngữ pháp đã học, làm quen với các tình huống sử dụng kiến thức thông qua các bài tập ứng dụng cụ thể ở mỗi bài. Đồng thời người học cũng có thể rèn luyện, nâng cao kỹ năng nghe – nói – đọc – viết của bản thân."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "12-09-2020",
+    "discount": "22%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "Giáo Trình Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam - Trung Cấp 4 - Bản Màu (Phiên Bản Mới)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Nhiều Tác Giả",
     "price": "295.000",
     "sale": "230.100",
-    "amout": "",
-    "publisher": "",
+    "amout": 9490,
+    "publisher": "Đại Học Quốc Gia Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_50153.jpg"
     ],
-    "description": [],
+    "description": [
+      "Giới thiệu cuốn giáo trình tiếng Hàn tổng hợp trung cấp 4 (phiên bản mới)",
+      "Giáo trình tiếng Hàn tổng hợp Trung cấp 4 thuộc bộ giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam phiên bản mới – màu xanh dương. Bộ giáo trình gồm 6 cuốn và được chia làm 3 cấp độ từ cơ bản đến nâng cao là sơ cấp – trung cấp – cao cấp. Giáo trình tiếng Hàn tổng hợp trình độ trung cấp gồm 2 cuốn: 3 và 4. Sau khi hoàn thành các bài học ở cuốn Trung cấp 3, người học sẽ tiếp tục nâng cao trình độ của mình với cuốn Trung cấp 4.",
+      "Sách được biên soạn hướng đến đối tượng học sinh, sinh viên và phục vụ quá trình giảng dạy trong các trường trung học, đại học, các trung tâm tiếng Hàn. Do vậy, bố cục các phần rất rõ ràng, khoa học và thuận tiện cho người dạy và học với đầy đủ kiến thức về 4 kỹ năng nghe – nói – đọc – viết. Bên cạnh đó người học có thể hiểu thêm về văn hóa của Hàn Quốc sau mỗi bài học. ",
+      "Tiếng hàn trung cấp 4 (bản mới) có hai bản màu và đen trắng phù hợp với nhu cầu người học. Giáo trình biên soạn kèm sách bài tập nhằm hỗ trợ người học trong quá trình ôn luyện kiến thức từ giáo trình, ghi nhớ ngữ pháp, từ vựng và biết ứng dụng những nội dung mình đã học. Đồng thời APP MCBooks là công cụ hữu ích giúp người học có thể học mọi lúc mọi nơi. "
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "02-20-2020",
+    "discount": "22%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "Giáo Trình Luyện Dịch Trung Cao Cấp Tiếng Hàn Quốc",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Trường Hàn Ngữ Việt Hàn Kanata",
     "price": "75.000",
     "sale": "67.500",
-    "amout": "",
-    "publisher": "",
+    "amout": 5830,
+    "publisher": "Tổng Hợp TPHCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_14880.jpg"
     ],
-    "description": [],
+    "description": [
+      "Cuốn sách tập hợp các bài phát biểu, kịch bản, các loại hợp đồng, mẫu công văn, thư hồi đáp, bản tin tiếng Hàn, điều lệ công ty Hàn quốc, nội qui công ty từ nhiều nguồn khác nhau v.v...",
+      "Sách được trình bày từ phiên dịch (dịch nói) đến biên dịch (dịch viết), từ những bài đơn giản đến những bài phức tạp đại đa số là tiếng Hàn cùng với các từ chuyên môn, nhưng cũng có cả những bài mẫu tiếng Việt để luyện dịch sang tiếng Hàn để giúp các bạn làm công tác biên phiên dịch có thể dịch một cách nhuần nguyễn và giống người bản xứ hơn."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "06-17-2019",
+    "discount": "10%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "Bài Tập Ngữ Pháp Tiếng Hàn (Trình Độ Căn Bản)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "MA Nguyễn Hoàng Thảo Ly",
     "price": "62.000",
     "sale": "45.260",
-    "amout": "",
-    "publisher": "",
+    "amout": 4738,
+    "publisher": "Hồng Đức",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_113835.jpg"
     ],
-    "description": [],
+    "description": [
+      "Bài Tập Ngữ Pháp Tiếng Hàn (Trình Độ Căn Bản)",
+      "Thời gian gần đây, việc dạy và học tiếng Hàn đã trở nên phổ biến không những ở các nước trên thế giới như Mỹ, Anh, Pháp mà cả ở Việt Nam chúng ta. Số lượng người theo học tiếng Hàn đã tăng nhanh một cách đáng kể. Tuy nhiên, số sách dạy tiếng Hàn dành cho những người theo học tại các cơ sở đào tạo hay tự học tại nhà vẫn còn hạn chế.",
+      "Xuất phát từ nhu cầu đó, đội ngũ biên soạn đã cố gắng tìm tòi và nghiên cứu để có thể mang đến cho bạn đọc một bộ sách học và luyện tập tiếng Hàn một cách chỉn chu nhất. Bộ sách gồm hai quyển: Bài tập ngữ pháp tiếng Hàn - Trình độ căn bản và Bài tập ngữ pháp tiếng Hàn - Trình độ nâng cao, tập trung giải thích các điểm ngữ pháp tiếng Hàn ở cả hai trình độ căn bản và nâng cao cùng những bài tập liên quan để người học có cơ hội luyện tập và củng cố kiến thức của mình về ngữ pháp.",
+      "Quyển Bài Tập Ngữ Pháp Tiếng Hàn (Trình Độ Căn Bản) này gôm có 25 bài, hướng dẫn một cách có trình tự và lôgíc các điểm ngữ pháp tiếng Hàn theo từng loại cụ thể như danh từ, đại từ, tiểu từ, số từ, động từ, tính từ,... Các bài tập ở cuối mỗi bài được bố cục chủ yếu để người học tự luyện tập và nắm vững các điểm ngữ pháp.",
+      "Tất cả các từ, cụm từ và câu tiếng Hàn được trình bày theo bảng chữ cái tiếng Hàn Hangul kèm theo phần chuyển dịch nghĩa tương đương để bạn đọc dễ hiểu. Hơn nữa, các bài tập có đáp án kèm theo ở phần phụ lục sẽ rất tiện lợi cho người học trong việc kiểm tra và củng cố kiến thức của mình.",
+      "Cuốn sách sẽ là một tài liệu học tập và thực hành bổ ích cho bạn đọc trong việc dạy và học tiếng Hàn."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "02-25-2016",
+    "discount": "27%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam - Cao Cấp 5 - Bản Màu",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Cho Hang Rok",
     "price": "295.000",
     "sale": "230.100",
-    "amout": "",
-    "publisher": "",
+    "amout": 8930,
+    "publisher": "Đại Học Quốc Gia Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_196488.jpg"
     ],
-    "description": [],
+    "description": [
+      "Giáo trình tiếng Hàn tổng hợp cao cấp 5 thuộc bộ giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam phiên bản mới – màu xanh dương. Bộ giáo trình gồm 6 cuốn và được chia làm 3 cấp độ từ cơ bản đến nâng cao là sơ cấp – trung cấp – cao cấp. Giáo trình tiếng Hàn tổng hợp trình độ cao cấp gồm 2 cuốn: 5 và 6. Sau khi hoàn thành các bài học ở cuốn Trung cấp 4, người học sẽ tiếp tục nâng cao trình độ của mình với cuốn Cao cấp 5.",
+      "Sách được biên soạn hướng đến đối tượng học sinh, sinh viên và phục vụ quá trình giảng dạy trong các trường trung học, đại học, các trung tâm tiếng Hàn. Do vậy, bố cục các phần rất rõ ràng, khoa học và thuận tiện cho người dạy và học với đầy đủ kiến thức về 4 kỹ năng nghe – nói – đọc – viết. Bên cạnh đó người học có thể hiểu thêm về văn hóa của Hàn Quốc sau mỗi bài học.",
+      "Tiếng hàn cao cấp 5 (bản mới) cũng giống như những cuốn giáo trình trong bộ, đều có hai bản màu và đen trắng phù hợp với nhu cầu người học. Giáo trình biên soạn kèm sách bài tập nhằm hỗ trợ người học trong quá trình ôn luyện kiến thức từ giáo trình, ghi nhớ ngữ pháp, từ vựng và biết ứng dụng những nội dung mình đã học."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "05-02-2022",
+    "discount": "22%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "1200 Câu Luyện Dịch Tiếng Hàn Quốc",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Lê Huy Khoa",
     "price": "65.000",
     "sale": "58.500",
-    "amout": "",
-    "publisher": "",
+    "amout": 7390,
+    "publisher": "Tổng Hợp TPHCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/9/7/9786045856994.jpg"
     ],
-    "description": [],
+    "description": [
+      "Cuốn sách 1200 CÂU LUYỆN DỊCH TIẾNG HÀN QUỐC cùa ThS Lê Huy Khoa xuất bản nhằm đáp ứng nhu cầu luyện dịch của những bạn đọc sử dụng tiếng Hàn."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "09-13-2017",
+    "discount": "10%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "Tự Học Tiếng Hàn Dành Cho Người Mới Bắt Đầu (Tái Bản 2023)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "The Changmi",
     "price": "98.000",
     "sale": "76.440",
-    "amout": "",
-    "publisher": "",
+    "amout": 7280,
+    "publisher": "Hồng Đức",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_184745_1.jpg"
     ],
-    "description": [],
+    "description": [
+      "Sách được xây dựng từ cơ bản dành cho những người chưa từng học qua tiếng Hàn đều có thể học được. Cuốn sách được chia thành 2 phần tối ưu cho người tự học:",
+      "Phần 1 - Hướng dẫn phát âm tiếng Hàn Nguyên âm, phụ âm, phụ âm cuối, quy tắc viết chữ, quy tắc phát âm. Đây là những bài học cơ bản nhất và được trình bày rất rõ ràng, dễ hiểu.",
+      "Phần 2 - Luyện nghe nói Hướng dẫn từng mẫu câu và từ vựng cơ bản cho các chủ đề gần gũi trong cuộc sống như chào hỏi, phương hướng, giá cả, thời gian, ngày tháng, thời tiết, nhà hàng, mua sắm...",
+      "Phiên âm",
+      "Với phần phiên âm, sách đưa ra cả âm chuẩn lẫn âm bồi tiếng Việt để người tự học dễ dàng tiếp thu và thực hành theo.",
+      "Cuốn sách không áp đặt cách học vẹt khi luôn đưa ra đầy đủ lý do cho ngữ pháp hay cách phát âm, ví dụ như cùng một âm tiết nhưng cách phát âm sẽ khác nhau do có phụ âm cuối khác nhau.",
+      "Cuốn sách còn có sự hỗ trợ đắc lực từ đĩa CD do các giáo viên Hàn Quốc thể hiện, giúp bạn học cách phiên âm, giọng điệu đúng chuẩn."
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "04-12-2023",
+    "discount": "22%",
     "field": "Tiếng Hàn"
   },
   {
     "name": "Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam - Sách Bài Tập - Sơ Cấp 2 (Tái Bản 2023)",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Cho Hang Rok, Lee Mi Hye, Lê Đăng Hoan, Lê Thị Thu Giang, Đỗ Ngọc Luyến, Lương Nguyễn Thanh Trang",
     "price": "89.000",
     "sale": "69.420",
-    "amout": "",
-    "publisher": "",
+    "amout": 6370,
+    "publisher": "Đại Học Quốc Gia Hà Nội",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935246937921.jpg"
     ],
-    "description": [],
+    "description": [
+      "Tiếng Hàn Tổng hợp dành cho người Việt Nam – Sách bài tập sơ cấp 2",
+      "Nếu bạn đã có trong tay cuốn Giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam – sơ cấp 2 thì ngay lập tức phải sở hữu thêm cuốn sách bài tập này.",
+      "Sách bài tập tiếng Hàn tổng hợp sơ cấp 2 được biên tập với mục đích nhằm hỗ trợ cho việc ôn tập và luyện tập nâng cao của những người học quyển Giáo trình tiếng Hàn tổng hợp sơ cấp 2.",
+      "Sách bài tập sơ cấp 2 – bổ trợ cho Giáo trình tiếng Hàn tổng hợp được chia thành 3 phần chính sau đây:",
+      "Phần 1: Luyện tập từ vựng. Phần này giúp cho người học ôn tập và luyện tập nâng cao trên cơ sở các từ vựng phù hợp với nội dung và chủ đề được học trong giáo trình chính.",
+      "Phần 2: Phần luyện tập ngữ pháp giúp luyện tập các cấu trúc ngữ pháp cơ bản đã học trong giáo trình chính. Ngoài ra, bằng việc so sánh những cấu trúc ngữ pháp đã học trong giáo trình chính giúp người học có thể học ngữ pháp một cách có hệ thống.",
+      "Phần 3: Phần ôn luyện tổng hợp các kỹ năng giao tiếp như: Nghe – Nói – Đọc – Viết. Đặc biệt trong phần này còn có những bài luyện đa dạng nhằm nâng cao năng lực hoạt động thực tế cho người học.",
+      "Thông qua từng phần trong cuốn sách bài tập, người học sẽ được mở rộng phạm vi học tập từ vựng, ngữ pháp; có thể hiểu và thực hiện được những hội thoại thích hợp.",
+      "Giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam – Sách bài tập sơ cấp 2",
+      "Giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam – Sơ cấp 2 được biên soạn dành cho người  Việt Nam muốn học tiếng Hàn ở trình độ sơ cấp. Sách được biên soạn nhằm hướng tới việc sử dụng được trong các tiết học tiếng Hàn tại giảng đường đại học nên mỗi bài học được chia thành nhiều phần như: Lý thuyết cơ bản gồm từ vựng và cấu trúc ngữ pháp; phần luyện tập theo 4 kỹ năng giao tiếp như: Nghe – Nói – Đọc – Viết, phần luyện phát âm, phần tìm hiểu văn hóa…"
+    ],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "01-11-2016",
+    "discount": "22%",
     "field": "Tiếng Hàn"
   },
   {
@@ -7464,69 +7559,69 @@
   {
     "name": "450 Nouveaux Exercices - Grammaire Niveau Intermediare",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "E1Velyne Siréjols, Dominique Renaud",
     "price": "68.000",
     "sale": "51.680",
-    "amout": "",
-    "publisher": "",
+    "amout": 4630,
+    "publisher": "Tổng Hợp TPHCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_21141.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "07-15-2014",
+    "discount": "24%",
     "field": "Tiếng Pháp"
   },
   {
     "name": "450 Nouveaux Exercices - Conjugaison Niveau Intermediare",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Odile Grand, Clément",
     "price": "58.000",
     "sale": "44.080",
-    "amout": "",
-    "publisher": "",
+    "amout": 3720,
+    "publisher": "Tổng Hợp TPHCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_21142.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "09-12-2011",
+    "discount": "24%",
     "field": "Tiếng Pháp"
   },
   {
     "name": "450 Nouveaux Exercices - Revisions Niveau Debutant",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Anne Marie Johnson, Flore Cuny",
     "price": "83.000",
     "sale": "63.080",
-    "amout": "",
-    "publisher": "",
+    "amout": 4230,
+    "publisher": "Tổng Hợp TPHCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/9/9/9900000557485.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "11-10-2012",
+    "discount": "24%",
     "field": "Tiếng Pháp"
   },
   {
     "name": "450 Nouveaux Exercices - Vocabulaire Niveau débutant",
     "type": "Sách học ngoại ngữ",
-    "author": "",
+    "author": "Thierry Gallier",
     "price": "56.000",
     "sale": "42.560",
-    "amout": "",
-    "publisher": "",
+    "amout": 5350,
+    "publisher": "Tổng Hợp TPHCM",
     "images": [
       "https://cdn0.fahasa.com/media/catalog/product/v/o/vocabulaire-450-noveaux-exercices-niveau-debutant.jpg"
     ],
     "description": [],
     "status": "",
-    "dateIn": "",
-    "discount": "",
+    "dateIn": "03-06-2011",
+    "discount": "24%",
     "field": "Tiếng Pháp"
   },
   {
