@@ -1,7 +1,7 @@
 import React from "react";
-import "./contact-page.scss";
-import Logo from "../../assets/img/logo-black.png";
-import Button from "../../components/common/button/button";
+import "./contact-page.css";
+import Logo from "../../assets/logo-black.png";
+import Button from "../../common/button/button";
 import ContactProps from "./ContactProps";
 import RightContact from "./RightContact";
 import FAQ from "./FAQ";
@@ -142,7 +142,7 @@ const Contactpage = () => {
                   />
                 </div>
                 <div>
-                <FAQ
+                  <FAQ
                     title="Do you offer any samples or trial sizes?"
                     text="Discover our products firsthand with trial-sized samples
                     or miniature versions available for purchase. We
@@ -152,7 +152,7 @@ const Contactpage = () => {
                   />
                 </div>
                 <div>
-                <FAQ
+                  <FAQ
                     title="How do I return or exchange an item?"
                     text="We prioritize your satisfaction with our hassle-free
                     return or exchange process. Visit our Returns page, where
@@ -162,7 +162,7 @@ const Contactpage = () => {
                   />
                 </div>
                 <div>
-                <FAQ
+                  <FAQ
                     title=" What are your shipping rates and policies?"
                     text="We provide detailed insights into our shipping procedures,
                     rates, and policies. Our Shipping Policy page houses
@@ -172,7 +172,7 @@ const Contactpage = () => {
                   />
                 </div>
                 <div>
-                <FAQ
+                  <FAQ
                     title=" Which product is right for my skin type?"
                     text="Choosing the perfect skincare product tailored to your
                     skin type is vital. Explore our product range, each

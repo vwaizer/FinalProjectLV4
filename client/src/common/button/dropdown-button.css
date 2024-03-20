@@ -1,0 +1,24 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.dropdown-btn {
+    position: relative;
+}
+
+.collection-dropdown {  
+    position: absolute;
+    z-index: 1;
+    top: 120%; 
+    left: 0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.user-setting-dropdown {
+    position: absolute;
+    z-index: 1;
+    top: 160%; 
+    right: 0;
+    animation: fadeIn 0.5s ease-in-out;
+}

@@ -8,4 +8,4 @@ import Value4 from "../../assets/img/about-us/value-4.png";
 import Value5 from "../../assets/img/about-us/value-5.png";
 import Value6 from "../../assets/img/about-us/value-6.png";
 
-export {UsImage, SkincareImage, MakeupImage, Value1, Value2, Value3, Value4, Value5, Value6}
+export { UsImage, SkincareImage, MakeupImage, Value1, Value2, Value3, Value4, Value5, Value6 }
