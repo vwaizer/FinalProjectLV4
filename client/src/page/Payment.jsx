@@ -9,7 +9,6 @@ function Payment() {
     "Họ và tên người nhận",
     "Email",
     "Số điện thoại",
-    "Quốc gia",
     "Tỉnh/Thành phố",
     "Quận/Huyện",
     "Phường/Xã",

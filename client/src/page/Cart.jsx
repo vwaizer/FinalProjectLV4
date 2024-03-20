@@ -116,14 +116,14 @@ function Cart() {
           <h1>GIỎ HÀNG ({books.length} sản phẩm)</h1>
           <div className="checked-all-products">
             <div style={{ flex: "2", display: "flex" }}>
-              <label>
+              
                 <input
                   type="checkbox"
                   checked={selectAllChecked}
                   onChange={handleSelectAllChange}
                 />
-                <span>Chọn tất cả ({books.length} sản phẩm)</span>
-              </label>
+                <span style={{marginTop:'-4px', marginLeft:'5px'}}>Chọn tất cả ({books.length} sản phẩm)</span>
+              
             </div>
             <div style={{ flex: ".5" }}>Số lượng</div>
             <div style={{ flex: ".55", textAlign: "center" }}>Thành tiền</div>
