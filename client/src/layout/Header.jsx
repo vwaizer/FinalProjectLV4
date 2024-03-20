@@ -15,7 +15,7 @@ let navbar = [
   },
   {
     title: "Cart",
-    href: "/cart/:ID",
+    href: "/cart/",
   },
   {
     title: "Payment",

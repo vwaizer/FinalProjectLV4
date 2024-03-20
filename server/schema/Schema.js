@@ -6,7 +6,8 @@ export class User {
       (this.password = user.password|| ""),
       (this.birthday = user.birthday?new Date(user.birthday):"" ),
       (this.phone = user.phone|| ""),
-      (this.role=user.role || "user")
+      (this.role=user.role || "user"),
+      (this.avatar=""|| user.avatar)
   }
 }
 export class Books {

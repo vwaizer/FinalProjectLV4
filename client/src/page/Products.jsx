@@ -8,6 +8,7 @@ import { http } from "../util/http.js";
 import "./page.css";
 
 function Products() {
+
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
   const [getAuthor, setGetAuthor] = useState([]);
@@ -27,7 +28,15 @@ function Products() {
     http
       .get(`/book/?page=${currentPage}`)
       .then((getBook) => setGetBook(getBook.data), setLoading(false))
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        if(err.code==="ERR_NETWORK")
+        {
+          window.location.href="/sign-in";
+          
+          
+        }
+      });
   }, [currentPage]);
 
   console.log(getBook)
@@ -36,7 +45,12 @@ function Products() {
     http
       .get("/book/types")
       .then((getTypeBook) => setGetTypeBook(getTypeBook.data))
-      .catch((err) => console.log(err));
+      .catch((err) => {if(err.code==="ERR_NETWORK")
+      {
+        window.location.href="/sign-in";
+        
+        
+      }});
   }, []);
 
   const Loading = () => {

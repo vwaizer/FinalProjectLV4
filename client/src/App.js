@@ -1,21 +1,21 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
-  AdminPage,
-  Bill,
-  BookRentalManagement,
-  ImportAndBrowse,
-  Overview,
-  StaffAndUser,
-  Statistics,
+        AdminPage,
+        Bill,
+        BookRentalManagement,
+        ImportAndBrowse,
+        Overview,
+        StaffAndUser,
+        Statistics,
 } from "./admin/index.js";
 import Admin from "./auth/Admin.jsx";
 import SignIn from "./auth/SignIn.jsx";
 import SignUp from "./auth/SignUp.jsx";
 import { AuthProvider } from "./context/AuthProvide.js";
+import AboutUsPage from "./page/About Us/about-us-page.jsx";
 import RentForm from "./page/RentForm.jsx";
 import Contact from "./page/contact/contact-page.jsx";
-import AboutUsPage from "./page/About Us/about-us-page.jsx";
 import { Cart, Detail, Home, Payment, Products } from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
 function App() {
@@ -26,7 +26,7 @@ function App() {
         <Route path="/sign-in" element={<SignIn />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/product" element={<Products />}></Route>
-        <Route path="/cart/:ID" element={<Cart />}></Route>
+        <Route path="/cart/" element={<Cart />}></Route>
         <Route path="/product-detail/:ID" element={<Detail />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
         <Route path="/contact" element={<Contact />}></Route>

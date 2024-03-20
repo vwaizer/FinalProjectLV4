@@ -8,6 +8,7 @@ import AuthContext from "../context/AuthProvide";
 import Layout from "../layout/Layout";
 import "./auth.css";
 import { IoMdArrowForward } from "react-icons/io";
+import { http } from "../util/http";
 const LOGIN_URL = "/auth";
 
 const SignIn = () => {
@@ -38,8 +39,8 @@ const SignIn = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post(
-        "http://localhost:4000/login",
+      const result = await http.post(
+        "/login",
         { email: user, password: pwd }
       );
       setAuth({ user, pwd });
