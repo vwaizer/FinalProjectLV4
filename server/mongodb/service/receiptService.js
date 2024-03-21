@@ -1,6 +1,6 @@
 import { Receipt } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js"
-import {ObjectId} from "mongodb";
+import {ObjectId, UUID} from "mongodb";
 export const getAllReceipt=async(req,res,next)=>{
     try {
         const result=await databaseProject.receipt.find().toArray()
@@ -44,8 +44,19 @@ export const addToCart=async(req,res,next)=>{
     const bookData=await databaseProject.book.findOne({_id:new ObjectId(bookID)})
     console.log(req.userID.valueOf());
     const userCart=await databaseProject.receipt.findOne({userID:(req.userID),status:"In Cart"})
+    if(bookData.amount<amount) {return next("Amount Error")}
+    if(bookData.amount >= amount){
+        bookData.amount-=amount
+        try {
+            const result=await databaseProject.updateOne({_id:bookData._id},bookData)
+            return res.json(result)
+        } catch (error) {
+            return next(error)
+        }
+    }
     console.log("userCart",userCart);
     if(userCart==null){
+
         const receipt=new Receipt({userID:req.userID,date:new Date(),status:"In Cart",cart:[{amount:amount,discount:bookData.discount,price:bookData.price,bookID:new ObjectId(bookID)}]})
         const result=await databaseProject.receipt.insertOne(receipt)
         res.json(result)
@@ -71,3 +82,35 @@ export const addToCart=async(req,res,next)=>{
    }
 
 }
+export const getHistory=async(req,res,next)=>{
+    const userID=req.userID.valueOf()
+    try {
+        const result=await databaseProject.receipt.find({userID:new ObjectId(`${userID}`),status:"History"}).toArray()
+        return res.json(result)
+    } catch (error) {
+        next(error)
+    }
+
+   
+}
+export const setHistory=async(req,res,next)=>{
+    const userID=req.userID.valueOf()
+    const cart=req.body.cart
+    try {
+        const result=await databaseProject.receipt.insertOne({date:new Date(),cart:cart,userID:userID,status:"History"})
+        const cartUser=await databaseProject.receipt.findOne({userID:userID,status:"In Cart"})
+        if(
+            cart.length()< cartUser.cart.length()
+        ){
+            const newCart=cartUser.cart.filter((item,index)=>!cart.includes(item))
+            const updateResult=await databaseProject.receipt.updateOne({userID:userID,status:"In Cart"},{cart:newCart,status:"History"})
+            return res.json(updateResult)
+        }
+        else{
+           await databaseProject.receipt.deleteOne({userID:userID,status:"In Cart"})
+        }
+        return res.json(result)
+    } catch (error) {
+        next(error)
+    }
+}  

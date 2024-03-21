@@ -166,7 +166,43 @@ export const getAllAuthor = async (req, res) => {
   return res.json(authorList);
 };
 export const postHiredBook= async(req,res)=>{
-  const hiredBook=new HiredBook(req.body)
+  const userID=req.userID.valueOf()
+  const hiredBook=new HiredBook({...req.body,userID:userID,status:"0"})
   const result=await databaseProject.hiredBook.insertOne(hiredBook)
   return res.json(result)
+}
+export const changeStatusHiredBook=async(req,res)=>{
+  const id=req.params.id;
+
+  try {
+    const result =await databaseProject.hiredBook.updateOne({_id:new ObjectId(`${id}`)},{status:`${req.body.status}`})
+    return res.json(result)
+  } catch (error) {
+    console.log("error",error);
+  }
+}
+export const getField=async(req,res)=>{
+  const type=req.body.type;
+  const data=await databaseProject.book.find({type:type}).toArray()
+  let filedList = [];
+  for (let index = 1; index < data.length; index++) {
+    let element = data[index].field;
+    let isAdded = true;
+    for (let index1 = 0; index1 < filedList.length; index1++) {
+      let element1 = filedList[index1].author;
+
+      if (element == element1) {
+        isAdded = false;
+        break;
+      }
+    }
+    if (isAdded == true) {
+      let tmp = { field: element };
+      if (element != null) {
+        filedList.push(tmp);
+      }
+    }
+  }
+
+  return res.json(filedList);
 }

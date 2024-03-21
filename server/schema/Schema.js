@@ -6,7 +6,8 @@ export class User {
       (this.password = user.password|| ""),
       (this.birthday = user.birthday?new Date(user.birthday):"" ),
       (this.phone = user.phone|| ""),
-      (this.role=user.role || "user")
+      (this.role=user.role || "user"),
+      (this.avatar=""|| user.avatar)
   }
 }
 export class Books {
@@ -53,11 +54,11 @@ export class Receipt {
 
 export class HiredBook {
   constructor(book) {
-    (this.userCode = book.userCode),
-      (this.bookCode = book.bookCode),
+    (this.userID = book.userID),
+      (this.bookID = book.bookID),
       (this.dateIn = new Date(book.dateIn)),
       (this.dateOut = new Date(book.dateOut)),
-      (this.state = book.state);
+      (this.status = book.status);
   }
 }
 export class Cart {
