@@ -44,6 +44,7 @@ export const addToCart=async(req,res,next)=>{
     const bookData=await databaseProject.book.findOne({_id:new ObjectId(bookID)})
     console.log(req.userID.valueOf());
     const userCart=await databaseProject.receipt.findOne({userID:(req.userID),status:"In Cart"})
+    if(bookData.amount<amount) {return next("Amount Error")}
     console.log("userCart",userCart);
     if(userCart==null){
         const receipt=new Receipt({userID:req.userID,date:new Date(),status:"In Cart",cart:[{amount:amount,discount:bookData.discount,price:bookData.price,bookID:new ObjectId(bookID)}]})
