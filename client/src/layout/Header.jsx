@@ -6,30 +6,30 @@ import UserInfo from "../user-infomation/UserInfo";
 import "./layout.css";
 let navbar = [
   {
-    title: "Home",
+    title: "Trang Chủ",
     href: "/",
   },
   {
-    title: "Products",
+    title: "Nhà Sách",
     href: "/product",
   },
   {
-    title: "Cart",
+    title: "Giỏ Hàng",
     href: "/cart/:ID",
   },
   {
-    title: "Payment",
+    title: "Thanh Toán",
     href: "/payment",
   },
 ];
 
 let authors = [
   {
-    title: "Register",
+    title: "Đăng ký",
     href: "/sign-up",
   },
   {
-    title: "Login",
+    title: "Đăng nhập",
     href: "/sign-in",
   },
 ];

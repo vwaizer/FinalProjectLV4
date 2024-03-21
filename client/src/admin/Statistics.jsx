@@ -4,6 +4,7 @@ const Statistics = () => {
   return (
     <div className='statisticspage_wrap'>
       <LayoutAdmin />
+      <div>content</div>
     </div>
   )
 }

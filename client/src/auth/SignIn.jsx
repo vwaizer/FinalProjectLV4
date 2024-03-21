@@ -56,7 +56,7 @@ const SignIn = () => {
           position: "top-right",
       });
         setTimeout(() => {
-          navigate("/");
+          window.location.href = "/";
 
         },2000)
       }

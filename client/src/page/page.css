@@ -6,8 +6,9 @@
 
 .bookstore_wrap{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    
 }
 
 .leftbox{
@@ -17,8 +18,9 @@
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
-    border: 1px solid #fff;
-    box-shadow: 0px 0px 20px grey;
+    background-color: #fff;
+    box-shadow: 0 0 3px grey;
+    border-radius: 5px;
     margin-right: 20px;
     overflow: hidden
 }
@@ -108,12 +110,13 @@
 .rightbox{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     height: 100%;
-    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 20px grey
+    box-shadow: 0 0 5px grey
 }
 
 
@@ -171,7 +174,7 @@
     align-items: flex-end;
     width: 60%;
     height: fit-content;
-    box-shadow: 0 0 20px grey;
+    box-shadow: 0 0 20px rgb(227, 225, 225);
 
     margin-left: 20px;
 }

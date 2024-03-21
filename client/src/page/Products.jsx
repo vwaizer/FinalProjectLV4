@@ -91,7 +91,7 @@ function Products() {
         <div className="leftbox">
           <div className="leftbox_collection">
             <div>
-              <h2>Product Category</h2>
+              <h2>Danh Mục</h2>
               {getTypeBook.map((value, index) => {
                 return (
                   <div className="category" key={value.type}>
@@ -101,10 +101,10 @@ function Products() {
               })}
             </div>
             <div>
-              <h2>Author</h2>
+              <h2>Tác giả</h2>
               <div className="author">
                 <input className="product-input" type="text" placeholder=" " onChange={onChangeAuthor} value={value} />
-                <label htmlFor="author" className="label">Author</label> 
+                <label htmlFor="author" className="label">Tìm tên tác giả</label> 
               </div>
               <div className="drop-down">
                 {value &&
@@ -123,10 +123,10 @@ function Products() {
               </div>
             </div>
             <div>
-              <h2>Publisher</h2>
+              <h2>Nhà Xuất Bản</h2>
               <div className="publisher">
                   <input className="product-input" type="text" placeholder=" " onChange={onChangePublisher} value={valuePublisher}/>
-                  <label htmlFor="Publisher" className="label">Publisher</label> 
+                  <label htmlFor="Publisher" className="label">Tìm tên NXB</label> 
               </div>
               <div className="drop-down">
               {valuePublisher &&

@@ -101,13 +101,13 @@ function Detail() {
           })}
         </div>
         <div className="detail_button">
-          <button
+          <button onClick={() => handleAddToCartClick(product[0]._id)}
             type="submit"
           >
             ADD TO CART
           </button>
           <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">BUY NOW</button>
-          <button type="submit" onClick={()=>navigator(`/rent/${ID}`)}>FOR RENT</button>
+          <button type="submit" onClick={()=>navigate(`/rent/${ID}`)}>FOR RENT</button>
         </div>
         <div>
           <SliderDetail>
