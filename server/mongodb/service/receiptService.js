@@ -45,8 +45,18 @@ export const addToCart=async(req,res,next)=>{
     console.log(req.userID.valueOf());
     const userCart=await databaseProject.receipt.findOne({userID:(req.userID),status:"In Cart"})
     if(bookData.amount<amount) {return next("Amount Error")}
+    if(bookData.amount >= amount){
+        bookData.amount-=amount
+        try {
+            const result=await databaseProject.updateOne({_id:bookData._id},bookData)
+            return res.json(result)
+        } catch (error) {
+            return next(error)
+        }
+    }
     console.log("userCart",userCart);
     if(userCart==null){
+
         const receipt=new Receipt({userID:req.userID,date:new Date(),status:"In Cart",cart:[{amount:amount,discount:bookData.discount,price:bookData.price,bookID:new ObjectId(bookID)}]})
         const result=await databaseProject.receipt.insertOne(receipt)
         res.json(result)
