@@ -109,7 +109,7 @@ const SignIn = () => {
             >
               {errMessage}
             </p>
-            <h1>Login</h1>
+            <h1>Đăng Nhập</h1>
             <div className="input-box">
               <input
                 type="text"
@@ -137,18 +137,17 @@ const SignIn = () => {
             </div>
             <div className="remember-forgot">
               <label>
-                <input type="checkbox" />
-                Remember me
+                <input type="checkbox" />Ghi Nhớ
               </label>
-              <a href="#">Forgot your password?</a>
+              <a href="#">Quên mật khẩu?</a>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">Đăng Nhập</button>
             <div className="register-link">
               <p>
-                Don't have an account? <a href="/sign-up">Register</a>
+                Bạn chưa có tài khoản? <a href="/sign-up">Đăng ký</a>
               </p>
               <p>
-                Go to Administration <IoMdArrowForward /> <a href="/staff">Just for staff</a>
+                Quản Lý <IoMdArrowForward /> <a href="/staff">Chỉ dành cho nhân viên</a>
               </p>
             </div>
           </form>

@@ -83,7 +83,7 @@ function SignUp() {
       <div className="body">
         <div className="wrap">
           <form onSubmit={handleSubmit}>
-            <h1>Register</h1>
+            <h1>Đăng Ký</h1>
             <div className="input-box">
               <input
                 type="text"
@@ -119,13 +119,13 @@ function SignUp() {
             </div>
             <div className="remember-forgot">
               <label>
-                <input type="checkbox" />I agree to the term of use
+                <input type="checkbox" />Đồng ý với điều khoản
               </label>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Đăng Ký</button>
             <div className="login_link">
               <p>
-                You have account? <a href="/sign-in">Login</a>
+                Bạn đã có tài khoản? <a href="/sign-in">Đăng Nhập</a>
               </p>
             </div>
           </form>

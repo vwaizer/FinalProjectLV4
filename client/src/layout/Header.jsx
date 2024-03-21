@@ -22,11 +22,11 @@ let navbar = [
     href: "/payment",
   },
   {
-    title: "About Us",
+    title: "Giới Thiệu",
     href: "/about-us",
   },
   {
-    title: "Contact",
+    title: "Liên Hệ",
     href: "/contact",
   },
 ];

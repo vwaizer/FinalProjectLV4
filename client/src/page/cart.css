@@ -52,7 +52,7 @@
   gap: 0.5em;
 }
 
-input[type="checkbox"] {
+.checked-all-products input[type="checkbox"] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
