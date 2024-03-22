@@ -1,31 +1,11 @@
 import React from "react";
-import "./pagination.css";
-const Pagination = ({
-  totalPost,
-  postPerPage,
-  setCurrentPage,
-  currentPage,
-}) => {
-  let pages = [];
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
-  for (let i = 1; i <= Math.ceil(totalPost / postPerPage); i++) {
-    pages.push(i);
-  }
+export default function BasicPagination({page, onClick}) {
   return (
-    <div className="pagination">
-      {pages.map((page, index) => {
-        return (
-          <button
-            key={index}
-            onClick={() => setCurrentPage(page)}
-            className={page === currentPage ? "active" : ""}
-          >
-            {page}
-          </button>
-        );
-      })}
-    </div>
+    <Stack spacing={2}>
+      <Pagination onClick={onClick} count={page} />
+    </Stack>
   );
-};
-
-export default Pagination;
+}

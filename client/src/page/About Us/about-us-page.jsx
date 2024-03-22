@@ -14,6 +14,7 @@ import {
 } from "./imports";
 import Content from "./Content";
 import AboutStory from "./AboutStory";
+import Layout from "../../layout/Layout";
 const sliderImages = [UsImage, BookImage, AudioBookImage];
 
 const valueImages = [Value1, Value2, Value3, Value4, Value5, Value6];
@@ -22,7 +23,7 @@ const AboutUsPage = () => {
   const imageWidth = `calc(100% / ${valueImages.length} - 32px)`;
 
   return (
-    <div className="AboutUsPage-shine about-us-page">
+    <Layout><div className="AboutUsPage-shine about-us-page">
       <div className="flex-col content-container">
         <div className="hero-image">
           <img src={UsImage} alt="us" />
@@ -94,7 +95,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div></Layout>
   );
 };
 

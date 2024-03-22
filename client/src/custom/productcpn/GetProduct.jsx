@@ -12,10 +12,10 @@ const GetProduct = ({ getBook }) => {
             <SetProduct
               image={item.images}
               name={item.name}
-              type={item.type}
-              author={item.author}
-              field={item.field}
-              amount={item.amount}
+              // type={item.type}
+              // author={item.author}
+              // field={item.field}
+              // amount={item.amount}
             />
           </Link>
         </div>

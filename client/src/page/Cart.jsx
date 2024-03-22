@@ -32,8 +32,8 @@ function Cart() {
   console.log(getAddToCart);
   const [inputValue, setInputValue] = useState({});
   const [selectAllChecked, setSelectAllChecked] = useState(false);
-  const [checkboxStates, setCheckboxStates] = useState(books.map(() => false));
-  const [updateBooks, setUpdateBooks] = useState(books);
+  const [checkboxStates, setCheckboxStates] = useState(getAddToCart.map(() => false));
+  const [updateBooks, setUpdateBooks] = useState(getAddToCart);
   const handleKeyPress = (event, name) => {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -45,15 +45,15 @@ function Cart() {
       }
     }
   };
-  const handleInputChange = (event, name) => {
+  const handleInputChange = (event, bookID) => {
     const value = parseInt(event.target.value);
     if (!isNaN(value)) {
       const newInputValue = { ...inputValue };
-      newInputValue[name] = value;
+      newInputValue[bookID] = value;
       setInputValue(newInputValue);
-
+  
       const newAmount = updateBooks.map((book) => {
-        if (book.name === name) {
+        if (book.bookID === bookID) {
           return {
             ...book,
             amount: value,
@@ -64,6 +64,7 @@ function Cart() {
       setUpdateBooks(newAmount);
     }
   };
+  // console.log('updateBooks',updateBooks)
   const handleSelectAllChange = () => {
     setSelectAllChecked(!selectAllChecked);
     const newCheckboxStates = checkboxStates.map(() => !selectAllChecked);
@@ -78,22 +79,23 @@ function Cart() {
   };
   const calculateTotalPrice = () => {
     let totalPrice = 0;
-    books.forEach((item, index) => {
+    getAddToCart.forEach((item,index) => {
+      const { price,bookID,amount } = item;
       if (checkboxStates[index]) {
-        const { price } = item;
-        totalPrice += price * (inputValue[item.name] || 0);
+        totalPrice += price * (inputValue[bookID] || amount);
       }
     });
+    console.log('total',totalPrice)
     return totalPrice;
   };
   const finalTotal = () => {
     let hasCheckedProduct = false;
     let totalPrice = 0;
 
-    books.forEach((item, index) => {
+    getAddToCart.forEach((item, index) => {
       if (checkboxStates[index]) {
         hasCheckedProduct = true;
-        totalPrice = calculateTotalPrice() + 19000;
+        totalPrice = calculateTotalPrice() + 19.00;
       }
     });
     if (hasCheckedProduct) {
@@ -103,7 +105,7 @@ function Cart() {
     }
   };
   const handlePayment = () => {
-    const BoughtList = books.filter((item, index) => checkboxStates[index]);
+    const BoughtList = getAddToCart.filter((item, index) => checkboxStates[index]);
     if (BoughtList.length > 0) {
       localStorage.setItem("BoughtList", JSON.stringify(BoughtList));
       window.location.href = "/payment";
@@ -113,7 +115,7 @@ function Cart() {
     <Layout>
       <div className="cart-container">
         <div className="header-cart-item">
-          <h1>GIỎ HÀNG ({books.length} sản phẩm)</h1>
+          <h1>GIỎ HÀNG ({getAddToCart.length} sản phẩm)</h1>
           <div className="checked-all-products">
             <div style={{ flex: "2", display: "flex" }}>
               
@@ -122,18 +124,19 @@ function Cart() {
                   checked={selectAllChecked}
                   onChange={handleSelectAllChange}
                 />
-                <span style={{marginTop:'-4px', marginLeft:'5px'}}>Chọn tất cả ({books.length} sản phẩm)</span>
+                <span style={{marginTop:'-4px', marginLeft:'5px'}}>Chọn tất cả ({getAddToCart.length} sản phẩm)</span>
               
             </div>
             <div style={{ flex: ".5" }}>Số lượng</div>
-            <div style={{ flex: ".55", textAlign: "center" }}>Thành tiền</div>
+            <div style={{ flex: ".65", textAlign: "center" }}>Thành tiền</div>
           </div>
 
-          <div>
-            {books.map((item, index) => {
-              const { bookImage, name, price } = item;
+          <div style={{backgroundColor:'#fff', borderRadius:'7px'}}>
+            <div style={{paddingTop:'10px', paddingRight:'10px'}}>
+            {getAddToCart.map((item, index) => {
+              const { img, name, price,bookID,amount } = item;
               return (
-                <div>
+                <div >
                   <div className="product-container">
                     <div className="check-product">
                       <input
@@ -143,11 +146,11 @@ function Cart() {
                       />
                     </div>
                     <div>
-                      <img className="books-image" src={bookImage} alt=""></img>
+                      <img className="books-image" src={img} alt=""></img>
                     </div>
                     <div className="products-info">
                       <div>{name}</div>
-                      <div>{price}</div>
+                      <div style={{fontSize:'1.1em',fontWeight:'600'}}>{price} đ</div>
                     </div>
                     {/* nút tăng giảm số lượng */}
                     <div style={{ flex: ".5" }}>
@@ -155,34 +158,34 @@ function Cart() {
                         <div>
                           <button
                             onClick={() => {
-                              if (inputValue[name] > 1) {
+                              if (inputValue[bookID] > 1) {
                                 const newInputValue = { ...inputValue };
-                                newInputValue[name] =
-                                  (newInputValue[name] || 0) - 1;
+                                newInputValue[bookID] =
+                                  (newInputValue[bookID] || amount) - 1;
                                 setInputValue(newInputValue);
                               }
                             }}
                           >
-                            <img
+                            <img style={{height:'3px'}}
                               src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/ico_minus2x.png"
                               alt=""
                             ></img>
                           </button>
                           <input
                             type="text"
-                            value={inputValue[name] || ""}
+                            value={inputValue[bookID] || amount}
                             onInput={handleKeyPress}
-                            onChange={(event) => handleInputChange(event, name)}
+                            onChange={(event) => handleInputChange(event, bookID)}
                           />
                           <button
                             onClick={() => {
                               const newInputValue = { ...inputValue };
-                              newInputValue[name] =
-                                (newInputValue[name] || 0) + 1;
+                              newInputValue[bookID] =
+                                (newInputValue[bookID] || amount) + 1;
                               setInputValue(newInputValue);
                             }}
                           >
-                            <img
+                            <img style={{height:'12px'}}
                               src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_plus2x.png"
                               alt=""
                             />
@@ -191,7 +194,7 @@ function Cart() {
                       </div>
                     </div>
                     <div className="product-price">
-                      {price * inputValue[name] || 0} đ
+                      {price * inputValue[bookID]  || amount} đ
                     </div>
                     <div className="trashIcon">
                       <FaRegTrashCan size={17} />
@@ -201,6 +204,7 @@ function Cart() {
                 </div>
               );
             })}
+          </div>
           </div>
         </div>
 
@@ -222,7 +226,7 @@ function Cart() {
                   <div style={{ flexBasis: "65%" }}>
                     Phí vận chuyển (Giao hàng tiêu chuẩn)
                   </div>
-                  <div>19000 đ</div>
+                  <div>19.00 đ</div>
                 </div>
               ) : null}
               <hr

@@ -6,9 +6,12 @@ import GetProduct from "../custom/productcpn/GetProduct";
 import Layout from "../layout/Layout";
 import { http } from "../util/http.js";
 import "./page.css";
+import BasicPagination from "../pagination/Pagination.jsx";
+import Typography from "@mui/material/Typography";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 function Products() {
-
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
   const [getAuthor, setGetAuthor] = useState([]);
@@ -30,27 +33,23 @@ function Products() {
       .then((getBook) => setGetBook(getBook.data), setLoading(false))
       .catch((err) => {
         console.log(err);
-        if(err.code==="ERR_NETWORK")
-        {
-          window.location.href="/sign-in";
-          
-          
+        if (err.code === "ERR_NETWORK") {
+          window.location.href = "/sign-in";
         }
       });
   }, [currentPage]);
 
-  console.log(getBook)
+  console.log(getBook);
 
   useEffect(() => {
     http
       .get("/book/types")
       .then((getTypeBook) => setGetTypeBook(getTypeBook.data))
-      .catch((err) => {if(err.code==="ERR_NETWORK")
-      {
-        window.location.href="/sign-in";
-        
-        
-      }});
+      .catch((err) => {
+        if (err.code === "ERR_NETWORK") {
+          window.location.href = "/sign-in";
+        }
+      });
   }, []);
 
   const Loading = () => {
@@ -76,11 +75,11 @@ function Products() {
     );
   };
 
-  const handlePageClick = () => {
+  const handlePageClic = () => {
     if (currentPage > 0) {
       setCurrentPage(currentPage + 1);
     }
-  };
+  }
 
   const onChangeAuthor = async (e) => {
     setValue(e.target.value);
@@ -92,12 +91,11 @@ function Products() {
 
   const onChangePublisher = async (e) => {
     setValuePublisher(e.target.value);
-    await  http
-    .get("/book/publisher")
-    .then((getPublisher) => setGetPublisher(getPublisher.data))
-    .catch((err) => console.log(err));
+    await http
+      .get("/book/publisher")
+      .then((getPublisher) => setGetPublisher(getPublisher.data))
+      .catch((err) => console.log(err));
   };
-
 
   return (
     <Layout>
@@ -105,7 +103,7 @@ function Products() {
         <div className="leftbox">
           <div className="leftbox_collection">
             <div>
-              <h2>Product Category</h2>
+              <h2>Danh Mục</h2>
               {getTypeBook.map((value, index) => {
                 return (
                   <div className="category" key={value.type}>
@@ -115,10 +113,18 @@ function Products() {
               })}
             </div>
             <div>
-              <h2>Author</h2>
+              <h2>Tác giả</h2>
               <div className="author">
-                <input className="product-input" type="text" placeholder=" " onChange={onChangeAuthor} value={value} />
-                <label htmlFor="author" className="label">Author</label> 
+                <input
+                  className="product-input"
+                  type="text"
+                  placeholder=" "
+                  onChange={onChangeAuthor}
+                  value={value}
+                />
+                <label htmlFor="author" className="label">
+                  Tìm tên tác giả
+                </label>
               </div>
               <div className="drop-down">
                 {value &&
@@ -129,30 +135,51 @@ function Products() {
                     )
                     .map((item, index) => {
                       return (
-                        <div className="item" key={index} onClick={(e) => setValue(item.author)}>
-                          <li><a href="#">{item.author}</a></li>
+                        <div
+                          className="item"
+                          key={index}
+                          onClick={(e) => setValue(item.author)}
+                        >
+                          <li>
+                            <a href="#">{item.author}</a>
+                          </li>
                         </div>
                       );
                     })}
               </div>
             </div>
             <div>
-              <h2>Publisher</h2>
+              <h2>Nhà Xuất Bản</h2>
               <div className="publisher">
-                  <input className="product-input" type="text" placeholder=" " onChange={onChangePublisher} value={valuePublisher}/>
-                  <label htmlFor="Publisher" className="label">Publisher</label> 
+                <input
+                  className="product-input"
+                  type="text"
+                  placeholder=" "
+                  onChange={onChangePublisher}
+                  value={valuePublisher}
+                />
+                <label htmlFor="Publisher" className="label">
+                  Tìm tên NXB
+                </label>
               </div>
               <div className="drop-down">
-              {valuePublisher &&
+                {valuePublisher &&
                   getPublisher
                     .filter(
                       (item) =>
-                        item.publisher.startsWith(valuePublisher) && item.publisher !== valuePublisher
+                        item.publisher.startsWith(valuePublisher) &&
+                        item.publisher !== valuePublisher
                     )
                     .map((item, index) => {
                       return (
-                        <div className="item" key={index} onClick={(e) => setValuePublisher(item.publisher)}>
-                          <li><a href="#">{item.publisher}</a></li>
+                        <div
+                          className="item"
+                          key={index}
+                          onClick={(e) => setValuePublisher(item.publisher)}
+                        >
+                          <li>
+                            <a href="#">{item.publisher}</a>
+                          </li>
                         </div>
                       );
                     })}
@@ -162,26 +189,10 @@ function Products() {
         </div>
         <div className="rightbox">
           <div>{loading ? <Loading /> : <ShowProduct getBook={getBook} />}</div>
-          <div  >
-            <ReactPaginate
-              previousLabel={"<<"}
-              nextLabel={">>"}
-              breakLabel={"..."}
-              pageCount={getBook.length}
-              marginPagesDisplayed={2}
-              pageRangeDisplayed={3}
-              onPageChange={handlePageClick}
-              containerClassName={"pagination"}
-              pageClassName={"page-item"}
-              pageLinkClassName={"page-link"}
-              previousClassName={"page-item"}
-              previousLinkClassName={"page-link"}
-              nextClassName={"page-item"}
-              nextLinkClassName={"page-link"}
-              breakClassName={"page-item"}
-              breakLinkClassName={"page-link"}
-              activeClassName={"active"}
-            />
+          <div>
+            <Stack spacing={2}>
+              <Pagination count={getBook.length} page={currentPage} onChange={handlePageClic} />
+            </Stack>
           </div>
         </div>
       </div>

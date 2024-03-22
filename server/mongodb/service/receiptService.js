@@ -27,8 +27,12 @@ export const getFilterReceipt=async(req,res,next)=>{
                 }
               ]).toArray()
               console.log(result[0]);
-              const resItem=result[0].cart.map((item,index)=>{return {...item,img:result[0].result[index].images[0]}}
+              const resItem=result[0].cart.map((item,index)=>{return {...item,img:result[0].result[index].images[0],name:result[0].result[index].name}}
+
               )
+              if(!resItem){
+                return res.json("null")
+              }
             return res.json(resItem)
         }
        
@@ -44,8 +48,19 @@ export const addToCart=async(req,res,next)=>{
     const bookData=await databaseProject.book.findOne({_id:new ObjectId(bookID)})
     console.log(req.userID.valueOf());
     const userCart=await databaseProject.receipt.findOne({userID:(req.userID),status:"In Cart"})
+    if(bookData.amount<amount) {return next("Amount Error")}
+    if(bookData.amount >= amount){
+        bookData.amount-=amount
+        try {
+            const result=await databaseProject.book.updateOne({_id:bookData._id},{$set:{amount:bookData.amount}})
+            console.log(result);
+        } catch (error) {
+            return next(error)
+        }
+    }
     console.log("userCart",userCart);
     if(userCart==null){
+
         const receipt=new Receipt({userID:req.userID,date:new Date(),status:"In Cart",cart:[{amount:amount,discount:bookData.discount,price:bookData.price,bookID:new ObjectId(bookID)}]})
         const result=await databaseProject.receipt.insertOne(receipt)
         res.json(result)

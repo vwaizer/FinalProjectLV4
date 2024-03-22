@@ -7,49 +7,49 @@ import { Link } from "react-router-dom";
 import "./layout.css";
 const siteMap = [
   {
-    title: "Home",
-    href: "/",
+    title: "Chính Sách Vận Chuyển",
+    href: "#",
   },
   {
-    title: "Products",
-    href: "/product",
+    title: "Chính Sách Đổi Trả",
+    href: "#",
   },
   {
-    title: "About Us",
-    href: "/about",
+    title: "Cho Thuê/Mượn Sách",
+    href: "#",
   },
   {
-    title: "Contact Us",
-    href: "/contact",
+    title: "Phương Thức Thanh Toán",
+    href: "#",
   },
 ];
 
 const bookTypes = [
   {
-    title: "Literature",
+    title: "Văn Học",
     href: "/product/#literature",
   },
   {
-    title: "Children",
-    href: "#children",
-  },
-  {
-    title: "Psychology and Skills",
+    title: "Tâm Lý - Kỹ Năng Sống",
     href: "#psb",
   },
   {
-    title: "Economic",
+    title: "Kinh tế",
     href: "#economic",
   },
   {
-    title: "Foreign Language Books",
-    href: "#flb",
+    title: "Nuôi Dạy Con ",
+    href: "#Children",
+  },
+  {
+    title: "Tiểu Sử - Hồi Ký",
+    href: "#history",
   },
 ];
 
 function Footer() {
   return (
-    <>
+    <div className="footer">
       <div className="bookstore_footer">
         <div className="logo_footer">
           <img
@@ -60,7 +60,7 @@ function Footer() {
         </div>
         <div className="information_footer">
           <div className="collection">
-            <h3>Category</h3>
+            <h3>Thể Loại</h3>
             {bookTypes.map((item, index) => {
               return (
                 <div className="link" key={index}>
@@ -72,7 +72,7 @@ function Footer() {
             })}
           </div>
           <div className="site">
-            <h3>Site</h3>
+            <h3>Hỗ Trợ</h3>
             {siteMap.map((item, index) => {
               return (
                 <div className="link" key={index}>
@@ -84,7 +84,7 @@ function Footer() {
             })}
           </div>
           <div className="contact">
-            <h3>Contact</h3>
+            <h3>Liên Hệ</h3>
             <div className="contact-info">
               <BsFillTelephoneFill className="icon" />
               Tel: 0909888999
@@ -95,7 +95,7 @@ function Footer() {
             </div>
             <div className="contact-info">
               <MdPlace className="icon" />
-              Address: Ho Chi Minh City
+              Địa Chỉ: TP Hồ Chí Minh
             </div>
             <div className="another-contact">
               <Link to="http://facebook.com">
@@ -112,9 +112,9 @@ function Footer() {
         </div>
       </div>
       <p className="under-footer">
-        <i>Copyright@Nhom_1_X22 2024</i>
+        <i>Copy right @Nhom_1_X22 2024</i>
       </p>
-    </>
+    </div>
   );
 }
 

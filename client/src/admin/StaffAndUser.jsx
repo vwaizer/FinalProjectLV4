@@ -4,6 +4,7 @@ const StaffAndUser = () => {
   return (
     <div className='staffanduserpage_wrap'>
       <LayoutAdmin />
+      <div>content</div>
     </div>
   )
 }
