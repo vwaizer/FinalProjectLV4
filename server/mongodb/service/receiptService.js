@@ -30,7 +30,7 @@ export const getFilterReceipt=async(req,res,next)=>{
               const resItem=result[0].cart.map((item,index)=>{return {...item,img:result[0].result[index].images[0],name:result[0].result[index].name}}
 
               )
-              if(resItem){
+              if(!resItem){
                 return res.json("null")
               }
             return res.json(resItem)
