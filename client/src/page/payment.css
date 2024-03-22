@@ -4,3 +4,14 @@
     border-bottom: 1px solid #ced4da;
     padding: 8px 0px;
 }
+.payment-methods{
+    padding: 0px 10px;
+    width: 60px;
+}
+.box-container{
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+.space-item{
+    padding: 10px 20px;
+}
