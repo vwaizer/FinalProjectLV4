@@ -27,8 +27,12 @@ export const getFilterReceipt=async(req,res,next)=>{
                 }
               ]).toArray()
               console.log(result[0]);
-              const resItem=result[0].cart.map((item,index)=>{return {...item,img:result[0].result[index].images[0]}}
+              const resItem=result[0].cart.map((item,index)=>{return {...item,img:result[0].result[index].images[0],name:result[0].result[index].name}}
+
               )
+              if(resItem){
+                return res.json("null")
+              }
             return res.json(resItem)
         }
        
