@@ -52,8 +52,8 @@ export const addToCart=async(req,res,next)=>{
     if(bookData.amount >= amount){
         bookData.amount-=amount
         try {
-            const result=await databaseProject.updateOne({_id:bookData._id},bookData)
-            return res.json(result)
+            const result=await databaseProject.book.updateOne({_id:bookData._id},{$set:{amount:bookData.amount}})
+            console.log(result);
         } catch (error) {
             return next(error)
         }
