@@ -15,7 +15,7 @@ let navbar = [
   },
   {
     title: "Giỏ Hàng",
-    href: "/cart/:ID",
+    href: "/cart/",
   },
   {
     title: "Thanh Toán",

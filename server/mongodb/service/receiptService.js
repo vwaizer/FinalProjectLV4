@@ -27,8 +27,12 @@ export const getFilterReceipt=async(req,res,next)=>{
                 }
               ]).toArray()
               console.log(result[0]);
-              const resItem=result[0].cart.map((item,index)=>{return {...item,img:result[0].result[index].images[0]}}
+              const resItem=result[0].cart.map((item,index)=>{return {...item,img:result[0].result[index].images[0],name:result[0].result[index].name}}
+
               )
+              if(!resItem){
+                return res.json("null")
+              }
             return res.json(resItem)
         }
        
@@ -48,8 +52,8 @@ export const addToCart=async(req,res,next)=>{
     if(bookData.amount >= amount){
         bookData.amount-=amount
         try {
-            const result=await databaseProject.updateOne({_id:bookData._id},bookData)
-            return res.json(result)
+            const result=await databaseProject.book.updateOne({_id:bookData._id},{$set:{amount:bookData.amount}})
+            console.log(result);
         } catch (error) {
             return next(error)
         }

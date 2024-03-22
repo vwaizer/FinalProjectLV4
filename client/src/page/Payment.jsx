@@ -24,7 +24,8 @@ function Payment() {
   return (
     <Layout>
       <div style={{ width: "80%", margin: "auto" }}>
-        <div style={{ marginBottom: "40px" }}>
+        <div className="box-container">
+          <div style={{padding:'10px 20px'}}>
           <div className="check-out-title"> ĐỊA CHỈ GIAO HÀNG </div>
           {boxFillInfo.map((item) => {
             return (
@@ -41,9 +42,11 @@ function Payment() {
               </div>
             );
           })}
+          </div>
         </div>
 
-        <div style={{ marginBottom: "40px" }}>
+        <div className="box-container">
+          <div className="space-item">
           <div className="check-out-title"> PHƯƠNG THỨC THANH TOÁN </div>
           <div style={{ marginTop: "10px" }}>
             <ConfigProvider
@@ -57,8 +60,7 @@ function Payment() {
               }}
             >
               <Radio>
-                <img
-                  style={{ padding: "0px 10px" }}
+                <img className="payment-methods"
                   src="https://cdn0.fahasa.com/skin/frontend/base/default/images/payment_icon/ico_cashondelivery.svg?q=105522"
                   alt=""
                 ></img>
@@ -69,8 +71,10 @@ function Payment() {
             </ConfigProvider>
           </div>
         </div>
+        </div>
 
-        <div style={{ marginBottom: "40px" }}>
+        <div className="box-container">
+          <div className="space-item">
           <div className="check-out-title"> THÔNG TIN KHÁC </div>
           <div style={{ marginTop: "10px" }}>
             <Checkbox onChange={onChange}>
@@ -83,9 +87,11 @@ function Payment() {
               </div>
             )}
           </div>
+          </div>
         </div>
 
         <div>
+          <div className="space-item">
           <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>
           <div>
             {listCheck.map((item) => {
@@ -116,6 +122,7 @@ function Payment() {
               );
             })}
           </div>
+        </div>
         </div>
       </div>
     </Layout>

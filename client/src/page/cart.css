@@ -1,8 +1,7 @@
 .cart-container {
   display: flex;
-  justify-content: space-around;
   margin: 0px 10%;
-  gap: 20px;
+  /* gap: 20px; */
 }
 .header-cart-item {
   flex: 2;
@@ -32,6 +31,7 @@
   height: 17px;
 }
 .product-container {
+
     display: flex; 
     margin:10px 0px
 }
@@ -52,13 +52,11 @@
   gap: 0.5em;
 }
 
-.checked-all-products input[type="checkbox"] {
-  /* Add if not using autoprefixer */
+.checked-all-products input[type="checkbox"],
+.check-product input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  /* For iOS < 15 to remove gradient background */
   background-color: #fff;
-  /* Not removed via appearance */
   margin: 0;
   font: inherit;
   color: currentColor;
@@ -85,7 +83,6 @@ input[type="checkbox"]::before {
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em var(--form-control-color);
   background-color: #c74448;
-  
   transform-origin: bottom left;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
@@ -156,6 +153,7 @@ input[type="checkbox"]:checked::before {
 }
 .trashIcon{
   display: flex;
+  margin-right: 10px;
   align-items: center;
   cursor: pointer;
   transition: color .4s ease;
@@ -165,6 +163,7 @@ input[type="checkbox"]:checked::before {
 }
 .cart-total{
   flex: 1;
+  background-color: #fff;
   border: 1px solid violet;
   margin-left: 40px;
   color: #333333;

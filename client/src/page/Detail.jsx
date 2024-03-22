@@ -44,7 +44,7 @@ function Detail() {
             position: "top-right",
           });
           setTimeout(() => {
-            navigate(`/cart/:ID`);
+            navigate(`/cart/`);
           }, 2000);
         } else {
           console.error(`Failed to add product to cart:`);
