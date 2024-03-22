@@ -1,6 +1,6 @@
 export const errorHandle=(req,res,err)=>{
     if(err){
-        
-        throw new Error(err)
+        console.log("next:err",err);
+        return res.json({"error":err})
     }
 }

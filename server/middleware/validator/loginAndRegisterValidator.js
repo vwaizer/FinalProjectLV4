@@ -99,7 +99,13 @@ export const loginValidator = validator(
             });
 
             if (isUserExist) {
-              return true;
+              if(isUserExist.verifyToken == "verified"){
+                return true;
+              } 
+              else{
+                throw new Error("Email is not verified")
+              }
+              
             } else {
               throw new Error("Email is not registered");
             }

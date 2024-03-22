@@ -15,5 +15,5 @@ staffRoute.get("/receipt",getAllReceipt);
 staffRoute.get("/hireBook",getHiredBook);
 staffRoute.put("/hiredBook/:ID",putHiredBook)
 staffRoute.get("/accounting",accounting);
-staffRoute.post("/mail/:ID",sendMail);
+staffRoute.post("/mail/:ID",staffValidator,sendMail);
 staffRoute.post("/createStaff",createStaff)

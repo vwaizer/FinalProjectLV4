@@ -18,38 +18,46 @@ export const checkToken=(privateKey,token)=>{
 export const userValidator = async (req, res, next) => {
     console.log("vao userValidator");
     console.log(req.headers);
+  
     const token = req.headers.authorization.split(" ")[1];
     
     console.log(token);
-    const userUnit= await checkToken(privateKey,token);
+    if(token == "undefined"){
+      throw new Error("Access token is undefined")
+     
+      
+    }
+    else{const userUnit= await checkToken(privateKey,token);
     
-    // if(result.username== "admin"){
-    //   return res.json("success")
-    // }
-    // else{
-    //   return res.json("fail")
-    // }
-    console.log("userUnit",userUnit);
-    const result= await databaseProject.users.findOne({email:userUnit.email});
-    console.log(result);
-    // req.userEmail=userUnit.email;
-    // req.decode=result
-    if(result){
-      // if(result.role=="user"){
-      //   console.log(result._id.valueOf());
-      //   req.userID=result._id.valueOf()
-      //   return next();
+      // if(result.username== "admin"){
+      //   return res.json("success")
       // }
       // else{
-      //   throw new Error("You do not have permission")
+      //   return res.json("fail")
       // }
-      console.log(result._id.valueOf());
-       req.userID=result._id.valueOf()
-      return next();
+      console.log("userUnit",userUnit);
+      const result= await databaseProject.users.findOne({email:userUnit.email});
+      console.log(result);
+      // req.userEmail=userUnit.email;
+      // req.decode=result
+      if(result){
+        // if(result.role=="user"){
+        //   console.log(result._id.valueOf());
+        //   req.userID=result._id.valueOf()
+        //   return next();
+        // }
+        // else{
+        //   throw new Error("You do not have permission")
+        // }
+        console.log(result._id.valueOf());
+         req.userID=result._id.valueOf()
+        return next();}
+
+        else{
+          throw new Error("Access token is wrong")
+        }
     }
-    else{
-      throw new Error("Access token is wrong")
-    }
+   
 }
 
 export const staffValidator = async (req, res, next) => {
