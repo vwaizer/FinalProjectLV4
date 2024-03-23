@@ -1,6 +1,6 @@
-import { HiredBook } from "../../schema/Schema.js";
-import databaseProject from "../GetDataBase.js";
 import { ObjectId } from "mongodb";
+import { Books, HiredBook, ImportedBook } from "../../schema/Schema.js";
+import databaseProject from "../GetDataBase.js";
 export const getDetailBook = async (req, res) => {
   console.log("vao");
   const userID = req.params.ID;
@@ -19,31 +19,35 @@ export const deleteBook = async (req, res) => {
   return res.json(result);
 };
 export const addBook = async (req, res) => {
+  console.log(req.body);
+  
   const checkIsExist = await databaseProject.book.findOne({
     name: req.body.name,
-    author: req.body.author,
+    author: req.body.author
   });
   if (checkIsExist != "null") {
-    return updateBook();
+    return updateBook(req,res);
   } else {
-    const newUser = new User(req.body);
+    const newBook = new ImportedBook(req.body);
+    const addedBook={name:req.body.book.name,amount:req.body.amount,author:req.body.book.author,price:req.body.book.price}
+    const result = await databaseProject.importedBook.insertOne(newBook);
 
-    const result = await databaseProject.book.insertOne(newUser);
+    const setBook=await databaseProject.book.insertOne(new Books(addedBook));
     return res.json(result);
   }
 };
 export const updateBook = async (req, res) => {
   const result = await databaseProject.book.updateOne(
     { name: req.body.name, author: req.body.author },
-    req.body
+     {$set:{amount:req.body.amount}}
   );
   return res.json(result);
 };
-export const getAllBook = async (req, res) => {
+export const getAllBook =  (data,page) => {
  
-  const page=req.query.page;
+ 
   console.log(page);
-  const data = await databaseProject.book.find({}).toArray();
+  // const data = await databaseProject.book.find({}).toArray();
   if(page){
     const result=data.filter((item,index)=>{
       if(index >=(Number(page)-1)*32 ){
@@ -54,41 +58,64 @@ export const getAllBook = async (req, res) => {
       }     
     })
     console.log(result);
-    return res.json(result)
+    return (result)
     
   }
-  const result=data.length();
+
   
   
   // console.log(result);
-  return res.json({page:result});
+  return (data);
 };
 export const getFilterBook = async (req, res,next) => {
   console.log("vao");
   const query = req.query;
+  
   if (Object.keys(query).length > 0) {
-    if (query.publisher) {
-      const publisher = decodeURIComponent(query.publisher);
-      const filterData = await databaseProject.book
-        .find({ publisher: publisher })
-        .toArray();
-      return res.json(filterData);
-    } else if (query.type) {
-      const typeInput = decodeURIComponent(query.type);
-      const filterData = await databaseProject.book
-        .find({ type: typeInput })
-        .toArray();
-      return res.json(filterData);
-    } else if (query.author) {
-      const author = decodeURIComponent(query.author);
-      const filterData = await databaseProject.book
-        .find({ author: author })
-        .toArray();
-      return res.json(filterData);
+    // if (query.publisher) {
+    //   const publisher = decodeURIComponent(query.publisher);
+    //   const filterData = await databaseProject.book
+    //     .find({ publisher: publisher })
+    //     .toArray();
+    //   return res.json(filterData);
+    // } else if (query.type) {
+    //   const typeInput = decodeURIComponent(query.type);
+    //   const filterData = await databaseProject.book
+    //     .find({ type: typeInput })
+    //     .toArray();
+    //   return res.json(filterData);
+    // } else if (query.author) {
+    //   const author = decodeURIComponent(query.author);
+    //   const filterData = await databaseProject.book
+    //     .find({ author: author })
+    //     .toArray();
+    //   return res.json(filterData);
+    // }
+    // else{getAllBook(req, res,next);}
+
+    if(Object.keys(query).length == 1 && query.page){
+      const data = await databaseProject.book.find({}).toArray();
+      return getAllBook(data,query.page)
     }
-    else{getAllBook(req, res,next);}
+    else{
+      console.log(query);
+      let findObject={};
+      if(query.publisher){
+        findObject=Object.assign({publisher:query.publisher},findObject)
+      }
+      if(query.type){
+        findObject=Object.assign({type:query.type},findObject)
+      }
+      if(query.author){
+        findObject=Object.assign({author:query.author},findObject)
+      }
+      console.log(findObject);
+      const filterData=await databaseProject.book.find(findObject).toArray()
+      
+    return res.json(getAllBook(filterData))
+    }
   } else {
-    getAllBook(req, res,next);
+    next("Missing query")
   }
 };
 export const getAllTypes = async (req, res) => {

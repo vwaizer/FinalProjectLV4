@@ -1,6 +1,6 @@
 import { User } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js";
-import { createAccessToken } from "../jwt/jwtController.js";
+import { createAccessToken, verifyToken } from "../jwt/jwtController.js";
 import {ObjectId} from "mongodb"
 import bcrypt from "bcrypt"
 class UserService {
@@ -21,7 +21,9 @@ class UserService {
               gender:"other",
               birthday:"--",
               sex:"",
-              role:payload.role||""
+              role:payload.role||"",
+              verifyToken:"Waiting",
+              forgetToken:""
             })
           );
        
@@ -32,10 +34,15 @@ class UserService {
   export const registerService = new UserService()
 
   export const registerController = async(req,res,next) => {
-    const accessToken = await registerService.register(req.body);
    
-    return res.json({
+    try {
+      const accessToken = await registerService.register(req.body);
+      return res.json({
         message: 'Register successfully',
         
     })
+    } catch (error) {
+      next(error)
+    }
+    
 }

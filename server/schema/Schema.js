@@ -7,23 +7,25 @@ export class User {
       (this.birthday = user.birthday?new Date(user.birthday):"" ),
       (this.phone = user.phone|| ""),
       (this.role=user.role || "user"),
-      (this.avatar=""|| user.avatar)
+      (this.avatar= user.avatar||""),
+      this.verifyToken=user.verifyToken,
+      this.forgetToken=user.forgetToken
   }
 }
 export class Books {
   constructor(book) {
     (this.name = book.name),
       (this.author = book.author),
-      (this.date = new Date(book.date)),
+     
       (this.type = book.type),
-      (this.publisher = book.publisher),
+      (this.publisher = book.publisher||""),
       (this.amount = book.amount),
-           (this.img = book.img),
+           (this.img = book.img||""),
       (this.price = book.price),
-      (this.description = book.description),
-      (this.status = book.status),
-      (this.discount = book.discount),
-      (this.dateIn = book.dateIn);
+      (this.description = book.description||""),
+      (this.status = book.status||""),
+      (this.discount = book.discount||""),
+      (this.dateIn = book.dateIn||"");
   }
 }
 export class Comment {
@@ -37,7 +39,7 @@ export class Comment {
 }
 export class ImportedBook {
   constructor(book) {
-    (this.userCode = book.userCode),
+    (this.userID = book.userID),
       (this.dateIn = book.dateIn),
       (this.amount = book.amount),
       (this.book = book.book);

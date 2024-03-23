@@ -7,6 +7,7 @@ import AuthContext from "../context/AuthProvide";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { http } from "../util/http";
 
 function SignUp() {
   const { setAuth } = useContext(AuthContext);
@@ -31,9 +32,10 @@ function SignUp() {
       });
       console.log(JSON.stringify(resultSignUp?.data));
       if (!resultSignUp.data.error) {
-        toast.success("Register successfully", {
+        toast.success("Register successfully,Please verify email!!!", {
           position: "top-right",
         });
+        await http.post("http://localhost:4000/verify",{email:user})
         setTimeout(() => {
           navigate("/sign-in");
         }, 2000);
