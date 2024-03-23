@@ -25,3 +25,14 @@ export const createStaff=async(req,res)=>{
     return res.json("Error")
    }
 }
+export const getOverall= async(req,res,next)=>{
+ 
+ try {
+    const bookNumber=await databaseProject.book.find().toArray()
+    const userNumber=await databaseProject.users.find().toArray()
+    const receiptNumber=await databaseProject.receipt.find().toArray()
+    return res.json({book:bookNumber.length(),userNumber:userNumber.length(),receiptNumber:receiptNumber.length()})
+ } catch (error) {
+    next(error)
+ }
+}
