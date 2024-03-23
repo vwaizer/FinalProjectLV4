@@ -31,7 +31,7 @@ export const getOverall= async(req,res,next)=>{
     const bookNumber=await databaseProject.book.find().toArray()
     const userNumber=await databaseProject.users.find().toArray()
     const receiptNumber=await databaseProject.receipt.find().toArray()
-    return res.json({book:bookNumber.length(),userNumber:userNumber.length(),receiptNumber:receiptNumber.length()})
+    return res.json({bookNumber:bookNumber.length(),userNumber:userNumber.length(),receiptNumber:receiptNumber.length()})
  } catch (error) {
     next(error)
  }
