@@ -26,8 +26,8 @@ export const getAllReceipt = async (req, res, next) => {
         },
       ])
       .toArray();
-
-    const formatData = result.map((item, index) => {
+     let formatData={};
+    const tmp = result.map((item, index) => {
       if (item.cartDetail.length > 0 && index > 0) {
         const newData = item.cart.map((value, number) => {
           
@@ -39,7 +39,9 @@ export const getAllReceipt = async (req, res, next) => {
             };
           
         });
+        formatData=Object.assign(newData,formatData)
         return newData;
+      
       }
     });
     return res.json(formatData);
@@ -67,19 +69,25 @@ export const getFilterReceipt = async (req, res, next) => {
           },
         ])
         .toArray();
-      console.log(result[0]);
-      const resItem = result[0].cart.map((item, index) => {
-        return {
-          ...item,
-          img: result[0].result[index].images[0],
-          name: result[0].result[index].name,
-        };
-      });
-      if (!resItem) {
-        return res.json("null");
+      console.log("result",result);
+      if(result.length <=0){
+        
+        return res.json("No Cart")
+      }else{
+        const resItem = result[0]?.cart.map((item, index) => {
+          return {
+            ...item,
+            img: result[0].result[index].images[0],
+            name: result[0].result[index].name,
+          };
+        });
+        if (!resItem) {
+          return res.json("null");
+        }
+        return res.json(resItem);
       }
-      return res.json(resItem);
-    }
+      }
+     
   } catch (error) {
     next(error);
   }
