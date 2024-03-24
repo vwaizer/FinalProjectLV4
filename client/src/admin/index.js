@@ -1,7 +1,6 @@
-export {default as AdminPage} from './AdminPage';
-export {default as Bill} from './Bill';
-export {default as BookRentalManagement} from './BookRentalManagement';
-export {default as ImportAndBrowse} from './ImportAndBrowse';
-export {default as Overview} from './Overview';
-export {default as StaffAndUser} from './StaffAndUser';
-export {default as Statistics} from './Statistics';
+export {default as AdminPage} from './admin-page/AdminPage';
+export {default as Bill} from './bill/Bill';
+export {default as BookRentalManagement} from './book-rental/BookRentalManagement';
+export {default as ImportAndBrowse} from './import-browse/ImportAndBrowse';
+export {default as Overview} from './over-view/Overview';
+export {default as StaffAndUser} from './staff-and-user/StaffAndUser';

@@ -1,14 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import {
-        AdminPage,
-        Bill,
-        BookRentalManagement,
-        ImportAndBrowse,
-        Overview,
-        StaffAndUser,
-        Statistics,
-} from "./admin/index.js";
 import Admin from "./auth/Admin.jsx";
 import SignIn from "./auth/SignIn.jsx";
 import SignUp from "./auth/SignUp.jsx";
@@ -18,6 +9,7 @@ import RentForm from "./page/RentForm.jsx";
 import Contact from "./page/contact/contact-page.jsx";
 import { Cart, Detail, Home, Payment, Products } from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
+import LayoutAdmin from "./admin/layout-admin/LayoutAdmin.jsx";
 function App() {
   return (
     <AuthProvider>
@@ -33,13 +25,7 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />}></Route>
         <Route path="/user" element={<UserPage />}></Route>
         <Route path="/staff" element={<Admin />}></Route>
-        <Route path="/admin" element={<AdminPage />}></Route>
-        <Route path="/admin/overview" element={<Overview />}></Route>
-        <Route path="/admin/bill" element={<Bill />}></Route>
-        <Route path="/admin/BRM" element={<BookRentalManagement />}></Route>
-        <Route path="/admin/IaB" element={<ImportAndBrowse />}></Route>
-        <Route path="/admin/SaU" element={<StaffAndUser />}></Route>
-        <Route path="/admin/statistic" element={<Statistics />}></Route>
+        <Route path="/admin" element={<LayoutAdmin />}></Route>
         <Route path="/rent/:id" element={<RentForm />}></Route>
       </Routes>
     </AuthProvider>
