@@ -14,7 +14,7 @@ const StaffAndUser = () => {
       .catch((err) => {
         console.log(err);
       });
-    console.log(getUser);
+    console.table(getUser);
   }, []);
 
   return (
@@ -42,8 +42,15 @@ const StaffAndUser = () => {
             title: "Email",
             dataIndex: "email",
           },
+          {
+            title: "Trạng thái",
+            dataIndex: "verifyToken",
+          },
         ]}
-        dataSource={getUser}
+        dataSource={Array(getUser)}
+        pagination={{
+          pageSize: 5
+        }}
       ></Table>
     </Space>
   );

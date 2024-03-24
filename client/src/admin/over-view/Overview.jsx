@@ -1,18 +1,52 @@
 import { Space, Typography } from "antd";
-import React from "react";
-import { CiImport, CiMoneyBill } from "react-icons/ci";
+import React, { useEffect, useState } from "react";
+import { CiMoneyBill } from "react-icons/ci";
 import { FaUserGroup } from "react-icons/fa6";
-import { FcStatistics } from "react-icons/fc";
 import { PiBooksBold } from "react-icons/pi";
-import OverviewCustom from "./OverviewCustom";
-import "./overview.css";
 import Chart from "./Chart";
+import OverviewCustom from "./OverviewCustom";
 import Statify from "./Statify";
+import "./overview.css";
+import { http } from "../../util/http";
+import LayoutAdmin from "../layout-admin/LayoutAdmin";
 
 const Overview = () => {
+  const [bill, setBill] = useState([]);
+  const [user, setUser] = useState(0);
+  const [book, setBook] = useState(0);
+
+  useEffect(() => {
+    http
+      .get("/staff/overall")
+      .then((bill) => setBill(bill.data))
+      .catch((err) => {
+        console.log(err);
+      });
+    console.log(bill);
+  }, []);
+
+  useEffect(() => {
+    http
+      .get("/staff/overall")
+      .then((user) => setUser(user.data))
+      .catch((err) => {
+        console.log(err);
+      });
+    console.log(user);
+  }, []);
+
+  useEffect(() => {
+    http
+      .get("/staff/overall")
+      .then((book) => setBook(book.data))
+      .catch((err) => {
+        console.log(err);
+      });
+    console.log(book);
+  }, []);
   return (
     <>
-      <Space size={20} direction="vertical">
+      <Space size={25} direction="vertical">
         <Typography.Title level={4}>Tổng Quan</Typography.Title>
         <Space direction="horizontal">
           <OverviewCustom
@@ -28,7 +62,8 @@ const Overview = () => {
               />
             }
             title="Hóa Đơn"
-            value="12345"
+            value={bill.receiptNumber}
+              
           />
           <OverviewCustom
             icon={
@@ -43,7 +78,7 @@ const Overview = () => {
               />
             }
             title="Người Dùng"
-            value="12345"
+            value={user.userNumber}
           />
           <OverviewCustom
             icon={
@@ -58,15 +93,15 @@ const Overview = () => {
               />
             }
             title="Số Lượng Sách"
-            value="12345"
+            value={book.bookNumber}
           />
         </Space>
-        <Space size={20}>
+        <Space size={40}>
           <Statify/>
           <Chart />
         </Space>
       </Space>
-    </>
+   </>
   );
 };
 

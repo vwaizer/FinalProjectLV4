@@ -195,7 +195,7 @@ export const setHistory = async (req, res, next) => {
       userID: userID,
       status: "In Cart",
     });
-    if (cart.length() < cartUser.cart.length()) {
+    if (cart.length < cartUser.cart.length) {
       const newCart = cartUser.cart.filter(
         (item, index) => !cart.includes(item)
       );

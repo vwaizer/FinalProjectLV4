@@ -12,7 +12,7 @@ const AdminPage = () => {
         ></Image>
         <Typography.Title>ADMIN PAGE</Typography.Title>
         <Space>
-          <Badge count={20}>
+          <Badge count={0} dot>
             <FaRegBell style={{ fontSize: 30}} />
           </Badge>
         </Space>
