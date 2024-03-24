@@ -17,7 +17,7 @@ const Statify = () => {
 
   return (
     <>
-      <Typography.Text>Kiểm Tra</Typography.Text>
+      <Typography.Text>Thống Kê</Typography.Text>
       <Table
         columns={[
           {
@@ -33,7 +33,8 @@ const Statify = () => {
             dataIndex: "bookNumber",
           },
         ]}
-        dataSource={database}
+        dataSource={Array(database)}
+        pagination={false}
       ></Table>
     </>
   );

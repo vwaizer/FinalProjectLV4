@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaFacebookF, FaTiktok, FaTwitter } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { MdPlace } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./layout.css";
+import LayoutAdmin from "../admin/layout-admin/LayoutAdmin";
 const siteMap = [
   {
     title: "Chính Sách Vận Chuyển",
@@ -48,6 +49,14 @@ const bookTypes = [
 ];
 
 function Footer() {
+  const [showAdmin, setShowAdmin] = useState(false)
+
+  const navigate = useNavigate()
+
+  const goToAdmin = () => {
+    setShowAdmin(true)
+    navigate("/admin")
+  }
   return (
     <div className="footer">
       <div className="bookstore_footer">
@@ -114,6 +123,7 @@ function Footer() {
       <p className="under-footer">
         <i>Copy right @Nhom_1_X22 2024</i>
       </p>
+      
     </div>
   );
 }

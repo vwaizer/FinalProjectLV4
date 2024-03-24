@@ -37,7 +37,7 @@ const ImportAndBrowse = () => {
             dataIndex: "",
           },
         ]}
-        dataSource={getImport}
+        dataSource={Array(getImport)}
       ></Table>
     </Space>
   );

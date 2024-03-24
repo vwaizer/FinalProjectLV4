@@ -75,7 +75,7 @@ function Products() {
     );
   };
 
-  const handlePageClic = () => {
+  const handlePageClick = () => {
     if (currentPage > 0) {
       setCurrentPage(currentPage + 1);
     }
@@ -190,9 +190,25 @@ function Products() {
         <div className="rightbox">
           <div>{loading ? <Loading /> : <ShowProduct getBook={getBook} />}</div>
           <div>
-            <Stack spacing={2}>
-              <Pagination count={getBook.length} page={currentPage} onChange={handlePageClic} />
-            </Stack>
+            <ReactPaginate 
+            previousLabel={"<"}
+            nextLabel={">"}
+            breakLabel={"..."}
+            pageCount={getBook.length}
+            marginPagesDisplayed={2}
+            pageRangeDisplayed={4}
+            onPageChange={handlePageClick}
+            containerClassName={'pagination'}
+            pageClassName={"page-item"}
+            pageLinkClassName={"page-link"}
+            previousClassName={"page-item"}
+            previousLinkClassName={"page-link"}
+            nextClassName={"page-item"}
+            nextLinkClassName={"page-link"} 
+            breakClassName={"page-item"}
+            breakLinkClassName={"page-link"}
+            activeClassName={"active"}         
+            />
           </div>
         </div>
       </div>
