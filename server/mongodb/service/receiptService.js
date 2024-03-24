@@ -75,17 +75,18 @@ export const getFilterReceipt = async (req, res, next) => {
         
         return res.json("No Cart")
       }else{
-        const resItem = result[0]?.cart.map((item, index) => {
-          return {
-            ...item,
-            img: result[0].result[index].images[0],
-            name: result[0].result[index].name,
-          };
-        });
-        if (!resItem) {
-          return res.json("null");
-        }
-        return res.json(resItem);
+        // const resItem = result[0]?.cart.map((item, index) => {
+        //   return {
+        //     ...item,
+        //     img: result[0].result[index].images[0],
+        //     name: result[0].result[index].name,
+        //   };
+        // });
+        // if (!resItem) {
+        //   return res.json("null");
+        // }
+        // return res.json(resItem);
+        return res.json(result)
       }
       }
      
