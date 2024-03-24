@@ -1,0 +1,7 @@
+.side_pagecontent{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}

@@ -1,0 +1,5 @@
+.billpage_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

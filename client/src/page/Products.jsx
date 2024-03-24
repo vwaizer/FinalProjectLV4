@@ -79,7 +79,7 @@ function Products() {
     if (currentPage > 0) {
       setCurrentPage(currentPage + 1);
     }
-  }
+}
 
   const onChangeAuthor = async (e) => {
     setValue(e.target.value);

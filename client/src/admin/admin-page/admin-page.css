@@ -1,0 +1,24 @@
+.adminpage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 10px;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(24, 24, 40);
+    overflow: hidden;
+}
+
+.adminpage_wrap{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
