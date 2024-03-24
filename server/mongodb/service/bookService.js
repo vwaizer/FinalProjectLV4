@@ -95,7 +95,7 @@ export const getFilterBook = async (req, res,next) => {
 
     if(Object.keys(query).length == 1 && query.page){
       const data = await databaseProject.book.find({}).toArray();
-      return getAllBook(data,query.page)
+      return res.json(getAllBook(data,query.page))
     }
     else{
       console.log(query);
@@ -109,9 +109,9 @@ export const getFilterBook = async (req, res,next) => {
       if(query.author){
         findObject=Object.assign({author:query.author},findObject)
       }
-      console.log(findObject);
+     
       const filterData=await databaseProject.book.find(findObject).toArray()
-      
+      console.log(getAllBook(filterData));
     return res.json(getAllBook(filterData))
     }
   } else {
