@@ -7,7 +7,8 @@ import { http } from "../../util/http";
 
 
 const Bill = () => {
-  const [getReceipt, setGetReceipt] = useState()
+  const [getReceipt, setGetReceipt] = useState([])
+  const [getBill, setGetBill] = useState([])
 
   useEffect(() => {
     http
@@ -16,7 +17,17 @@ const Bill = () => {
       .catch((err) => {
         console.log(err);
       });
-    console.table(getReceipt);
+    console.log(getReceipt);
+  }, []);
+
+  useEffect(() => {
+    http
+      .get("/staff/overall")
+      .then((getBill) => setGetBill(getBill.data))
+      .catch((err) => {
+        console.log(err);
+      });
+    console.log(getBill);
   }, []);
 
   return (
@@ -36,31 +47,35 @@ const Bill = () => {
             />
           }
           title="Hóa Đơn"
-          value=""
+          value={getBill.receiptNumber}
         />
       </Space>
       <Table
         columns={[
           {
-            key: "1",
-            title: "Số Hóa Đơn",
-            dataIndex: "_id",
-          },
-          {
             title: "Thông tin khách hàng",
-            dataIndex: "userID",
+            dataIndex: "email",
           },
           {
             title: "Tên Sách",
-            dataIndex: "",
+            dataIndex: "bookName",
+            
           },
           {
             title: "Ngày Mua",
             dataIndex: "date",
           },
           {
+            title: "Số Lượng",
+            dataIndex: "amount",
+          },
+          {
             title: "Số tiền",
-            dataIndex: "",
+            dataIndex: "price",
+          },
+          {
+            title: "Trạng thái",
+            dataIndex: "status",
           },
         ]}
         dataSource={getReceipt}
