@@ -21,6 +21,7 @@ function Cart() {
   const [inputValue, setInputValue] = useState({});
   const [selectAllChecked, setSelectAllChecked] = useState(false);
   const [updateBooks, setUpdateBooks] = useState(getAddToCart);
+  
   const handleKeyPress = (event, name) => {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -65,7 +66,7 @@ function Cart() {
     const allChecked = newCheckboxStates.every((checked) => checked);
     setSelectAllChecked(allChecked);
 
-    const selectedProducts = getAddToCart.filter((item, i) => newCheckboxStates[i]);
+    const selectedProducts = getAddToCart[0]?.cart?.filter((item, i) => newCheckboxStates[i]);
     // console.log('Selected Products:', selectedProducts);
     setSelectedProducts(selectedProducts);
 
@@ -102,15 +103,20 @@ function Cart() {
     });
     setGetAddToCart(newGetAddToCart);
   };
-  const calculateTotalPrice = () => {
+  
+  const calculateTotalPrice = (selectedProduct) => {
     let totalPrice = 0;
-    getAddToCart.forEach((item, index) => {
-      const { price, bookID, amount } = item;
-      if (checkboxStates[index]) {
-        totalPrice += price * (inputValue[bookID] || amount);
-      }
-    });
-    // console.log('total',totalPrice)
+    if(selectedProduct?.length>0){
+      selectedProduct.forEach((item, index) => {
+        console.log("item",item);
+        const { price, bookID, amount } = item;
+        
+          totalPrice += price * (inputValue[bookID] || amount);
+        
+      });
+    }
+    
+    
     return totalPrice;
   };
   const finalTotal = () => {
@@ -120,7 +126,7 @@ function Cart() {
     getAddToCart.forEach((item, index) => {
       if (checkboxStates[index]) {
         hasCheckedProduct = true;
-        totalPrice = calculateTotalPrice() + 19.0;
+        totalPrice = calculateTotalPrice(selectedProducts) + 19.0;
       }
     });
     if (hasCheckedProduct) {
@@ -131,25 +137,26 @@ function Cart() {
   };
   console.log('select',selectedProducts)
   const handlePayment = () => {
-    
+     
     if (selectedProducts.length > 0) {
-      selectedProducts.map((product)=>{
-        // const {amount,discount,bookID} = product
-        // console.log('info',amount,discount,bookID)
-        http.post("/receipt/setHistory", { cart: [product.amount,product.discount,product.bookID] })
-        .then((response) => {
-          window.location.href = "/payment";
-        })
-        .catch((error) => console.log(error));
+      let newCart
+      newCart=selectedProducts.map((product)=>{
+        const {amount,discount,bookID} = product
+        return {amount:amount,discount:discount,bookID:bookID}
       })
-      
+      http.post("/receipt/setHistory", { cart: newCart })
+      .then((response) => {
+        window.location.href = "/payment";
+      })
+      .catch((error) => console.log(error));
     }
   };
+  console.log(getAddToCart);
   return (
     <Layout>
-      <div className="cart-container">
+      {getAddToCart.length>0?<div className="cart-container">
         <div className="header-cart-item">
-          <h1>GIỎ HÀNG ({getAddToCart.length} sản phẩm)</h1>
+          <h1>GIỎ HÀNG ({(getAddToCart[0]?.cart)?.length} sản phẩm)</h1>
           <div className="checked-all-products">
             <div style={{ flex: "2", display: "flex" }}>
               <input
@@ -158,7 +165,7 @@ function Cart() {
                 onChange={handleSelectAllChange}
               />
               <span style={{ marginTop: "-4px", marginLeft: "5px" }}>
-                Chọn tất cả ({getAddToCart.length} sản phẩm)
+                Chọn tất cả ({getAddToCart[0]?.cart?.length} sản phẩm)
               </span>
             </div>
             <div style={{ flex: ".5" }}>Số lượng</div>
@@ -167,71 +174,79 @@ function Cart() {
 
           <div style={{ backgroundColor: "#fff", borderRadius: "7px" }}>
             <div style={{ paddingTop: "10px", paddingRight: "10px" }}>
-              {getAddToCart.map((item, index) => {
-                const { img, name, price, bookID, amount } = item;
-                return (
-                  <div>
-                    <div className="product-container">
-                      <div className="check-product">
-                        <input
-                          type="checkbox"
-                          checked={checkboxStates[index]}
-                          onChange={() => handleCheckboxChange(index)}
-                        />
-                      </div>
-                      <div>
-                        <img className="books-image" src={img} alt=""></img>
-                      </div>
-                      <div className="products-info">
-                        <div>{name}</div>
-                        <div style={{ fontSize: "1.1em", fontWeight: "600" }}>
-                          {price} đ
-                        </div>
-                      </div>
-                      {/* nút tăng giảm số lượng */}
-                      <div style={{ flex: ".5" }}>
-                        <div className="amount-button">
-                          <div>
-                            <button
-                              onClick={() => decreaseQuantity(bookID, amount)}
-                            >
-                              <img
-                                style={{ height: "3px" }}
-                                src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/ico_minus2x.png"
-                                alt=""
-                              ></img>
-                            </button>
-                            <input
-                              type="text"
-                              value={inputValue[bookID] || amount}
-                              onInput={handleKeyPress}
-                              onChange={(event) =>
-                                handleInputChange(event, bookID)
-                              }
-                            />
-                            <button
-                              onClick={() => increaseQuantity(bookID, amount)}
-                            >
-                              <img
-                                style={{ height: "12px" }}
-                                src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_plus2x.png"
-                                alt=""
+              {
+                getAddToCart[0]?.cart?.map((item,index)=>{
+                  let img,name,price,bookID,amount;
+                      img=getAddToCart[0].result[index].images[0]
+                      name=getAddToCart[0].result[index].name
+                      price=item.price
+                      bookID=item.bookID
+                      amount=item.amount
+                      return (
+                        <div >
+                          <div className="product-container">
+                            <div className="check-product">
+                              <input
+                                type="checkbox"
+                                checked={checkboxStates[index]}
+                                onChange={() => handleCheckboxChange(index)}
                               />
-                            </button>
+                            </div>
+                            <div>
+                              <img className="books-image" src={img} alt=""></img>
+                            </div>
+                            <div className="products-info">
+                              <div>{name}</div>
+                              <div style={{ fontSize: "1.1em", fontWeight: "600" }}>
+                                {price} đ
+                              </div>
+                            </div>
+                            {/* nút tăng giảm số lượng */}
+                            <div style={{ flex: ".5" }}>
+                              <div className="amount-button">
+                                <div>
+                                  <button
+                                    onClick={() => decreaseQuantity(bookID, amount)}
+                                  >
+                                    <img
+                                      style={{ height: "3px" }}
+                                      src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/ico_minus2x.png"
+                                      alt=""
+                                    ></img>
+                                  </button>
+                                  <input
+                                    type="text"
+                                    value={inputValue[bookID] || amount}
+                                    onInput={handleKeyPress}
+                                    onChange={(event) =>
+                                      handleInputChange(event, bookID)
+                                    }
+                                  />
+                                  <button
+                                    onClick={() => increaseQuantity(bookID, amount)}
+                                  >
+                                    <img
+                                      style={{ height: "12px" }}
+                                      src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_plus2x.png"
+                                      alt=""
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="product-price">
+                              {parseInt(price) * inputValue[bookID] ||parseInt(price) * amount} đ
+                            </div>
+                            <div className="trashIcon">
+                              <FaRegTrashCan size={17} />
+                            </div>
                           </div>
+                          <div className="border-space-product"></div>
                         </div>
-                      </div>
-                      <div className="product-price">
-                        {price * inputValue[bookID] || amount} đ
-                      </div>
-                      <div className="trashIcon">
-                        <FaRegTrashCan size={17} />
-                      </div>
-                    </div>
-                    <div className="border-space-product"></div>
-                  </div>
-                );
-              })}
+                      );
+                 })
+              }
+              
             </div>
           </div>
         </div>
@@ -240,7 +255,7 @@ function Cart() {
           <div style={{ padding: "10px" }}>
             <div className="cart-total-header">
               <div>Thành tiền</div>
-              <div>{calculateTotalPrice()} đ</div>
+              <div>{calculateTotalPrice(selectedProducts)} đ</div>
             </div>
             <div>
               {checkboxStates.includes(true) ? (
@@ -277,7 +292,7 @@ function Cart() {
             </button>
           </div>
         </div>
-      </div>
+      </div>:<> </>}
     </Layout>
   );
 }
