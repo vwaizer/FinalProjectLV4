@@ -172,11 +172,38 @@ export const addToCart = async (req, res, next) => {
 };
 export const getHistory = async (req, res, next) => {
   const userID = req.userID.valueOf();
+  console.log(userID);
   try {
     const result = await databaseProject.receipt
-      .find({ userID: new ObjectId(`${userID}`), status: "History" })
+      .aggregate([
+        {
+          '$match': {
+            'userID': new ObjectId(`${userID}`),
+            'status':'History'
+          }
+        }, {
+          '$lookup': {
+            'from': 'books', 
+            'localField': 'cart.bookID', 
+            'foreignField': '_id', 
+            'as': 'book'
+          }
+        }
+      ])
       .toArray();
-    return res.json(result);
+      console.log(result);
+      if(result.length>0){
+        const returnData=result.map((item,index)=>{
+           const loop=item.book.map((value,number)=>{
+            return {userID:item.userID,date:item.date,status:item.status,name:value.name,price:item.cart[index].price,amount:item.cart[index].amount,discount:item.cart[index].discount,img:value.images[0]}
+          })
+          return loop
+         })
+      return res.json(returnData);
+      }
+     else{
+      return res.json("No History")
+     }
   } catch (error) {
     next(error);
   }
