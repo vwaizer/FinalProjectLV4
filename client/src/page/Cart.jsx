@@ -134,9 +134,9 @@ function Cart() {
     
     if (selectedProducts.length > 0) {
       selectedProducts.map((product)=>{
-        const {amount,discount,bookID} = product
-        console.log('info',amount,discount,bookID)
-        http.post("/receipt/setHistory", { cart: [amount,discount,bookID] })
+        // const {amount,discount,bookID} = product
+        // console.log('info',amount,discount,bookID)
+        http.post("/receipt/setHistory", { cart: [product.amount,product.discount,product.bookID] })
         .then((response) => {
           window.location.href = "/payment";
         })
