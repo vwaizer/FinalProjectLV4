@@ -4,6 +4,7 @@ import "./cart.css";
 import { FaRegTrashCan } from "react-icons/fa6";
 import { useState } from "react";
 import { http } from "../util/http";
+
 function Cart() {
   const [getAddToCart, setGetAddToCart] = useState([]);
   const [checkboxStates, setCheckboxStates] = useState([]);
@@ -140,9 +141,11 @@ function Cart() {
      
     if (selectedProducts.length > 0) {
       let newCart
+      
       newCart=selectedProducts.map((product)=>{
-        const {amount,discount,bookID} = product
-        return {amount:amount,discount:discount,bookID:bookID}
+        console.log("product",product);
+        const {amount,discount,bookID,price} = product
+        return {amount:amount,discount:discount,bookID:bookID,price:price}
       })
       http.post("/receipt/setHistory", { cart: newCart })
       .then((response) => {

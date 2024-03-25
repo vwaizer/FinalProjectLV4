@@ -30,7 +30,7 @@ export const getAllReceipt = async (req, res, next) => {
     const tmp = result.map((item, index) => {
       if (item.cartDetail.length > 0 && index > 0) {
         const newData = item.cart.map((value, number) => {
-          
+            console.log(item.cartDetail[number]);
             return {
               bookName: item.cartDetail[number].name,
               price: item.cart[number].price,
@@ -211,7 +211,11 @@ export const getHistory = async (req, res, next) => {
 };
 export const setHistory = async (req, res, next) => {
   const userID = req.userID.valueOf();
-  const cart = req.body.cart;
+   const oldCart = req.body.cart;
+   console.log(oldCart);
+  const cart=oldCart.map((item,index)=>{
+    return{amount:item.amount,discount:item.discount,bookID:new ObjectId(`${item.bookID}`),price:item.price}
+  })
   console.log("cart",cart);
 if(cart.length>0){
   try {
@@ -225,16 +229,17 @@ if(cart.length>0){
       userID: new ObjectId(`${userID}`),
       status: "In Cart",
     });
-    console.log(cartUser);
+    console.log("cartUser",cartUser);
     if (cart.length < cartUser.cart.length) {
       const tmpCart = cart.map((item,index)=>{
-        if(item.bookID != cartUser.cart[index].bookID){
+       
+        if(item.bookID != cartUser.cart[index].bookID.valueOf()){
           return item
         }
       })
-      console.log(tmpCart);
+      console.log("tmpCart",tmpCart);
       const newCart=tmpCart.filter((item,index)=>item != undefined)
-      console.log(newCart);
+      
       const updateResult = await databaseProject.receipt.updateOne(
         { userID: userID, status: "In Cart" },
         {$set:{ cart: newCart}}
