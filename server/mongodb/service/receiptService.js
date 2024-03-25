@@ -58,6 +58,7 @@ export const getFilterReceipt = async (req, res, next) => {
           {
             $match: {
               userID: new ObjectId(`${req.userID.valueOf()}`),
+              status:"In Cart"
             },
           },
           {
@@ -211,6 +212,8 @@ export const getHistory = async (req, res, next) => {
 export const setHistory = async (req, res, next) => {
   const userID = req.userID.valueOf();
   const cart = req.body.cart;
+  console.log("cart",cart);
+if(cart.length>0){
   try {
     const result = await databaseProject.receipt.insertOne({
       date: new Date(),
@@ -219,16 +222,22 @@ export const setHistory = async (req, res, next) => {
       status: "History",
     });
     const cartUser = await databaseProject.receipt.findOne({
-      userID: userID,
+      userID: new ObjectId(`${userID}`),
       status: "In Cart",
     });
+    console.log(cartUser);
     if (cart.length < cartUser.cart.length) {
-      const newCart = cartUser.cart.filter(
-        (item, index) => !cart.includes(item)
-      );
+      const tmpCart = cart.map((item,index)=>{
+        if(item.bookID != cartUser.cart[index].bookID){
+          return item
+        }
+      })
+      console.log(tmpCart);
+      const newCart=tmpCart.filter((item,index)=>item != undefined)
+      console.log(newCart);
       const updateResult = await databaseProject.receipt.updateOne(
         { userID: userID, status: "In Cart" },
-        { cart: newCart, status: "History" }
+        {$set:{ cart: newCart}}
       );
       return res.json(updateResult);
     } else {
@@ -241,4 +250,7 @@ export const setHistory = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
+}
+else return res.json("Cart is empty")
+  
 };
