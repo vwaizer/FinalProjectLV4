@@ -146,7 +146,7 @@ function Cart() {
       })
       http.post("/receipt/setHistory", { cart: newCart })
       .then((response) => {
-        // window.location.href = "/payment";
+        window.location.href = "/payment";
       })
       .catch((error) => console.log(error));
     }
