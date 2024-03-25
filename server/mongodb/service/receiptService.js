@@ -29,12 +29,13 @@ export const getAllReceipt = async (req, res, next) => {
      let formatData={};
     const tmp = result.map((item, index) => {
       if (item.cartDetail.length > 0 && index > 0) {
+        console.log("item",item);
         const newData = item.cart.map((value, number) => {
-            console.log(item.cartDetail[number]);
+            
             return {
               bookName: item.cartDetail[number].name,
-              price: item.cart[number].price,
-              amount: item.cart[number].amount,
+              price: value.price,
+              amount: value.amount,
               email: item?.userDetail[0]?.email,
               status:item?.status
             };
@@ -45,6 +46,7 @@ export const getAllReceipt = async (req, res, next) => {
       
       }
     });
+    console.log(formatData);
     return res.json(formatData);
   } catch (error) {
     next(error);
@@ -192,11 +194,13 @@ export const getHistory = async (req, res, next) => {
         }
       ])
       .toArray();
-      console.log(result);
+      
       if(result.length>0){
         const returnData=result.map((item,index)=>{
+          console.log("item cart",item.cart);
+          console.log("item book",item.book);
            const loop=item.book.map((value,number)=>{
-            return {userID:item.userID,date:item.date,status:item.status,name:value.name,price:item.cart[index].price,amount:item.cart[index].amount,discount:item.cart[index].discount,img:value.images[0]}
+            return {userID:item.userID,date:item.date,status:item.status,name:value.name,price:value.price,amount:item.cart[number].amount,discount:item.cart[number].discount,img:value.images[0]}
           })
           return loop
          })

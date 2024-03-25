@@ -25,7 +25,7 @@ function Payment() {
   ];
   const [showNoteInput, setShowNoteInput] = useState(false);
   const [inputValues, setInputValue] = useState({});
-
+ 
   const listCheck = JSON.parse(localStorage.getItem("BoughtList"));
   // console.log(listCheck);
   // console.log(getProduct)
@@ -121,8 +121,10 @@ function Payment() {
           <div className="space-item">
           <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>
           <div>
-            {listCheck.map((item) => {
-              const { bookImage, name, price,amount } = item;
+            {getProduct.map((item) => {
+             
+              const { img, name, price,amount } = item[0];
+              console.log(item);
               return (
                 <div
                   style={{
@@ -134,7 +136,7 @@ function Payment() {
                   <div style={{ display: "flex" }}>
                     <img
                       style={{ width: "120px", height: "130px" }}
-                      src={bookImage}
+                      src={img}
                       alt=""
                     ></img>
                     <div style={{ padding: "0px 15px" }}>{name}</div>

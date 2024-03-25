@@ -46,7 +46,7 @@ export const updateUser=async (req,res,next)=>{
 }
 export const getAllUser=async (req,res,next)=>{
   try {
-    const data=await databaseProject.users.find().toArray()
+    const data=await databaseProject.users.find({role:"user"}).toArray()
     if(req.query.page){
       const result=data.filter((item,index)=>{
         if(index >=(Number(page)-1)*32 ){

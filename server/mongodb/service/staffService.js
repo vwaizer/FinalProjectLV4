@@ -36,3 +36,11 @@ export const getOverall= async(req,res,next)=>{
     next(error)
  }
 }
+export const getAllStaff=async(req,res,next)=>{
+    try {
+        const result=await databaseProject.users.find({role:"staff"}).toArray()
+        return res.json(result)
+    } catch (error) {
+        next(error)
+    }
+}

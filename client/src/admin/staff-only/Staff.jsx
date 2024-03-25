@@ -7,13 +7,14 @@ const Staff = () => {
  
     useEffect(() => {
     http
-      .get("/staff/user")
+      .get("/staff/getAllStaff")
       .then((getStaff) => setGetStaff(getStaff.data))
       .catch((err) => {
         console.log(err);
       });
-    console.log(getStaff);
+
   }, []);
+  console.log(getStaff);
   return (
     <Space size={20} direction="vertical">
       <Typography.Title level={4}>Thông Tin Nhân Viên</Typography.Title>
@@ -24,23 +25,26 @@ const Staff = () => {
             dataIndex: "_id",
           },
           {
-            title: "Tên KH",
-            dataIndex: "",
+            title: "Tên ",
+            dataIndex: "fullName",
           },
           {
             title: "Năm Sinh",
-            dataIndex: "",
+            dataIndex: "birthday",
           },
           {
             title: "Số Điện Thoại",
-            dataIndex: "",
+            dataIndex: "phone",
           },
           {
-            title: "Địa Chỉ",
-            dataIndex: "",
+            title: "Email",
+            dataIndex: "email",
           },
         ]}
         dataSource={getStaff}
+        pagination={{
+          pageSize: 5
+        }}
       ></Table>
     </Space>
   );
