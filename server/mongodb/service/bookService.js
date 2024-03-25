@@ -41,7 +41,7 @@ export const addBook = async (req, res,next) => {
           price: item.price,
           type:item.type
         };
-        const setBook = await databaseProject.book.insertOne(new Books(addedBook));
+        //const setBook = await databaseProject.book.insertOne(new Books(addedBook));
       })
      
   
