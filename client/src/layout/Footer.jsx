@@ -32,19 +32,23 @@ const bookTypes = [
   },
   {
     title: "Tâm Lý - Kỹ Năng Sống",
-    href: "#psb",
+    href: "/product/#psb",
   },
   {
     title: "Kinh tế",
-    href: "#economic",
+    href: "/product/#economic",
   },
   {
     title: "Nuôi Dạy Con ",
-    href: "#Children",
+    href: "/product/#Children",
   },
   {
     title: "Tiểu Sử - Hồi Ký",
-    href: "#history",
+    href: "/product/#history",
+  },
+  {
+    title: "Sách Học Ngoại Ngữ",
+    href: "/product/#Learning",
   },
 ];
 

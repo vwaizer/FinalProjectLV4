@@ -8,6 +8,11 @@ import AdminRoute from "../AdminRoute";
 import { Link } from "react-router-dom";
 
 const LayoutAdmin = () => {
+
+  const handleLogOut = () => {
+    localStorage.removeItem("staff")
+    window.location.href = "/staff"
+  }
   return (
     <div className="layout">
       <AdminPage />
@@ -15,6 +20,11 @@ const LayoutAdmin = () => {
         <SideMenu></SideMenu>
         <PageContent></PageContent>
       </Space>
+      <div className="button">
+        <button onClick={handleLogOut} type="button" className="btn">
+          Log Out
+        </button>
+      </div>
     </div>
   );
 };

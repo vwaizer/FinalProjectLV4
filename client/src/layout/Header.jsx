@@ -41,10 +41,11 @@ let authors = [
     href: "/sign-in",
   },
 ];
-function Header() {
+function Header({onClick}) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [signin, setSignin] = useState(false);
   const [signout, setSignout] = useState(false);
+  const [showAdmin, setShowAdmin] = useState(false);
   const navigate = useNavigate();
 
   setInterval(() => {
@@ -63,6 +64,8 @@ function Header() {
       setSignin(true);
     }
   }, [signout]);
+
+
 
   const backToHome = () => {
     window.location.href = "/";

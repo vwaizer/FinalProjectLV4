@@ -19,7 +19,7 @@ function Products() {
   const [value, setValue] = useState([]);
   const [valuePublisher, setValuePublisher] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(32);
+  const [postPerPage, setPostPerPage] = useState(40);
   const [loading, setLoading] = useState(false);
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
@@ -79,22 +79,30 @@ function Products() {
     if (currentPage > 0) {
       setCurrentPage(currentPage + 1);
     }
-}
+  };
+
+  let timeOut = null;
 
   const onChangeAuthor = async (e) => {
     setValue(e.target.value);
-    await http
-      .get("/book/author")
-      .then((getAuthor) => setGetAuthor(getAuthor.data))
-      .catch((err) => console.log(err));
-  };
+    clearTimeout(timeOut);
+    timeOut = await setTimeout(() => {
+      http
+        .get("/book/author")
+        .then((getAuthor) => setGetAuthor(getAuthor.data))
+        .catch((err) => console.log(err));
+    },2000);
+  };  
 
-  const onChangePublisher = async (e) => {
+  const onChangePublisher =  (e) => {
     setValuePublisher(e.target.value);
-    await http
-      .get("/book/publisher")
-      .then((getPublisher) => setGetPublisher(getPublisher.data))
-      .catch((err) => console.log(err));
+    clearTimeout(timeOut);
+    timeOut = setTimeout(() => {
+      http
+        .get("/book/publisher")
+        .then((getPublisher) => setGetPublisher(getPublisher.data))
+        .catch((err) => console.log(err));
+    },2000);
   };
 
   return (
@@ -190,24 +198,24 @@ function Products() {
         <div className="rightbox">
           <div>{loading ? <Loading /> : <ShowProduct getBook={getBook} />}</div>
           <div>
-            <ReactPaginate 
-            previousLabel={"<"}
-            nextLabel={">"}
-            breakLabel={"..."}
-            pageCount={getBook.length}
-            marginPagesDisplayed={2}
-            pageRangeDisplayed={4}
-            onPageChange={handlePageClick}
-            containerClassName={'pagination'}
-            pageClassName={"page-item"}
-            pageLinkClassName={"page-link"}
-            previousClassName={"page-item"}
-            previousLinkClassName={"page-link"}
-            nextClassName={"page-item"}
-            nextLinkClassName={"page-link"} 
-            breakClassName={"page-item"}
-            breakLinkClassName={"page-link"}
-            activeClassName={"active"}         
+            <ReactPaginate
+              previousLabel={"<"}
+              nextLabel={">"}
+              breakLabel={"..."}
+              pageCount={getBook.length}
+              marginPagesDisplayed={2}
+              pageRangeDisplayed={4}
+              onPageChange={handlePageClick}
+              containerClassName={"pagination"}
+              pageClassName={"page-item"}
+              pageLinkClassName={"page-link"}
+              previousClassName={"page-item"}
+              previousLinkClassName={"page-link"}
+              nextClassName={"page-item"}
+              nextLinkClassName={"page-link"}
+              breakClassName={"page-item"}
+              breakLinkClassName={"page-link"}
+              activeClassName={"active"}
             />
           </div>
         </div>
