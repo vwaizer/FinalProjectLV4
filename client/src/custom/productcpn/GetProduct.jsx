@@ -10,7 +10,7 @@ const GetProduct = ({ getBook }) => {
           return (
             <div key={index} id="literature" >
               <Link to={`/product-detail/${item._id}`}>
-                <SetProduct image={item.images} name={item.name} />
+                <SetProduct image={item.images} name={item.name} author={item.author} />
               </Link>
             </div>
           );

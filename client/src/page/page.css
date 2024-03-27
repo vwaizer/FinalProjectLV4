@@ -38,7 +38,7 @@
 }
 
 .product-input{
-    width: 100%;
+    width: 80%;
     height: 50px;
     padding: 0 20px;
     border: 1px solid #eee;
@@ -46,6 +46,7 @@
     transition: 0.25s ease;
 
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .author,
@@ -55,7 +56,7 @@
 
 .label{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 21px;
     transform: translateY(-50%);
     user-select: none;
@@ -110,14 +111,25 @@
 }
 .rightbox{
     display: flex;
-    flex-direction: column;
-    width: 60%;
+    flex-wrap: wrap;
+    width: 70%;
     height: 100%;
     background-color: #fff;
     border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 5px grey
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 0 5px grey;
+
+    gap: 25px
+}
+
+.paginate{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin-right: 75px ;
+
 }
 
 .product_info a{

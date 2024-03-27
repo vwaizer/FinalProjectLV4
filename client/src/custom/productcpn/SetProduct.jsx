@@ -19,6 +19,7 @@ const SetProduct = ({
         </div>
         <div className="product_title">
           <h3>{name}</h3>
+          <p>{author}</p>
         </div>
       </div>
     </div>

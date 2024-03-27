@@ -10,6 +10,8 @@ import BasicPagination from "../pagination/Pagination.jsx";
 import Typography from "@mui/material/Typography";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+import SetProduct from "../custom/productcpn/SetProduct.jsx";
+import { Link } from "react-router-dom";
 
 function Products() {
   const [getBook, setGetBook] = useState([]);
@@ -19,7 +21,7 @@ function Products() {
   const [value, setValue] = useState([]);
   const [valuePublisher, setValuePublisher] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(40);
+  const [postPerPage, setPostPerPage] = useState(32);
   const [loading, setLoading] = useState(false);
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
@@ -27,10 +29,12 @@ function Products() {
   const totalPage = Math.ceil(getBook.length / postPerPage);
 
   useEffect(() => {
-    setLoading(true);
     http
       .get(`/book/?page=${currentPage}`)
-      .then((getBook) => setGetBook(getBook.data), setLoading(false))
+      .then((res) => {
+        setGetBook(res.data);
+        setGetAuthor(res.data);
+      })
       .catch((err) => {
         console.log(err);
         if (err.code === "ERR_NETWORK") {
@@ -39,7 +43,7 @@ function Products() {
       });
   }, [currentPage]);
 
-  console.log(getBook);
+
 
   useEffect(() => {
     http
@@ -52,27 +56,16 @@ function Products() {
       });
   }, []);
 
-  const Loading = () => {
-    return (
-      <>
-        <div>
-          <Skeleton height={350} />
-        </div>
-        <div>
-          <Skeleton height={350} />
-        </div>
-      </>
-    );
-  };
 
-  const ShowProduct = ({ getBook }) => {
-    return (
-      <div className="show_product">
-        <div>
-          <GetProduct getBook={getBook} />
-        </div>
-      </div>
-    );
+  let timeOut = null;
+
+  const handleFilter = (e) => {
+    clearTimeout(timeOut);
+    timeOut = setTimeout(() =>{
+      setGetAuthor(
+        getBook.filter((val) => val.author.toLowerCase().includes(e.target.value))
+      );
+    },1000)
   };
 
   const handlePageClick = () => {
@@ -81,29 +74,28 @@ function Products() {
     }
   };
 
-  let timeOut = null;
 
-  const onChangeAuthor = async (e) => {
-    setValue(e.target.value);
-    clearTimeout(timeOut);
-    timeOut = await setTimeout(() => {
-      http
-        .get("/book/author")
-        .then((getAuthor) => setGetAuthor(getAuthor.data))
-        .catch((err) => console.log(err));
-    },2000);
-  };  
+  // const onChangeAuthor = async (e) => {
+  //   setValue(e.target.value);
+  //   clearTimeout(timeOut);
+  //   timeOut = await setTimeout(() => {
+  //     http
+  //       .get("/book/author")
+  //       .then((getAuthor) => setGetAuthor(getAuthor.data))
+  //       .catch((err) => console.log(err));
+  //   },2000);
+  // };
 
-  const onChangePublisher =  (e) => {
-    setValuePublisher(e.target.value);
-    clearTimeout(timeOut);
-    timeOut = setTimeout(() => {
-      http
-        .get("/book/publisher")
-        .then((getPublisher) => setGetPublisher(getPublisher.data))
-        .catch((err) => console.log(err));
-    },2000);
-  };
+  // const onChangePublisher =  (e) => {
+  //   setValuePublisher(e.target.value);
+  //   clearTimeout(timeOut);
+  //   timeOut = setTimeout(() => {
+  //     http
+  //       .get("/book/publisher")
+  //       .then((getPublisher) => setGetPublisher(getPublisher.data))
+  //       .catch((err) => console.log(err));
+  //   },2000);
+  // };
 
   return (
     <Layout>
@@ -121,83 +113,40 @@ function Products() {
               })}
             </div>
             <div>
-              <h2>Tác giả</h2>
+              <h2>Tác Giả</h2>
               <div className="author">
                 <input
                   className="product-input"
                   type="text"
+                  onChange={handleFilter}
                   placeholder=" "
-                  onChange={onChangeAuthor}
-                  value={value}
                 />
-                <label htmlFor="author" className="label">
-                  Tìm tên tác giả
+                <label htmlFor="Author" className="label">
+                  Search
                 </label>
-              </div>
-              <div className="drop-down">
-                {value &&
-                  getAuthor
-                    .filter(
-                      (item) =>
-                        item.author.startsWith(value) && item.author !== value
-                    )
-                    .map((item, index) => {
-                      return (
-                        <div
-                          className="item"
-                          key={index}
-                          onClick={(e) => setValue(item.author)}
-                        >
-                          <li>
-                            <a href="#">{item.author}</a>
-                          </li>
-                        </div>
-                      );
-                    })}
-              </div>
-            </div>
-            <div>
-              <h2>Nhà Xuất Bản</h2>
-              <div className="publisher">
-                <input
-                  className="product-input"
-                  type="text"
-                  placeholder=" "
-                  onChange={onChangePublisher}
-                  value={valuePublisher}
-                />
-                <label htmlFor="Publisher" className="label">
-                  Tìm tên NXB
-                </label>
-              </div>
-              <div className="drop-down">
-                {valuePublisher &&
-                  getPublisher
-                    .filter(
-                      (item) =>
-                        item.publisher.startsWith(valuePublisher) &&
-                        item.publisher !== valuePublisher
-                    )
-                    .map((item, index) => {
-                      return (
-                        <div
-                          className="item"
-                          key={index}
-                          onClick={(e) => setValuePublisher(item.publisher)}
-                        >
-                          <li>
-                            <a href="#">{item.publisher}</a>
-                          </li>
-                        </div>
-                      );
-                    })}
               </div>
             </div>
           </div>
         </div>
         <div className="rightbox">
-          <div>{loading ? <Loading /> : <ShowProduct getBook={getBook} />}</div>
-          <div>
+          {getAuthor.map((item, index) => {
+            if (item !== null) {
+              return (
+                <div className="product_info" key={index}>
+                  <Link to={`/product-detail/${item._id}`}>
+                    <SetProduct
+                      image={item.images}
+                      name={item.name}
+                      author={item.author}
+                    />
+                  </Link>
+                </div>
+              );
+            }
+          })}
+        </div>
+      </div>
+          <div className="paginate">
             <ReactPaginate
               previousLabel={"<"}
               nextLabel={">"}
@@ -218,8 +167,6 @@ function Products() {
               activeClassName={"active"}
             />
           </div>
-        </div>
-      </div>
     </Layout>
   );
 }
