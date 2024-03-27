@@ -65,8 +65,8 @@ export const getAllBook = (data, page) => {
   // const data = await databaseProject.book.find({}).toArray();
   if (page) {
     const result = data.filter((item, index) => {
-      if (index >= (Number(page) - 1) * 32) {
-        if (index < Number(page) * 32) {
+      if (index >= (Number(page) - 1) * 40) {
+        if (index < Number(page) * 40) {
           return item;
         }
       }
