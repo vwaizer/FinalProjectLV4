@@ -116,7 +116,7 @@
     height: 100%;
     background-color: #fff;
     border-radius: 5px;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: flex-start;
     box-shadow: 0 0 5px grey;
 
