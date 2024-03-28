@@ -4,11 +4,11 @@ import Footer from './Footer'
 
 
 
-function Layout(props) {
+function Layout({children, goToAdmin}) {
   return (
     <div>
-        <Header/>
-        {props.children}
+        <Header onClick={goToAdmin}/>
+        {children}
         <Footer/>
     </div>
   )

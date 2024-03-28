@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import Layout from "../layout/Layout";
 import { useNavigate } from "react-router-dom";
 import { FaLock, FaUser } from "react-icons/fa";
+import LayoutAdmin from "../admin/layout-admin/LayoutAdmin";
 
-const Admin = () => {
+const Admin = ({onClick}) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = () => {
     if (username === "admin" && password === "123456789") {
-      navigate("/admin");
+      localStorage.setItem("staff", username)
+      window.location.href = "/adminpage"
     } else {
       setTimeout(() => {
         alert("Wrong Password");

@@ -28,11 +28,19 @@ export const createStaff=async(req,res)=>{
 export const getOverall= async(req,res,next)=>{
  
  try {
-    const bookNumber=await databaseProject.book.find().toArray()
-    const userNumber=await databaseProject.users.find().toArray()
-    const receiptNumber=await databaseProject.receipt.find().toArray()
-    return res.json({bookNumber:bookNumber.length(),userNumber:userNumber.length(),receiptNumber:receiptNumber.length()})
+    const bookNumber=(await databaseProject.book.find().toArray()).length
+    const userNumber=(await databaseProject.users.find().toArray()).length
+    const receiptNumber=(await databaseProject.receipt.find().toArray()).length
+    return res.json({bookNumber:bookNumber,userNumber:userNumber,receiptNumber:receiptNumber})
  } catch (error) {
     next(error)
  }
+}
+export const getAllStaff=async(req,res,next)=>{
+    try {
+        const result=await databaseProject.users.find({role:"staff"}).toArray()
+        return res.json(result)
+    } catch (error) {
+        next(error)
+    }
 }

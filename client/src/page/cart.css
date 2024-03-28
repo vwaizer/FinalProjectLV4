@@ -96,6 +96,7 @@ input[type="checkbox"]:checked::before {
 .books-image {
   width: 100px;
   height: 100px;
+  margin: 7px 0px;
 }
 .products-info {
   display: flex;
@@ -151,6 +152,14 @@ input[type="checkbox"]:checked::before {
   font-weight: bold;
   color:#C92127;
 }
+.border-space-product{
+  width: 95%;
+  margin: auto;
+  border-bottom-width: 1px;
+  border-bottom-color: #ededed;
+  border-bottom-style: solid;
+
+}
 .trashIcon{
   display: flex;
   margin-right: 10px;
@@ -198,7 +207,7 @@ input[type="checkbox"]:checked::before {
   margin-top: 10px;
   transition: background-color .4s ease;
 }
-.disabled {
+.cart-total .disabled {
   background-color: rgb(212, 211, 211);
   color: white;
   cursor: default;

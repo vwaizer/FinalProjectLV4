@@ -19,9 +19,7 @@ const SetProduct = ({
         </div>
         <div className="product_title">
           <h3>{name}</h3>
-          {/* <p>Type: {type}</p>
-          <p>Author: {author}</p>
-          <p>Filed: {field}</p> */}
+          <p>{author}</p>
         </div>
       </div>
     </div>

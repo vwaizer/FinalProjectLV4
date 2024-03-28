@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../layout/Layout";
 import "./payment.css";
 import { Input, Radio, ConfigProvider, Checkbox } from "antd";
 import { useState } from "react";
+import { http } from "../util/http";
 
 function Payment() {
+  const [getProduct, setGetProduct] = useState([])
+  useEffect(() => {
+
+    http
+      .get("/receipt/history")
+      .then((getProduct) => {console.log(getProduct);setGetProduct(getProduct.data);})
+      .catch((err) => console.log(err));
+  }, []);
   const boxFillInfo = [
     "Họ và tên người nhận",
     "Email",
@@ -15,12 +24,27 @@ function Payment() {
     "Địa chỉ nhận hàng",
   ];
   const [showNoteInput, setShowNoteInput] = useState(false);
-  const [checkFillNote, setCheckFillNote] = useState(false);
+  const [inputValues, setInputValue] = useState({});
+ 
   const listCheck = JSON.parse(localStorage.getItem("BoughtList"));
-  console.log(listCheck);
+  // console.log(listCheck);
+  // console.log(getProduct)
   const onChange = (e) => {
     setShowNoteInput(e.target.checked);
   };
+  const handleChange = () => {
+    const isAnyInputEmpty = Object.values(inputValues).some((value) => !value);
+    if (isAnyInputEmpty) {
+      alert("Vui lòng điền đầy đủ thông tin");
+      return;
+    }  }
+  const handleInputChange = (e,inputName) => {
+    setInputValue((prevValues)=> ({
+      ...prevValues, 
+      [inputName]: e.target.value
+    })
+    )
+  }
   return (
     <Layout>
       <div style={{ width: "80%", margin: "auto" }}>
@@ -38,7 +62,10 @@ function Payment() {
                 key={item}
               >
                 <div style={{ flexBasis: "35%" }}>{item} </div>
-                <Input placeholder={`Nhập ${item} `} />
+                <Input placeholder={`Nhập ${item} `} 
+                value={inputValues[item] || ""}
+                onChange={(e) => handleInputChange(e, item)}
+                onBlur={handleChange()}/>
               </div>
             );
           })}
@@ -90,12 +117,14 @@ function Payment() {
           </div>
         </div>
 
-        <div>
+        <div className="box-container">
           <div className="space-item">
           <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>
           <div>
-            {listCheck.map((item) => {
-              const { bookImage, name, price } = item;
+            {getProduct.map((item) => {
+             
+              const { img, name, price,amount } = item[0];
+              console.log(item);
               return (
                 <div
                   style={{
@@ -107,7 +136,7 @@ function Payment() {
                   <div style={{ display: "flex" }}>
                     <img
                       style={{ width: "120px", height: "130px" }}
-                      src={bookImage}
+                      src={img}
                       alt=""
                     ></img>
                     <div style={{ padding: "0px 15px" }}>{name}</div>
@@ -115,7 +144,7 @@ function Payment() {
 
                   <div style={{display:'flex', flexBasis:'30%', border:'1px solid black', justifyContent:'space-between'}}>
                     <div>{price} đ</div>
-                    <div>1</div>
+                    <div>{amount}</div>
                     <div style={{color:'#F39801',fontWeight:'600'}}>{price} đ</div>
                   </div>
                 </div>

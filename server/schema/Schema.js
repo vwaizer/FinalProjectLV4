@@ -1,3 +1,5 @@
+import { ObjectId } from "bson";
+
 export class User {
   constructor(user) {
     (this.fullName = user.fullName||""),
@@ -30,8 +32,8 @@ export class Books {
 }
 export class Comment {
   constructor(comment) {
-    (this.userCode = comment.userCode),
-      (this.bookCode = comment.bookCode),
+    (this.userId = new ObjectId(comment.userId)),
+      (this.bookId = new ObjectId(comment.bookId)),
       (this.content = comment.content),
       (this.rate = comment.rate),
       (this.date = new Date(comment.date));
@@ -39,10 +41,12 @@ export class Comment {
 }
 export class ImportedBook {
   constructor(book) {
-    (this.userID = book.userID),
-      (this.dateIn = book.dateIn),
+    (this.userID = new ObjectId (book.userID)),
+      (this.dateIn = new Date()),
       (this.amount = book.amount),
-      (this.book = book.book);
+      (this.book = book.book),
+      (this.status="Waiting: Admin")
+      
   }
 }
 export class Receipt {

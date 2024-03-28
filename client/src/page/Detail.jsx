@@ -88,7 +88,7 @@ function Detail() {
                     <h2>{item.name}</h2>
                     <h3>Author : {item.author}</h3>
                   </div>
-                  <p>Description: .....</p>
+                  <p>{item.description}</p>
                   <h1>Price: {item.price} VND</h1>
                 <div className="quantity">
                   <button type="button" onClick={onDecrease}>-</button>

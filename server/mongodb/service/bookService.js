@@ -4,7 +4,7 @@ import databaseProject from "../GetDataBase.js";
 export const getDetailBook = async (req, res) => {
   console.log("vao");
   const userID = req.params.ID;
-  console.log("userID",userID);
+  console.log("userID", userID);
   const user = await databaseProject.book.findOne({
     _id: new ObjectId(`${userID}`),
   });
@@ -18,59 +18,70 @@ export const deleteBook = async (req, res) => {
   });
   return res.json(result);
 };
-export const addBook = async (req, res) => {
+export const addBook = async (req, res,next) => {
   console.log(req.body);
+  try {
+    const nameList=req.body.book.map((item,index)=>item.name)
+    const checkIsExist = await databaseProject.book.find({
+      name: {$in:nameList},
+    }).toArray();
+   
+    if (checkIsExist.length>0) {
+      console.log("checkIsExits", checkIsExist);
+      // return updateBook(req,res);
+      return res.json("Exist");
+    } else {
+      const newBook = new ImportedBook(req.body);
+      const result = await databaseProject.importedBook.insertOne(newBook);
+      req.body.book.map(async(item,index)=>{
+        const addedBook = {
+          name: item.name,
+          amount: req.body.amount,
+          author: item.author,
+          price: item.price,
+          type:item.type
+        };
+        //const setBook = await databaseProject.book.insertOne(new Books(addedBook));
+      })
+     
   
-  const checkIsExist = await databaseProject.book.findOne({
-    name: req.body.name,
-    author: req.body.author
-  });
-  if (checkIsExist != "null") {
-    return updateBook(req,res);
-  } else {
-    const newBook = new ImportedBook(req.body);
-    const addedBook={name:req.body.book.name,amount:req.body.amount,author:req.body.book.author,price:req.body.book.price}
-    const result = await databaseProject.importedBook.insertOne(newBook);
-
-    const setBook=await databaseProject.book.insertOne(new Books(addedBook));
-    return res.json(result);
+     
+      return res.json("OK");
+    }
+  } catch (error) {
+    next(error)
   }
 };
+
 export const updateBook = async (req, res) => {
   const result = await databaseProject.book.updateOne(
     { name: req.body.name, author: req.body.author },
-     {$set:{amount:req.body.amount}}
+    { $set: { amount: req.body.amount } }
   );
   return res.json(result);
 };
-export const getAllBook =  (data,page) => {
- 
- 
+export const getAllBook = (data, page) => {
   console.log(page);
   // const data = await databaseProject.book.find({}).toArray();
-  if(page){
-    const result=data.filter((item,index)=>{
-      if(index >=(Number(page)-1)*32 ){
-        if( index < (Number(page))*32){
-          return item
+  if (page) {
+    const result = data.filter((item, index) => {
+      if (index >= (Number(page) - 1) * 32) {
+        if (index < Number(page) * 32) {
+          return item;
         }
-        
-      }     
-    })
+      }
+    });
     console.log(result);
-    return (result)
-    
+    return result;
   }
 
-  
-  
   // console.log(result);
-  return (data);
+  return data;
 };
-export const getFilterBook = async (req, res,next) => {
+export const getFilterBook = async (req, res, next) => {
   console.log("vao");
   const query = req.query;
-  
+
   if (Object.keys(query).length > 0) {
     // if (query.publisher) {
     //   const publisher = decodeURIComponent(query.publisher);
@@ -93,29 +104,28 @@ export const getFilterBook = async (req, res,next) => {
     // }
     // else{getAllBook(req, res,next);}
 
-    if(Object.keys(query).length == 1 && query.page){
+    if (Object.keys(query).length == 1 && query.page) {
       const data = await databaseProject.book.find({}).toArray();
-      return getAllBook(data,query.page)
-    }
-    else{
+      return res.json(getAllBook(data, query.page));
+    } else {
       console.log(query);
-      let findObject={};
-      if(query.publisher){
-        findObject=Object.assign({publisher:query.publisher},findObject)
+      let findObject = {};
+      if (query.publisher) {
+        findObject = Object.assign({ publisher: query.publisher }, findObject);
       }
-      if(query.type){
-        findObject=Object.assign({type:query.type},findObject)
+      if (query.type) {
+        findObject = Object.assign({ type: query.type }, findObject);
       }
-      if(query.author){
-        findObject=Object.assign({author:query.author},findObject)
+      if (query.author) {
+        findObject = Object.assign({ author: query.author }, findObject);
       }
-      console.log(findObject);
-      const filterData=await databaseProject.book.find(findObject).toArray()
-      
-    return res.json(getAllBook(filterData))
+
+      const filterData = await databaseProject.book.find(findObject).toArray();
+      console.log(getAllBook(filterData));
+      return res.json(getAllBook(filterData));
     }
   } else {
-    next("Missing query")
+    next("Missing query");
   }
 };
 export const getAllTypes = async (req, res) => {
@@ -192,25 +202,28 @@ export const getAllAuthor = async (req, res) => {
 
   return res.json(authorList);
 };
-export const postHiredBook= async(req,res)=>{
-  const userID=req.userID.valueOf()
-  const hiredBook=new HiredBook({...req.body,userID:userID,status:"0"})
-  const result=await databaseProject.hiredBook.insertOne(hiredBook)
-  return res.json(result)
-}
-export const changeStatusHiredBook=async(req,res)=>{
-  const id=req.params.id;
+export const postHiredBook = async (req, res) => {
+  const userID = req.userID.valueOf();
+  const hiredBook = new HiredBook({ ...req.body, userID: userID, status: "0" });
+  const result = await databaseProject.hiredBook.insertOne(hiredBook);
+  return res.json(result);
+};
+export const changeStatusHiredBook = async (req, res) => {
+  const id = req.params.id;
 
   try {
-    const result =await databaseProject.hiredBook.updateOne({_id:new ObjectId(`${id}`)},{status:`${req.body.status}`})
-    return res.json(result)
+    const result = await databaseProject.hiredBook.updateOne(
+      { _id: new ObjectId(`${id}`) },
+      { status: `${req.body.status}` }
+    );
+    return res.json(result);
   } catch (error) {
-    console.log("error",error);
+    console.log("error", error);
   }
-}
-export const getField=async(req,res)=>{
-  const type=req.body.type;
-  const data=await databaseProject.book.find({type:type}).toArray()
+};
+export const getField = async (req, res) => {
+  const type = req.body.type;
+  const data = await databaseProject.book.find({ type: type }).toArray();
   let filedList = [];
   for (let index = 1; index < data.length; index++) {
     let element = data[index].field;
@@ -232,4 +245,4 @@ export const getField=async(req,res)=>{
   }
 
   return res.json(filedList);
-}
+};
