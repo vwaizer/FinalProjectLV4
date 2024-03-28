@@ -11,7 +11,7 @@ function Payment() {
 
     http
       .get("/receipt/history")
-      .then((getProduct) => {console.log(getProduct);setGetProduct(getProduct.data);})
+      .then((getProduct) => {setGetProduct(getProduct.data);console.log('get',getProduct)})
       .catch((err) => console.log(err));
   }, []);
   const boxFillInfo = [
