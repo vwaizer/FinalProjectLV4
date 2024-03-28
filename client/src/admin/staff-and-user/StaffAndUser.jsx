@@ -9,14 +9,14 @@ const StaffAndUser = () => {
 
   useEffect(() => {
     http
-      .get("/user/detailUser")
+      .get("/staff/user")
       .then((getUser) => setGetUser(getUser.data))
       .catch((err) => {
         console.log(err);
       });
     console.table(getUser);
   }, []);
-
+ console.log(getUser);
   return (
     <Space size={20} direction="vertical">
       <Typography.Title level={4}>Thông Tin Khách Hàng</Typography.Title>
@@ -43,11 +43,11 @@ const StaffAndUser = () => {
             dataIndex: "email",
           },
           {
-            title: "Trạng thái",
+            title: "Trạng thái xác thực email",
             dataIndex: "verifyToken",
           },
         ]}
-        dataSource={Array(getUser)}
+        dataSource={(getUser)}
         pagination={{
           pageSize: 5
         }}

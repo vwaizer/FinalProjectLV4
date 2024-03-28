@@ -19,14 +19,13 @@ function App() {
   const navigate = useNavigate();
 
   const goToAdmin = () => {
-    const checkUser = localStorage.getItem('accessToken');
-    if(checkUser){
+    const checkUser = localStorage.getItem("staff");
+    if (checkUser) {
       setShowAdmin(true);
-      navigate("/admin");
-    }else {
-      navigate("/staff")
+      navigate("/adminpage");
+    } else {
+      navigate("/staff");
     }
-
   };
 
   return (
@@ -51,7 +50,7 @@ function App() {
           </Routes>
           <div className="goto_admin">
             <button type="button" onClick={goToAdmin}>
-              Go To Admin
+              Admin
             </button>
           </div>
         </>

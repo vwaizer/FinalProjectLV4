@@ -4,6 +4,7 @@ import "./cart.css";
 import { FaRegTrashCan } from "react-icons/fa6";
 import { useState } from "react";
 import { http } from "../util/http";
+
 function Cart() {
   const [getAddToCart, setGetAddToCart] = useState([]);
   const [checkboxStates, setCheckboxStates] = useState([]);

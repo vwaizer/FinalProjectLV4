@@ -34,7 +34,7 @@ const BookRentalManagement = () => {
           },
           {
             title: "Tên Sách",
-            dataIndex: "",
+            dataIndex: "bookID",
           },
           {
             title: "Số Lượng",
