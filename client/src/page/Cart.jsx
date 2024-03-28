@@ -13,7 +13,7 @@ function Cart() {
     http
       .get("/receipt/")
       .then((getAddToCart) => {
-        console.log(getAddToCart);
+        console.log("cart", getAddToCart);
         setGetAddToCart(getAddToCart.data);
         setCheckboxStates(Array(getAddToCart.data[0].cart.length).fill(false));
       })
@@ -82,7 +82,8 @@ function Cart() {
       const newInputValue = { ...inputValue };
       newInputValue[bookID] = (newInputValue[bookID] || amount) - 1;
       setInputValue(newInputValue);
-      const newGetAddToCart = getAddToCart.map((item) => {
+    setGetAddToCart(prevState => {
+      const updatedCart = prevState[0]?.cart?.map((item) => {
         if (item.bookID === bookID) {
           return {
             ...item,
@@ -91,25 +92,33 @@ function Cart() {
         }
         return item;
       });
-      setGetAddToCart(newGetAddToCart);
-    }
-  };
+  
+      const newGetAddToCart = [...prevState];
+      newGetAddToCart[0].cart = updatedCart;
+      return newGetAddToCart;
+    });
+    };}
   const increaseQuantity = (bookID, amount) => {
     const newInputValue = { ...inputValue };
     newInputValue[bookID] = (newInputValue[bookID] || amount) + 1;
     setInputValue(newInputValue);
-    const newGetAddToCart = getAddToCart.map((item) => {
-      if (item.bookID === bookID) {
-        return {
-          ...item,
-          amount: newInputValue[bookID],
-        };
-      }
-      return item;
+    setGetAddToCart(prevState => {
+      const updatedCart = prevState[0]?.cart?.map((item) => {
+        if (item.bookID === bookID) {
+          return {
+            ...item,
+            amount: newInputValue[bookID],
+          };
+        }
+        return item;
+      });
+  
+      const newGetAddToCart = [...prevState];
+      newGetAddToCart[0].cart = updatedCart;
+      return newGetAddToCart;
     });
-    setGetAddToCart(newGetAddToCart);
   };
-
+  console.log("new cart", getAddToCart);
   const calculateTotalPrice = (selectedProducts) => {
     let totalPrice = 0;
     if (selectedProducts?.length > 0) {
@@ -130,28 +139,16 @@ function Cart() {
 
     return 0;
   };
-
+  console.log('selected', selectedProducts)
   const handlePayment = () => {
     if (selectedProducts.length > 0) {
-      let newCart;
-      newCart = selectedProducts.map((product) => {
-        
-        const { amount, discount, bookID } = product;
-        return { amount: amount, discount: discount, bookID: bookID };
-      });
-      console.log(newCart)
-      http
-        .post("/receipt/setHistory", { cart: newCart })
-        
-        .then((response) => {
-          window.location.href = "/payment";
-        })
-        .catch((error) => console.log(error));
+      localStorage.setItem("listToPay", JSON.stringify(selectedProducts));
+      window.location.href = "/payment";
     }
   };
   return (
     <Layout>
-      {getAddToCart.length > 0 ? (
+      {getAddToCart[0]?.cart?.length ? (
         <div className="cart-container">
           <div className="header-cart-item">
             <h1>GIỎ HÀNG ({getAddToCart[0]?.cart?.length} sản phẩm)</h1>
@@ -173,12 +170,10 @@ function Cart() {
             <div style={{ backgroundColor: "#fff", borderRadius: "7px" }}>
               <div style={{ paddingTop: "10px", paddingRight: "10px" }}>
                 {getAddToCart[0]?.cart?.map((item, index) => {
-                  let img, name, price, bookID, amount;
+                  let img;
                   img = getAddToCart[0].result[index].images[0];
-                  name = getAddToCart[0].result[index].name;
-                  price = item.price;
-                  bookID = item.bookID;
-                  amount = item.amount;
+                  const { name, price, bookID, amount } = item;
+
                   return (
                     <div>
                       <div className="product-container">
@@ -297,7 +292,28 @@ function Cart() {
           </div>
         </div>
       ) : (
-        <> </>
+        <div className="cart-container">
+          <div className="header-cart-item">
+            <h1>GIỎ HÀNG (0 sản phẩm)</h1>
+            <div className="empty-box">
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: "40px 0px",
+                }}
+              >
+                <img
+                  style={{ width: "160px", margin: "3px auto" }}
+                  src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/checkout_cart/ico_emptycart.svg"
+                  alt=""
+                ></img>
+                <span> Chưa có sản phẩm trong giỏ hàng của bạn.</span>
+                <button className="back-shopping-button">MUA SẮM NGAY</button>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </Layout>
   );

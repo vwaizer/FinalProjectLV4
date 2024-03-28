@@ -8,10 +8,12 @@ import { http } from "../util/http";
 function Payment() {
   const [getProduct, setGetProduct] = useState([])
   useEffect(() => {
-
     http
-      .get("/receipt/history")
-      .then((getProduct) => {setGetProduct(getProduct.data);console.log('get',getProduct)})
+      .get("/receipt/")
+      .then((getProduct) => {
+        console.log("pay", getProduct);
+        setGetProduct(getProduct.data);
+      })
       .catch((err) => console.log(err));
   }, []);
   const boxFillInfo = [
@@ -25,10 +27,9 @@ function Payment() {
   ];
   const [showNoteInput, setShowNoteInput] = useState(false);
   const [inputValues, setInputValue] = useState({});
- 
+
   const listCheck = JSON.parse(localStorage.getItem("BoughtList"));
-  // console.log(listCheck);
-  // console.log(getProduct)
+
   const onChange = (e) => {
     setShowNoteInput(e.target.checked);
   };
@@ -121,10 +122,8 @@ function Payment() {
           <div className="space-item">
           <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>
           <div>
-            {getProduct.map((item) => {
-             
-              const { img, name, price,amount } = item[0];
-              console.log(item);
+            {listCheck.map((item) => {
+              const { bookImage, name, price,amount } = item;
               return (
                 <div
                   style={{
@@ -136,7 +135,7 @@ function Payment() {
                   <div style={{ display: "flex" }}>
                     <img
                       style={{ width: "120px", height: "130px" }}
-                      src={img}
+                      src={bookImage}
                       alt=""
                     ></img>
                     <div style={{ padding: "0px 15px" }}>{name}</div>

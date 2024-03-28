@@ -137,12 +137,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 82%;
+    width: 80%;
     background-color: #fff;
-    box-shadow: 0 0 5px grey;
+    box-shadow: 0 0 3px grey;
     border-radius: 10px;
     overflow: hidden;
-    margin: 20px auto 
+    margin: 10px auto 
 }
 
 .bookstore_footer {
