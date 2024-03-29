@@ -54,7 +54,8 @@ export class Receipt {
     (this.userID = receipt.userID),
       (this.date = new Date(receipt.date)),
       (this.cart = receipt.cart),
-      (this.status = receipt.status);
+      (this.status = receipt.status)
+      
   }
 }
 

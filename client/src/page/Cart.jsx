@@ -142,7 +142,7 @@ function Cart() {
   console.log('selected', selectedProducts)
   const handlePayment = () => {
     if (selectedProducts.length > 0) {
-      localStorage.setItem("listToPay", JSON.stringify(selectedProducts));
+      localStorage.setItem("BoughtList", JSON.stringify(selectedProducts));
       window.location.href = "/payment";
     }
   };
@@ -170,9 +170,10 @@ function Cart() {
             <div style={{ backgroundColor: "#fff", borderRadius: "7px" }}>
               <div style={{ paddingTop: "10px", paddingRight: "10px" }}>
                 {getAddToCart[0]?.cart?.map((item, index) => {
-                  let img;
+                  let img,name;
                   img = getAddToCart[0].result[index].images[0];
-                  const { name, price, bookID, amount } = item;
+                  name=getAddToCart[0].result[index].name;
+                  const {  price, bookID, amount } = item;
 
                   return (
                     <div>
