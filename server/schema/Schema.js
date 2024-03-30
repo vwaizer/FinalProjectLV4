@@ -54,14 +54,15 @@ export class Receipt {
     (this.userID = receipt.userID),
       (this.date = new Date(receipt.date)),
       (this.cart = receipt.cart),
-      (this.status = receipt.status);
+      (this.status = receipt.status)
+      
   }
 }
 
 export class HiredBook {
   constructor(book) {
     (this.userID = book.userID),
-      (this.bookID = book.bookID),
+      (this.bookID = new ObjectId(book.bookID)),
       (this.dateIn = new Date(book.dateIn)),
       (this.dateOut = new Date(book.dateOut)),
       (this.status = book.status);

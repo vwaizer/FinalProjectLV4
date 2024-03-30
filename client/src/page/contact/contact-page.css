@@ -32,7 +32,7 @@
 
   .auth-btn-frame {
     width: 180px;
-    height: 50px;
+    height: 65px;
     color: #5E503F;
   }
 
@@ -439,6 +439,32 @@
     margin: 1rem 2rem;
   }
 }
+
+.another-contact{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  cursor: pointer;
+  color: #000
+}
+
+.another-contact a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.another-contact a:hover{
+  color: rgba(198, 172, 143, 0.7);
+}
+
+
+
 
 @media screen and (max-width: 950px) {
   .C-container_1 {

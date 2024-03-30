@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../layout/Layout";
 import { Input, Radio } from "antd";
-import "./userPage.css"
+import "./userPage.css";
+import { http } from "../util/http";
 const AccountInfo = () => {
   const boxFillInfo = ["Họ", "Tên", "Số điện thoại", "Email"];
-  const [value, setValue] = useState(false)
+  const [value, setValue] = useState(false);
   const onChange = (e) => {
-    console.log('radio checked', e.target.value);
+    console.log("radio checked", e.target.value);
     setValue(e.target.value);
   };
   return (
@@ -15,58 +16,64 @@ const AccountInfo = () => {
         THÔNG TIN TÀI KHOẢN
       </h1>
       {boxFillInfo.map((item) => {
-        return (<div>
-          <div style={{ display: "flex", margin:'20px 0px' }}>
-            {" "}
-            <div style={{ flexBasis: "20%" }}>{item}</div>
-            <Input placeholder={`Nhập ${item} `}  style={{ width: "60%" }}></Input>
-          </div>
-          
+        return (
+          <div>
+            <div style={{ display: "flex", margin: "20px 0px" }}>
+              {" "}
+              <div style={{ flexBasis: "20%" }}>{item}</div>
+              <Input
+                placeholder={`Nhập ${item} `}
+                style={{ width: "60%" }}
+              ></Input>
+            </div>
           </div>
         );
-        
       })}
-      <div style={{display:'flex'}}>
-          <div style={{ flexBasis: "20%" }}>Giới Tính</div>
-          <Radio.Group onChange={onChange} value={value}>
-      <Radio value={1}>Nam</Radio>
-      <Radio value={2}>Nữ</Radio>
-    </Radio.Group>
-          </div>
-          <div style={{display:'flex'}}>
-          <div style={{flexBasis:'20%'}}>Ngày sinh</div>
-          <div style={{display:'flex', gap:'10px'}}>
-          
-          <input className="birth-day-box" type="text" ></input>
-          <input className="birth-day-box" type="text" ></input>
-          <input className="birth-day-box" type="text" ></input>
-
-          </div>
-       
-          </div>
-      
+      <div style={{ display: "flex" }}>
+        <div style={{ flexBasis: "20%" }}>Giới Tính</div>
+        <Radio.Group onChange={onChange} value={value}>
+          <Radio value={1}>Nam</Radio>
+          <Radio value={2}>Nữ</Radio>
+        </Radio.Group>
+      </div>
+      <div style={{ display: "flex" }}>
+        <div style={{ flexBasis: "20%" }}>Ngày sinh</div>
+        <div style={{ display: "flex", gap: "10px" }}>
+          <input className="birth-day-box" type="date"></input>
+        </div>
+      </div>
     </div>
   );
 };
 
 const AddressEdit = () => {
   return (
-    <div style={{ width: "200px", height: "100%", border: "1px solid red" }}>
-      
-    </div>
+    <div
+      style={{ width: "200px", height: "100%", border: "1px solid red" }}
+    ></div>
   );
 };
 
 const OrderHistory = () => {
   return (
-    <div style={{ width: "200px", height: "100%", border: "1px solid blue" }}>
-      
-    </div>
+    <div
+      style={{ width: "200px", height: "100%", border: "1px solid blue" }}
+    ></div>
   );
 };
 
 const UserPage = () => {
   const [selectedItem, setSelectedItem] = useState("");
+  // const [user, setUser] = useState([]);
+
+  // useEffect(() => {
+  //   http
+  //     .get("/user/detailUser")
+  //     .then((user) => setUser(user.data))
+  //     .catch((err) => {console.log(err)});
+  // },[])
+
+  // console.table(user)
 
   const handleItemClick = (value) => {
     setSelectedItem(value);

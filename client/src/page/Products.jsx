@@ -1,18 +1,12 @@
-import { Skeleton } from "antd";
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
+import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 import Category from "../custom/productcpn/Category";
-import GetProduct from "../custom/productcpn/GetProduct";
+import SetProduct from "../custom/productcpn/SetProduct.jsx";
 import Layout from "../layout/Layout";
 import { http } from "../util/http.js";
 import "./page.css";
-import BasicPagination from "../pagination/Pagination.jsx";
-import Typography from "@mui/material/Typography";
-import Pagination from "@mui/material/Pagination";
-import Stack from "@mui/material/Stack";
-import SetProduct from "../custom/productcpn/SetProduct.jsx";
-import { Link } from "react-router-dom";
-
 function Products() {
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
@@ -23,48 +17,54 @@ function Products() {
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(32);
   const [loading, setLoading] = useState(false);
-  const lastPostIndex = currentPage * postPerPage;
-  const firstPostIndex = lastPostIndex - postPerPage;
-  const currentPost = getBook.slice(firstPostIndex, lastPostIndex);
-  const totalPage = Math.ceil(getBook.length / postPerPage);
-
+ 
   useEffect(() => {
     http
       .get(`/book/?page=${currentPage}`)
-      .then((res) => {
-        setGetBook(res.data);
-        setGetAuthor(res.data);
+      .then((getBook) => {
+        setGetBook(getBook.data);
       })
       .catch((err) => {
         console.log(err);
-        if (err.code === "ERR_NETWORK") {
-          window.location.href = "/sign-in";
-        }
+       
+            toast.error(err.code)
+            setTimeout(()=>{
+              window.location.href = "/sign-in";
+            },2000)
+        
+        
       });
   }, [currentPage]);
 
-
+  console.log(getBook)
 
   useEffect(() => {
     http
       .get("/book/types")
       .then((getTypeBook) => setGetTypeBook(getTypeBook.data))
       .catch((err) => {
-        if (err.code === "ERR_NETWORK") {
+        console.log(err);
+       
+        toast.error(err.code)
+        setTimeout(()=>{
           window.location.href = "/sign-in";
-        }
+        },2000)
       });
   }, []);
-
 
   let timeOut = null;
 
   const handleFilter = (e) => {
     clearTimeout(timeOut);
     timeOut = setTimeout(() =>{
-      setGetAuthor(
-        getBook.filter((val) => val.author.toLowerCase().includes(e.target.value))
-      );
+
+        http
+          .get(`/book?author=${e.target.value}`)
+          .then((getAuthor) => setGetAuthor(getAuthor.data))
+          .catch((err) => {
+            console.log(err)
+          });
+    
     },1000)
   };
 
@@ -74,31 +74,18 @@ function Products() {
     }
   };
 
-
-  // const onChangeAuthor = async (e) => {
-  //   setValue(e.target.value);
-  //   clearTimeout(timeOut);
-  //   timeOut = await setTimeout(() => {
-  //     http
-  //       .get("/book/author")
-  //       .then((getAuthor) => setGetAuthor(getAuthor.data))
-  //       .catch((err) => console.log(err));
-  //   },2000);
-  // };
-
-  // const onChangePublisher =  (e) => {
-  //   setValuePublisher(e.target.value);
-  //   clearTimeout(timeOut);
-  //   timeOut = setTimeout(() => {
-  //     http
-  //       .get("/book/publisher")
-  //       .then((getPublisher) => setGetPublisher(getPublisher.data))
-  //       .catch((err) => console.log(err));
-  //   },2000);
-  // };
-
   return (
     <Layout>
+      <ToastContainer
+        position="top-right" autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick rtl={false}
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="light"
+        />
       <div className="bookstore_wrap">
         <div className="leftbox">
           <div className="leftbox_collection">
@@ -113,7 +100,7 @@ function Products() {
               })}
             </div>
             <div>
-              <h2>Tác Giả</h2>
+              <h2>Tìm kiếm</h2>
               <div className="author">
                 <input
                   className="product-input"
@@ -122,14 +109,14 @@ function Products() {
                   placeholder=" "
                 />
                 <label htmlFor="Author" className="label">
-                  Search
+                  Tác giả
                 </label>
               </div>
             </div>
           </div>
         </div>
         <div className="rightbox">
-          {getAuthor.map((item, index) => {
+          {getBook.map((item, index) => {
             if (item !== null) {
               return (
                 <div className="product_info" key={index}>

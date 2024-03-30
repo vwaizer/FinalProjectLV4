@@ -6,6 +6,8 @@ import ContactProps from "./ContactProps";
 import RightContact from "./RightContact";
 import FAQ from "./FAQ";
 import Layout from "../../layout/Layout";
+import { FaFacebookF, FaTiktok, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contactpage = () => {
   return (
@@ -13,11 +15,11 @@ const Contactpage = () => {
       <div className="contact-page">
         <div>
           <div class="C-container_1">
-            <p class="C-container_title_1">GET IN TOUCH</p>
+            <p class="C-container_title_1">Trang Thông Tin</p>
             <div class="C-sub-container_1">
               <div class="C-column_1">
                 <div class="C-column-title">
-                  <p class="C-sub_title">Send us an email</p>
+                  <p class="C-sub_title">Góp Ý</p>
                   <div class="C-child-box-subtitle_1"></div>
                 </div>
 
@@ -25,16 +27,16 @@ const Contactpage = () => {
                   <div class="C-sub-column_1_1">
                     <div class="C-sub-column_1_1_1">
                       <ContactProps
-                        title="Name"
+                        title="Họ Và Tên"
                         Type="text"
-                        Placeholder="Your name"
+                        Placeholder="Nhập"
                       />
                     </div>
                     <div class="C-sub-column_1_1_1">
                       <ContactProps
-                        title="Phone Number"
+                        title="Số Điện Thoại"
                         Type="text"
-                        Placeholder="Your phone"
+                        Placeholder=""
                       />
                     </div>
                   </div>
@@ -42,71 +44,69 @@ const Contactpage = () => {
                     <div class="C-sub-column_1_1_1">
                       <ContactProps
                         title="Email"
-                        Type="text"
-                        Placeholder="Your Email"
+                        Type="email"
+                        Placeholder="Địa Chỉ Email"
                       />
                     </div>
                     <div class="C-sub-column_1_1_1">
                       <ContactProps
-                        title="Subject"
+                        title="Tiêu Đề"
                         Type="text"
-                        Placeholder="Input text"
+                        Placeholder="Nhập Tiêu Đề"
                       />
                     </div>
                   </div>
                   <div>
                     <div class="C-sub-column_1_1_1">
                       <div class="C-sub_title_2">
-                        <label>Message</label>
+                        <label>Lời Nhắn</label>
                       </div>
                       <div>
                         <input
                           class="C-textbox--big"
                           type="text"
-                          placeholder="Message"
+                          placeholder=""
                         />
                       </div>
                     </div>
                   </div>
                   <div class="C-buton_submit">
-                    <Button text="SUBMIT" btnStyle="auth-btn" />
+                    <Button text="Gửi" btnStyle="auth-btn" />
                   </div>
                 </div>
               </div>
               <div class="C-column_2"></div>
               <div class="C-column_3">
                 <div class="C-column-title">
-                  <p class="C-sub_title">Contact us</p>
+                  <p class="C-sub_title">Liên Hệ</p>
                   <div class="C-child-box-subtitle_1"></div>
                 </div>
 
                 <div>
                   <RightContact
-                    text=" Need assistance or have questions? Don't hesitate to get in
-                    touch with us. ShineAura's customer care team is available
-                    24/7 to assist you. Let us know how we can help. We're here
-                    to listen and ensure you have the best shopping experience
-                    on"
-                    Addname="ShineAura"
-                    title1="thisisouremail@gmail.com"
+                    text=" Cần hỗ trợ hoặc có thắc mắc? Đừng ngần ngại bước vào
+                    liên lạc với chúng tôi. Đội ngũ chăm sóc khách hàng của ShineAura luôn sẵn sàng
+                    24/7 để hỗ trợ bạn. Hãy cho chúng tôi biết chúng tôi có thể giúp gì được cho bạn. Đã từng ở đây
+                    để lắng nghe và đảm bảo bạn có trải nghiệm mua sắm tốt nhất"
+
+                    title1="nhom1_X22@gmail.com"
                     title2="(000) 000 0000"
-                    title3=" Street Address #000, City, State, Zip ######"
+                    title3=" TP Hồ Chí Minh"
                   />
                   <div class="C-sub-column_3">
                     <div>
                       <label>Contact our medias:</label>
                     </div>
-                    <div class="C-contact-information">
-                      <button>
-                        {" "}
-                        <i class="bi bi-facebook social-icon"></i>
-                      </button>
-                      <button>
-                        <i class="bi bi-twitter-x social-icon"></i>
-                      </button>
-                      <button>
-                        <i class="bi bi-instagram social-icon"></i>
-                      </button>
+                    <div className="another-contact">
+                      <Link to="http://facebook.com">
+                        <FaFacebookF />
+                      </Link>
+                      <Link to="https://twitter.com/i/flow/login">
+                        <FaTwitter />
+                      </Link>
+                      <Link to="https://www.tiktok.com/vi-VN/">
+                        <FaTiktok />
+                      </Link>
                     </div>
                   </div>
                 </div>

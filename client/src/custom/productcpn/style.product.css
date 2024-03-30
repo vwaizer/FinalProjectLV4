@@ -23,11 +23,13 @@
     z-index: -1;
     overflow: hidden;   
     margin: 1rem 0;
+    transition: 0.5s ease;
 }
 
 .setproduct_custom:hover{
     cursor: pointer;
-    box-shadow: 0 0 20px grey;
+    filter: drop-shadow(0 0 15px grey);
+    color: brown;
 }
 
 .product_image { 
@@ -36,7 +38,7 @@
 }
 
 .product_image img{
-    width: 100%;
+    object-fit: contain;
     max-height: 250px;
 }
 
@@ -44,9 +46,9 @@
     flex-direction: column;
     font-weight: 500;
     h3{
-        text-decoration: underline;
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
+        margin-top: 20px;
         margin-bottom: 10px;
     }
     p{

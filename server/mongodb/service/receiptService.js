@@ -137,6 +137,8 @@ export const addToCart = async (req, res, next) => {
             discount: bookData.discount,
             price: bookData.price,
             bookID: new ObjectId(bookID),
+            img:bookData.images[0],
+            name:bookData.name
           },
         ],
       });
@@ -218,7 +220,7 @@ export const setHistory = async (req, res, next) => {
    const oldCart = req.body.cart;
    console.log(oldCart);
   const cart=oldCart.map((item,index)=>{
-    return{amount:item.amount,discount:item.discount,bookID:new ObjectId(`${item.bookID}`),price:item.price}
+    return{amount:item.amount,discount:item.discount,bookID:new ObjectId(`${item.bookID}`),price:item.price,img:item.img}
   })
   console.log("cart",cart);
 if(cart.length>0){
@@ -263,3 +265,12 @@ if(cart.length>0){
 else return res.json("Cart is empty")
   
 };
+export const deleteFromCart=async(req,res)=>{
+  const userID = req.userID;
+  const oldCart=await databaseProject.receipt.findOne({userID:new ObjectId(userID),status:"In Cart"}).cart
+console.log("oldCart");
+ const deleteItem=req.body.deleteItem;
+ const newCart=oldCart.filter((item,index)=>!deleteItem.includes(item.bookID.valueOf()))
+ const result=await databaseProject.receipt.updateOne({userID: new ObjectId(userID)},{$set:{cart:newCart}})
+ return res.json(result)
+}
