@@ -25,16 +25,16 @@ const SignIn = () => {
 
   const [access_token] = useSearchParams();
 
-  const data = access_token.get("accessToken");
+  const data = localStorage.getItem("accessToken");
 
   useEffect(() => {
     if (data) {
       console.log("vao");
       localStorage.setItem("accessToken", data);
 
-      navigate("/");
+      window.location.href="/";
     }
-  });
+  },[]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

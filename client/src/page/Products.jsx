@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
-import {picture1, picture2, picture3, picture4, picture5, picture6} from '../assets/imageProduct.js'
+import { ToastContainer, toast } from "react-toastify";
+import { picture1, picture2, picture3, picture4, picture5, picture6 } from '../assets/imageProduct.js';
 import Category from "../custom/productcpn/Category";
 import Logo from "../custom/productcpn/Logo.jsx";
 import SetProduct from "../custom/productcpn/SetProduct.jsx";
 import Layout from "../layout/Layout";
 import { http } from "../util/http.js";
 import "./page.css";
+import Data from "../Data/index.js";
 
 function Products() {
   const [getBook, setGetBook] = useState([]);
@@ -28,25 +30,30 @@ function Products() {
       })
       .catch((err) => {
         console.log(err);
-        if (err.code === "ERR_NETWORK") {
-          window.location.href = "/sign-in";
-        }
+       
+            toast.error(err.code)
+            setTimeout(()=>{
+              window.location.href = "/sign-in";
+            },2000)
+        
+        
       });
   }, [currentPage]);
 
-  console.log(getBook)
 
   useEffect(() => {
     http
       .get("/book/types")
       .then((getTypeBook) => setGetTypeBook(getTypeBook.data))
       .catch((err) => {
-        if (err.code === "ERR_NETWORK") {
+        console.log(err);
+       
+        toast.error(err.code)
+        setTimeout(()=>{
           window.location.href = "/sign-in";
-        }
+        },2000)
       });
   }, []);
-
 
   const handlePageClick = () => {
     if (currentPage > 0) {
@@ -55,19 +62,31 @@ function Products() {
     window.scrollTo(0,"smooth")
   };
 
+ 
+
   return (
     <Layout>
+      <ToastContainer
+        position="top-right" autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick rtl={false}
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="light"
+        />
       <div className="bookstore_wrap">
         <div className="leftbox">
           <div className="leftbox_collection">
-            <div>
+            <div className="category">
               <h2>Danh Mục</h2>
-              {getTypeBook.map((value, index) => {
+              {getTypeBook.map((val,index) => {
                 return (
-                  <div className="category" key={value.type}>
-                    <Category href="#literature" type={value.type} />
+                  <div key={index} className="type">
+                    <Category href="#" type={val.type} />
                   </div>
-                );
+                )
               })}
             </div>
           </div>

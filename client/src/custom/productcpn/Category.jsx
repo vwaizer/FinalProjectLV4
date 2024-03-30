@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Category = ({href,type}) => {
+const Category = ({href,type,onClick}) => {
   return (
     <div>
-      <Link to={href}>{type}</Link>
+      <Link onClick={onClick} to={href}>{type}</Link>
     </div>
   )
 }
