@@ -7,19 +7,25 @@ import "./page.css";
 
 import slideDetail from "../assets/imageDetail";
 import SliderDetail from "../slideDetail/SliderDetail";
+import RentForm from "./RentForm";
 function Detail() {
-  const { ID } = useParams("ID");
+  const {ID} = useParams("ID");
+  console.log(ID);
   const navigate = useNavigate();
 
   const [product, setProduct] = useState([]);
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    http
-      .get(`http://localhost:4000/book/detailBook/${ID}`)
-      .then((product) => setProduct(Array(product.data)))
-      .catch((err) => console.log(err));
-  }, []);
+    if(ID !== "undefined"){
+      console.log(`http://localhost:4000/book/detailBook/${ID}`);
+      http
+        .get(`http://localhost:4000/book/detailBook/${ID}`)
+        .then((product) => setProduct(Array(product.data)))
+        .catch((err) => console.log(err));
+    }
+   
+  }, [ID]);
 
   const handleAddToCartClick = async (ID) => {
     console.log("onclick");
@@ -107,7 +113,7 @@ function Detail() {
             THÊM VÀO GIỎ HÀNG
           </button>
           <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">MUA NGAY</button>
-          <button type="submit" onClick={()=>navigate(`/rent/${ID}`)}>THUÊ SÁCH</button>
+          <RentForm/>
         </div>
         <div>
           <SliderDetail>

@@ -1,7 +1,7 @@
 import axios from 'axios';
-// const BASE_URL: string | undefined = import.meta.env.BACKEND_URL;
+
 export const BASE_URL = 'http://localhost:4000';
-// export const BASE_URL = 'https://localhost/:8888';
+
 
 export const http = axios.create({
   baseURL: BASE_URL,
