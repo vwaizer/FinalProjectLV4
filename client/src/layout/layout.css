@@ -140,7 +140,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 92%;
     background-color: #fff;
     box-shadow: 0 0 3px grey;
     border-radius: 10px;
@@ -205,6 +205,7 @@
 
 
 .contact-info{
+    text-align: start;
     margin-bottom: 27px;
     cursor: pointer;
     text-decoration: underline;

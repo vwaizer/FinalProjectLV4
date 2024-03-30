@@ -1,17 +1,13 @@
-import { Skeleton } from "antd";
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
+import { Link } from "react-router-dom";
+import {picture1, picture2, picture3, picture4, picture5, picture6} from '../assets/imageProduct.js'
 import Category from "../custom/productcpn/Category";
-import GetProduct from "../custom/productcpn/GetProduct";
+import Logo from "../custom/productcpn/Logo.jsx";
+import SetProduct from "../custom/productcpn/SetProduct.jsx";
 import Layout from "../layout/Layout";
 import { http } from "../util/http.js";
 import "./page.css";
-import BasicPagination from "../pagination/Pagination.jsx";
-import Typography from "@mui/material/Typography";
-import Pagination from "@mui/material/Pagination";
-import Stack from "@mui/material/Stack";
-import SetProduct from "../custom/productcpn/SetProduct.jsx";
-import { Link } from "react-router-dom";
 
 function Products() {
   const [getBook, setGetBook] = useState([]);
@@ -51,26 +47,12 @@ function Products() {
       });
   }, []);
 
-  let timeOut = null;
-
-  const handleFilter = (e) => {
-    clearTimeout(timeOut);
-    timeOut = setTimeout(() =>{
-
-        http
-          .get(`/book?author=${e.target.value}`)
-          .then((getAuthor) => setGetAuthor(getAuthor.data))
-          .catch((err) => {
-            console.log(err)
-          });
-    
-    },1000)
-  };
 
   const handlePageClick = () => {
     if (currentPage > 0) {
       setCurrentPage(currentPage + 1);
     }
+    window.scrollTo(0,"smooth")
   };
 
   return (
@@ -87,20 +69,6 @@ function Products() {
                   </div>
                 );
               })}
-            </div>
-            <div>
-              <h2>Tìm kiếm</h2>
-              <div className="author">
-                <input
-                  className="product-input"
-                  type="text"
-                  onChange={handleFilter}
-                  placeholder=" "
-                />
-                <label htmlFor="Author" className="label">
-                  Tác giả
-                </label>
-              </div>
             </div>
           </div>
         </div>
@@ -142,6 +110,14 @@ function Products() {
               breakLinkClassName={"page-link"}
               activeClassName={"active"}
             />
+          </div>
+          <div className="logo_middle">
+            <Logo image={picture1}  />
+            <Logo image={picture2}  />
+            <Logo image={picture3}  />
+            <Logo image={picture4}  />
+            <Logo image={picture5}  />
+            <Logo image={picture6}  />
           </div>
     </Layout>
   );

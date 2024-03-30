@@ -29,7 +29,7 @@ const UserInfo = () => {
   return (
     <div>
       <button className="user_button" onClick={handleClick}>
-        <FaUser className="icon" />
+        <FaUser className="icon"/>
       </button>
       <Menu
         id="basic-menu"

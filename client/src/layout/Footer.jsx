@@ -53,14 +53,14 @@ const bookTypes = [
 ];
 
 function Footer() {
-  const [showAdmin, setShowAdmin] = useState(false)
+  const [showAdmin, setShowAdmin] = useState(false);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const goToAdmin = () => {
-    setShowAdmin(true)
-    navigate("/admin")
-  }
+    setShowAdmin(true);
+    navigate("/admin");
+  };
   return (
     <div className="footer">
       <div className="bookstore_footer">
@@ -77,9 +77,7 @@ function Footer() {
             {bookTypes.map((item, index) => {
               return (
                 <div className="link" key={index}>
-                  <Link to={item.href} >
-                    {item.title}
-                  </Link>
+                  <Link to={item.href}>{item.title}</Link>
                 </div>
               );
             })}
@@ -89,9 +87,7 @@ function Footer() {
             {siteMap.map((item, index) => {
               return (
                 <div className="link" key={index}>
-                  <Link to={item.href} >
-                    {item.title}
-                  </Link>
+                  <Link to={item.href}>{item.title}</Link>
                 </div>
               );
             })}
@@ -127,7 +123,6 @@ function Footer() {
       <p className="under-footer">
         <i>Copy right @Nhom_1_X22 2024</i>
       </p>
-      
     </div>
   );
 }
