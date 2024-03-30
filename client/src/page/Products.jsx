@@ -1,18 +1,12 @@
-import { Skeleton } from "antd";
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
+import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 import Category from "../custom/productcpn/Category";
-import GetProduct from "../custom/productcpn/GetProduct";
+import SetProduct from "../custom/productcpn/SetProduct.jsx";
 import Layout from "../layout/Layout";
 import { http } from "../util/http.js";
 import "./page.css";
-import BasicPagination from "../pagination/Pagination.jsx";
-import Typography from "@mui/material/Typography";
-import Pagination from "@mui/material/Pagination";
-import Stack from "@mui/material/Stack";
-import SetProduct from "../custom/productcpn/SetProduct.jsx";
-import { Link } from "react-router-dom";
-
 function Products() {
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
@@ -32,9 +26,13 @@ function Products() {
       })
       .catch((err) => {
         console.log(err);
-        if (err.code === "ERR_NETWORK") {
-          window.location.href = "/sign-in";
-        }
+       
+            toast.error(err.code)
+            setTimeout(()=>{
+              window.location.href = "/sign-in";
+            },2000)
+        
+        
       });
   }, [currentPage]);
 
@@ -45,9 +43,12 @@ function Products() {
       .get("/book/types")
       .then((getTypeBook) => setGetTypeBook(getTypeBook.data))
       .catch((err) => {
-        if (err.code === "ERR_NETWORK") {
+        console.log(err);
+       
+        toast.error(err.code)
+        setTimeout(()=>{
           window.location.href = "/sign-in";
-        }
+        },2000)
       });
   }, []);
 
@@ -75,6 +76,16 @@ function Products() {
 
   return (
     <Layout>
+      <ToastContainer
+        position="top-right" autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick rtl={false}
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="light"
+        />
       <div className="bookstore_wrap">
         <div className="leftbox">
           <div className="leftbox_collection">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { http } from "../util/http";
 import styled from "styled-components"
+import Layout from "../layout/Layout";
 const DetailContainer=styled.div`
     
 `
@@ -30,7 +31,7 @@ const RentForm = () => {
   };
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+     <Layout> <form onSubmit={handleSubmit}>
         <DetailContainer>
           <div>Book Name</div>
           <div>{bookDetail?.name}</div>
@@ -48,7 +49,7 @@ const RentForm = () => {
         <div>
           <button type="submit">Submit</button>
         </div>
-      </form>
+      </form></Layout>
     </div>
   );
 };
