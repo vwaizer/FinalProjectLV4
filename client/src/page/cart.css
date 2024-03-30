@@ -256,3 +256,9 @@ input[type="checkbox"]:checked::before {
   color: #333333;
   font-size: 14px;
 }
+
+.rate{
+  display: flex;
+  margin: 0px 10%;
+  margin-top: 20px;
+}

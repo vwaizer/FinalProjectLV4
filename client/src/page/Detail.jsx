@@ -86,10 +86,10 @@ function Detail() {
                 <div className="detail_info">
                   <div className="detail_title">
                     <h2>{item.name}</h2>
-                    <h3>Author : {item.author}</h3>
+                    <h3>Tác giả : {item.author}</h3>
                   </div>
                   <p>{item.description}</p>
-                  <h1>Price: {item.price} VND</h1>
+                  <h1>Giá: {item.price} VND</h1>
                 <div className="quantity">
                   <button type="button" onClick={onDecrease}>-</button>
                   <div className="amount-quantity">{quantity}</div>
@@ -104,10 +104,10 @@ function Detail() {
           <button onClick={() => handleAddToCartClick(product[0]._id)}
             type="submit"
           >
-            ADD TO CART
+            THÊM VÀO GIỎ HÀNG
           </button>
-          <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">BUY NOW</button>
-          <button type="submit" onClick={()=>navigate(`/rent/${ID}`)}>FOR RENT</button>
+          <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">MUA NGAY</button>
+          <button type="submit" onClick={()=>navigate(`/rent/${ID}`)}>THUÊ SÁCH</button>
         </div>
         <div>
           <SliderDetail>

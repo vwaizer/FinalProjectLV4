@@ -23,17 +23,12 @@ function Products() {
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(32);
   const [loading, setLoading] = useState(false);
-  const lastPostIndex = currentPage * postPerPage;
-  const firstPostIndex = lastPostIndex - postPerPage;
-  const currentPost = getBook.slice(firstPostIndex, lastPostIndex);
-  const totalPage = Math.ceil(getBook.length / postPerPage);
-
+ 
   useEffect(() => {
     http
       .get(`/book/?page=${currentPage}`)
-      .then((res) => {
-        setGetBook(res.data);
-        setGetAuthor(res.data);
+      .then((getBook) => {
+        setGetBook(getBook.data);
       })
       .catch((err) => {
         console.log(err);
@@ -43,7 +38,7 @@ function Products() {
       });
   }, [currentPage]);
 
-
+  console.log(getBook)
 
   useEffect(() => {
     http
@@ -56,15 +51,19 @@ function Products() {
       });
   }, []);
 
-
   let timeOut = null;
 
   const handleFilter = (e) => {
     clearTimeout(timeOut);
     timeOut = setTimeout(() =>{
-      setGetAuthor(
-        getBook.filter((val) => val.author.toLowerCase().includes(e.target.value))
-      );
+
+        http
+          .get(`/book?author=${e.target.value}`)
+          .then((getAuthor) => setGetAuthor(getAuthor.data))
+          .catch((err) => {
+            console.log(err)
+          });
+    
     },1000)
   };
 
@@ -73,29 +72,6 @@ function Products() {
       setCurrentPage(currentPage + 1);
     }
   };
-
-
-  // const onChangeAuthor = async (e) => {
-  //   setValue(e.target.value);
-  //   clearTimeout(timeOut);
-  //   timeOut = await setTimeout(() => {
-  //     http
-  //       .get("/book/author")
-  //       .then((getAuthor) => setGetAuthor(getAuthor.data))
-  //       .catch((err) => console.log(err));
-  //   },2000);
-  // };
-
-  // const onChangePublisher =  (e) => {
-  //   setValuePublisher(e.target.value);
-  //   clearTimeout(timeOut);
-  //   timeOut = setTimeout(() => {
-  //     http
-  //       .get("/book/publisher")
-  //       .then((getPublisher) => setGetPublisher(getPublisher.data))
-  //       .catch((err) => console.log(err));
-  //   },2000);
-  // };
 
   return (
     <Layout>
@@ -113,7 +89,7 @@ function Products() {
               })}
             </div>
             <div>
-              <h2>Tác Giả</h2>
+              <h2>Tìm kiếm</h2>
               <div className="author">
                 <input
                   className="product-input"
@@ -122,14 +98,14 @@ function Products() {
                   placeholder=" "
                 />
                 <label htmlFor="Author" className="label">
-                  Search
+                  Tác giả
                 </label>
               </div>
             </div>
           </div>
         </div>
         <div className="rightbox">
-          {getAuthor.map((item, index) => {
+          {getBook.map((item, index) => {
             if (item !== null) {
               return (
                 <div className="product_info" key={index}>
