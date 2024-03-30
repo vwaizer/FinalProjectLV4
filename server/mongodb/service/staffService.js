@@ -2,9 +2,14 @@ import databaseProject from "../GetDataBase.js"
 import { registerService } from "./registerService.js"
 
 
-export const getHiredBook=async(req,res)=>{
-    const result =await databaseProject.hiredBook.find().toArray()
-    return res.json(result)
+export const getHiredBook=async(req,res,next)=>{
+    try {
+        const result =await databaseProject.hiredBook.find().toArray()
+        return res.json(result)
+    } catch (error) {
+        next(error)
+    }
+   
 }
 export const putHiredBook=async (req,res)=>{
     const caseID=req.params.ID;

@@ -1,6 +1,6 @@
 import express from "express";
 import { sendMail } from "../mongodb/service/mailService.js";
-import { getFilterBook } from "../mongodb/service/bookService.js";
+import { changeStatusHiredBook, getFilterBook } from "../mongodb/service/bookService.js";
 import { getAllUser } from "../mongodb/service/userService.js";
 import { accounting, createStaff, getAllStaff, getHiredBook, getOverall, putHiredBook } from "../mongodb/service/staffService.js";
 import { getAllReceipt } from "../mongodb/service/receiptService.js";
@@ -13,7 +13,7 @@ staffRoute.get("/book",getFilterBook);
 staffRoute.get("/user",getAllUser)
 staffRoute.get("/receipt",getAllReceipt);
 staffRoute.get("/hireBook",getHiredBook);
-staffRoute.put("/hiredBook/:ID",putHiredBook)
+staffRoute.put("/hiredBook/:ID",changeStatusHiredBook)
 staffRoute.get("/accounting",accounting);
 staffRoute.post("/mail/:ID",staffValidator,sendMail);
 staffRoute.post("/createStaff",createStaff)
