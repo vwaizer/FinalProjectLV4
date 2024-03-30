@@ -4,7 +4,7 @@ import databaseProject from "../GetDataBase.js";
 export const getDetailBook = async (req, res) => {
   console.log("vao");
   const userID = req.params.ID;
-  console.log("userID", userID);
+  console.log("userID", req.params);
   const user = await databaseProject.book.findOne({
     _id: new ObjectId(`${userID}`),
   });
