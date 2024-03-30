@@ -80,8 +80,8 @@ export const getAllBook = (data, page) => {
 };
 export const getFilterBook = async (req, res, next) => {
   console.log("vao");
-  const query = req.query;
-
+  const query = decodeURI(req.query);
+ 
   if (Object.keys(query).length > 0) {
     // if (query.publisher) {
     //   const publisher = decodeURIComponent(query.publisher);
@@ -121,7 +121,7 @@ export const getFilterBook = async (req, res, next) => {
       }
 
       const filterData = await databaseProject.book.find(findObject).toArray();
-      console.log(getAllBook(filterData));
+      console.log(filterData);
       return res.json(getAllBook(filterData));
     }
   } else {
