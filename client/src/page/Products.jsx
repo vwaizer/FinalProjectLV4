@@ -69,6 +69,16 @@ function Products() {
     window.scrollTo(0, "smooth");
   };
 
+  const filterChange = (e) => {
+    setValue(e.target.value)
+  }
+  let searchData = getBook.filter((val) => {
+    return Object.keys(val).some(key => 
+      val[key].toString().toLowerCase().includes(value.toString().toLowerCase())
+      )
+  });
+
+
   return (
     <Layout>
       <ToastContainer
@@ -96,6 +106,15 @@ function Products() {
                 );
               })}
             </div>
+            <div className="search">
+              <h2>Tìm Kiếm</h2>
+              <input 
+              type="text"
+              value={value}
+              onChange={filterChange.bind(this)}
+              placeholder="Tên sách, tác giả, thể loại"/>
+              
+            </div>
           </div>
         </div>
         <div className="rightbox">
@@ -107,7 +126,7 @@ function Products() {
               <CircularProgress color="inherit" />
             </Backdrop>
           ) : (
-            getBook.map((item, index) => {
+            searchData.map((item, index) => {
               if (item !== null) {
                 return (
                   <div className="product_info" key={index}>
@@ -115,7 +134,6 @@ function Products() {
                       <SetProduct
                         image={item.images}
                         name={item.name}
-                        author={item.author}
                       />
                     </Link>
                   </div>
