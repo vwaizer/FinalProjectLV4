@@ -18,10 +18,6 @@ let navbar = [
     href: "/cart/",
   },
   {
-    title: "Thanh Toán",
-    href: "/payment",
-  },
-  {
     title: "Giới Thiệu",
     href: "/about-us",
   },

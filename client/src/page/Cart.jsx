@@ -97,16 +97,8 @@ function Cart() {
         newGetAddToCart[0].cart = updatedCart;
         return newGetAddToCart;
       });
-<<<<<<< HEAD
-      const newGetAddToCart = [...prevState];
-      newGetAddToCart[0].cart = updatedCart;
-      return newGetAddToCart;
-    });
-    };}
-=======
     }
   };
->>>>>>> 03001795ec3c5fe740d049c67577e906995775e8
   const increaseQuantity = (bookID, amount) => {
     const newInputValue = { ...inputValue };
     newInputValue[bookID] = (newInputValue[bookID] || amount) + 1;
