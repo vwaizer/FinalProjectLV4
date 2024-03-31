@@ -7,19 +7,25 @@ import "./page.css";
 
 import slideDetail from "../assets/imageDetail";
 import SliderDetail from "../slideDetail/SliderDetail";
+import RentForm from "./RentForm";
 function Detail() {
-  const { ID } = useParams("ID");
+  const {ID} = useParams("ID");
+  console.log(ID);
   const navigate = useNavigate();
 
   const [product, setProduct] = useState([]);
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    http
-      .get(`http://localhost:4000/book/detailBook/${ID}`)
-      .then((product) => setProduct(Array(product.data)))
-      .catch((err) => console.log(err));
-  }, []);
+    if(ID !== "undefined"){
+      console.log(`http://localhost:4000/book/detailBook/${ID}`);
+      http
+        .get(`http://localhost:4000/book/detailBook/${ID}`)
+        .then((product) => setProduct(Array(product.data)))
+        .catch((err) => console.log(err));
+    }
+   
+  }, [ID]);
 
   const handleAddToCartClick = async (ID) => {
     console.log("onclick");
@@ -86,10 +92,10 @@ function Detail() {
                 <div className="detail_info">
                   <div className="detail_title">
                     <h2>{item.name}</h2>
-                    <h3>Author : {item.author}</h3>
+                    <h3>Tác giả : {item.author}</h3>
                   </div>
                   <p>{item.description}</p>
-                  <h1>Price: {item.price} VND</h1>
+                  <h1>Giá: {item.price} VND</h1>
                 <div className="quantity">
                   <button type="button" onClick={onDecrease}>-</button>
                   <div className="amount-quantity">{quantity}</div>
@@ -104,10 +110,10 @@ function Detail() {
           <button onClick={() => handleAddToCartClick(product[0]._id)}
             type="submit"
           >
-            ADD TO CART
+            THÊM VÀO GIỎ HÀNG
           </button>
-          <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">BUY NOW</button>
-          <button type="submit" onClick={()=>navigate(`/rent/${ID}`)}>FOR RENT</button>
+          <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">MUA NGAY</button>
+          <RentForm/>
         </div>
         <div>
           <SliderDetail>

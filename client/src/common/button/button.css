@@ -90,6 +90,7 @@ button:active {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
 }
 
 .auth-btn:hover .auth-btn-frame {

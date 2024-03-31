@@ -14,7 +14,7 @@ import { receiptRoute } from "./routes/receiptRoute.js";
 const app = express()
 const port = 4000
 config();
-// app.use(helmet())
+app.use(helmet())
 app.use(express.json())
 app.use(morgan('combined'))
 

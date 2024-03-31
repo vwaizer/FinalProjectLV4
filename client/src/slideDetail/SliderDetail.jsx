@@ -60,7 +60,7 @@ function SliderDetail({ children }) {
 
   return (
     <>
-      <h2 className="h2-detail">Basic Product</h2>
+      <h2 className="h2-detail">SẢN PHẨM TIÊU BIỂU</h2>
       <div
         className="container__slider-detail"
         onMouseEnter={AutoPlayStop}

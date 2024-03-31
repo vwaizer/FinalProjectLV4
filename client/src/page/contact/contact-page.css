@@ -1,7 +1,7 @@
 .contact-page {
   .C-container_1 {
     text-align: center;
-    background-color: #F9F6F3;
+    background-color: #f9f6f3;
     width: 100%;
     margin-top: 0px;
   }
@@ -29,21 +29,19 @@
     flex: 1;
   }
 
-
   .auth-btn-frame {
     width: 180px;
-    height: 50px;
-    color: #5E503F;
+    height: 65px;
+    color: #5e503f;
   }
 
   .auth-btn-frame:hover {
-    box-shadow: inset 0 0 0 2px #5E503F;
+    box-shadow: inset 0 0 0 2px #5e503f;
   }
 
-
   .auth-btn-frame:active {
-    box-shadow: inset 0 0 0 1px #EAE0D5, 0 0 0 1px #5E503F;
-    background: #5E503F;
+    box-shadow: inset 0 0 0 1px #eae0d5, 0 0 0 1px #5e503f;
+    background: #5e503f;
     color: white;
   }
 
@@ -56,7 +54,6 @@
 
   .social-icon {
     font-size: 32px;
-
   }
 
   /* Column 1 */
@@ -80,7 +77,7 @@
   }
 
   .C-sub-container_1 label {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-size: 16px;
   }
@@ -95,12 +92,11 @@
     border: 1px solid rgba(174, 174, 174, 0.5);
     margin-top: 0.5rem;
     padding: 12px;
-    font-family: 'Nunito';
-
+    font-family: "Nunito";
   }
 
   .C-textbox--simple::placeholder {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 200;
     text-align: left;
     font-style: italic;
@@ -125,11 +121,11 @@
     height: 153px;
     padding: 5px;
     border: 1px solid rgba(174, 174, 174, 0.5);
-    font-family: 'Nunito';
+    font-family: "Nunito";
   }
 
   .C-textbox--big::placeholder {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 200;
     text-align: left;
     font-style: italic;
@@ -204,13 +200,13 @@
   .C-contact-information button {
     text-decoration: none;
     border: none;
-    background-color: #F9F6F3;
+    background-color: #f9f6f3;
     padding-right: 16px;
   }
 
   .C-container_2 {
     background-color: #ffffff;
-    color: #2F1F1B;
+    color: #2f1f1b;
   }
 
   .C-container_title_2 {
@@ -249,13 +245,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F9F6F3;
+    background-color: #f9f6f3;
   }
 
   .C-child-box-subtitle_2 {
     height: 2px;
     width: 1063px;
-    background-color: #2F1F1B;
+    background-color: #2f1f1b;
   }
 
   .C-sub-button_2 {
@@ -265,21 +261,20 @@
   .C-sub-button_2 button {
     text-decoration: none;
     border: none;
-    background-color: #F9F6F3;
+    background-color: #f9f6f3;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4A332E;
+    color: #4a332e;
     padding-bottom: 20px;
   }
-
 
   .C-sub-button_2 svg {
     padding-right: 17.83px;
   }
 
   .C-sub-button_2 label {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 16px;
     font-weight: 600;
   }
@@ -311,10 +306,9 @@
     font-weight: normal;
   }
 
-  .C-button-FAQ_1:focus+.C-container-FAQ_1 {
+  .C-button-FAQ_1:focus + .C-container-FAQ_1 {
     display: block;
   }
-
 
   /* ---------------------- */
   .C-container-FAQ_2 {
@@ -328,7 +322,7 @@
     font-weight: normal;
   }
 
-  .C-button-FAQ_2:focus+.C-container-FAQ_2 {
+  .C-button-FAQ_2:focus + .C-container-FAQ_2 {
     display: block;
   }
 
@@ -344,7 +338,7 @@
     font-weight: normal;
   }
 
-  .C-button-FAQ_3:focus+.C-container-FAQ_3 {
+  .C-button-FAQ_3:focus + .C-container-FAQ_3 {
     display: block;
   }
 
@@ -360,7 +354,7 @@
     font-weight: normal;
   }
 
-  .C-button-FAQ_4:focus+.C-container-FAQ_4 {
+  .C-button-FAQ_4:focus + .C-container-FAQ_4 {
     display: block;
   }
 
@@ -376,7 +370,7 @@
     font-weight: normal;
   }
 
-  .C-button-FAQ_5:focus+.C-container-FAQ_5 {
+  .C-button-FAQ_5:focus + .C-container-FAQ_5 {
     display: block;
   }
 
@@ -392,7 +386,7 @@
     font-weight: normal;
   }
 
-  .C-button-FAQ_6:focus+.C-container-FAQ_6 {
+  .C-button-FAQ_6:focus + .C-container-FAQ_6 {
     display: block;
   }
 
@@ -402,6 +396,20 @@
     background-color: rgba(198, 172, 143, 0.7);
     margin-bottom: 53px;
   }
+}
+
+.logo_contact {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+
+  margin: 50px auto;
+}
+
+.logo_contact img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -431,13 +439,35 @@
 
   .C-column_2 {
     display: none;
-    ;
   }
 
   .C-container_2 {
     flex-direction: column;
     margin: 1rem 2rem;
   }
+}
+
+.another-contact {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  cursor: pointer;
+  color: #000;
+}
+
+.another-contact a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.another-contact a:hover {
+  color: rgba(198, 172, 143, 0.7);
 }
 
 @media screen and (max-width: 950px) {

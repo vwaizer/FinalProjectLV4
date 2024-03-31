@@ -62,7 +62,7 @@ export class Receipt {
 export class HiredBook {
   constructor(book) {
     (this.userID = book.userID),
-      (this.bookID = book.bookID),
+      (this.bookID = new ObjectId(book.bookID)),
       (this.dateIn = new Date(book.dateIn)),
       (this.dateOut = new Date(book.dateOut)),
       (this.status = book.status);
