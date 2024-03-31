@@ -66,7 +66,7 @@ function Payment() {
                 <Input placeholder={`Nhập ${item} `} 
                 value={inputValues[item] || ""}
                 onChange={(e) => handleInputChange(e, item)}
-                onBlur={handleChange()}/>
+                onBlur={handleChange}/>
               </div>
             );
           })}

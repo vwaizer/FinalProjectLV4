@@ -74,7 +74,6 @@ function Cart() {
     const selectedProducts = getAddToCart[0]?.cart?.filter(
       (item, i) => newCheckboxStates[i]
     );
-    // console.log('Selected Products:', selectedProducts);
     setSelectedProducts(selectedProducts);
   };
   const decreaseQuantity = (bookID, amount) => {
@@ -92,7 +91,6 @@ function Cart() {
         }
         return item;
       });
-  
       const newGetAddToCart = [...prevState];
       newGetAddToCart[0].cart = updatedCart;
       return newGetAddToCart;
@@ -118,7 +116,6 @@ function Cart() {
       return newGetAddToCart;
     });
   };
-  console.log("new cart", getAddToCart);
   const calculateTotalPrice = (selectedProducts) => {
     let totalPrice = 0;
     if (selectedProducts?.length > 0) {
