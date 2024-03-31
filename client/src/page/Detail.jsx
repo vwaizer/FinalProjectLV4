@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import Layout from "../layout/Layout";
 import { http } from "../util/http";
 import "./page.css";
@@ -49,9 +49,7 @@ function Detail() {
           toast.success(`Product added to cart successfully`, {
             position: "top-right",
           });
-          setTimeout(() => {
-            navigate(`/cart/`);
-          }, 2000);
+         
         } else {
           console.error(`Failed to add product to cart:`);
           toast.error(`Failed to add product to cart`, {
@@ -81,7 +79,16 @@ function Detail() {
   }
   return (
     <Layout>
-      <>
+       <ToastContainer
+        position="top-right" autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick rtl={false}
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="light"
+        />
         <div className="detail_wrap">
           {product.map((item) => {
             return (
@@ -112,7 +119,9 @@ function Detail() {
           >
             THÊM VÀO GIỎ HÀNG
           </button>
-          <button onClick={() => handleAddToCartClick(product[0]._id)} type="submit">MUA NGAY</button>
+          <button onClick={() => {handleAddToCartClick(product[0]._id); setTimeout(() => {
+            navigate(`/cart/`);
+          }, 1000);}} type="submit">MUA NGAY</button>
           <RentForm/>
         </div>
         <div>
@@ -122,7 +131,7 @@ function Detail() {
         })}
           </SliderDetail>
         </div>
-      </>
+     
     </Layout>
   );
 }
