@@ -83,8 +83,11 @@ function Payment() {
       !fillForm.ward ||
       !fillForm.address
     ) {
-      alert("Invalid content");
-    }else{
+      alert("Vui long dien day du thong tin ");
+    }else if(isNaN(fillForm.phoneNumber) || fillForm.phoneNumber.length < 10){
+      alert("Số điện thoại không hợp lệ");
+    }
+    else{
       let newCart;
       newCart = listCheck.map((product) => {
         const { amount, discount, bookID } = product;

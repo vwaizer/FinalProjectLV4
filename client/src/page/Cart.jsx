@@ -60,7 +60,7 @@ function Cart() {
     const newCheckboxStates = checkboxStates.map(() => !selectAllChecked);
     setCheckboxStates(newCheckboxStates);
     const selectedProducts = getAddToCart[0]?.cart?.filter(
-      (item, i) => newCheckboxStates[item.bookID]
+      (item, i) => newCheckboxStates[i]
     );
     setSelectedProducts(selectedProducts);
   };
@@ -158,8 +158,8 @@ function Cart() {
     } catch (error) {
       console.log(error);
     }
-    
   }
+  
   return (
     <Layout>
       {getAddToCart[0]?.cart?.length ? (
@@ -187,10 +187,10 @@ function Cart() {
               <div style={{ backgroundColor: "#fff", borderRadius: "7px" }}>
                 <div style={{ paddingTop: "10px", paddingRight: "10px" }}>
                   {getAddToCart[0]?.cart?.map((item, index) => {
-                    console.log(item);
-                   
-                   
-                    const { price, bookID, amount,name,img } = item;
+                    let img, name;
+                    img = getAddToCart[0].result[index].images[0];
+                    name = getAddToCart[0].result[index].name;
+                    const { price, bookID, amount } = item;
 
                     return (
                       <div>
@@ -255,9 +255,9 @@ function Cart() {
                               parseInt(price) * amount}{" "}
                             đ
                           </div>
-                          <div className="trashIcon" onClick={()=>deleteCartItem(item.bookID)}>
-                            <FaRegTrashCan size={17} />
-                          </div>
+                          <div className="trashIcon">
+                            <FaRegTrashCan onClick={()=>deleteCartItem(bookID)} size={17} />
+                          </div>  
                         </div>
                         <div className="border-space-product"></div>
                       </div>
