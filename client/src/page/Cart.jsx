@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
-import Layout from "../layout/Layout";
-import "./cart.css";
+import React, { useEffect, useState } from "react";
 import { FaRegTrashCan } from "react-icons/fa6";
-import { useState } from "react";
+import Layout from "../layout/Layout";
 import { http } from "../util/http";
-import StarRate from "./rating/StarRate";
+import "./cart.css";
 
 function Cart() {
   const [getAddToCart, setGetAddToCart] = useState([]);
   const [checkboxStates, setCheckboxStates] = useState([]);
   const [selectedProducts, setSelectedProducts] = useState([]);
+  const [isDeleted,setIsDeleted]=useState(false)
   useEffect(() => {
     http
       .get("/receipt/")
@@ -19,7 +18,7 @@ function Cart() {
         setCheckboxStates(Array(getAddToCart.data[0].cart.length).fill(false));
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [isDeleted]);
   const [inputValue, setInputValue] = useState({});
   const [selectAllChecked, setSelectAllChecked] = useState(false);
   const [updateBooks, setUpdateBooks] = useState(getAddToCart);
@@ -61,7 +60,7 @@ function Cart() {
     const newCheckboxStates = checkboxStates.map(() => !selectAllChecked);
     setCheckboxStates(newCheckboxStates);
     const selectedProducts = getAddToCart[0]?.cart?.filter(
-      (item, i) => newCheckboxStates[i]
+      (item, i) => newCheckboxStates[item.bookID]
     );
     setSelectedProducts(selectedProducts);
   };
@@ -152,6 +151,17 @@ function Cart() {
   const backToProduct = () => {
     window.location.href = "/product";
   };
+  const deleteCartItem=async(bookID)=>{
+    console.log(bookID);
+    try {
+      const result= await http.post('/receipt/deleteItem',{"deleteItem":[bookID]})
+      console.log(result.data);
+      setIsDeleted(!isDeleted)
+    } catch (error) {
+      console.log(error);
+    }
+    
+  }
   return (
     <Layout>
       {getAddToCart[0]?.cart?.length ? (
@@ -179,10 +189,10 @@ function Cart() {
               <div style={{ backgroundColor: "#fff", borderRadius: "7px" }}>
                 <div style={{ paddingTop: "10px", paddingRight: "10px" }}>
                   {getAddToCart[0]?.cart?.map((item, index) => {
-                    let img, name;
-                    img = getAddToCart[0].result[index].images[0];
-                    name = getAddToCart[0].result[index].name;
-                    const { price, bookID, amount } = item;
+                    console.log(item);
+                   
+                   
+                    const { price, bookID, amount,name,img } = item;
 
                     return (
                       <div>
@@ -247,7 +257,7 @@ function Cart() {
                               parseInt(price) * amount}{" "}
                             đ
                           </div>
-                          <div className="trashIcon">
+                          <div className="trashIcon" onClick={()=>deleteCartItem(item.bookID)}>
                             <FaRegTrashCan size={17} />
                           </div>
                         </div>
