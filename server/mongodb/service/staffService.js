@@ -11,12 +11,7 @@ export const getHiredBook=async(req,res,next)=>{
     }
    
 }
-export const putHiredBook=async (req,res)=>{
-    const caseID=req.params.ID;
-    const status=req.body.status;
-    const result=await databaseProject.hiredBook.updateOne({_id:new ObjectId(`${caseID}`)},status)
-    return res.json(result)
-}
+
 export const accounting=async(req,res)=>{
 
 }
@@ -47,5 +42,13 @@ export const getAllStaff=async(req,res,next)=>{
         return res.json(result)
     } catch (error) {
         next(error)
+    }
+}
+export const getImportedBook=async(req,res,next)=>{
+    try {
+        const result =await databaseProject.importedBook.find().toArray()
+        return res.json(result)
+    } catch (error) {
+        return next(error)
     }
 }

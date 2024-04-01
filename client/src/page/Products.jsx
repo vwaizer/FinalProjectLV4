@@ -31,10 +31,11 @@ function Products() {
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(32);
   const [loading, setLoading] = useState(false);
-
+  const [filterUrl,setFIlterUrl]=useState("")
   useEffect(() => {
+    
     http
-      .get(`/book/?page=${currentPage}`)
+      .get(`/book/?page=${currentPage}&${filterUrl}`)
       .then((getBook) => {
         setGetBook(getBook.data);
       })
@@ -46,8 +47,24 @@ function Products() {
           window.location.href = "/sign-in";
         }, 2000);
       });
-  }, [currentPage]);
+  }, [currentPage,filterUrl]);
+const getFilterType=(type)=>{
+  const encodeType=encodeURI(type);
+  setFIlterUrl(`type=${encodeType}`)
+  // http
+  //     .get(`/book/?type=${encodeType}`)
+  //     .then((getBook) => {
+  //       setGetBook(getBook.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
 
+  //       toast.error(err.code);
+  //       setTimeout(() => {
+  //         window.location.href = "/sign-in";
+  //       }, 2000);
+  //     });
+}
   useEffect(() => {
     http
       .get("/book/types")
@@ -101,7 +118,7 @@ function Products() {
               {getTypeBook.map((val, index) => {
                 return (
                   <div key={index} className="type">
-                    <Category href="#" type={val.type} />
+                    <Category href="#" type={val.type} onClick={()=>getFilterType(val.type)} />
                   </div>
                 );
               })}

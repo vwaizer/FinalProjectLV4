@@ -121,7 +121,7 @@ function Detail() {
           </button>
           <button onClick={() => {handleAddToCartClick(product[0]._id); setTimeout(() => {
             navigate(`/cart/`);
-          }, 1000);}} type="submit">MUA NGAY</button>
+          }, 2000);}} type="submit">MUA NGAY</button>
           <RentForm/>
         </div>
         <div>

@@ -4,7 +4,7 @@ import { userValidator } from "../middleware/validator/roleValidator.js";
 
 export const bookRoute=express.Router();
 
-bookRoute.get("/" ,userValidator,getFilterBook);
+bookRoute.get("/" ,getFilterBook);
 bookRoute.get("/detailBook/:ID",userValidator,getDetailBook);
 bookRoute.post("/",addBook);
 bookRoute.delete("/:ID",deleteBook);
