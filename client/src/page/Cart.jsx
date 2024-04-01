@@ -60,7 +60,7 @@ function Cart() {
     const newCheckboxStates = checkboxStates.map(() => !selectAllChecked);
     setCheckboxStates(newCheckboxStates);
     const selectedProducts = getAddToCart[0]?.cart?.filter(
-      (item, i) => newCheckboxStates[i]
+      (item, i) => newCheckboxStates[item.bookID]
     );
     setSelectedProducts(selectedProducts);
   };
@@ -187,10 +187,8 @@ function Cart() {
               <div style={{ backgroundColor: "#fff", borderRadius: "7px" }}>
                 <div style={{ paddingTop: "10px", paddingRight: "10px" }}>
                   {getAddToCart[0]?.cart?.map((item, index) => {
-                    let img, name;
-                    img = getAddToCart[0].result[index].images[0];
-                    name = getAddToCart[0].result[index].name;
-                    const { price, bookID, amount } = item;
+                   
+                    const { price, bookID, amount,name,img } = item;
 
                     return (
                       <div>

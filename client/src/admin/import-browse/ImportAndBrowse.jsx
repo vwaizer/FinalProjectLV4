@@ -8,36 +8,46 @@ const ImportAndBrowse = () => {
 
   useEffect(() => {
     http
-      .get("/book")
-      .then((getImport) => setGetImport(getImport.data))
+      .get("/staff/getImportedBook")
+      .then((getImport) => {
+        const formatData=getImport.data.map((item,index)=>{
+          return {...item,bookName:item.book.name}
+        })
+        setGetImport(formatData)
+      })
       .catch((err) => {
         console.log(err);
       });
     console.table(getImport);
   }, []);
+  console.log(getImport);
   return (
     <Space size={20} direction="vertical">
       <Typography.Title level={4}>Nhập Sách</Typography.Title>
       <Table
         columns={[
           {
-            title: "Số Hóa Đơn",
-            dataIndex: "",
-          },
-          {
-            title: "Loại Sách",
-            dataIndex: "",
-          },
-          {
-            title: "Số Lượng",
-            dataIndex: "",
+            title: "Mã Hóa Đơn",
+            dataIndex: "_id",
           },
           {
             title: "Ngày Nhập",
-            dataIndex: "",
+            dataIndex: "dateIn",
           },
+          {
+            title: "Số lượng",
+            dataIndex: "amount",
+          },
+          {
+            title:"Tình Trạng",
+            dataIndex:"status"
+          },
+          {
+            title:"Tên sách",
+            dataIndex:"bookName"
+          }
         ]}
-        dataSource={Array(getImport)}
+        dataSource={(getImport)}
       ></Table>
     </Space>
   );

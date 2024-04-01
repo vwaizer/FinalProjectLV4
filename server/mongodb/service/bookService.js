@@ -31,17 +31,20 @@ export const addBook = async (req, res,next) => {
       // return updateBook(req,res);
       return res.json("Exist");
     } else {
-      const newBook = new ImportedBook(req.body);
-      const result = await databaseProject.importedBook.insertOne(newBook);
+      // const newBook = new ImportedBook(req.body);
+      // const result = await databaseProject.importedBook.insertOne(newBook);
       req.body.book.map(async(item,index)=>{
-        const addedBook = {
-          name: item.name,
-          amount: req.body.amount,
-          author: item.author,
-          price: item.price,
-          type:item.type
-        };
-        //const setBook = await databaseProject.book.insertOne(new Books(addedBook));
+        const newBody={userID:req.body.userID,amount:req.body.amount,book:item}
+        const newBook = new ImportedBook(newBody);
+      const result = await databaseProject.importedBook.insertOne(newBook);
+        // const addedBook = {
+        //   name: item.name,
+        //   amount: req.body.amount,
+        //   author: item.author,
+        //   price: item.price,
+        //   type:item.type
+        // };
+        // const setBook = await databaseProject.book.insertOne(new Books(addedBook));
       })
      
   
@@ -62,6 +65,7 @@ export const updateBook = async (req, res) => {
 };
 export const getAllBook = (data, page) => {
   console.log(page);
+  console.log(data.length);
   // const data = await databaseProject.book.find({}).toArray();
   if (page) {
     const result = data.filter((item, index) => {
@@ -71,7 +75,7 @@ export const getAllBook = (data, page) => {
         }
       }
     });
-    console.log(result);
+
     return result;
   }
 
@@ -114,7 +118,7 @@ export const getFilterBook = async (req, res, next) => {
         findObject = Object.assign({ publisher: query.publisher }, findObject);
       }
       if (query.type) {
-        findObject = Object.assign({ type: query.type }, findObject);
+        findObject = Object.assign({ type: decodeURI(query.type) }, findObject);
       }
       if (query.author) {
         findObject = Object.assign({ author: query.author }, findObject);
@@ -123,8 +127,8 @@ export const getFilterBook = async (req, res, next) => {
         findObject = Object.assign({$and:[{price:{$gte:query.startPrice}},{price:{$lte:query.endPrice}}] }, findObject);
       }
       const filterData = await databaseProject.book.find(findObject).toArray();
-      console.log(filterData);
-      return res.json(getAllBook(filterData));
+     
+      return res.json(getAllBook(filterData,query.page));
     }
   } else {
     next("Missing query");
@@ -206,9 +210,17 @@ export const getAllAuthor = async (req, res) => {
 };
 export const postHiredBook = async (req, res) => {
   const userID = req.userID.valueOf();
-  const hiredBook = new HiredBook({ ...req.body, userID: userID, status: "Step 1" });
-  const result = await databaseProject.hiredBook.insertOne(hiredBook);
-  return res.json(result);
+  console.log(req.body);
+  const userHiredBook=await databaseProject.hiredBook.findOne({userID:userID})
+  if(userHiredBook){
+    return res.status(204).json("")
+  }
+  else{
+    const hiredBook = new HiredBook({ ...req.body, userID: userID, status: "Step 1" });
+    const result = await databaseProject.hiredBook.insertOne(hiredBook);
+    return res.json(result);
+  }
+
 };
 export const changeStatusHiredBook = async (req, res) => {
   const id = req.params.ID;

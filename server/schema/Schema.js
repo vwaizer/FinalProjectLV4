@@ -65,7 +65,7 @@ export class HiredBook {
       (this.bookID = new ObjectId(book.bookID)),
       (this.dateIn = new Date(book.dateIn)),
       (this.dateOut = new Date(book.dateOut)),
-      (this.status = book.status);
+      (this.status = book.status)
   }
 }
 export class Cart {
