@@ -98,8 +98,8 @@
     margin: 10px 20px;
 }
 .rightbox{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     width: 70%;
     height: 100%;
     background-color: #fff;

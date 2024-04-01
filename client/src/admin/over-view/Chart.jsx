@@ -61,7 +61,7 @@ const Chart = () => {
     ],
   };
   return (
-    <Card style={{width: 500, height: 250}}>
+    <Card style={{ width: 500, height: 250 }}>
       <Bar options={options} data={data} />
     </Card>
   );
