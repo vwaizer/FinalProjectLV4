@@ -3,8 +3,15 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import Layout from "../layout/Layout";
+import { toast, ToastContainer } from "react-toastify";
+import { Typography } from 'antd';
 import { http } from "../util/http";
-const DetailContainer = styled.div``;
+const DetailContainer = styled.div`
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+`;
+const { Title } = Typography;
 const RentForm = () => {
   const bookID = useParams("ID").ID;
   console.log(bookID);
@@ -35,8 +42,34 @@ const RentForm = () => {
   const showModal = () => {
     setIsModalOpen(true);
   };
+  const setHiredBook=async(bookID,rentTime)=>{
+    console.log(bookID);
+    try {
+      const result= await http.post("/book/hiredBook",{
+        "dateIn":(new Date()).toISOString(),
+        "dateOut":(new Date(new Date().setDate(new Date().getDate() + rentTime*7))).toISOString(),
+        "bookID":bookID
+      })
+      console.log(result);
+      if(
+        result.status === 204
+      )
+      {
+        toast.error("You can not hired more one book")
+      }
+      else{
+        toast.success("Rent Book Successfully")
+      }
+     
+    } catch (error) {
+      toast.error(error)
+    }
+  }
   const handleOk = () => {
     console.log(rentTime);
+    console.log("bookID",bookID);
+    setHiredBook(bookID,rentTime)
+    console.log((new Date(new Date().setDate(new Date().getDate() + rentTime*7))).toISOString());
     setIsModalOpen(false);
   };
 
@@ -49,24 +82,26 @@ const RentForm = () => {
       <Badge count={0}>
 
       <Button className="button-header" type="primary" onClick={showModal}>
-          Rent Form
+          Rent This Book
         </Button>
           <Modal
-            title="Your Cart"
+            title="Rent Form"
             open={isModalOpen}
             onOk={handleOk}
             onCancel={handleCancel}
+            styles={{header:{textDecoration:"underline"}}}
           >
             <form >
             <DetailContainer>
               <div>Book Name</div>
-              <div>{bookDetail?.name}</div>
+              <Title level={3} style={{textWrap:"pretty"}}>{bookDetail?.name}</Title>
             </DetailContainer>
             <DetailContainer>
               <div>Book Author</div>
-              <div>{bookDetail?.author}</div>
+              <Title level={3} style={{textWrap:"pretty"}}>{bookDetail?.author}</Title>
             </DetailContainer>
             <DetailContainer>
+              <div>Time:</div>
               <select
                 defaultValue={rentTime}
                 onChange={(e) => setRentTime(e.target.value)}
