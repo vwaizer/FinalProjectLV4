@@ -44,3 +44,11 @@ export const getAllStaff=async(req,res,next)=>{
         next(error)
     }
 }
+export const getImportedBook=async(req,res,next)=>{
+    try {
+        const result =await databaseProject.importedBook.find().toArray()
+        return res.json(result)
+    } catch (error) {
+        return next(error)
+    }
+}

@@ -31,16 +31,19 @@ export const addBook = async (req, res,next) => {
       // return updateBook(req,res);
       return res.json("Exist");
     } else {
-      const newBook = new ImportedBook(req.body);
-      const result = await databaseProject.importedBook.insertOne(newBook);
+      // const newBook = new ImportedBook(req.body);
+      // const result = await databaseProject.importedBook.insertOne(newBook);
       req.body.book.map(async(item,index)=>{
-        const addedBook = {
-          name: item.name,
-          amount: req.body.amount,
-          author: item.author,
-          price: item.price,
-          type:item.type
-        };
+        const newBody={userID:req.body.userID,amount:req.body.amount,book:item}
+        const newBook = new ImportedBook(newBody);
+      const result = await databaseProject.importedBook.insertOne(newBook);
+        // const addedBook = {
+        //   name: item.name,
+        //   amount: req.body.amount,
+        //   author: item.author,
+        //   price: item.price,
+        //   type:item.type
+        // };
         // const setBook = await databaseProject.book.insertOne(new Books(addedBook));
       })
      
