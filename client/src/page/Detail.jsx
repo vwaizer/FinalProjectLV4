@@ -149,7 +149,7 @@ function Detail() {
           onClick={() => {
             handleAddToCartClick(product[0]._id);
             setTimeout(() => {
-              navigate(`/cart/`);
+              navigate(`/gio-hang/`);
             }, 2000);
           }}
           type="submit"
