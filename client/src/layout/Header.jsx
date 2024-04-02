@@ -11,19 +11,23 @@ let navbar = [
   },
   {
     title: "Nhà Sách",
-    href: "/product",
+    href: "/nha-sach",
   },
   {
     title: "Giỏ Hàng",
-    href: "/cart/",
+    href: "/gio-hang/",
   },
-  {
-    title: "Giới Thiệu",
-    href: "/about-us",
-  },
+  // {
+  //   title: "Giới Thiệu",
+  //   href: "/gioi-thieu",
+  // },
   {
     title: "Liên Hệ",
-    href: "/contact",
+    href: "/lien-he",
+  },
+  {
+    title: "Nhập sách",
+    href: "/nhap-sach",
   },
 ];
 

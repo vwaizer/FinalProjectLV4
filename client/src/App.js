@@ -12,6 +12,7 @@ import { Cart, Detail, Home, Payment, Products } from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
 import AdminRoute from "./admin/AdminRoute.jsx";
 import { useState } from "react";
+import ImportBook from "./page/ImportBook.jsx";
 
 function App() {
   const [showAdmin, setShowAdmin] = useState(false);
@@ -38,12 +39,13 @@ function App() {
             <Route path="/sign-up" element={<SignUp />}></Route>
             <Route path="/sign-in" element={<SignIn />}></Route>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/product" element={<Products />}></Route>
-            <Route path="/cart/" element={<Cart />}></Route>
+            <Route path="/nha-sach" element={<Products />}></Route>
+            <Route path="/gio-hang/" element={<Cart />}></Route>
             <Route path="/product-detail/:ID" element={<Detail />}></Route>
-            <Route path="/payment" element={<Payment />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/about-us" element={<AboutUsPage />}></Route>
+            <Route path="/thanh-toan" element={<Payment />}></Route>
+            <Route path="/lien-he" element={<Contact />}></Route>
+            <Route path="/gioi-thieu" element={<AboutUsPage />}></Route>
+            <Route path="/nhap-sach" element={<ImportBook/>}></Route>
             <Route path="/user" element={<UserPage />}></Route>
             <Route path="/staff" element={<Admin />}></Route>
             <Route path="/rent/:id" element={<RentForm />}></Route>

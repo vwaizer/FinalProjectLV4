@@ -15,9 +15,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
     max-width: 200px;
-    height: fit-content;
+    height: max-content;
     border-radius: 5px;
     overflow: hidden;   
     margin: 1rem 0;
@@ -32,18 +32,22 @@
 }
 
 .product_image { 
-    width: 200px;
-    background: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    
 }
 
 .product_image img{
-    object-fit: contain;
+    object-fit: fill;
     max-height: 250px;
 }
 
 .product_title {
     flex-direction: column;
     font-weight: 500;
+    letter-spacing: 1px;
+    height: max-content;
     h3{
         text-align: center;
         font-size: 18px;
