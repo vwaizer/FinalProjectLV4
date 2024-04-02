@@ -86,7 +86,7 @@ const RentForm = () => {
           THUÊ SÁCH
         </button>
           <Modal
-            title="Rent Form"
+            title="Thuê Sách"
             open={isModalOpen}
             onOk={handleOk}
             onCancel={handleCancel}
@@ -107,8 +107,8 @@ const RentForm = () => {
                 defaultValue={rentTime}
                 onChange={(e) => setRentTime(e.target.value)}
               >
-                <option value="1">1 week</option>
-                <option value="2">2 weeks</option>
+                <option value="1">1 Tuần</option>
+                <option value="2">2 Tuần</option>
               </select>
             </DetailContainer>
             </form>

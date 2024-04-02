@@ -17,10 +17,6 @@ const ModalCart = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  let counting = 0;
-  productModal.forEach((item, index) => {
-    counting += item;
-  });
   const showModal = () => {
     setIsModalOpen(true);
   };

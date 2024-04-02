@@ -48,6 +48,27 @@ const BookRentalManagement = () => {
             title: "Ngày Trả",
             dataIndex: "dateOut",
           },
+          {
+            title: "",
+            dataIndex: "",
+            render: (button) => {
+              return (
+                <>
+                  <button
+                    style={{
+                      border: "1px solid #000",
+                      borderRadius: "5px",
+                      width: "100px",
+                      height: "50px",
+                    }}
+                    type="button"
+                  >
+                    Check
+                  </button>
+                </>
+              );
+            },
+          }
         ]}
         dataSource={getHireBook}
       ></Table>

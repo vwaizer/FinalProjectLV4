@@ -22,7 +22,7 @@ const Staff = () => {
         columns={[
           {
             title: "STT",
-            dataIndex: "_id",
+            dataIndex: "birthday",
           },
           {
             title: "Tên ",

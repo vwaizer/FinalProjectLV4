@@ -147,7 +147,7 @@ function Cart() {
   };
 
   const backToProduct = () => {
-    window.location.href = "/product";
+    window.location.href = "/nha-sach";
   };
   const deleteCartItem=async(bookID)=>{
     console.log(bookID);
