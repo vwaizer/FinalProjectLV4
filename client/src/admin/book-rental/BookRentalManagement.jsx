@@ -9,7 +9,13 @@ const BookRentalManagement = () => {
   useEffect(() => {
     http
       .get("/staff/hireBook")
-      .then((getHireBook) => setGetHireBook(getHireBook.data))
+      .then((getHireBook) => {
+        const formatData=getHireBook.data.map((item,index)=>{
+          console.log(item);
+          return {...item,bookName:item?.bookData[0]?.name,userEmail:item?.user[0]?.email,index}
+        })
+        setGetHireBook(formatData)
+      })
       .catch((err) => {
         console.log(err);
       });
@@ -22,11 +28,11 @@ const BookRentalManagement = () => {
         columns={[
           {
             title: "STT",
-            dataIndex: "_id",
+            dataIndex: "index",
           },
           {
-            title: "Tên KH",
-            dataIndex: "userID",
+            title: "Mail KH",
+            dataIndex: "userEmail",
           },
           {
             title: "Số Điện Thoại",
@@ -34,11 +40,7 @@ const BookRentalManagement = () => {
           },
           {
             title: "Tên Sách",
-            dataIndex: "bookID",
-          },
-          {
-            title: "Số Lượng",
-            dataIndex: "",
+            dataIndex: "bookName",
           },
           {
             title: "Ngày Thuê",
@@ -48,6 +50,10 @@ const BookRentalManagement = () => {
             title: "Ngày Trả",
             dataIndex: "dateOut",
           },
+          {
+            title:"Tình trạng",
+            dataIndex:"status"
+          }
         ]}
         dataSource={getHireBook}
       ></Table>

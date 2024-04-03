@@ -43,7 +43,6 @@ export class ImportedBook {
   constructor(book) {
     (this.userID = new ObjectId (book.userID)),
       (this.dateIn = new Date()),
-      (this.amount = book.amount),
       (this.book = book.book),
       (this.status="Waiting: Admin")
       

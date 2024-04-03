@@ -11,7 +11,7 @@ const ImportAndBrowse = () => {
       .get("/staff/getImportedBook")
       .then((getImport) => {
         const formatData=getImport.data.map((item,index)=>{
-          return {...item,bookName:item.book.name}
+          return {...item,bookName:item.book.name,index}
         })
         setGetImport(formatData)
       })
@@ -26,6 +26,10 @@ const ImportAndBrowse = () => {
       <Typography.Title level={4}>Nhập Sách</Typography.Title>
       <Table
         columns={[
+          {
+            title:"Stt",
+            dataIndex:"index"
+          },
           {
             title: "Mã Hóa Đơn",
             dataIndex: "_id",
