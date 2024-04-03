@@ -8,23 +8,30 @@ import "./page.css";
 import slideDetail from "../assets/imageDetail";
 import SliderDetail from "../slideDetail/SliderDetail";
 import RentForm from "./RentForm";
+
+const paragrapStyle = {
+  WebkitLineClamp: 3,
+  WebkitBoxOrient: "vertical",
+  overflow: "hidden",
+  display: "-webkit-box",
+};
+
 function Detail() {
-  const {ID} = useParams("ID");
+  const { ID } = useParams("ID");
   console.log(ID);
   const navigate = useNavigate();
 
   const [product, setProduct] = useState([]);
   const [quantity, setQuantity] = useState(1);
-
+  const [seeMore, setSeeMore] = useState(false);
   useEffect(() => {
-    if(ID !== "undefined"){
+    if (ID !== "undefined") {
       console.log(`http://localhost:4000/book/detailBook/${ID}`);
       http
         .get(`http://localhost:4000/book/detailBook/${ID}`)
         .then((product) => setProduct(Array(product.data)))
         .catch((err) => console.log(err));
     }
-   
   }, [ID]);
 
   const handleAddToCartClick = async (ID) => {
@@ -43,13 +50,14 @@ function Detail() {
       const authToken = localStorage.getItem("accessToken");
 
       if (authToken) {
-        const response = await http.post(`/receipt/addToCart/${ID}`,{amount:quantity});
+        const response = await http.post(`/receipt/addToCart/${ID}`, {
+          amount: quantity,
+        });
         console.log(response);
         if (response.status == 200) {
           toast.success(`Product added to cart successfully`, {
             position: "top-right",
           });
-         
         } else {
           console.error(`Failed to add product to cart:`);
           toast.error(`Failed to add product to cart`, {
@@ -71,67 +79,92 @@ function Detail() {
     }
   };
   const onDecrease = () => {
-    quantity > 1 ? setQuantity(quantity - 1) : setQuantity(quantity)
-  }
+    quantity > 1 ? setQuantity(quantity - 1) : setQuantity(quantity);
+  };
 
   const onIncrease = () => {
-    setQuantity(quantity + 1) 
-  }
+    setQuantity(quantity + 1);
+  };
   return (
     <Layout>
-       <ToastContainer
-        position="top-right" autoClose={5000}
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
-        closeOnClick rtl={false}
-        pauseOnFocusLoss 
-        draggable 
-        pauseOnHover 
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
         theme="light"
-        />
-        <div className="detail_wrap">
-          {product.map((item) => {
-            return (
-              <div key={item._id} className="detail">
-                <div className="detail_image">
-                  <img src={item.images} alt="detail-image" />
+      />
+      <div className="detail_wrap">
+        {product.map((item) => {
+          return (
+            <div key={item._id} className="detail">
+              <div className="detail_image">
+                <img src={item.images} alt="detail-image" />
+              </div>
+              <div className="detail_info">
+                <div className="detail_title">
+                  <h2>{item.name}</h2>
+                  <h3>Tác giả : {item.author}</h3>
                 </div>
-                <div className="detail_info">
-                  <div className="detail_title">
-                    <h2>{item.name}</h2>
-                    <h3>Tác giả : {item.author}</h3>
-                  </div>
-                  <p>{item.description}</p>
-                  <h1>Giá: {item.price} VND</h1>
+                <div>
+                  <p style={seeMore ? null : paragrapStyle}>
+                    {item.description}
+                  </p>
+                  <button
+                    className="read-more"
+                    type="button"
+                    onClick={() => setSeeMore(!seeMore)}
+                  >
+                    {seeMore ? "Thu gọn" : "Xem thêm"}
+                  </button>
+                </div>
+                <h1>Giá: {item.price} VND</h1>
                 <div className="quantity">
-                  <button type="button" onClick={onDecrease}>-</button>
+                  <button type="button" onClick={onDecrease}>
+                    -
+                  </button>
                   <div className="amount-quantity">{quantity}</div>
-                  <button type="button" onClick={onIncrease}>+</button>
-                </div>
+                  <button type="button" onClick={onIncrease}>
+                    +
+                  </button>
                 </div>
               </div>
-            );
-          })}
-        </div>
-        <div className="detail_button">
-          <button onClick={() => handleAddToCartClick(product[0]._id)}
-            type="submit"
-          >
-            THÊM VÀO GIỎ HÀNG
-          </button>
-          <button onClick={() => {handleAddToCartClick(product[0]._id); setTimeout(() => {
-            navigate(`/cart/`);
-          }, 2000);}} type="submit">MUA NGAY</button>
-          <RentForm/>
-        </div>
-        <div>
-          <SliderDetail>
-          {slideDetail.map((item, index) => {
-          return <img key={index} src={item.image} alt={item.alt} />;
+            </div>
+          );
         })}
-          </SliderDetail>
-        </div>
-     
+      </div>
+      <div className="detail_button">
+        <button
+          onClick={() => handleAddToCartClick(product[0]._id)}
+          type="submit"
+        >
+          THÊM VÀO GIỎ HÀNG
+        </button>
+        <button
+          onClick={() => {
+            handleAddToCartClick(product[0]._id);
+            setTimeout(() => {
+              navigate(`/gio-hang/`);
+            }, 2000);
+          }}
+          type="submit"
+        >
+          MUA NGAY
+        </button>
+        <RentForm />
+      </div>
+      <div>
+        <SliderDetail>
+          {slideDetail.map((item, index) => {
+            return <img key={index} src={item.image} alt={item.alt} />;
+          })}
+        </SliderDetail>
+      </div>
     </Layout>
   );
 }

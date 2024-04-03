@@ -6,6 +6,7 @@ import Layout from "../layout/Layout";
 import { toast, ToastContainer } from "react-toastify";
 import { Typography } from 'antd';
 import { http } from "../util/http";
+import './page.css'
 const DetailContainer = styled.div`
   display:flex;
   flex-direction:column;
@@ -81,11 +82,11 @@ const RentForm = () => {
     <div>
       <Badge count={0}>
 
-      <Button className="button-header" type="primary" onClick={showModal}>
-          Rent This Book
-        </Button>
+      <button className="rent_button" onClick={showModal}>
+          THUÊ SÁCH
+        </button>
           <Modal
-            title="Rent Form"
+            title="Thuê Sách"
             open={isModalOpen}
             onOk={handleOk}
             onCancel={handleCancel}
@@ -93,21 +94,21 @@ const RentForm = () => {
           >
             <form >
             <DetailContainer>
-              <div>Book Name</div>
+              <div>Tên Sách</div>
               <Title level={3} style={{textWrap:"pretty"}}>{bookDetail?.name}</Title>
             </DetailContainer>
             <DetailContainer>
-              <div>Book Author</div>
+              <div>Tác Giả</div>
               <Title level={3} style={{textWrap:"pretty"}}>{bookDetail?.author}</Title>
             </DetailContainer>
             <DetailContainer>
-              <div>Time:</div>
+              <div>Thời Gian Thuê Sách:</div>
               <select
                 defaultValue={rentTime}
                 onChange={(e) => setRentTime(e.target.value)}
               >
-                <option value="1">1 week</option>
-                <option value="2">2 weeks</option>
+                <option value="1">1 Tuần</option>
+                <option value="2">2 Tuần</option>
               </select>
             </DetailContainer>
             </form>

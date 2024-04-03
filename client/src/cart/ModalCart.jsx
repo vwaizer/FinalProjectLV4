@@ -17,10 +17,6 @@ const ModalCart = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  let counting = 0;
-  productModal.forEach((item, index) => {
-    counting += item;
-  });
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -44,7 +40,7 @@ const ModalCart = () => {
           onOk={handleOk}
           onCancel={handleCancel}
         >
-          {/* {getAddToCart[0]?.cart?.map((item, index) => {
+          {getAddToCart[0]?.cart?.map((item, index) => {
             let img, name, price, bookID, amount;
             img = getAddToCart[0].result[index].images[0];
             name = getAddToCart[0].result[index].name;
@@ -67,7 +63,7 @@ const ModalCart = () => {
                 <div className="border-space-product"></div>
               </div>
             );
-          })} */}
+          })}
         </Modal>
       </Badge>
     </div>

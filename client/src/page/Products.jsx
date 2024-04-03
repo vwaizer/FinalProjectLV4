@@ -1,3 +1,5 @@
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
@@ -16,10 +18,6 @@ import SetProduct from "../custom/productcpn/SetProduct.jsx";
 import Layout from "../layout/Layout";
 import { http } from "../util/http.js";
 import "./page.css";
-import Backdrop from "@mui/material/Backdrop";
-import CircularProgress from "@mui/material/CircularProgress";
-import Button from "@mui/material/Button";
-import Data from "../Data/index.js";
 
 function Products() {
   const [getBook, setGetBook] = useState([]);
@@ -31,9 +29,8 @@ function Products() {
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(32);
   const [loading, setLoading] = useState(false);
-  const [filterUrl,setFIlterUrl]=useState("")
+  const [filterUrl, setFIlterUrl] = useState("");
   useEffect(() => {
-    
     http
       .get(`/book/?page=${currentPage}&${filterUrl}`)
       .then((getBook) => {
@@ -47,24 +44,25 @@ function Products() {
           window.location.href = "/sign-in";
         }, 2000);
       });
-  }, [currentPage,filterUrl]);
-const getFilterType=(type)=>{
-  const encodeType=encodeURI(type);
-  setFIlterUrl(`type=${encodeType}`)
-  // http
-  //     .get(`/book/?type=${encodeType}`)
-  //     .then((getBook) => {
-  //       setGetBook(getBook.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
+  }, [currentPage, filterUrl]);
+  const getFilterType = (type) => {
+    const encodeType = encodeURI(type);
+    setFIlterUrl(`type=${encodeType}`);
 
-  //       toast.error(err.code);
-  //       setTimeout(() => {
-  //         window.location.href = "/sign-in";
-  //       }, 2000);
-  //     });
-}
+    // http
+    //     .get(`/book/?type=${encodeType}`)
+    //     .then((getBook) => {
+    //       setGetBook(getBook.data);
+    //     })
+    //     .catch((err) => {
+    //       console.log(err);
+
+    //       toast.error(err.code);
+    //       setTimeout(() => {
+    //         window.location.href = "/sign-in";
+    //       }, 2000);
+    //     });
+  };
   useEffect(() => {
     http
       .get("/book/types")
@@ -85,6 +83,15 @@ const getFilterType=(type)=>{
     }
     window.scrollTo(0, "smooth");
   };
+
+  const filterChange = (e) => {
+    setValue(e.target.value)
+  };
+  let searchData = getBook.filter((val) => {
+    return Object.keys(val).some((key) =>
+      val[key].toString().toLowerCase().includes(value.toString().toLowerCase())
+    );
+  });
 
   return (
     <Layout>
@@ -108,32 +115,39 @@ const getFilterType=(type)=>{
               {getTypeBook.map((val, index) => {
                 return (
                   <div key={index} className="type">
-                    <Category href="#" type={val.type} onClick={()=>getFilterType(val.type)} />
+                    <Category
+                      type={val.type}
+                      onClick={() => getFilterType(val.type)}
+                    />
                   </div>
                 );
               })}
             </div>
+            <div className="search">
+              <h2>Tìm Kiếm</h2>
+              <input
+                type="text"
+                value={value}
+                onChange={filterChange}
+                placeholder="Tên sách, tác giả, thể loại"
+              />
+            </div>
           </div>
         </div>
         <div className="rightbox">
-          {loading ? (
+          {loading ? setLoading(true) (
             <Backdrop
               sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
-              open
             >
               <CircularProgress color="inherit" />
             </Backdrop>
           ) : (
-            getBook.map((item, index) => {
+            searchData.map((item, index) => {
               if (item !== null) {
                 return (
                   <div className="product_info" key={index}>
                     <Link to={`/product-detail/${item._id}`}>
-                      <SetProduct
-                        image={item.images}
-                        name={item.name}
-                        author={item.author}
-                      />
+                      <SetProduct image={item.images} name={item.name} />
                     </Link>
                   </div>
                 );

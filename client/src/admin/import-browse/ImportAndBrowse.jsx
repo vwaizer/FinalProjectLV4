@@ -4,7 +4,7 @@ import "./import.css";
 import { http } from "../../util/http";
 
 const ImportAndBrowse = () => {
-  const [getImport, setGetImport] = useState([])
+  const [getImport, setGetImport] = useState([]);
 
   useEffect(() => {
     http
@@ -35,6 +35,14 @@ const ImportAndBrowse = () => {
             dataIndex: "_id",
           },
           {
+            title: "Tên KH",
+            dataIndex: "userID",
+          },
+          {
+            title: "Tên sách",
+            dataIndex: "bookName",
+          },
+          {
             title: "Ngày Nhập",
             dataIndex: "dateIn",
           },
@@ -43,15 +51,32 @@ const ImportAndBrowse = () => {
             dataIndex: "amount",
           },
           {
-            title:"Tình Trạng",
-            dataIndex:"status"
+            title: "Tình Trạng",
+            dataIndex: "status",
           },
           {
-            title:"Tên sách",
-            dataIndex:"bookName"
-          }
+            title: "",
+            dataIndex: "",
+            render: (record) => {
+              return (
+                <>
+                  <button
+                    style={{
+                      border: "1px solid #000",
+                      borderRadius: "5px",
+                      width: "100px",
+                      height: "50px",
+                    }}
+                    type="button"
+                  >
+                    Check
+                  </button>
+                </>
+              );
+            },
+          },
         ]}
-        dataSource={(getImport)}
+        dataSource={getImport}
       ></Table>
     </Space>
   );
