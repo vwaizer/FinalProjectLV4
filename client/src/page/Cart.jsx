@@ -8,7 +8,7 @@ function Cart() {
   const [getAddToCart, setGetAddToCart] = useState([]);
   const [checkboxStates, setCheckboxStates] = useState([]);
   const [selectedProducts, setSelectedProducts] = useState([]);
-  const [isDeleted,setIsDeleted]=useState(false)
+  const [isDeleted, setIsDeleted] = useState(false);
   useEffect(() => {
     http
       .get("/receipt/")
@@ -53,16 +53,16 @@ function Cart() {
       setUpdateBooks(newAmount);
     }
   };
-  // console.log('updateBooks',updateBooks)
 
   const handleSelectAllChange = () => {
     setSelectAllChecked(!selectAllChecked);
     const newCheckboxStates = checkboxStates.map(() => !selectAllChecked);
     setCheckboxStates(newCheckboxStates);
-    const selectedProducts = getAddToCart[0]?.cart?.filter(
-      (item, i) => newCheckboxStates[item.bookID]
+    const selectedProduct = getAddToCart[0]?.cart?.filter(
+      (item, i) => newCheckboxStates[i]
     );
-    setSelectedProducts(selectedProducts);
+    setSelectedProducts(selectedProduct);
+    console.log("all", selectedProduct);
   };
   const handleCheckboxChange = (index) => {
     const newCheckboxStates = [...checkboxStates];
@@ -121,45 +121,53 @@ function Cart() {
   const calculateTotalPrice = (selectedProducts) => {
     let totalPrice = 0;
     if (selectedProducts?.length > 0) {
-      selectedProducts.forEach((item, index) => {
+      selectedProducts.forEach((item) => {
         const { price, bookID, amount } = item;
-
         totalPrice += price * (inputValue[bookID] || amount);
       });
     }
-
-    return totalPrice;
+    const formattedNumber = (totalPrice * 1000).toLocaleString("vi-VN");
+    const result = formattedNumber.replace(",", ".");
+    return result;
   };
   const finalTotal = (selectedProducts) => {
     if (selectedProducts.length > 0) {
-      const totalPrice = calculateTotalPrice(selectedProducts) + 19.0;
-      return totalPrice;
+      const totalPrice = selectedProducts.reduce((total, item) => {
+        const { price, bookID, amount } = item;
+        const itemPrice = price * (inputValue[bookID] || amount);
+        return total + itemPrice;
+      }, 0);
+      const totalPriceWithShipping = totalPrice + 19.0;
+      const formattedNumber = (totalPriceWithShipping * 1000).toLocaleString(
+        "vi-VN"
+      );
+      const result = formattedNumber.replace(",", ".");
+      return result;
     }
-
-    return 0;
+    return "0";
   };
-  console.log("selected", selectedProducts);
   const handlePayment = () => {
     if (selectedProducts.length > 0) {
       localStorage.setItem("BoughtList", JSON.stringify(selectedProducts));
       window.location.href = "/thanh-toan";
     }
   };
-
   const backToProduct = () => {
     window.location.href = "/nha-sach";
   };
-  const deleteCartItem=async(bookID)=>{
+  const deleteCartItem = async (bookID) => {
     console.log(bookID);
     try {
-      const result= await http.post('/receipt/deleteItem',{"deleteItem":[bookID]})
+      const result = await http.post("/receipt/deleteItem", {
+        deleteItem: [bookID],
+      });
       console.log(result.data);
-      setIsDeleted(!isDeleted)
+      setIsDeleted(!isDeleted);
     } catch (error) {
       console.log(error);
     }
-  }
-  
+  };
+
   return (
     <Layout>
       {getAddToCart[0]?.cart?.length ? (
@@ -187,9 +195,11 @@ function Cart() {
               <div style={{ backgroundColor: "#fff", borderRadius: "7px" }}>
                 <div style={{ paddingTop: "10px", paddingRight: "10px" }}>
                   {getAddToCart[0]?.cart?.map((item, index) => {
-                   
-                    const { price, bookID, amount,name,img } = item;
-
+                    const { price, bookID, amount, name, img } = item;
+                    const formattedNumber = (price * 1000).toLocaleString(
+                      "vi-VN"
+                    );
+                    const priceFormatted = formattedNumber.replace(",", ".");
                     return (
                       <div>
                         <div className="product-container">
@@ -208,7 +218,7 @@ function Cart() {
                             <div
                               style={{ fontSize: "1.1em", fontWeight: "600" }}
                             >
-                              {price} đ
+                              {priceFormatted} đ
                             </div>
                           </div>
                           {/* nút tăng giảm số lượng */}
@@ -249,13 +259,18 @@ function Cart() {
                             </div>
                           </div>
                           <div className="product-price">
-                            {parseInt(price) * inputValue[bookID] ||
-                              parseInt(price) * amount}{" "}
+                            {(
+                              parseFloat(priceFormatted.replace(".", "")) *
+                              (inputValue[bookID] || amount)
+                            ).toLocaleString("vi-VN")}
                             đ
                           </div>
                           <div className="trashIcon">
-                            <FaRegTrashCan onClick={()=>deleteCartItem(bookID)} size={17} />
-                          </div>  
+                            <FaRegTrashCan
+                              onClick={() => deleteCartItem(bookID)}
+                              size={17}
+                            />
+                          </div>
                         </div>
                         <div className="border-space-product"></div>
                       </div>
@@ -315,9 +330,7 @@ function Cart() {
               </div>
             </div>
           </div>
-          <div className="rate">
-            
-          </div>
+          <div className="rate"></div>
         </>
       ) : (
         <>
