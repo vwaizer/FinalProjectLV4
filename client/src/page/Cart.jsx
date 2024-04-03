@@ -142,7 +142,7 @@ function Cart() {
   const handlePayment = () => {
     if (selectedProducts.length > 0) {
       localStorage.setItem("BoughtList", JSON.stringify(selectedProducts));
-      window.location.href = "/payment";
+      window.location.href = "/thanh-toan";
     }
   };
 

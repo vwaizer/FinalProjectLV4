@@ -437,11 +437,19 @@
   }
   .detail_button{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   .search{
     display: none;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .detail_button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
@@ -463,6 +471,11 @@
   }
   .logo_middle {
     display: none;
+  }
+  .detail_button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
