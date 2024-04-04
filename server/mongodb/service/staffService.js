@@ -1,6 +1,6 @@
 import databaseProject from "../GetDataBase.js"
 import { registerService } from "./registerService.js"
-
+import { ObjectId } from "mongodb";
 
 export const getHiredBook=async(req,res,next)=>{
     try {
@@ -75,7 +75,7 @@ export const changeStatusImportedBook=async(req,res,next)=>{
     const id = req.params.ID;
  console.log(id);
   try {
-    const result = await databaseProject.hiredBook.updateOne(
+    const result = await databaseProject.importedBook.updateOne(
       { _id: new ObjectId(`${id}`) },
       { $set:{status: `${req.body.status}`} }
     );

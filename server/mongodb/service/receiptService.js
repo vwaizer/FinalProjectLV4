@@ -37,7 +37,8 @@ export const getAllReceipt = async (req, res, next) => {
               price: value.price,
               amount: value.amount,
               email: item?.userDetail[0]?.email,
-              status:item?.status
+              status:item?.status,
+              date:item.date
             };
           
         });
