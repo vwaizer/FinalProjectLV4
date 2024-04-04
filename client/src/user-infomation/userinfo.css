@@ -17,3 +17,27 @@
 .user_button:hover{
     background-color: green
 }
+.select-container{
+    display: flex;
+    margin-bottom: 10px;
+}
+.select-list{
+    width:250px;
+    border:1px solid #929191;
+    color:#646464;
+    height:30px;
+    border-radius:3px;
+    padding-left:3px;
+    font-size:14px;
+    outline: none;
+}
+.input-address{
+    width:250px;
+    outline:none;
+    border:none;
+    border-bottom:1px solid #929191 !important;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color:#646464;
+    font-size:15px;
+}

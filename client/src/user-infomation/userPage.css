@@ -4,3 +4,11 @@ border-radius:3px;
 border:2px solid #e6e6e6;
 height: 32px;
 }
+.page-title h1{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 36px;
+    color: #333333;
+    padding: 30px 15px;
+}
