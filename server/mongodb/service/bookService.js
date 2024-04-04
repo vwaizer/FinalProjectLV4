@@ -34,12 +34,12 @@ export const addBook = async (req, res,next) => {
       // const newBook = new ImportedBook(req.body);
       // const result = await databaseProject.importedBook.insertOne(newBook);
       req.body.book.map(async(item,index)=>{
-        const newBody={userID:req.body.userID,amount:req.body.amount,book:item}
+        const newBody={userID:req.body.userID,book:item}
         const newBook = new ImportedBook(newBody);
       const result = await databaseProject.importedBook.insertOne(newBook);
         // const addedBook = {
         //   name: item.name,
-        //   amount: req.body.amount,
+        //   amount: item.amount,
         //   author: item.author,
         //   price: item.price,
         //   type:item.type

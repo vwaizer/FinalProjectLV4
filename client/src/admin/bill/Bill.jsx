@@ -13,8 +13,14 @@ const Bill = () => {
   useEffect(() => {
     http
       .get("/receipt/getAllReceipt")
-      .then((getReceipt) => setGetReceipt(getReceipt.data))
+      .then((getReceipt) => {
+        const formatData=getReceipt.data.map((item,index)=>{
+          console.log(item);
+          return {...item,date:new Date(item.date).toDateString(),index}
+        })
+        setGetReceipt(formatData)})
       .catch((err) => {
+
         console.log(err);
       });
     console.log(getReceipt);

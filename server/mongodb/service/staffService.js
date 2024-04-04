@@ -1,10 +1,29 @@
 import databaseProject from "../GetDataBase.js"
 import { registerService } from "./registerService.js"
-
+import { ObjectId } from "mongodb";
 
 export const getHiredBook=async(req,res,next)=>{
     try {
-        const result =await databaseProject.hiredBook.find().toArray()
+        const result =await databaseProject.hiredBook.aggregate([
+            {
+                '$match': {}
+            }, {
+                '$lookup': {
+                    'from': 'users', 
+                    'localField': 'userID', 
+                    'foreignField': '_id', 
+                    'as': 'user'
+                }
+            }, {
+                '$lookup': {
+                    'from': 'books', 
+                    'localField': 'bookID', 
+                    'foreignField': '_id', 
+                    'as': 'bookData'
+                }
+            }
+        ]).toArray()
+        
         return res.json(result)
     } catch (error) {
         next(error)
@@ -51,4 +70,17 @@ export const getImportedBook=async(req,res,next)=>{
     } catch (error) {
         return next(error)
     }
+}
+export const changeStatusImportedBook=async(req,res,next)=>{
+    const id = req.params.ID;
+ console.log(id);
+  try {
+    const result = await databaseProject.importedBook.updateOne(
+      { _id: new ObjectId(`${id}`) },
+      { $set:{status: `${req.body.status}`} }
+    );
+    return res.json(result);
+  } catch (error) {
+    console.log("error", error);
+  }
 }

@@ -5,27 +5,43 @@ import { http } from "../../util/http";
 
 const ImportAndBrowse = () => {
   const [getImport, setGetImport] = useState([]);
-
+  const [isClicked,setIsClicked]=useState(false);
   useEffect(() => {
     http
       .get("/staff/getImportedBook")
       .then((getImport) => {
-        const formatData = getImport.data.map((item, index) => {
-          return { ...item, bookName: item.book.name };
-        });
-        setGetImport(formatData);
+        const formatData=getImport.data.map((item,index)=>{
+          return {...item,dateIn:new Date(item.dateIn).toDateString(),bookName:item.book.name,index}
+        })
+        setGetImport(formatData)
       })
       .catch((err) => {
         console.log(err);
       });
     console.table(getImport);
-  }, []);
+  }, [isClicked]);
   console.log(getImport);
+  const onClickFunc=async(id)=>{
+    console.log(id);
+    try {
+      const result=await http.put(`/staff/importedBook/${id}`,{status:"Approve"})
+      console.log(result);
+      setIsClicked(!isClicked)
+    } catch (error) {
+      console.log(error);
+    }
+      
+    
+  }
   return (
     <Space size={20} direction="vertical">
       <Typography.Title level={4}>Nhập Sách</Typography.Title>
       <Table
         columns={[
+          {
+            title:"Stt",
+            dataIndex:"index"
+          },
           {
             title: "Mã Hóa Đơn",
             dataIndex: "_id",
@@ -64,6 +80,7 @@ const ImportAndBrowse = () => {
                       height: "50px",
                     }}
                     type="button"
+                    onClick={()=>onClickFunc(record._id)}
                   >
                     Check
                   </button>

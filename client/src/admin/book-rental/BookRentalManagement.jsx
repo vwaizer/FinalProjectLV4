@@ -5,16 +5,34 @@ import { http } from "../../util/http";
 
 const BookRentalManagement = () => {
   const [getHireBook, setGetHireBook] = useState([]);
-
+const [isClicked,setIsClicked]=useState(false);
   useEffect(() => {
     http
       .get("/staff/hireBook")
-      .then((getHireBook) => setGetHireBook(getHireBook.data))
+      .then((getHireBook) => {
+        const formatData=getHireBook.data.map((item,index)=>{
+          console.log(item);
+          return {...item,dateIn:new Date(item.dateIn).toDateString(),dateOut:new Date(item.dateOut).toDateString(),bookName:item?.bookData[0]?.name,userEmail:item?.user[0]?.email,index}
+        })
+        setGetHireBook(formatData)
+      })
       .catch((err) => {
         console.log(err);
       });
     console.log(getHireBook);
-  }, []);
+  }, [isClicked]);
+  
+  const onClickFunc=async(id)=>{
+    try {
+      const result=await http.put(`/staff/hiredBook/${id}`,{status:"step 2"})
+      console.log(result);
+      setIsClicked(!isClicked)
+    } catch (error) {
+      console.log(error);
+    }
+      
+    
+  }
   return (
     <Space size={20} direction="vertical">
       <Typography.Title level={4}>Thông Tin Thuê Sách</Typography.Title>
@@ -22,11 +40,11 @@ const BookRentalManagement = () => {
         columns={[
           {
             title: "STT",
-            dataIndex: "_id",
+            dataIndex: "index",
           },
           {
-            title: "Tên KH",
-            dataIndex: "userID",
+            title: "Mail KH",
+            dataIndex: "userEmail",
           },
           {
             title: "Số Điện Thoại",
@@ -34,11 +52,7 @@ const BookRentalManagement = () => {
           },
           {
             title: "Tên Sách",
-            dataIndex: "bookID",
-          },
-          {
-            title: "Số Lượng",
-            dataIndex: "",
+            dataIndex: "bookName",
           },
           {
             title: "Ngày Thuê",
@@ -49,9 +63,15 @@ const BookRentalManagement = () => {
             dataIndex: "dateOut",
           },
           {
+            title:"Tình trạng",
+            dataIndex:"status"
+          }
+          ,
+          {
             title: "",
             dataIndex: "",
             render: (button) => {
+              console.log(button);
               return (
                 <>
                   <button
@@ -62,6 +82,7 @@ const BookRentalManagement = () => {
                       height: "50px",
                     }}
                     type="button"
+                    onClick={()=>onClickFunc(button._id)}
                   >
                     Check
                   </button>
