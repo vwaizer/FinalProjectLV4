@@ -6,7 +6,7 @@ export const bookRoute=express.Router();
 
 bookRoute.get("/" ,getFilterBook);
 bookRoute.get("/detailBook/:ID",userValidator,getDetailBook);
-bookRoute.post("/",addBook);
+bookRoute.post("/",userValidator,addBook);
 bookRoute.delete("/:ID",deleteBook);
 bookRoute.get("/types",userValidator,getAllTypes)
 bookRoute.get("/publisher",userValidator,getAllPublisher)

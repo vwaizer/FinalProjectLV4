@@ -1,9 +1,8 @@
+import { Badge, Button, Modal } from "antd";
 import React, { useEffect, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import { Badge, Button, Modal } from "antd";
-import axios from "axios";
-import "./modalcart.css";
 import { http } from "../util/http";
+import "./modalcart.css";
 
 const ModalCart = () => {
   const [getAddToCart, setGetAddToCart] = useState([]);
@@ -15,7 +14,7 @@ const ModalCart = () => {
       .get("/receipt/")
       .then((getAddToCart) => setGetAddToCart(getAddToCart.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [isModalOpen]);
 
   const showModal = () => {
     setIsModalOpen(true);

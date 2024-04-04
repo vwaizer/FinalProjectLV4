@@ -21,10 +21,12 @@ const ImportAndBrowse = () => {
     console.table(getImport);
   }, [isClicked]);
   console.log(getImport);
-  const onClickFunc=async(id)=>{
-    console.log(id);
+  const onClickFunc=async(record)=>{
+    console.log(record);
     try {
-      const result=await http.put(`/staff/importedBook/${id}`,{status:"Approve"})
+      const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Approve"})
+      // const addBook=await http.post(`/staff/book`,record)
+      // console.log(addBook);
       console.log(result);
       setIsClicked(!isClicked)
     } catch (error) {
@@ -80,7 +82,7 @@ const ImportAndBrowse = () => {
                       height: "50px",
                     }}
                     type="button"
-                    onClick={()=>onClickFunc(record._id)}
+                    onClick={()=>onClickFunc(record)}
                   >
                     Check
                   </button>

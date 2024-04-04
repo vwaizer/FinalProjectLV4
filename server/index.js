@@ -27,6 +27,7 @@ app.use("/",loginRoute)
 app.use("/receipt",receiptRoute)
 app.use(errorHandle)
 databaseProject.run();
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

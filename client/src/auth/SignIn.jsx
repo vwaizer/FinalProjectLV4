@@ -84,7 +84,8 @@ const SignIn = () => {
       } else {
         setErrMessage("Login Failed");
       }
-      errRef.current.focus();
+      // errRef.current.focus();
+      toast.error(errMessage)
     }
   };
   return (
@@ -102,13 +103,6 @@ const SignIn = () => {
       <div className="body">
         <div className="wrap">
           <form onSubmit={handleSubmit}>
-            <p
-              ref={errRef}
-              className={errMessage ? "errmsg" : "offscreen"}
-              aria-live="assertive"
-            >
-              {errMessage}
-            </p>
             <h1>Đăng Nhập</h1>
             <div className="input-box">
               <input

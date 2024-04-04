@@ -20,6 +20,7 @@ export const deleteBook = async (req, res) => {
 };
 export const addBook = async (req, res,next) => {
   console.log(req.body);
+  console.log(req.userID);
   try {
     const nameList=req.body.book.map((item,index)=>item.name)
     const checkIsExist = await databaseProject.book.find({
@@ -34,7 +35,7 @@ export const addBook = async (req, res,next) => {
       // const newBook = new ImportedBook(req.body);
       // const result = await databaseProject.importedBook.insertOne(newBook);
       req.body.book.map(async(item,index)=>{
-        const newBody={userID:req.body.userID,book:item}
+        const newBody={userID:req.userID,book:item}
         const newBook = new ImportedBook(newBody);
       const result = await databaseProject.importedBook.insertOne(newBook);
         // const addedBook = {

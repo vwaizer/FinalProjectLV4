@@ -108,7 +108,9 @@ export const loginValidator = validator(
               return true;
               
             } else {
+             
               throw new Error("Email is not registered");
+              
             }
           },
         },
@@ -120,23 +122,19 @@ export const loginValidator = validator(
           errorMessage: "Password should be at least 8 chars",
         },
         custom: {
+          
           options: async (value, { req }) => {
+            let checked=false;
             const userLogin = await databaseProject.users.findOne({
               email: req.body.email,
             });
             
-            bcrypt.compare(value, userLogin.password, function (err, result) {
-              if (err) {
-                throw err;
-              } 
-              console.log(result);
-              if(result){
-                return true;
-              } else {
-                throw new Error(" PASSWORD DOES NOT MATCH");
-              }
-              
-            })
+            checked=bcrypt.compareSync(value, userLogin.password)
+            console.log(checked);
+            if(checked == true){
+              return true
+            }
+             else{throw new Error(" PASSWORD DOES NOT MATCH")}
            
            
           },
