@@ -1,3 +1,4 @@
+import { Books } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js"
 import { registerService } from "./registerService.js"
 import { ObjectId } from "mongodb";
@@ -83,4 +84,22 @@ export const changeStatusImportedBook=async(req,res,next)=>{
   } catch (error) {
     console.log("error", error);
   }
+}
+export const importBook=async(req,res,next)=>{
+    try {
+        const item=req.body;
+        console.log(caseID);
+          const addedBook = {
+          name: item.name,
+          amount: item.amount,
+          author: item.author,
+          price: item.price,
+          type:item.type
+        };
+        const setBook = await databaseProject.book.insertOne(new Books(addedBook));
+      
+        return res.json(setBook)
+    } catch (error) {
+        return next(error)
+    }
 }

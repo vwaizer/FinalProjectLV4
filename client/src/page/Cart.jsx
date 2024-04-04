@@ -15,7 +15,7 @@ function Cart() {
       .then((getAddToCart) => {
         console.log("cart", getAddToCart);
         setGetAddToCart(getAddToCart.data);
-        setCheckboxStates(Array(getAddToCart.data[0].cart.length).fill(false));
+        setCheckboxStates(Array(getAddToCart.data[0]?.cart?.length).fill(false));
       })
       .catch((err) => console.log(err));
   }, [isDeleted]);
