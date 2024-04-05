@@ -2,10 +2,12 @@ import { Space, Table, Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import "./import.css";
 import { http } from "../../util/http";
+import ButtonImport from "./ButtonImport";
 
 const ImportAndBrowse = () => {
   const [getImport, setGetImport] = useState([]);
   const [isClicked,setIsClicked]=useState(false);
+ 
   useEffect(() => {
     http
       .get("/staff/getImportedBook")
@@ -19,28 +21,8 @@ const ImportAndBrowse = () => {
         console.log(err);
       });
     console.table(getImport);
-  }, [isClicked]);
+  }, [isClicked,getImport]);
   console.log(getImport);
-  const onClickFunc=async(record)=>{
-    console.log(record);
-    try {
-      if(localStorage.getItem("staff") == "staff"){
-        const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Step 2"})
-      }
-      else if(localStorage.getItem("staff")== "admin"){
-        const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Approve"})
-        // const addBook=await http.post(`/staff/book`,record)
-        // console.log(addBook);
-        console.log(result);
-      }
-     
-      setIsClicked(!isClicked)
-    } catch (error) {
-      console.log(error);
-    }
-      
-    
-  }
   return (
     <Space size={20} direction="vertical">
       <Typography.Title level={4}>Nhập Sách</Typography.Title>
@@ -78,22 +60,8 @@ const ImportAndBrowse = () => {
             title: "",
             dataIndex: "",
             render: (record) => {
-              return (
-                <>
-                  <button
-                    style={{
-                      border: "1px solid #000",
-                      borderRadius: "5px",
-                      width: "100px",
-                      height: "50px",
-                    }}
-                    type="button"
-                    onClick={()=>onClickFunc(record)}
-                  >
-                    Check
-                  </button>
-                </>
-              );
+              
+             return <ButtonImport record={record} method={setIsClicked} value={isClicked}/>
             },
           },
         ]}

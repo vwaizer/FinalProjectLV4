@@ -45,8 +45,8 @@ const RentForm = () => {
   };
   const setHiredBook=async(bookID,rentTime)=>{
     console.log(bookID);
-    try {
-      const result= await http.post("/book/hiredBook",{
+    try { 
+      const result= await http.post("/book/hiredBook",{ 
         "dateIn":(new Date()).toISOString(),
         "dateOut":(new Date(new Date().setDate(new Date().getDate() + rentTime*7))).toISOString(),
         "bookID":bookID

@@ -13,7 +13,7 @@ const ModalCart = () => {
     http
       .get("/receipt/")
       .then((getAddToCart) => setGetAddToCart(getAddToCart.data))
-      .catch((err) => console.log(err));
+      .catch((err) => {console.log(err);localStorage.removeItem("accessToken");window.location.href="/sign-in"});
   }, [isModalOpen]);
 
   const showModal = () => {

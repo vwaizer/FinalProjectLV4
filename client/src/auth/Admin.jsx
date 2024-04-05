@@ -13,7 +13,12 @@ const Admin = ({onClick}) => {
     if (username === "admin" && password === "123456789") {
       localStorage.setItem("staff", username)
       window.location.href = "/adminpage"
-    } else {
+    } 
+    else if(username === "staff" && password === "123456789"){
+      localStorage.setItem("staff", username)
+      window.location.href = "/adminpage"
+    }
+    else {
       setTimeout(() => {
         alert("Wrong Password");
       }, 1000);

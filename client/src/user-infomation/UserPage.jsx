@@ -229,10 +229,11 @@ const UserPage = () => {
   );
 };
 const AccountInfo = ({ getUser }) => {
+  const [value, setValue] = useState(false);
   if (!getUser) {
     return <div>Loading...</div>;
   }
-  const [value, setValue] = useState(false);
+  
   const onChange = (e) => {
     console.log("radio checked", e.target.value);
     setValue(e.target.value);

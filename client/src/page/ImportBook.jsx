@@ -49,10 +49,15 @@ console.log("amount",amount);
         <h1>Nhập Sách</h1>
         <form onSubmit={(e)=>submitBook(bookName,typeName,amount,price,e)}>
           {/* <input type="text" placeholder="Tên Khách Hàng" value={userName} disabled></input> */}
+          <div>Ngày</div>
           <input type="text" placeholder="Ngày Nhập Sách" value={new Date().toDateString()} disabled ></input>
+          <div>Tên sách</div>
           <input type="text" placeholder="Tên Sách" value={bookName} onChange={(e)=>setBookName(e.target.value)}></input>
+          <div>Thể loại</div>
           <input type="text" placeholder="Thể Loại" value={typeName} onChange={(e)=>setTypeName(e.target.value)}></input>
+          <div>Số lượng</div>
           <input type="number" placeholder="Số lượng" value={amount} onChange={(e)=>setAmount(e.target.value)}></input>
+          <div>Giá</div>
           <input type="number" placeholder="Giá " value={price} onChange={(e)=>setPrice(e.target.value)}></input>
           <div className="button_import">
             <button type="submit">Xác Nhận</button>

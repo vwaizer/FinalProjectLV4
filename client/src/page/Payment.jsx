@@ -4,6 +4,7 @@ import "./payment.css";
 import { Input, Radio, ConfigProvider, Checkbox } from "antd";
 import { useState } from "react";
 import { http } from "../util/http";
+import { ToastContainer, toast } from "react-toastify";
 const Form = ({ title, value, onInputChange }) => {
   return (
     <>
@@ -97,11 +98,25 @@ function Payment() {
         .post("/receipt/setHistory", { cart: newCart })
         .catch((error) => console.log(error));
       localStorage.removeItem('BoughtList')
+      toast.success("Mua hàng thành công")
+      setTimeout(()=>window.location.href="/",2000)
     }
   };
 
   return (
     <Layout>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div style={{ width: "80%", margin: "auto" }}>
         <div className="box-container">
           <div style={{ padding: "10px 20px" }}>
