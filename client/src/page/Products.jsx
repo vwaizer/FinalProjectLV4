@@ -85,14 +85,14 @@ function Products() {
   };
 
   const filterChange = (e) => {
-    setValue(e.target.value)
+    setValue(e.target.value);
   };
   let searchData = getBook.filter((val) => {
     return Object.keys(val).some((key) =>
       val[key].toString().toLowerCase().includes(value.toString().toLowerCase())
     );
   });
-
+  console.log(searchData);
   return (
     <Layout>
       <ToastContainer
@@ -135,25 +135,22 @@ function Products() {
           </div>
         </div>
         <div className="rightbox">
-          {loading ? setLoading(true) (
-            <Backdrop
-              sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
-            >
-              <CircularProgress color="inherit" />
-            </Backdrop>
-          ) : (
-            searchData.map((item, index) => {
-              if (item !== null) {
-                return (
-                  <div className="product_info" key={index}>
-                    <Link to={`/product-detail/${item._id}`}>
-                      <SetProduct image={item.images} name={item.name} />
-                    </Link>
-                  </div>
-                );
-              }
-            })
-          )}
+        {searchData.map((item, index) => {
+                if (item !== null) {
+                  return (
+                    <div className="product_info" key={index}>
+                      <Link to={`/product-detail/${item._id}`}>
+                        <SetProduct
+                          image={item.images}
+                          name={item.name}
+                          author={item.author}
+                          price={item.price}
+                        />
+                      </Link>
+                    </div>
+                  );
+                }
+              })}
         </div>
       </div>
       <div className="paginate">

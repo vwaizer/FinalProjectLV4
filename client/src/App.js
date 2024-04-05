@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 import LayoutAdmin from "./admin/layout-admin/LayoutAdmin.jsx";
@@ -8,11 +9,13 @@ import { AuthProvider } from "./context/AuthProvide.js";
 import AboutUsPage from "./page/About Us/about-us-page.jsx";
 import RentForm from "./page/RentForm.jsx";
 import Contact from "./page/contact/contact-page.jsx";
-import { Cart, Detail, Home, Payment, Products } from "./page/index.js";
+import { Cart, Detail, Home, Payment } from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
-import AdminRoute from "./admin/AdminRoute.jsx";
-import { useState } from "react";
-import ImportBook from "./page/ImportBook.jsx";
+import { lazy, Suspense } from "react";
+import { ErrorBoundary } from "react-error-boundary";
+import Loading from "./custom/lazy/Loading.jsx";
+import ErrorPage from "./custom/lazy/ErrorPage.jsx";
+const Products = lazy(() => import("./page/Products.jsx"));
 
 function App() {
   const [showAdmin, setShowAdmin] = useState(false);
@@ -39,13 +42,23 @@ function App() {
             <Route path="/sign-up" element={<SignUp />}></Route>
             <Route path="/sign-in" element={<SignIn />}></Route>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/nha-sach" element={<Products />}></Route>
+            <Route
+              path="/nha-sach"
+              element={
+                <ErrorBoundary 
+                FallbackComponent={<ErrorPage />}
+                onReset={() => window.location.href = "/"}>
+                  <Suspense fallback={<Loading />}>
+                    <Products />
+                  </Suspense>
+                </ErrorBoundary>
+              }
+            ></Route>
             <Route path="/gio-hang/" element={<Cart />}></Route>
             <Route path="/product-detail/:ID" element={<Detail />}></Route>
             <Route path="/thanh-toan" element={<Payment />}></Route>
             <Route path="/lien-he" element={<Contact />}></Route>
             <Route path="/gioi-thieu" element={<AboutUsPage />}></Route>
-            <Route path="/nhap-sach" element={<ImportBook/>}></Route>
             <Route path="/user" element={<UserPage />}></Route>
             <Route path="/staff" element={<Admin />}></Route>
             <Route path="/rent/:id" element={<RentForm />}></Route>

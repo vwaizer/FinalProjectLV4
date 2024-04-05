@@ -25,10 +25,6 @@ let navbar = [
     title: "Liên Hệ",
     href: "/lien-he",
   },
-  {
-    title: "Nhập sách",
-    href: "/nhap-sach",
-  },
 ];
 
 let authors = [
