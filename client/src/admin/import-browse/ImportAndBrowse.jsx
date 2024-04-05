@@ -24,10 +24,16 @@ const ImportAndBrowse = () => {
   const onClickFunc=async(record)=>{
     console.log(record);
     try {
-      const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Approve"})
-      // const addBook=await http.post(`/staff/book`,record)
-      // console.log(addBook);
-      console.log(result);
+      if(localStorage.getItem("staff") == "staff"){
+        const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Step 2"})
+      }
+      else if(localStorage.getItem("staff")== "admin"){
+        const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Approve"})
+        // const addBook=await http.post(`/staff/book`,record)
+        // console.log(addBook);
+        console.log(result);
+      }
+     
       setIsClicked(!isClicked)
     } catch (error) {
       console.log(error);
