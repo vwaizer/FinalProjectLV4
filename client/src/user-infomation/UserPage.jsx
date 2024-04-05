@@ -233,7 +233,6 @@ const AccountInfo = ({ getUser }) => {
   if (!getUser) {
     return <div>Loading...</div>;
   }
-  
   const onChange = (e) => {
     console.log("radio checked", e.target.value);
     setValue(e.target.value);
