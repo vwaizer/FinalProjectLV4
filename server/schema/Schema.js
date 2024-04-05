@@ -11,7 +11,7 @@ export class User {
       (this.role=user.role || "user"),
       (this.avatar= user.avatar||""),
       this.verifyToken=user.verifyToken,
-      this.forgetToken=user.forgetToken
+      this.address=user.address || [""]
   }
 }
 export class Books {
