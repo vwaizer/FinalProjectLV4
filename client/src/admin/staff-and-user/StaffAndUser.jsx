@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
-import AdminPage from "../admin-page/AdminPage";
-import "./staffanduser.css";
 import { Space, Table, Typography } from "antd";
+import React, { useEffect, useState } from "react";
 import { http } from "../../util/http";
+import "./staffanduser.css";
 
 const StaffAndUser = () => {
   const [getUser, setGetUser] = useState([]);
@@ -12,7 +11,7 @@ const StaffAndUser = () => {
       .get("/staff/user")
       .then((getUser) => {
         const formatData=getUser.data.map((item,index)=>{
-            return {...item,index}
+            return {...item,birthday:new Date(item.birthday).toLocaleDateString(),index}
         })
 
         setGetUser(formatData)

@@ -11,7 +11,7 @@ const ImportAndBrowse = () => {
       .get("/staff/getImportedBook")
       .then((getImport) => {
         const formatData=getImport.data.map((item,index)=>{
-          return {...item,dateIn:new Date(item.dateIn).toDateString(),bookName:item.book.name,index}
+          return {...item,dateIn:new Date(item.dateIn).toLocaleDateString(),bookName:item.book.name,index}
         })
         setGetImport(formatData)
       })

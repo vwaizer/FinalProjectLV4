@@ -16,7 +16,7 @@ const Bill = () => {
       .then((getReceipt) => {
         const formatData=getReceipt.data.map((item,index)=>{
           console.log(item);
-          return {...item,date:new Date(item.date).toDateString(),index}
+          return {...item,date:new Date(item.date).toLocaleDateString(),index}
         })
         setGetReceipt(formatData)})
       .catch((err) => {
