@@ -68,3 +68,21 @@ export const getAllUser=async (req,res,next)=>{
   }
 }
 
+export const getAddress=async(req,res,next)=>{
+  try {
+    const result=await databaseProject.users.findOne({_id:req.userID})
+    return res.json(result)
+  } catch (error) {
+    return next(error) 
+  }
+}
+export const changeAddress=async(req,res,next)=>{
+  try {
+    const userData=await databaseProject.users.findOne({_id:req.userID})
+    const newAddress=userData.address.push(req.body.address)
+    const result =await databaseProject.users.updateOne({_id:req.userID},{$set:{address:newAddress}})
+    return res.json(result)
+  } catch (error) {
+    return next(error)
+  }
+}
