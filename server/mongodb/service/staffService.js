@@ -96,6 +96,11 @@ export const importBook=async(req,res,next)=>{
           price: item.price,
           type:item.type
         };
+        const checkBook=await databaseProject.book.findOne({name:item.name})
+        if(checkBook){
+            return res.json("Exist Book!")
+        }
+        
         const setBook = await databaseProject.book.insertOne(new Books(addedBook));
       
         return res.json(setBook)

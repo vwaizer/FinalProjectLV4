@@ -10,6 +10,7 @@ import { staffRoute } from "./routes/staffRoute.js";
 import { userRoute } from "./routes/userRoute.js";
 import { loginRoute } from "./routes/loginRoute.js";
 import { receiptRoute } from "./routes/receiptRoute.js";
+import { MediaRoute } from "./routes/mediaRoute.js";
 
 const app = express()
 const port = 4000
@@ -25,6 +26,7 @@ app.use("/user",userRoute)
 app.use("/staff",staffRoute)
 app.use("/",loginRoute)
 app.use("/receipt",receiptRoute)
+app.use("/media",MediaRoute)
 app.use(errorHandle)
 databaseProject.run();
 

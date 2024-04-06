@@ -41,7 +41,7 @@ export class Comment {
 }
 export class ImportedBook {
   constructor(book) {
-    (this.userID = new ObjectId (book.userID)),
+    (this.staffID = new ObjectId (book.staffID)),
       (this.dateIn = new Date()),
       (this.book = book.book),
       (this.status="Waiting: Admin")
