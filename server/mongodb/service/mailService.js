@@ -4,7 +4,7 @@ import {ObjectId} from "mongodb"
 import express from "express";
 import path from "path";
 import fs from "fs";
-const contractMail = nodemailer.createTransport({
+export const contractMail = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "lightwing2208@gmail.com",

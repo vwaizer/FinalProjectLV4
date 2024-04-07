@@ -9,7 +9,7 @@ export const checkToken=(privateKey,token)=>{
           reject(err.message)
         }
         resolve(token);
-        
+          
       });
       
     })
@@ -19,7 +19,7 @@ export const userValidator = async (req, res, next) => {
     console.log("vao userValidator");
     console.log(req.headers);
   
-    const token = req.headers.authorization.split(" ")[1];
+    const token = req.headers?.authorization?.split(" ")[1];
     
     console.log(token);
     if(token == "undefined"){
@@ -62,7 +62,7 @@ export const userValidator = async (req, res, next) => {
 
 export const staffValidator = async (req, res, next) => {
   console.log("accessToken",req.body);
-  const token = req.headers.authorization.split(" ")[1];
+  const token = req.headers?.authorization.split(" ")[1];
   
   console.log(token);
   const userUnit= await checkToken(privateKey,token);
@@ -94,7 +94,7 @@ export const staffValidator = async (req, res, next) => {
 }
 export const adminValidator = async (req, res, next) => {
   console.log("accessToken",req.body);
-  const token = req.headers.authorization.split(" ")[1];
+  const token = req.headers?.authorization.split(" ")[1];
   
   console.log(token);
   const userUnit= await checkToken(privateKey,token);
