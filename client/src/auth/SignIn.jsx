@@ -1,14 +1,13 @@
-import axios from "axios";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { FaLock, FaUser } from "react-icons/fa";
+import { IoMdArrowForward } from "react-icons/io";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css'
+import 'react-toastify/dist/ReactToastify.css';
 import AuthContext from "../context/AuthProvide";
 import Layout from "../layout/Layout";
-import "./auth.css";
-import { IoMdArrowForward } from "react-icons/io";
 import { http } from "../util/http";
+import "./auth.css";
 const LOGIN_URL = "/auth";
 
 const SignIn = () => {

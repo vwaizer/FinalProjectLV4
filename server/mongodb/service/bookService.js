@@ -1,6 +1,7 @@
 import { ObjectId } from "mongodb";
 import { Books, HiredBook, ImportedBook } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js";
+import { createImageTag, getAssetInfo } from "./cloudinary.js";
 export const getDetailBook = async (req, res) => {
   console.log("vao");
   const userID = req.params.ID;
@@ -19,8 +20,12 @@ export const deleteBook = async (req, res) => {
   return res.json(result);
 };
 export const addBook = async (req, res,next) => {
-  console.log(req.body);
-  console.log(req.userID);
+  const imgUrl= await getAssetInfo(req.body.book[0].images[0])
+  // const imageTag = await createImageTag(req.body.book[0].images[0], colors[0][0], colors[1][0]);
+  console.log("imgTag",imgUrl);
+  const formatData=req.body.book.map((item,index)=>{
+    return {...item,images:imgUrl}
+  })
   try {
     const nameList=req.body.book.map((item,index)=>item.name)
     const checkIsExist = await databaseProject.book.find({
@@ -31,11 +36,9 @@ export const addBook = async (req, res,next) => {
       console.log("checkIsExits", checkIsExist);
       // return updateBook(req,res);
       return res.json("Exist");
-    } else {
-      // const newBook = new ImportedBook(req.body);
-      // const result = await databaseProject.importedBook.insertOne(newBook);
+    } else {  
       req.body.book.map(async(item,index)=>{
-        const newBody={userID:req.userID,book:item}
+        const newBody={staffID:req.staffID,book:formatData}
         const newBook = new ImportedBook(newBody);
       const result = await databaseProject.importedBook.insertOne(newBook);
         // const addedBook = {

@@ -22,12 +22,12 @@ export class Books {
       (this.type = book.type),
       (this.publisher = book.publisher||""),
       (this.amount = book.amount),
-           (this.img = book.img||""),
+           (this.images = [book.images]||[""]),
       (this.price = book.price),
       (this.description = book.description||""),
       (this.status = book.status||""),
       (this.discount = book.discount||""),
-      (this.dateIn = book.dateIn||"");
+      (this.dateIn = new Date()||"");
   }
 }
 export class Comment {
@@ -41,7 +41,7 @@ export class Comment {
 }
 export class ImportedBook {
   constructor(book) {
-    (this.userID = new ObjectId (book.userID)),
+    (this.staffID = new ObjectId (book.staffID)),
       (this.dateIn = new Date()),
       (this.book = book.book),
       (this.status="Waiting: Admin")
