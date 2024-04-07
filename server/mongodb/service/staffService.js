@@ -1,5 +1,7 @@
+
 import { Books } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js"
+import { contractMail } from "./mailService.js";
 import { registerService } from "./registerService.js"
 import { ObjectId } from "mongodb";
 
@@ -87,14 +89,17 @@ export const changeStatusImportedBook=async(req,res,next)=>{
 }
 export const importBook=async(req,res,next)=>{
     try {
-        const item=req.body;
-        console.log(caseID);
+        const item=req.body.book[0];
+        console.log(item);
+        // console.log(caseID);
           const addedBook = {
           name: item.name,
           amount: item.amount,
           author: item.author,
+          images:item.images,
           price: item.price,
-          type:item.type
+          type:item.type,
+          publisher:item.publisher
         };
         const checkBook=await databaseProject.book.findOne({name:item.name})
         if(checkBook){
@@ -107,4 +112,70 @@ export const importBook=async(req,res,next)=>{
     } catch (error) {
         return next(error)
     }
+}
+export const sendAutoMail=async(caseID)=>{
+    try{
+    
+      console.log(process.env.PASS_EMAIL);
+      const caseData=await databaseProject.hiredBook.aggregate([
+       {
+         '$match': {
+           '_id':  new ObjectId(`${caseID}`)
+         }
+       }, {
+         '$lookup': {
+           'from': 'users', 
+           'localField': 'userID', 
+           'foreignField': '_id', 
+           'as': 'user'
+         }
+       }, {
+         '$lookup': {
+           'from': 'books', 
+           'localField': 'bookID', 
+           'foreignField': '_id', 
+           'as': 'book'
+         }
+       }
+     ]).toArray()
+     console.log(caseData);
+      if(caseData.length>0){
+        
+       const userMail=caseData[0].user[0].email;
+      const bookName=caseData[0].book[0].name;
+       const sentMail={
+           from:"lightwing2208@gmail.com",
+           to:userMail,
+           subject:"DEADLINE RETURN BOOK",
+           html:`<div>You have return book :${bookName}  </div>`
+       }
+       contractMail.sendMail(sentMail,(error)=>{
+           if(error){
+              console.log(error);
+           }
+           else{
+              console.log("sent");
+           }
+       })
+      }
+      
+    }
+    catch(err){
+      console.log(err);
+    }
+     
+  }
+export const autoSendMail=async()=>{
+    const data =await databaseProject.hiredBook.find({status:"Accept"}).toArray()
+    const  caseData=data.map((item,index)=>{
+        if(new Date() > item.dateOut){
+            return item
+        }
+    })
+    console.log(caseData);
+    caseData?.forEach((item,index)=>{
+      console.log("item",item);
+        sendAutoMail(item._id)
+    })
+   
 }

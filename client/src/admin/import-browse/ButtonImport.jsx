@@ -13,8 +13,8 @@ const ButtonImport = ({record,method,value}) => {
           else if(localStorage.getItem("staff")=== "admin"){
             
             const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Approve"})
-            // const addBook=await http.post(`/staff/book`,record)
-            // console.log(addBook);
+            const addBook=await http.post(`/staff/book`,record)
+            console.log(addBook);
             console.log("result",result);
             setIsClicked(true)
           }

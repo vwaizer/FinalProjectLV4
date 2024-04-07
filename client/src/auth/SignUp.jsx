@@ -1,13 +1,12 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { FaLock, FaUser } from "react-icons/fa";
-import Layout from "../layout/Layout";
-import "./auth.css";
-import axios from "axios";
-import AuthContext from "../context/AuthProvide";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AuthContext from "../context/AuthProvide";
+import Layout from "../layout/Layout";
 import { http } from "../util/http";
+import "./auth.css";
 
 function SignUp() {
   const { setAuth } = useContext(AuthContext);
@@ -25,7 +24,7 @@ function SignUp() {
     e.preventDefault();
     setErrMessage("");
     try {
-      const resultSignUp = await axios.post("http://localhost:4000/register", {
+      const resultSignUp = await http.post("/register", {
         email: user,
         password: pwd,
         confirmPassword: checkConfirmPassword,
@@ -35,7 +34,7 @@ function SignUp() {
         toast.success("Register successfully,Please verify email!!!", {
           position: "top-right",
         });
-        await http.post("http://localhost:4000/verify",{email:user})
+        await http.post("/verify",{email:user})
         setTimeout(() => {
           navigate("/sign-in");
         }, 2000);

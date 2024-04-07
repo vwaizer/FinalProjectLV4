@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Layout from "../layout/Layout";
-import "./page.css";
+import { CloseOutlined } from "@ant-design/icons";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { Button, Card, Form, Input } from "antd";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { http } from "../util/http";
-import { Button, Card, Form, Input, Space, Typography, Upload } from "antd";
-import { CloseOutlined, UploadOutlined } from "@ant-design/icons";
 import CloudinaryUploadWidget from "./CloudinaryUploadWidget";
-import { Cloudinary } from "@cloudinary/url-gen";
+import "./page.css";
 const ImportBook = () => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
@@ -57,24 +56,31 @@ const ImportBook = () => {
   console.log(myImage);
   const submitBook = async (form, myImg, e) => {
     e.preventDefault();
-    if (!form.getFieldValue("name")) {
-      toast.error("Missing name");
+    if (form.getFieldValue("name")?.length>0) {
+      toast.error("Thiếu name");
     }
-    if (!form.getFieldValue("type")) {
-      toast.error("Missing type");
+    if (!form.getFieldValue("type")?.length>0) {
+      toast.error("Thiếu type");
     }
-    if (!form.getFieldValue("amount")) {
-      toast.error("Missing amount");
+    if (!form.getFieldValue("amount")?.length>0) {
+      toast.error("Thiếu amount");
     }
-    if (!form.getFieldValue("price")) {
-      toast.error("Missing price");
+    if (!form.getFieldValue("price")?.length>0) {
+      toast.error("Thiếu price");
     }
-
+    if (!form.getFieldValue("author")?.length>0) {
+      toast.error("Thiếu author");
+    }
+    if (!form.getFieldValue("publisher")?.length>0) {
+      toast.error("Thiếu publisher");
+    }
     const item = {
       name: form.getFieldValue("name"),
       type: form.getFieldValue("type"),
       amount: form.getFieldValue("amount"),
       price: form.getFieldValue("price") * 1000,
+      author:form.getFieldValue("author"),
+      publisher: form.getFieldValue("publisher"),
       images: [myImg.publicID] || [""],
     };
     console.log(item);
@@ -156,7 +162,7 @@ const ImportBook = () => {
                         >
                           <Input
                             onChange={(e) =>
-                              form.setFieldValue("name", e.target.value)
+                              form.setFieldValue("name", e.target.value.trim())
                             }
                           />
                         </Form.Item>
@@ -167,7 +173,29 @@ const ImportBook = () => {
                         >
                           <Input
                             onChange={(e) =>
-                              form.setFieldValue("type", e.target.value)
+                              form.setFieldValue("type", e.target.value.trim())
+                            }
+                          />
+                        </Form.Item>
+                        <Form.Item
+                          label="Author"
+                          name={[field.name, "author"]}
+                          required
+                        >
+                          <Input
+                            onChange={(e) =>
+                              form.setFieldValue("author", e.target.value.trim())
+                            }
+                          />
+                        </Form.Item>
+                        <Form.Item
+                          label="Publisher"
+                          name={[field.name, "publisher"]}
+                          required
+                        >
+                          <Input
+                            onChange={(e) =>
+                              form.setFieldValue("publisher", e.target.value.trim())
                             }
                           />
                         </Form.Item>
