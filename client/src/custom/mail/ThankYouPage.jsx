@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -16,7 +15,7 @@ const ThankYouPage = () => {
         </p>
         <div className="cta-container">
           <Link to="/" className="cta-button">
-          Go Back to Home
+            Go Back to Home
           </Link>
         </div>
         <div className="contact-info">
@@ -24,7 +23,7 @@ const ThankYouPage = () => {
             If you have any questions or need assistance, please don't hesitate
             to contact us:
           </p>
-          <p>Email: support@example.com</p>
+          <p>Email: group1mindx@gmail.com</p>
           <p>Phone: 0123456789</p>
         </div>
       </div>
