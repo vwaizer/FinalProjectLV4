@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./ThankYouPage.css";
+import { http } from "../../util/http";
 
 const ThankYouPage = () => {
+  const userID=useParams().id;
+  console.log(userID);
+  const verifyEmail=async()=>{
+    try {
+      const result=await http.get(`/verified/${userID}`)
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(()=>{
+    if(userID.length>0){
+      verifyEmail()
+    }
+  },[userID])
   return (
     <div className="thank-you-page">
       <div className="thank-you-content">
