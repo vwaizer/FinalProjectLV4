@@ -27,7 +27,7 @@ export const validateRegister = validator(
             });
 
             if (isExist) {
-              throw new Error("Username is already existed");
+              throw new Error("Email is already existed");
             }
             return true;
           },
