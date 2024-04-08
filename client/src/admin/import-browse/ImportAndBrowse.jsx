@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./import.css";
 import { http } from "../../util/http";
 import ButtonImport from "./ButtonImport";
+import ImportBook from "../../page/ImportBook";
 
 const ImportAndBrowse = () => {
   const [getImport, setGetImport] = useState([]);
@@ -21,10 +22,11 @@ const ImportAndBrowse = () => {
         console.log(err);
       });
     console.table(getImport);
-  }, [isClicked,getImport]);
+  }, [isClicked]);
   console.log(getImport);
   return (
     <Space size={20} direction="vertical">
+      {localStorage.getItem("staff")==="staff"?<><ImportBook/></>:<>
       <Typography.Title level={4}>Nhập Sách</Typography.Title>
       <Table
         columns={[
@@ -38,7 +40,7 @@ const ImportAndBrowse = () => {
           },
           {
             title: "Tên KH",
-            dataIndex: "userID",
+            dataIndex: "userEmail",
           },
           {
             title: "Tên sách",
@@ -67,6 +69,7 @@ const ImportAndBrowse = () => {
         ]}
         dataSource={getImport}
       ></Table>
+      </>}
     </Space>
   );
 };

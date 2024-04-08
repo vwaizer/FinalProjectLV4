@@ -15,6 +15,7 @@ import { lazy, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import Loading from "./custom/lazy/Loading.jsx";
 import ErrorPage from "./custom/lazy/ErrorPage.jsx";
+import ThankYouPage from "./custom/mail/ThankYouPage.jsx";
 const Products = lazy(() => import("./page/Products.jsx"));
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
             <Route path="/user" element={<UserPage />}></Route>
             <Route path="/staff" element={<Admin />}></Route>
             <Route path="/rent/:id" element={<RentForm />}></Route>
+            <Route path="/verify/:id" element={<ThankYouPage />}></Route>
           </Routes>
           <div className="goto_admin">
             <button type="button" onClick={goToAdmin}>
