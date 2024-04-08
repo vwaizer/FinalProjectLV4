@@ -49,3 +49,9 @@
 .confirm-button-pay:hover{
     background-color: #a81a1f;
   }
+.ant-input{
+    min-width: 500px;
+}
+/* .labelColCustomStyle{
+    width: 35%;
+}  */
