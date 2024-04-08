@@ -4,7 +4,8 @@ import databaseProject from "../GetDataBase.js"
 import { contractMail } from "./mailService.js";
 import { registerService } from "./registerService.js"
 import { ObjectId } from "mongodb";
-
+import fs from "fs";
+import path from "path";
 export const getHiredBook=async(req,res,next)=>{
     try {
         const result =await databaseProject.hiredBook.aggregate([
@@ -139,6 +140,7 @@ export const sendAutoMail=async(caseID)=>{
        }
      ]).toArray()
      console.log(caseData);
+     const template= fs.readFileSync(path.resolve('mailTemplate/remindTemplate.html'),"utf-8").replace("{{bookName}}",caseData[0].book[0].name).replace("{{image}}",caseData[0].book[0].images[0])
       if(caseData.length>0){
         
        const userMail=caseData[0].user[0].email;
@@ -147,7 +149,7 @@ export const sendAutoMail=async(caseID)=>{
            from:"lightwing2208@gmail.com",
            to:userMail,
            subject:"DEADLINE RETURN BOOK",
-           html:`<div>You have return book :${bookName}  </div>`
+           html:template
        }
        contractMail.sendMail(sentMail,(error)=>{
            if(error){
