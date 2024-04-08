@@ -17,6 +17,7 @@ const paragrapStyle = {
 };
 
 function Detail() {
+  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   const { ID } = useParams("ID");
   console.log(ID);
   const navigate = useNavigate();

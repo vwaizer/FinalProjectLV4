@@ -54,10 +54,11 @@
 }
 
 .search input {
-  width: 300px;
+  width: 90%;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 10px 20px;
+  padding: 10px;
 }
 
 .item li {
@@ -223,7 +224,7 @@
 
 .detail {
   display: grid;
-  grid-template-columns: minmax(300px, 38%) 1fr;
+  grid-template-columns: auto auto;
 }
 
 .detail h1 {
@@ -236,7 +237,7 @@
   align-items: flex-end;
   width: 60%;
   height: fit-content;
-  margin-left: 20px;
+  margin: 0 auto;
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -256,7 +257,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 80%;
   flex-direction: column;
 }
 

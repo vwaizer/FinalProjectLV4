@@ -20,6 +20,7 @@ import { http } from "../util/http.js";
 import "./page.css";
 
 function Products() {
+  window.scrollTo(0, 'smooth');
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
   const [getAuthor, setGetAuthor] = useState([]);
@@ -92,7 +93,7 @@ function Products() {
       val[key].toString().toLowerCase().includes(value.toString().toLowerCase())
     );
   });
-  console.log(searchData);
+
   return (
     <Layout>
       <ToastContainer
@@ -135,22 +136,22 @@ function Products() {
           </div>
         </div>
         <div className="rightbox">
-        {searchData.map((item, index) => {
-                if (item !== null) {
-                  return (
-                    <div className="product_info" key={index}>
-                      <Link to={`/product-detail/${item._id}`}>
-                        <SetProduct
-                          image={item.images}
-                          name={item.name}
-                          author={item.author}
-                          price={item.price}
-                        />
-                      </Link>
-                    </div>
-                  );
-                }
-              })}
+          {searchData.map((item, index) => {
+            if (item !== null) {
+              return (
+                <div className="product_info" key={index}>
+                  <Link to={`/product-detail/${item._id}`}>
+                    <SetProduct
+                      image={item.images}
+                      name={item.name}
+                      author={item.author}
+                      price={item.price}
+                    />
+                  </Link>
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
       <div className="paginate">
