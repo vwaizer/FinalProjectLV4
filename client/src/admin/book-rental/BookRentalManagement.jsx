@@ -20,7 +20,7 @@ const [isClicked,setIsClicked]=useState(false);
         console.log(err);
       });
     console.log(getHireBook);
-  }, [isClicked,getHireBook]);
+  }, [isClicked]);
   
   const onClickFunc=async(id)=>{
     try {

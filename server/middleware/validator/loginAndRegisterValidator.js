@@ -99,18 +99,18 @@ export const loginValidator = validator(
             });
 
             if (isUserExist) {
-              // if(isUserExist.verifyToken == "verified"){
-              //   return true;
-              // } 
-              // else{
-              //   throw new Error("Email is not verified")
-              // }
-              return true;
+              if(isUserExist.verifyToken == "verified"){
+                return true;
+              } 
+              else{
+                throw new Error("Email is not verified")
+              }
               
+
             } else {
-             
+
               throw new Error("Email is not registered");
-              
+
             }
           },
         },
@@ -122,21 +122,21 @@ export const loginValidator = validator(
           errorMessage: "Password should be at least 8 chars",
         },
         custom: {
-          
+
           options: async (value, { req }) => {
-            let checked=false;
+            let checked = false;
             const userLogin = await databaseProject.users.findOne({
               email: req.body.email,
             });
-            
-            checked=bcrypt.compareSync(value, userLogin.password)
+
+            checked = bcrypt.compareSync(value, userLogin.password)
             console.log(checked);
-            if(checked == true){
+            if (checked == true) {
               return true
             }
-             else{throw new Error(" PASSWORD DOES NOT MATCH")}
-           
-           
+            else { throw new Error(" PASSWORD DOES NOT MATCH") }
+
+
           },
         },
       },

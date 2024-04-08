@@ -38,7 +38,7 @@ export const updateUser=async (req,res,next)=>{
   try {
     const userID=req.userID;
     
-  const result=await databaseProject.users.updateOne({_id:new ObjectId(`${userID}`)},req.body)
+  const result=await databaseProject.users.updateOne({_id:new ObjectId(`${userID}`)},{$set:req.body})
   return res.json(result)
   } catch (error) {
     next(error)
