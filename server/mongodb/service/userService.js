@@ -71,7 +71,7 @@ export const getAllUser=async (req,res,next)=>{
 export const getAddress=async(req,res,next)=>{
   try {
     const result=await databaseProject.users.findOne({_id:req.userID})
-    return res.json(result)
+    return res.json(result.address)
   } catch (error) {
     return next(error) 
   }
