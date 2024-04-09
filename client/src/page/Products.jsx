@@ -127,14 +127,14 @@ function Products() {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Tên sách, tác giả, thể loại"
+                placeholder="Tên tác giả"
               />
             </div>
           </div>
         </div>
         <div className="rightbox">
           {loading ? (
-            <h4>Loading...</h4>
+            <h4>Waiting...</h4>
           ) : (
             getBook
               .filter((value) => {

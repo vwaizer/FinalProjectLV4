@@ -108,10 +108,11 @@
 
 .paginate {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 
-  margin-right: 75px;
+  position: relative;
+  left: 250px;
 }
 
 .logo_middle {

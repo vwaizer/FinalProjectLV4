@@ -4,27 +4,38 @@ import { http } from "../../util/http";
 
 const ChartBar = () => {
   const [getData, setGetData] = useState([]);
+  const [typeBook, setTypeBook] = useState([]);
+  const [amount, setAmount] = useState([]);
 
   useEffect(() => {
+    const isTypeBook = [];
+    const isAmount = [];
     http
-      .get("/staff/user")
+      .get("/staff/chart")
       .then((getData) => setGetData(getData.data))
       .catch((err) => {
         console.log(err);
       });
+    for (let i = 0; i < getData.length; i++) {
+      isTypeBook.push(getData[i].type);
+      isAmount.push(parseInt(getData[i].amount));
+    }
+    setTypeBook(isTypeBook);
+    setAmount(isAmount);
   }, []);
 
   console.table(getData);
   return (
     <>
-      <h3>Thống kê các thể loại sách</h3>  
+      <h3>Thống kê các thể loại sách</h3>
       <Chart
         type="pie"
         width={1280}
         height={550}
-        series={[81, 36, 73, 17, 29, 53]}
+        series={amount}
         options={{
-          labels: ['Văn Học', 'Tâm lý - Kỹ năng sống','Kinh tế', 'Nuôi dạy con','Tiểu Sử - Hồi ký', 'Sách học Ngoại ngữ']
+          noData: { text: "Empty Data" },
+          labels: typeBook,
         }}
       ></Chart>
     </>
