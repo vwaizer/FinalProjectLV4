@@ -74,7 +74,7 @@ function Payment() {
       .get("/user/address")
       .then((getAddress) => {
         setAddress(getAddress.data);
-        console.log("địa chỉ", getAddress.data);
+        console.log("địa chỉ", getAddress.data  );
       })
       .catch((err) => console.log(err));
   }, []);
@@ -290,7 +290,7 @@ function Payment() {
 
         <div className="box-container">
           <div className="space-item">
-            <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>;
+            <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>
             <div>
               {listCheck.map((item, index) => {
                 const { name, price, amount, img } = item;

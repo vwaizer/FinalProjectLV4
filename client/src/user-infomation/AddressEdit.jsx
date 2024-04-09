@@ -122,23 +122,23 @@ const AddressEdit = () => {
 
       // thông tin địa chỉ
       console.log("result", addressSelected);
-      console.log('user',inputInforUser)
-      
-        http
-          .put("/user/changeAddress", {
-            address: {
-              address: addressSelected.address,
-              district: addressSelected.district,
-              city: addressSelected.city,
-              phone: inputInforUser.phone,
-              fullName: inputInforUser.fullName,
-            },
-          })
-          .catch((error) => console.log(error));
+      console.log("user", inputInforUser);
 
-        toast.success("Thêm địa chỉ thành công");
-        // setTimeout(() => (window.location.href = "/"), 2000);
-     
+      http
+        .put("/user/changeAddress", {
+          address: {
+            address: addressSelected.address,
+            district: addressSelected.district,
+            city: addressSelected.city,
+            phone: inputInforUser.phone,
+            fullName: inputInforUser.fullName,
+          },
+        })
+        .catch((error) => console.log(error));
+
+      toast.success("Thêm địa chỉ thành công");
+      // setTimeout(() => (window.location.href = "/"), 2000);
+
       // thông tin sdt và họ tên của user
       console.log(inputInforUser);
     } catch (error) {
@@ -147,11 +147,12 @@ const AddressEdit = () => {
     }
   };
   return (
-    <div style={{ width: "100%", border: "1px solid red" }}>
-      <div style={{ padding: "30px 15px", backgroundColor: "#fff" }}>
-        <h1 style={{ fontSize: "15px", fontWeight: "bolder" }}>
+    <div style={{ width: "100%", border: "1px solid red",backgroundColor:'#fff' }}>
+      <div className="page-title" >
+        <h1>
           THÊM ĐỊA CHỈ MỚI
         </h1>
+        <div className="line"></div>
         <div
           style={{
             display: "flex",
@@ -300,7 +301,7 @@ const AddressEdit = () => {
           </div>
         </div>
         <div
-          style={{ borderBottom: "1px solid #ced4da", margin: "0px 10px" }}
+          className="line"
         ></div>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <button onClick={onClick} className="save-address-info">
