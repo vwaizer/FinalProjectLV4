@@ -52,6 +52,7 @@ const CustomizedForm = ({ onChange, fields }) => (
 );
 function Payment() {
   const [getProduct, setGetProduct] = useState([]);
+  const [getAddress, setAddress] = useState([])
   const [getUser, setUser] = useState([]);
   const [fields, setFields] = useState([
     {
@@ -68,7 +69,15 @@ function Payment() {
       })
       .catch((err) => console.log(err));
   }, []);
-
+  useEffect(() => {
+    http
+      .get("/user/address")
+      .then((getAddress) => {
+        setAddress(getAddress.data);
+        console.log("địa chỉ", getAddress.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   useEffect(() => {
     http
       .get("/user/detailUser")

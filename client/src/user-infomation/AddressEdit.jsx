@@ -1,7 +1,8 @@
 import { Form } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import { http } from "../util/http";
+import { ToastContainer, toast } from "react-toastify";
 const AddressEdit = () => {
   const [cities, setCities] = useState([]);
   const [selectedCity, setSelectedCity] = useState("");
@@ -98,7 +99,7 @@ const AddressEdit = () => {
     phone: "",
   };
   const [inputInforUser, setInputValue] = useState(inputUser);
-  const [fillAddress, setFillAddress] = useState("");
+  const [fillAddress, setFillAddress] = useState(" ");
   const handleChange = (key, event) => {
     const value = event.target.value;
     setInputValue({ ...inputInforUser, [key]: value });
@@ -121,7 +122,23 @@ const AddressEdit = () => {
 
       // thông tin địa chỉ
       console.log("result", addressSelected);
+      console.log('user',inputInforUser)
+      
+        http
+          .put("/user/changeAddress", {
+            address: {
+              address: addressSelected.address,
+              district: addressSelected.district,
+              city: addressSelected.city,
+              phone: inputInforUser.phone,
+              fullName: inputInforUser.fullName,
+            },
+          })
+          .catch((error) => console.log(error));
 
+        toast.success("Thêm địa chỉ thành công");
+        setTimeout(() => (window.location.href = "/"), 2000);
+     
       // thông tin sdt và họ tên của user
       console.log(inputInforUser);
     } catch (error) {

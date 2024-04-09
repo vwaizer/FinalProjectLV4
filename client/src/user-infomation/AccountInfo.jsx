@@ -22,10 +22,11 @@ const AccountInfo = ({ getUser }) => {
       try {
         await form.validateFields(); // Kiểm tra tính hợp lệ của biểu mẫu
   
-        // Nếu biểu mẫu hợp lệ, tiếp tục thực thi các lệnh trong đây
+        
         const result = onFinishRef.current;
         const formattedBirthday = moment(result.birthday).format("YYYY-MM-DD");
         const changedInfo = { ...result, birthday: formattedBirthday };
+        // cập nhật thông tin user 
         console.log(changedInfo);
         http
           .put("/user/changeInfo", { result: changedInfo })
