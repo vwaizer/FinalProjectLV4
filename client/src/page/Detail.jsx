@@ -26,9 +26,9 @@ function Detail() {
   const [seeMore, setSeeMore] = useState(false);
   useEffect(() => {
     if (ID !== "undefined") {
-      console.log(`http://localhost:4000/book/detailBook/${ID}`);
+      console.log(`/book/detailBook/${ID}`);
       http
-        .get(`http://localhost:4000/book/detailBook/${ID}`)
+        .get(`/book/detailBook/${ID}`)
         .then((product) => setProduct(Array(product.data)))
         .catch((err) => console.log(err));
     }
