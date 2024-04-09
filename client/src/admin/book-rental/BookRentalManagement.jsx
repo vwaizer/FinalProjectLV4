@@ -82,7 +82,7 @@ const [isClicked,setIsClicked]=useState(false);
                       height: "50px",
                     }}
                     type="button"
-                    disabled={button.status == "Accept"?true:false}
+                    disabled={button.status === "Accept"?true:false}
                     onClick={()=>onClickFunc(button._id)}
                   >
                     Check

@@ -1,5 +1,3 @@
-import Backdrop from "@mui/material/Backdrop";
-import CircularProgress from "@mui/material/CircularProgress";
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
@@ -20,22 +18,24 @@ import { http } from "../util/http.js";
 import "./page.css";
 
 function Products() {
-  window.scrollTo(0, 'smooth');
+  window.scrollTo(0, "smooth");
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
-  const [getAuthor, setGetAuthor] = useState([]);
-  const [getPublisher, setGetPublisher] = useState([]);
-  const [value, setValue] = useState([]);
-  const [valuePublisher, setValuePublisher] = useState([]);
+  // const [getAuthor, setGetAuthor] = useState([]);
+  // const [getPublisher, setGetPublisher] = useState([]);
+  const [search, setSearch] = useState([]);
+  // const [valuePublisher, setValuePublisher] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(32);
+  // const [postPerPage, setPostPerPage] = useState(32);
   const [loading, setLoading] = useState(false);
   const [filterUrl, setFIlterUrl] = useState("");
   useEffect(() => {
+    setLoading(true);
     http
       .get(`/book/?page=${currentPage}&${filterUrl}`)
       .then((getBook) => {
         setGetBook(getBook.data);
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
@@ -85,14 +85,11 @@ function Products() {
     window.scrollTo(0, "smooth");
   };
 
-  const filterChange = (e) => {
-    setValue(e.target.value);
-  };
-  let searchData = getBook.filter((val) => {
-    return Object.keys(val).some((key) =>
-      val[key].toString().toLowerCase().includes(value.toString().toLowerCase())
-    );
-  });
+  // // let searchData = getBook.filter((val) => {
+  //   return Object.keys(val).some((key) =>
+  //     val[key].toString().toLowerCase().includes(value.toString().toLowerCase())
+  //   );
+  // });
 
   return (
     <Layout>
@@ -128,15 +125,46 @@ function Products() {
               <h2>Tìm Kiếm</h2>
               <input
                 type="text"
-                value={value}
-                onChange={filterChange}
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
                 placeholder="Tên sách, tác giả, thể loại"
               />
             </div>
           </div>
         </div>
         <div className="rightbox">
-          {searchData.map((item, index) => {
+          {loading ? (
+            <h4>Loading...</h4>
+          ) : (
+            getBook
+              .filter((value) => {
+                if (search === "") {
+                  return value;
+                } else if (
+                  value.type.toLowerCase().includes(search)
+                ) {
+                  return value;
+                }
+                console.log(value)
+              })
+              .map((item, index) => {
+                if (item !== null) {
+                  return (
+                    <div className="product_info" key={index}>
+                      <Link to={`/product-detail/${item._id}`}>
+                        <SetProduct
+                          image={item.images}
+                          name={item.name}
+                          author={item.author}
+                          price={item.price}
+                        />
+                      </Link>
+                    </div>
+                  );
+                }
+              })
+          )}
+          {/* {searchData.map((item, index) => {
             if (item !== null) {
               return (
                 <div className="product_info" key={index}>
@@ -151,7 +179,7 @@ function Products() {
                 </div>
               );
             }
-          })}
+          })} */}
         </div>
       </div>
       <div className="paginate">

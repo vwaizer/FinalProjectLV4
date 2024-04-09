@@ -17,7 +17,7 @@ const Statify = () => {
 
   return (
     <>
-      <Typography.Text>Thống Kê</Typography.Text>
+      <Typography.Text>Tổng hợp</Typography.Text>
       <Table
         columns={[
           {

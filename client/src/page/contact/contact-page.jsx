@@ -1,11 +1,6 @@
 import React from "react";
 import "./contact-page.css";
 
-import Button from "../../common/button/button";
-import ContactProps from "./ContactProps";
-import RightContact from "./RightContact";
-import FAQ from "./FAQ";
-import Layout from "../../layout/Layout";
 import { FaFacebookF, FaTiktok, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {
@@ -16,7 +11,11 @@ import {
   picture5,
   picture6,
 } from "../../assets/imageProduct.js";
+import Button from "../../common/button/button";
 import Logo from "../../custom/productcpn/Logo";
+import Layout from "../../layout/Layout";
+import ContactProps from "./ContactProps";
+import RightContact from "./RightContact";
 
 const Contactpage = () => {
   return (

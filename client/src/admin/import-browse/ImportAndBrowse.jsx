@@ -39,10 +39,6 @@ const ImportAndBrowse = () => {
             dataIndex: "_id",
           },
           {
-            title: "Tên KH",
-            dataIndex: "userEmail",
-          },
-          {
             title: "Tên sách",
             dataIndex: "bookName",
           },

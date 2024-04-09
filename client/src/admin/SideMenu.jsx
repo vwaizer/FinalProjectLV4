@@ -6,8 +6,15 @@ import { CiImport, CiMoneyBill } from "react-icons/ci";
 import { FaUserGroup } from "react-icons/fa6";
 import { FcStatistics } from "react-icons/fc";
 import { PiBooksBold } from "react-icons/pi";
+import "./admin.css"
 const SideMenu = () => {
+
     const navigate = useNavigate();
+
+    const handleLogOut = () => {
+      localStorage.removeItem("staff")
+      window.location.href = "/staff"
+    }
   return (
     <div className="side_menu">
       <Menu
@@ -47,6 +54,11 @@ const SideMenu = () => {
           },
         ]}
       ></Menu>
+      <div className="button">
+        <button onClick={handleLogOut} type="button" className="log-out">
+          Log Out
+        </button>
+      </div>
     </div>
   );
 };

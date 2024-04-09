@@ -20,11 +20,6 @@ const LayoutAdmin = () => {
         <SideMenu></SideMenu>
         <PageContent></PageContent>
       </Space>
-      <div className="button">
-        <button onClick={handleLogOut} type="button" className="btn">
-          Log Out
-        </button>
-      </div>
     </div>
   );
 };

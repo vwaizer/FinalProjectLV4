@@ -1,70 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Chart from "react-apexcharts";
+import { http } from "../../util/http";
 
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
-import { Card } from "antd";
+const ChartBar = () => {
+  const [getData, setGetData] = useState([]);
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+  useEffect(() => {
+    http
+      .get("/staff/user")
+      .then((getData) => setGetData(getData.data))
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-const Chart = () => {
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "bottom",
-      },
-      title: {
-        display: true,
-        text: "Thống Kê",
-      },
-    },
-  };
-
-  const labels = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-  ];
-
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: "Dataset 1",
-        data: labels.map(() => Math.random() * 1000),
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-      },
-      {
-        label: "Dataset 2",
-        data: labels.map(() => Math.random() * 1000),
-        backgroundColor: "rgba(53, 162, 235, 0.5)",
-      },
-    ],
-  };
+  console.table(getData);
   return (
-    <Card style={{ width: 500, height: 250 }}>
-      <Bar options={options} data={data} />
-    </Card>
+    <>
+      <h3>Thống kê các thể loại sách</h3>  
+      <Chart
+        type="pie"
+        width={1280}
+        height={550}
+        series={[81, 36, 73, 17, 29, 53]}
+        options={{
+          labels: ['Văn Học', 'Tâm lý - Kỹ năng sống','Kinh tế', 'Nuôi dạy con','Tiểu Sử - Hồi ký', 'Sách học Ngoại ngữ']
+        }}
+      ></Chart>
+    </>
   );
 };
 
-export default Chart;
+export default ChartBar;
