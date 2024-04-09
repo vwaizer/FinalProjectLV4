@@ -28,27 +28,27 @@ const siteMap = [
 const bookTypes = [
   {
     title: "Văn Học",
-    href: "/product/#literature",
+    href: "/nha-sach",
   },
   {
     title: "Tâm Lý - Kỹ Năng Sống",
-    href: "/product/#psb",
+    href: "/nha-sach",
   },
   {
     title: "Kinh tế",
-    href: "/product/#economic",
+    href: "/nha-sach",
   },
   {
     title: "Nuôi Dạy Con ",
-    href: "/product/#Children",
+    href: "/nha-sach",
   },
   {
     title: "Tiểu Sử - Hồi Ký",
-    href: "/product/#history",
+    href: "/nha-sach",
   },
   {
     title: "Sách Học Ngoại Ngữ",
-    href: "/product/#Learning",
+    href: "/nha-sach",
   },
 ];
 

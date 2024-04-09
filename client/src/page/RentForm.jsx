@@ -1,12 +1,10 @@
-import { Badge, Button, Modal } from "antd";
+import { Badge, Modal, Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import styled from "styled-components";
-import Layout from "../layout/Layout";
-import { toast, ToastContainer } from "react-toastify";
-import { Typography } from 'antd';
 import { http } from "../util/http";
-import './page.css'
+import './page.css';
 const DetailContainer = styled.div`
   display:flex;
   flex-direction:column;

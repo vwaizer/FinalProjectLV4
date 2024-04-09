@@ -1,70 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Chart from "react-apexcharts";
+import { http } from "../../util/http";
 
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
-import { Card } from "antd";
+const ChartBar = () => {
+  const [getData, setGetData] = useState([]);
+  const [typeBook, setTypeBook] = useState([]);
+  const [amount, setAmount] = useState([]);
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+  useEffect(() => {
+    const isTypeBook = [];
+    const isAmount = [];
+    http
+      .get("/staff/chart")
+      .then((getData) => setGetData(getData.data))
+      .catch((err) => {
+        console.log(err);
+      });
+    for (let i = 0; i < getData.length; i++) {
+      isTypeBook.push(getData[i].type);
+      isAmount.push(parseInt(getData[i].amount));
+    }
+    setTypeBook(isTypeBook);
+    setAmount(isAmount);
+  }, [getData.length]);
 
-const Chart = () => {
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "bottom",
-      },
-      title: {
-        display: true,
-        text: "Thống Kê",
-      },
-    },
-  };
-
-  const labels = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-  ];
-
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: "Dataset 1",
-        data: labels.map(() => Math.random() * 1000),
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-      },
-      {
-        label: "Dataset 2",
-        data: labels.map(() => Math.random() * 1000),
-        backgroundColor: "rgba(53, 162, 235, 0.5)",
-      },
-    ],
-  };
   return (
-    <Card style={{ width: 500, height: 250 }}>
-      <Bar options={options} data={data} />
-    </Card>
+    <>
+      <h3>Thống kê các thể loại sách</h3>
+      <Chart
+        type="pie"
+        width={1280}
+        height={550}
+        series={amount}
+        options={{
+          noData: { text: "Empty Data" },
+          labels: typeBook,
+        }}
+      ></Chart>
+    </>
   );
 };
 
-export default Chart;
+export default ChartBar;

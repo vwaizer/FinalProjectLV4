@@ -1,16 +1,6 @@
 import React from "react";
 import "./style.product.css";
-const SetProduct = ({
-  _id,
-  name,
-  type,
-  author,
-  publisher,
-  image,
-  field,
-  amount,
-  price,
-}) => {
+const SetProduct = ({ name, image, value, price, author }) => {
   return (
     <div className="setproduct">
       <div className="setproduct_custom">
@@ -18,9 +8,9 @@ const SetProduct = ({
           <img src={image} alt="imgbook" />
         </div>
         <div className="product_title">
-          <h3>{name}</h3>
-          <p>Tác giả: {author}</p>
-          <h4>Giá: {price}đ</h4>
+          <h2>{name}</h2>
+          <p>Tác Giả: {author}</p>
+          <h6>Giá: {price}đ</h6>
         </div>
       </div>
     </div>

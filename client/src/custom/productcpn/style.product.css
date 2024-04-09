@@ -48,18 +48,19 @@
     font-weight: 500;
     letter-spacing: 1px;
     height: max-content;
-    h3{
-        text-align: center;
+    h2{
+        text-align: left;
         font-size: 18px;
         margin-top: 20px;
         margin-bottom: 10px;
     }
-    h4{
-        text-align: center;
+    h6{
+        text-align: left;
+        color: brown;
     }
     p{
         font-size: 14px;
-        text-align: center;
+        text-align: left;
         margin-bottom: 10px;
     }
 }

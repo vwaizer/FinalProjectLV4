@@ -3,12 +3,11 @@ import React, { useEffect, useState } from "react";
 import { CiMoneyBill } from "react-icons/ci";
 import { FaUserGroup } from "react-icons/fa6";
 import { PiBooksBold } from "react-icons/pi";
-import Chart from "./Chart";
+import { http } from "../../util/http";
+import ChartBar from "./Chart";
 import OverviewCustom from "./OverviewCustom";
 import Statify from "./Statify";
 import "./overview.css";
-import { http } from "../../util/http";
-import LayoutAdmin from "../layout-admin/LayoutAdmin";
 
 const Overview = () => {
   const [bill, setBill] = useState([]);
@@ -63,7 +62,6 @@ const Overview = () => {
             }
             title="Hóa Đơn"
             value={bill.receiptNumber}
-              
           />
           <OverviewCustom
             icon={
@@ -96,15 +94,13 @@ const Overview = () => {
             value={book.bookNumber}
           />
         </Space>
-        <Space size={40}>
-          <Statify/>
-          <Chart />
+        <Space size={10}>
+          <Statify />
         </Space>
+          <ChartBar/>
       </Space>
-   </>
+    </>
   );
 };
-
-
 
 export default Overview;
