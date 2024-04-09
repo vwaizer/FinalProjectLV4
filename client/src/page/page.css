@@ -231,7 +231,7 @@
 
 .detail {
   display: grid;
-  grid-template-columns: minmax(250px, 50%) 1fr;
+  grid-template-columns: minmax(250px, 40%) 1fr;
   
 }
 

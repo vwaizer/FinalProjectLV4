@@ -29,7 +29,7 @@
     color: rgb(11, 188, 11);
     transition: 0.25s;
   
-    margin-top: 20px;
+    margin: 20px auto;
   }
   
   .log-out:hover {
