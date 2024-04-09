@@ -165,13 +165,17 @@
 /* this is import page */
 
 .import_book {
-  max-width: 500px;
+  
+  width: 1000px;
+ 
   margin: 0 auto;
 }
 
 .import_book form {
-  max-width: 400px;
+  width: 100%;
   margin: 0 auto;
+ 
+  
 }
 
 .import_book h1 {
@@ -189,6 +193,7 @@
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
+  background-color: aliceblue;
 }
 
 .button_import {
