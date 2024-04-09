@@ -229,7 +229,8 @@
 
 .detail {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: minmax(250px, 50%) 1fr;
+  
 }
 
 .detail h1 {

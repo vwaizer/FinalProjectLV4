@@ -141,7 +141,7 @@ function Products() {
                 if (search === "") {
                   return value;
                 } else if (
-                  value.type.toLowerCase().includes(search)
+                  value.author.toLowerCase().includes(search)
                 ) {
                   return value;
                 }
@@ -164,22 +164,6 @@ function Products() {
                 }
               })
           )}
-          {/* {searchData.map((item, index) => {
-            if (item !== null) {
-              return (
-                <div className="product_info" key={index}>
-                  <Link to={`/product-detail/${item._id}`}>
-                    <SetProduct
-                      image={item.images}
-                      name={item.name}
-                      author={item.author}
-                      price={item.price}
-                    />
-                  </Link>
-                </div>
-              );
-            }
-          })} */}
         </div>
       </div>
       <div className="paginate">
