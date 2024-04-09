@@ -137,7 +137,7 @@ const AddressEdit = () => {
           .catch((error) => console.log(error));
 
         toast.success("Thêm địa chỉ thành công");
-        setTimeout(() => (window.location.href = "/"), 2000);
+        // setTimeout(() => (window.location.href = "/"), 2000);
      
       // thông tin sdt và họ tên của user
       console.log(inputInforUser);
