@@ -14,7 +14,7 @@ staffRoute.get("/user",getAllUser)
 staffRoute.get("/receipt",getAllReceipt);
 staffRoute.get("/hireBook",getHiredBook);
 staffRoute.put("/hiredBook/:ID",changeStatusHiredBook)
-staffRoute.get("/accounting",accounting);
+staffRoute.get("/chart",accounting);
 staffRoute.post("/mail/:ID",staffValidator,sendMail);
 staffRoute.post("/createStaff",createStaff)
 staffRoute.get("/overall",getOverall)
