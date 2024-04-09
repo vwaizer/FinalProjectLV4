@@ -22,9 +22,8 @@ const ChartBar = () => {
     }
     setTypeBook(isTypeBook);
     setAmount(isAmount);
-  }, []);
+  }, [getData.length]);
 
-  console.table(getData);
   return (
     <>
       <h3>Thống kê các thể loại sách</h3>
