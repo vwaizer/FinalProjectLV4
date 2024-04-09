@@ -27,7 +27,7 @@ app.use("/staff",staffRoute)
 app.use("/",loginRoute)
 app.use("/receipt",receiptRoute)
 app.use(errorHandle)
-setTimeout(()=>autoSendMail(),2000)
+// setTimeout(()=>autoSendMail(),2000)
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

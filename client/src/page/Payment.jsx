@@ -1,38 +1,65 @@
 import React, { useEffect } from "react";
 import Layout from "../layout/Layout";
 import "./payment.css";
-import { Input, Radio, ConfigProvider, Checkbox } from "antd";
+import { Input, Radio, ConfigProvider, Checkbox, Form } from "antd";
 import { useState } from "react";
 import { http } from "../util/http";
 import { ToastContainer, toast } from "react-toastify";
-const Form = ({ title, value, onInputChange }) => {
-  return (
-    <>
-      <div className="form-container" key={title}>
-        <div style={{ flexBasis: "35%" }}>{title} </div>
-        <Input
-          placeholder={`Nhập ${title} `}
-          value={value}
-          onChange={onInputChange}
-        />
-      </div>
-    </>
-  );
+
+const formItemLayout = {
+  labelCol: {
+    xs: {
+      span: 24,
+    },
+    sm: {
+      span: 8,
+    },
+  },
+  wrapperCol: {
+    xs: {
+      span: 24,
+    },
+    sm: {
+      span: 16,
+    },
+  },
 };
 
+const CustomizedForm = ({ onChange, fields }) => (
+  <Form
+    style={{ marginLeft: "33px" }}
+    {...formItemLayout}
+    name="global_state"
+    layout="inline"
+    fields={fields}
+    onFieldsChange={(_, allFields) => {
+      onChange(allFields);
+    }}
+  >
+    <Form.Item
+      name="email"
+      label="Email"
+      rules={[
+        {
+          required: true,
+          message: "Thông tin này không được để trống!",
+        },
+      ]}
+    >
+      <Input placeholder="Nhập email" />
+    </Form.Item>
+  </Form>
+);
 function Payment() {
-  const initialForm = {
-    userName: "",
-    email: "",
-    phoneNumber: "",
-    city: "",
-    district: "",
-    ward: "",
-    address: "",
-  };
-  // console.log("init", initialForm);
   const [getProduct, setGetProduct] = useState([]);
-  const [fillForm, setFillForm] = useState(initialForm);
+  const [getAddress, setAddress] = useState([])
+  const [getUser, setUser] = useState([]);
+  const [fields, setFields] = useState([
+    {
+      name: ["email"],
+      value: "",
+    },
+  ]);
   useEffect(() => {
     http
       .get("/receipt/")
@@ -42,65 +69,65 @@ function Payment() {
       })
       .catch((err) => console.log(err));
   }, []);
-  const boxFillInfo = [
-    "Họ và tên người nhận",
-    "Email",
-    "Số điện thoại",
-    "Tỉnh/Thành phố",
-    "Quận/Huyện",
-    "Phường/Xã",
-    "Địa chỉ nhận hàng",
-  ];
+  useEffect(() => {
+    http
+      .get("/user/address")
+      .then((getAddress) => {
+        setAddress(getAddress.data);
+        console.log("địa chỉ", getAddress.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  useEffect(() => {
+    http
+      .get("/user/detailUser")
+      .then((getUser) => {
+        setUser(getUser.data);
+        setFields([{ name: ["email"], value: getUser.data.email }]);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  console.log("get user", getUser);
+
   const [showNoteInput, setShowNoteInput] = useState(false);
 
   const listCheck = JSON.parse(localStorage.getItem("BoughtList"));
-
+  const [form] = Form.useForm();
   const calculateTotalPrice = () => {
     let totalPrice = 0;
-  
+
     for (const item of listCheck) {
       const { price, amount } = item;
       totalPrice += price * amount;
     }
-  
-    return parseFloat(totalPrice + 19.00);
+
+    return parseFloat(totalPrice + 19.0);
   };
 
   const onChange = (e) => {
     setShowNoteInput(e.target.checked);
   };
-  const handleChange = (key, event) => {
-    const value = event.target.value;
-    setFillForm({ ...fillForm, [key]: value });
+  const validateAndSubmitForm = async () => {
+    try {
+      await form.validateFields(); 
+      onFinish(form.getFieldsValue());
+    } catch (error) {
+      console.log(error)
+    }
   };
 
-  const addClick = () => {
-    if (
-      !fillForm.userName ||
-      !fillForm.email ||
-      !fillForm.phoneNumber ||
-      !fillForm.city ||
-      !fillForm.district ||
-      !fillForm.ward ||
-      !fillForm.address
-    ) {
-      alert("Vui long dien day du thong tin ");
-    }else if(isNaN(fillForm.phoneNumber) || fillForm.phoneNumber.length < 10){
-      alert("Số điện thoại không hợp lệ");
-    }
-    else{
-      let newCart;
-      newCart = listCheck.map((product) => {
-        const { amount, discount, bookID } = product;
-        return { amount: amount, discount: discount, bookID: bookID };
-      });
-      http
-        .post("/receipt/setHistory", { cart: newCart })
-        .catch((error) => console.log(error));
-      localStorage.removeItem('BoughtList')
-      toast.success("Mua hàng thành công")
-      setTimeout(()=>window.location.href="/",2000)
-    }
+  const onFinish = (values) => {
+    let newCart;
+    newCart = listCheck.map((product) => {
+      const { amount, discount, bookID } = product;
+      return { amount: amount, discount: discount, bookID: bookID };
+    });
+    http
+      .post("/receipt/setHistory", { cart: newCart })
+      .catch((error) => console.log(error));
+
+    toast.success("Mua hàng thành công");
+    setTimeout(() => (window.location.href = "/"), 2000);
   };
 
   return (
@@ -121,41 +148,97 @@ function Payment() {
         <div className="box-container">
           <div style={{ padding: "10px 20px" }}>
             <div className="check-out-title"> ĐỊA CHỈ GIAO HÀNG </div>
-            <Form
-              title="Họ và tên người nhận"
-              value={fillForm.userName}
-              onInputChange={(e) => handleChange("userName", e)}
-            />
-            <Form
-              title="Email"
-              value={fillForm.email}
-              onInputChange={(e) => handleChange("email", e)}
-            />
-            <Form
-              title="Số điện thoại"
-              value={fillForm.phoneNumber}
-              onInputChange={(e) => handleChange("phoneNumber", e)}
-            />
-            <Form
-              title="Thành phố"
-              value={fillForm.city}
-              onInputChange={(e) => handleChange("city", e)}
-            />
-            <Form
-              title="Quận/huyện"
-              value={fillForm.district}
-              onInputChange={(e) => handleChange("district", e)}
-            />
-            <Form
-              title="Phường/xã"
-              value={fillForm.ward}
-              onInputChange={(e) => handleChange("ward", e)}
-            />
-            <Form
-              title="Địa chỉ"
-              value={fillForm.address}
-              onInputChange={(e) => handleChange("address", e)}
-            />
+            <div className="form-container">
+              <Form form={form} {...formItemLayout}>
+                <Form.Item
+                  name="userName"
+                  label={
+                    <div className="style-lable">Họ và tên người nhận</div>
+                  }
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống!",
+                    },
+                  ]}
+                >
+                  <Input placeholder="Nhập Họ và tên người nhận" />
+                </Form.Item>
+                <Form.Item>
+                  <CustomizedForm
+                    fields={fields}
+                    onChange={(newFields) => {
+                      setFields(newFields);
+                    }}
+                  />
+                </Form.Item>
+
+                <Form.Item
+                  name="phoneNumber"
+                  label="Số điện thoại"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống!",
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+
+                <Form.Item
+                  name="city"
+                  label="Thành phố"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống!",
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+
+                <Form.Item
+                  name="district"
+                  label="Quận/huyện"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống!",
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+
+                <Form.Item
+                  name="ward"
+                  label="Phường/xã"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống!",
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+
+                <Form.Item
+                  name="address"
+                  label="Địa chỉ"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống!",
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+              </Form>
+            </div>
           </div>
         </div>
 
@@ -209,17 +292,17 @@ function Payment() {
           <div className="space-item">
             <div className="check-out-title"> KIỂM TRA LẠI ĐƠN HÀNG </div>;
             <div>
-            {listCheck.map((item, index) => {
-  const { name, price, amount, img } = item;
-  return (
-    <div
-      key={name} 
-      style={{
-        margin: "10px",
-        display: "flex",
-        justifyContent: "space-between",
-      }}
-    >
+              {listCheck.map((item, index) => {
+                const { name, price, amount, img } = item;
+                return (
+                  <div
+                    key={name}
+                    style={{
+                      margin: "10px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
+                  >
                     <div style={{ display: "flex" }}>
                       <img className="product-image" src={img} alt=""></img>
                       <div style={{ padding: "0px 15px" }}>{name}</div>
@@ -237,18 +320,50 @@ function Payment() {
               })}
             </div>
           </div>
-          <div style={{borderBottom: '1px solid #ced4da',margin:'0px 20px' }}></div>
-          <div style={{display:'flex',margin:'0px 50px', justifyContent:'space-between',marginTop:'15px'}} >
-          <h2 style={{color:'brown'}}>Tổng cộng: </h2>
-          <h2 style={{color: "#F39801",marginBottom:'0px',flexBasis:'19%'}}>{calculateTotalPrice()}.000 đ </h2>
+          <div
+            style={{ borderBottom: "1px solid #ced4da", margin: "0px 20px" }}
+          ></div>
+          <div
+            style={{
+              display: "flex",
+              margin: "0px 50px",
+              justifyContent: "space-between",
+              marginTop: "15px",
+            }}
+          >
+            <h2 style={{ color: "brown" }}>Tổng cộng: </h2>
+            <h2
+              style={{
+                color: "#F39801",
+                marginBottom: "0px",
+                flexBasis: "19%",
+              }}
+            >
+              {calculateTotalPrice()}.000 đ{" "}
+            </h2>
           </div>
-  
-          <div style={{display:'flex',margin:'0px 50px', justifyContent:'space-between', paddingBottom:'20px', alignItems:'center'}}>
-            <u>Nhấn "Xác nhận thanh toán" đồng nghĩa với việc bạn đồng ý tuân theo Điều khoản</u>
-            <button className="confirm-button-pay" onClick={addClick}>Xác nhận thanh toán</button>
+
+          <div
+            style={{
+              display: "flex",
+              margin: "0px 50px",
+              justifyContent: "space-between",
+              paddingBottom: "20px",
+              alignItems: "center",
+            }}
+          >
+            <u>
+              Nhấn "Xác nhận thanh toán" đồng nghĩa với việc bạn đồng ý tuân
+              theo Điều khoản
+            </u>
+            <button
+              className="confirm-button-pay"
+              onClick={validateAndSubmitForm}
+            >
+              Xác nhận thanh toán
+            </button>
           </div>
         </div>
-       
       </div>
     </Layout>
   );

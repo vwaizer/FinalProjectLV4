@@ -36,6 +36,29 @@ export const getHiredBook=async(req,res,next)=>{
 }
 
 export const accounting=async(req,res)=>{
+  const data = await databaseProject.book.find({}).toArray();
+
+  let typeList = [];
+  for (let index = 0; index < data.length; index++) {
+    let element = data[index].type;
+    let isAdded = true;
+  
+    for (let index1 = 0; index1 < typeList.length; index1++) {
+      let element1 = typeList[index1].type;
+      if (element == element1) {
+        isAdded = false;
+        typeList[index1].amount++;
+        break;
+      }
+    }
+    if (isAdded == true) {
+      let tmp = { type: element,amount:1 };
+      if (element != null) {
+        typeList.push(tmp);
+      }
+    }
+  }
+  return res.json(typeList);
 
 }
 export const createStaff=async(req,res)=>{

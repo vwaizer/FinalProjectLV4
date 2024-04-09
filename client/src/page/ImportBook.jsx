@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { http } from "../util/http";
 import CloudinaryUploadWidget from "./CloudinaryUploadWidget";
-import "./page.css";
+import './page.css';
 const ImportBook = () => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
@@ -110,23 +110,25 @@ const ImportBook = () => {
       <div className="import_book">
         <h1>Nhập Sách</h1>
         <form>
-          <div>Ngày</div>
+          <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between",padding:"5px"}}><h2>Ngày</h2>
           <input
             type="text"
             placeholder="Ngày Nhập Sách"
-            value={new Date().toDateString()}
+            value={new Date().toLocaleDateString()}
             disabled
-          ></input>
+            style={{width:"80%"}}
+          ></input></div>
           <Form
             labelCol={{ span: 6 }}
             wrapperCol={{ span: 18 }}
             form={form}
             name="dynamic_form_complex"
-            style={{ maxWidth: 600 }}
+            style={{maxWidth:"100%" }}
             autoComplete="off"
             initialValues={{ items: [{}] }}
             onSubmitCapture={(e) => e.preventDefault()}
           >
+            
             <Form.List name="items">
               {(fields, { add, remove }) => (
                 <div
@@ -135,15 +137,19 @@ const ImportBook = () => {
                     display: "flex",
                     rowGap: 16,
                     flexDirection: "column",
+                    
                   }}
                 >
+                  <Button type="dashed" onClick={() => add()} block>
+              + Add Item
+            </Button>
                   {/* <Button type="dashed" onClick={() => add()} block>
                     + Add Item
                   </Button> */}
                   {fields.map((field) => (
                     <>
                       <Card
-                        size="small"
+                        size="default"
                         title={`Item ${field.name + 1}`}
                         key={field.key}
                         extra={
@@ -159,11 +165,13 @@ const ImportBook = () => {
                           label="Name"
                           name={[field.name, "name"]}
                           required
+                          style={{width:"100%"}}
                         >
                           <Input
                             onChange={(e) =>
                               form.setFieldValue("name", e.target.value.trim())
                             }
+                            
                           />
                         </Form.Item>
                         <Form.Item
@@ -230,8 +238,7 @@ const ImportBook = () => {
                           />
                         </Form.Item>
                         {/* Nest Form.List */}
-                      </Card>
-                      <Button
+                        <Button
                         type="dashed"
                         onClick={(e) => {
                           submitBook(form, myImage, e);
@@ -244,6 +251,8 @@ const ImportBook = () => {
                       >
                         submit
                       </Button>
+                      </Card>
+                    
                     </>
                   ))}
                 </div>
