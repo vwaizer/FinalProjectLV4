@@ -40,7 +40,7 @@ export const getAllReceipt = async (req, res, next) => {
               email: item?.userDetail[0]?.email,
               status:item?.status,
               date:item.date,
-              total:parseInt(item.cartDetail[number].price)* value.amount
+              total:parseInt(item.cartDetail[number].price)*1000*value.amount
             };
           
         });
