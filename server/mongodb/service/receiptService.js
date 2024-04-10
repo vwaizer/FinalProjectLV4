@@ -26,15 +26,16 @@ export const getAllReceipt = async (req, res, next) => {
         },
       ])
       .toArray();
-     let formatData={};
+   
+     let formatData=[];
     const tmp = result.map((item, index) => {
       if (item.cartDetail.length > 0 && index > 0) {
-        console.log("item",item);
+      console.log("item",item);
         const newData = item.cart.map((value, number) => {
             
             return {
               bookName: item.cartDetail[number].name,
-              price: value.price,
+              price: item.cartDetail[number].price,
               amount: value.amount,
               email: item?.userDetail[0]?.email,
               status:item?.status,
@@ -42,12 +43,13 @@ export const getAllReceipt = async (req, res, next) => {
             };
           
         });
-        formatData=Object.assign(newData,formatData)
+        const tmpResult=formatData.push(...newData)
+     
         return newData;
       
       }
     });
-    console.log(formatData);
+    console.log(tmp);
     return res.json(formatData);
   } catch (error) {
     next(error);
