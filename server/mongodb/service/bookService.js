@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb";
-import { Books, HiredBook, ImportedBook } from "../../schema/Schema.js";
+import { Books, HiredBook, ImportedBook,Comment } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js";
 import { createImageTag, getAssetInfo } from "./cloudinary.js";
 export const getDetailBook = async (req, res) => {
@@ -264,3 +264,25 @@ export const getField = async (req, res) => {
 
   return res.json(filedList);
 };
+export const getComment=async(req,res,next)=>{
+  const bookID=req.params.ID;
+  try {
+    const result=await databaseProject.comment.find({bookId:new ObjectId(bookID)}).toArray()
+    return res.json(result)
+  } catch (error) {
+    return next(error)
+  }
+}
+export const setComment=async(req,res,next)=>{
+  const userID=req.userID;
+  const bookID=req.params.ID;
+  const body=new Comment({userId:userID,rate:req.body.rate,bookId:bookID});
+ 
+  
+  try {
+    const result=await databaseProject.comment.insertOne({body})
+    return res.json(result)
+  } catch (error) {
+    return next(error)
+  }
+}

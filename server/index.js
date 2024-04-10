@@ -10,7 +10,7 @@ import { MediaRoute } from "./routes/mediaRoute.js";
 import { receiptRoute } from "./routes/receiptRoute.js";
 import { staffRoute } from "./routes/staffRoute.js";
 import { userRoute } from "./routes/userRoute.js";
-import { autoSendMail } from "./mongodb/service/staffService.js";
+// import { autoSendMail } from "./mongodb/service/staffService.js";
 
 const app = express()
 const port = 4000

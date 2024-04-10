@@ -23,9 +23,9 @@ const Bill = () => {
 
         console.log(err);
       });
-    console.log(getReceipt);
+   
   }, []);
-
+  console.log(getReceipt);
   useEffect(() => {
     http
       .get("/staff/overall")
@@ -33,9 +33,9 @@ const Bill = () => {
       .catch((err) => {
         console.log(err);
       });
-    console.log(getBill);
-  }, []);
 
+  }, []);
+  console.log(getBill);
   return (
     <Space  direction="vertical">
       <Typography.Title level={4}>Hóa Đơn</Typography.Title>

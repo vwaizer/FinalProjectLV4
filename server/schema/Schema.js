@@ -18,7 +18,6 @@ export class Books {
   constructor(book) {
     (this.name = book.name),
       (this.author = book.author),
-     
       (this.type = book.type),
       (this.publisher = book.publisher||""),
       (this.amount = book.amount),
@@ -34,9 +33,9 @@ export class Comment {
   constructor(comment) {
     (this.userId = new ObjectId(comment.userId)),
       (this.bookId = new ObjectId(comment.bookId)),
-      (this.content = comment.content),
+      
       (this.rate = comment.rate),
-      (this.date = new Date(comment.date));
+      (this.date = new Date());
   }
 }
 export class ImportedBook {
