@@ -62,7 +62,32 @@
   width: 100%;
   display: flex;
   padding: 10px 20px;
-  margin-bottom: 10px;
+}
+.history-total-container{
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 0px;
+}
+.total-title{
+  justify-content: end;
+  display: flex;
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+.title{
+  color: #646464;
+  font-size: 16px;
+  padding: 3px 10px;
+  font-weight: 400;
+}
+.price{
+  font-size: 24px;
+  line-height: 30px;
+  color: #f39801;
+  font-weight: 600;
+}
+.line-history-total-price{
+    border-bottom: 2px dotted #ced4da; 
 }
 .history-book-image {
   width: 110px;
@@ -106,7 +131,7 @@
   height:30px;
   font-size: 14px;
   display:inline-flex;
-  align-items: center;
+vertical-align: bottom;
   padding-top: 10px;
   transition: color 0.5s ease;
   color: #646464;
@@ -124,7 +149,7 @@
   height:30px;
   font-size: 14px;
   display:inline-flex;
-  align-items: center;
+  vertical-align: bottom;
   padding-top: 10px;
   transition: color 0.5s ease;
 }

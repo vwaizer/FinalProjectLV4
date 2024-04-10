@@ -42,16 +42,18 @@ const UserPage = () => {
         style={{
           display: "flex",
           width: "80%",
-          height: "800px",
-          margin: "auto",
-          gap: "0px 20px",
+          height: "fit-content",
+          margin: "0px auto",
+          gap: "0px 10px",
         }}
       >
         <div
           style={{
             flex: "1",
-            height: "40%",
+            height: "fit-content",
             backgroundColor: "#fff",
+            border:'1px solid black',
+            paddingBottom:'10px'
           }}
         >
           <div className="title-user-info">TÀI KHOẢN</div>
