@@ -4,25 +4,8 @@ import "./userPage.css";
 import { http } from "../util/http";
 import AccountInfo from "./AccountInfo.jsx";
 import AddressEdit from "./AddressEdit.jsx";
-const OrderHistory = () => {
-  const [getHistory, setHistory] = useState([]);
+import OrderHistory from "./OrderHistory.jsx";
 
-  useEffect(() => {
-    http
-      .get("/receipt/history")
-      .then((getHistory) => {
-        
-        setHistory(getHistory.data);
-        console.log("history", getHistory);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-  return (
-    <div
-      style={{ width: "200px", height: "100%", border: "1px solid blue" }}
-    ></div>
-  );
-};
 
 const UserPage = () => {
   const [getUser, setUser] = useState();
@@ -66,35 +49,48 @@ const UserPage = () => {
       >
         <div
           style={{
-            border: "1px solid black",
             flex: "1",
-            height: "65%",
+            height: "40%",
             backgroundColor: "#fff",
           }}
         >
-          <div>
-            <ul style={{ listStyleType: "none" }}>
-              <li
-                value={"account-info"}
-                onClick={() => handleItemClick("account-info")}
-              >
-                Thông tin toàn khoản
-              </li>
-              <li value={"address"} onClick={() => handleItemClick("address")}>
-                Số địa chỉ
-              </li>
-              <li
-                value={"order-history"}
-                onClick={() => handleItemClick("order-history")}
-              >
-                Lịch sử đơn hàng
-              </li>
-            </ul>
+          <div className="title-user-info">TÀI KHOẢN</div>
+          <div style={{ padding: "0px 10px" }}>
+            <div className={selectedItem === "account-info" ? "selected-item" : "list-content"}>
+              <ul>
+                <li
+                  value={"account-info"}
+                  onClick={() => handleItemClick("account-info")}
+                >
+                  Thông tin toàn khoản
+                </li>
+              </ul>
+            </div>
+            <div className="line-title-user-info"></div>
+            <div className={selectedItem === "address" ? "selected-item" : "list-content"}>
+              <ul >
+                <li
+                  value={"address"}
+                  onClick={() => handleItemClick("address")}
+                >
+                  Số địa chỉ
+                </li>
+              </ul>
+            </div>
+            <div className="line-title-user-info"></div>
+            <div className={selectedItem === "order-history" ? "selected-item" : "list-content"}>
+              <ul >
+                <li
+                  value={"order-history"}
+                  onClick={() => handleItemClick("order-history")}
+                >
+                  Lịch sử đơn hàng
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div
-          style={{ border: "1px solid red", flex: "3", height: "fit-content" }}
-        >
+        <div style={{ flex: "3", height: "fit-content" }}>
           {renderSelectedComponent()}
         </div>
       </div>

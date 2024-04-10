@@ -134,7 +134,7 @@ function Products() {
         </div>
         <div className="rightbox">
           {loading ? (
-            <h4>Waiting...</h4>
+            <h4>Loading...</h4>
           ) : (
             getBook
               .filter((value) => {
