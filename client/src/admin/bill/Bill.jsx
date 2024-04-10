@@ -76,8 +76,13 @@ const Bill = () => {
             dataIndex: "amount",
           },
           {
-            title: "Số tiền",
+            title: "Đơn Giá",
             dataIndex: "price",
+          },
+          {
+            title: "Thành Tiền",
+            dataIndex: "",
+            
           },
           {
             title: "Trạng thái",
