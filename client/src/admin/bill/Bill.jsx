@@ -37,7 +37,7 @@ const Bill = () => {
   }, []);
 
   return (
-    <Space size={20} direction="vertical">
+    <Space  direction="vertical">
       <Typography.Title level={4}>Hóa Đơn</Typography.Title>
       <Space>
         <OverviewCustom

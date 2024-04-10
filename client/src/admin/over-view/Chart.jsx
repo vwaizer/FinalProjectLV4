@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
 import { http } from "../../util/http";
-
+import './overview.css'
 const ChartBar = () => {
   const [getData, setGetData] = useState([]);
   const [typeBook, setTypeBook] = useState([]);
@@ -25,19 +25,19 @@ const ChartBar = () => {
   }, [getData.length]);
 
   return (
-    <>
+    <div className="chart">
       <h3>Thống kê các thể loại sách</h3>
       <Chart
         type="pie"
-        width={1280}
-        height={550}
+        width={700}
+        height={600}
         series={amount}
         options={{
           noData: { text: "Empty Data" },
           labels: typeBook,
         }}
       ></Chart>
-    </>
+    </div>
   );
 };
 
