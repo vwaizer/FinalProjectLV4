@@ -130,6 +130,7 @@ export const addToCart = async (req, res, next) => {
     }
     console.log("userCart", userCart);
     if (userCart == null) {
+      console.log("bookData",bookData);
       const receipt = new Receipt({
         userID: req.userID,
         date: new Date(),
@@ -224,8 +225,10 @@ export const setHistory = async (req, res, next) => {
   const userID = req.userID.valueOf();
    const oldCart = req.body.cart;
    console.log("oldCart",oldCart);
+  
   const cart=oldCart.map((item,index)=>{
-    return{amount:item.amount,discount:item.discount,bookID:new ObjectId(`${item.bookID}`),price:item.price,img:item.img,name:item.name}
+    
+    return{amount:item.amount,discount:item.discount,bookID:new ObjectId(`${item.bookID}`)}
   })
   console.log("cart",cart);
 if(cart.length>0){
@@ -246,7 +249,7 @@ if(cart.length>0){
       
         let checked=0;
         cart.forEach((value,number)=>{
-          console.log("oldcart Bookid",JSON.stringify(item.bookID));
+          // console.log("oldcart Bookid",JSON.stringify(item.bookID));
         if(JSON.stringify(value.bookID).slice(1,-1) != JSON.stringify(item.bookID).slice(1,-1)){
            checked++
            return;
@@ -292,17 +295,18 @@ console.log("oldCart",oldCart);
  const deleteItem=req.body.deleteItem;
  console.log(deleteItem);
  const newCart=oldCart.filter((item,index)=>{
-
+  console.log(JSON.stringify(item.bookID));
   return !deleteItem.includes(JSON.stringify(item.bookID).slice(1,-1))
 })
  console.log(newCart);
  if (newCart.length>0){
-  const result=await databaseProject.receipt.updateOne({userID: new ObjectId(userID)},{$set:{cart:newCart}})
+  const result=await databaseProject.receipt.updateOne({userID: new ObjectId(userID),status:"In Cart"},{$set:{cart:newCart}})
  return res.json(result)
  }
  else{
-  const result=await databaseProject.receipt.deleteOne({userID: new ObjectId(userID)})
+  const result=await databaseProject.receipt.deleteOne({userID: new ObjectId(userID),status:"In Cart"})
   return res.json(result)
+ 
  }
  
 }
