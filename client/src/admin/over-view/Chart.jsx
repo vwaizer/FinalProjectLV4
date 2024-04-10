@@ -23,7 +23,7 @@ const ChartBar = () => {
     setTypeBook(isTypeBook);
     setAmount(isAmount);
   }, []);
-
+  console.log(typeBook);
   console.table(getData);
   return (
     <>

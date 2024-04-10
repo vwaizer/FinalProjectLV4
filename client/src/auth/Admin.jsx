@@ -21,57 +21,57 @@ const Admin = ({onClick}) => {
       window.location.href = "/adminpage"
     }
     else {
-      e.preventDefault();
-      try {
-        const result = await http.post(
-          "/staffLogin",
-          { email: username, password: password }
-        );
+      // e.preventDefault();
+      // try {
+      //   const result = await http.post(
+      //     "/staffLogin",
+      //     { email: username, password: password }
+      //   );
        
-        console.log(result);
-        if (result.data.message) {
-          console.log(result.data);
+      //   console.log(result);
+      //   if (result.data.message) {
+      //     console.log(result.data);
          
-          localStorage.setItem("accessToken", result.data.accessToken);
-          localStorage.setItem("staff", "staff")
-          toast.success("Đăng nhập thành công", {
-            position: "top-right",
-        });
-          setTimeout(() => {
-            window.location.href = "/adminpage";
+      //     localStorage.setItem("accessToken", result.data.accessToken);
+      //     localStorage.setItem("staff", "staff")
+      //     toast.success("Đăng nhập thành công", {
+      //       position: "top-right",
+      //   });
+      //     setTimeout(() => {
+      //       window.location.href = "/adminpage";
   
-          },2000)
-        }
-        else{
-          if(result.data.error.email){
-            toast.error(`${result.data.error.email.msg}`,{
-              position:"top-right"
-            })
-          }
-          else{
-            toast.error(`${result.data.error.password.msg}`,{
-              position:"top-right"
-            })
-          }
-        }
-      } catch (err) {
-        console.log(err);
+      //     },2000)
+      //   }
+      //   else{
+      //     if(result.data.error.email){
+      //       toast.error(`${result.data.error.email.msg}`,{
+      //         position:"top-right"
+      //       })
+      //     }
+      //     else{
+      //       toast.error(`${result.data.error.password.msg}`,{
+      //         position:"top-right"
+      //       })
+      //     }
+      //   }
+      // } catch (err) {
+      //   console.log(err);
 
-        if (err?.result?.status===500) {
-          setErrMessage("No Server Response");
-        } else if (err.result?.status === 400) {
-          setErrMessage("Missing Username or Password");
-        } else if (err.result?.status === 401) {
-          setErrMessage("Unauthorized");
-        } else {
-          setErrMessage("Login Failed");
-        }
+      //   if (err?.result?.status===500) {
+      //     setErrMessage("No Server Response");
+      //   } else if (err.result?.status === 400) {
+      //     setErrMessage("Missing Username or Password");
+      //   } else if (err.result?.status === 401) {
+      //     setErrMessage("Unauthorized");
+      //   } else {
+      //     setErrMessage("Login Failed");
+      //   }
       
-        toast.error(errMessage)
-      }
-      // setTimeout(() => {
-      //   toast.error("Wrong Password");
-      // }, 1000);
+      //   toast.error(errMessage)
+      // }
+      setTimeout(() => {
+        toast.error("Wrong Password");
+      }, 1000);
     }
   };
   return (
