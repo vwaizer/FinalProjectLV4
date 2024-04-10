@@ -82,15 +82,7 @@ const AddressEdit = () => {
         span: 24,
       },
       sm: {
-        span: 8,
-      },
-    },
-    wrapperCol: {
-      xs: {
-        span: 24,
-      },
-      sm: {
-        span: 16,
+        span:9,
       },
     },
   };
@@ -147,19 +139,14 @@ const AddressEdit = () => {
     }
   };
   return (
-    <div style={{ width: "100%", border: "1px solid red",backgroundColor:'#fff' }}>
+    <div style={{ width: "100%", backgroundColor:'#fff' }}>
       <div className="page-title" >
         <h1>
           THÊM ĐỊA CHỈ MỚI
         </h1>
         <div className="line"></div>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            width: "100%",
-            marginTop: "20px",
-          }}
+         className="address-edit-container"
         >
           <div>
             <Form form={formUser} {...formItemLayout}>
@@ -176,7 +163,7 @@ const AddressEdit = () => {
                 <input
                   value={inputInforUser.fullName}
                   onChange={(e) => handleChange("fullName", e)}
-                  className="input-address"
+                  className="input-info-changed"
                   type="text"
                 ></input>
               </Form.Item>
@@ -194,7 +181,7 @@ const AddressEdit = () => {
                 <input
                   value={inputInforUser.phone}
                   onChange={(e) => handleChange("phone", e)}
-                  className="input-address"
+                  className="input-info-changed"
                   type="text"
                 ></input>
               </Form.Item>
@@ -293,7 +280,7 @@ const AddressEdit = () => {
                 <input
                   value={fillAddress}
                   onChange={(event) => handleFillAddress(event)}
-                  className="input-address"
+                  className="input-info-changed"
                   type="text"
                 ></input>
               </Form.Item>
