@@ -52,7 +52,6 @@ const UserPage = () => {
             flex: "1",
             height: "fit-content",
             backgroundColor: "#fff",
-            border:'1px solid black',
             paddingBottom:'10px'
           }}
         >
