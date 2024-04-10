@@ -6,7 +6,6 @@ import AccountInfo from "./AccountInfo.jsx";
 import AddressEdit from "./AddressEdit.jsx";
 import OrderHistory from "./OrderHistory.jsx";
 
-
 const UserPage = () => {
   const [getUser, setUser] = useState();
   useEffect(() => {
@@ -38,26 +37,24 @@ const UserPage = () => {
 
   return (
     <Layout>
-      <div
-        style={{
-          display: "flex",
-          width: "80%",
-          height: "fit-content",
-          margin: "0px auto",
-          gap: "0px 10px",
-        }}
-      >
+      <div className="wrap_user">
         <div
           style={{
             flex: "1",
             height: "fit-content",
             backgroundColor: "#fff",
-            paddingBottom:'10px'
+            paddingBottom: "10px",
           }}
         >
           <div className="title-user-info">TÀI KHOẢN</div>
           <div style={{ padding: "0px 10px" }}>
-            <div className={selectedItem === "account-info" ? "selected-item" : "list-content"}>
+            <div
+              className={
+                selectedItem === "account-info"
+                  ? "selected-item"
+                  : "list-content"
+              }
+            >
               <ul>
                 <li
                   value={"account-info"}
@@ -68,8 +65,12 @@ const UserPage = () => {
               </ul>
             </div>
             <div className="line-title-user-info"></div>
-            <div className={selectedItem === "address" ? "selected-item" : "list-content"}>
-              <ul >
+            <div
+              className={
+                selectedItem === "address" ? "selected-item" : "list-content"
+              }
+            >
+              <ul>
                 <li
                   value={"address"}
                   onClick={() => handleItemClick("address")}
@@ -79,8 +80,14 @@ const UserPage = () => {
               </ul>
             </div>
             <div className="line-title-user-info"></div>
-            <div className={selectedItem === "order-history" ? "selected-item" : "list-content"}>
-              <ul >
+            <div
+              className={
+                selectedItem === "order-history"
+                  ? "selected-item"
+                  : "list-content"
+              }
+            >
+              <ul>
                 <li
                   value={"order-history"}
                   onClick={() => handleItemClick("order-history")}

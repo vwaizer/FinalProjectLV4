@@ -1,4 +1,4 @@
-import { Table, Typography } from "antd";
+import { Space, Table, Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import { http } from "../../util/http.js";
 
@@ -16,7 +16,7 @@ const Statify = () => {
   }, []);
 
   return (
-    <>
+    <Space size={"large"} direction="vertical">
       <Typography.Text>Tổng hợp</Typography.Text>
       <Table
         columns={[
@@ -36,7 +36,7 @@ const Statify = () => {
         dataSource={Array(database)}
         pagination={false}
       ></Table>
-    </>
+    </Space>
   );
 };
 

@@ -25,7 +25,7 @@ const ImportAndBrowse = () => {
   }, [isClicked]);
   console.log(getImport);
   return (
-    <Space size={20} direction="vertical">
+    <Space size={"middle"} direction="vertical">
       {localStorage.getItem("staff")==="staff"?<><ImportBook/></>:<>
       <Typography.Title level={4}>Nhập Sách</Typography.Title>
       <Table
@@ -41,6 +41,7 @@ const ImportAndBrowse = () => {
           {
             title: "Tên sách",
             dataIndex: "bookName",
+            responsive: ['sm'],
           },
           {
             title: "Ngày Nhập",

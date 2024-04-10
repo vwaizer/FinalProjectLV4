@@ -65,7 +65,7 @@ const Bill = () => {
           {
             title: "Tên Sách",
             dataIndex: "bookName",
-            
+            responsive: ['sm']
           },
           {
             title: "Ngày Mua",
@@ -81,7 +81,7 @@ const Bill = () => {
           },
           {
             title: "Thành Tiền",
-            dataIndex: "",
+            dataIndex: "total",
           },
           {
             title: "Trạng thái",

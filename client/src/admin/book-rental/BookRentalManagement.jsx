@@ -34,7 +34,7 @@ const [isClicked,setIsClicked]=useState(false);
     
   }
   return (
-    <Space size={20} direction="vertical">
+    <Space size={"middle"} direction="vertical" wrap>
       <Typography.Title level={4}>Thông Tin Thuê Sách</Typography.Title>
       <Table
         columns={[
@@ -53,6 +53,7 @@ const [isClicked,setIsClicked]=useState(false);
           {
             title: "Tên Sách",
             dataIndex: "bookName",
+            responsive: ['sm']
           },
           {
             title: "Ngày Thuê",

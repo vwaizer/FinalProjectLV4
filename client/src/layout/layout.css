@@ -59,8 +59,8 @@
     background-color: transparent
 }
 .navbar-links .logo_header img{
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 80px;
 }
 .bookstore_header .auth{
     display: flex;

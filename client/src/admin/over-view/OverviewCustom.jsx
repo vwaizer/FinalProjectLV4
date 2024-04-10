@@ -5,7 +5,7 @@ import React from "react";
 const OverviewCustom = ({title, value, icon}) => {
   return (
     <Card>
-      <Space style={{width: 200, height: 150}}>
+      <Space style={{width: 200, height: 150}} size={"large"}>
         {icon}
         <Statistic title={title} value={value} />
       </Space>

@@ -45,7 +45,7 @@ const Overview = () => {
   }, []);
   return (
     <>
-      <Space size={25} direction="vertical">
+      <Space direction="vertical">
         <Typography.Title level={4}>Tổng Quan</Typography.Title>
         <Space direction="horizontal">
           <OverviewCustom
@@ -94,10 +94,13 @@ const Overview = () => {
             value={book.bookNumber}
           />
         </Space>
-        <Space size={10}>
+        <Space>
           <Statify />
         </Space>
-          <ChartBar/>
+        <hr></hr>
+        <Space>
+          <ChartBar />
+        </Space>
       </Space>
     </>
   );

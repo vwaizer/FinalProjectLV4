@@ -24,7 +24,7 @@ const StaffAndUser = () => {
  console.log(getUser);
  
   return (
-    <Space size={20} direction="vertical">
+    <Space size={"middle"} direction="vertical">
       <Typography.Title level={4}>Thông Tin Khách Hàng</Typography.Title>
       <Table
         columns={[
