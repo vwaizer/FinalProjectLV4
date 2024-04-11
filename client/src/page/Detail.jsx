@@ -8,6 +8,7 @@ import slideDetail from "../assets/imageDetail";
 import SliderDetail from "../slideDetail/SliderDetail";
 import RentForm from "./RentForm";
 import Rating from "../page/rating/Rating";
+import HoverRating from "../page/rating/Rating";
 const paragrapStyle = {
   WebkitLineClamp: 3,
   WebkitBoxOrient: "vertical",
@@ -109,7 +110,7 @@ function Detail() {
               <div className="detail_info">
                 <div className="detail_title">
                   <h2>{item.name}</h2>
-                  <Rating />
+                  <HoverRating id={item._id}/>
                   <h3>Tác giả : {item.author}</h3>
                 </div>
                 <div>
