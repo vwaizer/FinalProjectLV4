@@ -217,6 +217,11 @@ khung list bên trái  */
 .selected-item ul{
   list-style-type: none;
 }
+.list-address{
+  padding: 12px 30px 0px;
+  color: #646464;
+  font-size: 15px;
+}
 @media only screen and (max-width: 600px) {
   .address-edit-container{
     flex-direction: column;

@@ -321,20 +321,40 @@ const AddressEdit = () => {
           <h1>ĐỊA CHỈ CỦA TÔI</h1>
           <div className="line"></div>
         </div>
-        <div >
+        <div>
           <div>
             {isLoading ? (
               <p>Loading...</p>
             ) : (
               getUser.address.map((userAddress) => {
-                const { address, district, city, phone, fullName } = userAddress;
+                const { address, district, city, phone, fullName } =
+                  userAddress;
                 return (
-                  <div style={{padding:'12px 30px 0px', color:'#646464',fontSize:'15px'}} key={userAddress.id}>
-                    <div style={{alignItems:'center',lineHeight:'1.6'}}>
-                      <span style={{fontSize:'18px',color:'black'}}>{fullName} </span> | <span style={{}}>{phone}</span>
+                  <div className="list-address" key={userAddress.id}>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <div style={{ marginBottom: "15px" }}>
+                        <div
+                          style={{ alignItems: "center", lineHeight: "1.2" }}
+                        >
+                          <span style={{ fontSize: "18px", color: "black" }}>
+                            {fullName}{" "}
+                          </span>{" "}
+                          | <span style={{}}>{phone}</span>
+                        </div>
+                        <div>{address}</div>
+                        <div>{`${district}, ${city}`}</div>
+                      </div>
+                      <div>
+                        {" "} 
+                        <u>Xóa địa chỉ</u>
+                      </div>
                     </div>
-                    <div>{address}</div>
-                    <div>{`${district}, ${city}`}</div>
+
                     <div className="line"></div>
                   </div>
                 );
