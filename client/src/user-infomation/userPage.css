@@ -196,7 +196,7 @@ khung list bên trái  */
   height:30px;
   font-size: 14px;
   display:inline-flex;
-vertical-align: bottom;
+  vertical-align: bottom;
   padding-top: 10px;
   transition: color 0.5s ease;
   color: #646464;
@@ -224,6 +224,11 @@ vertical-align: bottom;
 }
 .selected-item ul{
   list-style-type: none;
+}
+.list-address{
+  padding: 12px 30px 0px;
+  color: #646464;
+  font-size: 15px;
 }
 @media only screen and (max-width: 600px) {
   .address-edit-container{
