@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Radio, Form, Input, DatePicker, Button } from "antd";
 import "./userPage.css";
 import { http } from "../util/http";
@@ -9,17 +9,34 @@ const AccountInfo = ({ getUser }) => {
   const onFinishRef = useRef(null);
   const [form] = Form.useForm();
   const [value, setValue] = useState(null);
+  const [getUserInfo, setUserInfo] = useState([]);
+
   const [inputStates, setInputStates] = useState({
     fullName: false,
     email: false,
     phone: false,
   });
-
+  useEffect(() => {
+    http
+      .get("/user/detailUser")
+      .then((getUserInfo) => {
+        setUserInfo(getUserInfo.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  // console.log("thong tin user", getUserInfo);
   const onFinish = (values) => {
-    console.log("form", values);
+    // console.log("form", values);
     onFinishRef.current = values;
   };
-
+  useEffect(() => {
+    form.setFieldsValue({
+      fullName: getUserInfo.fullName || "",
+      phone: getUserInfo.phone || "",
+      sex: getUserInfo.sex || "",
+      birthday: moment(getUserInfo.birthday),
+    });
+  }, [getUserInfo, form]);
   if (!getUser) {
     return <div>Loading...</div>;
   }
@@ -38,9 +55,16 @@ const AccountInfo = ({ getUser }) => {
       const changedInfo = { ...result, birthday: formattedBirthday };
       // cập nhật thông tin user
       console.log("thông tin sau thay đổi", changedInfo);
-      // http.put("/user/changeInfo", { result: changedInfo }).catch((error) =>
-      //   console.log(error)
-      // );
+      http
+        .put("/user/changeInfo", {
+          fullName: changedInfo.fullName,
+          // email: changedInfo.email,
+          phone: changedInfo.phone,
+          sex: changedInfo.sex,
+          birthday: changedInfo.birthday,
+        })
+        .catch((error) => console.log(error));
+      // console.log('Cập nhật thành công')
       toast.success("Cập nhật thông tin thành công");
       // setTimeout(() => (window.location.href = "/"), 2000);
     } catch (error) {
@@ -101,20 +125,21 @@ const AccountInfo = ({ getUser }) => {
           label="Họ và Tên"
           name="fullName"
           rules={[
-            {
-              required: true,
+            ({ getFieldValue }) => ({
+              required: !!getFieldValue("fullName") || !!getUserInfo.fullName,
               message: "Thông tin này không được để trống",
-            },
+            }),
           ]}
         >
           <input
+            defaultValue={getUserInfo.fullName || " "}
             className={inputStates.fullName ? "input-clicked" : "input-blur"}
             onClick={() => handleInputClick("fullName")}
             onBlur={() => handleInputBlur("fullName")}
           ></input>
         </Form.Item>
 
-        <Form.Item
+        {/* <Form.Item
           label="Email"
           name="email"
           rules={[
@@ -133,16 +158,16 @@ const AccountInfo = ({ getUser }) => {
             onClick={() => handleInputClick("email")}
             onBlur={() => handleInputBlur("email")}
           ></input>
-        </Form.Item>
+        </Form.Item> */}
 
         <Form.Item
           label="Số điện thoại"
           name="phone"
           rules={[
-            {
-              required: true,
+            ({ getFieldValue }) => ({
+              required: !!getFieldValue("phone") || !!getUserInfo.phone,
               message: "Thông tin này không được để trống",
-            },
+            }),
             {
               pattern: /^[0-9]{10}$/,
               message: "Số điện thoại không hợp lệ",
@@ -150,6 +175,7 @@ const AccountInfo = ({ getUser }) => {
           ]}
         >
           <input
+            defaultValue={getUserInfo.phone || " "}
             className={inputStates.phone ? "input-clicked" : "input-blur"}
             onClick={() => handleInputClick("phone")}
             onBlur={() => handleInputBlur("phone")}
@@ -160,13 +186,13 @@ const AccountInfo = ({ getUser }) => {
           label="Giới Tính"
           name="sex"
           rules={[
-            {
-              required: true,
+            ({ getFieldValue }) => ({
+              required: !!getFieldValue("sex") || !!getUserInfo.sex,
               message: "Thông tin này không được để trống",
-            },
+            }),
           ]}
         >
-          <Radio.Group onChange={onChange} value={value}>
+          <Radio.Group onChange={onChange} defaultValue={getUserInfo.sex}>
             <Radio value={"Nam"}>Nam</Radio>
             <Radio value={"Nữ"}>Nữ</Radio>
             <Radio value={"Khác"}>Khác</Radio>
@@ -177,17 +203,21 @@ const AccountInfo = ({ getUser }) => {
           label="Ngày sinh"
           name="birthday"
           rules={[
-            {
-              required: true,
+            ({ getFieldValue }) => ({
+              required: !!getFieldValue("birthday") || !!getUserInfo.birthday,
               message: "Thông tin này không được để trống",
-            },
+            }),
           ]}
           valuePropName="selected"
           getValueFromEvent={(date) =>
             date ? moment(date).format("YYYY-MM-DD") : date
           }
         >
-          <DatePicker format="YYYY-MM-DD" disabledDate={disabledDate} />
+          <DatePicker
+            format="YYYY-MM-DD"
+            disabledDate={disabledDate}
+            defaultValue={moment(getUserInfo.birthday)}
+          />
         </Form.Item>
         <Form.Item
           wrapperCol={{

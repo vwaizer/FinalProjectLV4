@@ -98,20 +98,20 @@ export const loginValidator = validator(
               email: value,
             });
 
-            if (isUserExist) {
-              if(isUserExist.verifyToken == "verified"){
-                return true;
-              } 
-              else{
-                throw new Error("Email is not verified")
-              }
+            // if (isUserExist) {
+            //   if(isUserExist.verifyToken == "verified"){
+            //     return true;
+            //   } 
+            //   else{
+            //     throw new Error("Email is not verified")
+            //   }
               
 
-            } else {
+            // } else {
 
-              throw new Error("Email is not registered");
+            //   throw new Error("Email is not registered");
 
-            }
+            // }
           },
         },
       },
