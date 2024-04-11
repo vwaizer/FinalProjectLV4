@@ -4,11 +4,10 @@ import { toast, ToastContainer } from "react-toastify";
 import Layout from "../layout/Layout";
 import { http } from "../util/http";
 import "./page.css";
-
 import slideDetail from "../assets/imageDetail";
 import SliderDetail from "../slideDetail/SliderDetail";
 import RentForm from "./RentForm";
-
+import Rating from "../page/rating/Rating";
 const paragrapStyle = {
   WebkitLineClamp: 3,
   WebkitBoxOrient: "vertical",
@@ -17,7 +16,7 @@ const paragrapStyle = {
 };
 
 function Detail() {
-  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   const { ID } = useParams("ID");
   console.log(ID);
   const navigate = useNavigate();
@@ -110,6 +109,7 @@ function Detail() {
               <div className="detail_info">
                 <div className="detail_title">
                   <h2>{item.name}</h2>
+                  <Rating />
                   <h3>Tác giả : {item.author}</h3>
                 </div>
                 <div>
