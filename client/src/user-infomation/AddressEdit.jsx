@@ -20,7 +20,7 @@ const AddressEdit = () => {
       )
       .then((response) => {
         setCities(response.data);
-        console.log("city", response.data);
+        // console.log("city", response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -159,6 +159,18 @@ const AddressEdit = () => {
       console.log("Validation error:", error);
     }
   };
+  const deleteAddress = async (index) => {
+    console.log("index", index);
+    try {
+      await http.post(`/user/deleteAddress/${index}`);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  const setDefaultAddress = (index) => {
+    const defaultAddress = getUser.address[index];
+    localStorage.setItem('defaultAddress', JSON.stringify(defaultAddress));
+    };
   return (
     <div>
       <ToastContainer
@@ -338,7 +350,7 @@ const AddressEdit = () => {
             {isLoading ? (
               <p>Loading...</p>
             ) : (
-              getUser.address.map((userAddress) => {
+              getUser.address.map((userAddress, index) => {
                 const { address, district, city, phone, fullName } =
                   userAddress;
                 return (
@@ -361,9 +373,22 @@ const AddressEdit = () => {
                         <div>{address}</div>
                         <div>{`${district}, ${city}`}</div>
                       </div>
-                      <div>
-                        {" "} 
-                        <u>Xóa địa chỉ</u>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-around",
+                          flexDirection: "column",
+                          textAlign: "end",
+                          marginBottom: "15px",
+                        }}
+                      >
+                        <div onClick={() => deleteAddress(index)}>
+                          {" "}
+                          <u>Xóa địa chỉ</u>
+                        </div>
+                        <div onClick={() => setDefaultAddress(index)}>
+                          <u>Đặt làm địa chỉ mặc định</u>
+                        </div>
                       </div>
                     </div>
 
