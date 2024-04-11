@@ -1,0 +1,7 @@
+.footerpage{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px dotted #000;
+}

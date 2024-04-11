@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+.wrap_user{
+  display: flex;
+  width: 80%;
+  height: fit-content;
+  margin: 0 auto;
+  gap: 10px
+}
 .input-blur{
   width:100%;
   border-color:transparent;
@@ -232,6 +240,12 @@ khung list bên trái  */
     padding-top: 5px;
   }
 }
+@media screen and (max-width: 1050px) {
+  .wrap_user{
+    margin-top: 100px;
+  }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 768px){
   .address-edit-container{
     flex-direction: column;

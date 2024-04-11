@@ -16,7 +16,7 @@ const Staff = () => {
   }, []);
   console.log(getStaff);
   return (
-    <Space size={20} direction="vertical">
+    <Space size={"middle"} direction="vertical">
       <Typography.Title level={4}>Thông Tin Nhân Viên</Typography.Title>
       <Table
         columns={[

@@ -37,7 +37,7 @@ const Bill = () => {
   }, []);
   console.log(getBill);
   return (
-    <Space size={20} direction="vertical">
+    <Space  direction="vertical">
       <Typography.Title level={4}>Hóa Đơn</Typography.Title>
       <Space>
         <OverviewCustom
@@ -65,7 +65,7 @@ const Bill = () => {
           {
             title: "Tên Sách",
             dataIndex: "bookName",
-            
+            responsive: ['sm']
           },
           {
             title: "Ngày Mua",
@@ -76,8 +76,12 @@ const Bill = () => {
             dataIndex: "amount",
           },
           {
-            title: "Số tiền",
+            title: "Đơn Giá",
             dataIndex: "price",
+          },
+          {
+            title: "Thành Tiền",
+            dataIndex: "total",
           },
           {
             title: "Trạng thái",

@@ -1,25 +1,20 @@
-import React from "react";
-import "./layoutadmin.css";
-import AdminPage from "../admin-page/AdminPage";
 import { Space } from "antd";
-import SideMenu from "../SideMenu";
+import React from "react";
 import PageContent from "../PageContent";
-import AdminRoute from "../AdminRoute";
-import { Link } from "react-router-dom";
+import SideMenu from "../SideMenu";
+import AdminPage from "../admin-page/AdminPage";
+import FooterPage from "../footer/FooterPage";
+import "./layoutadmin.css";
 
 const LayoutAdmin = () => {
-
-  const handleLogOut = () => {
-    localStorage.removeItem("staff")
-    window.location.href = "/staff"
-  }
   return (
     <div className="layout">
       <AdminPage />
-      <Space className="side_pagecontent">
+      <Space size={"large"} className="side_pagecontent">
         <SideMenu></SideMenu>
         <PageContent></PageContent>
       </Space>
+      <FooterPage/>
     </div>
   );
 };

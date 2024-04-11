@@ -39,7 +39,7 @@ const UserInfo = () => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleUser}>Thông Tin Người Dùng</MenuItem>
+        <MenuItem onClick={handleUser}>Thông Tin Tài Khoản</MenuItem>
         <MenuItem onClick={handleSignOut}>Đăng Xuất</MenuItem>
       </Menu>
     </div>

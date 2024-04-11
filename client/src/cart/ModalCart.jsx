@@ -47,7 +47,7 @@ const ModalCart = () => {
             bookID = item.bookID;
             amount = item.amount;
             return (
-              <div>
+              <div key={index}>
                 <div className="product-container">
                   <div>
                     <img className="books-image" src={img} alt=""></img>
