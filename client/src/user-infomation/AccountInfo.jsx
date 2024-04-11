@@ -1,9 +1,8 @@
-import React, { useRef, useState } from "react";
-import { Radio, Form, Input, DatePicker, Button } from "antd";
-import "./userPage.css";
-import { http } from "../util/http";
+import { Button, DatePicker, Form, Radio } from "antd";
 import moment from "moment";
+import React, { useRef, useState } from "react";
 import { toast } from "react-toastify";
+import "./userPage.css";
 
 const AccountInfo = ({ getUser }) => {
   const onFinishRef = useRef(null);

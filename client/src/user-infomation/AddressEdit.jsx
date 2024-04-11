@@ -140,6 +140,18 @@ const AddressEdit = () => {
   };
   return (
     <div style={{ width: "100%", backgroundColor:'#fff' }}>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div className="page-title" >
         <h1>
           THÊM ĐỊA CHỈ MỚI

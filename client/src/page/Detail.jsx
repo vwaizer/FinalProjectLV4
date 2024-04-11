@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import slideDetail from "../assets/imageDetail";
 import Layout from "../layout/Layout";
+import HoverRating from "../page/rating/Rating";
+import SliderDetail from "../slideDetail/SliderDetail";
 import { http } from "../util/http";
 import "./page.css";
-import slideDetail from "../assets/imageDetail";
-import SliderDetail from "../slideDetail/SliderDetail";
 import RentForm from "./RentForm";
-import Rating from "../page/rating/Rating";
-import HoverRating from "../page/rating/Rating";
 const paragrapStyle = {
   WebkitLineClamp: 3,
   WebkitBoxOrient: "vertical",
