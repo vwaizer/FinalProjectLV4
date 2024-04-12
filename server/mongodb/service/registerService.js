@@ -22,7 +22,7 @@ class UserService {
               birthday:"--",
               sex:"",
               role:payload.role||"",
-              verifyToken:"Waiting",
+              verifyToken:"chưa xác thực",
               forgetToken:""
             })
           );

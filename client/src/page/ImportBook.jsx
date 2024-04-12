@@ -1,7 +1,7 @@
 import { CloseOutlined } from "@ant-design/icons";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { Button, Card, Form, Input } from "antd";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { http } from "../util/http";
@@ -35,7 +35,7 @@ const ImportBook = () => {
     // cropping: true, //add a cropping step
     // showAdvancedOptions: true,  //add advanced options (public_id and tag)
      sources: [ "local", "url"], // restrict the upload sources to URL and local files
-    // multiple: false,  //restrict upload to a single file
+     multiple: true,  //restrict upload to a single file
     // folder: "user_images", //upload files to the specified folder
     // tags: ["users", "profile"], //add the given tags to the uploaded files
     // context: {alt: "user_uploaded"}, //add the given context data to the uploaded files
@@ -51,28 +51,37 @@ const ImportBook = () => {
       cloudName,
     },
   });
-
-  const myImage = cld.image(publicId);
-  console.log(myImage);
+  const image = cld.image(publicId);
+  const [img,setImg]=useState([])
+  useEffect(()=>{
+    console.log("publicId",publicId);
+    if(!img.includes(publicId)){
+      const newImg=img.push(publicId)
+    setImg([...img])
+    }
+    
+  },[publicId])
+  console.log("img",img);
   const submitBook = async (form, myImg, e) => {
-    e.preventDefault();
-    if (form.getFieldValue("name")?.length>0) {
-      toast.error("Thiếu name");
+    console.log(myImg);
+   console.log(form.getFieldValue("name")?.length); 
+    if (form.getFieldValue("name")?.length<0 || form.getFieldValue("name")?.length>36 ) {
+      toast.error("Không đúng format name");
     }
-    if (!form.getFieldValue("type")?.length>0) {
-      toast.error("Thiếu type");
+    if (!form.getFieldValue("type")?.length>0 || form.getFieldValue("type")?.length>36 )  {
+      toast.error("Không đúng format type");
     }
-    if (!form.getFieldValue("amount")?.length>0) {
-      toast.error("Thiếu amount");
+    if (!form.getFieldValue("amount")?.length>0 || form.getFieldValue("amount")?.length>3 ) {
+      toast.error("Không đúng format amount");
     }
-    if (!form.getFieldValue("price")?.length>0) {
-      toast.error("Thiếu price");
+    if (!form.getFieldValue("price")?.length>0 || form.getFieldValue("price")?.length>3 ) {
+      toast.error("Không đúng format price");
     }
-    if (!form.getFieldValue("author")?.length>0) {
-      toast.error("Thiếu author");
+    if (!form.getFieldValue("author")?.length>0 || form.getFieldValue("name")?.length>36 ) {
+      toast.error("Không đúng format author");
     }
-    if (!form.getFieldValue("publisher")?.length>0) {
-      toast.error("Thiếu publisher");
+    if (!form.getFieldValue("publisher")?.length>0 || form.getFieldValue("publisher")?.length>36 ) {
+      toast.error("Không đúng format publisher");
     }
     const item = {
       name: form.getFieldValue("name"),
@@ -81,13 +90,17 @@ const ImportBook = () => {
       price: form.getFieldValue("price") * 1000,
       author:form.getFieldValue("author"),
       publisher: form.getFieldValue("publisher"),
-      images: [myImg.publicID] || [""],
+      images: [...myImg] || [""],
     };
     console.log(item);
+    setImg([])
+    e.preventDefault()
     try {
       const result = await http.post("/book/", { book: [item] });
       console.log(result);
+    
       toast.success("Nhập sách thành công");
+      
     } catch (error) {
       console.log(error);
       toast.error(error);
@@ -109,14 +122,15 @@ const ImportBook = () => {
       />
       <div className="import_book">
         <h1>Nhập Sách</h1>
-        <form>
-          <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between",padding:"5px"}}><h2>Ngày</h2>
+        <div>
+        <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between",padding:"5px"}}><h2>Ngày</h2>
           <input
             type="text"
             placeholder="Ngày Nhập Sách"
             value={new Date().toLocaleDateString()}
             disabled
             style={{width:"80%"}}
+        
           ></input></div>
           <Form
             labelCol={{ span: 6 }}
@@ -128,8 +142,9 @@ const ImportBook = () => {
             initialValues={{ items: [{}] }}
             onSubmitCapture={(e) => e.preventDefault()}
           >
-            
+          
             <Form.List name="items">
+            
               {(fields, { add, remove }) => (
                 <div
                   key={fields.name }
@@ -240,10 +255,13 @@ const ImportBook = () => {
                         <Button
                         type="dashed"
                         onClick={(e) => {
-                          submitBook(form, myImage, e);
+                          submitBook(form, img, e);
+                         
                           setTimeout(() => {
+                            
                             form.resetFields();
                             
+
                           }, 1000);
                         }}
                         block
@@ -258,7 +276,7 @@ const ImportBook = () => {
               )}
             </Form.List>
           </Form>
-        </form>
+        </div>
       </div>
     </>
   );

@@ -143,6 +143,7 @@ function Products() {
                   getFilterName(e.target.value);
                  
                 }}
+                maxLength={60}
                 placeholder="Tên tác giả"
               />
             </div>

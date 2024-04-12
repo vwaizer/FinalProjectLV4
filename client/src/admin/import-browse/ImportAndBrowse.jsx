@@ -28,6 +28,15 @@ const ImportAndBrowse = () => {
       });
     console.table(getImport);
   }, [isClicked]);
+  const onRefuseFunc=async(id)=>{
+    try {
+      const result=await http.put(`/staff/hiredBook/${id}`,{status:"Từ chối"})
+      console.log(result);
+      setIsClicked(!isClicked)
+    } catch (error) {
+      console.log(error);
+    }
+  }
   console.log(getImport);
   return (
     <div >
@@ -79,6 +88,30 @@ const ImportAndBrowse = () => {
                     );
                   },
                 },
+                {
+                  title: "",
+                  dataIndex: "",
+                  render: (button) => {
+                    console.log(button);
+                    return (
+                      <>
+                        <button
+                          style={{
+                            border: "1px solid #000",
+                            borderRadius: "5px",
+                            width: "100px",
+                            height: "50px",
+                          }}
+                          type="button"
+                          disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
+                          onClick={()=>onRefuseFunc(button._id)}
+                        >
+                          Từ chối 
+                        </button>
+                      </>
+                    );
+                  },
+                }
               ]}
               dataSource={getImport}
             ></Table>

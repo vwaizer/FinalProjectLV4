@@ -54,10 +54,10 @@ const RentForm = () => {
         result.status === 204
       )
       {
-        toast.error("You can not hired more one book")
+        toast.error("Bạn chỉ được phép thuê 1 quyển sách")
       }
       else{
-        toast.success("Rent Book Successfully")
+        toast.success("Thuê thành công")
       }
      
     } catch (error) {

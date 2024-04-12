@@ -138,6 +138,7 @@ const AccountInfo = ({ getUser }) => {
             className={inputStates.fullName ? "input-clicked" : "input-blur"}
             onClick={() => handleInputClick("fullName")}
             onBlur={() => handleInputBlur("fullName")}
+            maxLength={60}
           ></input>
         </Form.Item>
 
@@ -181,6 +182,8 @@ const AccountInfo = ({ getUser }) => {
             className={inputStates.phone ? "input-clicked" : "input-blur"}
             onClick={() => handleInputClick("phone")}
             onBlur={() => handleInputBlur("phone")}
+            maxLength={10}
+            minLength={8}
           ></input>
         </Form.Item>
 

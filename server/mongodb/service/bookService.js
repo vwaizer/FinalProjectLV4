@@ -20,7 +20,7 @@ export const deleteBook = async (req, res) => {
   return res.json(result);
 };
 export const addBook = async (req, res,next) => {
-  const imgUrl= await getAssetInfo(req.body.book[0].images[0])
+  const imgUrl= await getAssetInfo(req.body.book[0].images)
   // const imageTag = await createImageTag(req.body.book[0].images[0], colors[0][0], colors[1][0]);
   console.log("imgTag",imgUrl);
   const formatData=req.body.book.map((item,index)=>{
