@@ -34,21 +34,30 @@ export const deleteIMG= async(req,res)=>{
  
   return res.json({message})
 }
+const getAssesstSub=async(publicId)=>{
+  try {
+    // Get details about the asset
+    const result = await cloudinary.api.resource(publicId, options);
+    console.log(result);
+    return result.secure_url;
+    } catch (error) {
+    console.error(error);
+}
+}
 export const getAssetInfo = async (publicId) => {
 
   // Return colors in the response
   const options = {
     colors: true,
   };
-
-  try {
-      // Get details about the asset
-      const result = await cloudinary.api.resource(publicId, options);
-      console.log(result);
-      return result.secure_url;
-      } catch (error) {
-      console.error(error);
-  }
+  const imgList=publicId.map((item,index)=>{
+    if(item.length>0){
+      return getAssesstSub(item)
+    }
+   
+  })
+  return imgList
+  
 };
 export const createImageTag = (publicId, ...colors) => {
 
@@ -56,13 +65,15 @@ export const createImageTag = (publicId, ...colors) => {
   const [effectColor, backgroundColor] = colors;
 
   // Create an image tag with transformations applied to the src URL
-  let imageTag = cloudinary.image(publicId, {
-    transformation: [
-      { width: 250, height: 250, gravity: 'faces', crop: 'thumb' },
-      { radius: 'max' },
-      { effect: 'outline:10', color: effectColor },
-      { background: backgroundColor },
-    ],
+  let imageTag = publicId.map((item,index)=>{
+    return cloudinary.image(publicId, {
+      transformation: [
+        { width: 250, height: 250, gravity: 'faces', crop: 'thumb' },
+        { radius: 'max' },
+        { effect: 'outline:10', color: effectColor },
+        { background: backgroundColor },
+      ],
+    })
   });
 
   return imageTag;

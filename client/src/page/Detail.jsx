@@ -39,7 +39,7 @@ function Detail() {
     console.log(product);
     if (!ID) {
       console.error("Product ID is undefined");
-      toast.error("Product ID is undefined", {
+      toast.error("chưa có Product ID", {
         position: "top-right",
       });
       return;
@@ -55,25 +55,25 @@ function Detail() {
         });
         console.log(response);
         if (response.status == 200) {
-          toast.success(`Product added to cart successfully`, {
+          toast.success(`Thêm vào giỏ hàng thành công`, {
             position: "top-right",
           });
         } else {
           console.error(`Failed to add product to cart:`);
-          toast.error(`Failed to add product to cart`, {
+          toast.error(`Lỗi khi thêm vào giỏ hàng`, {
             position: "top-right",
           });
         }
       } else {
         console.error("User not logged in. Redirecting to signin page.");
-        toast.error("Please log in to add products to cart", {
+        toast.error("Đăng nhập lại !!!", {
           position: "top-right",
         });
         setTimeout(navigate("/sign-in"), 2000);
       }
     } catch (error) {
       console.error("Error adding product to cart:", error);
-      toast.error(`Error adding product to cart`, {
+      toast.error(`Lỗi Thêm hàng vào giỏ`, {
         position: "top-right",
       });
     }

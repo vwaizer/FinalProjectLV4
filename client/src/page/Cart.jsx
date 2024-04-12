@@ -243,6 +243,7 @@ function Cart() {
                                   onChange={(event) =>
                                     handleInputChange(event, bookID)
                                   }
+                                  maxLength={3}
                                 />
                                 <button
                                   onClick={() =>

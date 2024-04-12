@@ -7,12 +7,12 @@ const ButtonImport = ({record,method,value}) => {
         console.log(record);
         try {
           if(localStorage.getItem("staff") === "staff"){
-            const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Step 2"})
+            const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Đợi Admin"})
             console.log(result);
           }
           else if(localStorage.getItem("staff")=== "admin"){
             
-            const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Approve"})
+            const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Đồng ý"})
             const addBook=await http.post(`/staff/book`,record)
             console.log(addBook);
             console.log("result",result);
@@ -37,7 +37,7 @@ const ButtonImport = ({record,method,value}) => {
               
             }}
             type="button"
-            disabled={record.status==="Approve"?true:isClicked}
+            disabled={record.status==="Đồng ý"?true:isClicked}
             onClick={()=>onClickFunc(record)}
             
           >

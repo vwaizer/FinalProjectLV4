@@ -24,7 +24,7 @@ const [isClicked,setIsClicked]=useState(false);
   
   const onClickFunc=async(id)=>{
     try {
-      const result=await http.put(`/staff/hiredBook/${id}`,{status:"Accept"})
+      const result=await http.put(`/staff/hiredBook/${id}`,{status:"Đồng ý"})
       console.log(result);
       setIsClicked(!isClicked)
     } catch (error) {
@@ -32,6 +32,15 @@ const [isClicked,setIsClicked]=useState(false);
     }
       
     
+  }
+  const onRefuseFunc=async(id)=>{
+    try {
+      const result=await http.put(`/staff/hiredBook/${id}`,{status:"Từ chối"})
+      console.log(result);
+      setIsClicked(!isClicked)
+    } catch (error) {
+      console.log(error);
+    }
   }
   return (
     <Space size={"middle"} direction="vertical" wrap>
@@ -83,10 +92,34 @@ const [isClicked,setIsClicked]=useState(false);
                       height: "50px",
                     }}
                     type="button"
-                    disabled={button.status === "Accept"?true:false}
+                    disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
                     onClick={()=>onClickFunc(button._id)}
                   >
                     Check
+                  </button>
+                </>
+              );
+            },
+          },
+          {
+            title: "",
+            dataIndex: "",
+            render: (button) => {
+              console.log(button);
+              return (
+                <>
+                  <button
+                    style={{
+                      border: "1px solid #000",
+                      borderRadius: "5px",
+                      width: "100px",
+                      height: "50px",
+                    }}
+                    type="button"
+                    disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
+                    onClick={()=>onRefuseFunc(button._id)}
+                  >
+                    Từ chối 
                   </button>
                 </>
               );

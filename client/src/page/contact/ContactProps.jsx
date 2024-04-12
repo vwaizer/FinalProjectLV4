@@ -9,6 +9,7 @@ const ContactProps = ({ title, Type, Placeholder }) => {
           class="C-textbox--simple"
           type={Type}
           placeholder={Placeholder}
+          maxLength={60}
         />
       </div>
     </div>

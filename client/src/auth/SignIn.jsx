@@ -126,7 +126,7 @@ const SignIn = () => {
                 onChange={(e) => {console.log(e.target.value);;setPwd(e.target.value)}}
                 value={pwd}
                 required
-                
+                maxLength={16}
               />
               <FaLock className="icon" />
             </div>

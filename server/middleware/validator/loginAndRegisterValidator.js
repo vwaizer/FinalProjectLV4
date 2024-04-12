@@ -99,17 +99,17 @@ export const loginValidator = validator(
             });
 
             // if (isUserExist) {
-            //   if(isUserExist.verifyToken == "verified"){
+            //   if(isUserExist.verifyToken == "Đã xác thực"){
             //     return true;
             //   } 
             //   else{
-            //     throw new Error("Email is not verified")
+            //     throw new Error("Email chưa xác thực")
             //   }
               
 
             // } else {
 
-            //   throw new Error("Email is not registered");
+            //   throw new Error("Email chưa đăng ký");
 
             // }
           },
