@@ -47,7 +47,7 @@ const UserPage = () => {
           }}
         >
           <div className="title-user-info">TÀI KHOẢN</div>
-          <div style={{ padding: "0px 10px" }}>
+          <div className="space-title">
             <div
               className={
                 selectedItem === "account-info"

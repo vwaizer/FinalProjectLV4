@@ -2,6 +2,7 @@ import { Form } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { http } from "../util/http";
+import AddLocationAltRoundedIcon from "@mui/icons-material/AddLocationAltRounded";
 import { ToastContainer, toast } from "react-toastify";
 const AddressEdit = () => {
   const [cities, setCities] = useState([]);
@@ -135,12 +136,13 @@ const AddressEdit = () => {
             address: addressSelected.address,
             district: addressSelected.district,
             city: addressSelected.city,
+            ward: addressSelected.ward,
             phone: inputInforUser.phone,
             fullName: inputInforUser.fullName,
           },
         })
         .then(() => {
-          console.log("Thêm địa chỉ thành công ");
+          // console.log("Thêm địa chỉ thành công ");
           toast.success("Thêm địa chỉ thành công");
           http
             .get("/user/detailUser")
@@ -156,15 +158,27 @@ const AddressEdit = () => {
       // thông tin sdt và họ tên của user
       console.log(inputInforUser);
     } catch (error) {
-      // Xử lý lỗi nếu biểu mẫu không hợp lệ
       console.log("Validation error:", error);
     }
   };
   const deleteAddress = async (index) => {
-    console.log("index", index);
     try {
       const result =await http.delete(`/user/deleteAddress/${index}`);
       setIsDeleted(!isDeleted)
+      const defaultAddress = JSON.parse(localStorage.getItem("defaultAddress"));
+  
+      if (JSON.stringify(getUser.address[index]) === JSON.stringify(defaultAddress)) {
+        localStorage.removeItem("defaultAddress");
+        console.log('đã xóa')
+      }
+  
+      await http.post(`/user/deleteAddress/${index}`);
+  
+      // if (getUser.address.length > 0) {
+      //   setDefaultAddress(0);
+      // } else {
+      //   localStorage.removeItem("defaultAddress");
+      // }
     } catch (err) {
       console.log(err);
     }
@@ -333,8 +347,8 @@ const AddressEdit = () => {
           </div>
           <div className="line"></div>
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <button onClick={onClick} className="save-address-info">
-              Lưu địa chỉ
+            <button onClick={onClick} className="add-address-info">
+              Thêm địa chỉ
             </button>
           </div>
         </div>
@@ -348,58 +362,71 @@ const AddressEdit = () => {
           <div className="line"></div>
         </div>
         <div>
-          <div>
-            {isLoading ? (
-              <p>Loading...</p>
-            ) : (
-              getUser.address.map((userAddress, index) => {
-                const { address, district, city, phone, fullName } =
-                  userAddress;
-                return (
-                  <div className="list-address" key={userAddress.id}>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <div style={{ marginBottom: "15px" }}>
+          {isLoading ? (
+            <p>Loading...</p>
+          ) : (
+            <>
+              {getUser.address.length ? (
+                <div>
+                  {getUser.address.map((userAddress, index) => {
+                    const { address, district, city, phone, fullName } =
+                      userAddress;
+                    return (
+                      <div className="list-address" key={userAddress.id}>
                         <div
-                          style={{ alignItems: "center", lineHeight: "1.2" }}
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                          }}
                         >
-                          <span style={{ fontSize: "18px", color: "black" }}>
-                            {fullName}{" "}
-                          </span>{" "}
-                          | <span style={{}}>{phone}</span>
+                          <div style={{ marginBottom: "15px" }}>
+                            <div
+                              style={{
+                                alignItems: "center",
+                                lineHeight: "1.2",
+                              }}
+                            >
+                              <span
+                                style={{ fontSize: "18px", color: "black" }}
+                              >
+                                {fullName}{" "}
+                              </span>{" "}
+                              | <span style={{}}>{phone}</span>
+                            </div>
+                            <div>{address}</div>
+                            <div>{`${district}, ${city}`}</div>
+                          </div>
+                          <div
+                            className="delete-default-address"
+                          >
+                            <div className="delete-address" onClick={() => deleteAddress(index)}>
+                              {" "}
+                              <u>Xóa địa chỉ</u>
+                            </div>
+                            <div className="default-address" onClick={() => setDefaultAddress(index)}>
+                              <u>Đặt làm địa chỉ mặc định</u>
+                            </div>
+                          </div>
                         </div>
-                        <div>{address}</div>
-                        <div>{`${district}, ${city}`}</div>
+                        <div className="line"></div>
                       </div>
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "space-around",
-                          flexDirection: "column",
-                          textAlign: "end",
-                          marginBottom: "15px",
-                        }}
-                      >
-                        <div onClick={() => deleteAddress(index)}>
-                          {" "}
-                          <u>Xóa địa chỉ</u>
-                        </div>
-                        <div onClick={() => setDefaultAddress(index)}>
-                          <u>Đặt làm địa chỉ mặc định</u>
-                        </div>
-                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <div style={{ margin: "50px" }}>
+                    <div style={{ textAlign: "center" }}>
+                      <AddLocationAltRoundedIcon
+                        style={{ fontSize: "100px", color: "#d7d7d7" }}
+                      ></AddLocationAltRoundedIcon>
                     </div>
-
-                    <div className="line"></div>
+                    <div className="unAddress">Bạn chưa có địa chỉ.</div>
                   </div>
-                );
-              })
-            )}
-          </div>
+                </div>
+              )}
+            </>
+          )}
         </div>
       </div>
     </div>
