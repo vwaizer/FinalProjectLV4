@@ -30,7 +30,7 @@ const ModalCart = () => {
   return (
     <div>
       <Badge count={0}>
-        <Button className="button-header" type="primary" onClick={showModal}>
+        <Button className="button-header" type="button" onClick={showModal}>
           <FaShoppingCart />
         </Button>
         <Modal

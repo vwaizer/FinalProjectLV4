@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import {
   Bill,
   BookRentalManagement,
@@ -7,7 +7,6 @@ import {
   Overview,
   StaffAndUser,
 } from "./index.js";
-import LayoutAdmin from "./layout-admin/LayoutAdmin.jsx";
 import Staff from "./staff-only/Staff.jsx";
 
 const AdminRoute = () => {

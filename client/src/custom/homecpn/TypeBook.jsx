@@ -1,13 +1,17 @@
-import React from 'react'
-import './style.css';
+import React from "react";
+import "./style.css";
 
-const TypeBook = ({href, image, alt,title}) => {
+const TypeBook = ({ href, image, alt, title }) => {
   return (
-    <>
-      <a href={href}><img src={image} alt={alt} /></a>
-      <p className='type-book'>{title}</p>
-    </>
-  )
-}
+    <div className="type-book">
+      <a href={href}>
+        <img src={image} alt={alt} />
+        <div className="description">
+          <h2>{title}</h2>
+        </div>
+      </a>
+    </div>
+  );
+};
 
-export default TypeBook
+export default TypeBook;

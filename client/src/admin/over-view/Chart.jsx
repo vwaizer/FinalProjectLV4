@@ -27,10 +27,10 @@ const ChartBar = () => {
   return (
     <div className="chart">
       <h3>Thống kê các thể loại sách</h3>
-      <Chart
+      <Chart 
         type="pie"
         width={700}
-        height={600}
+        height={500}
         series={amount}
         options={{
           noData: { text: "Empty Data" },

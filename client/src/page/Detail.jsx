@@ -104,7 +104,7 @@ function Detail() {
           return (
             <div key={item._id} className="detail">
               <div className="detail_image">
-                <img src={item.images} alt="detail-image" />
+                <img src={item.images} alt="detail" />
               </div>
               <div className="detail_info">
                 <div className="detail_title">

@@ -5,5 +5,53 @@
 }
 
 .statisfy{
-    width: 800px;
+    width: 400px;
+}
+
+@media screen and (max-width: 1050px){
+    .wrap-overview{
+        flex-direction: column;
+    }
+    .custom-chart{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .wrap-overview{
+        flex-direction: column;
+    }
+    .custom-chart{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .wrap-overview{
+        flex-direction: column;
+    }
+    .custom-chart{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .wrap-overview{
+        flex-direction: column;
+    }
+    .custom-chart{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }

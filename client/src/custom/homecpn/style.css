@@ -1,5 +1,44 @@
+.type-book {
+  width: 250px;
+  min-height: 300px;
+  position: relative;
+  border: none;
+}
 
-.type-book{
-    text-align: center;
-    font-size: 16px;
+.type-book a {
+  text-decoration: none;
+  color: black;
+}
+
+.type-book img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.5s ease;
+}
+
+.type-book img:hover {
+  filter: drop-shadow(0 0 5px grey);
+  transform: scale(1.1);
+}
+
+.description {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.description h2 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 20px;
+  color: brown;
+  transition: 0.5s ease;
+}
+
+.description h2:hover {
+  transform: scale(1.1);
+  color: rgb(247, 185, 70);
 }

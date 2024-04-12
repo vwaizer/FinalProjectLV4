@@ -21,12 +21,8 @@ function Products() {
   window.scrollTo(0, "smooth");
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
-  // const [getAuthor, setGetAuthor] = useState([]);
-  // const [getPublisher, setGetPublisher] = useState([]);
   const [search, setSearch] = useState([]);
-  // const [valuePublisher, setValuePublisher] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  // const [postPerPage, setPostPerPage] = useState(32);
   const [loading, setLoading] = useState(false);
   const [filterUrl, setFIlterUrl] = useState("");
   useEffect(() => {
@@ -140,12 +136,10 @@ function Products() {
               .filter((value) => {
                 if (search === "") {
                   return value;
-                } else if (
-                  value.author.toLowerCase().includes(search)
-                ) {
+                } else if (value.author.toLowerCase().includes(search)) {
                   return value;
                 }
-                console.log(value)
+                console.log(value);
               })
               .map((item, index) => {
                 if (item !== null) {

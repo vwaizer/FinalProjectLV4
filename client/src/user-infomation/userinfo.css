@@ -3,17 +3,17 @@
     width: 60px;
     height: 30px;
     border-radius: 5px;
-    background-color: brown;
+    background-color: transparent;
     transition: 0.3s ease;
 }
 
 .user_button .icon{
-    color: #fff;
+    color: brown;
     font-size: 15px;
     padding-bottom: 2px;
 }
 .user_button:hover{
-    background-color: green
+    background-color: #f0f0f0
 }
 .select-container{
     display: flex;

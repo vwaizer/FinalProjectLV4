@@ -47,7 +47,7 @@ const Overview = () => {
     <>
       <Space direction="vertical">
         <Typography.Title level={4}>Tổng Quan</Typography.Title>
-        <Space direction="horizontal">
+        <Space className="wrap-overview" direction="horizontal">
           <OverviewCustom
             icon={
               <CiMoneyBill
@@ -94,11 +94,8 @@ const Overview = () => {
             value={book.bookNumber}
           />
         </Space>
-        <Space>
+        <Space className="custom-chart">
           <Statify />
-        </Space>
-        <hr></hr>
-        <Space>
           <ChartBar />
         </Space>
       </Space>

@@ -12,12 +12,14 @@
 }
 
 .button-header{
-    background-color: brown;
-    color: #fff;
+    color: brown;
+    border: none;
+    background: none;
+    outline: none;
     transition: 0.3s ease;
     width: 60px;
 }
 
 .button-header:hover{
-    background-color: blue;
+    background-color: #f0f0f0;
 }

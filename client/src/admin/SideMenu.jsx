@@ -1,12 +1,11 @@
 import { Menu } from "antd";
-import {useNavigate} from "react-router-dom"
 import React from "react";
-import { GrOverview } from "react-icons/gr";
 import { CiImport, CiMoneyBill } from "react-icons/ci";
 import { FaUserGroup } from "react-icons/fa6";
-import { FcStatistics } from "react-icons/fc";
+import { GrOverview } from "react-icons/gr";
 import { PiBooksBold } from "react-icons/pi";
-import "./admin.css"
+import { useNavigate } from "react-router-dom";
+import "./admin.css";
 const SideMenu = () => {
 
     const navigate = useNavigate();

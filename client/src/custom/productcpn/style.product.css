@@ -27,7 +27,7 @@
 
 .setproduct_custom:hover{
     cursor: pointer;
-    filter: drop-shadow(0 0 15px grey);
+    filter: drop-shadow(0 0 10px grey);
     color: rgb(247, 185, 70);
 }
 

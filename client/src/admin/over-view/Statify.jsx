@@ -18,6 +18,7 @@ const Statify = () => {
   return (
     <div>
       <Space size={"large"} direction="vertical">
+        <h1>Bảng Thống Kê</h1>
         <Table
           className="statisfy"
           columns={[
