@@ -45,20 +45,6 @@ function Products() {
   const getFilterType = (type) => {
     const encodeType = encodeURI(type);
     setFIlterUrl(`type=${encodeType}`);
-
-    // http
-    //     .get(`/book/?type=${encodeType}`)
-    //     .then((getBook) => {
-    //       setGetBook(getBook.data);
-    //     })
-    //     .catch((err) => {
-    //       console.log(err);
-
-    //       toast.error(err.code);
-    //       setTimeout(() => {
-    //         window.location.href = "/sign-in";
-    //       }, 2000);
-    //     });
   };
   useEffect(() => {
     http
