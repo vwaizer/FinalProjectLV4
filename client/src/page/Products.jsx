@@ -21,10 +21,11 @@ function Products() {
   window.scrollTo(0, "smooth");
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
-  const [filterName, setFilterName] = useState([]);
+  const [filterName, setFilterName] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [filterUrl, setFIlterUrl] = useState("");
+
   useEffect(() => {
     setLoading(true);
     http
@@ -46,34 +47,35 @@ function Products() {
     const encodeType = encodeURI(type);
     setFIlterUrl(`type=${encodeType}`);
   };
+  let timeOut = null;
 
   useEffect(() => {
+    clearTimeout(timeOut);
     setLoading(true);
-    const url =
-      `/book/?page=${currentPage}` +
-      (filterName.length > 0 ? `&name=${encodeURI(filterName)}` : "");
-    console.log(url);
-    http
-      .get(url)
-      .then((getBook) => {
-        setGetBook(getBook.data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.log(err);
+    timeOut = setTimeout(() => {
+      const url =
+        `/book/?page=${currentPage}` +
+        (filterName.length > 0 ? `&name=${encodeURI(filterName)}` : "");
+      console.log(url);
+      http
+        .get(url)
+        .then((getBook) => {
+          setGetBook(getBook.data);
+          setLoading(false);
+        })
+        .catch((err) => {
+          console.log(err);
 
-        toast.error(err.code);
-        setTimeout(() => {
-          window.location.href = "/sign-in";
-        }, 2000);
-      });
+          toast.error(err.code);
+          setTimeout(() => {
+            window.location.href = "/sign-in";
+          }, 2000);
+        });
+    }, 1000);
   }, [currentPage, filterName]);
 
-  console.table(getBook);
-  let timeOut = null;
-  const getFilterName = (name) => {
-    console.log(name);
-    setFilterName(`${name}`);
+  const getFilterName = (e) => {
+    setFilterName(e.target.value);
   };
 
   useEffect(() => {
@@ -138,11 +140,7 @@ function Products() {
               <input
                 type="text"
                 value={filterName}
-                onChange={(e) => {
-                  console.log(e.target.value);
-                  getFilterName(e.target.value);
-                 
-                }}
+                onChange={getFilterName}
                 placeholder="Tên tác giả"
               />
             </div>
@@ -176,7 +174,7 @@ function Products() {
           previousLabel={"<"}
           nextLabel={">"}
           breakLabel={"..."}
-          pageCount={getBook.length}
+          pageCount={getBook.length / 32}
           marginPagesDisplayed={2}
           pageRangeDisplayed={4}
           onPageChange={handlePageClick}
