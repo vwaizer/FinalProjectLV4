@@ -274,15 +274,28 @@ export const getComment=async(req,res,next)=>{
   }
 }
 export const setComment=async(req,res,next)=>{
+ 
   const userID=req.userID;
   const bookID=req.params.ID;
+  console.log("id",bookID);
   const body=new Comment({userId:userID,rate:req.body.rate,bookId:bookID});
  
-  
-  try {
-    const result=await databaseProject.comment.insertOne({body})
+  console.log(body);
+  const data=await databaseProject.comment.findOne({bookId: new ObjectId(bookID)})
+  if(data){
+    const result=await databaseProject.comment.updateOne({bookId:new ObjectId(bookID)},{$set:{...body}})
+    
     return res.json(result)
-  } catch (error) {
-    return next(error)
   }
+  else{
+    try {
+
+      const result=await databaseProject.comment.insertOne({...body})
+      
+      return res.json(result)
+    } catch (error) {
+      return next(error)
+    }
+  }
+  
 }

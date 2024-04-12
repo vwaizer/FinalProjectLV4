@@ -10,7 +10,9 @@ const AddressEdit = () => {
   const [selectedDistrict, setSelectedDistrict] = useState("");
   const [wards, setWards] = useState([]);
   const [selectedWard, setSelectedWard] = useState("");
-  console.log();
+  const [getUser, setUser] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     axios
       .get(
@@ -18,12 +20,22 @@ const AddressEdit = () => {
       )
       .then((response) => {
         setCities(response.data);
-        console.log("city", response.data);
+        // console.log("city", response.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
+  useEffect(() => {
+    http
+      .get("/user/detailUser")
+      .then((getUser) => {
+        setUser(getUser.data);
+        setIsLoading(false);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  console.log("thong tin user", getUser);
   const initAddressSelect = {
     city: "",
     district: "",
@@ -82,7 +94,7 @@ const AddressEdit = () => {
         span: 24,
       },
       sm: {
-        span:9,
+        span: 9,
       },
     },
   };
@@ -126,9 +138,18 @@ const AddressEdit = () => {
             fullName: inputInforUser.fullName,
           },
         })
+        .then(() => {
+          console.log("Thêm địa chỉ thành công ");
+          toast.success("Thêm địa chỉ thành công");
+          http
+            .get("/user/detailUser")
+            .then((response) => {
+              setUser(response.data);
+            })
+            .catch((error) => console.log(error));
+        })
         .catch((error) => console.log(error));
 
-      toast.success("Thêm địa chỉ thành công");
       // setTimeout(() => (window.location.href = "/"), 2000);
 
       // thông tin sdt và họ tên của user
@@ -138,162 +159,245 @@ const AddressEdit = () => {
       console.log("Validation error:", error);
     }
   };
+  const deleteAddress = async (index) => {
+    console.log("index", index);
+    try {
+      await http.post(`/user/deleteAddress/${index}`);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  const setDefaultAddress = (index) => {
+    const defaultAddress = getUser.address[index];
+    localStorage.setItem('defaultAddress', JSON.stringify(defaultAddress));
+    };
   return (
-    <div style={{ width: "100%", backgroundColor:'#fff' }}>
-      <div className="page-title" >
-        <h1>
-          THÊM ĐỊA CHỈ MỚI
-        </h1>
-        <div className="line"></div>
-        <div
-         className="address-edit-container"
-        >
-          <div>
-            <Form form={formUser} {...formItemLayout}>
-              <Form.Item
-                label="Họ và Tên"
-                name="fullName"
-                rules={[
-                  {
-                    required: true,
-                    message: "Thông tin này không được để trống",
-                  },
-                ]}
-              >
-                <input
-                  value={inputInforUser.fullName}
-                  onChange={(e) => handleChange("fullName", e)}
-                  className="input-info-changed"
-                  type="text"
-                ></input>
-              </Form.Item>
+    <div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      <div style={{ width: "100%", backgroundColor: "#fff" }}>
+        <div className="page-title">
+          <h1>THÊM ĐỊA CHỈ MỚI</h1>
+          <div className="line"></div>
+          <div className="address-edit-container">
+            <div>
+              <Form form={formUser} {...formItemLayout}>
+                <Form.Item
+                  label="Họ và Tên"
+                  name="fullName"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống",
+                    },
+                  ]}
+                >
+                  <input
+                    value={inputInforUser.fullName}
+                    onChange={(e) => handleChange("fullName", e)}
+                    className="input-info-changed"
+                    type="text"
+                  ></input>
+                </Form.Item>
 
-              <Form.Item
-                label="Số điện thoại"
-                name="phone"
-                rules={[
-                  {
-                    required: true,
-                    message: "Thông tin này không được để trống",
-                  },
-                ]}
-              >
-                <input
-                  value={inputInforUser.phone}
-                  onChange={(e) => handleChange("phone", e)}
-                  className="input-info-changed"
-                  type="text"
-                ></input>
-              </Form.Item>
-            </Form>
+                <Form.Item
+                  label="Số điện thoại"
+                  name="phone"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống",
+                    },
+                  ]}
+                >
+                  <input
+                    value={inputInforUser.phone}
+                    onChange={(e) => handleChange("phone", e)}
+                    className="input-info-changed"
+                    type="text"
+                  ></input>
+                </Form.Item>
+              </Form>
+            </div>
+            <div>
+              <Form form={formAddress} {...formItemLayout}>
+                <Form.Item
+                  label="Thành phố"
+                  name="city"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống",
+                    },
+                  ]}
+                >
+                  <div>
+                    <select
+                      className="select-list"
+                      value={selectedCity}
+                      onChange={handleCityChange}
+                    >
+                      <option value="">Vui lòng chọn</option>
+                      {cities.map((city) => (
+                        <option key={city.Id} value={city.Id}>
+                          {city.Name}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </Form.Item>
+
+                <Form.Item
+                  label="Quận/huyện"
+                  name="district"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống",
+                    },
+                  ]}
+                >
+                  <div>
+                    <select
+                      className="select-list"
+                      value={selectedDistrict}
+                      onChange={handleDistrictChange}
+                    >
+                      <option value="">Vui lòng chọn</option>
+                      {districts.map((district) => (
+                        <option key={district.Id} value={district.Id}>
+                          {district.Name}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </Form.Item>
+
+                <Form.Item
+                  label="Phường/Xã"
+                  name="ward"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống",
+                    },
+                  ]}
+                >
+                  <div>
+                    <select
+                      className="select-list"
+                      value={selectedWard}
+                      onChange={handleWardChange}
+                    >
+                      <option value="">Vui lòng chọn</option>
+                      {wards.map((ward) => (
+                        <option key={ward.Id} value={ward.Id}>
+                          {ward.Name}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </Form.Item>
+
+                <Form.Item
+                  label="Địa chỉ"
+                  name="address"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống",
+                    },
+                  ]}
+                >
+                  <input
+                    value={fillAddress}
+                    onChange={(event) => handleFillAddress(event)}
+                    className="input-info-changed"
+                    type="text"
+                  ></input>
+                </Form.Item>
+              </Form>
+            </div>
           </div>
-          <div>
-            <Form form={formAddress} {...formItemLayout}>
-              <Form.Item
-                label="Thành phố"
-                name="city"
-                rules={[
-                  {
-                    required: true,
-                    message: "Thông tin này không được để trống",
-                  },
-                ]}
-              >
-                <div>
-                  <select
-                    className="select-list"
-                    value={selectedCity}
-                    onChange={handleCityChange}
-                  >
-                    <option value="">Vui lòng chọn</option>
-                    {cities.map((city) => (
-                      <option key={city.Id} value={city.Id}>
-                        {city.Name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </Form.Item>
-
-              <Form.Item
-                label="Quận/huyện"
-                name="district"
-                rules={[
-                  {
-                    required: true,
-                    message: "Thông tin này không được để trống",
-                  },
-                ]}
-              >
-                <div>
-                  <select
-                    className="select-list"
-                    value={selectedDistrict}
-                    onChange={handleDistrictChange}
-                  >
-                    <option value="">Vui lòng chọn</option>
-                    {districts.map((district) => (
-                      <option key={district.Id} value={district.Id}>
-                        {district.Name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </Form.Item>
-
-              <Form.Item
-                label="Phường/Xã"
-                name="ward"
-                rules={[
-                  {
-                    required: true,
-                    message: "Thông tin này không được để trống",
-                  },
-                ]}
-              >
-                <div>
-                  <select
-                    className="select-list"
-                    value={selectedWard}
-                    onChange={handleWardChange}
-                  >
-                    <option value="">Vui lòng chọn</option>
-                    {wards.map((ward) => (
-                      <option key={ward.Id} value={ward.Id}>
-                        {ward.Name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </Form.Item>
-
-              <Form.Item
-                label="Địa chỉ"
-                name="address"
-                rules={[
-                  {
-                    required: true,
-                    message: "Thông tin này không được để trống",
-                  },
-                ]}
-              >
-                <input
-                  value={fillAddress}
-                  onChange={(event) => handleFillAddress(event)}
-                  className="input-info-changed"
-                  type="text"
-                ></input>
-              </Form.Item>
-            </Form>
+          <div className="line"></div>
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <button onClick={onClick} className="save-address-info">
+              Lưu địa chỉ
+            </button>
           </div>
         </div>
-        <div
-          className="line"
-        ></div>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <button onClick={onClick} className="save-address-info">
-            Lưu địa chỉ
-          </button>
+      </div>
+
+      <div
+        style={{ width: "100%", backgroundColor: "#fff", marginTop: "20px" }}
+      >
+        <div className="page-title">
+          <h1>ĐỊA CHỈ CỦA TÔI</h1>
+          <div className="line"></div>
+        </div>
+        <div>
+          <div>
+            {isLoading ? (
+              <p>Loading...</p>
+            ) : (
+              getUser.address.map((userAddress, index) => {
+                const { address, district, city, phone, fullName } =
+                  userAddress;
+                return (
+                  <div className="list-address" key={userAddress.id}>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <div style={{ marginBottom: "15px" }}>
+                        <div
+                          style={{ alignItems: "center", lineHeight: "1.2" }}
+                        >
+                          <span style={{ fontSize: "18px", color: "black" }}>
+                            {fullName}{" "}
+                          </span>{" "}
+                          | <span style={{}}>{phone}</span>
+                        </div>
+                        <div>{address}</div>
+                        <div>{`${district}, ${city}`}</div>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-around",
+                          flexDirection: "column",
+                          textAlign: "end",
+                          marginBottom: "15px",
+                        }}
+                      >
+                        <div onClick={() => deleteAddress(index)}>
+                          {" "}
+                          <u>Xóa địa chỉ</u>
+                        </div>
+                        <div onClick={() => setDefaultAddress(index)}>
+                          <u>Đặt làm địa chỉ mặc định</u>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="line"></div>
+                  </div>
+                );
+              })
+            )}
+          </div>
         </div>
       </div>
     </div>

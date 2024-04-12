@@ -13,10 +13,16 @@ const Admin = ({onClick}) => {
   const [errMessage, setErrMessage] = useState("");
   const handleSubmit =async (e) => {
     if (username === "admin" && password === "123456789") {
+      toast.success("Đăng nhập thành công", {
+        position: "top-right",
+    });
       localStorage.setItem("staff", username)
       window.location.href = "/adminpage"
     } 
     else if(username === "staff" && password === "123456789"){
+      toast.success("Đăng nhập thành công", {
+        position: "top-right",
+    });
       localStorage.setItem("staff", username)
       window.location.href = "/adminpage"
     }
@@ -32,7 +38,7 @@ const Admin = ({onClick}) => {
         if (result.data.message) {
           console.log(result.data);
          
-          localStorage.setItem("accessToken", result.data.accessToken);
+    
           localStorage.setItem("staff", "staff")
           toast.success("Đăng nhập thành công", {
             position: "top-right",

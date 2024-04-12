@@ -1,4 +1,4 @@
-import { ObjectId } from "bson";
+import { ObjectId } from "mongodb";
 
 export class User {
   constructor(user) {
@@ -11,7 +11,7 @@ export class User {
       (this.role=user.role || "user"),
       (this.avatar= user.avatar||""),
       this.verifyToken=user.verifyToken,
-      this.address=user.address || [""]
+      this.address=user.address || []
   }
 }
 export class Books {

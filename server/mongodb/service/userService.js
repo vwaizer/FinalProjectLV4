@@ -88,3 +88,19 @@ export const changeAddress=async(req,res,next)=>{
     return next(error)
   }
 }
+export const deleteAddress=async(req,res,next)=>{
+  const index=req.params.ID;
+  console.log("index",index);
+  const userData=await databaseProject.users.findOne({_id:req.userID})
+  console.log(userData);
+  const oldData=userData.address
+  if(index<oldData.length){
+    const newAddress=oldData.splice(index,1)
+    try {
+      const result =await databaseProject.users.updateOne({_id:req.userID},{$set:{address:newAddress}})
+      return res.json(result)
+    } catch (error) {
+     return next(error) 
+    }
+  }
+}
