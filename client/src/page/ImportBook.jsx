@@ -132,7 +132,7 @@ const ImportBook = () => {
             <Form.List name="items">
               {(fields, { add, remove }) => (
                 <div
-                  key={fields.name + 1}
+                  key={fields.name }
                   style={{
                     display: "flex",
                     rowGap: 16,
@@ -140,9 +140,9 @@ const ImportBook = () => {
                     
                   }}
                 >
-                  <Button type="dashed" onClick={() => add()} block>
+                  {/* <Button type="dashed" onClick={() => add()} block>
               + Add Item
-            </Button>
+            </Button> */}
                   {/* <Button type="dashed" onClick={() => add()} block>
                     + Add Item
                   </Button> */}
@@ -152,17 +152,9 @@ const ImportBook = () => {
                         size="default"
                         title={`Item ${field.name + 1}`}
                         key={field.key}
-                        extra={
-                          <CloseOutlined
-                            onClick={() => {
-                              console.log(field.name);
-                              remove(field.name);
-                            }}
-                          />
-                        }
                       >
                         <Form.Item
-                          label="Name"
+                          label="Tên"
                           name={[field.name, "name"]}
                           required
                           style={{width:"100%"}}
@@ -171,7 +163,7 @@ const ImportBook = () => {
                             onChange={(e) =>
                               form.setFieldValue("name", e.target.value.trim())
                             }
-                            
+                            maxLength={36}
                           />
                         </Form.Item>
                         <Form.Item
@@ -183,10 +175,11 @@ const ImportBook = () => {
                             onChange={(e) =>
                               form.setFieldValue("type", e.target.value.trim())
                             }
+                            maxLength={36}
                           />
                         </Form.Item>
                         <Form.Item
-                          label="Author"
+                          label="Tác giả"
                           name={[field.name, "author"]}
                           required
                         >
@@ -194,10 +187,11 @@ const ImportBook = () => {
                             onChange={(e) =>
                               form.setFieldValue("author", e.target.value.trim())
                             }
+                            maxLength={36}
                           />
                         </Form.Item>
                         <Form.Item
-                          label="Publisher"
+                          label="NXB"
                           name={[field.name, "publisher"]}
                           required
                         >
@@ -205,10 +199,11 @@ const ImportBook = () => {
                             onChange={(e) =>
                               form.setFieldValue("publisher", e.target.value.trim())
                             }
+                            maxLength={36}
                           />
                         </Form.Item>
                         <Form.Item
-                          label="price"
+                          label="Giá"
                           name={[field.name, "price"]}
                           required
                         >
@@ -217,10 +212,12 @@ const ImportBook = () => {
                               form.setFieldValue("price", e.target.value)
                             }
                             type="number"
+                            min={0}
+                            maxLength={3}
                           />
                         </Form.Item>
                         <Form.Item
-                          label="amount"
+                          label="Số Lượng"
                           name={[field.name, "amount"]}
                           required
                         >
@@ -229,6 +226,8 @@ const ImportBook = () => {
                               form.setFieldValue("amount", e.target.value)
                             }
                             type="number"
+                            min={0}
+                            maxLength={3}
                           />
                         </Form.Item>
                         <Form.Item label="img" name={[field.name, "img"]}>
@@ -244,8 +243,8 @@ const ImportBook = () => {
                           submitBook(form, myImage, e);
                           setTimeout(() => {
                             form.resetFields();
-                            remove(field.name);
-                          }, 2000);
+                            
+                          }, 1000);
                         }}
                         block
                       >

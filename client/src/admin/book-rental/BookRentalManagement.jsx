@@ -12,7 +12,7 @@ const [isClicked,setIsClicked]=useState(false);
       .then((getHireBook) => {
         const formatData=getHireBook.data.map((item,index)=>{
           console.log(item);
-          return {...item,dateIn:new Date(item.dateIn).toLocaleDateString(),dateOut:new Date(item.dateOut).toLocaleDateString(),bookName:item?.bookData[0]?.name,userEmail:item?.user[0]?.email,index}
+          return {...item,dateIn:new Date(item.dateIn).toLocaleDateString(),dateOut:new Date(item.dateOut).toLocaleDateString(),bookName:item?.bookData[0]?.name,userEmail:item?.user[0]?.email,index:index+1}
         })
         setGetHireBook(formatData)
       })
