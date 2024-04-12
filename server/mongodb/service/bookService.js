@@ -72,14 +72,14 @@ export const getAllBook = (data, page) => {
   console.log(data.length);
   // const data = await databaseProject.book.find({}).toArray();
   if (page) {
-    const result = data.filter((item, index) => {
+    const result = data.map((item, index) => {
       if (index >= (Number(page) - 1) * 32) {
         if (index < Number(page) * 32) {
           return item;
         }
       }
     });
-
+    console.log(result);
     return result;
   }
 
@@ -117,32 +117,41 @@ export const getFilterBook = async (req, res, next) => {
       return res.json(getAllBook(data, query.page));
     } else {
       console.log(query);
-      let findObject = {};
+      let findObject = [];
       if (query.publisher) {
-        findObject = rawData.filter((item,index)=>{
+        findObject.push( rawData.filter((item,index)=>{
           if(item.publisher.includes(query.publisher))
           {
             return item
           }
-        })
+        }))
       }
       if (query.type) {
-        findObject = rawData.filter((item,index)=>{
+        findObject.push( rawData.filter((item,index)=>{
           if(item.type.includes(query.type))
           {
             return item
           }
-        })
+        }))
       }
       if (query.author) {
-        findObject = rawData.filter((item,index)=>{
+        findObject.push( rawData.filter((item,index)=>{
           if(item.author.includes(query.author))
           {
             return item
           }
-        })
+        }))
       }
-      return res.json(getAllBook(filterData,query.page));
+      if (query.name) {
+        findObject.push( rawData.filter((item,index)=>{
+          if(item.name.includes(query.name))
+          {
+            return item
+          }
+        }))
+      }
+      console.log(findObject);
+      return res.json(getAllBook(findObject[0],query.page));
     }
   } else {
     next("Missing query");
