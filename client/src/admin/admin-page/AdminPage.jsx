@@ -10,7 +10,7 @@ const AdminPage = () => {
           width={100}
           src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg"
         ></Image>
-        <Typography.Title>ADMIN PAGE</Typography.Title>
+        <Typography.Title>ADMINISTRATION</Typography.Title>
         <Space>
           <Badge count={0} dot>
             <FaRegBell style={{ fontSize: 30}} />

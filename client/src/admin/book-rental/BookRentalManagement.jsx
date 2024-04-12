@@ -36,7 +36,7 @@ const [isClicked,setIsClicked]=useState(false);
   return (
     <Space size={"middle"} direction="vertical" wrap>
       <Typography.Title level={4}>Thông Tin Thuê Sách</Typography.Title>
-      <Table
+      <Table className="rental"
         columns={[
           {
             title: "STT",
