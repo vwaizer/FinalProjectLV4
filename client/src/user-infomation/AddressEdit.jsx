@@ -12,7 +12,7 @@ const AddressEdit = () => {
   const [selectedWard, setSelectedWard] = useState("");
   const [getUser, setUser] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
+  const [isDeleted,setIsDeleted]=useState(false)
   useEffect(() => {
     axios
       .get(
@@ -30,11 +30,12 @@ const AddressEdit = () => {
     http
       .get("/user/detailUser")
       .then((getUser) => {
+        console.log(getUser.data);
         setUser(getUser.data);
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [isDeleted]);
   console.log("thong tin user", getUser);
   const initAddressSelect = {
     city: "",
@@ -162,15 +163,16 @@ const AddressEdit = () => {
   const deleteAddress = async (index) => {
     console.log("index", index);
     try {
-      await http.post(`/user/deleteAddress/${index}`);
+      const result =await http.delete(`/user/deleteAddress/${index}`);
+      setIsDeleted(!isDeleted)
     } catch (err) {
       console.log(err);
     }
   };
   const setDefaultAddress = (index) => {
     const defaultAddress = getUser.address[index];
-    localStorage.setItem('defaultAddress', JSON.stringify(defaultAddress));
-    };
+    localStorage.setItem("defaultAddress", JSON.stringify(defaultAddress));
+  };
   return (
     <div>
       <ToastContainer
