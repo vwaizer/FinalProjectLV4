@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "../layout/Layout";
 import "./payment.css";
-import { Input, Radio, ConfigProvider, Checkbox, Form } from "antd";
+import { Input, Radio, ConfigProvider, Checkbox, Form, message } from "antd";
 import { useState } from "react";
 import { http } from "../util/http";
 import { ToastContainer, toast } from "react-toastify";
@@ -9,51 +9,25 @@ import { ToastContainer, toast } from "react-toastify";
 const formItemLayout = {
   labelCol: {
     xs: {
-      span: 24,
+      span: 22,
     },
     sm: {
+      span: 12,
+    },
+    lg: {
+      span: 10,
+    },
+    xl: {
       span: 8,
-    },
-  },
-  wrapperCol: {
-    xs: {
-      span: 24,
-    },
-    sm: {
-      span: 16,
     },
   },
 };
 
-const CustomizedForm = ({ onChange, fields }) => (
-  <Form
-    style={{ marginLeft: "33px" }}
-    {...formItemLayout}
-    name="global_state"
-    layout="inline"
-    fields={fields}
-    onFieldsChange={(_, allFields) => {
-      onChange(allFields);
-    }}
-  >
-    <Form.Item
-      name="email"
-      label="Email"
-      rules={[
-        {
-          required: true,
-          message: "Thông tin này không được để trống!",
-        },
-      ]}
-    >
-      <Input placeholder="Nhập email" />
-    </Form.Item>
-  </Form>
-);
 function Payment() {
   const [getProduct, setGetProduct] = useState([]);
-  const [getAddress, setAddress] = useState([])
+  const [getAddress, setAddress] = useState([]);
   const [getUser, setUser] = useState([]);
+  const defaultAddress = JSON.parse(localStorage.getItem("defaultAddress"));
   const [fields, setFields] = useState([
     {
       name: ["email"],
@@ -74,25 +48,38 @@ function Payment() {
       .get("/user/address")
       .then((getAddress) => {
         setAddress(getAddress.data);
-        console.log("địa chỉ", getAddress.data  );
+        console.log("địa chỉ", getAddress.data);
       })
       .catch((err) => console.log(err));
   }, []);
+  const [form] = Form.useForm();
+  const [formNote] = Form.useForm();
+  useEffect(() => {
+    form.setFieldsValue({
+      userName: defaultAddress?.fullName || getUser?.fullName || "",
+      email: getUser?.email || "",
+      phoneNumber: defaultAddress?.phone || getUser?.phone || "",
+      city: defaultAddress?.city || "",
+      district: defaultAddress?.district || "",
+      ward: defaultAddress?.ward || "",
+      address: defaultAddress?.address || "",
+    });
+  }, [defaultAddress, getUser, form]);
+  // console.log("user", getUser);
   useEffect(() => {
     http
       .get("/user/detailUser")
       .then((getUser) => {
         setUser(getUser.data);
-        setFields([{ name: ["email"], value: getUser.data.email }]);
       })
       .catch((err) => console.log(err));
   }, []);
-  console.log("get user", getUser);
+  // console.log("get user", getUser);
 
   const [showNoteInput, setShowNoteInput] = useState(false);
 
   const listCheck = JSON.parse(localStorage.getItem("BoughtList"));
-  const [form] = Form.useForm();
+
   const calculateTotalPrice = () => {
     let totalPrice = 0;
 
@@ -109,14 +96,29 @@ function Payment() {
   };
   const validateAndSubmitForm = async () => {
     try {
-      await form.validateFields(); 
-      onFinish(form.getFieldsValue());
+      
+      if (showNoteInput) {
+        await Promise.all([
+          form.validateFields(),
+          formNote.validateFields(),
+          
+        ]);
+        onFinish(form.getFieldsValue(), formNote.getFieldValue())
+     
+      }else{
+        await form.validateFields();
+        onFinish(form.getFieldsValue(), formNote.getFieldValue())
+       
+      }
+      
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
 
-  const onFinish = (values) => {
+  const onFinish = (formValues,noteValue) => {
+    // console.log("thông tin từ form: " , formValues);
+    // console.log("thông tin từ note: " , noteValue);
     let newCart;
     newCart = listCheck.map((product) => {
       const { amount, discount, bookID } = product;
@@ -125,7 +127,6 @@ function Payment() {
     http
       .post("/receipt/setHistory", { cart: newCart })
       .catch((error) => console.log(error));
-
     toast.success("Mua hàng thành công");
     setTimeout(() => (window.location.href = "/"), 2000);
   };
@@ -149,12 +150,14 @@ function Payment() {
           <div style={{ padding: "10px 20px" }}>
             <div className="check-out-title"> ĐỊA CHỈ GIAO HÀNG </div>
             <div className="form-container">
-              <Form form={form} {...formItemLayout}>
+              <Form
+                style={{ width: "60%", marginLeft: "5%" }}
+                form={form}
+                {...formItemLayout}
+              >
                 <Form.Item
                   name="userName"
-                  label={
-                    <div className="style-lable">Họ và tên người nhận</div>
-                  }
+                  label="Họ và tên người nhận "
                   rules={[
                     {
                       required: true,
@@ -162,16 +165,29 @@ function Payment() {
                     },
                   ]}
                 >
-                  <Input placeholder="Nhập Họ và tên người nhận" />
+                  <input className="input-payment"></input>
                 </Form.Item>
-                <Form.Item>
+
+                <Form.Item
+                  name="email"
+                  label="Email"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Thông tin này không được để trống!",
+                    },
+                  ]}
+                >
+                  <input className="input-payment"></input>
+                </Form.Item>
+                {/* <Form.Item>
                   <CustomizedForm
                     fields={fields}
                     onChange={(newFields) => {
                       setFields(newFields);
                     }}
                   />
-                </Form.Item>
+                </Form.Item> */}
 
                 <Form.Item
                   name="phoneNumber"
@@ -183,7 +199,7 @@ function Payment() {
                     },
                   ]}
                 >
-                  <Input />
+                  <input className="input-payment"></input>
                 </Form.Item>
 
                 <Form.Item
@@ -196,7 +212,8 @@ function Payment() {
                     },
                   ]}
                 >
-                  <Input />
+                  {/* <Input /> */}
+                  <input className="input-payment"></input>
                 </Form.Item>
 
                 <Form.Item
@@ -209,7 +226,8 @@ function Payment() {
                     },
                   ]}
                 >
-                  <Input />
+                  {/* <Input /> */}
+                  <input className="input-payment"></input>
                 </Form.Item>
 
                 <Form.Item
@@ -222,7 +240,9 @@ function Payment() {
                     },
                   ]}
                 >
-                  <Input />
+                  {/* <Input /> */}
+                  <input className="input-payment"></input>
+                  {console.log("user", getUser)}
                 </Form.Item>
 
                 <Form.Item
@@ -235,7 +255,7 @@ function Payment() {
                     },
                   ]}
                 >
-                  <Input />
+                  <input className="input-payment"></input>
                 </Form.Item>
               </Form>
             </div>
@@ -280,9 +300,21 @@ function Payment() {
               </Checkbox>
 
               {showNoteInput && (
-                <div style={{ width: "550px", margin: "10px 0px" }}>
-                  <Input placeholder="Nhập ghi chú" />
-                </div>
+                <Form form={formNote}>
+                  <Form.Item
+                    name="note"
+                    rules={[
+                      {
+                        required: true,
+                        message: "Thông tin này không được bỏ trống",
+                      },
+                    ]}
+                  >
+                    <div style={{ width: "550px", marginTop: "10px" }}>
+                      <Input placeholder="Nhập ghi chú" />
+                    </div>
+                  </Form.Item>
+                </Form>
               )}
             </div>
           </div>
@@ -363,6 +395,7 @@ function Payment() {
               Xác nhận thanh toán
             </button>
           </div>
+          <div>Thay đổi địa chỉ</div>
         </div>
       </div>
     </Layout>
