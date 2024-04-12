@@ -103,6 +103,7 @@ const Admin = ({onClick}) => {
               placeholder="Admin"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              maxLength={40}
             />
             <FaUser className="icon" />
           </div>
@@ -112,6 +113,7 @@ const Admin = ({onClick}) => {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              maxLength={16}
             />
             <FaLock className="icon" />
           </div>

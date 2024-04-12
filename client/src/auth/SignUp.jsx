@@ -93,6 +93,7 @@ function SignUp() {
                 ref={userRef}
                 value={user}
                 onChange={(e) => setUser(e.target.value)}
+                maxLength={40}
               />
               <FaUser className="icon" />
             </div>
@@ -104,6 +105,7 @@ function SignUp() {
                 ref={userRef}
                 value={pwd}
                 onChange={(e) => setPwd(e.target.value)}
+                maxLength={16}
               />
               <FaLock className="icon" />
             </div>

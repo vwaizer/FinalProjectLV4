@@ -49,8 +49,12 @@ function Products() {
 
   useEffect(() => {
     setLoading(true);
+    const url =
+      `/book/?page=${currentPage}` +
+      (filterName.length > 0 ? `&name=${encodeURI(filterName)}` : "");
+    console.log(url);
     http
-      .get(`/book/?page=${currentPage}&name=${encodeURI(filterName)}`)
+      .get(url)
       .then((getBook) => {
         setGetBook(getBook.data);
         setLoading(false);
@@ -65,15 +69,12 @@ function Products() {
       });
   }, [currentPage, filterName]);
 
-  console.table(getBook)
+  console.table(getBook);
   let timeOut = null;
   const getFilterName = (name) => {
-    console.log(name)
+    console.log(name);
     setFilterName(`${name}`);
   };
-
-
-
 
   useEffect(() => {
     http
@@ -138,10 +139,9 @@ function Products() {
                 type="text"
                 value={filterName}
                 onChange={(e) => {
-                  setTimeout(() =>{
-                    clearTimeout(timeOut);
-                    getFilterName(e.target.value)
-                  })
+                  console.log(e.target.value);
+                  getFilterName(e.target.value);
+                 
                 }}
                 placeholder="Tên tác giả"
               />

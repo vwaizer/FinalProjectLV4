@@ -69,10 +69,10 @@ export const updateBook = async (req, res) => {
 };
 export const getAllBook = (data, page) => {
   console.log(page);
- 
+ console.log(data);
   // const data = await databaseProject.book.find({}).toArray();
   if (page) {
-    const result = data.map((item, index) => {
+    const result = data?.map((item, index) => {
       if (index >= (Number(page) - 1) * 32) {
         if (index < Number(page) * 32) {
           return item;

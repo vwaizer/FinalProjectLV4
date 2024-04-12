@@ -223,6 +223,7 @@ const AddressEdit = () => {
                     onChange={(e) => handleChange("fullName", e)}
                     className="input-info-changed"
                     type="text"
+                    maxLength={40}
                   ></input>
                 </Form.Item>
 
@@ -241,6 +242,8 @@ const AddressEdit = () => {
                     onChange={(e) => handleChange("phone", e)}
                     className="input-info-changed"
                     type="text"
+                    maxLength={10}
+                    
                   ></input>
                 </Form.Item>
               </Form>
@@ -340,6 +343,7 @@ const AddressEdit = () => {
                     onChange={(event) => handleFillAddress(event)}
                     className="input-info-changed"
                     type="text"
+                    maxLength={40}
                   ></input>
                 </Form.Item>
               </Form>

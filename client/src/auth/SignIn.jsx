@@ -113,6 +113,7 @@ const SignIn = () => {
                 onChange={(e) => setUser(e.target.value)}
                 value={user}
                 required
+                maxLength={40}
               />
               <FaUser className="icon" />
             </div>
@@ -122,9 +123,10 @@ const SignIn = () => {
                 id="password"
                 placeholder="Password"
                 ref={userRef}
-                onChange={(e) => setPwd(e.target.value)}
+                onChange={(e) => {console.log(e.target.value);;setPwd(e.target.value)}}
                 value={pwd}
                 required
+                
               />
               <FaLock className="icon" />
             </div>

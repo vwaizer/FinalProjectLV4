@@ -186,9 +186,9 @@ export const staffLoginValidator = validator(
             const userLogin = await databaseProject.users.findOne({
               email: req.body.email,
             });
-
+            console.log(value);
             checked = bcrypt.compareSync(value, userLogin.password)
-            console.log(checked);
+           
             if (checked == true) {
               return true
             }
