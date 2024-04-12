@@ -21,7 +21,7 @@ function Products() {
   window.scrollTo(0, "smooth");
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
-  const [search, setSearch] = useState([]);
+  const [filterName, setFilterName] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [filterUrl, setFIlterUrl] = useState("");
@@ -46,6 +46,35 @@ function Products() {
     const encodeType = encodeURI(type);
     setFIlterUrl(`type=${encodeType}`);
   };
+
+  useEffect(() => {
+    setLoading(true);
+    http
+      .get(`/book/?page=${currentPage}&name=${encodeURI(filterName)}`)
+      .then((getBook) => {
+        setGetBook(getBook.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+
+        toast.error(err.code);
+        setTimeout(() => {
+          window.location.href = "/sign-in";
+        }, 2000);
+      });
+  }, [currentPage, filterName]);
+
+  console.table(getBook)
+  let timeOut = null;
+  const getFilterName = (name) => {
+    console.log(name)
+    setFilterName(`${name}`);
+  };
+
+
+
+
   useEffect(() => {
     http
       .get("/book/types")
@@ -107,8 +136,13 @@ function Products() {
               <h2>Tìm Kiếm</h2>
               <input
                 type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                value={filterName}
+                onChange={(e) => {
+                  setTimeout(() =>{
+                    clearTimeout(timeOut);
+                    getFilterName(e.target.value)
+                  })
+                }}
                 placeholder="Tên tác giả"
               />
             </div>
@@ -118,31 +152,22 @@ function Products() {
           {loading ? (
             <h4>Loading...</h4>
           ) : (
-            getBook
-              .filter((value) => {
-                if (search === "") {
-                  return value;
-                } else if (value.author.toLowerCase().includes(search)) {
-                  return value;
-                }
-                console.log(value);
-              })
-              .map((item, index) => {
-                if (item !== null) {
-                  return (
-                    <div className="product_info" key={index}>
-                      <Link to={`/product-detail/${item._id}`}>
-                        <SetProduct
-                          image={item.images}
-                          name={item.name}
-                          author={item.author}
-                          price={item.price}
-                        />
-                      </Link>
-                    </div>
-                  );
-                }
-              })
+            getBook.map((item, index) => {
+              if (item !== null) {
+                return (
+                  <div className="product_info" key={index}>
+                    <Link to={`/product-detail/${item._id}`}>
+                      <SetProduct
+                        image={item.images}
+                        name={item.name}
+                        author={item.author}
+                        price={item.price}
+                      />
+                    </Link>
+                  </div>
+                );
+              }
+            })
           )}
         </div>
       </div>
