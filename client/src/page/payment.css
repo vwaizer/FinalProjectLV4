@@ -26,7 +26,7 @@
     font-size: 14px;
 }
 .form-container{
-    width: 65%;
+    width: 100%;
     display: flex;
     padding: 10px 0px;
 }
@@ -55,3 +55,18 @@
 /* .labelColCustomStyle{
     width: 35%;
 }  */
+.input-payment{
+    width:100%;
+    height:30px;
+    border-radius:7px;
+    outline:none;
+    border-color: #d9d9d9;
+    background: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    padding-left:10px;
+    transition: all ease .3s;
+}
+.input-payment:hover{
+    border-color: #4096ff;
+}
