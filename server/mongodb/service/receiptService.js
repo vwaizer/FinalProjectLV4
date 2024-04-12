@@ -64,7 +64,7 @@ export const getFilterReceipt = async (req, res, next) => {
           {
             $match: {
               userID: new ObjectId(`${req.userID.valueOf()}`),
-              status:"In Cart"
+              status:"Giỏ Hàng"
             },
           },
           {
@@ -112,7 +112,7 @@ export const addToCart = async (req, res, next) => {
     console.log(req.userID.valueOf());
     const userCart = await databaseProject.receipt.findOne({
       userID: req.userID,
-      status: "In Cart",
+      status: "Giỏ Hàng",
     });
     if (bookData.amount < amount) {
       return next("Amount Error");
@@ -135,7 +135,7 @@ export const addToCart = async (req, res, next) => {
       const receipt = new Receipt({
         userID: req.userID,
         date: new Date(),
-        status: "In Cart",
+        status: "Giỏ Hàng",
         cart: [
           {
             amount: amount,
@@ -158,7 +158,7 @@ export const addToCart = async (req, res, next) => {
         const index = userCart.cart.indexOf(bookItem);
         userCart.cart[index] = bookItem;
         const result = await databaseProject.receipt.updateOne(
-          { userID: req.userID, status: "In Cart" },
+          { userID: req.userID, status: "Giỏ Hàng" },
           { $set: { cart: userCart.cart } }
         );
         return res.json({ message: "Success", result: result });
@@ -173,7 +173,7 @@ export const addToCart = async (req, res, next) => {
       });
       console.log(userCart);
       const result = await databaseProject.receipt.updateOne(
-        { userID: req.userID, status: "In Cart" },
+        { userID: req.userID, status: "Giỏ Hàng" },
         { $set: { cart: userCart.cart } }
       );
       return res.json({ message: "Success", result: result });
@@ -238,11 +238,11 @@ if(cart.length>0){
       date: new Date(),
       cart: cart,
       userID: userID,
-      status: "History",
+      status: "Đã Mua",
     });
     const cartUser = await databaseProject.receipt.findOne({
       userID: new ObjectId(userID),
-      status: "In Cart",
+      status: "Giỏ Hàng",
     });
     console.log("cartUser",cartUser);
     if (cart.length < cartUser.cart.length) {
@@ -268,7 +268,7 @@ if(cart.length>0){
       const newCart=tmpCart.filter((item,index)=>item != undefined)
       console.log("newCart",newCart);
       const updateResult = await databaseProject.receipt.updateOne(
-        { userID: userID, status: "In Cart" },
+        { userID: userID, status: "Giỏ Hàng" },
         {$set:{ cart: newCart}}
       );
       return res.json(updateResult);
@@ -276,7 +276,7 @@ if(cart.length>0){
     else {
       await databaseProject.receipt.deleteOne({
         userID: userID,
-        status: "In Cart",
+        status: "Giỏ Hàng",
       });
     }
     return res.json(result);
@@ -290,7 +290,7 @@ else return res.json("Cart is empty")
 export const deleteFromCart=async(req,res)=>{
   const userID = req.userID;
   console.log(userID);
-  const userCart=await databaseProject.receipt.findOne({userID:new ObjectId(userID),status:"In Cart"})
+  const userCart=await databaseProject.receipt.findOne({userID:new ObjectId(userID),status:"Giỏ Hàng"})
   const oldCart=userCart.cart;
 console.log("oldCart",oldCart);
  const deleteItem=req.body.deleteItem;
@@ -301,11 +301,11 @@ console.log("oldCart",oldCart);
 })
  console.log(newCart);
  if (newCart.length>0){
-  const result=await databaseProject.receipt.updateOne({userID: new ObjectId(userID),status:"In Cart"},{$set:{cart:newCart}})
+  const result=await databaseProject.receipt.updateOne({userID: new ObjectId(userID),status:"Giỏ Hàng"},{$set:{cart:newCart}})
  return res.json(result)
  }
  else{
-  const result=await databaseProject.receipt.deleteOne({userID: new ObjectId(userID),status:"In Cart"})
+  const result=await databaseProject.receipt.deleteOne({userID: new ObjectId(userID),status:"Giỏ Hàng"})
   return res.json(result)
  
  }

@@ -21,10 +21,11 @@ function Products() {
   window.scrollTo(0, "smooth");
   const [getBook, setGetBook] = useState([]);
   const [getTypeBook, setGetTypeBook] = useState([]);
-  const [search, setSearch] = useState([]);
+  const [filterName, setFilterName] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [filterUrl, setFIlterUrl] = useState("");
+
   useEffect(() => {
     setLoading(true);
     http
@@ -45,21 +46,38 @@ function Products() {
   const getFilterType = (type) => {
     const encodeType = encodeURI(type);
     setFIlterUrl(`type=${encodeType}`);
-
-    // http
-    //     .get(`/book/?type=${encodeType}`)
-    //     .then((getBook) => {
-    //       setGetBook(getBook.data);
-    //     })
-    //     .catch((err) => {
-    //       console.log(err);
-
-    //       toast.error(err.code);
-    //       setTimeout(() => {
-    //         window.location.href = "/sign-in";
-    //       }, 2000);
-    //     });
   };
+  let timeOut = null;
+
+  useEffect(() => {
+    clearTimeout(timeOut);
+    setLoading(true);
+    timeOut = setTimeout(() => {
+      const url =
+        `/book/?page=${currentPage}` +
+        (filterName.length > 0 ? `&name=${encodeURI(filterName)}` : "");
+      console.log(url);
+      http
+        .get(url)
+        .then((getBook) => {
+          setGetBook(getBook.data);
+          setLoading(false);
+        })
+        .catch((err) => {
+          console.log(err);
+
+          toast.error(err.code);
+          setTimeout(() => {
+            window.location.href = "/sign-in";
+          }, 2000);
+        });
+    }, 1000);
+  }, [currentPage, filterName]);
+
+  const getFilterName = (e) => {
+    setFilterName(e.target.value);
+  };
+
   useEffect(() => {
     http
       .get("/book/types")
@@ -121,8 +139,8 @@ function Products() {
               <h2>Tìm Kiếm</h2>
               <input
                 type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                value={filterName}
+                onChange={getFilterName}
                 placeholder="Tên tác giả"
               />
             </div>
@@ -132,31 +150,22 @@ function Products() {
           {loading ? (
             <h4>Loading...</h4>
           ) : (
-            getBook
-              .filter((value) => {
-                if (search === "") {
-                  return value;
-                } else if (value.author.toLowerCase().includes(search)) {
-                  return value;
-                }
-                console.log(value);
-              })
-              .map((item, index) => {
-                if (item !== null) {
-                  return (
-                    <div className="product_info" key={index}>
-                      <Link to={`/product-detail/${item._id}`}>
-                        <SetProduct
-                          image={item.images}
-                          name={item.name}
-                          author={item.author}
-                          price={item.price}
-                        />
-                      </Link>
-                    </div>
-                  );
-                }
-              })
+            getBook.map((item, index) => {
+              if (item !== null) {
+                return (
+                  <div className="product_info" key={index}>
+                    <Link to={`/product-detail/${item._id}`}>
+                      <SetProduct
+                        image={item.images}
+                        name={item.name}
+                        author={item.author}
+                        price={item.price}
+                      />
+                    </Link>
+                  </div>
+                );
+              }
+            })
           )}
         </div>
       </div>
@@ -165,7 +174,7 @@ function Products() {
           previousLabel={"<"}
           nextLabel={">"}
           breakLabel={"..."}
-          pageCount={getBook.length}
+          pageCount={getBook.length / 32}
           marginPagesDisplayed={2}
           pageRangeDisplayed={4}
           onPageChange={handlePageClick}

@@ -74,6 +74,7 @@ const Contactpage = () => {
                           class="C-textbox--big"
                           type="text"
                           placeholder=""
+                          maxLength={60}
                         />
                       </div>
                     </div>

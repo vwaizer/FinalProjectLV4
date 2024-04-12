@@ -12,7 +12,7 @@ const [isClicked,setIsClicked]=useState(false);
       .then((getHireBook) => {
         const formatData=getHireBook.data.map((item,index)=>{
           console.log(item);
-          return {...item,dateIn:new Date(item.dateIn).toLocaleDateString(),dateOut:new Date(item.dateOut).toLocaleDateString(),bookName:item?.bookData[0]?.name,userEmail:item?.user[0]?.email,index}
+          return {...item,dateIn:new Date(item.dateIn).toLocaleDateString(),dateOut:new Date(item.dateOut).toLocaleDateString(),bookName:item?.bookData[0]?.name,userEmail:item?.user[0]?.email,index:index+1}
         })
         setGetHireBook(formatData)
       })
@@ -24,7 +24,7 @@ const [isClicked,setIsClicked]=useState(false);
   
   const onClickFunc=async(id)=>{
     try {
-      const result=await http.put(`/staff/hiredBook/${id}`,{status:"Accept"})
+      const result=await http.put(`/staff/hiredBook/${id}`,{status:"Đồng ý"})
       console.log(result);
       setIsClicked(!isClicked)
     } catch (error) {
@@ -33,10 +33,19 @@ const [isClicked,setIsClicked]=useState(false);
       
     
   }
+  const onRefuseFunc=async(id)=>{
+    try {
+      const result=await http.put(`/staff/hiredBook/${id}`,{status:"Từ chối"})
+      console.log(result);
+      setIsClicked(!isClicked)
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <Space size={"middle"} direction="vertical" wrap>
       <Typography.Title level={4}>Thông Tin Thuê Sách</Typography.Title>
-      <Table
+      <Table className="rental"
         columns={[
           {
             title: "STT",
@@ -83,10 +92,34 @@ const [isClicked,setIsClicked]=useState(false);
                       height: "50px",
                     }}
                     type="button"
-                    disabled={button.status === "Accept"?true:false}
+                    disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
                     onClick={()=>onClickFunc(button._id)}
                   >
                     Check
+                  </button>
+                </>
+              );
+            },
+          },
+          {
+            title: "",
+            dataIndex: "",
+            render: (button) => {
+              console.log(button);
+              return (
+                <>
+                  <button
+                    style={{
+                      border: "1px solid #000",
+                      borderRadius: "5px",
+                      width: "100px",
+                      height: "50px",
+                    }}
+                    type="button"
+                    disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
+                    onClick={()=>onRefuseFunc(button._id)}
+                  >
+                    Từ chối 
                   </button>
                 </>
               );

@@ -11,7 +11,7 @@ const StaffAndUser = () => {
       .get("/staff/user")
       .then((getUser) => {
         const formatData=getUser.data.map((item,index)=>{
-            return {...item,birthday:new Date(item.birthday).toLocaleDateString(),index}
+            return {...item,birthday:new Date(item.birthday).toLocaleDateString(),index:index+1}
         })
 
         setGetUser(formatData)

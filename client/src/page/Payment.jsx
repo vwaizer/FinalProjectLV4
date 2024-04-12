@@ -165,7 +165,7 @@ function Payment() {
                     },
                   ]}
                 >
-                  <input className="input-payment"></input>
+                  <input className="input-payment" maxLength={60}></input>
                 </Form.Item>
 
                 <Form.Item
@@ -178,7 +178,7 @@ function Payment() {
                     },
                   ]}
                 >
-                  <input className="input-payment"></input>
+                  <input className="input-payment" maxLength={60}></input>
                 </Form.Item>
                 {/* <Form.Item>
                   <CustomizedForm
@@ -199,7 +199,7 @@ function Payment() {
                     },
                   ]}
                 >
-                  <input className="input-payment"></input>
+                  <input className="input-payment" maxLength={10} minLength={8}></input>
                 </Form.Item>
 
                 <Form.Item
@@ -213,7 +213,7 @@ function Payment() {
                   ]}
                 >
                   {/* <Input /> */}
-                  <input className="input-payment"></input>
+                  <input className="input-payment" maxLength={60}></input>
                 </Form.Item>
 
                 <Form.Item
@@ -227,7 +227,7 @@ function Payment() {
                   ]}
                 >
                   {/* <Input /> */}
-                  <input className="input-payment"></input>
+                  <input className="input-payment" maxLength={60}></input>
                 </Form.Item>
 
                 <Form.Item
@@ -241,7 +241,7 @@ function Payment() {
                   ]}
                 >
                   {/* <Input /> */}
-                  <input className="input-payment"></input>
+                  <input className="input-payment" maxLength={60}></input>
                   {console.log("user", getUser)}
                 </Form.Item>
 
@@ -255,7 +255,7 @@ function Payment() {
                     },
                   ]}
                 >
-                  <input className="input-payment"></input>
+                  <input className="input-payment" maxLength={100}></input>
                 </Form.Item>
               </Form>
             </div>
@@ -311,7 +311,7 @@ function Payment() {
                     ]}
                   >
                     <div style={{ width: "550px", marginTop: "10px" }}>
-                      <Input placeholder="Nhập ghi chú" />
+                      <Input placeholder="Nhập ghi chú" maxLength={100}/>
                     </div>
                   </Form.Item>
                 </Form>

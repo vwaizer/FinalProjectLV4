@@ -1,28 +1,32 @@
 import { Space, Table, Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import { http } from "../../util/http";
-
+import './staff.css'
 const Staff = () => {
     const [getStaff, setGetStaff] = useState([])
  
     useEffect(() => {
     http
       .get("/staff/getAllStaff")
-      .then((getStaff) => setGetStaff(getStaff.data))
+      .then((getStaff) => {
+        const formatData=getStaff.data.map((item,index)=>{
+          return {...item,birthday:new Date(item.birthday).toLocaleDateString(),index:index+1}
+      })
+        setGetStaff(formatData)})
       .catch((err) => {
         console.log(err);
-      });
+      }); 
 
   }, []);
   console.log(getStaff);
   return (
     <Space size={"middle"} direction="vertical">
       <Typography.Title level={4}>Thông Tin Nhân Viên</Typography.Title>
-      <Table
+      <Table className="staff"
         columns={[
           {
             title: "STT",
-            dataIndex: "birthday",
+            dataIndex: "index",
           },
           {
             title: "Tên ",

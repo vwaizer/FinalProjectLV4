@@ -31,7 +31,7 @@ function SignUp() {
       });
       console.log(JSON.stringify(resultSignUp?.data));
       if (!resultSignUp.data.error) {
-        toast.success("Register successfully,Please verify email!!!", {
+        toast.success("Đăng ký thành công,Hãy xác thực email !!!", {
           position: "top-right",
         });
         await http.post("/verify",{email:user})
@@ -93,6 +93,7 @@ function SignUp() {
                 ref={userRef}
                 value={user}
                 onChange={(e) => setUser(e.target.value)}
+                maxLength={40}
               />
               <FaUser className="icon" />
             </div>
@@ -104,6 +105,7 @@ function SignUp() {
                 ref={userRef}
                 value={pwd}
                 onChange={(e) => setPwd(e.target.value)}
+                maxLength={16}
               />
               <FaLock className="icon" />
             </div>
@@ -115,6 +117,7 @@ function SignUp() {
                 value={checkConfirmPassword}
                 required
                 onChange={(e) => setCheckConfirmPassword(e.target.value)}
+                maxLength={16}
               />
               <FaLock className="icon" />
             </div>
