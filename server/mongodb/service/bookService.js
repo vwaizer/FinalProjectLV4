@@ -89,7 +89,7 @@ export const getAllBook = (data, page) => {
 export const getFilterBook = async (req, res, next) => {
   console.log("vao");
   const query =req.query;
- 
+ const rawData=await databaseProject.book.find({}).toArray()
   if (Object.keys(query).length > 0) {
     // if (query.publisher) {
     //   const publisher = decodeURIComponent(query.publisher);
@@ -119,19 +119,29 @@ export const getFilterBook = async (req, res, next) => {
       console.log(query);
       let findObject = {};
       if (query.publisher) {
-        findObject = Object.assign({ publisher: query.publisher }, findObject);
+        findObject = rawData.filter((item,index)=>{
+          if(item.publisher.includes(query.publisher))
+          {
+            return item
+          }
+        })
       }
       if (query.type) {
-        findObject = Object.assign({ type: decodeURI(query.type) }, findObject);
+        findObject = rawData.filter((item,index)=>{
+          if(item.type.includes(query.type))
+          {
+            return item
+          }
+        })
       }
       if (query.author) {
-        findObject = Object.assign({ author: query.author }, findObject);
+        findObject = rawData.filter((item,index)=>{
+          if(item.author.includes(query.author))
+          {
+            return item
+          }
+        })
       }
-      if(query.startPrice){
-        findObject = Object.assign({$and:[{price:{$gte:query.startPrice}},{price:{$lte:query.endPrice}}] }, findObject);
-      }
-      const filterData = await databaseProject.book.find(findObject).toArray();
-     
       return res.json(getAllBook(filterData,query.page));
     }
   } else {

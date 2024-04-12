@@ -13,7 +13,7 @@ const AddressEdit = () => {
   const [selectedWard, setSelectedWard] = useState("");
   const [getUser, setUser] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
+  const [isDeleted,setIsDeleted]=useState(false)
   useEffect(() => {
     axios
       .get(
@@ -31,11 +31,12 @@ const AddressEdit = () => {
     http
       .get("/user/detailUser")
       .then((getUser) => {
+        console.log(getUser.data);
         setUser(getUser.data);
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [isDeleted]);
   console.log("thong tin user", getUser);
   const initAddressSelect = {
     city: "",
@@ -162,6 +163,8 @@ const AddressEdit = () => {
   };
   const deleteAddress = async (index) => {
     try {
+      const result =await http.delete(`/user/deleteAddress/${index}`);
+      setIsDeleted(!isDeleted)
       const defaultAddress = JSON.parse(localStorage.getItem("defaultAddress"));
   
       if (JSON.stringify(getUser.address[index]) === JSON.stringify(defaultAddress)) {

@@ -95,9 +95,11 @@ export const deleteAddress=async(req,res,next)=>{
   console.log(userData);
   const oldData=userData.address
   if(index<oldData.length){
+    
     const newAddress=oldData.splice(index,1)
     try {
-      const result =await databaseProject.users.updateOne({_id:req.userID},{$set:{address:newAddress}})
+      const result =await databaseProject.users.updateOne({_id:req.userID},{$set:{address:oldData}})
+     
       return res.json(result)
     } catch (error) {
      return next(error) 

@@ -8,10 +8,14 @@ const Staff = () => {
     useEffect(() => {
     http
       .get("/staff/getAllStaff")
-      .then((getStaff) => setGetStaff(getStaff.data))
+      .then((getStaff) => {
+        const formatData=getStaff.data.map((item,index)=>{
+          return {...item,birthday:new Date(item.birthday).toLocaleDateString(),index:index+1}
+      })
+        setGetStaff(formatData)})
       .catch((err) => {
         console.log(err);
-      });
+      }); 
 
   }, []);
   console.log(getStaff);
@@ -22,7 +26,7 @@ const Staff = () => {
         columns={[
           {
             title: "STT",
-            dataIndex: "birthday",
+            dataIndex: "index",
           },
           {
             title: "Tên ",
