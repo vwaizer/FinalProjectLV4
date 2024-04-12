@@ -191,7 +191,7 @@ export const getHistory = async (req, res, next) => {
         {
           '$match': {
             'userID': new ObjectId(`${userID}`),
-            'status':'History'
+            'status':'Đã Mua'
           }
         }, {
           '$lookup': {
@@ -216,7 +216,7 @@ export const getHistory = async (req, res, next) => {
       return res.json(returnData);
       }
      else{
-      return res.json("No History")
+      return res.json("Không có lịch sử")
      }
   } catch (error) {
     next(error);

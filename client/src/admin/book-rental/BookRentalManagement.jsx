@@ -95,7 +95,7 @@ const [isClicked,setIsClicked]=useState(false);
                     disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
                     onClick={()=>onClickFunc(button._id)}
                   >
-                    Check
+                    Xác nhận
                   </button>
                 </>
               );
