@@ -69,7 +69,7 @@ export const updateBook = async (req, res) => {
 };
 export const getAllBook = (data, page) => {
   console.log(page);
-  console.log(data.length);
+ 
   // const data = await databaseProject.book.find({}).toArray();
   if (page) {
     const result = data.map((item, index) => {
@@ -120,7 +120,7 @@ export const getFilterBook = async (req, res, next) => {
       let findObject = [];
       if (query.publisher) {
         findObject.push( rawData.filter((item,index)=>{
-          if(item.publisher.includes(query.publisher))
+          if(item.publisher.includes(decodeURI(query.publisher)))
           {
             return item
           }
@@ -128,7 +128,7 @@ export const getFilterBook = async (req, res, next) => {
       }
       if (query.type) {
         findObject.push( rawData.filter((item,index)=>{
-          if(item.type.includes(query.type))
+          if(item.type.includes(decodeURI(query.type)))
           {
             return item
           }
@@ -136,7 +136,7 @@ export const getFilterBook = async (req, res, next) => {
       }
       if (query.author) {
         findObject.push( rawData.filter((item,index)=>{
-          if(item.author.includes(query.author))
+          if(item.author.includes(decodeURI(query.author)))
           {
             return item
           }
@@ -144,12 +144,13 @@ export const getFilterBook = async (req, res, next) => {
       }
       if (query.name) {
         findObject.push( rawData.filter((item,index)=>{
-          if(item.name.includes(query.name))
+          if(item.name.includes(decodeURI(query.name)))
           {
             return item
           }
         }))
       }
+
       console.log(findObject);
       return res.json(getAllBook(findObject[0],query.page));
     }
