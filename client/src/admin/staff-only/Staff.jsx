@@ -1,7 +1,7 @@
 import { Space, Table, Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import { http } from "../../util/http";
-
+import './staff.css'
 const Staff = () => {
     const [getStaff, setGetStaff] = useState([])
  
@@ -18,7 +18,7 @@ const Staff = () => {
   return (
     <Space size={"middle"} direction="vertical">
       <Typography.Title level={4}>Thông Tin Nhân Viên</Typography.Title>
-      <Table
+      <Table className="staff"
         columns={[
           {
             title: "STT",
