@@ -33,10 +33,10 @@ const AccountInfo = ({ getUser }) => {
   };
   useEffect(() => {
     form.setFieldsValue({
-      fullName: getUserInfo.fullName || "",
-      phone: getUserInfo.phone || "",
-      sex: getUserInfo.sex || "",
-      birthday: moment(getUserInfo.birthday),
+      fullName: getUserInfo.fullName || " ",
+      phone: getUserInfo.phone || " ",
+      sex: getUserInfo.sex || " ",
+      birthday: moment(getUserInfo.birthday) || " ",
     });
   }, [getUserInfo, form]);
   if (!getUser) {
@@ -66,7 +66,7 @@ const AccountInfo = ({ getUser }) => {
           birthday: changedInfo.birthday,
         })
         .catch((error) => console.log(error));
-      // console.log('Cập nhật thành công')
+      console.log("Cập nhật thành công");
       toast.success("Cập nhật thông tin thành công");
       // setTimeout(() => (window.location.href = "/"), 2000);
     } catch (error) {
@@ -141,27 +141,6 @@ const AccountInfo = ({ getUser }) => {
           ></input>
         </Form.Item>
 
-        {/* <Form.Item
-          label="Email"
-          name="email"
-          rules={[
-            {
-              required: true,
-              message: "Thông tin này không được để trống",
-            },
-            {
-              type: "email",
-              message: "Email không hợp lệ",
-            },
-          ]}
-        >
-          <input
-            className={inputStates.email ? "input-clicked" : "input-blur"}
-            onClick={() => handleInputClick("email")}
-            onBlur={() => handleInputBlur("email")}
-          ></input>
-        </Form.Item> */}
-
         <Form.Item
           label="Số điện thoại"
           name="phone"
@@ -170,10 +149,6 @@ const AccountInfo = ({ getUser }) => {
               required: !!getFieldValue("phone") || !!getUserInfo.phone,
               message: "Thông tin này không được để trống",
             }),
-            {
-              pattern: /^[0-9]{10}$/,
-              message: "Số điện thoại không hợp lệ",
-            },
           ]}
         >
           <input
@@ -216,9 +191,9 @@ const AccountInfo = ({ getUser }) => {
           }
         >
           <DatePicker
+            defaultValue={moment(getUserInfo.birthday)}
             format="YYYY-MM-DD"
             disabledDate={disabledDate}
-            defaultValue={moment(getUserInfo.birthday)}
           />
         </Form.Item>
         <Form.Item
