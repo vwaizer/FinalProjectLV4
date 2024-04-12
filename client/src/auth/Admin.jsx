@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Layout from "../layout/Layout";
-import { useNavigate } from "react-router-dom";
 import { FaLock, FaUser } from "react-icons/fa";
-import LayoutAdmin from "../admin/layout-admin/LayoutAdmin";
-import { toast, ToastContainer } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import Layout from "../layout/Layout";
 import { http } from "../util/http";
+import LayoutAdmin from "../admin/layout-admin/LayoutAdmin";
 
 const Admin = ({onClick}) => {
   const [username, setUsername] = useState("");

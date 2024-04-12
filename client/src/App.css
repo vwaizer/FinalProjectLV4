@@ -9,12 +9,11 @@ body{
 
 .goto_admin{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  margin: 100px auto;
+  background-color: transparent;
+  padding-right: 70px;
 
 }
 
@@ -28,14 +27,14 @@ body{
   background: none;
   outline: none;
   border-radius: 5px;
-  background-color: red;
-  color: #fff;
+  background-color: transparent;
+  color: grey;
   transition: 0.25s;
 
   margin-top: 20px;
 }
 
 .goto_admin button:hover{
-  background-color: rgb(69, 225, 69);
+  background-color: #f0f0f0;
   transform: scale(1.1);
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
 import { http } from "../../util/http";
-import './overview.css'
+import "./overview.css";
 const ChartBar = () => {
   const [getData, setGetData] = useState([]);
   const [typeBook, setTypeBook] = useState([]);
@@ -23,7 +23,7 @@ const ChartBar = () => {
     setTypeBook(isTypeBook);
     setAmount(isAmount);
   }, [getData.length]);
-
+  console.log(getData);
   return (
     <div className="chart">
       <h3>Thống kê các thể loại sách</h3>
