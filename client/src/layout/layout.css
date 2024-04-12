@@ -160,8 +160,7 @@
 
 .bookstore_footer .logo_footer{
     width: 20%;
-    align-items: center;
-    
+    padding: 10px auto;
 }
 
 .bookstore_footer a{

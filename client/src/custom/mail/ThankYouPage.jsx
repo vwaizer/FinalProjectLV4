@@ -34,7 +34,7 @@ const ThankYouPage = () => {
             Go Back to Home
           </Link>
         </div>
-        <div className="contact-info">
+        <div className="contact-thanks-info">
           <p>
             If you have any questions or need assistance, please don't hesitate
             to contact us:
