@@ -146,34 +146,6 @@ function Payment() {
       return { name: item.name, price: parseFloat(item.price), amount: parseInt(item.amount)}
     })
     if (paymentValues.paymentMethod === "visa") {
-<<<<<<< HEAD
-      fetch("http://localhost:5000/create-checkout-session", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: "cors",
-        body: JSON.stringify({
-          items: [
-            {
-              name: listCheck.name,
-              price: listCheck.price,
-              amount: listCheck.amount,
-            },
-          ],
-        }),
-      })
-        .then((res) => {
-          if (res.ok) return res.json();
-          return res.json().then((json) => Promise.reject(json));
-        })
-        .then(({ url }) => {
-          window.location = url;
-        })
-        .catch((e) => {
-          console.log(e.error);
-        });
-=======
        const url=await onCartPayment(listItem)
        let newCart;
        newCart = listCheck.map((product) => {
@@ -187,7 +159,6 @@ function Payment() {
          setTimeout(() => (window.location.href = `${url}`), 1000);
 
       
->>>>>>> fae82013febc1a9d93aa5815ac95b3093170ca1f
     } else {
       let newCart;
     newCart = listCheck.map((product) => {
