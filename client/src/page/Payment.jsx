@@ -88,16 +88,15 @@ function Payment() {
 
   const onChangeNote = (e) => {
     setShowNoteInput(e.target.checked);
-    console.log(e.target.checked)
+    console.log(e.target.checked);
   };
   const onChangePayment = (e) => {
     // setShowNoteInput(e.target.value);
-    console.log(e.target.value)
+    console.log(e.target.value);
   };
-  useEffect(()=>{
-    console.log(showNoteInput)
-
-  },[showNoteInput])
+  useEffect(() => {
+    console.log(showNoteInput);
+  }, [showNoteInput]);
   const validateAndSubmitForm = async () => {
     try {
       if (showNoteInput) {
@@ -106,21 +105,19 @@ function Payment() {
           formNote.validateFields(),
           formPayment.validateFields(),
         ]);
-       
-          onFinish(
-            form.getFieldsValue(),
-            formNote.getFieldValue(),
-            formPayment.getFieldValue()
-          );
-        
+
+        onFinish(
+          form.getFieldsValue(),
+          formNote.getFieldValue(),
+          formPayment.getFieldValue()
+        );
       } else {
         await Promise.all([
           form.validateFields(),
           formPayment.validateFields(),
         ]);
-       
-          onFinish(form.getFieldsValue(), formPayment.getFieldValue());
-        
+
+        onFinish(form.getFieldsValue(), formPayment.getFieldValue());
       }
       // Additional logic if needed
     } catch (error) {
@@ -137,27 +134,31 @@ function Payment() {
     let result;
     if (paymentValues.paymentMethod === "visa") {
       fetch("http://localhost:5000/create-checkout-session", {
-        method:"POST",
-        headers:{
-          "Content-Type":"application/json"
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        mode:"cors",
+        mode: "cors",
         body: JSON.stringify({
           items: [
-            { name: listCheck.name, price: listCheck.price, amount: listCheck.amount}
-          ]
+            {
+              name: listCheck.name,
+              price: listCheck.price,
+              amount: listCheck.amount,
+            },
+          ],
+        }),
+      })
+        .then((res) => {
+          if (res.ok) return res.json();
+          return res.json().then((json) => Promise.reject(json));
         })
-      })
-      .then(res => {
-        if (res.ok) return res.json()
-        return res.json().then(json => Promise.reject(json))
-      })
-      .then(({url})=>{
-        window.location = url
-      })
-      .catch(e => {
-        console.log(e.error)
-      })
+        .then(({ url }) => {
+          window.location = url;
+        })
+        .catch((e) => {
+          console.log(e.error);
+        });
     } else {
       result = 0;
     }
@@ -313,11 +314,10 @@ function Payment() {
             </div>
           </div>
         </div>
-
         <div className="box-container">
           <div className="space-item">
             <div className="check-out-title"> PHƯƠNG THỨC THANH TOÁN </div>
-            <div style={{ marginTop: "10px" }}>
+            <div>
               <ConfigProvider
                 theme={{
                   components: {
@@ -339,7 +339,7 @@ function Payment() {
                     ]}
                   >
                     <Radio.Group onChange={onChangePayment}>
-                      <Radio value={"tiền mặt"}>
+                      <Radio style={{ padding: "15px 0" }} value={"tiền mặt"}>
                         <img
                           className="payment-methods"
                           src="https://cdn0.fahasa.com/skin/frontend/base/default/images/payment_icon/ico_cashondelivery.svg?q=105522"
@@ -349,7 +349,18 @@ function Payment() {
                           Thanh toán bằng tiền mặt khi nhận hàng
                         </span>
                       </Radio>
-                      <Radio value={"visa"}>Thanh toán bằng thẻ tín dụng</Radio>
+                      <br></br>
+                      <br></br>
+                      <Radio value={"visa"}>
+                        <img
+                          className="payment-methods"
+                          src="https://cdn0.fahasa.com/skin/frontend/base/default/images/payment_icon/ico_zalopaycc.svg?q=105577"
+                          alt=""
+                        ></img>
+                        <span style={{ fontSize: "16px" }}>
+                          Visa / Master / JCB
+                        </span>
+                      </Radio>
                     </Radio.Group>
                   </Form.Item>
                 </Form>
@@ -362,7 +373,7 @@ function Payment() {
           <div className="space-item">
             <div className="check-out-title"> THÔNG TIN KHÁC </div>
             <div style={{ marginTop: "10px" }}>
-              <Checkbox onChange={(e)=>onChangeNote(e)}>
+              <Checkbox onChange={(e) => onChangeNote(e)}>
                 <span style={{ fontSize: "16px" }}>Ghi chú</span>
               </Checkbox>
 
@@ -430,18 +441,33 @@ function Payment() {
               marginTop: "15px",
             }}
           >
-            <h2 style={{ color: "brown" }}>Tổng cộng: </h2>
-            <h2
+            <div
               style={{
-                color: "#F39801",
-                marginBottom: "0px",
-                flexBasis: "19%",
+                color: "brown",
+                flexBasis: "85%",
+                textAlign: "right",
+                fontWeight: "bold",
+                fontSize: "17px",
               }}
             >
-              {calculateTotalPrice()}.000 đ{" "}
-            </h2>
+              <div style={{color:'black',fontWeight:'400'}}>Phí ship: </div>
+              <div>Tổng cộng:{" "}</div>
+            </div>
+            <div
+              style={{
+                fontWeight: "bold",
+                fontSize: "20px",
+                color: "#F39801",
+                marginBottom: "0px",
+                flexBasis: "10%",
+                textAlign:'end'
+              }}
+            >
+              <div style={{color:'black',fontWeight:'400',fontSize:'18px'}}>19.000 đ</div>
+              <div>{calculateTotalPrice()}.000 đ{" "}</div>
+            </div>
           </div>
-
+          
           <div
             style={{
               display: "flex",
