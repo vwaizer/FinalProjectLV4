@@ -38,7 +38,7 @@ const Bill = () => {
   console.log(getBill);
   return (
     <Space  direction="vertical">
-      <Typography.Title level={4}>Hóa Đơn</Typography.Title>
+      <h2>Hóa Đơn</h2>
       <Space>
         <OverviewCustom
           icon={
@@ -56,7 +56,7 @@ const Bill = () => {
           value={getBill.receiptNumber}
         />
       </Space>
-      <Table
+      <Table className="bill"
         columns={[
           {
             title: "Thông tin khách hàng",

@@ -16,7 +16,7 @@ const SideMenu = () => {
     }
   return (
     <div className="side_menu">
-      <Menu
+      <Menu className="side_menu-custom"
         onClick={(item) => {
           navigate(item.key)
         }}

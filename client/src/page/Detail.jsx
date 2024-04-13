@@ -8,6 +8,16 @@ import SliderDetail from "../slideDetail/SliderDetail";
 import { http } from "../util/http";
 import "./page.css";
 import RentForm from "./RentForm";
+import SyncLoader from "react-spinners/SyncLoader";
+import { alignProperty } from "@mui/material/styles/cssUtils";
+
+const override = {
+  display: "flex",
+  justifyContent: "center",
+  alignProperty: "center",
+  margin: "20px auto",
+};
+
 const paragrapStyle = {
   WebkitLineClamp: 3,
   WebkitBoxOrient: "vertical",
@@ -24,14 +34,23 @@ function Detail() {
   const [product, setProduct] = useState([]);
   const [quantity, setQuantity] = useState(1);
   const [seeMore, setSeeMore] = useState(false);
+  const [loading, setLoading] = useState(false);
+  let timeOut = null;
   useEffect(() => {
-    if (ID !== "undefined") {
-      console.log(`/book/detailBook/${ID}`);
-      http
-        .get(`/book/detailBook/${ID}`)
-        .then((product) => setProduct(Array(product.data)))
-        .catch((err) => console.log(err));
-    }
+    clearTimeout(timeOut);
+    setLoading(true);
+    timeOut = setTimeout(() => {
+      if (ID !== "undefined") {
+        console.log(`/book/detailBook/${ID}`);
+        http
+          .get(`/book/detailBook/${ID}`)
+          .then((product) => {
+            setProduct(Array(product.data));
+            setLoading(false);
+          })
+          .catch((err) => console.log(err));
+      }
+    }, 1000);
   }, [ID]);
 
   const handleAddToCartClick = async (ID) => {
@@ -100,44 +119,53 @@ function Detail() {
         theme="light"
       />
       <div className="detail_wrap">
-        {product.map((item) => {
-          return (
-            <div key={item._id} className="detail">
-              <div className="detail_image">
-                <img src={item.images} alt="detail" />
+        {loading ? (
+          <SyncLoader
+            cssOverride={override}
+            color="#ec5959"
+            loading={loading}
+            size={15}
+          />
+        ) : (
+          product.map((item) => {
+            return (
+              <div key={item._id} className="detail">
+                <div className="detail_image">
+                  <img src={item.images} alt="detail" />
+                </div>
+                <div className="detail_info">
+                  <div className="detail_title">
+                    <h2>{item.name}</h2>
+                    <HoverRating id={item._id} />
+                    <h3>Tác giả : {item.author}</h3>
+                  </div>
+                  <div>
+                    <p style={seeMore ? null : paragrapStyle}>
+                      {item.description}
+                    </p>
+                    <button
+                      className="read-more"
+                      type="button"
+                      onClick={() => setSeeMore(!seeMore)}
+                    >
+                      {seeMore ? "Thu gọn" : "Xem thêm"}
+                    </button>
+                  </div>
+                  <h1>Giá: {item.price} VND</h1>
+                  <div className="quantity">
+                    <button type="button" onClick={onDecrease}>
+                      -
+                    </button>
+                    <div className="amount-quantity">{quantity}</div>
+                    <button type="button" onClick={onIncrease}>
+                      +
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div className="detail_info">
-                <div className="detail_title">
-                  <h2>{item.name}</h2>
-                  <HoverRating id={item._id}/>
-                  <h3>Tác giả : {item.author}</h3>
-                </div>
-                <div>
-                  <p style={seeMore ? null : paragrapStyle}>
-                    {item.description}
-                  </p>
-                  <button
-                    className="read-more"
-                    type="button"
-                    onClick={() => setSeeMore(!seeMore)}
-                  >
-                    {seeMore ? "Thu gọn" : "Xem thêm"}
-                  </button>
-                </div>
-                <h1>Giá: {item.price} VND</h1>
-                <div className="quantity">
-                  <button type="button" onClick={onDecrease}>
-                    -
-                  </button>
-                  <div className="amount-quantity">{quantity}</div>
-                  <button type="button" onClick={onIncrease}>
-                    +
-                  </button>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })
+        )}
       </div>
       <div className="detail_button">
         <button

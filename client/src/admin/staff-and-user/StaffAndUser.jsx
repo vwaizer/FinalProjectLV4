@@ -25,7 +25,7 @@ const StaffAndUser = () => {
  
   return (
     <Space size={"middle"} direction="vertical">
-      <Typography.Title level={4}>Thông Tin Khách Hàng</Typography.Title>
+      <h2>Thông Tin Khách Hàng</h2>
       <Table className="user"
         columns={[
           {

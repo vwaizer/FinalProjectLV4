@@ -47,7 +47,7 @@ const ImportAndBrowse = () => {
           </>
         ) : (
           <>
-            <Typography.Title level={4}>Nhập Sách</Typography.Title>
+            <h2>Nhập Sách</h2>
             <Table className="import-book"
               columns={[
                 {
