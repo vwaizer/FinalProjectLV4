@@ -127,50 +127,54 @@ function Payment() {
       // Handle error
     }
   };
-
-  const onFinish = (formValues) => {
+  const onCartPayment=async(listItem)=>{
+   try {
+    const result=await http.post("/receipt/payment",{items:[...listItem]})
+    console.log("url",result.data.url);
+    return result.data.url
+   } catch (error) {
+    console.log(error);
+   }
+    
+  }
+  const onFinish =async (formValues) => {
     console.log("thông tin từ form: ", formValues);
     const noteValues = formNote.getFieldsValue();
     console.log("thông tin từ note: ", noteValues);
     const paymentValues = formPayment.getFieldsValue();
     console.log("thông tin từ payment: ", paymentValues);
     let result;
+    console.log("listCheck",listCheck);
+    const listItem=listCheck.map((item,index)=>{
+      return { name: item.name, price: parseFloat(item.price), amount: parseInt(item.amount)}
+    })
     if (paymentValues.paymentMethod === "visa") {
-      fetch("http://localhost:5000/create-checkout-session", {
-        method:"POST",
-        headers:{
-          "Content-Type":"application/json"
-        },
-        mode:"cors",
-        body: JSON.stringify({
-          items: [
-            { name: listCheck.name, price: listCheck.price, amount: listCheck.amount}
-          ]
-        })
-      })
-      .then(res => {
-        if (res.ok) return res.json()
-        return res.json().then(json => Promise.reject(json))
-      })
-      .then(({url})=>{
-        window.location = url
-      })
-      .catch(e => {
-        console.log(e.error)
-      })
+       const url=await onCartPayment(listItem)
+       let newCart;
+       newCart = listCheck.map((product) => {
+         const { amount, discount, bookID } = product;
+         return { amount: amount, discount: discount, bookID: bookID };
+       });
+       http
+         .post("/receipt/setHistory", { cart: newCart })
+         .catch((error) => console.log(error));
+         toast.success("Mua hàng thành công");
+         setTimeout(() => (window.location.href = `${url}`), 1000);
+
+      
     } else {
-      result = 0;
-    }
-    let newCart;
+      let newCart;
     newCart = listCheck.map((product) => {
       const { amount, discount, bookID } = product;
       return { amount: amount, discount: discount, bookID: bookID };
     });
-    // http
-    //   .post("/receipt/setHistory", { cart: newCart })
-    //   .catch((error) => console.log(error));
-    // toast.success("Mua hàng thành công");
-    // setTimeout(() => (window.location.href = "/"), 2000);
+    http
+      .post("/receipt/setHistory", { cart: newCart })
+      .catch((error) => console.log(error));
+      toast.success("Mua hàng thành công");
+      setTimeout(() => (window.location.href = "/"), 2000);
+    }
+    
   };
 
   return (
