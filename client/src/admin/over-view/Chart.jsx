@@ -26,10 +26,9 @@ const ChartBar = () => {
   console.log(getData);
   return (
     <div className="chart">
-      <h3>Thống kê các thể loại sách</h3>
       <Chart 
         type="pie"
-        width={700}
+        width={650}
         height={500}
         series={amount}
         options={{

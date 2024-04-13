@@ -6,14 +6,14 @@ const AdminPage = () => {
   return (
     <div className="adminpage">
       <div className="header">
-        <Image
-          width={100}
+        <img
           src="https://t4.ftcdn.net/jpg/02/11/07/81/360_F_211078110_mttxEdu3gsSbMKajsy98E4M4E5RUCiuo.jpg"
-        ></Image>
-        <Typography.Title>ADMINISTRATION</Typography.Title>
+          alt="logo"
+        ></img>
+        <Typography.Title style={{textAlign: "center", marginTop: "10px"}}>ADMINISTRATION</Typography.Title >
         <Space>
-          <Badge count={0} dot>
-            <FaRegBell style={{ fontSize: 30}} />
+          <Badge count={0}>
+            <button type="button"><FaRegBell style={{ fontSize: 25, textAlign: "center" }} /></button>
           </Badge>
         </Space>
       </div>

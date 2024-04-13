@@ -31,7 +31,7 @@ const OrderHistory = () => {
 
   return (
     <div style={{ width: "100%", height: "fit-content" }}>
-      <div style={{ backgroundColor: "#fff", paddingBottom: "10px" }}>
+      <div style={{ backgroundColor: "#fff", paddingBottom: "10px",marginBottom:"11px" }}>
         <div className="page-title">
           <h1>LỊCH SỬ ĐƠN HÀNG</h1>
         </div>
@@ -40,7 +40,7 @@ const OrderHistory = () => {
       <div>
         {getHistory.length > 0 ? (getHistory.map((order, index) => {
           const totalPrice = getTotalPrice(order);
-
+          console.log(order);
           return (
             <div
               key={index}
@@ -48,12 +48,14 @@ const OrderHistory = () => {
                 marginBottom: "10px"
               }}
             >
+               <div className="history-book-container">Ngày mua : {new Date(order[0].date).toLocaleDateString()}</div> 
               {order.map((item, itemIndex) => {
                 const { amount, img, name, price } = item;
                 return (
                   <React.Fragment key={itemIndex}>
                     {itemIndex > 0 && <div className="line"></div>}
                     <div className="history-book-container">
+                      
                       <div>
                         <img className="history-book-image" src={img} alt="" />
                       </div>

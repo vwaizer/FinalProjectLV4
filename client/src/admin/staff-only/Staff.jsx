@@ -21,7 +21,7 @@ const Staff = () => {
   console.log(getStaff);
   return (
     <Space size={"middle"} direction="vertical">
-      <Typography.Title level={4}>Thông Tin Nhân Viên</Typography.Title>
+      <h2>Thông Tin Nhân Viên</h2>
       <Table className="staff"
         columns={[
           {
