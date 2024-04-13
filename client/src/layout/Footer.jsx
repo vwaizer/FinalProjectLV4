@@ -6,6 +6,7 @@ import { MdPlace } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import "./layout.css";
 import LayoutAdmin from "../admin/layout-admin/LayoutAdmin";
+import PopUpChat from "./PopUpChat";
 const siteMap = [
   {
     title: "Chính Sách Vận Chuyển",
@@ -63,6 +64,7 @@ function Footer() {
   };
   return (
     <div className="footer">
+       
       <div className="bookstore_footer">
         <div className="logo_footer">
           <img

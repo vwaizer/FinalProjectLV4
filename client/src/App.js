@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
+import { ErrorBoundary } from "react-error-boundary";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 import LayoutAdmin from "./admin/layout-admin/LayoutAdmin.jsx";
@@ -6,16 +7,15 @@ import Admin from "./auth/Admin.jsx";
 import SignIn from "./auth/SignIn.jsx";
 import SignUp from "./auth/SignUp.jsx";
 import { AuthProvider } from "./context/AuthProvide.js";
+import ErrorPage from "./custom/lazy/ErrorPage.jsx";
+import Loading from "./custom/lazy/Loading.jsx";
+import ThankYouPage from "./custom/mail/ThankYouPage.jsx";
 import AboutUsPage from "./page/About Us/about-us-page.jsx";
 import RentForm from "./page/RentForm.jsx";
 import Contact from "./page/contact/contact-page.jsx";
 import { Cart, Detail, Home, Payment } from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
-import { lazy, Suspense } from "react";
-import { ErrorBoundary } from "react-error-boundary";
-import Loading from "./custom/lazy/Loading.jsx";
-import ErrorPage from "./custom/lazy/ErrorPage.jsx";
-import ThankYouPage from "./custom/mail/ThankYouPage.jsx";
+import PopUpChat from "./layout/PopUpChat.jsx";
 const Products = lazy(() => import("./page/Products.jsx"));
 
 function App() {
@@ -69,6 +69,10 @@ function App() {
             <button type="button" onClick={goToAdmin}>
               Admin
             </button>
+           
+          </div>
+          <div>
+         
           </div>
         </>
       )}
