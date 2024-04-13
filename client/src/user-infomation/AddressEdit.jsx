@@ -171,14 +171,7 @@ const AddressEdit = () => {
         localStorage.removeItem("defaultAddress");
         console.log('đã xóa')
       }
-  
       await http.post(`/user/deleteAddress/${index}`);
-  
-      // if (getUser.address.length > 0) {
-      //   setDefaultAddress(0);
-      // } else {
-      //   localStorage.removeItem("defaultAddress");
-      // }
     } catch (err) {
       console.log(err);
     }

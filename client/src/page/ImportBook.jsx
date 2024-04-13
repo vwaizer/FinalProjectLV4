@@ -1,4 +1,3 @@
-import { CloseOutlined } from "@ant-design/icons";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { Button, Card, Form, Input } from "antd";
 import React, { useEffect, useState } from "react";
@@ -64,47 +63,49 @@ const ImportBook = () => {
   console.log("img",img);
   const submitBook = async (form, myImg, e) => {
     console.log(myImg);
-   console.log(form.getFieldValue("name")?.length); 
+
     if (form.getFieldValue("name")?.length<0 || form.getFieldValue("name")?.length>36 ) {
       toast.error("Không đúng format name");
-    }
+    } else
     if (!form.getFieldValue("type")?.length>0 || form.getFieldValue("type")?.length>36 )  {
       toast.error("Không đúng format type");
-    }
+    } else
     if (!form.getFieldValue("amount")?.length>0 || form.getFieldValue("amount")?.length>3 ) {
       toast.error("Không đúng format amount");
-    }
+    }else
     if (!form.getFieldValue("price")?.length>0 || form.getFieldValue("price")?.length>3 ) {
       toast.error("Không đúng format price");
-    }
+    } else
     if (!form.getFieldValue("author")?.length>0 || form.getFieldValue("name")?.length>36 ) {
       toast.error("Không đúng format author");
-    }
+    } else
     if (!form.getFieldValue("publisher")?.length>0 || form.getFieldValue("publisher")?.length>36 ) {
       toast.error("Không đúng format publisher");
-    }
-    const item = {
-      name: form.getFieldValue("name"),
-      type: form.getFieldValue("type"),
-      amount: form.getFieldValue("amount"),
-      price: form.getFieldValue("price") * 1000,
-      author:form.getFieldValue("author"),
-      publisher: form.getFieldValue("publisher"),
-      images: [...myImg] || [""],
-    };
-    console.log(item);
-    setImg([])
-    e.preventDefault()
-    try {
-      const result = await http.post("/book/", { book: [item] });
-      console.log(result);
-    
-      toast.success("Nhập sách thành công");
+    }else{
+      const item = {
+        name: form.getFieldValue("name"),
+        type: form.getFieldValue("type"),
+        amount: form.getFieldValue("amount"),
+        price: form.getFieldValue("price") * 1000,
+        author:form.getFieldValue("author"),
+        publisher: form.getFieldValue("publisher"),
+        images: [...myImg] || [""],
+      };
+      console.log(item);
+      setImg([])
+      e.preventDefault()
+      try {
+        const result = await http.post("/book/", { book: [item] });
+        console.log(result);
       
-    } catch (error) {
-      console.log(error);
-      toast.error(error);
+        toast.success("Nhập sách thành công");
+        
+      } catch (error) {
+        console.log(error);
+        toast.error(error);
+      }
     }
+    
   };
   return (
     <>

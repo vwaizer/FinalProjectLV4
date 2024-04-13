@@ -57,6 +57,7 @@ const RentForm = () => {
         toast.error("Bạn chỉ được phép thuê 1 quyển sách")
       }
       else{
+        await http.post(`/book/mailRent/${bookID}`,{time:rentTime})
         toast.success("Thuê thành công")
       }
      

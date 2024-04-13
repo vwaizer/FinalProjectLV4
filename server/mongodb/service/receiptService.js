@@ -1,6 +1,7 @@
 import { Receipt } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js";
 import { ObjectId } from "mongodb";
+import stripePackage from 'stripe';
 export const getAllReceipt = async (req, res, next) => {
   try {
     const result = await databaseProject.receipt
@@ -191,7 +192,7 @@ export const getHistory = async (req, res, next) => {
         {
           '$match': {
             'userID': new ObjectId(`${userID}`),
-            'status':'History'
+            'status':'Đã Mua'
           }
         }, {
           '$lookup': {
@@ -216,7 +217,7 @@ export const getHistory = async (req, res, next) => {
       return res.json(returnData);
       }
      else{
-      return res.json("No History")
+      return res.json("Không có lịch sử")
      }
   } catch (error) {
     next(error);
@@ -310,4 +311,34 @@ console.log("oldCart",oldCart);
  
  }
  
+}
+export const setPayment=async(req,res,next)=>{
+  const stripe=stripePackage(process.env.STRIPE_SECRET_KEY)
+  console.log(stripe);
+  try{
+    const session = await stripe.checkout.sessions.create({
+        payment_method_types:["card"],
+        mode:"payment",
+        line_items: req.body.items.map(item => {
+            return{
+                price_data:{
+                    currency:"inr",
+                    product_data:{
+                        name: item.name
+                    },
+                    unit_amount: (item.price)*100,
+
+                },
+                quantity: item.amount
+            }
+        }),
+        success_url: 'http://localhost:3000/nha-sach',
+        cancel_url: 'http://localhost:3000/thanh-toan'
+    })
+
+    res.json({url: session.url})
+
+}catch(e){
+ res.status(500).json({error:e.message})
+}
 }

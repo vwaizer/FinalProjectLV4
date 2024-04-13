@@ -41,7 +41,7 @@ const ButtonImport = ({record,method,value}) => {
             onClick={()=>onClickFunc(record)}
             
           >
-            Check
+            Xác nhận
           </button>
         </>
       )
