@@ -15,7 +15,6 @@ import RentForm from "./page/RentForm.jsx";
 import Contact from "./page/contact/contact-page.jsx";
 import { Cart, Detail, Home, Payment } from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
-import PopUpChat from "./layout/PopUpChat.jsx";
 const Products = lazy(() => import("./page/Products.jsx"));
 
 function App() {
