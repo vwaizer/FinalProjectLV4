@@ -149,6 +149,7 @@ function Payment() {
         <div className="box-container">
           <div style={{ padding: "10px 20px" }}>
             <div className="check-out-title"> ĐỊA CHỈ GIAO HÀNG </div>
+            <div>Thay đổi địa chỉ</div>
             <div className="form-container">
               <Form
                 style={{ width: "60%", marginLeft: "5%" }}
@@ -395,7 +396,6 @@ function Payment() {
               Xác nhận thanh toán
             </button>
           </div>
-          <div>Thay đổi địa chỉ</div>
         </div>
       </div>
     </Layout>

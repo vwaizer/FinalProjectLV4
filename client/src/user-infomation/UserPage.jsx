@@ -8,7 +8,7 @@ import OrderHistory from "./OrderHistory.jsx";
 
 const UserPage = () => {
   const [getUser, setUser] = useState();
-  useEffect(() => {
+  const updateUserInfo = () => {
     http
       .get("/user/detailUser")
       .then((getUser) => {
@@ -16,6 +16,10 @@ const UserPage = () => {
         console.log("user", getUser);
       })
       .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    updateUserInfo();
   }, []);
   const [selectedItem, setSelectedItem] = useState("account-info");
   const handleItemClick = (value) => {
@@ -25,7 +29,7 @@ const UserPage = () => {
   const renderSelectedComponent = () => {
     switch (selectedItem) {
       case "account-info":
-        return <AccountInfo getUser={getUser} />;
+        return <AccountInfo getUser={getUser} updateUserInfo={updateUserInfo}/>;
       case "address":
         return <AddressEdit />;
       case "order-history":

@@ -8,6 +8,13 @@
     width: 400px;
 }
 
+.overview h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
 @media screen and (max-width: 1050px){
     .wrap-overview{
         flex-direction: column;

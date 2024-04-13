@@ -45,8 +45,8 @@ const Overview = () => {
   }, []);
   return (
     <>
-      <Space direction="vertical">
-        <Typography.Title level={4}>Tổng Quan</Typography.Title>
+      <Space className="overview" direction="vertical">
+        <h2>Tổng Quan</h2>
         <Space className="wrap-overview" direction="horizontal">
           <OverviewCustom
             icon={
@@ -94,6 +94,7 @@ const Overview = () => {
             value={book.bookNumber}
           />
         </Space>
+        <h3>Thống Kê Các Loại Sách</h3>
         <Space className="custom-chart">
           <Statify />
           <ChartBar />

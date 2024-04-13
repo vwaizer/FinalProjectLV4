@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
+import SyncLoader from "react-spinners/SyncLoader";
 import { ToastContainer, toast } from "react-toastify";
 import {
   picture1,
@@ -16,6 +17,13 @@ import SetProduct from "../custom/productcpn/SetProduct.jsx";
 import Layout from "../layout/Layout";
 import { http } from "../util/http.js";
 import "./page.css";
+
+const override = {
+  display: "flex",
+  justifyContent: "center",
+  alignProperty: "center",
+  margin: "20px auto",
+};
 
 function Products() {
   window.scrollTo(0, "smooth");
@@ -99,12 +107,6 @@ function Products() {
     window.scrollTo(0, "smooth");
   };
 
-  // // let searchData = getBook.filter((val) => {
-  //   return Object.keys(val).some((key) =>
-  //     val[key].toString().toLowerCase().includes(value.toString().toLowerCase())
-  //   );
-  // });
-
   return (
     <Layout>
       <ToastContainer
@@ -141,14 +143,19 @@ function Products() {
                 type="text"
                 value={filterName}
                 onChange={getFilterName}
-                placeholder="Tên tác giả"
+                placeholder="Tìm kiếm"
               />
             </div>
           </div>
         </div>
         <div className="rightbox">
           {loading ? (
-            <h4>Loading...</h4>
+            <SyncLoader
+              cssOverride={override}
+              color="#ec5959"
+              loading={loading}
+              size={10}
+            />
           ) : (
             getBook.map((item, index) => {
               if (item !== null) {

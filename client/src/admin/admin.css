@@ -1,5 +1,11 @@
 .side_menu{
     width: 300px;
+    padding: 10px;
+}
+
+.side_menu-custom{
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .content-page{
@@ -33,7 +39,8 @@
   }
   
   .log-out:hover {
-    color: #fff;
+    border: 1px solid brown;
+    color: brown
   }
   
   .log-out::after {
