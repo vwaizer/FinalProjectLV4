@@ -1,10 +1,10 @@
 .contact-page {
-  .C-container_1 {
-    text-align: center;
-    background-color: #f9f6f3;
-    width: 100%;
-    margin-top: 0px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;;
+
 
   .C-container_title_1 {
     text-align: center;
@@ -17,17 +17,18 @@
   }
 
   .C-sub-container_1 {
-    width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: left;
+
+    border: 1px solid brown;
+    border-radius: 10px ;
+    margin-left: 40px;
   }
 
-  .C-column_1,
-  .C-column_3 {
-    flex: 1;
-  }
 
   .auth-btn-frame {
     width: 180px;
@@ -59,7 +60,11 @@
   /* Column 1 */
 
   .C-column_1 {
-    width: 541px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .C-column_1 div {
@@ -150,10 +155,9 @@
   }
 
   .C-buton_submit {
-    text-align: right;
-    padding: 0 0 0 0;
-    padding-bottom: 58px;
-    padding-top: 21px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
   }
 
   /* Column 2 */
@@ -161,17 +165,16 @@
     height: 364px;
     width: 2px;
     background-color: #000000;
-    margin-left: 50px;
-    margin-right: 48px;
+    margin: 20px auto;;
   }
 
   /* Column 3 */
   .C-column_3 {
-    width: 538px;
-  }
-
-  .C-column_3 div {
-    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .C-sub-column_3 {
@@ -180,11 +183,12 @@
     font-weight: 500;
     line-height: 25px;
     padding-bottom: 32px;
+    text-align: center;
   }
 
   .C-store-information {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding-bottom: 14px;
     align-items: center;
   }
@@ -412,24 +416,16 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1280px) {
-  .contact-page {
-    display: flex;
-  }
-}
 
-@media screen and (max-width: 1150px) {
-  .contact-page {
-    display: flex;
-  }
+@media screen and (max-width: 1050px) {
 
   .footer {
     display: flex;
   }
 
   .C-sub-container_1 {
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .C-sub-container_2 {
@@ -445,16 +441,22 @@
     flex-direction: column;
     margin: 1rem 2rem;
   }
+
+  .C-buton_submit{
+    text-align: left;
+  }
 }
 
 .another-contact {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   cursor: pointer;
   color: #000;
+
+  margin-top: 10px;
 }
 
 .another-contact a {
@@ -475,14 +477,14 @@
     width: 100%;
   }
 
-  .C-sub-container_1 {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
   .C-sub-container_2 {
     flex-direction: column;
     padding: 0;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .C-column_1{
+    flex-direction: column;
   }
 }

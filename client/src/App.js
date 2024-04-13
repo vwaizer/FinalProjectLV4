@@ -45,9 +45,10 @@ function App() {
             <Route
               path="/nha-sach"
               element={
-                <ErrorBoundary 
-                FallbackComponent={<ErrorPage />}
-                onReset={() => window.location.href = "/"}>
+                <ErrorBoundary
+                  FallbackComponent={<ErrorPage />}
+                  onReset={() => (window.location.href = "/")}
+                >
                   <Suspense fallback={<Loading />}>
                     <Products />
                   </Suspense>
@@ -68,10 +69,6 @@ function App() {
             <button type="button" onClick={goToAdmin}>
               Admin
             </button>
-           
-          </div>
-          <div>
-         
           </div>
         </>
       )}

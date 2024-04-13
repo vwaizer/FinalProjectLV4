@@ -84,7 +84,6 @@ const Contactpage = () => {
                   </div>
                 </div>
               </div>
-              <div class="C-column_2"></div>
               <div class="C-column_3">
                 <div class="C-column-title">
                   <p class="C-sub_title">Liên Hệ</p>

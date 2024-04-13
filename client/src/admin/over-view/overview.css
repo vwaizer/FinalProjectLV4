@@ -51,6 +51,12 @@
     }
 }
 
+@media screen and (max-width: 650px){
+    .overview h3{
+        text-align: left;
+    }
+}
+
 @media screen and (max-width: 550px){
     .wrap-overview{
         flex-direction: column;

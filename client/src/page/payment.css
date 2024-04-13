@@ -70,3 +70,55 @@
 .input-payment:hover{
     border-color: #4096ff;
 }
+
+@media screen and (max-width: 1050px) {
+    .box-container{
+        margin-top: 100px;
+    }
+    .confirm-button-pay{
+        width: 30%;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .confirm-button-pay{
+        width: 30%;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .confirm-button-pay{
+        width: 50%;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .confirm-button-pay{
+        width: 100%;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .box-container{
+        flex-direction: column;
+    }
+
+    .confirm-button-pay{
+        width: 100%;
+        height: 60px;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .confirm-button-pay{
+        width: 120%;
+        height: 70px;
+        font-size: 15px;
+    }
+}
