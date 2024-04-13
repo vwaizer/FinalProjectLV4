@@ -98,20 +98,20 @@ export const loginValidator = validator(
               email: value,
             });
 
-            // if (isUserExist) {
-            //   if(isUserExist.verifyToken == "Đã xác thực"){
-            //     return true;
-            //   } 
-            //   else{
-            //     throw new Error("Email chưa xác thực")
-            //   }
+            if (isUserExist) {
+              // if(isUserExist.verifyToken == "Đã xác thực"){
+              //   return true;
+              // } 
+              // else{
+              //   throw new Error("Email chưa xác thực")
+              // }
               
+              return true
+            } else {
 
-            // } else {
+              throw new Error("Email chưa đăng ký");
 
-            //   throw new Error("Email chưa đăng ký");
-
-            // }
+            }
           },
         },
       },
@@ -128,13 +128,15 @@ export const loginValidator = validator(
             const userLogin = await databaseProject.users.findOne({
               email: req.body.email,
             });
-
-            checked = bcrypt.compareSync(value, userLogin.password)
+            if(userLogin){
+              checked = bcrypt.compareSync(value, userLogin.password)
             console.log(checked);
             if (checked == true) {
               return true
             }
             else { throw new Error(" PASSWORD DOES NOT MATCH") }
+            }
+            
 
 
           },
@@ -157,17 +159,17 @@ export const staffLoginValidator = validator(
             });
 
             if (isUserExist) {
-              if(isUserExist.verifyToken == "verified"){
+              if(isUserExist.verifyToken == "Đã xác thực"){
                 return true;
               } 
               else{
-                throw new Error("Email is not verified")
+                throw new Error("Email chưa xác thực")
               }
               
 
             } else {
 
-              throw new Error("Email is not registered");
+              throw new Error("Email chưa đăng ký");
 
             }
           },
@@ -186,13 +188,16 @@ export const staffLoginValidator = validator(
             const userLogin = await databaseProject.users.findOne({
               email: req.body.email,
             });
-            console.log(value);
+            if(userLogin){
+              console.log(value);
             checked = bcrypt.compareSync(value, userLogin.password)
            
             if (checked == true) {
               return true
             }
             else { throw new Error(" PASSWORD DOES NOT MATCH") }
+            }
+            
 
 
           },
