@@ -38,7 +38,7 @@ const OrderHistory = () => {
         <div className="line"></div>
       </div>
       <div>
-        {getHistory.map((order, index) => {
+        {getHistory.length > 0 ? (getHistory.map((order, index) => {
           const totalPrice = getTotalPrice(order);
 
           return (
@@ -80,7 +80,9 @@ const OrderHistory = () => {
               </div>
             </div>
           );
-        })}
+        }))
+        : <div>Bạn chưa có đơn hàng nào</div>}
+        
       </div>
     </div>
   );
