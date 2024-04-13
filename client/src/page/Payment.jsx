@@ -28,12 +28,6 @@ function Payment() {
   const [getAddress, setAddress] = useState([]);
   const [getUser, setUser] = useState([]);
   const defaultAddress = JSON.parse(localStorage.getItem("defaultAddress"));
-  const [fields, setFields] = useState([
-    {
-      name: ["email"],
-      value: "",
-    },
-  ]);
   useEffect(() => {
     http
       .get("/receipt/")
@@ -54,6 +48,7 @@ function Payment() {
   }, []);
   const [form] = Form.useForm();
   const [formNote] = Form.useForm();
+  const [formPayment] = Form.useForm();
   useEffect(() => {
     form.setFieldsValue({
       userName: defaultAddress?.fullName || getUser?.fullName || "",
@@ -91,44 +86,91 @@ function Payment() {
     return parseFloat(totalPrice + 19.0);
   };
 
-  const onChange = (e) => {
+  const onChangeNote = (e) => {
     setShowNoteInput(e.target.checked);
+    console.log(e.target.checked)
   };
+  const onChangePayment = (e) => {
+    // setShowNoteInput(e.target.value);
+    console.log(e.target.value)
+  };
+  useEffect(()=>{
+    console.log(showNoteInput)
+
+  },[showNoteInput])
   const validateAndSubmitForm = async () => {
     try {
-      
       if (showNoteInput) {
         await Promise.all([
           form.validateFields(),
           formNote.validateFields(),
-          
+          formPayment.validateFields(),
         ]);
-        onFinish(form.getFieldsValue(), formNote.getFieldValue())
-     
-      }else{
-        await form.validateFields();
-        onFinish(form.getFieldsValue(), formNote.getFieldValue())
        
+          onFinish(
+            form.getFieldsValue(),
+            formNote.getFieldValue(),
+            formPayment.getFieldValue()
+          );
+        
+      } else {
+        await Promise.all([
+          form.validateFields(),
+          formPayment.validateFields(),
+        ]);
+       
+          onFinish(form.getFieldsValue(), formPayment.getFieldValue());
+        
       }
-      
+      // Additional logic if needed
     } catch (error) {
-      console.log(error);
+      // Handle error
     }
   };
 
-  const onFinish = (formValues,noteValue) => {
-    // console.log("thông tin từ form: " , formValues);
-    // console.log("thông tin từ note: " , noteValue);
+  const onFinish = (formValues) => {
+    console.log("thông tin từ form: ", formValues);
+    const noteValues = formNote.getFieldsValue();
+    console.log("thông tin từ note: ", noteValues);
+    const paymentValues = formPayment.getFieldsValue();
+    console.log("thông tin từ payment: ", paymentValues);
+    let result;
+    if (paymentValues.paymentMethod === "visa") {
+      fetch("http://localhost:5000/create-checkout-session", {
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        mode:"cors",
+        body: JSON.stringify({
+          items: [
+            { name: listCheck.name, price: listCheck.price, amount: listCheck.amount}
+          ]
+        })
+      })
+      .then(res => {
+        if (res.ok) return res.json()
+        return res.json().then(json => Promise.reject(json))
+      })
+      .then(({url})=>{
+        window.location = url
+      })
+      .catch(e => {
+        console.log(e.error)
+      })
+    } else {
+      result = 0;
+    }
     let newCart;
     newCart = listCheck.map((product) => {
       const { amount, discount, bookID } = product;
       return { amount: amount, discount: discount, bookID: bookID };
     });
-    http
-      .post("/receipt/setHistory", { cart: newCart })
-      .catch((error) => console.log(error));
-    toast.success("Mua hàng thành công");
-    setTimeout(() => (window.location.href = "/"), 2000);
+    // http
+    //   .post("/receipt/setHistory", { cart: newCart })
+    //   .catch((error) => console.log(error));
+    // toast.success("Mua hàng thành công");
+    // setTimeout(() => (window.location.href = "/"), 2000);
   };
 
   return (
@@ -148,8 +190,21 @@ function Payment() {
       <div style={{ width: "80%", margin: "auto" }}>
         <div className="box-container">
           <div style={{ padding: "10px 20px" }}>
-            <div className="check-out-title"> ĐỊA CHỈ GIAO HÀNG </div>
-            <div>Thay đổi địa chỉ</div>
+            <div className="check-out-title">
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div>ĐỊA CHỈ GIAO HÀNG</div>{" "}
+                <div
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: "200",
+                    textDecoration: "underline",
+                  }}
+                >
+                  Thay đổi địa chỉ
+                </div>
+              </div>
+            </div>
+
             <div className="form-container">
               <Form
                 style={{ width: "60%", marginLeft: "5%" }}
@@ -181,14 +236,6 @@ function Payment() {
                 >
                   <input className="input-payment" maxLength={60}></input>
                 </Form.Item>
-                {/* <Form.Item>
-                  <CustomizedForm
-                    fields={fields}
-                    onChange={(newFields) => {
-                      setFields(newFields);
-                    }}
-                  />
-                </Form.Item> */}
 
                 <Form.Item
                   name="phoneNumber"
@@ -200,7 +247,11 @@ function Payment() {
                     },
                   ]}
                 >
-                  <input className="input-payment" maxLength={10} minLength={8}></input>
+                  <input
+                    className="input-payment"
+                    maxLength={10}
+                    minLength={8}
+                  ></input>
                 </Form.Item>
 
                 <Form.Item
@@ -277,16 +328,31 @@ function Payment() {
                   },
                 }}
               >
-                <Radio>
-                  <img
-                    className="payment-methods"
-                    src="https://cdn0.fahasa.com/skin/frontend/base/default/images/payment_icon/ico_cashondelivery.svg?q=105522"
-                    alt=""
-                  ></img>
-                  <span style={{ fontSize: "16px" }}>
-                    Thanh toán bằng tiền mặt khi nhận hàng
-                  </span>
-                </Radio>
+                <Form form={formPayment}>
+                  <Form.Item
+                    name="paymentMethod"
+                    rules={[
+                      {
+                        required: true,
+                        message: "Thông tin này không được để trống",
+                      },
+                    ]}
+                  >
+                    <Radio.Group onChange={onChangePayment}>
+                      <Radio value={"tiền mặt"}>
+                        <img
+                          className="payment-methods"
+                          src="https://cdn0.fahasa.com/skin/frontend/base/default/images/payment_icon/ico_cashondelivery.svg?q=105522"
+                          alt=""
+                        ></img>
+                        <span style={{ fontSize: "16px" }}>
+                          Thanh toán bằng tiền mặt khi nhận hàng
+                        </span>
+                      </Radio>
+                      <Radio value={"visa"}>Thanh toán bằng thẻ tín dụng</Radio>
+                    </Radio.Group>
+                  </Form.Item>
+                </Form>
               </ConfigProvider>
             </div>
           </div>
@@ -296,7 +362,7 @@ function Payment() {
           <div className="space-item">
             <div className="check-out-title"> THÔNG TIN KHÁC </div>
             <div style={{ marginTop: "10px" }}>
-              <Checkbox onChange={onChange}>
+              <Checkbox onChange={(e)=>onChangeNote(e)}>
                 <span style={{ fontSize: "16px" }}>Ghi chú</span>
               </Checkbox>
 
@@ -312,7 +378,7 @@ function Payment() {
                     ]}
                   >
                     <div style={{ width: "550px", marginTop: "10px" }}>
-                      <Input placeholder="Nhập ghi chú" maxLength={100}/>
+                      <Input placeholder="Nhập ghi chú" maxLength={100} />
                     </div>
                   </Form.Item>
                 </Form>
