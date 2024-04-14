@@ -46,6 +46,7 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
         birthday: values.birthday.format("YYYY"),
       };
       console.log("thông tin sau thay đổi", changedInfo);
+     
       http
         .put("/user/changeInfo", {
           fullName: changedInfo.fullName,
@@ -58,7 +59,7 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
         updateUserInfo()
         console.log("Cập nhật thành công");
         setNewChangedFieldsCount(0);
-
+         form.resetFields()
         
         })
         .catch((error) => console.log(error));
