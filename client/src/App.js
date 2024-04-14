@@ -15,6 +15,8 @@ import RentForm from "./page/RentForm.jsx";
 import Contact from "./page/contact/contact-page.jsx";
 import { Cart, Detail, Home, Payment } from "./page/index.js";
 import UserPage from "./user-infomation/UserPage.jsx";
+import Success from "./page/Success.jsx";
+import Cancel from "./page/Cancel.jsx";
 const Products = lazy(() => import("./page/Products.jsx"));
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
             <Route path="/sign-up" element={<SignUp />}></Route>
             <Route path="/sign-in" element={<SignIn />}></Route>
             <Route path="/" element={<Home />}></Route>
+             <Route path="/success/" element={<Success/>}></Route>
+            <Route path="/cancel" element={<Cancel/>}></Route>
             <Route
               path="/nha-sach"
               element={
