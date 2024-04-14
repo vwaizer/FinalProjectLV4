@@ -14,7 +14,6 @@ const LayoutAdmin = () => {
         <SideMenu></SideMenu>
         <PageContent></PageContent>
       </Space>
-      <FooterPage/>
     </div>
   );
 };
