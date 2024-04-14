@@ -309,10 +309,6 @@
     font-weight: normal;
   }
 
-  .C-button-FAQ_1:focus + .C-container-FAQ_1 {
-    display: block;
-  }
-
   /* ---------------------- */
   .C-container-FAQ_2 {
     width: 1063px;
@@ -324,11 +320,6 @@
   .C-container-FAQ_2 label {
     font-weight: normal;
   }
-
-  .C-button-FAQ_2:focus + .C-container-FAQ_2 {
-    display: block;
-  }
-
   /* ---------------------- */
   .C-container-FAQ_3 {
     width: 1063px;
@@ -340,11 +331,6 @@
   .C-container-FAQ_3 label {
     font-weight: normal;
   }
-
-  .C-button-FAQ_3:focus + .C-container-FAQ_3 {
-    display: block;
-  }
-
   /* ---------------------- */
   .C-container-FAQ_4 {
     width: 1063px;
@@ -357,9 +343,6 @@
     font-weight: normal;
   }
 
-  .C-button-FAQ_4:focus + .C-container-FAQ_4 {
-    display: block;
-  }
 
   /* ---------------------- */
   .C-container-FAQ_5 {
@@ -387,10 +370,6 @@
 
   .C-container-FAQ_6 label {
     font-weight: normal;
-  }
-
-  .C-button-FAQ_6:focus + .C-container-FAQ_6 {
-    display: block;
   }
 
   .C-child-box-subtitle_last {
