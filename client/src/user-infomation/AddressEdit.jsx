@@ -124,9 +124,6 @@ const AddressEdit = () => {
         formAddress.validateFields(),
         formUser.validateFields(),
       ]);
-
-      // push lên api
-
       // thông tin địa chỉ
       console.log("result", addressSelected);
       console.log("user", inputInforUser);
@@ -164,9 +161,7 @@ const AddressEdit = () => {
         .catch((error) => console.log(error));
 
       // setTimeout(() => (window.location.href = "/"), 2000);
-
       // thông tin sdt và họ tên của user
-      console.log(inputInforUser);
     } catch (error) {
       console.log("Validation error:", error);
     }

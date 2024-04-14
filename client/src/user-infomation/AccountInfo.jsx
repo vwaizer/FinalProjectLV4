@@ -15,13 +15,32 @@ const AccountInfo = ({ getUser }) => {
     email: false,
     phone: false,
   });
-
-  const onFinish = async(values) => {
+  const onFinish = async (values) => {
     console.log("form", values);
     try {
       await form.validateFields(); // Kiểm tra tính hợp lệ của biểu mẫu
+      let changedFieldsCount = 0; // Biến đếm số lượng trường đã thay đổi
+      if (form.isFieldTouched("fullName")) {
+        changedFieldsCount++;
+      }
+      if (form.isFieldTouched("phone")) {
+        changedFieldsCount++;
+      }
+      if (form.isFieldTouched("sex")) {
+        changedFieldsCount++;
+      }
+      if (form.isFieldTouched("birthday")) {
+        changedFieldsCount++;
+      }
 
-      const changedInfo = { ...values, birthday: values.birthday.format("YYYY") };
+      if (changedFieldsCount === 0) {
+        alert("Không có thông tin nào được thay đổi");
+        return;
+      }
+      const changedInfo = {
+        ...values,
+        birthday: values.birthday.format("YYYY"),
+      };
       console.log("thông tin sau thay đổi", changedInfo);
       http
         .put("/user/changeInfo", {
@@ -94,20 +113,11 @@ const AccountInfo = ({ getUser }) => {
           fullName: getUser.fullName,
           phone: getUser.phone,
           sex: getUser.sex,
-          birthday: moment(getUser.birthday) || ""
+          birthday: moment(getUser.birthday) || "",
         }}
       >
-<Form.Item
-          label="Email"
-          name="email"
-        >
-          <input
-          disabled
-            className="input-disable"
-            // onClick={() => handleInputClick("fullName")}
-            // onBlur={() => handleInputBlur("fullName")}
-            maxLength={60}
-          ></input>
+        <Form.Item label="Email" name="email">
+          <input disabled className="input-disable" maxLength={60}></input>
         </Form.Item>
 
         <Form.Item
@@ -117,7 +127,7 @@ const AccountInfo = ({ getUser }) => {
             {
               required: true,
               message: "Thông tin này không được để trống",
-            }
+            },
           ]}
         >
           <input
@@ -135,7 +145,7 @@ const AccountInfo = ({ getUser }) => {
             {
               required: true,
               message: "Thông tin này không được để trống",
-            }
+            },
           ]}
         >
           <input
@@ -145,7 +155,6 @@ const AccountInfo = ({ getUser }) => {
             maxLength={10}
             minLength={8}
           ></input>
-            
         </Form.Item>
 
         <Form.Item
@@ -155,7 +164,7 @@ const AccountInfo = ({ getUser }) => {
             {
               required: true,
               message: "Thông tin này không được để trống",
-            }
+            },
           ]}
         >
           <Radio.Group onChange={onChange}>
@@ -172,10 +181,10 @@ const AccountInfo = ({ getUser }) => {
             {
               required: true,
               message: "Thông tin này không được để trống",
-            }
+            },
           ]}
         >
-           <DatePicker />
+          <DatePicker />
         </Form.Item>
 
         <Form.Item
@@ -184,10 +193,7 @@ const AccountInfo = ({ getUser }) => {
             span: 16,
           }}
         >
-          <Button
-            className="save-changed-info"
-            htmlType="submit"
-          >
+          <Button className="save-changed-info" htmlType="submit">
             Lưu thay đổi
           </Button>
         </Form.Item>
