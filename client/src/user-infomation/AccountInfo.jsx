@@ -10,29 +10,34 @@ import "./userPage.css";
 const AccountInfo = ({ getUser, updateUserInfo }) => {
   const [value, setValue] = useState(null);
   const [form] = Form.useForm();
+  const [newChangedFieldsCount, setNewChangedFieldsCount] = useState(0);
   const [inputStates, setInputStates] = useState({
     fullName: false,
     email: false,
     phone: false,
   });
+  useEffect(() => {
+    console.log("num", newChangedFieldsCount);
+    setNewChangedFieldsCount(newChangedFieldsCount);
+  }, [newChangedFieldsCount]);
   const onFinish = async (values) => {
     console.log("form", values);
     try {
       await form.validateFields(); 
-      let changedFieldsCount = 0; // Biến đếm số lượng trường đã thay đổi
+      let newChangedFieldsCount = 0;
       if (form.isFieldTouched("fullName")) {
-        changedFieldsCount++;
-      }
+        newChangedFieldsCount++
+            }
       if (form.isFieldTouched("phone")) {
-        changedFieldsCount++;
-      }
+        newChangedFieldsCount++
+            }
       if (form.isFieldTouched("sex")) {
-        changedFieldsCount++;
-      }
+        newChangedFieldsCount++
+            }
       if (form.isFieldTouched("birthday")) {
-        changedFieldsCount++;
-      }
-      if (changedFieldsCount === 0) {
+        newChangedFieldsCount++
+            }
+      if (newChangedFieldsCount === 0) {
         alert("Không có thông tin nào được thay đổi");
         return;
       }
@@ -49,11 +54,12 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
           birthday: changedInfo.birthday,
         })
         .then(() => {
+        toast.success("Cập nhật thông tin thành công")
         updateUserInfo()
         console.log("Cập nhật thành công");
-        changedFieldsCount = 0
-        console.log('num',changedFieldsCount)
-        toast.success("Cập nhật thông tin thành công")
+        setNewChangedFieldsCount(0);
+
+        
         })
         .catch((error) => console.log(error));
         
