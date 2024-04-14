@@ -109,6 +109,8 @@
 }
 
 
+
+
 @media only screen and (max-width: 600px) {
   .info-address{
     flex-direction: column;
@@ -218,4 +220,11 @@
   .confirm-button-pay {
     width: 30%;
   }
+}
+
+@media screen and (max-width: 420px) {
+  .form-container{
+    overflow: hidden;
+  }
+
 }
