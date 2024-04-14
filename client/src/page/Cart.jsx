@@ -174,6 +174,7 @@ function Cart() {
         <>
           <div className="cart-container">
             <div className="header-cart-item">
+              <div style={{marginBottom:'10px'}}>
               <h1>GIỎ HÀNG ({getAddToCart[0]?.cart?.length} sản phẩm)</h1>
               <div className="checked-all-products">
                 <div style={{ flex: "2", display: "flex" }}>
@@ -191,6 +192,8 @@ function Cart() {
                   Thành tiền
                 </div>
               </div>
+              </div>
+              
 
               <div style={{ backgroundColor: "#fff", borderRadius: "7px" }}>
                 <div style={{ paddingTop: "10px", paddingRight: "10px" }}>
@@ -216,7 +219,7 @@ function Cart() {
                           <div className="products-info">
                             <div>{name}</div>
                             <div
-                              style={{ fontSize: "1.1em", fontWeight: "600" }}
+                              style={{ fontSize: "1.1em", fontWeight: "600"}}
                             >
                               {priceFormatted} đ
                             </div>

@@ -322,18 +322,18 @@ export const setPayment=async(req,res,next)=>{
         line_items: req.body.items.map(item => {
             return{
                 price_data:{
-                    currency:"inr",
+                    currency:"vnd",
                     product_data:{
                         name: item.name
                     },
-                    unit_amount: (item.price)*100,
+                    unit_amount: (item.price)*1000,
 
                 },
                 quantity: item.amount
             }
         }),
-        success_url: 'http://localhost:3000/nha-sach',
-        cancel_url: 'http://localhost:3000/thanh-toan'
+        success_url: 'https://bookstorelv4.vercel.app/nha-sach',
+        cancel_url: 'https://bookstorelv4.vercel.app/thanh-toan'
     })
 
     res.json({url: session.url})

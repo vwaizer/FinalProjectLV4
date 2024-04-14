@@ -1,124 +1,207 @@
-.check-out-title{
-    font-size: 1.1em;
-    font-weight: 600;
-    border-bottom: 1px solid #ced4da;
-    padding: 8px 0px;
+.info-address{
+  display: flex;
+  justify-content: space-between
 }
-.payment-methods{
-    padding: 0px 10px;
-    width: 60px;
+.check-out-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  border-bottom: 1px solid #ced4da;
+  padding: 8px 0px;
 }
-.box-container{
-    margin-bottom: 15px;
-    background-color: #fff;
+.payment-methods {
+  padding: 0px 10px;
+  width: 60px;
 }
-.space-item{
-    padding: 10px 20px;
+.box-container {
+  margin-bottom: 15px;
+  background-color: #fff;
 }
-.product-image{
-    width: 120px;
-    height: 130px;
+.space-item {
+  padding: 10px 20px;
 }
-.total-amount-box{
-    display: flex;
-    flex-basis: 30%;
-    justify-content: space-between;
-    font-size: 14px;
+.product-image {
+  width: 120px;
+  height: 130px;
 }
-.form-container{
-    width: 100%;
-    display: flex;
-    padding: 10px 0px;
+.total-amount-box {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: space-between;
+  font-size: 14px;
 }
-.form-title{
-    flex-basis: 35%;
+.form-container {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
 }
-.confirm-button-pay{
-    width: 25%;
-    height: 45px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background-color: #C92127;
-    color: white;
-    font-weight: bolder;
-    font-size: 18px;
-    margin-top: 10px;
-    transition: background-color .4s ease;
-  }
-.confirm-button-pay:hover{
-    background-color: #a81a1f;
-  }
-.ant-input{
-    min-width: 500px;
+.form-title {
+  flex-basis: 35%;
+}
+.title-total-ship {
+  color: brown;
+  flex-basis: 85%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 17px;
+}
+.price-total-ship{
+    font-weight: bold;
+    font-size: 20px;
+    color: #F39801;
+    margin-bottom: 0px;
+    flex-basis: 10%;
+}
+.confirm-form {
+  display: flex;
+  margin: 0px 50px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.confirm-button-pay {
+  width: 25%;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #c92127;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: background-color 0.4s ease;
+}
+.confirm-button-pay:hover {
+  background-color: #a81a1f;
+}
+.ant-input {
+  min-width: 500px;
 }
 /* .labelColCustomStyle{
     width: 35%;
 }  */
-.input-payment{
-    width:100%;
-    height:30px;
-    border-radius:7px;
-    outline:none;
-    border-color: #d9d9d9;
-    background: #ffffff;
-    border-width: 1px;
-    border-style: solid;
-    padding-left:10px;
-    transition: all ease .3s;
+.input-payment {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  outline: none;
+  border-color: #d9d9d9;
+  background: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 10px;
+  transition: all ease 0.3s;
 }
-.input-payment:hover{
-    border-color: #4096ff;
+.input-payment:hover {
+  border-color: #4096ff;
 }
-
-@media screen and (max-width: 1050px) {
-    .box-container{
-        margin-top: 100px;
-    }
-    .confirm-button-pay{
-        width: 30%;
-        height: 50px;
-    }
+@media only screen and (max-width: 600px) {
+  .info-address{
+    flex-direction: column;
+  }
+  .input-payment{
+    width: 330px;
+  }
+  .total-amount-box{
+    flex-direction: column;
+    flex-basis: 40%;
+    text-align: center;
+  }
+  .title-total-ship{
+    text-align: left;
+    flex-basis: 55%;
+  }
+  .price-total-ship{
+    flex-basis: 35%;
+  }
+  .confirm-form {
+    flex-direction: column;
+  }
+  .confirm-form u {
+    font-size: 8px;
+  }
+  .confirm-button-pay {
+    width: 100%;
+  }
 }
-
-@media screen and (max-width: 950px) {
-    .confirm-button-pay{
-        width: 30%;
-        height: 60px;
-    }
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .input-payment{
+    width: 220px;
+  }
+  .total-amount-box{
+    flex-direction: column;
+    text-align: center;
+  }
+  .title-total-ship{
+    text-align: left;
+    flex-basis: 55%;
+  }
+  .price-total-ship{
+    flex-basis: 25%;
+  }
+  .confirm-form {
+    flex-direction: column;
+  }
+  .confirm-form u {
+    font-size: 10px;
+  }
+  .confirm-button-pay {
+    width: 100%;
+  }
 }
-
-@media screen and (max-width: 768px) {
-    .confirm-button-pay{
-        width: 50%;
-        height: 60px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  .input-payment{
+    width: 300px;
+  }
+  .total-amount-box{
+    flex-direction: column;
+    text-align: center;
+  }
+  .title-total-ship{
+    text-align: left;
+    flex-basis: 55%;
+  }
+  .price-total-ship{
+    flex-basis: 16%;
+  }
+  .confirm-form {
+    flex-direction: column;
+  }
+  .confirm-form u {
+    font-size: 16px;
+  }
+  .confirm-button-pay {
+    width: 100%;
+  }
 }
-
-@media screen and (max-width: 600px) {
-    .confirm-button-pay{
-        width: 100%;
-        height: 60px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .box-container{
-        flex-direction: column;
-    }
-
-    .confirm-button-pay{
-        width: 100%;
-        height: 60px;
-        font-size: 15px;
-        margin-left: 5px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .confirm-button-pay{
-        width: 120%;
-        height: 70px;
-        font-size: 15px;
-    }
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  .input-payment{
+    width: 400px;
+  }
+  .title-total-ship{
+    text-align: left;
+    flex-basis: 55%;
+  }
+  .price-total-ship{
+    flex-basis: 14%;
+  }
+  .confirm-form {
+    flex-direction: column;
+  }
+  .confirm-form u {
+    font-size: 16px;
+  }
+  .confirm-button-pay {
+    width: 100%;
+  }
+}@media only screen and (min-width: 1200px) {
+  .input-payment{
+    width: 500px;
+  }
+  .confirm-form u {
+    font-size: 17px;
+  }
+  .confirm-button-pay {
+    width: 30%;
+  }
 }

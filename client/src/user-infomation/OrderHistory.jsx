@@ -76,8 +76,12 @@ const OrderHistory = () => {
               <div className="history-total-container">
                 <div className="line-history-total-price"></div>
                 <div className="total-title">
-                  <div className="title">Thành tiền: </div>
-                  <div className="price">{totalPrice}.000 đ</div>
+                  <div className="title"><div>Phí ship:</div><div>Thành tiền:</div></div>
+                  <div className="price">
+                    <div style={{  color: '#646464',
+  fontSize: '16px',fontWeight:'400'}}>19.000 đ</div>
+                    <div>{totalPrice}.000 đ</div>
+                  </div>
                 </div>
               </div>
             </div>

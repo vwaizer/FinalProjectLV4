@@ -30,7 +30,7 @@ const ImportAndBrowse = () => {
   }, [isClicked]);
   const onRefuseFunc=async(id)=>{
     try {
-      const result=await http.put(`/staff/hiredBook/${id}`,{status:"Từ chối"})
+      const result=await http.put(`/staff/importedBook/${id}`,{status:"Từ chối"})
       console.log(result);
       setIsClicked(!isClicked)
     } catch (error) {

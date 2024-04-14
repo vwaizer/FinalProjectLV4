@@ -7,42 +7,57 @@ import moment from "moment";
 import { toast } from "react-toastify";
 import "./userPage.css";
 
-const AccountInfo = ({ getUser }) => {
+const AccountInfo = ({ getUser, updateUserInfo }) => {
   const [value, setValue] = useState(null);
-  const [getUserInfo, setUserInfo] = useState([]);
   const [form] = Form.useForm();
   const [inputStates, setInputStates] = useState({
     fullName: false,
     email: false,
     phone: false,
   });
-  useEffect(() => {
-    http
-      .get("/user/detailUser")
-      .then((getUserInfo) => {
-        setUserInfo(getUserInfo.data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-  // console.log("thong tin user", getUserInfo);
-  const onFinish = async(values) => {
+  const onFinish = async (values) => {
     console.log("form", values);
     try {
-      await form.validateFields(); // Kiểm tra tính hợp lệ của biểu mẫu
-
-      // const changedInfo = { ...result, birthday: getUser.birthday.format("YYYY") };
-      // console.log("thông tin sau thay đổi", changedInfo);
-      // http
-      //   .put("/user/changeInfo", {
-      //     fullName: changedInfo.fullName,
-      //     // email: changedInfo.email,
-      //     phone: changedInfo.phone,
-      //     sex: changedInfo.sex,
-      //     birthday: changedInfo.birthday,
-      //   })
-      //   .catch((error) => console.log(error));
-      // console.log("Cập nhật thành công");
-      // toast.success("Cập nhật thông tin thành công");
+      await form.validateFields(); 
+      let changedFieldsCount = 0; // Biến đếm số lượng trường đã thay đổi
+      if (form.isFieldTouched("fullName")) {
+        changedFieldsCount++;
+      }
+      if (form.isFieldTouched("phone")) {
+        changedFieldsCount++;
+      }
+      if (form.isFieldTouched("sex")) {
+        changedFieldsCount++;
+      }
+      if (form.isFieldTouched("birthday")) {
+        changedFieldsCount++;
+      }
+      if (changedFieldsCount === 0) {
+        alert("Không có thông tin nào được thay đổi");
+        return;
+      }
+      const changedInfo = {
+        ...values,
+        birthday: values.birthday.format("YYYY"),
+      };
+      console.log("thông tin sau thay đổi", changedInfo);
+      http
+        .put("/user/changeInfo", {
+          fullName: changedInfo.fullName,
+          phone: changedInfo.phone,
+          sex: changedInfo.sex,
+          birthday: changedInfo.birthday,
+        })
+        .then(() => {
+        updateUserInfo()
+        console.log("Cập nhật thành công");
+        changedFieldsCount = 0
+        console.log('num',changedFieldsCount)
+        toast.success("Cập nhật thông tin thành công")
+        })
+        .catch((error) => console.log(error));
+        
+      
       // setTimeout(() => (window.location.href = "/"), 2000);
     } catch (error) {
       // Xử lý lỗi nếu biểu mẫu không hợp lệ
@@ -58,8 +73,6 @@ const AccountInfo = ({ getUser }) => {
     console.log("radio checked", e.target.value);
     setValue(e.target.value);
   };
-
-
   const formItemLayout = {
     labelCol: {
       xs: { span: 24 },
@@ -74,9 +87,6 @@ const AccountInfo = ({ getUser }) => {
       lg: { span: 14 },
     },
   };
-
-
-
   const handleInputClick = (fieldName) => {
     setInputStates((prevInputStates) => ({
       ...prevInputStates,
@@ -104,12 +114,17 @@ const AccountInfo = ({ getUser }) => {
         {...formItemLayout}
         variant="filled"
         initialValues={{
+          email: getUser.email,
           fullName: getUser.fullName,
           phone: getUser.phone,
           sex: getUser.sex,
-          birthday: moment(getUser.birthday)
+          birthday: moment(getUser.birthday) || "",
         }}
       >
+        <Form.Item label="Email" name="email">
+          <input disabled className="input-disable" maxLength={60}></input>
+        </Form.Item>
+
         <Form.Item
           label="Họ và Tên"
           name="fullName"
@@ -117,7 +132,7 @@ const AccountInfo = ({ getUser }) => {
             {
               required: true,
               message: "Thông tin này không được để trống",
-            }
+            },
           ]}
         >
           <input
@@ -135,7 +150,7 @@ const AccountInfo = ({ getUser }) => {
             {
               required: true,
               message: "Thông tin này không được để trống",
-            }
+            },
           ]}
         >
           <input
@@ -145,7 +160,6 @@ const AccountInfo = ({ getUser }) => {
             maxLength={10}
             minLength={8}
           ></input>
-            
         </Form.Item>
 
         <Form.Item
@@ -155,7 +169,7 @@ const AccountInfo = ({ getUser }) => {
             {
               required: true,
               message: "Thông tin này không được để trống",
-            }
+            },
           ]}
         >
           <Radio.Group onChange={onChange}>
@@ -172,11 +186,10 @@ const AccountInfo = ({ getUser }) => {
             {
               required: true,
               message: "Thông tin này không được để trống",
-            }
+            },
           ]}
         >
-           <DatePicker />
-           {/* <DatePicker /> */}
+          <DatePicker />
         </Form.Item>
 
         <Form.Item
@@ -185,11 +198,7 @@ const AccountInfo = ({ getUser }) => {
             span: 16,
           }}
         >
-          <Button
-            className="save-changed-info"
-            htmlType="submit"
-          
-          >
+          <Button className="save-changed-info" htmlType="submit">
             Lưu thay đổi
           </Button>
         </Form.Item>
