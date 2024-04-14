@@ -111,3 +111,15 @@
   height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .h2-detail{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .h2-detail{
+    font-size: 20px;
+    padding: 10px;
+  }
+}

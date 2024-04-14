@@ -276,3 +276,22 @@ input[type="checkbox"]:checked::before {
   }
 }
 
+@media screen and (max-width: 650px){
+  .product-container{
+    width: 100%;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .product-container{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .products-info{
+    display: flex;
+    width: 30%;
+  }
+}
+
+

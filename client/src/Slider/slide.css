@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: grey;
+    background-color: transparent;
     border-radius: 10px;
 
   }
@@ -114,5 +114,16 @@
 @media screen and (max-width: 1050px) {
   .container__slider{
     margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container__slider{
+    width: 100%;
+    height: 400px;
+  }
+
+  .container__slider img{
+    height: 100%;
   }
 }
