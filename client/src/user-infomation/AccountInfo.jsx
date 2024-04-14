@@ -9,40 +9,31 @@ import "./userPage.css";
 
 const AccountInfo = ({ getUser }) => {
   const [value, setValue] = useState(null);
-  const [getUserInfo, setUserInfo] = useState([]);
   const [form] = Form.useForm();
   const [inputStates, setInputStates] = useState({
     fullName: false,
     email: false,
     phone: false,
   });
-  useEffect(() => {
-    http
-      .get("/user/detailUser")
-      .then((getUserInfo) => {
-        setUserInfo(getUserInfo.data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-  // console.log("thong tin user", getUserInfo);
+
   const onFinish = async(values) => {
     console.log("form", values);
     try {
       await form.validateFields(); // Kiểm tra tính hợp lệ của biểu mẫu
 
-      // const changedInfo = { ...result, birthday: getUser.birthday.format("YYYY") };
-      // console.log("thông tin sau thay đổi", changedInfo);
-      // http
-      //   .put("/user/changeInfo", {
-      //     fullName: changedInfo.fullName,
-      //     // email: changedInfo.email,
-      //     phone: changedInfo.phone,
-      //     sex: changedInfo.sex,
-      //     birthday: changedInfo.birthday,
-      //   })
-      //   .catch((error) => console.log(error));
-      // console.log("Cập nhật thành công");
-      // toast.success("Cập nhật thông tin thành công");
+      const changedInfo = { ...values, birthday: values.birthday.format("YYYY") };
+      console.log("thông tin sau thay đổi", changedInfo);
+      http
+        .put("/user/changeInfo", {
+          fullName: changedInfo.fullName,
+          // email: changedInfo.email,
+          phone: changedInfo.phone,
+          sex: changedInfo.sex,
+          birthday: changedInfo.birthday,
+        })
+        .catch((error) => console.log(error));
+      console.log("Cập nhật thành công");
+      toast.success("Cập nhật thông tin thành công");
       // setTimeout(() => (window.location.href = "/"), 2000);
     } catch (error) {
       // Xử lý lỗi nếu biểu mẫu không hợp lệ
@@ -58,8 +49,6 @@ const AccountInfo = ({ getUser }) => {
     console.log("radio checked", e.target.value);
     setValue(e.target.value);
   };
-
-
   const formItemLayout = {
     labelCol: {
       xs: { span: 24 },
@@ -74,9 +63,6 @@ const AccountInfo = ({ getUser }) => {
       lg: { span: 14 },
     },
   };
-
-
-
   const handleInputClick = (fieldName) => {
     setInputStates((prevInputStates) => ({
       ...prevInputStates,
@@ -104,12 +90,26 @@ const AccountInfo = ({ getUser }) => {
         {...formItemLayout}
         variant="filled"
         initialValues={{
+          email: getUser.email,
           fullName: getUser.fullName,
           phone: getUser.phone,
           sex: getUser.sex,
-          birthday: moment(getUser.birthday)
+          birthday: moment(getUser.birthday) || ""
         }}
       >
+<Form.Item
+          label="Email"
+          name="email"
+        >
+          <input
+          disabled
+            className="input-disable"
+            // onClick={() => handleInputClick("fullName")}
+            // onBlur={() => handleInputBlur("fullName")}
+            maxLength={60}
+          ></input>
+        </Form.Item>
+
         <Form.Item
           label="Họ và Tên"
           name="fullName"
@@ -176,7 +176,6 @@ const AccountInfo = ({ getUser }) => {
           ]}
         >
            <DatePicker />
-           {/* <DatePicker /> */}
         </Form.Item>
 
         <Form.Item
@@ -188,7 +187,6 @@ const AccountInfo = ({ getUser }) => {
           <Button
             className="save-changed-info"
             htmlType="submit"
-          
           >
             Lưu thay đổi
           </Button>

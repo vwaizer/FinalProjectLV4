@@ -1,18 +1,26 @@
 import React, { useEffect } from "react";
 import Layout from "../layout/Layout";
 import "./payment.css";
-import { Input, Radio, ConfigProvider, Checkbox, Form, message } from "antd";
+import {
+  Input,
+  Radio,
+  ConfigProvider,
+  Checkbox,
+  Form,
+  Button,
+  Modal,
+} from "antd";
 import { useState } from "react";
 import { http } from "../util/http";
 import { ToastContainer, toast } from "react-toastify";
-
+import { useNavigate } from "react-router-dom";
 const formItemLayout = {
   labelCol: {
     xs: {
       span: 22,
     },
     sm: {
-      span: 12,
+      span: 14,
     },
     lg: {
       span: 10,
@@ -27,7 +35,13 @@ function Payment() {
   const [getProduct, setGetProduct] = useState([]);
   const [getAddress, setAddress] = useState([]);
   const [getUser, setUser] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [selectedAddress, setSellectedAddress] = useState(null);
   const defaultAddress = JSON.parse(localStorage.getItem("defaultAddress"));
+  const navigate = useNavigate()
+  const handleAddAddress = () => {
+    navigate("/user");
+  };
   useEffect(() => {
     http
       .get("/receipt/")
@@ -51,28 +65,46 @@ function Payment() {
   const [formPayment] = Form.useForm();
   useEffect(() => {
     form.setFieldsValue({
-      userName: defaultAddress?.fullName || getUser?.fullName || "",
+      userName: selectedAddress?.fullName || defaultAddress?.fullName || getUser?.fullName || "",
       email: getUser?.email || "",
-      phoneNumber: defaultAddress?.phone || getUser?.phone || "",
-      city: defaultAddress?.city || "",
-      district: defaultAddress?.district || "",
-      ward: defaultAddress?.ward || "",
-      address: defaultAddress?.address || "",
+      phoneNumber: selectedAddress?.phone || defaultAddress?.phone || getUser?.phone || "",
+      city: selectedAddress?.city || defaultAddress?.city || "",
+      district: selectedAddress?.district || defaultAddress?.district || "",
+      ward: selectedAddress?.ward || defaultAddress?.ward || "",
+      address: selectedAddress?.address || defaultAddress?.address || "",
     });
-  }, [defaultAddress, getUser, form]);
+  }, [defaultAddress, getUser, form, selectedAddress]);
   // console.log("user", getUser);
   useEffect(() => {
     http
       .get("/user/detailUser")
       .then((getUser) => {
         setUser(getUser.data);
+        setIsLoading(false);
       })
       .catch((err) => console.log(err));
   }, []);
   // console.log("get user", getUser);
-
   const [showNoteInput, setShowNoteInput] = useState(false);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const isSaveButtonDisabled = getUser.address?.length === 0;   
+  
+  const [tempSelectedAddress, setTempSelectedAddress] = useState(null);
+  const changedAddress = (e) => {
+    setTempSelectedAddress(e.target.value);
+    console.log("chọn địa chỉ", tempSelectedAddress);
+  };
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setSellectedAddress(tempSelectedAddress);
+    setIsModalOpen(false);
+  };
+  
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   const listCheck = JSON.parse(localStorage.getItem("BoughtList"));
 
   const calculateTotalPrice = () => {
@@ -124,54 +156,56 @@ function Payment() {
       // Handle error
     }
   };
-  const onCartPayment=async(listItem)=>{
-   try {
-    const result=await http.post("/receipt/payment",{items:[...listItem]})
-    console.log("url",result.data.url);
-    return result.data.url
-   } catch (error) {
-    console.log(error);
-   }
-    
-  }
-  const onFinish =async (formValues) => {
+  const onCartPayment = async (listItem) => {
+    try {
+      const result = await http.post("/receipt/payment", {
+        items: [...listItem],
+      });
+      console.log("url", result.data.url);
+      return result.data.url;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const onFinish = async (formValues) => {
     console.log("thông tin từ form: ", formValues);
     const noteValues = formNote.getFieldsValue();
     console.log("thông tin từ note: ", noteValues);
     const paymentValues = formPayment.getFieldsValue();
     console.log("thông tin từ payment: ", paymentValues);
     let result;
-    console.log("listCheck",listCheck);
-    const listItem=listCheck.map((item,index)=>{
-      return { name: item.name, price: parseFloat(item.price), amount: parseInt(item.amount)}
-    })
+    console.log("listCheck", listCheck);
+    const listItem = listCheck.map((item, index) => {
+      return {
+        name: item.name,
+        price: parseFloat(item.price),
+        amount: parseInt(item.amount),
+      };
+    });
     if (paymentValues.paymentMethod === "visa") {
-       const url=await onCartPayment(listItem)
-       let newCart;
-       newCart = listCheck.map((product) => {
-         const { amount, discount, bookID } = product;
-         return { amount: amount, discount: discount, bookID: bookID };
-       });
-       http
-         .post("/receipt/setHistory", { cart: newCart })
-         .catch((error) => console.log(error));
-         toast.success("Mua hàng thành công");
-         setTimeout(() => (window.location.href = `${url}`), 1000);
-
-      
+      const url = await onCartPayment(listItem);
+      let newCart;
+      newCart = listCheck.map((product) => {
+        const { amount, discount, bookID } = product;
+        return { amount: amount, discount: discount, bookID: bookID };
+      });
+      http
+        .post("/receipt/setHistory", { cart: newCart })
+        .catch((error) => console.log(error));
+      toast.success("Mua hàng thành công");
+      setTimeout(() => (window.location.href = `${url}`), 1000);
     } else {
       let newCart;
-    newCart = listCheck.map((product) => {
-      const { amount, discount, bookID } = product;
-      return { amount: amount, discount: discount, bookID: bookID };
-    });
-    http
-      .post("/receipt/setHistory", { cart: newCart })
-      .catch((error) => console.log(error));
+      newCart = listCheck.map((product) => {
+        const { amount, discount, bookID } = product;
+        return { amount: amount, discount: discount, bookID: bookID };
+      });
+      http
+        .post("/receipt/setHistory", { cart: newCart })
+        .catch((error) => console.log(error));
       toast.success("Mua hàng thành công");
       setTimeout(() => (window.location.href = "/"), 2000);
     }
-    
   };
 
   return (
@@ -192,17 +226,91 @@ function Payment() {
         <div className="box-container">
           <div style={{ padding: "10px 20px" }}>
             <div className="check-out-title">
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div className="info-address">
                 <div>ĐỊA CHỈ GIAO HÀNG</div>{" "}
                 <div
                   style={{
                     fontSize: "15px",
                     fontWeight: "200",
                     textDecoration: "underline",
+                    cursor: "pointer",
                   }}
+                  onClick={showModal}
                 >
                   Thay đổi địa chỉ
                 </div>
+                <Modal
+                  title="Địa chỉ của bạn"
+                  open={isModalOpen}
+                  onOk={handleOk}
+                  onCancel={handleCancel}
+                  footer={[
+                    <Button key="cancel" onClick={handleCancel}>
+                      Hủy
+                    </Button>,
+                    <Button key="saveAddress" type="primary" onClick={handleOk}  disabled={isSaveButtonDisabled}>
+                      Lưu thông tin
+                    </Button>,
+                    <Button key='navToAddressEdit' onClick={handleAddAddress}>Thêm địa chỉ</Button>
+                    ]}
+                >
+                  {" "}
+                  {isLoading ? (
+                    <p>Loading...</p>
+                  ) : (
+                    <>
+                      {getUser.address.length ? (
+                        <Radio.Group onChange={(e) => changedAddress(e)}>
+                          {getUser.address.map((userAddress, index) => {
+                            const {
+                              address,
+                              district,
+                              city,
+                              phone,
+                              fullName,
+                              ward,
+                            } = userAddress;
+                            return (
+                              <div
+                                style={{ display: "flex" }}
+                                key={userAddress.id}
+                              >
+                                <Radio
+                                  style={{ marginBottom: "10px" }}
+                                  value={userAddress}
+                                >
+                                  <div style={{ display: "flex" }}>
+                                    <div style={{ marginRight: "3px" }}>
+                                      {fullName}
+                                    </div>{" "}
+                                    |
+                                    <div style={{ paddingLeft: "3px" }}>
+                                      {phone}
+                                    </div>
+                                  </div>
+                                  <div style={{ display: "flex" }}>
+                                    <div>{address}</div>
+                                    <div style={{ marginLeft: "3px" }}>
+                                      {ward}
+                                    </div>
+                                    <div style={{ marginLeft: "3px" }}>
+                                      {district}
+                                    </div>
+                                    <div style={{ marginLeft: "3px" }}>
+                                      {city}
+                                    </div>
+                                  </div>
+                                </Radio>
+                              </div>
+                            );
+                          })}
+                        </Radio.Group>
+                      ) : (
+                        <div>Bạn chưa có địa chỉ</div>
+                      )}
+                    </>
+                  )}
+                </Modal>
               </div>
             </div>
 
@@ -295,7 +403,7 @@ function Payment() {
                 >
                   {/* <Input /> */}
                   <input className="input-payment" maxLength={60}></input>
-                  {console.log("user", getUser)}
+                  {/* {console.log("user", getUser)} */}
                 </Form.Item>
 
                 <Form.Item
@@ -441,46 +549,29 @@ function Payment() {
               marginTop: "15px",
             }}
           >
-            <div
-              style={{
-                color: "brown",
-                flexBasis: "85%",
-                textAlign: "right",
-                fontWeight: "bold",
-                fontSize: "17px",
-              }}
-            >
-              <div style={{color:'black',fontWeight:'400'}}>Phí ship: </div>
-              <div>Tổng cộng:{" "}</div>
+            <div className="title-total-ship">
+              <div style={{ color: "black", fontWeight: "400" }}>
+                Phí ship:{" "}
+              </div>
+              <div>Tổng cộng: </div>
             </div>
-            <div
-              style={{
-                fontWeight: "bold",
-                fontSize: "20px",
-                color: "#F39801",
-                marginBottom: "0px",
-                flexBasis: "10%",
-                textAlign:'end'
-              }}
-            >
-              <div style={{color:'black',fontWeight:'400',fontSize:'18px'}}>19.000 đ</div>
-              <div>{calculateTotalPrice()}.000 đ{" "}</div>
+            <div className="price-total-ship">
+              <div
+                style={{ color: "black", fontWeight: "400", fontSize: "18px" }}
+              >
+                19.000 đ
+              </div>
+              <div>{calculateTotalPrice()}.000 đ </div>
             </div>
           </div>
-          
-          <div
-            style={{
-              display: "flex",
-              margin: "0px 50px",
-              justifyContent: "space-between",
-              paddingBottom: "20px",
-              alignItems: "center",
-            }}
-          >
-            <u>
-              Nhấn "Xác nhận thanh toán" đồng nghĩa với việc bạn đồng ý tuân
-              theo Điều khoản
-            </u>
+
+          <div className="confirm-form">
+            <div>
+              <u>
+                Nhấn "Xác nhận thanh toán" đồng nghĩa với việc bạn đồng ý tuân
+                theo Điều khoản
+              </u>
+            </div>
             <button
               className="confirm-button-pay"
               onClick={validateAndSubmitForm}

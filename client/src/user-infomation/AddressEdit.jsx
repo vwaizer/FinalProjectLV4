@@ -13,7 +13,7 @@ const AddressEdit = () => {
   const [selectedWard, setSelectedWard] = useState("");
   const [getUser, setUser] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [isDeleted,setIsDeleted]=useState(false)
+  const [isDeleted, setIsDeleted] = useState(false);
   useEffect(() => {
     axios
       .get(
@@ -106,6 +106,9 @@ const AddressEdit = () => {
   };
   const [inputInforUser, setInputValue] = useState(inputUser);
   const [fillAddress, setFillAddress] = useState(" ");
+  const [formAddress] = Form.useForm();
+  const [formUser] = Form.useForm();
+  const [defaultAddressIndex, setDefaultAdressIndex]= useState(null)
   const handleChange = (key, event) => {
     const value = event.target.value;
     setInputValue({ ...inputInforUser, [key]: value });
@@ -115,8 +118,6 @@ const AddressEdit = () => {
     setFillAddress(value);
     setAddressSelected({ ...addressSelected, address: value });
   };
-  const [formAddress] = Form.useForm(); // Đối tượng form thứ nhất
-  const [formUser] = Form.useForm(); // Đối tượng form thứ hai
   const onClick = async () => {
     try {
       await Promise.all([
@@ -129,7 +130,6 @@ const AddressEdit = () => {
       // thông tin địa chỉ
       console.log("result", addressSelected);
       console.log("user", inputInforUser);
-
       http
         .put("/user/changeAddress", {
           address: {
@@ -142,8 +142,18 @@ const AddressEdit = () => {
           },
         })
         .then(() => {
-          // console.log("Thêm địa chỉ thành công ");
           toast.success("Thêm địa chỉ thành công");
+          setInputValue({ fullName: "", phone: "" });
+          formUser.setFieldsValue({ fullName: "", phone: "" });
+          formAddress.setFieldsValue({
+            city: "",
+            district: "",
+            ward: "",
+            address: "",
+          });
+          setSelectedCity("");
+          setSelectedDistrict("");
+          setSelectedWard("");
           http
             .get("/user/detailUser")
             .then((response) => {
@@ -163,13 +173,16 @@ const AddressEdit = () => {
   };
   const deleteAddress = async (index) => {
     try {
-      const result =await http.delete(`/user/deleteAddress/${index}`);
-      setIsDeleted(!isDeleted)
+      const result = await http.delete(`/user/deleteAddress/${index}`);
+      setIsDeleted(!isDeleted);
       const defaultAddress = JSON.parse(localStorage.getItem("defaultAddress"));
-  
-      if (JSON.stringify(getUser.address[index]) === JSON.stringify(defaultAddress)) {
+
+      if (
+        JSON.stringify(getUser.address[index]) ===
+        JSON.stringify(defaultAddress)
+      ) {
         localStorage.removeItem("defaultAddress");
-        console.log('đã xóa')
+        // console.log("đã xóa");
       }
       await http.post(`/user/deleteAddress/${index}`);
     } catch (err) {
@@ -177,6 +190,7 @@ const AddressEdit = () => {
     }
   };
   const setDefaultAddress = (index) => {
+    setDefaultAdressIndex(index)
     const defaultAddress = getUser.address[index];
     localStorage.setItem("defaultAddress", JSON.stringify(defaultAddress));
   };
@@ -236,7 +250,6 @@ const AddressEdit = () => {
                     className="input-info-changed"
                     type="text"
                     maxLength={10}
-                    
                   ></input>
                 </Form.Item>
               </Form>
@@ -366,8 +379,10 @@ const AddressEdit = () => {
               {getUser.address.length ? (
                 <div>
                   {getUser.address.map((userAddress, index) => {
-                    const { address, district, city, phone, fullName } =
-                      userAddress;
+                    const { address, district, city, phone, fullName } = userAddress;
+                    const isDefaultAddress =
+                      index ===
+                      defaultAddressIndex;
                     return (
                       <div className="list-address" key={userAddress.id}>
                         <div
@@ -388,24 +403,32 @@ const AddressEdit = () => {
                               >
                                 {fullName}{" "}
                               </span>{" "}
-                              | <span style={{}}>{phone}</span>
+                              | <span>{phone}</span>
                             </div>
                             <div>{address}</div>
                             <div>{`${district}, ${city}`}</div>
                           </div>
-                          <div
-                            className="delete-default-address"
-                          >
-                            <div className="delete-address" onClick={() => deleteAddress(index)}>
+                          <div className="delete-default-address">
+                            <div
+                              className="delete-address"
+                              onClick={() => deleteAddress(index)}
+                            >
                               {" "}
                               <u>Xóa địa chỉ</u>
                             </div>
-                            <div className="default-address" onClick={() => setDefaultAddress(index)}>
+                            <div
+                              className="default-address"
+                              onClick={() => setDefaultAddress(index)}
+                            >
                               <u>Đặt làm địa chỉ mặc định</u>
                             </div>
                           </div>
                         </div>
+                        {isDefaultAddress && (
+                          <div className="default-label">Mặc định</div>
+                        )}
                         <div className="line"></div>
+                        
                       </div>
                     );
                   })}
