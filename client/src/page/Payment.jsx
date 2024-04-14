@@ -214,7 +214,7 @@ function Payment() {
         pauseOnHover
         theme="light"
       />
-      <div style={{ width: "80%", margin: "auto" }}>
+      <div className="wrap_payment">
         <div className="box-container">
           <div style={{ padding: "10px 20px" }}>
             <div className="check-out-title">

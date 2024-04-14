@@ -12,6 +12,12 @@
   padding: 0px 10px;
   width: 60px;
 }
+
+.wrap_payment{
+  width: 80%;
+  margin: auto;
+}
+
 .box-container {
   margin-bottom: 15px;
   background-color: #fff;
@@ -95,6 +101,14 @@
 .input-payment:hover {
   border-color: #4096ff;
 }
+@media screen and (max-width: 1050px) {
+  .wrap_payment{
+    margin-top: 100px;
+  }
+
+}
+
+
 @media only screen and (max-width: 600px) {
   .info-address{
     flex-direction: column;
