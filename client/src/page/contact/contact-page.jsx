@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact-page.css";
+import "./style.css";
 
 import { FaFacebookF, FaTiktok, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -22,17 +22,17 @@ const Contactpage = () => {
     <Layout>
       <div className="contact-page">
         <div>
-          <div class="C-container_1">
+          <div style={{textAlign:"center",fontWeight:"800",margin:"20px auto",paddingBottom:"45px"}}>
             <p class="C-container_title_1">Trang Thông Tin</p>
-            <div class="C-sub-container_1">
+            <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",border:"1px solid brown",borderRadius:"10px",margin:"auto 10px"}}>
               <div class="C-column_1">
-                <div class="C-column-title">
+                <div style={{paddingTop:"20px"}}>
                   <p class="C-sub_title">Góp Ý</p>
-                  <div class="C-child-box-subtitle_1"></div>
+                  <div style={{width:"131px",backgroundColor:"#000000"}}></div>
                 </div>
 
                 <div class="C-sub-column_1">
-                  <div class="C-sub-column_1_1">
+                  <div style={{display:"flex",flexDirection:"row"}}>
                     <div class="C-sub-column_1_1_1">
                       <ContactProps
                         title="Họ Và Tên"
@@ -48,7 +48,7 @@ const Contactpage = () => {
                       />
                     </div>
                   </div>
-                  <div class="C-sub-column_1_1">
+                  <div style={{display:"flex",flexDirection:"row"}} >
                     <div class="C-sub-column_1_1_1">
                       <ContactProps
                         title="Email"
@@ -85,9 +85,9 @@ const Contactpage = () => {
                 </div>
               </div>
               <div class="C-column_3">
-                <div class="C-column-title">
+                <div style={{paddingTop:"20px"}}>
                   <p class="C-sub_title">Liên Hệ</p>
-                  <div class="C-child-box-subtitle_1"></div>
+                  <div style={{width:"131px",backgroundColor:"#000000"}}></div>
                 </div>
 
                 <div>

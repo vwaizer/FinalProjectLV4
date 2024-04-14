@@ -51,9 +51,11 @@ const AccountInfo = () => {
         
         newChangedFieldsCount++
             }
-      if (form.getFieldValue("birthday").format("L") !== (getUser.birthday)) {
+      if (new Date(form.getFieldValue("birthday").$d).toISOString() !== new Date(getUser.birthday).toISOString()) {
         console.log("date");
-        console.log(form.getFieldValue("birthday").format("L"),"=",new Date(getUser.birthday).toLocaleDateString());
+        console.log("getUSer",getUser.birthday);
+        console.log(new Date(form.getFieldValue("birthday").$d).toISOString(),"=",new Date(getUser.birthday).toISOString());
+       
         newChangedFieldsCount++
             }
             console.log("newChange",newChangedFieldsCount);
@@ -64,7 +66,7 @@ const AccountInfo = () => {
       }
       const changedInfo = {
         ...values,
-        birthday: form.getFieldValue("birthday").format("L"),
+        birthday: new Date(form.getFieldValue("birthday").$d).toISOString(),
       };
       console.log("thông tin sau thay đổi", changedInfo);
      
