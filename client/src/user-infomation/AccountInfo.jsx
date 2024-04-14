@@ -4,46 +4,67 @@ import React, { useEffect, useState } from "react";
 import { http } from "../util/http";
 import "./userPage.css";
 import moment from "moment";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "./userPage.css";
 
-const AccountInfo = ({ getUser, updateUserInfo }) => {
+const AccountInfo = () => {
+  const [getUser, setUser] = useState();
   const [value, setValue] = useState(null);
+  const [isSubmit,setIsSubmit]=useState(false)
+  const updateUserInfo = () => {
+    console.log("vao userInfo");
+    http
+      .get("/user/detailUser")
+      .then((getUser) => {
+        setUser(getUser.data);
+        setValue(getUser.data.sex)
+        console.log("user", getUser);
+      })
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    updateUserInfo();
+  }, [isSubmit]);
+  
   const [form] = Form.useForm();
-  const [newChangedFieldsCount, setNewChangedFieldsCount] = useState(0);
+
   const [inputStates, setInputStates] = useState({
     fullName: false,
     email: false,
     phone: false,
   });
-  useEffect(() => {
-    console.log("num", newChangedFieldsCount);
-    setNewChangedFieldsCount(newChangedFieldsCount);
-  }, [newChangedFieldsCount]);
   const onFinish = async (values) => {
     console.log("form", values);
     try {
       await form.validateFields(); 
       let newChangedFieldsCount = 0;
-      if (form.isFieldTouched("fullName")) {
+      if (form.getFieldValue("fullName") !== getUser.fullName) {
+        console.log("fullname");
         newChangedFieldsCount++
             }
-      if (form.isFieldTouched("phone")) {
+      if (form.getFieldValue("phone") !== getUser.phone) {
+        console.log("phone");
         newChangedFieldsCount++
             }
-      if (form.isFieldTouched("sex")) {
+      if (value !== getUser.sex && value !== null){
+        
         newChangedFieldsCount++
             }
-      if (form.isFieldTouched("birthday")) {
+      if (form.getFieldValue("birthday").format("L") !== (getUser.birthday)) {
+        console.log("date");
+        console.log(form.getFieldValue("birthday").format("L"),"=",new Date(getUser.birthday).toLocaleDateString());
         newChangedFieldsCount++
             }
+            console.log("newChange",newChangedFieldsCount);
       if (newChangedFieldsCount === 0) {
-        alert("Không có thông tin nào được thay đổi");
+
+        toast.info("Không có thông tin nào được thay đổi");
         return;
       }
       const changedInfo = {
         ...values,
-        birthday: values.birthday.format("YYYY"),
+        birthday: form.getFieldValue("birthday").format("L"),
       };
       console.log("thông tin sau thay đổi", changedInfo);
      
@@ -54,12 +75,14 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
           sex: changedInfo.sex,
           birthday: changedInfo.birthday,
         })
-        .then(() => {
-        toast.success("Cập nhật thông tin thành công")
-        updateUserInfo()
+        .then((res) => {
+        console.log("res",res);
+        setIsSubmit(!isSubmit)
+        
         console.log("Cập nhật thành công");
-        setNewChangedFieldsCount(0);
-         form.resetFields()
+        // form.resetFields()
+        
+         toast.success("Cập nhật thông tin thành công")
         
         })
         .catch((error) => console.log(error));
@@ -79,7 +102,9 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
   const onChange = (e) => {
     console.log("radio checked", e.target.value);
     setValue(e.target.value);
+    
   };
+ 
   const formItemLayout = {
     labelCol: {
       xs: { span: 24 },
@@ -110,6 +135,19 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
 
   return (
     <div style={{ backgroundColor: "#fff" }}>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        stacked
+      />
       <div className="page-title">
         <h1>THÔNG TIN TÀI KHOẢN</h1>
       </div>
@@ -146,6 +184,7 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
             className={inputStates.fullName ? "input-clicked" : "input-blur"}
             onClick={() => handleInputClick("fullName")}
             onBlur={() => handleInputBlur("fullName")}
+            value={getUser.fullName}
             maxLength={60}
           ></input>
         </Form.Item>
@@ -164,6 +203,7 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
             className={inputStates.phone ? "input-clicked" : "input-blur"}
             onClick={() => handleInputClick("phone")}
             onBlur={() => handleInputBlur("phone")}
+            value={getUser.phone}
             maxLength={10}
             minLength={8}
           ></input>
@@ -179,7 +219,7 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
             },
           ]}
         >
-          <Radio.Group onChange={onChange}>
+          <Radio.Group onChange={onChange} value={value}>
             <Radio value={"Nam"}>Nam</Radio>
             <Radio value={"Nữ"}>Nữ</Radio>
             <Radio value={"Khác"}>Khác</Radio>
@@ -195,6 +235,7 @@ const AccountInfo = ({ getUser, updateUserInfo }) => {
               message: "Thông tin này không được để trống",
             },
           ]}
+          
         >
           <DatePicker />
         </Form.Item>

@@ -7,20 +7,7 @@ import AddressEdit from "./AddressEdit.jsx";
 import OrderHistory from "./OrderHistory.jsx";
 
 const UserPage = () => {
-  const [getUser, setUser] = useState();
-  const updateUserInfo = () => {
-    http
-      .get("/user/detailUser")
-      .then((getUser) => {
-        setUser(getUser.data);
-        console.log("user", getUser);
-      })
-      .catch((err) => console.log(err));
-  };
-
-  useEffect(() => {
-    updateUserInfo();
-  }, []);
+  
   const [selectedItem, setSelectedItem] = useState("account-info");
   const handleItemClick = (value) => {
     setSelectedItem(value);
@@ -29,7 +16,7 @@ const UserPage = () => {
   const renderSelectedComponent = () => {
     switch (selectedItem) {
       case "account-info":
-        return <AccountInfo getUser={getUser} updateUserInfo={updateUserInfo}/>;
+        return <AccountInfo />;
       case "address":
         return <AddressEdit />;
       case "order-history":
