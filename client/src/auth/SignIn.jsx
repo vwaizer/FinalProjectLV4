@@ -13,14 +13,13 @@ const LOGIN_URL = "/auth";
 const SignIn = () => {
   const { setAuth, signIn } = useContext(AuthContext);
   const userRef = useRef();
-  const errRef = useRef();
-  const navigate = useNavigate();
+
 
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
   const [errMessage, setErrMessage] = useState("");
   const [success, setSuccess] = useState(false);
-  const [remember, setRemember] = useState(false);
+  
 
   const [access_token] = useSearchParams();
 

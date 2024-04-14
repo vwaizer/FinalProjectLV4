@@ -184,15 +184,7 @@ function Payment() {
     });
     if (paymentValues.paymentMethod === "visa") {
       const url = await onCartPayment(listItem);
-      let newCart;
-      newCart = listCheck.map((product) => {
-        const { amount, discount, bookID } = product;
-        return { amount: amount, discount: discount, bookID: bookID };
-      });
-      http
-        .post("/receipt/setHistory", { cart: newCart })
-        .catch((error) => console.log(error));
-      toast.success("Mua hàng thành công");
+      
       setTimeout(() => (window.location.href = `${url}`), 1000);
     } else {
       let newCart;
