@@ -7,7 +7,7 @@ import moment from "moment";
 import { toast } from "react-toastify";
 import "./userPage.css";
 
-const AccountInfo = ({ getUser }) => {
+const AccountInfo = ({ getUser, updateUserInfo }) => {
   const [value, setValue] = useState(null);
   const [form] = Form.useForm();
   const [inputStates, setInputStates] = useState({
@@ -18,7 +18,7 @@ const AccountInfo = ({ getUser }) => {
   const onFinish = async (values) => {
     console.log("form", values);
     try {
-      await form.validateFields(); // Kiểm tra tính hợp lệ của biểu mẫu
+      await form.validateFields(); 
       let changedFieldsCount = 0; // Biến đếm số lượng trường đã thay đổi
       if (form.isFieldTouched("fullName")) {
         changedFieldsCount++;
@@ -32,7 +32,6 @@ const AccountInfo = ({ getUser }) => {
       if (form.isFieldTouched("birthday")) {
         changedFieldsCount++;
       }
-
       if (changedFieldsCount === 0) {
         alert("Không có thông tin nào được thay đổi");
         return;
@@ -45,14 +44,20 @@ const AccountInfo = ({ getUser }) => {
       http
         .put("/user/changeInfo", {
           fullName: changedInfo.fullName,
-          // email: changedInfo.email,
           phone: changedInfo.phone,
           sex: changedInfo.sex,
           birthday: changedInfo.birthday,
         })
+        .then(() => {
+        updateUserInfo()
+        console.log("Cập nhật thành công");
+        changedFieldsCount = 0
+        console.log('num',changedFieldsCount)
+        toast.success("Cập nhật thông tin thành công")
+        })
         .catch((error) => console.log(error));
-      console.log("Cập nhật thành công");
-      toast.success("Cập nhật thông tin thành công");
+        
+      
       // setTimeout(() => (window.location.href = "/"), 2000);
     } catch (error) {
       // Xử lý lỗi nếu biểu mẫu không hợp lệ
