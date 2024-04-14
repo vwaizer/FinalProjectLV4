@@ -9,6 +9,7 @@ import OrderHistory from "./OrderHistory.jsx";
 const UserPage = () => {
   const [getUser, setUser] = useState();
   const updateUserInfo = () => {
+    console.log("vao userInfo");
     http
       .get("/user/detailUser")
       .then((getUser) => {
