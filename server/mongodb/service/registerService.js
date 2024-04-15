@@ -1,8 +1,6 @@
+import bcrypt from "bcrypt";
 import { User } from "../../schema/Schema.js";
 import databaseProject from "../GetDataBase.js";
-import { createAccessToken, verifyToken } from "../jwt/jwtController.js";
-import {ObjectId} from "mongodb"
-import bcrypt from "bcrypt"
 class UserService {
     async register(payload) {
       const existingAccount = await databaseProject.users.findOne({ email: payload.email });
@@ -19,10 +17,9 @@ class UserService {
               fullName:"",
               email:payload.email,
               gender:"other",
-              birthday:"--",
               sex:"",
               role:payload.role||"",
-              verifyToken:"chưa xác thực",
+              verifyToken:"Chưa xác thực",
               forgetToken:""
             })
           );
