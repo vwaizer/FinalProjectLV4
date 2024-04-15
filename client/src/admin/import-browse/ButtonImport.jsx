@@ -37,7 +37,7 @@ const ButtonImport = ({record,method,value}) => {
               
             }}
             type="button"
-            disabled={record.status==="Đồng ý"?true:isClicked}
+            disabled={record.status==="Từ Chối" || record.status==="Đồng ý"?true:isClicked}
             onClick={()=>onClickFunc(record)}
             
           >

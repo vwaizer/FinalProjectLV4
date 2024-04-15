@@ -4,6 +4,7 @@ import "./import.css";
 import { http } from "../../util/http";
 import ButtonImport from "./ButtonImport";
 import ImportBook from "../../page/ImportBook";
+import ButtonRefuse from "./ButtonRefue";
 
 const ImportAndBrowse = () => {
   const [getImport, setGetImport] = useState([]);
@@ -95,19 +96,11 @@ const ImportAndBrowse = () => {
                     console.log(button);
                     return (
                       <>
-                        <button
-                          style={{
-                            border: "1px solid #000",
-                            borderRadius: "5px",
-                            width: "100px",
-                            height: "50px",
-                          }}
-                          type="button"
-                          disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
-                          onClick={()=>onRefuseFunc(button._id)}
-                        >
-                          Từ chối 
-                        </button>
+                        <ButtonRefuse
+                        record={button}
+                        method={setIsClicked}
+                        value={isClicked}
+                        />
                       </>
                     );
                   },

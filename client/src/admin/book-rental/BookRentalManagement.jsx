@@ -2,10 +2,14 @@ import { Space, Table, Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import "./brm.css";
 import { http } from "../../util/http";
+import ButtonImport from "./ButtonImport";
+import ButtonRefuse from "./ButtonRefue";
+
 
 const BookRentalManagement = () => {
   const [getHireBook, setGetHireBook] = useState([]);
 const [isClicked,setIsClicked]=useState(false);
+const [buttonStatus,setButtonStatus]=useState("")
   useEffect(() => {
     http
       .get("/staff/hireBook")
@@ -26,6 +30,7 @@ const [isClicked,setIsClicked]=useState(false);
     try {
       const result=await http.put(`/staff/hiredBook/${id}`,{status:"Đồng ý"})
       console.log(result);
+      setButtonStatus("Đồng ý")
       setIsClicked(!isClicked)
     } catch (error) {
       console.log(error);
@@ -37,6 +42,7 @@ const [isClicked,setIsClicked]=useState(false);
     try {
       const result=await http.put(`/staff/hiredBook/${id}`,{status:"Từ chối"})
       console.log(result);
+      setButtonStatus("Từ chối")
       setIsClicked(!isClicked)
     } catch (error) {
       console.log(error);
@@ -84,19 +90,11 @@ const [isClicked,setIsClicked]=useState(false);
               console.log(button);
               return (
                 <>
-                  <button
-                    style={{
-                      border: "1px solid #000",
-                      borderRadius: "5px",
-                      width: "100px",
-                      height: "50px",
-                    }}
-                    type="button"
-                    disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
-                    onClick={()=>onClickFunc(button._id)}
-                  >
-                    Xác nhận
-                  </button>
+                 <ButtonImport
+                        record={button}
+                        method={setIsClicked}
+                        value={isClicked}
+                        />
                 </>
               );
             },
@@ -108,19 +106,11 @@ const [isClicked,setIsClicked]=useState(false);
               console.log(button);
               return (
                 <>
-                  <button
-                    style={{
-                      border: "1px solid #000",
-                      borderRadius: "5px",
-                      width: "100px",
-                      height: "50px",
-                    }}
-                    type="button"
-                    disabled={(button.status === "Đồng ý" || button.status === "Từ chối")?true:false}
-                    onClick={()=>onRefuseFunc(button._id)}
-                  >
-                    Từ chối 
-                  </button>
+                  <ButtonRefuse
+                        record={button}
+                        method={setIsClicked}
+                        value={isClicked}
+                        />
                 </>
               );
             },
