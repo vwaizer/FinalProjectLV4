@@ -12,7 +12,7 @@ export const createAccessToken = (user) => {
       key,
       (err, token) => {
         if (err) {
-          reject(err);
+         throw reject(err);
         }
         resolve(token);
       }
