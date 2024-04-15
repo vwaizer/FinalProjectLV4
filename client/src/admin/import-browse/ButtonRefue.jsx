@@ -13,8 +13,7 @@ const ButtonRefuse = ({record,method,value}) => {
           else if(localStorage.getItem("staff")=== "admin"){
             
             const result=await http.put(`/staff/importedBook/${record._id}`,{status:"Từ Chối"})
-            // const addBook=await http.post(`/staff/book`,record)
-            console.log(addBook);
+           
             console.log("result",result);
             setIsClicked(true)
           }
