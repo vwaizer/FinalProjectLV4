@@ -12,7 +12,7 @@ export const createAccessToken = (user) => {
       key,
       (err, token) => {
         if (err) {
-         throw reject(err);
+          reject(err);
         }
         resolve(token);
       }
@@ -21,13 +21,15 @@ export const createAccessToken = (user) => {
 };
 
 export const verifyToken = (token) => {
+  if(token != "undefined" || token != "null"){
   return new Promise((resolve, reject) => {
     jwt.verify(token, key, (err, decoded) => {
       if (err) {
         const errorMessage = err.message || "Invalid token";
-        reject(errorMessage);
+         throw reject(errorMessage);
       }
       resolve(decoded);
     });
-  });
+  });}
+  else return {err:"error"}
 };
