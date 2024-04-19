@@ -39,8 +39,9 @@ function Detail() {
   useEffect(() => {
     // clearTimeout(timeOut);
     setLoading(true);
+    console.log(localStorage.getItem("accessToken") == null);
      setTimeout(() => {
-      if (ID !== "undefined" || localStorage.getItem("accessToken")!== "undefined") {
+      if (ID !== "undefined" && localStorage.getItem("accessToken")!= null) {
         console.log(`/book/detailBook/${ID}`);
         http
           .get(`/book/detailBook/${ID}`)
